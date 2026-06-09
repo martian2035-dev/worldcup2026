@@ -21,21 +21,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v2
         with:
-          version: 9
+          version: latest
 
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm'
+          cache: pnpm
 
-      - run: pnpm install
+      - run: pnpm install --frozen-lockfile
 
       # Data fetch only on schedule or manual trigger
       - name: Fetch latest match data
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        run: pnpm run fetch-data || echo "Fetch skipped"
+        run: pnpm run fetch-data || true
 
       - name: Commit data updates
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
@@ -47,6 +47,7 @@ jobs:
       - run: pnpm run build
 
       - uses: actions/configure-pages@v4
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
