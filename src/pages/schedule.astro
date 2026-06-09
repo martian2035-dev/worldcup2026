@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import MatchCard from "../components/MatchCard";
+import allMatches from "../data/matches.json";
+import type { Match } from "../types";
+
+const matches = allMatches.matches as Match[];
+
+// Filters from query params
+const url = Astro.url;
+const selectedGroup = url.searchParams.get("group") || "全部";
+const selectedStage = url.searchParams.get("stage") || "全部";
+const selectedMonth = url.searchParams.get("month") || "全部";
+
+const stageLabels = [
+  { key: "全部", label: "全部" },
+  { key: "group", label: "小组赛" },
+  { key: "round32", label: "1/32决赛" },
+  { key: "round16", label: "1/16决赛" },
+  { key: "quarterfinal", label: "1/4决赛" },
+  { key: "semifinal", label: "半决赛" },
+  { key: "final", label: "🏆决赛" },
+];
+
+const months = ["全部", "6月", "7月"];
+const groups = ["全部", "A","B","C","D","E","F","G","H","I","J","K","L"];
+
+// Filter matches
+let filtered = matches;
+if (selectedStage !== "全部") filtered = filtered.filter(m => m.stage === selectedStage);
+if (selectedGroup !== "全部") filtered = filtered.filter(m => m.group === selectedGroup);
+if (selectedMonth === "6月") filtered = filtered.filter(m => m.datetime.startsWith("2026-06"));
+if (selectedMonth === "7月") filtered = filtered.filter(m => m.datetime.startsWith("2026-07"));
+
+// Group by date
+const grouped: Record<string, Match[]> = {};
+for (const m of filtered) {
+  const date = m.datetime.slice(0, 10);
+  if (!grouped[date]) grouped[date] = [];
+  grouped[date].push(m);
+}
+
+function formatDateHeader(d: string) {
+  const dt = new Date(d + "T00:00:00+08:00");
+  const weekdays = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+  return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`;
+}
+---
+
+<BaseLayout title="比赛日程">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:24px;">
+    <div>
+      <h1 style="font-size:22px;font-weight:700;margin:0 0 4px;">📅 比赛日程</h1>
+      <p style="color:var(--color-text-secondary);font-size:12px;margin:0;">6月12日 — 7月19日 · 96场确定比赛</p>
+    </div>
+    <a href="/WorldCup-2026.ics" download class="btn-primary">📅 添加到日历</a>
+  </div>
+
+  <!-- Stage filter -->
+  <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
+    {stageLabels.map(s => (
+      <a href={`?stage=${s.key}&group=${selectedGroup}&month=${selectedMonth}`} style="text-decoration:none;">
+        <span class={`chip ${selectedStage === s.key ? "chip-active" : "chip-default"}`}>{s.label}</span>
+      </a>
+    ))}
+  </div>
+
+  <!-- Group + Month filters -->
+  <div style="display:flex;gap:6px;margin-bottom:24px;flex-wrap:wrap;justify-content:space-between;">
+    <div style="display:flex;gap:6px;flex-wrap:wrap;">
+      {groups.map(g => (
+        <a href={`?stage=${selectedStage}&group=${g}&month=${selectedMonth}`} style="text-decoration:none;">
+          <span class={`chip ${selectedGroup === g ? "chip-active" : "chip-default"}`}>{g === "全部" ? "全部" : g+"组"}</span>
+        </a>
+      ))}
+    </div>
+    <div style="display:flex;gap:6px;">
+      {months.map(mo => (
+        <a href={`?stage=${selectedStage}&group=${selectedGroup}&month=${mo}`} style="text-decoration:none;">
+          <span class={`chip ${selectedMonth === mo ? "chip-active" : "chip-default"}`}>{mo}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <!-- Match list by date -->
+  {Object.keys(grouped).sort().length === 0 ? (
+    <div class="glass-card" style="padding:40px;text-align:center;color:var(--color-text-muted);">没有符合条件的比赛</div>
+  ) : (
+    Object.entries(grouped).sort(([a],[b]) => a.localeCompare(b)).map(([date, dayMatches]) => (
+      <div style="margin-bottom:24px;">
+        <div style="color:var(--color-text-secondary);font-size:13px;font-weight:600;margin-bottom:10px;">
+          {formatDateHeader(date)}
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          {dayMatches.map(m => <MatchCard match={m} client:load />)}
+        </div>
+      </div>
+    ))
+  )}
+
+  <!-- Load more -->
+  {Object.keys(grouped).length > 3 && (
+    <div style="text-align:center;margin-top:8px;">
+      <span class="chip chip-default" style="cursor:pointer;">展开更多比赛 ↓</span>
+    </div>
+  )}
+</BaseLayout>

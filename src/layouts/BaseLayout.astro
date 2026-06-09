@@ -1,0 +1,85 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "2026世界杯", description = "2026年美加墨世界杯完整赛程、球队数据与赛事分析" } = Astro.props;
+const pathname = Astro.url.pathname;
+const base = import.meta.env.BASE_URL || '';
+
+const navLinks = [
+  { href: `${base}/`, label: "首页" },
+  { href: `${base}/schedule`, label: "赛程" },
+  { href: `${base}/standings`, label: "积分" },
+  { href: `${base}/teams`, label: "球队" },
+  { href: `${base}/stats`, label: "数据" },
+  { href: `${base}/broadcast`, label: "直播" },
+];
+---
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} | World Cup 2026</title>
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+  <style>
+    nav a.active {
+      color: var(--color-accent);
+      background: var(--color-accent-dim);
+      border-radius: 8px;
+    }
+    #mobile-menu {
+      display: none;
+    }
+    #mobile-menu.open {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <header style="position:sticky;top:0;z-index:50;background:rgba(10,22,40,0.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--color-border);">
+    <div style="max-width:1280px;margin:0 auto;padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;">
+      <a href={`${base}/`} style="display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--color-text-primary);font-weight:700;font-size:16px;">
+        <span style="font-size:22px;">⚽</span> World Cup 2026
+      </a>
+      <nav style="display:flex;gap:4px;" class="desktop-nav">
+        {navLinks.map(link => (
+          <a href={link.href} class={pathname === link.href || (link.href !== `${base}/` && pathname.startsWith(link.href)) ? "active" : ""}
+             style="padding:6px 14px;font-size:13px;text-decoration:none;color:var(--color-text-secondary);transition:all 0.2s;">
+            {link.label}
+          </a>
+        ))}
+      </nav>
+      <button id="menu-btn" style="display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;" aria-label="菜单">☰</button>
+    </div>
+    <div id="mobile-menu" style="flex-direction:column;padding:8px 24px 16px;gap:4px;">
+      {navLinks.map(link => (
+        <a href={link.href} style="padding:8px 14px;font-size:14px;text-decoration:none;color:var(--color-text-secondary);border-radius:8px;">
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </header>
+
+  <main style="max-width:1280px;margin:0 auto;padding:24px;">
+    <slot />
+  </main>
+
+  <footer style="text-align:center;padding:32px 24px;color:var(--color-text-muted);font-size:11px;border-top:1px solid var(--color-border);margin-top:48px;">
+    2026 FIFA World Cup · 美加墨联合主办 · 数据来源 FIFA/ESPN
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-menu')?.classList.toggle('open');
+    });
+    const style = document.createElement('style');
+    style.textContent = `@media(max-width:768px){.desktop-nav{display:none!important}#menu-btn{display:block!important}#mobile-menu.open{display:flex!important}}`;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>

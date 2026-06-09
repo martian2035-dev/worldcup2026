@@ -1,0 +1,123 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import standingsData from "../data/standings.json";
+import type { Group } from "../types";
+
+const allGroups = standingsData.groups as Group[];
+const tournamentStats = standingsData.tournamentStats;
+const groups = ["A","B","C","D","E","F","G","H","I","J","K","L"];
+
+// Get flag
+function getFlag(code: string) {
+  const flags: Record<string, string> = {
+    MEX:"🇲🇽",RSA:"🇿🇦",KOR:"🇰🇷",CZE:"🇨🇿",CAN:"🇨🇦",BIH:"🇧🇦",QAT:"🇶🇦",SUI:"🇨🇭",
+    BRA:"🇧🇷",MAR:"🇲🇦",HAI:"🇭🇹",SCO:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",USA:"🇺🇸",PAR:"🇵🇾",AUS:"🇦🇺",TUR:"🇹🇷",
+    GER:"🇩🇪",CUW:"🇨🇼",CIV:"🇨🇮",ECU:"🇪🇨",NED:"🇳🇱",JPN:"🇯🇵",SWE:"🇸🇪",TUN:"🇹🇳",
+    BEL:"🇧🇪",EGY:"🇪🇬",IRN:"🇮🇷",NZL:"🇳🇿",ESP:"🇪🇸",CPV:"🇨🇻",KSA:"🇸🇦",URU:"🇺🇾",
+    FRA:"🇫🇷",SEN:"🇸🇳",IRQ:"🇮🇶",NOR:"🇳🇴",ARG:"🇦🇷",ALG:"🇩🇿",AUT:"🇦🇹",JOR:"🇯🇴",
+    POR:"🇵🇹",COD:"🇨🇩",UZB:"🇺🇿",COL:"🇨🇴",ENG:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",CRO:"🇭🇷",GHA:"🇬🇭",PAN:"🇵🇦"
+  };
+  return flags[code] || "🏳️";
+}
+
+const roundNames: Record<string, string> = {
+  round32: "1/32", round16: "1/16", quarterfinal: "1/4", semifinal: "半决赛", third: "季军", final: "冠军"
+};
+---
+
+<BaseLayout title="积分榜 & 晋级图">
+  <h1 style="font-size:22px;font-weight:700;margin:0 0 4px;">📊 积分榜 & 晋级图</h1>
+  <p style="color:var(--color-text-secondary);font-size:12px;margin:0 0 24px;">小组排名 · 淘汰赛对阵 · 实时更新</p>
+
+  <!-- Tournament stats -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:24px;">
+    <div class="glass-card" style="padding:14px;text-align:center;">
+      <div style="color:var(--color-text-muted);font-size:10px;">总进球</div>
+      <div style="color:var(--color-accent);font-size:20px;font-weight:700;">{tournamentStats.totalGoals}</div>
+    </div>
+    <div class="glass-card" style="padding:14px;text-align:center;">
+      <div style="color:var(--color-text-muted);font-size:10px;">场均进球</div>
+      <div style="color:var(--color-text-primary);font-size:20px;font-weight:700;">{tournamentStats.avgGoalsPerMatch}</div>
+    </div>
+    <div class="glass-card" style="padding:14px;text-align:center;">
+      <div style="color:var(--color-text-muted);font-size:10px;">黄牌 / 红牌</div>
+      <div style="color:var(--color-text-primary);font-size:20px;font-weight:700;">{tournamentStats.totalYellowCards}/{tournamentStats.totalRedCards}</div>
+    </div>
+    <div class="glass-card" style="padding:14px;text-align:center;">
+      <div style="color:var(--color-text-muted);font-size:10px;">总观众</div>
+      <div style="color:var(--color-text-primary);font-size:20px;font-weight:700;">{(tournamentStats.totalAttendance / 10000).toFixed(1)}万</div>
+    </div>
+  </div>
+
+  <!-- Group filter -->
+  <div style="display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap;">
+    {groups.map(g => (
+      <a href={`#group-${g}`} style="text-decoration:none;">
+        <span class="chip chip-default">{g}组</span>
+      </a>
+    ))}
+  </div>
+
+  <!-- Standings for each group -->
+  {allGroups.map(group => (
+    <div id={`group-${group.name}`} class="glass-card" style="margin-bottom:16px;overflow:hidden;">
+      <div style="padding:10px 14px;background:rgba(255,255,255,0.04);color:var(--color-text-secondary);font-size:12px;font-weight:600;">
+        {group.name} 组积分榜
+      </div>
+      {/* Table header */}
+      <div style="display:flex;padding:8px 14px;background:rgba(255,255,255,0.02);color:var(--color-text-muted);font-size:9px;text-transform:uppercase;">
+        <span style="min-width:24px;">#</span>
+        <span style="flex:1;">球队</span>
+        <span style="min-width:28px;text-align:center;">场</span>
+        <span style="min-width:28px;text-align:center;">胜</span>
+        <span style="min-width:28px;text-align:center;">平</span>
+        <span style="min-width:28px;text-align:center;">负</span>
+        <span style="min-width:28px;text-align:center;">进</span>
+        <span style="min-width:28px;text-align:center;">失</span>
+        <span style="min-width:28px;text-align:center;">差</span>
+        <span style="min-width:36px;text-align:center;color:var(--color-accent);">分</span>
+      </div>
+      {/* Team rows */}
+      {group.teams.sort((a,b) => b.pts - a.pts || b.gd - a.gd).map((team, i) => {
+        const qualified = i < 2;
+        return (
+          <div class="stat-row" style={qualified ? "background:rgba(67,160,71,0.04);" : ""}>
+            <span style={`min-width:24px;font-weight:700;color:${qualified ? "var(--color-positive)" : "var(--color-text-muted)"}`}>{i+1}</span>
+            <span style="flex:1;font-size:12px;display:flex;align-items:center;gap:6px;">
+              <span>{getFlag(team.code)}</span>
+              <a href={`/teams/${team.code}`} style="color:var(--color-text-primary);text-decoration:none;">{team.name}</a>
+            </span>
+            <span style="min-width:28px;text-align:center;color:var(--color-text-secondary);font-size:11px;">{team.played}</span>
+            <span style="min-width:28px;text-align:center;color:var(--color-text-secondary);font-size:11px;">{team.won}</span>
+            <span style="min-width:28px;text-align:center;color:var(--color-text-secondary);font-size:11px;">{team.drawn}</span>
+            <span style="min-width:28px;text-align:center;color:var(--color-text-secondary);font-size:11px;">{team.lost}</span>
+            <span style="min-width:28px;text-align:center;color:var(--color-text-secondary);font-size:11px;">{team.gf}</span>
+            <span style="min-width:28px;text-align:center;color:var(--color-text-secondary);font-size:11px;">{team.ga}</span>
+            <span style={`min-width:28px;text-align:center;font-size:11px;color:${team.gd > 0 ? "var(--color-positive)" : team.gd < 0 ? "var(--color-negative)" : "var(--color-text-muted)"}`}>
+              {team.gd > 0 ? "+"+team.gd : team.gd}
+            </span>
+            <span style="min-width:36px;text-align:center;color:var(--color-accent);font-weight:700;font-size:11px;">{team.pts}</span>
+          </div>
+        );
+      })}
+    </div>
+  ))}
+
+  <!-- Bracket section -->
+  <h2 style="font-size:18px;font-weight:700;margin:32px 0 16px;">🏆 淘汰赛晋级图</h2>
+  <div class="glass-card" style="padding:24px;overflow-x:auto;">
+    <div style="display:flex;gap:6px;font-size:9px;min-width:700px;">
+      {["round32","round16","quarterfinal","semifinal","final"].map(stage => (
+        <div style="flex:1;display:flex;flex-direction:column;gap:4px;justify-content:center;">
+          <div style="color:var(--color-text-muted);font-size:8px;text-align:center;margin-bottom:4px;">{roundNames[stage]}</div>
+          {Array.from({ length: stage === "final" ? 1 : stage === "semifinal" ? 2 : stage === "quarterfinal" ? 4 : stage === "round16" ? 8 : 16 }).map((_) => (
+            <div style={`background:rgba(255,255,255,0.04);border-radius:4px;padding:4px 6px;border:1px solid ${stage === "final" ? "rgba(255,215,0,0.2)" : "rgba(255,255,255,0.06)"};margin-bottom:${stage === "final" ? 0 : "4px"};`}>
+              <span style="color:var(--color-text-muted);">TBD</span>
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+    <div style="text-align:center;color:var(--color-text-muted);font-size:10px;margin-top:12px;">小组赛结束后自动填充出线队伍</div>
+  </div>
+</BaseLayout>

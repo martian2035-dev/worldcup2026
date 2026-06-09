@@ -1,0 +1,696 @@
+{
+  "lastUpdated": "2026-06-09T21:25:25Z",
+  "tournamentStats": {
+    "totalGoals": 0,
+    "avgGoalsPerMatch": 0,
+    "totalYellowCards": 0,
+    "totalRedCards": 0,
+    "totalAttendance": 0
+  },
+  "groups": [
+    {
+      "name": "A",
+      "teams": [
+        {
+          "code": "MEX",
+          "name": "墨西哥",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "RSA",
+          "name": "南非",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "KOR",
+          "name": "韩国",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "CZE",
+          "name": "捷克",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "teams": [
+        {
+          "code": "CAN",
+          "name": "加拿大",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "BIH",
+          "name": "波黑",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "QAT",
+          "name": "卡塔尔",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "SUI",
+          "name": "瑞士",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "C",
+      "teams": [
+        {
+          "code": "BRA",
+          "name": "巴西",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "MAR",
+          "name": "摩洛哥",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "HAI",
+          "name": "海地",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "SCO",
+          "name": "苏格兰",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "D",
+      "teams": [
+        {
+          "code": "USA",
+          "name": "美国",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "PAR",
+          "name": "巴拉圭",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "AUS",
+          "name": "澳大利亚",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "TUR",
+          "name": "土耳其",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "E",
+      "teams": [
+        {
+          "code": "GER",
+          "name": "德国",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "CUW",
+          "name": "库拉索",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "CIV",
+          "name": "科特迪瓦",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "ECU",
+          "name": "厄瓜多尔",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "F",
+      "teams": [
+        {
+          "code": "NED",
+          "name": "荷兰",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "JPN",
+          "name": "日本",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "SWE",
+          "name": "瑞典",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "TUN",
+          "name": "突尼斯",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "G",
+      "teams": [
+        {
+          "code": "BEL",
+          "name": "比利时",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "EGY",
+          "name": "埃及",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "IRN",
+          "name": "伊朗",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "NZL",
+          "name": "新西兰",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "H",
+      "teams": [
+        {
+          "code": "ESP",
+          "name": "西班牙",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "CPV",
+          "name": "佛得角",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "KSA",
+          "name": "沙特",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "URU",
+          "name": "乌拉圭",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "I",
+      "teams": [
+        {
+          "code": "FRA",
+          "name": "法国",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "SEN",
+          "name": "塞内加尔",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "IRQ",
+          "name": "伊拉克",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "NOR",
+          "name": "挪威",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "J",
+      "teams": [
+        {
+          "code": "ARG",
+          "name": "阿根廷",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "ALG",
+          "name": "阿尔及利亚",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "AUT",
+          "name": "奥地利",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "JOR",
+          "name": "约旦",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "K",
+      "teams": [
+        {
+          "code": "POR",
+          "name": "葡萄牙",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "COD",
+          "name": "刚果",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "UZB",
+          "name": "乌兹别克斯坦",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "COL",
+          "name": "哥伦比亚",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "L",
+      "teams": [
+        {
+          "code": "ENG",
+          "name": "英格兰",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "CRO",
+          "name": "克罗地亚",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "GHA",
+          "name": "加纳",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "PAN",
+          "name": "巴拿马",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    }
+  ]
+}

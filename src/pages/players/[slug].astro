@@ -1,0 +1,91 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import playersData from "../../data/players.json";
+import teamsData from "../../data/teams.json";
+
+export function getStaticPaths() {
+  return (playersData.players as any[]).map((p: any) => ({ params: { slug: p.id } }));
+}
+
+const { slug } = Astro.params;
+const player = (playersData.players as any[]).find((p: any) => p.id === slug);
+if (!player) {
+  return new Response("球员未找到", { status: 404 });
+}
+
+const team = (teamsData.teams as any[]).find((t: any) => t.code === player.team);
+
+function getFlag(code: string) {
+  const flags: Record<string, string> = {
+    MEX:"🇲🇽",RSA:"🇿🇦",KOR:"🇰🇷",CZE:"🇨🇿",CAN:"🇨🇦",BIH:"🇧🇦",QAT:"🇶🇦",SUI:"🇨🇭",
+    BRA:"🇧🇷",MAR:"🇲🇦",HAI:"🇭🇹",SCO:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",USA:"🇺🇸",PAR:"🇵🇾",AUS:"🇦🇺",TUR:"🇹🇷",
+    GER:"🇩🇪",CUW:"🇨🇼",CIV:"🇨🇮",ECU:"🇪🇨",NED:"🇳🇱",JPN:"🇯🇵",SWE:"🇸🇪",TUN:"🇹🇳",
+    BEL:"🇧🇪",EGY:"🇪🇬",IRN:"🇮🇷",NZL:"🇳🇿",ESP:"🇪🇸",CPV:"🇨🇻",KSA:"🇸🇦",URU:"🇺🇾",
+    FRA:"🇫🇷",SEN:"🇸🇳",IRQ:"🇮🇶",NOR:"🇳🇴",ARG:"🇦🇷",ALG:"🇩🇿",AUT:"🇦🇹",JOR:"🇯🇴",
+    POR:"🇵🇹",COD:"🇨🇩",UZB:"🇺🇿",COL:"🇨🇴",ENG:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",CRO:"🇭🇷",GHA:"🇬🇭",PAN:"🇵🇦"
+  };
+  return flags[code] || "🏳️";
+}
+---
+
+<BaseLayout title={`${player.name} - 球员详情`}>
+  <!-- Breadcrumb -->
+  <div style="color:var(--color-text-muted);font-size:10px;margin-bottom:16px;">
+    <a href="/teams" style="color:var(--color-text-secondary);text-decoration:none;">球队</a> →
+    {team && <a href={`/teams/${team.code}`} style="color:var(--color-text-secondary);text-decoration:none;">{team.name}</a>} →
+    <span style="color:var(--color-text-primary);">{player.name}</span>
+  </div>
+
+  <!-- Hero -->
+  <div class="glass-card" style="padding:24px;margin-bottom:24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+    <div style="font-size:56px;">👤</div>
+    <div style="flex:1;">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="font-size:24px;font-weight:800;">{player.name}</span>
+        {player.isStar && <span style="color:var(--color-accent);font-size:12px;">⭐ 明星球员</span>}
+      </div>
+      <div style="color:var(--color-text-secondary);font-size:12px;">{player.nameEn} · {player.position} · {player.number}号</div>
+      {team && <div style="color:var(--color-text-secondary);font-size:12px;margin-top:2px;">{getFlag(team.code)} {team.name} · {team.group}组</div>}
+    </div>
+  </div>
+
+  <!-- Stats grid -->
+  <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:10px;">赛事数据</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-bottom:24px;">
+    {[
+      { label: "进球", value: player.stats.goals, color: "var(--color-accent)" },
+      { label: "点球", value: player.stats.penalties },
+      { label: "助攻", value: player.stats.assists, color: "var(--color-positive)" },
+      { label: "射门", value: player.stats.shots },
+      { label: "射正", value: player.stats.shotsOnTarget },
+      { label: "射正率", value: player.stats.shots > 0 ? Math.round(player.stats.shotsOnTarget / player.stats.shots * 100) + "%" : "-" },
+      { label: "出场时间", value: player.stats.minutesPlayed + "'" },
+      { label: "跑动距离", value: player.stats.distanceKm + "km" },
+      { label: "黄牌", value: player.stats.yellowCards },
+      { label: "红牌", value: player.stats.redCards, color: player.stats.redCards > 0 ? "var(--color-negative)" : undefined },
+    ].map(s => (
+      <div class="glass-card" style="padding:14px;text-align:center;">
+        <div style={`font-size:22px;font-weight:700;color:${s.color || "var(--color-text-primary)"}`}>{s.value}</div>
+        <div style="color:var(--color-text-muted);font-size:10px;margin-top:4px;">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Match ratings -->
+  {player.stats.matchRatings && player.stats.matchRatings.length > 0 && (
+    <div>
+      <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:10px;">比赛评分</div>
+      <div class="glass-card" style="padding:16px;">
+        {player.stats.matchRatings.map((rating: number, i: number) => (
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <span style="color:var(--color-text-muted);font-size:10px;min-width:40px;">第{i+1}场</span>
+            <div style="flex:1;background:rgba(255,255,255,0.06);border-radius:3px;height:8px;">
+              <div style={`width:${rating*10}%;height:100%;background:linear-gradient(90deg,var(--color-positive),var(--color-accent));border-radius:3px;`}></div>
+            </div>
+            <span style="color:var(--color-accent);font-size:12px;font-weight:600;min-width:30px;text-align:right;">{rating}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+</BaseLayout>

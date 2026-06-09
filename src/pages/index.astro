@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CountdownTimer from "../components/CountdownTimer";
+import allMatches from "../data/matches.json";
+
+const matches = allMatches.matches;
+const openingDate = new Date("2026-06-12T03:00:00+08:00");
+
+// Get today's matches (mock: first 2 matches for demo)
+const todayMatches = matches.filter(m => m.stage === "group" && m.round === 1).slice(0, 3);
+
+// Group teams by group
+const groups = ["A","B","C","D","E","F","G","H","I","J","K","L"];
+const teamsByGroup: Record<string, {code: string, name: string}[]> = {};
+for (const m of matches.filter(m => m.stage === "group" && m.round === 1)) {
+  if (m.group && !teamsByGroup[m.group]) {
+    teamsByGroup[m.group] = [
+      { code: m.home.code, name: m.home.name },
+      { code: m.away.code, name: m.away.name },
+    ];
+  } else if (m.group) {
+    const existing = teamsByGroup[m.group];
+    const homeExists = existing.find(t => t.code === m.home.code);
+    const awayExists = existing.find(t => t.code === m.away.code);
+    if (!homeExists) existing.push({ code: m.home.code, name: m.home.name });
+    if (!awayExists) existing.push({ code: m.away.code, name: m.away.name });
+  }
+}
+
+// Generate flag from country code
+function getFlag(code: string) {
+  const flags: Record<string, string> = {
+    MEX:"🇲🇽",RSA:"🇿🇦",KOR:"🇰🇷",CZE:"🇨🇿",CAN:"🇨🇦",BIH:"🇧🇦",QAT:"🇶🇦",SUI:"🇨🇭",
+    BRA:"🇧🇷",MAR:"🇲🇦",HAI:"🇭🇹",SCO:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",USA:"🇺🇸",PAR:"🇵🇾",AUS:"🇦🇺",TUR:"🇹🇷",
+    GER:"🇩🇪",CUW:"🇨🇼",CIV:"🇨🇮",ECU:"🇪🇨",NED:"🇳🇱",JPN:"🇯🇵",SWE:"🇸🇪",TUN:"🇹🇳",
+    BEL:"🇧🇪",EGY:"🇪🇬",IRN:"🇮🇷",NZL:"🇳🇿",ESP:"🇪🇸",CPV:"🇨🇻",KSA:"🇸🇦",URU:"🇺🇾",
+    FRA:"🇫🇷",SEN:"🇸🇳",IRQ:"🇮🇶",NOR:"🇳🇴",ARG:"🇦🇷",ALG:"🇩🇿",AUT:"🇦🇹",JOR:"🇯🇴",
+    POR:"🇵🇹",COD:"🇨🇩",UZB:"🇺🇿",COL:"🇨🇴",ENG:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",CRO:"🇭🇷",GHA:"🇬🇭",PAN:"🇵🇦"
+  };
+  return flags[code] || "🏳️";
+}
+
+function formatTime(dt: string) {
+  return dt.slice(11, 16);
+}
+
+function formatDate(dt: string) {
+  const d = new Date(dt);
+  return `${d.getMonth()+1}月${d.getDate()}日`;
+}
+---
+
+<BaseLayout title="2026世界杯赛程">
+  <!-- Hero + Countdown -->
+  <section style="text-align:center;padding:40px 0 32px;">
+    <h1 style="font-size:clamp(24px,4vw,40px);font-weight:800;margin:0 0 8px;background:linear-gradient(135deg,#FFD700,#FFA000);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+      2026 美加墨世界杯
+    </h1>
+    <p style="color:var(--color-text-secondary);font-size:14px;margin:0 0 20px;">6月12日 — 7月19日 · 48支球队 · 104场比赛</p>
+    <CountdownTimer target={openingDate.toISOString()} label="距揭幕战" client:load />
+  </section>
+
+  <!-- Today's matches -->
+  <section style="margin-bottom:32px;">
+    <h2 style="font-size:11px;text-transform:uppercase;color:var(--color-text-muted);margin:0 0 10px;">今日比赛</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;">
+      {todayMatches.map(m => (
+        <a href={`/schedule?match=${m.id}`} style="text-decoration:none;">
+          <div class="glass-card" style="padding:16px;text-align:center;">
+            <div style="color:var(--color-accent);font-size:13px;font-weight:600;">{formatDate(m.datetime)} {formatTime(m.datetime)}</div>
+            <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:8px;">
+              <span style="font-size:18px;">{getFlag(m.home.code)}</span>
+              <span style="color:var(--color-text-primary);font-size:14px;font-weight:600;">{m.home.name}</span>
+              <span style="color:var(--color-text-muted);font-size:16px;font-weight:700;">VS</span>
+              <span style="color:var(--color-text-primary);font-size:14px;font-weight:600;">{m.away.name}</span>
+              <span style="font-size:18px;">{getFlag(m.away.code)}</span>
+            </div>
+            <div style="color:var(--color-text-muted);font-size:10px;margin-top:6px;">{m.venue.name}</div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Group grid -->
+  <section>
+    <h2 style="font-size:11px;text-transform:uppercase;color:var(--color-text-muted);margin:0 0 10px;">小组赛</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;">
+      {groups.map(g => (
+        <a href={`/schedule?group=${g}`} style="text-decoration:none;">
+          <div class="glass-card" style="padding:12px;text-align:center;">
+            <div style="color:var(--color-accent);font-weight:700;font-size:13px;margin-bottom:6px;">{g} 组</div>
+            <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:4px 8px;">
+              {(teamsByGroup[g] || []).map(t => (
+                <span style="color:var(--color-text-secondary);font-size:11px;">{getFlag(t.code)} {t.name}</span>
+              ))}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div style="text-align:center;margin-top:32px;">
+    <a href="/schedule" class="btn-primary">查看完整赛程 →</a>
+  </div>
+</BaseLayout>

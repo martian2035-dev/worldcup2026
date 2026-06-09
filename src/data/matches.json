@@ -1,0 +1,2405 @@
+{
+  "lastUpdated": "2026-06-09T21:25:25Z",
+  "matches": [
+    {
+      "id": "A01",
+      "group": "A",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "MEX",
+        "name": "墨西哥"
+      },
+      "away": {
+        "code": "RSA",
+        "name": "南非"
+      },
+      "datetime": "2026-06-12T03:00:00+08:00",
+      "venue": {
+        "name": "墨西哥城·阿兹特克球场",
+        "city": "墨西哥城"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "A02",
+      "group": "A",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "KOR",
+        "name": "韩国"
+      },
+      "away": {
+        "code": "CZE",
+        "name": "捷克"
+      },
+      "datetime": "2026-06-12T10:00:00+08:00",
+      "venue": {
+        "name": "瓜达拉哈拉·阿克龙球场",
+        "city": "瓜达拉哈拉"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "B01",
+      "group": "B",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "CAN",
+        "name": "加拿大"
+      },
+      "away": {
+        "code": "BIH",
+        "name": "波黑"
+      },
+      "datetime": "2026-06-13T03:00:00+08:00",
+      "venue": {
+        "name": "多伦多·BMO球场",
+        "city": "多伦多"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "D01",
+      "group": "D",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "USA",
+        "name": "美国"
+      },
+      "away": {
+        "code": "PAR",
+        "name": "巴拉圭"
+      },
+      "datetime": "2026-06-13T09:00:00+08:00",
+      "venue": {
+        "name": "洛杉矶·索菲球场",
+        "city": "洛杉矶"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "B02",
+      "group": "B",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "QAT",
+        "name": "卡塔尔"
+      },
+      "away": {
+        "code": "SUI",
+        "name": "瑞士"
+      },
+      "datetime": "2026-06-14T03:00:00+08:00",
+      "venue": {
+        "name": "旧金山·利维球场",
+        "city": "旧金山"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "C01",
+      "group": "C",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "BRA",
+        "name": "巴西"
+      },
+      "away": {
+        "code": "MAR",
+        "name": "摩洛哥"
+      },
+      "datetime": "2026-06-14T06:00:00+08:00",
+      "venue": {
+        "name": "纽约·大都会球场",
+        "city": "纽约"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "D02",
+      "group": "D",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "AUS",
+        "name": "澳大利亚"
+      },
+      "away": {
+        "code": "TUR",
+        "name": "土耳其"
+      },
+      "datetime": "2026-06-14T06:00:00+08:00",
+      "venue": {
+        "name": "温哥华·BC球场",
+        "city": "温哥华"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "C02",
+      "group": "C",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "HAI",
+        "name": "海地"
+      },
+      "away": {
+        "code": "SCO",
+        "name": "苏格兰"
+      },
+      "datetime": "2026-06-14T09:00:00+08:00",
+      "venue": {
+        "name": "波士顿·吉列球场",
+        "city": "波士顿"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "E01",
+      "group": "E",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "GER",
+        "name": "德国"
+      },
+      "away": {
+        "code": "CUW",
+        "name": "库拉索"
+      },
+      "datetime": "2026-06-15T03:00:00+08:00",
+      "venue": {
+        "name": "迈阿密·硬石球场",
+        "city": "迈阿密"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "F01",
+      "group": "F",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "NED",
+        "name": "荷兰"
+      },
+      "away": {
+        "code": "JPN",
+        "name": "日本"
+      },
+      "datetime": "2026-06-15T04:00:00+08:00",
+      "venue": {
+        "name": "达拉斯·AT&T球场",
+        "city": "达拉斯"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "E02",
+      "group": "E",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "CIV",
+        "name": "科特迪瓦"
+      },
+      "away": {
+        "code": "ECU",
+        "name": "厄瓜多尔"
+      },
+      "datetime": "2026-06-15T09:00:00+08:00",
+      "venue": {
+        "name": "蒙特雷·BBVA球场",
+        "city": "蒙特雷"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "F02",
+      "group": "F",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "SWE",
+        "name": "瑞典"
+      },
+      "away": {
+        "code": "TUN",
+        "name": "突尼斯"
+      },
+      "datetime": "2026-06-15T10:00:00+08:00",
+      "venue": {
+        "name": "蒙特雷·BBVA球场",
+        "city": "蒙特雷"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "H01",
+      "group": "H",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "ESP",
+        "name": "西班牙"
+      },
+      "away": {
+        "code": "CPV",
+        "name": "佛得角"
+      },
+      "datetime": "2026-06-16T00:00:00+08:00",
+      "venue": {
+        "name": "亚特兰大·奔驰球场",
+        "city": "亚特兰大"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "G01",
+      "group": "G",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "BEL",
+        "name": "比利时"
+      },
+      "away": {
+        "code": "EGY",
+        "name": "埃及"
+      },
+      "datetime": "2026-06-16T03:00:00+08:00",
+      "venue": {
+        "name": "西雅图·lumen球场",
+        "city": "西雅图"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "H02",
+      "group": "H",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "KSA",
+        "name": "沙特"
+      },
+      "away": {
+        "code": "URU",
+        "name": "乌拉圭"
+      },
+      "datetime": "2026-06-16T06:00:00+08:00",
+      "venue": {
+        "name": "迈阿密·硬石球场",
+        "city": "迈阿密"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "G02",
+      "group": "G",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "IRN",
+        "name": "伊朗"
+      },
+      "away": {
+        "code": "NZL",
+        "name": "新西兰"
+      },
+      "datetime": "2026-06-16T09:00:00+08:00",
+      "venue": {
+        "name": "洛杉矶·索菲球场",
+        "city": "洛杉矶"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "I01",
+      "group": "I",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "FRA",
+        "name": "法国"
+      },
+      "away": {
+        "code": "SEN",
+        "name": "塞内加尔"
+      },
+      "datetime": "2026-06-17T03:00:00+08:00",
+      "venue": {
+        "name": "纽约·大都会球场",
+        "city": "纽约"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "I02",
+      "group": "I",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "IRQ",
+        "name": "伊拉克"
+      },
+      "away": {
+        "code": "NOR",
+        "name": "挪威"
+      },
+      "datetime": "2026-06-17T09:00:00+08:00",
+      "venue": {
+        "name": "旧金山·利维球场",
+        "city": "旧金山"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "J01",
+      "group": "J",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "ARG",
+        "name": "阿根廷"
+      },
+      "away": {
+        "code": "ALG",
+        "name": "阿尔及利亚"
+      },
+      "datetime": "2026-06-17T09:00:00+08:00",
+      "venue": {
+        "name": "迈阿密·硬石球场",
+        "city": "迈阿密"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "K01",
+      "group": "K",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "POR",
+        "name": "葡萄牙"
+      },
+      "away": {
+        "code": "COD",
+        "name": "刚果"
+      },
+      "datetime": "2026-06-18T01:00:00+08:00",
+      "venue": {
+        "name": "亚特兰大·奔驰球场",
+        "city": "亚特兰大"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "J02",
+      "group": "J",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "AUT",
+        "name": "奥地利"
+      },
+      "away": {
+        "code": "JOR",
+        "name": "约旦"
+      },
+      "datetime": "2026-06-18T03:00:00+08:00",
+      "venue": {
+        "name": "蒙特雷·BBVA球场",
+        "city": "蒙特雷"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "L01",
+      "group": "L",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "ENG",
+        "name": "英格兰"
+      },
+      "away": {
+        "code": "CRO",
+        "name": "克罗地亚"
+      },
+      "datetime": "2026-06-18T04:00:00+08:00",
+      "venue": {
+        "name": "堪萨斯城·儿童慈善球场",
+        "city": "堪萨斯城"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "K02",
+      "group": "K",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "UZB",
+        "name": "乌兹别克斯坦"
+      },
+      "away": {
+        "code": "COL",
+        "name": "哥伦比亚"
+      },
+      "datetime": "2026-06-18T09:00:00+08:00",
+      "venue": {
+        "name": "达拉斯·AT&T球场",
+        "city": "达拉斯"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "A03",
+      "group": "A",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "CZE",
+        "name": "捷克"
+      },
+      "away": {
+        "code": "RSA",
+        "name": "南非"
+      },
+      "datetime": "2026-06-19T03:00:00+08:00",
+      "venue": {
+        "name": "亚特兰大·奔驰球场",
+        "city": "亚特兰大"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "L02",
+      "group": "L",
+      "stage": "group",
+      "round": 1,
+      "home": {
+        "code": "GHA",
+        "name": "加纳"
+      },
+      "away": {
+        "code": "PAN",
+        "name": "巴拿马"
+      },
+      "datetime": "2026-06-19T03:00:00+08:00",
+      "venue": {
+        "name": "多伦多·BMO球场",
+        "city": "多伦多"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "A04",
+      "group": "A",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "MEX",
+        "name": "墨西哥"
+      },
+      "away": {
+        "code": "KOR",
+        "name": "韩国"
+      },
+      "datetime": "2026-06-19T10:00:00+08:00",
+      "venue": {
+        "name": "瓜达拉哈拉·阿克龙球场",
+        "city": "瓜达拉哈拉"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "B03",
+      "group": "B",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "BIH",
+        "name": "波黑"
+      },
+      "away": {
+        "code": "QAT",
+        "name": "卡塔尔"
+      },
+      "datetime": "2026-06-20T03:00:00+08:00",
+      "venue": {
+        "name": "西雅图· lumen球场",
+        "city": "西雅图"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "B04",
+      "group": "B",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "SUI",
+        "name": "瑞士"
+      },
+      "away": {
+        "code": "CAN",
+        "name": "加拿大"
+      },
+      "datetime": "2026-06-20T08:00:00+08:00",
+      "venue": {
+        "name": "温哥华·BC球场",
+        "city": "温哥华"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "D03",
+      "group": "D",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "PAR",
+        "name": "巴拉圭"
+      },
+      "away": {
+        "code": "AUS",
+        "name": "澳大利亚"
+      },
+      "datetime": "2026-06-20T09:00:00+08:00",
+      "venue": {
+        "name": "达拉斯·AT&T球场",
+        "city": "达拉斯"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "C03",
+      "group": "C",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "MAR",
+        "name": "摩洛哥"
+      },
+      "away": {
+        "code": "HAI",
+        "name": "海地"
+      },
+      "datetime": "2026-06-21T03:00:00+08:00",
+      "venue": {
+        "name": "亚特兰大·奔驰球场",
+        "city": "亚特兰大"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "D04",
+      "group": "D",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "TUR",
+        "name": "土耳其"
+      },
+      "away": {
+        "code": "USA",
+        "name": "美国"
+      },
+      "datetime": "2026-06-21T03:00:00+08:00",
+      "venue": {
+        "name": "旧金山·利维球场",
+        "city": "旧金山"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "C04",
+      "group": "C",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "SCO",
+        "name": "苏格兰"
+      },
+      "away": {
+        "code": "BRA",
+        "name": "巴西"
+      },
+      "datetime": "2026-06-21T09:00:00+08:00",
+      "venue": {
+        "name": "迈阿密·硬石球场",
+        "city": "迈阿密"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "F03",
+      "group": "F",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "NED",
+        "name": "荷兰"
+      },
+      "away": {
+        "code": "SWE",
+        "name": "瑞典"
+      },
+      "datetime": "2026-06-22T00:00:00+08:00",
+      "venue": {
+        "name": "休斯敦·NRG球场",
+        "city": "休斯敦"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "H03",
+      "group": "H",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "ESP",
+        "name": "西班牙"
+      },
+      "away": {
+        "code": "KSA",
+        "name": "沙特"
+      },
+      "datetime": "2026-06-22T00:00:00+08:00",
+      "venue": {
+        "name": "亚特兰大·奔驰球场",
+        "city": "亚特兰大"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "E03",
+      "group": "E",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "CUW",
+        "name": "库拉索"
+      },
+      "away": {
+        "code": "CIV",
+        "name": "科特迪瓦"
+      },
+      "datetime": "2026-06-22T03:00:00+08:00",
+      "venue": {
+        "name": "休斯敦·NRG球场",
+        "city": "休斯敦"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "G03",
+      "group": "G",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "BEL",
+        "name": "比利时"
+      },
+      "away": {
+        "code": "IRN",
+        "name": "伊朗"
+      },
+      "datetime": "2026-06-22T03:00:00+08:00",
+      "venue": {
+        "name": "洛杉矶·索菲球场",
+        "city": "洛杉矶"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "H04",
+      "group": "H",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "URU",
+        "name": "乌拉圭"
+      },
+      "away": {
+        "code": "CPV",
+        "name": "佛得角"
+      },
+      "datetime": "2026-06-22T06:00:00+08:00",
+      "venue": {
+        "name": "迈阿密·硬石球场",
+        "city": "迈阿密"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "E04",
+      "group": "E",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "ECU",
+        "name": "厄瓜多尔"
+      },
+      "away": {
+        "code": "GER",
+        "name": "德国"
+      },
+      "datetime": "2026-06-22T09:00:00+08:00",
+      "venue": {
+        "name": "西雅图·lumen球场",
+        "city": "西雅图"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "G04",
+      "group": "G",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "NZL",
+        "name": "新西兰"
+      },
+      "away": {
+        "code": "EGY",
+        "name": "埃及"
+      },
+      "datetime": "2026-06-22T09:00:00+08:00",
+      "venue": {
+        "name": "温哥华·BC球场",
+        "city": "温哥华"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "I03",
+      "group": "I",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "SEN",
+        "name": "塞内加尔"
+      },
+      "away": {
+        "code": "IRQ",
+        "name": "伊拉克"
+      },
+      "datetime": "2026-06-23T03:00:00+08:00",
+      "venue": {
+        "name": "多伦多·BMO球场",
+        "city": "多伦多"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "F04",
+      "group": "F",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "TUN",
+        "name": "突尼斯"
+      },
+      "away": {
+        "code": "JPN",
+        "name": "日本"
+      },
+      "datetime": "2026-06-23T06:00:00+08:00",
+      "venue": {
+        "name": "瓜达拉哈拉·阿克龙球场",
+        "city": "瓜达拉哈拉"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "I04",
+      "group": "I",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "NOR",
+        "name": "挪威"
+      },
+      "away": {
+        "code": "FRA",
+        "name": "法国"
+      },
+      "datetime": "2026-06-23T09:00:00+08:00",
+      "venue": {
+        "name": "达拉斯·AT&T球场",
+        "city": "达拉斯"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "K03",
+      "group": "K",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "COD",
+        "name": "刚果"
+      },
+      "away": {
+        "code": "UZB",
+        "name": "乌兹别克斯坦"
+      },
+      "datetime": "2026-06-24T00:00:00+08:00",
+      "venue": {
+        "name": "温哥华·BC球场",
+        "city": "温哥华"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "J03",
+      "group": "J",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "ALG",
+        "name": "阿尔及利亚"
+      },
+      "away": {
+        "code": "AUT",
+        "name": "奥地利"
+      },
+      "datetime": "2026-06-24T03:00:00+08:00",
+      "venue": {
+        "name": "休斯敦·NRG球场",
+        "city": "休斯敦"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "K04",
+      "group": "K",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "COL",
+        "name": "哥伦比亚"
+      },
+      "away": {
+        "code": "POR",
+        "name": "葡萄牙"
+      },
+      "datetime": "2026-06-24T06:00:00+08:00",
+      "venue": {
+        "name": "迈阿密·硬石球场",
+        "city": "迈阿密"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "J04",
+      "group": "J",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "JOR",
+        "name": "约旦"
+      },
+      "away": {
+        "code": "ARG",
+        "name": "阿根廷"
+      },
+      "datetime": "2026-06-24T09:00:00+08:00",
+      "venue": {
+        "name": "亚特兰大·奔驰球场",
+        "city": "亚特兰大"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "L03",
+      "group": "L",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "CRO",
+        "name": "克罗地亚"
+      },
+      "away": {
+        "code": "GHA",
+        "name": "加纳"
+      },
+      "datetime": "2026-06-25T03:00:00+08:00",
+      "venue": {
+        "name": "洛杉矶·索菲球场",
+        "city": "洛杉矶"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "L04",
+      "group": "L",
+      "stage": "group",
+      "round": 2,
+      "home": {
+        "code": "PAN",
+        "name": "巴拿马"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰"
+      },
+      "datetime": "2026-06-25T09:00:00+08:00",
+      "venue": {
+        "name": "波士顿·吉列球场",
+        "city": "波士顿"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "A05",
+      "group": "A",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "CZE",
+        "name": "捷克"
+      },
+      "away": {
+        "code": "MEX",
+        "name": "墨西哥"
+      },
+      "datetime": "2026-06-25T21:00:00+08:00",
+      "venue": {
+        "name": "墨西哥城·阿兹特克球场",
+        "city": "墨西哥城"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "A06",
+      "group": "A",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "RSA",
+        "name": "南非"
+      },
+      "away": {
+        "code": "KOR",
+        "name": "韩国"
+      },
+      "datetime": "2026-06-25T21:00:00+08:00",
+      "venue": {
+        "name": "蒙特雷·BBVA球场",
+        "city": "蒙特雷"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "B05",
+      "group": "B",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "BIH",
+        "name": "波黑"
+      },
+      "away": {
+        "code": "SUI",
+        "name": "瑞士"
+      },
+      "datetime": "2026-06-26T21:00:00+08:00",
+      "venue": {
+        "name": "堪萨斯城·儿童慈善球场",
+        "city": "堪萨斯城"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "B06",
+      "group": "B",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "QAT",
+        "name": "卡塔尔"
+      },
+      "away": {
+        "code": "CAN",
+        "name": "加拿大"
+      },
+      "datetime": "2026-06-26T21:00:00+08:00",
+      "venue": {
+        "name": "多伦多·BMO球场",
+        "city": "多伦多"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "H05",
+      "group": "H",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "CPV",
+        "name": "佛得角"
+      },
+      "away": {
+        "code": "KSA",
+        "name": "沙特"
+      },
+      "datetime": "2026-06-27T09:00:00+08:00",
+      "venue": {
+        "name": "休斯敦·NRG球场",
+        "city": "休斯敦"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "H06",
+      "group": "H",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "URU",
+        "name": "乌拉圭"
+      },
+      "away": {
+        "code": "ESP",
+        "name": "西班牙"
+      },
+      "datetime": "2026-06-27T09:00:00+08:00",
+      "venue": {
+        "name": "瓜达拉哈拉·阿克龙球场",
+        "city": "瓜达拉哈拉"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "G05",
+      "group": "G",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "EGY",
+        "name": "埃及"
+      },
+      "away": {
+        "code": "IRN",
+        "name": "伊朗"
+      },
+      "datetime": "2026-06-27T11:00:00+08:00",
+      "venue": {
+        "name": "西雅图·lumen球场",
+        "city": "西雅图"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "G06",
+      "group": "G",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "NZL",
+        "name": "新西兰"
+      },
+      "away": {
+        "code": "BEL",
+        "name": "比利时"
+      },
+      "datetime": "2026-06-27T11:00:00+08:00",
+      "venue": {
+        "name": "温哥华·BC球场",
+        "city": "温哥华"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "C05",
+      "group": "C",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "MAR",
+        "name": "摩洛哥"
+      },
+      "away": {
+        "code": "SCO",
+        "name": "苏格兰"
+      },
+      "datetime": "2026-06-27T21:00:00+08:00",
+      "venue": {
+        "name": "休斯敦·NRG球场",
+        "city": "休斯敦"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "C06",
+      "group": "C",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "HAI",
+        "name": "海地"
+      },
+      "away": {
+        "code": "BRA",
+        "name": "巴西"
+      },
+      "datetime": "2026-06-27T21:00:00+08:00",
+      "venue": {
+        "name": "洛杉矶·索菲球场",
+        "city": "洛杉矶"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "D05",
+      "group": "D",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "PAR",
+        "name": "巴拉圭"
+      },
+      "away": {
+        "code": "TUR",
+        "name": "土耳其"
+      },
+      "datetime": "2026-06-28T21:00:00+08:00",
+      "venue": {
+        "name": "瓜达拉哈拉·阿克龙球场",
+        "city": "瓜达拉哈拉"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "D06",
+      "group": "D",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "AUS",
+        "name": "澳大利亚"
+      },
+      "away": {
+        "code": "USA",
+        "name": "美国"
+      },
+      "datetime": "2026-06-28T21:00:00+08:00",
+      "venue": {
+        "name": "纽约·大都会球场",
+        "city": "纽约"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "I05",
+      "group": "I",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "SEN",
+        "name": "塞内加尔"
+      },
+      "away": {
+        "code": "NOR",
+        "name": "挪威"
+      },
+      "datetime": "2026-06-28T21:00:00+08:00",
+      "venue": {
+        "name": "波士顿·吉列球场",
+        "city": "波士顿"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "I06",
+      "group": "I",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "IRQ",
+        "name": "伊拉克"
+      },
+      "away": {
+        "code": "FRA",
+        "name": "法国"
+      },
+      "datetime": "2026-06-28T21:00:00+08:00",
+      "venue": {
+        "name": "洛杉矶·索菲球场",
+        "city": "洛杉矶"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "E05",
+      "group": "E",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "CUW",
+        "name": "库拉索"
+      },
+      "away": {
+        "code": "ECU",
+        "name": "厄瓜多尔"
+      },
+      "datetime": "2026-06-29T21:00:00+08:00",
+      "venue": {
+        "name": "堪萨斯城·儿童慈善球场",
+        "city": "堪萨斯城"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "E06",
+      "group": "E",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "CIV",
+        "name": "科特迪瓦"
+      },
+      "away": {
+        "code": "GER",
+        "name": "德国"
+      },
+      "datetime": "2026-06-29T21:00:00+08:00",
+      "venue": {
+        "name": "亚特兰大·奔驰球场",
+        "city": "亚特兰大"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "J05",
+      "group": "J",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "ALG",
+        "name": "阿尔及利亚"
+      },
+      "away": {
+        "code": "JOR",
+        "name": "约旦"
+      },
+      "datetime": "2026-06-29T21:00:00+08:00",
+      "venue": {
+        "name": "瓜达拉哈拉·阿克龙球场",
+        "city": "瓜达拉哈拉"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "J06",
+      "group": "J",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "AUT",
+        "name": "奥地利"
+      },
+      "away": {
+        "code": "ARG",
+        "name": "阿根廷"
+      },
+      "datetime": "2026-06-29T21:00:00+08:00",
+      "venue": {
+        "name": "纽约·大都会球场",
+        "city": "纽约"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "F05",
+      "group": "F",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "JPN",
+        "name": "日本"
+      },
+      "away": {
+        "code": "SWE",
+        "name": "瑞典"
+      },
+      "datetime": "2026-06-30T21:00:00+08:00",
+      "venue": {
+        "name": "达拉斯·AT&T球场",
+        "city": "达拉斯"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "F06",
+      "group": "F",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "TUN",
+        "name": "突尼斯"
+      },
+      "away": {
+        "code": "NED",
+        "name": "荷兰"
+      },
+      "datetime": "2026-06-30T21:00:00+08:00",
+      "venue": {
+        "name": "堪萨斯城·儿童慈善球场",
+        "city": "堪萨斯城"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "K05",
+      "group": "K",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "COD",
+        "name": "刚果"
+      },
+      "away": {
+        "code": "COL",
+        "name": "哥伦比亚"
+      },
+      "datetime": "2026-06-30T21:00:00+08:00",
+      "venue": {
+        "name": "蒙特雷·BBVA球场",
+        "city": "蒙特雷"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "K06",
+      "group": "K",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "UZB",
+        "name": "乌兹别克斯坦"
+      },
+      "away": {
+        "code": "POR",
+        "name": "葡萄牙"
+      },
+      "datetime": "2026-06-30T21:00:00+08:00",
+      "venue": {
+        "name": "旧金山·利维球场",
+        "city": "旧金山"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "L05",
+      "group": "L",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "CRO",
+        "name": "克罗地亚"
+      },
+      "away": {
+        "code": "PAN",
+        "name": "巴拿马"
+      },
+      "datetime": "2026-07-01T21:00:00+08:00",
+      "venue": {
+        "name": "西雅图·lumen球场",
+        "city": "西雅图"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "L06",
+      "group": "L",
+      "stage": "group",
+      "round": 3,
+      "home": {
+        "code": "GHA",
+        "name": "加纳"
+      },
+      "away": {
+        "code": "ENG",
+        "name": "英格兰"
+      },
+      "datetime": "2026-07-01T21:00:00+08:00",
+      "venue": {
+        "name": "达拉斯·AT&T球场",
+        "city": "达拉斯"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-01",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "A",
+        "name": "A"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-03T19:00:00+08:00",
+      "venue": {
+        "name": "温哥华·BC球场",
+        "city": "温哥华"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-02",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "B",
+        "name": "B"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-03T23:00:00+08:00",
+      "venue": {
+        "name": "多伦多·BMO球场",
+        "city": "多伦多"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-03",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "C",
+        "name": "C"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-04T03:00:00+08:00",
+      "venue": {
+        "name": "纽约·大都会球场",
+        "city": "纽约"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-04",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "D",
+        "name": "D"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-04T19:00:00+08:00",
+      "venue": {
+        "name": "洛杉矶·索菲球场",
+        "city": "洛杉矶"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-05",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "E",
+        "name": "E"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-04T23:00:00+08:00",
+      "venue": {
+        "name": "达拉斯·AT&T球场",
+        "city": "达拉斯"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-06",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "F",
+        "name": "F"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-05T03:00:00+08:00",
+      "venue": {
+        "name": "亚特兰大·奔驰球场",
+        "city": "亚特兰大"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-07",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "G",
+        "name": "G"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-05T19:00:00+08:00",
+      "venue": {
+        "name": "休斯敦·NRG球场",
+        "city": "休斯敦"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-08",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "H",
+        "name": "H"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-05T23:00:00+08:00",
+      "venue": {
+        "name": "迈阿密·硬石球场",
+        "city": "迈阿密"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-09",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "I",
+        "name": "I"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-06T03:00:00+08:00",
+      "venue": {
+        "name": "旧金山·利维球场",
+        "city": "旧金山"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-10",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "J",
+        "name": "J"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-06T19:00:00+08:00",
+      "venue": {
+        "name": "瓜达拉哈拉·阿克龙球场",
+        "city": "瓜达拉哈拉"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-11",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "K",
+        "name": "K"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-06T23:00:00+08:00",
+      "venue": {
+        "name": "墨西哥城·阿兹特克球场",
+        "city": "墨西哥城"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-12",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "L",
+        "name": "L"
+      },
+      "away": {
+        "code": "待定小",
+        "name": "待定小组第三"
+      },
+      "datetime": "2026-07-07T03:00:00+08:00",
+      "venue": {
+        "name": "蒙特雷·BBVA球场",
+        "city": "蒙特雷"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-13",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "A",
+        "name": "A"
+      },
+      "away": {
+        "code": "B C",
+        "name": "B C D 待定"
+      },
+      "datetime": "2026-07-07T19:00:00+08:00",
+      "venue": {
+        "name": "堪萨斯城·儿童慈善球场",
+        "city": "堪萨斯城"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-14",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "B",
+        "name": "B"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-07T23:00:00+08:00",
+      "venue": {
+        "name": "西雅图·lumen球场",
+        "city": "西雅图"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-15",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "C",
+        "name": "C"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-08T03:00:00+08:00",
+      "venue": {
+        "name": "波士顿·吉列球场",
+        "city": "波士顿"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-16",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "D",
+        "name": "D"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-08T19:00:00+08:00",
+      "venue": {
+        "name": "温哥华·BC球场",
+        "city": "温哥华"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-17",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "E",
+        "name": "E"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-08T23:00:00+08:00",
+      "venue": {
+        "name": "多伦多·BMO球场",
+        "city": "多伦多"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-18",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "F",
+        "name": "F"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-09T03:00:00+08:00",
+      "venue": {
+        "name": "纽约·大都会球场",
+        "city": "纽约"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-19",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "G",
+        "name": "G"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-09T19:00:00+08:00",
+      "venue": {
+        "name": "洛杉矶·索菲球场",
+        "city": "洛杉矶"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-20",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "H",
+        "name": "H"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-09T23:00:00+08:00",
+      "venue": {
+        "name": "达拉斯·AT&T球场",
+        "city": "达拉斯"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-21",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "I",
+        "name": "I"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-10T03:00:00+08:00",
+      "venue": {
+        "name": "亚特兰大·奔驰球场",
+        "city": "亚特兰大"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-22",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "J",
+        "name": "J"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-10T19:00:00+08:00",
+      "venue": {
+        "name": "休斯敦·NRG球场",
+        "city": "休斯敦"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-23",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "K",
+        "name": "K"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-10T23:00:00+08:00",
+      "venue": {
+        "name": "迈阿密·硬石球场",
+        "city": "迈阿密"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    },
+    {
+      "id": "KO32-24",
+      "group": null,
+      "stage": "round32",
+      "round": 1,
+      "home": {
+        "code": "L",
+        "name": "L"
+      },
+      "away": {
+        "code": "跨组第",
+        "name": "跨组第三名"
+      },
+      "datetime": "2026-07-11T03:00:00+08:00",
+      "venue": {
+        "name": "旧金山·利维球场",
+        "city": "旧金山"
+      },
+      "status": "upcoming",
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "stats": null
+    }
+  ]
+}

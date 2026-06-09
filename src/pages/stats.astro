@@ -1,0 +1,135 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import standingsData from "../data/standings.json";
+import playersData from "../data/players.json";
+import type { Group } from "../types";
+
+const allGroups = standingsData.groups as Group[];
+const stats = standingsData.tournamentStats;
+const allPlayers = playersData.players as any[];
+
+function getFlag(code: string) {
+  const flags: Record<string, string> = {
+    MEX:"🇲🇽",RSA:"🇿🇦",KOR:"🇰🇷",CZE:"🇨🇿",CAN:"🇨🇦",BIH:"🇧🇦",QAT:"🇶🇦",SUI:"🇨🇭",
+    BRA:"🇧🇷",MAR:"🇲🇦",HAI:"🇭🇹",SCO:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",USA:"🇺🇸",PAR:"🇵🇾",AUS:"🇦🇺",TUR:"🇹🇷",
+    GER:"🇩🇪",CUW:"🇨🇼",CIV:"🇨🇮",ECU:"🇪🇨",NED:"🇳🇱",JPN:"🇯🇵",SWE:"🇸🇪",TUN:"🇹🇳",
+    BEL:"🇧🇪",EGY:"🇪🇬",IRN:"🇮🇷",NZL:"🇳🇿",ESP:"🇪🇸",CPV:"🇨🇻",KSA:"🇸🇦",URU:"🇺🇾",
+    FRA:"🇫🇷",SEN:"🇸🇳",IRQ:"🇮🇶",NOR:"🇳🇴",ARG:"🇦🇷",ALG:"🇩🇿",AUT:"🇦🇹",JOR:"🇯🇴",
+    POR:"🇵🇹",COD:"🇨🇩",UZB:"🇺🇿",COL:"🇨🇴",ENG:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",CRO:"🇭🇷",GHA:"🇬🇭",PAN:"🇵🇦"
+  };
+  return flags[code] || "🏳️";
+}
+
+// Top scorers (sorted by goals desc, then assists, then minutes)
+const topScorers = [...allPlayers]
+  .filter((p: any) => p.stats.goals > 0)
+  .sort((a: any, b: any) => b.stats.goals - a.stats.goals || b.stats.assists - a.stats.assists)
+  .slice(0, 20);
+
+const topAssists = [...allPlayers]
+  .filter((p: any) => p.stats.assists > 0)
+  .sort((a: any, b: any) => b.stats.assists - a.stats.assists)
+  .slice(0, 20);
+
+const medalColors = ["var(--color-accent)", "#C0C0C0", "#CD7F32"];
+---
+
+<BaseLayout title="数据统计">
+  <h1 style="font-size:22px;font-weight:700;margin:0 0 4px;">📈 数据中心</h1>
+  <p style="color:var(--color-text-secondary);font-size:12px;margin:0 0 24px;">积分榜 · 射手榜 · 助攻榜 · 赛事概览</p>
+
+  <!-- Tournament summary cards -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:24px;">
+    {[
+      { label: "总进球", value: stats.totalGoals, color: "var(--color-accent)" },
+      { label: "场均进球", value: stats.avgGoalsPerMatch },
+      { label: "黄牌", value: stats.totalYellowCards },
+      { label: "红牌", value: stats.totalRedCards, color: stats.totalRedCards > 0 ? "var(--color-negative)" : undefined },
+      { label: "总观众", value: (stats.totalAttendance / 10000).toFixed(1) + "万" },
+    ].map(s => (
+      <div class="glass-card" style="padding:14px;text-align:center;">
+        <div style={`font-size:22px;font-weight:700;color:${s.color || "var(--color-text-primary)"}`}>{s.value}</div>
+        <div style="color:var(--color-text-muted);font-size:10px;margin-top:4px;">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Top Scorers -->
+  <div style="margin-bottom:28px;">
+    <h2 style="color:var(--color-text-secondary);font-size:11px;text-transform:uppercase;margin:0 0 10px;">⚽ 射手榜 TOP 20</h2>
+    <div class="glass-card" style="overflow:hidden;">
+      <div style="display:flex;padding:8px 14px;background:rgba(255,255,255,0.04);color:var(--color-text-muted);font-size:9px;text-transform:uppercase;">
+        <span style="min-width:28px;">#</span><span style="flex:1;">球员</span><span style="min-width:44px;text-align:center;">进球</span><span style="min-width:36px;text-align:center;">点球</span><span style="min-width:44px;text-align:center;">射门</span><span style="min-width:48px;text-align:center;">射正率</span><span style="min-width:44px;text-align:center;">出场</span><span style="min-width:52px;text-align:center;">分钟/球</span>
+      </div>
+      {topScorers.length > 0 ? topScorers.map((p: any, i: number) => (
+        <div class="stat-row" style={i < 3 ? `background:rgba(255,215,0,${0.06 - i * 0.015})` : ""}>
+          <span style={`min-width:28px;font-weight:700;color:${i < 3 ? medalColors[i] : "var(--color-text-muted)"}`}>{i + 1}</span>
+          <span style="flex:1;font-size:11px;display:flex;align-items:center;gap:6px;">
+            <span>{getFlag(p.team)}</span>
+            <a href={`/players/${p.id}`} style="color:var(--color-text-primary);text-decoration:none;">{p.name}</a>
+            <span style="color:var(--color-text-muted);font-size:9px;">{p.position}</span>
+          </span>
+          <span style="min-width:44px;text-align:center;color:var(--color-accent);font-weight:700;">{p.stats.goals}</span>
+          <span style="min-width:36px;text-align:center;color:var(--color-text-secondary);">{p.stats.penalties}</span>
+          <span style="min-width:44px;text-align:center;color:var(--color-text-secondary);">{p.stats.shots}</span>
+          <span style="min-width:48px;text-align:center;color:var(--color-positive);">{p.stats.shots > 0 ? Math.round(p.stats.shotsOnTarget / p.stats.shots * 100) : 0}%</span>
+          <span style="min-width:44px;text-align:center;color:var(--color-text-secondary);">{p.stats.minutesPlayed}'</span>
+          <span style="min-width:52px;text-align:center;color:var(--color-text-secondary);">{p.stats.goals > 0 ? Math.round(p.stats.minutesPlayed / p.stats.goals) : "-"}'</span>
+        </div>
+      )) : (
+        <div style="padding:24px;text-align:center;color:var(--color-text-muted);font-size:12px;">射手榜数据将在比赛开始后更新</div>
+      )}
+    </div>
+  </div>
+
+  <!-- Top Assists -->
+  <div style="margin-bottom:28px;">
+    <h2 style="color:var(--color-text-secondary);font-size:11px;text-transform:uppercase;margin:0 0 10px;">🎯 助攻榜</h2>
+    <div class="glass-card" style="overflow:hidden;">
+      <div style="display:flex;padding:8px 14px;background:rgba(255,255,255,0.04);color:var(--color-text-muted);font-size:9px;text-transform:uppercase;">
+        <span style="min-width:28px;">#</span><span style="flex:1;">球员</span><span style="min-width:44px;text-align:center;">助攻</span><span style="min-width:44px;text-align:center;">进球</span><span style="min-width:44px;text-align:center;">出场</span>
+      </div>
+      {topAssists.length > 0 ? topAssists.map((p: any, i: number) => (
+        <div class="stat-row" style={i < 3 ? `background:rgba(255,215,0,${0.06 - i * 0.015})` : ""}>
+          <span style={`min-width:28px;font-weight:700;color:${i < 3 ? medalColors[i] : "var(--color-text-muted)"}`}>{i + 1}</span>
+          <span style="flex:1;font-size:11px;display:flex;align-items:center;gap:6px;">
+            <span>{getFlag(p.team)}</span>
+            <a href={`/players/${p.id}`} style="color:var(--color-text-primary);text-decoration:none;">{p.name}</a>
+          </span>
+          <span style="min-width:44px;text-align:center;color:var(--color-accent);font-weight:700;">{p.stats.assists}</span>
+          <span style="min-width:44px;text-align:center;color:var(--color-text-secondary);">{p.stats.goals}</span>
+          <span style="min-width:44px;text-align:center;color:var(--color-text-secondary);">{p.stats.minutesPlayed}'</span>
+        </div>
+      )) : (
+        <div style="padding:24px;text-align:center;color:var(--color-text-muted);font-size:12px;">助攻榜数据将在比赛开始后更新</div>
+      )}
+    </div>
+  </div>
+
+  <!-- Group standings -->
+  <h2 style="color:var(--color-text-secondary);font-size:11px;text-transform:uppercase;margin:0 0 10px;">📊 小组积分榜</h2>
+  {allGroups.map(group => (
+    <div class="glass-card" style="margin-bottom:12px;overflow:hidden;">
+      <div style="padding:10px 14px;background:rgba(255,255,255,0.04);color:var(--color-text-secondary);font-size:12px;font-weight:600;">{group.name} 组</div>
+      <div style="display:flex;padding:8px 14px;color:var(--color-text-muted);font-size:9px;">
+        <span style="min-width:20px;">#</span><span style="flex:1;">球队</span><span style="min-width:24px;text-align:center;">场</span><span style="min-width:24px;text-align:center;">胜</span><span style="min-width:24px;text-align:center;">平</span><span style="min-width:24px;text-align:center;">负</span><span style="min-width:24px;text-align:center;">进</span><span style="min-width:24px;text-align:center;">失</span><span style="min-width:24px;text-align:center;">差</span><span style="min-width:28px;text-align:center;color:var(--color-accent);">分</span>
+      </div>
+      {group.teams.sort((a,b) => b.pts - a.pts || b.gd - a.gd).map((t, i) => (
+        <div class="stat-row" style={i < 2 ? "background:rgba(67,160,71,0.04);" : ""}>
+          <span style={`min-width:20px;font-weight:700;color:${i < 2 ? "var(--color-positive)" : "var(--color-text-muted)"}`}>{i+1}</span>
+          <span style="flex:1;font-size:11px;">
+            <a href={`/teams/${t.code}`} style="color:var(--color-text-primary);text-decoration:none;">{getFlag(t.code)} {t.name}</a>
+          </span>
+          <span style="min-width:24px;text-align:center;color:var(--color-text-secondary);font-size:10px;">{t.played}</span>
+          <span style="min-width:24px;text-align:center;color:var(--color-text-secondary);font-size:10px;">{t.won}</span>
+          <span style="min-width:24px;text-align:center;color:var(--color-text-secondary);font-size:10px;">{t.drawn}</span>
+          <span style="min-width:24px;text-align:center;color:var(--color-text-secondary);font-size:10px;">{t.lost}</span>
+          <span style="min-width:24px;text-align:center;color:var(--color-text-secondary);font-size:10px;">{t.gf}</span>
+          <span style="min-width:24px;text-align:center;color:var(--color-text-secondary);font-size:10px;">{t.ga}</span>
+          <span style={`min-width:24px;text-align:center;font-size:10px;color:${t.gd > 0 ? "var(--color-positive)" : t.gd < 0 ? "var(--color-negative)" : "var(--color-text-muted)"}`}>{t.gd > 0 ? "+"+t.gd : t.gd}</span>
+          <span style="min-width:28px;text-align:center;color:var(--color-accent);font-weight:700;font-size:10px;">{t.pts}</span>
+        </div>
+      ))}
+    </div>
+  ))}
+</BaseLayout>

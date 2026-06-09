@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import teamsData from "../../data/teams.json";
+
+const allTeams = teamsData.teams;
+
+function getFlag(code: string) {
+  const flags: Record<string, string> = {
+    MEX:"🇲🇽",RSA:"🇿🇦",KOR:"🇰🇷",CZE:"🇨🇿",CAN:"🇨🇦",BIH:"🇧🇦",QAT:"🇶🇦",SUI:"🇨🇭",
+    BRA:"🇧🇷",MAR:"🇲🇦",HAI:"🇭🇹",SCO:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",USA:"🇺🇸",PAR:"🇵🇾",AUS:"🇦🇺",TUR:"🇹🇷",
+    GER:"🇩🇪",CUW:"🇨🇼",CIV:"🇨🇮",ECU:"🇪🇨",NED:"🇳🇱",JPN:"🇯🇵",SWE:"🇸🇪",TUN:"🇹🇳",
+    BEL:"🇧🇪",EGY:"🇪🇬",IRN:"🇮🇷",NZL:"🇳🇿",ESP:"🇪🇸",CPV:"🇨🇻",KSA:"🇸🇦",URU:"🇺🇾",
+    FRA:"🇫🇷",SEN:"🇸🇳",IRQ:"🇮🇶",NOR:"🇳🇴",ARG:"🇦🇷",ALG:"🇩🇿",AUT:"🇦🇹",JOR:"🇯🇴",
+    POR:"🇵🇹",COD:"🇨🇩",UZB:"🇺🇿",COL:"🇨🇴",ENG:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",CRO:"🇭🇷",GHA:"🇬🇭",PAN:"🇵🇦"
+  };
+  return flags[code] || "🏳️";
+}
+
+// Group teams
+const groups = "ABCDEFGHIJKL".split("");
+const grouped = groups.map(g => ({
+  name: g,
+  teams: allTeams.filter((t: any) => t.group === g)
+}));
+---
+
+<BaseLayout title="球队">
+  <h1 style="font-size:22px;font-weight:700;margin:0 0 4px;">👥 球队</h1>
+  <p style="color:var(--color-text-secondary);font-size:12px;margin:0 0 24px;">48支参赛球队 · 按小组浏览</p>
+
+  {grouped.map(g => (
+    <div style="margin-bottom:24px;">
+      <div style="color:var(--color-accent);font-weight:700;font-size:14px;margin-bottom:10px;">{g.name} 组</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;">
+        {g.teams.map((team: any) => (
+          <a href={`/teams/${team.code}`} style="text-decoration:none;">
+            <div class="glass-card" style="padding:16px;display:flex;align-items:center;gap:14px;">
+              <span style="font-size:36px;">{getFlag(team.code)}</span>
+              <div>
+                <div style="color:var(--color-text-primary);font-size:15px;font-weight:700;">{team.name}</div>
+                <div style="color:var(--color-text-muted);font-size:10px;">{team.nameEn}</div>
+                <div style="display:flex;gap:10px;margin-top:4px;">
+                  <span style="color:var(--color-text-secondary);font-size:10px;">FIFA #{team.fifaRank || "?"}</span>
+                  {team.worldCups > 0 && <span style="color:var(--color-accent);font-size:10px;">⭐×{team.worldCups}</span>}
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  ))}
+</BaseLayout>

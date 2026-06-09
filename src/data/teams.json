@@ -1,0 +1,676 @@
+{
+  "teams": [
+    {
+      "code": "MEX",
+      "name": "墨西哥",
+      "nameEn": "MEX",
+      "group": "A",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "RSA",
+      "name": "南非",
+      "nameEn": "RSA",
+      "group": "A",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "KOR",
+      "name": "韩国",
+      "nameEn": "KOR",
+      "group": "A",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "CZE",
+      "name": "捷克",
+      "nameEn": "CZE",
+      "group": "A",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "CAN",
+      "name": "加拿大",
+      "nameEn": "CAN",
+      "group": "B",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "BIH",
+      "name": "波黑",
+      "nameEn": "BIH",
+      "group": "B",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "QAT",
+      "name": "卡塔尔",
+      "nameEn": "QAT",
+      "group": "B",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "SUI",
+      "name": "瑞士",
+      "nameEn": "SUI",
+      "group": "B",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "BRA",
+      "name": "巴西",
+      "nameEn": "BRA",
+      "group": "C",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "MAR",
+      "name": "摩洛哥",
+      "nameEn": "MAR",
+      "group": "C",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "HAI",
+      "name": "海地",
+      "nameEn": "HAI",
+      "group": "C",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "SCO",
+      "name": "苏格兰",
+      "nameEn": "SCO",
+      "group": "C",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "USA",
+      "name": "美国",
+      "nameEn": "USA",
+      "group": "D",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "PAR",
+      "name": "巴拉圭",
+      "nameEn": "PAR",
+      "group": "D",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "AUS",
+      "name": "澳大利亚",
+      "nameEn": "AUS",
+      "group": "D",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "TUR",
+      "name": "土耳其",
+      "nameEn": "TUR",
+      "group": "D",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "GER",
+      "name": "德国",
+      "nameEn": "GER",
+      "group": "E",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "CUW",
+      "name": "库拉索",
+      "nameEn": "CUW",
+      "group": "E",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "CIV",
+      "name": "科特迪瓦",
+      "nameEn": "CIV",
+      "group": "E",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "ECU",
+      "name": "厄瓜多尔",
+      "nameEn": "ECU",
+      "group": "E",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "NED",
+      "name": "荷兰",
+      "nameEn": "NED",
+      "group": "F",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "JPN",
+      "name": "日本",
+      "nameEn": "JPN",
+      "group": "F",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "SWE",
+      "name": "瑞典",
+      "nameEn": "SWE",
+      "group": "F",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "TUN",
+      "name": "突尼斯",
+      "nameEn": "TUN",
+      "group": "F",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "BEL",
+      "name": "比利时",
+      "nameEn": "BEL",
+      "group": "G",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "EGY",
+      "name": "埃及",
+      "nameEn": "EGY",
+      "group": "G",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "IRN",
+      "name": "伊朗",
+      "nameEn": "IRN",
+      "group": "G",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "NZL",
+      "name": "新西兰",
+      "nameEn": "NZL",
+      "group": "G",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "ESP",
+      "name": "西班牙",
+      "nameEn": "ESP",
+      "group": "H",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "CPV",
+      "name": "佛得角",
+      "nameEn": "CPV",
+      "group": "H",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "KSA",
+      "name": "沙特",
+      "nameEn": "KSA",
+      "group": "H",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "URU",
+      "name": "乌拉圭",
+      "nameEn": "URU",
+      "group": "H",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "FRA",
+      "name": "法国",
+      "nameEn": "FRA",
+      "group": "I",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "SEN",
+      "name": "塞内加尔",
+      "nameEn": "SEN",
+      "group": "I",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "IRQ",
+      "name": "伊拉克",
+      "nameEn": "IRQ",
+      "group": "I",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "NOR",
+      "name": "挪威",
+      "nameEn": "NOR",
+      "group": "I",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "ARG",
+      "name": "阿根廷",
+      "nameEn": "ARG",
+      "group": "J",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "ALG",
+      "name": "阿尔及利亚",
+      "nameEn": "ALG",
+      "group": "J",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "AUT",
+      "name": "奥地利",
+      "nameEn": "AUT",
+      "group": "J",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "JOR",
+      "name": "约旦",
+      "nameEn": "JOR",
+      "group": "J",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "POR",
+      "name": "葡萄牙",
+      "nameEn": "POR",
+      "group": "K",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "COD",
+      "name": "刚果",
+      "nameEn": "COD",
+      "group": "K",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "UZB",
+      "name": "乌兹别克斯坦",
+      "nameEn": "UZB",
+      "group": "K",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "COL",
+      "name": "哥伦比亚",
+      "nameEn": "COL",
+      "group": "K",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "ENG",
+      "name": "英格兰",
+      "nameEn": "ENG",
+      "group": "L",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "CRO",
+      "name": "克罗地亚",
+      "nameEn": "CRO",
+      "group": "L",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "GHA",
+      "name": "加纳",
+      "nameEn": "GHA",
+      "group": "L",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    },
+    {
+      "code": "PAN",
+      "name": "巴拿马",
+      "nameEn": "PAN",
+      "group": "L",
+      "fifaRank": null,
+      "worldCups": 0,
+      "coach": "",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#43A047"
+      },
+      "players": []
+    }
+  ]
+}

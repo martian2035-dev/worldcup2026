@@ -1,0 +1,117 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import teamsData from "../../data/teams.json";
+import playersData from "../../data/players.json";
+import matchesData from "../../data/matches.json";
+import type { Match } from "../../types";
+
+export function getStaticPaths() {
+  return teamsData.teams.map((t: any) => ({ params: { slug: t.code } }));
+}
+
+const { slug } = Astro.params;
+const team = (teamsData.teams as any[]).find((t: any) => t.code === slug);
+if (!team) {
+  return new Response("球队未找到", { status: 404 });
+}
+
+const teamPlayers = (playersData.players as any[]).filter((p: any) => p.team === slug);
+const starPlayers = teamPlayers.filter((p: any) => p.isStar);
+const allMatches = (matchesData.matches as Match[]).filter(m =>
+  m.home.code === slug || m.away.code === slug
+).sort((a, b) => a.datetime.localeCompare(b.datetime));
+
+function getFlag(code: string) {
+  const flags: Record<string, string> = {
+    MEX:"🇲🇽",RSA:"🇿🇦",KOR:"🇰🇷",CZE:"🇨🇿",CAN:"🇨🇦",BIH:"🇧🇦",QAT:"🇶🇦",SUI:"🇨🇭",
+    BRA:"🇧🇷",MAR:"🇲🇦",HAI:"🇭🇹",SCO:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",USA:"🇺🇸",PAR:"🇵🇾",AUS:"🇦🇺",TUR:"🇹🇷",
+    GER:"🇩🇪",CUW:"🇨🇼",CIV:"🇨🇮",ECU:"🇪🇨",NED:"🇳🇱",JPN:"🇯🇵",SWE:"🇸🇪",TUN:"🇹🇳",
+    BEL:"🇧🇪",EGY:"🇪🇬",IRN:"🇮🇷",NZL:"🇳🇿",ESP:"🇪🇸",CPV:"🇨🇻",KSA:"🇸🇦",URU:"🇺🇾",
+    FRA:"🇫🇷",SEN:"🇸🇳",IRQ:"🇮🇶",NOR:"🇳🇴",ARG:"🇦🇷",ALG:"🇩🇿",AUT:"🇦🇹",JOR:"🇯🇴",
+    POR:"🇵🇹",COD:"🇨🇩",UZB:"🇺🇿",COL:"🇨🇴",ENG:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",CRO:"🇭🇷",GHA:"🇬🇭",PAN:"🇵🇦"
+  };
+  return flags[code] || "🏳️";
+}
+
+function formatTime(dt: string) { return dt.slice(5, 16).replace("T", " "); }
+---
+
+<BaseLayout title={`${team.name} - 球队详情`}>
+  <!-- Hero -->
+  <div style={`background:linear-gradient(135deg,${team.colors.primary}20,${team.colors.secondary}15);border-radius:16px;padding:24px;margin-bottom:20px;border:1px solid rgba(255,255,255,0.08);position:relative;overflow:hidden;`}>
+    <div style="position:absolute;top:-30px;right:-20px;font-size:120px;opacity:0.06;">{getFlag(team.code)}</div>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <span style="font-size:56px;">{getFlag(team.code)}</span>
+      <div>
+        <div style="font-size:24px;font-weight:800;">{team.name}</div>
+        <div style="color:var(--color-text-secondary);font-size:12px;">{team.nameEn} · FIFA 排名 #{team.fifaRank || "?"} · {team.group}组</div>
+        <div style="display:flex;gap:12px;margin-top:6px;">
+          {team.worldCups > 0 && <span style="color:var(--color-accent);font-size:11px;">⭐×{team.worldCups} 世界冠军</span>}
+          {team.coach && <span style="color:var(--color-text-secondary);font-size:11px;">教练: {team.coach}</span>}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Star Players -->
+  {starPlayers.length > 0 && (
+    <div style="margin-bottom:20px;">
+      <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:8px;">⭐ 明星球员</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;">
+        {starPlayers.map((p: any) => (
+          <a href={`/players/${p.id}`} style="text-decoration:none;">
+            <div class="gold-card" style="padding:14px;text-align:center;">
+              <div style="font-size:28px;margin-bottom:4px;">👤</div>
+              <div style="color:var(--color-accent);font-size:13px;font-weight:700;">{p.name}</div>
+              <div style="color:var(--color-text-secondary);font-size:10px;">{p.position} · {p.number}号</div>
+              <div style="display:flex;justify-content:center;gap:12px;margin-top:8px;">
+                <div><span style="color:var(--color-text-primary);font-size:14px;font-weight:700;">{p.stats.goals}</span><span style="color:var(--color-text-muted);font-size:8px;"> 进球</span></div>
+                <div><span style="color:var(--color-text-primary);font-size:14px;font-weight:700;">{p.stats.assists}</span><span style="color:var(--color-text-muted);font-size:8px;"> 助攻</span></div>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- Full Squad -->
+  <div style="margin-bottom:20px;">
+    <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:8px;">完整阵容 ({teamPlayers.length}人)</div>
+    <div class="glass-card" style="overflow:hidden;">
+      {teamPlayers.length > 0 ? (
+        teamPlayers.sort((a: any, b: any) => a.number - b.number).map((p: any) => (
+          <a href={`/players/${p.id}`} style="text-decoration:none;display:flex;padding:8px 14px;align-items:center;gap:10px;border-bottom:1px solid var(--color-border);">
+            <span style="color:var(--color-text-muted);font-size:10px;min-width:22px;">{p.number}</span>
+            <span style="color:var(--color-text-primary);font-size:12px;flex:1;">{p.name}</span>
+            <span style="color:var(--color-positive);font-size:10px;">{p.position}</span>
+          </a>
+        ))
+      ) : (
+        <div style="padding:20px;text-align:center;color:var(--color-text-muted);font-size:12px;">球员数据将在世界杯前更新</div>
+      )}
+    </div>
+  </div>
+
+  <!-- Matches -->
+  <div style="margin-bottom:20px;">
+    <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:8px;">赛程</div>
+    {allMatches.length > 0 ? (
+      allMatches.map(m => (
+        <div class="glass-card" style="padding:10px 14px;margin-bottom:6px;display:flex;align-items:center;gap:10px;">
+          <span style="color:var(--color-accent);font-size:11px;min-width:80px;">{formatTime(m.datetime)}</span>
+          <span style="flex:1;text-align:right;font-size:12px;color:var(--color-text-primary);">{getFlag(m.home.code)} {m.home.name}</span>
+          {m.score?.home !== null ? (
+            <span style="min-width:40px;text-align:center;font-size:16px;font-weight:800;color:var(--color-text-primary);">{m.score!.home}-{m.score!.away}</span>
+          ) : (
+            <span style="min-width:40px;text-align:center;color:var(--color-text-muted);">VS</span>
+          )}
+          <span style="flex:1;font-size:12px;color:var(--color-text-primary);">{m.away.name} {getFlag(m.away.code)}</span>
+          <span style="color:var(--color-text-muted);font-size:10px;">{m.venue.name}</span>
+        </div>
+      ))
+    ) : (
+      <div class="glass-card" style="padding:16px;text-align:center;color:var(--color-text-muted);">暂无比</div>
+    )}
+  </div>
+</BaseLayout>
