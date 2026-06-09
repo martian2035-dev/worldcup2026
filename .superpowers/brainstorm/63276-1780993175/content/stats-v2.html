@@ -1,0 +1,226 @@
+<h2>数据统计页面 — 完整版</h2>
+<p class="subtitle">参考 SofaScore/Transfermarkt/ESPN 等专业体育数据网站</p>
+
+<div class="mockup">
+  <div class="mockup-header">数据统计页 — 多维度排行榜 + 球队/球员数据</div>
+  <div class="mockup-body">
+    <div style="background: linear-gradient(180deg, #0a1628, #162d50); padding: 28px; min-height: 600px;">
+      <!-- Page header -->
+      <div style="color:#fff; font-size:20px; font-weight:700; margin-bottom:4px;">📈 数据中心</div>
+      <div style="color:#8ab4f8; font-size:12px; margin-bottom:18px;">积分榜 · 射手榜 · 助攻榜 · 球队统计 · 球员对比</div>
+      <!-- Main tabs -->
+      <div style="display:flex; gap:8px; margin-bottom:20px;">
+        <div style="background:rgba(255,215,0,0.12); color:#FFD700; padding:8px 18px; border-radius:20px; font-size:12px; font-weight:600;">球队积分</div>
+        <div style="background:rgba(255,255,255,0.04); color:#aaa; padding:8px 18px; border-radius:20px; font-size:12px;">球员数据</div>
+        <div style="background:rgba(255,255,255,0.04); color:#aaa; padding:8px 18px; border-radius:20px; font-size:12px;">球队对比</div>
+        <div style="background:rgba(255,255,255,0.04); color:#aaa; padding:8px 18px; border-radius:20px; font-size:12px;">比赛详情</div>
+      </div>
+      <!-- Group filter -->
+      <div style="display:flex; gap:6px; margin-bottom:16px; flex-wrap:wrap;">
+        <div style="background:rgba(255,215,0,0.12); color:#FFD700; padding:4px 12px; border-radius:14px; font-size:10px;">全部</div>
+        <div style="background:rgba(255,255,255,0.04); color:#888; padding:4px 12px; border-radius:14px; font-size:10px;">A组</div>
+        <div style="background:rgba(255,255,255,0.04); color:#888; padding:4px 12px; border-radius:14px; font-size:10px;">B组</div>
+        <div style="background:rgba(255,255,255,0.04); color:#888; padding:4px 12px; border-radius:14px; font-size:10px;">C组</div>
+        <div style="background:rgba(255,255,255,0.04); color:#888; padding:4px 12px; border-radius:14px; font-size:10px;">D组</div>
+        <span style="color:#555; font-size:10px; padding:4px 0;">···</span>
+        <div style="background:rgba(255,255,255,0.04); color:#888; padding:4px 12px; border-radius:14px; font-size:10px;">L组</div>
+      </div>
+      <!-- Standings table - FULL -->
+      <div style="background:rgba(255,255,255,0.03); border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.05); margin-bottom:20px;">
+        <div style="padding:10px 14px; background:rgba(255,255,255,0.04); color:#aaa; font-size:10px; text-transform:uppercase;">A组积分榜</div>
+        <!-- Table header -->
+        <div style="display:flex; padding:8px 14px; background:rgba(255,255,255,0.02); color:#666; font-size:9px; text-transform:uppercase;">
+          <span style="min-width:24px;">#</span>
+          <span style="flex:1;">球队</span>
+          <span style="min-width:28px; text-align:center;">场</span>
+          <span style="min-width:28px; text-align:center;">胜</span>
+          <span style="min-width:28px; text-align:center;">平</span>
+          <span style="min-width:28px; text-align:center;">负</span>
+          <span style="min-width:28px; text-align:center;">进</span>
+          <span style="min-width:28px; text-align:center;">失</span>
+          <span style="min-width:28px; text-align:center;">差</span>
+          <span style="min-width:36px; text-align:center; color:#FFD700;">分</span>
+        </div>
+        <!-- Row 1 -->
+        <div style="display:flex; padding:10px 14px; align-items:center; border-bottom:1px solid rgba(255,255,255,0.03); background:rgba(67,160,71,0.06);">
+          <span style="min-width:24px; color:#43A047; font-weight:700;">1</span>
+          <span style="flex:1; color:#fff; font-size:12px;">🇲🇽 墨西哥</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">3</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">2</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">1</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">0</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">6</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">2</span>
+          <span style="min-width:28px; text-align:center; color:#43A047;">+4</span>
+          <span style="min-width:36px; text-align:center; color:#FFD700; font-weight:700;">7</span>
+        </div>
+        <!-- Row 2 -->
+        <div style="display:flex; padding:10px 14px; align-items:center; border-bottom:1px solid rgba(255,255,255,0.03); background:rgba(67,160,71,0.03);">
+          <span style="min-width:24px; color:#43A047; font-weight:700;">2</span>
+          <span style="flex:1; color:#fff; font-size:12px;">🇰🇷 韩国</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">3</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">1</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">2</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">0</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">4</span>
+          <span style="min-width:28px; text-align:center; color:#ccc;">3</span>
+          <span style="min-width:28px; text-align:center; color:#43A047;">+1</span>
+          <span style="min-width:36px; text-align:center; color:#FFD700; font-weight:700;">5</span>
+        </div>
+        <!-- Row 3 (eliminated) -->
+        <div style="display:flex; padding:10px 14px; align-items:center; border-bottom:1px solid rgba(255,255,255,0.03);">
+          <span style="min-width:24px; color:#888;">3</span>
+          <span style="flex:1; color:#aaa; font-size:12px;">🇨🇿 捷克</span>
+          <span style="min-width:28px; text-align:center; color:#888;">3</span>
+          <span style="min-width:28px; text-align:center; color:#888;">0</span>
+          <span style="min-width:28px; text-align:center; color:#888;">2</span>
+          <span style="min-width:28px; text-align:center; color:#888;">1</span>
+          <span style="min-width:28px; text-align:center; color:#888;">2</span>
+          <span style="min-width:28px; text-align:center; color:#888;">5</span>
+          <span style="min-width:28px; text-align:center; color:#E53935;">-3</span>
+          <span style="min-width:36px; text-align:center; color:#888;">2</span>
+        </div>
+        <!-- Row 4 -->
+        <div style="display:flex; padding:10px 14px; align-items:center;">
+          <span style="min-width:24px; color:#888;">4</span>
+          <span style="flex:1; color:#aaa; font-size:12px;">🇿🇦 南非</span>
+          <span style="min-width:28px; text-align:center; color:#888;">3</span>
+          <span style="min-width:28px; text-align:center; color:#888;">0</span>
+          <span style="min-width:28px; text-align:center; color:#888;">1</span>
+          <span style="min-width:28px; text-align:center; color:#888;">2</span>
+          <span style="min-width:28px; text-align:center; color:#888;">1</span>
+          <span style="min-width:28px; text-align:center; color:#888;">3</span>
+          <span style="min-width:28px; text-align:center; color:#E53935;">-2</span>
+          <span style="min-width:36px; text-align:center; color:#888;">1</span>
+        </div>
+      </div>
+      <!-- Totals bar -->
+      <div style="display:flex; gap:14px; margin-bottom:20px;">
+        <div style="flex:1; background:rgba(255,255,255,0.03); border-radius:10px; padding:12px; text-align:center; border:1px solid rgba(255,255,255,0.05);">
+          <div style="color:#666; font-size:9px;">总进球</div>
+          <div style="color:#FFD700; font-size:18px; font-weight:700;">37</div>
+        </div>
+        <div style="flex:1; background:rgba(255,255,255,0.03); border-radius:10px; padding:12px; text-align:center; border:1px solid rgba(255,255,255,0.05);">
+          <div style="color:#666; font-size:9px;">场均进球</div>
+          <div style="color:#fff; font-size:18px; font-weight:700;">2.85</div>
+        </div>
+        <div style="flex:1; background:rgba(255,255,255,0.03); border-radius:10px; padding:12px; text-align:center; border:1px solid rgba(255,255,255,0.05);">
+          <div style="color:#666; font-size:9px;">黄/红牌</div>
+          <div style="color:#fff; font-size:18px; font-weight:700;">28/3</div>
+        </div>
+        <div style="flex:1; background:rgba(255,255,255,0.03); border-radius:10px; padding:12px; text-align:center; border:1px solid rgba(255,255,255,0.05);">
+          <div style="color:#666; font-size:9px;">总观众</div>
+          <div style="color:#fff; font-size:18px; font-weight:700;">2.4M</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:16px;">
+  <h3>球队积分 Tab（当前展示）</h3>
+  <div class="pros-cons">
+    <div class="pros"><h4>数据维度</h4><ul>
+      <li>场/胜/平/负/进/失/差/分 完整积分表</li>
+      <li>出线区绿色高亮，淘汰区灰色</li>
+      <li>按小组筛选，可展开查看全部12组</li>
+      <li>顶部汇总栏：总进球、场均、纪律、观众</li>
+    </ul></div>
+    <div class="cons"><h4>其他 Tab</h4><ul>
+      <li><strong>球员数据</strong>：射手榜(进球/点球/射门数/射正率/出场时间)、助攻榜、射手王竞争详情</li>
+      <li><strong>球队对比</strong>：双队雷达图(控球/射门/传球/抢断/犯规/角球)、场均数据排名</li>
+      <li><strong>比赛详情</strong>：单场赛后统计(控球率对比条、射门柱状图、传球网络、球员评分)</li>
+    </ul></div>
+  </div>
+</div>
+
+<hr style="border-color:rgba(255,255,255,0.06); margin:24px 0;">
+
+<div class="mockup">
+  <div class="mockup-header">球员数据子页 — 射手榜 & 助攻榜</div>
+  <div class="mockup-body">
+    <div style="background: linear-gradient(180deg, #0a1628, #162d50); padding: 28px; min-height: 450px;">
+      <!-- Sub-tabs -->
+      <div style="display:flex; gap:8px; margin-bottom:16px;">
+        <div style="background:rgba(255,215,0,0.12); color:#FFD700; padding:6px 16px; border-radius:16px; font-size:11px; font-weight:600;">⚽ 射手榜</div>
+        <div style="background:rgba(255,255,255,0.04); color:#aaa; padding:6px 16px; border-radius:16px; font-size:11px;">🎯 助攻榜</div>
+        <div style="background:rgba(255,255,255,0.04); color:#aaa; padding:6px 16px; border-radius:16px; font-size:11px;">🏃 跑动距离</div>
+        <div style="background:rgba(255,255,255,0.04); color:#aaa; padding:6px 16px; border-radius:16px; font-size:11px;">🟨 纪律榜</div>
+      </div>
+      <!-- Full scorer table -->
+      <div style="background:rgba(255,255,255,0.03); border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.05);">
+        <div style="display:flex; padding:8px 14px; background:rgba(255,255,255,0.04); color:#666; font-size:9px; text-transform:uppercase;">
+          <span style="min-width:24px;">#</span>
+          <span style="flex:1;">球员</span>
+          <span style="min-width:40px; text-align:center;">进球</span>
+          <span style="min-width:36px; text-align:center;">点球</span>
+          <span style="min-width:40px; text-align:center;">射门</span>
+          <span style="min-width:44px; text-align:center;">射正率</span>
+          <span style="min-width:44px; text-align:center;">出场</span>
+          <span style="min-width:48px; text-align:center;">分钟/球</span>
+        </div>
+        <div style="display:flex; padding:10px 14px; align-items:center; border-bottom:1px solid rgba(255,255,255,0.03); background:rgba(255,215,0,0.06);">
+          <span style="min-width:24px; color:#FFD700; font-weight:700;">1</span>
+          <span style="flex:1; color:#fff; font-size:12px;">🇧🇷 维尼修斯 <span style="color:#666; font-size:9px;">LW·巴西</span></span>
+          <span style="min-width:40px; text-align:center; color:#FFD700; font-weight:700;">5</span>
+          <span style="min-width:36px; text-align:center; color:#ccc;">1</span>
+          <span style="min-width:40px; text-align:center; color:#ccc;">14</span>
+          <span style="min-width:44px; text-align:center; color:#43A047;">36%</span>
+          <span style="min-width:44px; text-align:center; color:#ccc;">3</span>
+          <span style="min-width:48px; text-align:center; color:#8ab4f8;">54'</span>
+        </div>
+        <div style="display:flex; padding:10px 14px; align-items:center; border-bottom:1px solid rgba(255,255,255,0.03);">
+          <span style="min-width:24px; color:#C0C0C0; font-weight:700;">2</span>
+          <span style="flex:1; color:#fff; font-size:12px;">🇫🇷 姆巴佩 <span style="color:#666; font-size:9px;">ST·法国</span></span>
+          <span style="min-width:40px; text-align:center; color:#fff; font-weight:600;">4</span>
+          <span style="min-width:36px; text-align:center; color:#ccc;">0</span>
+          <span style="min-width:40px; text-align:center; color:#ccc;">16</span>
+          <span style="min-width:44px; text-align:center; color:#43A047;">25%</span>
+          <span style="min-width:44px; text-align:center; color:#ccc;">3</span>
+          <span style="min-width:48px; text-align:center; color:#8ab4f8;">68'</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:16px;">
+  <div style="background:rgba(255,255,255,0.02); border-radius:12px; padding:18px; border:1px solid rgba(255,255,255,0.05);">
+    <h3>📋 完整统计数据清单</h3>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; font-size:11px;">
+      <div>
+        <div style="color:#FFD700; font-weight:600; margin-bottom:6px;">📊 球队积分榜</div>
+        <ul style="color:#aaa; padding-left:16px; margin:4px 0;">
+          <li>场次 / 胜 / 平 / 负</li>
+          <li>进球 / 失球 / 净胜球</li>
+          <li>积分 / 场均积分</li>
+          <li>黄牌 / 红牌</li>
+          <li>小组排名 / 总排名</li>
+          <li>晋级状态标识</li>
+        </ul>
+      </div>
+      <div>
+        <div style="color:#FFD700; font-weight:600; margin-bottom:6px;">⚽ 球员数据</div>
+        <ul style="color:#aaa; padding-left:16px; margin:4px 0;">
+          <li>进球 / 点球</li>
+          <li>助攻 / 关键传球</li>
+          <li>射门数 / 射正率</li>
+          <li>出场时间 / 分钟每球</li>
+          <li>跑动距离</li>
+          <li>黄牌 / 红牌</li>
+        </ul>
+      </div>
+      <div>
+        <div style="color:#FFD700; font-weight:600; margin-bottom:6px;">🏟️ 球队/比赛统计</div>
+        <ul style="color:#aaa; padding-left:16px; margin:4px 0;">
+          <li>控球率 / 传球成功率</li>
+          <li>射门数 / 射正数</li>
+          <li>角球 / 越位</li>
+          <li>犯规 / 抢断</li>
+          <li>球员评分 (SofaScore风格)</li>
+          <li>预期进球 xG</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

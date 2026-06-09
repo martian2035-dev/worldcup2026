@@ -1,0 +1,134 @@
+<h2>首页布局方案</h2>
+<p class="subtitle">球场之夜风格 — 赛事总览仪表盘，一屏展示所有关键信息</p>
+
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">方案 A：卡片网格布局</div>
+    <div class="mockup-body">
+      <div style="background: linear-gradient(180deg, #0a1628, #162d50); padding: 20px; min-height: 480px;">
+        <!-- Nav -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div style="color:#fff; font-weight:700; font-size:14px;">⚽ World Cup 2026</div>
+          <div style="display:flex; gap:12px;">
+            <div style="color:#8ab4f8; font-size:11px;">赛程</div>
+            <div style="color:#aaa; font-size:11px;">积分</div>
+            <div style="color:#aaa; font-size:11px;">球队</div>
+            <div style="color:#aaa; font-size:11px;">数据</div>
+          </div>
+        </div>
+        <!-- Hero countdown -->
+        <div style="background: rgba(255,255,255,0.06); border-radius: 12px; padding: 14px; text-align:center; margin-bottom: 16px; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
+          <div style="color:#aaa; font-size:10px; text-transform:uppercase;">距世界杯开幕</div>
+          <div style="color:#FFD700; font-size:24px; font-weight:700;">3 天 12:34:56</div>
+        </div>
+        <!-- Today's matches row -->
+        <div style="margin-bottom: 14px;">
+          <div style="color:#aaa; font-size:10px; margin-bottom: 8px; text-transform:uppercase;">今日比赛</div>
+          <div style="display:flex; gap:8px;">
+            <div style="flex:1; background:rgba(255,255,255,0.06); border-radius:8px; padding:10px; text-align:center; border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-size:18px;">🇲🇽 🇿🇦</div><div style="color:#FFD700; font-size:10px;">03:00</div>
+            </div>
+            <div style="flex:1; background:rgba(255,255,255,0.06); border-radius:8px; padding:10px; text-align:center; border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-size:18px;">🇰🇷 🇨🇿</div><div style="color:#FFD700; font-size:10px;">10:00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Group cards grid -->
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px;">
+          <div style="background:rgba(255,255,255,0.04); border-radius:6px; padding:8px; text-align:center;">
+            <div style="color:#FFD700; font-size:9px; font-weight:600;">A组</div>
+            <div style="color:#ccc; font-size:9px;">🇲🇽 🇿🇦 🇰🇷 🇨🇿</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border-radius:6px; padding:8px; text-align:center;">
+            <div style="color:#FFD700; font-size:9px; font-weight:600;">B组</div>
+            <div style="color:#ccc; font-size:9px;">🇨🇦 🇧🇦 🇶🇦 🇨🇭</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border-radius:6px; padding:8px; text-align:center;">
+            <div style="color:#FFD700; font-size:9px; font-weight:600;">C组</div>
+            <div style="color:#ccc; font-size:9px;">🇧🇷 🇲🇦 🇭🇹 🏴󠁧󠁢󠁳󠁣󠁴󠁿</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border-radius:6px; padding:8px; text-align:center;">
+            <div style="color:#FFD700; font-size:9px; font-weight:600;">D组</div>
+            <div style="color:#ccc; font-size:9px;">🇺🇸 🇵🇾 🇦🇺 🇹🇷</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border-radius:6px; padding:8px; text-align:center;">
+            <div style="color:#FFD700; font-size:9px; font-weight:600;">E组</div>
+            <div style="color:#ccc; font-size:9px;">🇩🇪 🇨🇼 🇨🇮 🇪🇨</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04); border-radius:6px; padding:8px; text-align:center;">
+            <div style="color:#FFD700; font-size:9px; font-weight:600;">F组</div>
+            <div style="color:#ccc; font-size:9px;">🇳🇱 🇯🇵 🇸🇪 🇹🇳</div>
+          </div>
+        </div>
+        <div style="color:#555; font-size:9px; text-align:center; margin-top:10px;">▼ 展开全部12组</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">方案 B：列表 + 侧边栏布局</div>
+    <div class="mockup-body">
+      <div style="background: linear-gradient(180deg, #0a1628, #162d50); padding: 20px; min-height: 480px; display:flex; gap:14px;">
+        <!-- Sidebar -->
+        <div style="width:160px; flex-shrink:0;">
+          <div style="color:#fff; font-weight:700; font-size:14px; margin-bottom:16px;">⚽ WC2026</div>
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="color:#FFD700; font-size:11px; padding:4px 8px; background:rgba(255,215,0,0.08); border-radius:4px;">🏠 首页</div>
+            <div style="color:#aaa; font-size:11px; padding:4px 8px;">📅 赛程</div>
+            <div style="color:#aaa; font-size:11px; padding:4px 8px;">📊 积分</div>
+            <div style="color:#aaa; font-size:11px; padding:4px 8px;">👥 球队</div>
+            <div style="color:#aaa; font-size:11px; padding:4px 8px;">📈 数据</div>
+            <div style="color:#aaa; font-size:11px; padding:4px 8px;">📺 直播</div>
+          </div>
+        </div>
+        <!-- Main content -->
+        <div style="flex:1;">
+          <div style="background: rgba(255,255,255,0.06); border-radius: 12px; padding: 14px; text-align:center; margin-bottom: 12px; border:1px solid rgba(255,255,255,0.08);">
+            <div style="color:#aaa; font-size:10px;">距揭幕战</div>
+            <div style="color:#FFD700; font-size:22px; font-weight:700;">3 天 12:34:56</div>
+          </div>
+          <div style="color:#aaa; font-size:10px; margin-bottom:6px; text-transform:uppercase;">近期比赛</div>
+          <div style="background:rgba(255,255,255,0.05); border-radius:8px; padding:10px; margin-bottom:4px; display:flex; align-items:center; justify-content:space-between; border:1px solid rgba(255,255,255,0.06);">
+            <span style="color:#ccc; font-size:12px;">🇲🇽 墨西哥 vs 南非 🇿🇦</span>
+            <span style="color:#FFD700; font-size:10px;">6/12 03:00</span>
+          </div>
+          <div style="background:rgba(255,255,255,0.05); border-radius:8px; padding:10px; margin-bottom:4px; display:flex; align-items:center; justify-content:space-between; border:1px solid rgba(255,255,255,0.06);">
+            <span style="color:#ccc; font-size:12px;">🇰🇷 韩国 vs 捷克 🇨🇿</span>
+            <span style="color:#FFD700; font-size:10px;">6/12 10:00</span>
+          </div>
+          <div style="background:rgba(255,255,255,0.05); border-radius:8px; padding:10px; margin-bottom:4px; display:flex; align-items:center; justify-content:space-between; border:1px solid rgba(255,255,255,0.06);">
+            <span style="color:#ccc; font-size:12px;">🇧🇷 巴西 vs 摩洛哥 🇲🇦</span>
+            <span style="color:#FFD700; font-size:10px;">6/14 06:00</span>
+          </div>
+          <div style="color:#555; font-size:9px; text-align:center; margin-top:8px;">▼ 查看完整赛程</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 24px;">
+  <h3>关键区别</h3>
+  <div class="pros-cons">
+    <div class="pros"><h4>方案 A — 卡片网格</h4><ul>
+      <li>一屏展示全部 12 组入口</li>
+      <li>信息密度高，适合快速浏览</li>
+      <li>移动端可堆叠为单列</li>
+    </ul></div>
+    <div class="cons"><h4>方案 A 不足</h4><ul>
+      <li>小组卡片较小，信息有限</li>
+      <li>视觉可能偏拥挤</li>
+    </ul></div>
+  </div>
+  <div class="pros-cons" style="margin-top:8px;">
+    <div class="pros"><h4>方案 B — 侧边栏+列表</h4><ul>
+      <li>导航始终可见，结构清晰</li>
+      <li>列表展示更多比赛细节</li>
+      <li>更接近传统体育 App 布局</li>
+    </ul></div>
+    <div class="cons"><h4>方案 B 不足</h4><ul>
+      <li>移动端侧边栏需改为汉堡菜单</li>
+      <li>小组入口不明显</li>
+    </ul></div>
+  </div>
+</div>
