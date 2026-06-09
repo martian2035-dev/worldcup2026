@@ -7,6 +7,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://northwang.github.io',
-  base: '/worldcup',
+  site: 'https://martian2035-dev.github.io',
+  base: '/worldcup2026',
 });

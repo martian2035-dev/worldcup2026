@@ -1,6 +1,8 @@
-name: Fetch & Deploy
+name: Deploy to GitHub Pages
 
 on:
+  push:
+    branches: [main]
   schedule:
     # Every 2 hours during tournament (Jun 12 - Jul 19)
     - cron: '0 */2 * 6-7 *'
@@ -12,8 +14,10 @@ permissions:
   id-token: write
 
 jobs:
-  fetch-and-update:
+  fetch-data:
     runs-on: ubuntu-latest
+    # Only run data fetch on schedule or manual trigger, not on push
+    if: github.event_name != 'push'
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -42,8 +46,10 @@ jobs:
           git push
 
   build-and-deploy:
-    needs: fetch-and-update
-    if: always()
+    needs: [fetch-data]
+    if: |
+      always() &&
+      (needs.fetch-data.result == 'success' || needs.fetch-data.result == 'skipped')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
