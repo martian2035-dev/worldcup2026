@@ -59,4 +59,4 @@ git push origin prediction-submissions
 git switch main
 ```
 
-After deploying the Worker, set the repository variable `PREDICTION_API_BASE` to the Worker URL, then rerun the Pages deploy workflow.
+After deploying the Worker, rerun the Pages deploy workflow so the site picks up the latest Worker-backed prediction code. The default Worker URL is committed in `src/data/predictions/config.json`; only set `PREDICTION_API_BASE` manually if the Worker URL changes.

@@ -15,6 +15,7 @@ const BETS_RAW_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAM
 
 // Worker URL：优先环境变量（CI 构建注入），fallback config.json（本地开发）
 import predictionConfig from "../data/predictions/config.json";
+import { markLocalUserSnapshot, resolveUserRecordSnapshot, type LocalUserRecord } from "./user-record-cache.js";
 const PREDICTION_API_BASE = import.meta.env.PUBLIC_PREDICTION_API_BASE || predictionConfig.apiBase || "";
 
 // ============================================================
@@ -109,12 +110,13 @@ export function clearUsername(): void {
   try { localStorage.removeItem(USERNAME_KEY); } catch {}
 }
 
-export function setLocalUserCache(user: UserRecord): void {
+export function setLocalUserCache(user: UserRecord, options: { stamp?: boolean } = {}): void {
   if (typeof window === "undefined") return;
-  try { localStorage.setItem(USER_CACHE_KEY, JSON.stringify(user)); } catch {}
+  const snapshot = options.stamp === false ? user : markLocalUserSnapshot(user);
+  try { localStorage.setItem(USER_CACHE_KEY, JSON.stringify(snapshot)); } catch {}
 }
 
-export function getLocalUserCache(): UserRecord | null {
+export function getLocalUserCache(): LocalUserRecord | null {
   if (typeof window === "undefined") return null;
   try {
     const raw = localStorage.getItem(USER_CACHE_KEY);
@@ -190,13 +192,13 @@ export async function fetchBetData(): Promise<BetData> {
 }
 
 export async function fetchUserRecord(username: string): Promise<UserRecord | null> {
+  const cached = getLocalUserCache();
+
   // 1. GitHub raw（Worker 写入后由 aggregate 工作流聚合至此）
   const data = await fetchBetData();
-  if (data.users[username]) return data.users[username];
-
-  // 2. 本地缓存
-  const cached = getLocalUserCache();
-  if (cached && cached.username === username) return cached;
+  const remote = data.users[username] ?? null;
+  const resolved = resolveUserRecordSnapshot(remote, cached, username, data.lastUpdated);
+  if (resolved) return resolved;
 
   return null;
 }

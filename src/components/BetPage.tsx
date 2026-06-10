@@ -70,7 +70,7 @@ export default function BetPage({ matchData }: { matchData?: string }) {
 
     if (remoteUser) {
       setUser(remoteUser);
-      setLocalUserCache(remoteUser);
+      setLocalUserCache(remoteUser, { stamp: false });
       setShowAuth(false);
     } else {
       // 2. 本地缓存

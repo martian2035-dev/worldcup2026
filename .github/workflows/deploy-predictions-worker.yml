@@ -27,12 +27,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PREDICTIONS_GITHUB_TOKEN }}
           NPM_CONFIG_LEGACY_PEER_DEPS: "true"
 
-      - name: Save Worker URL
-        if: steps.deploy.outputs.deployment-url != ''
-        run: gh variable set PREDICTION_API_BASE --body "${{ steps.deploy.outputs.deployment-url }}"
-        env:
-          GH_TOKEN: ${{ github.token }}
-
       - name: Rebuild Pages with Worker URL
         if: steps.deploy.outputs.deployment-url != ''
         run: gh workflow run deploy.yml -f fetch-data=false
