@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getProfile, getBets, settlePendingBets, type LocalProfile, type LocalBet, type MatchResult } from "../lib/store";
+import { getLocalProfile, getLocalBets, settleLocalBets, type LocalProfile, type LocalBet, type MatchResult } from "../lib/store";
 
 export default function MinePage() {
   const [profile, setProfile] = useState<LocalProfile | null>(null);
@@ -7,27 +7,24 @@ export default function MinePage() {
   const [settled, setSettled] = useState(0);
 
   useEffect(() => {
-    const p = getProfile();
+    const p = getLocalProfile();
     setProfile(p);
-    if (p) {
-      refreshBets();
-    }
+    if (p) refreshBets();
   }, []);
 
   const refreshBets = async () => {
-    // 先结算
     try {
       const res = await fetch("/matches.json");
       const data = await res.json();
       const matches: MatchResult[] = data.matches || [];
-      const s = settlePendingBets(matches);
+      const s = settleLocalBets(matches);
       if (s > 0) {
         setSettled(s);
-        const updated = getProfile();
+        const updated = getLocalProfile();
         if (updated) setProfile(updated);
       }
     } catch {}
-    setBets(getBets());
+    setBets(getLocalBets());
   };
 
   if (!profile) return (

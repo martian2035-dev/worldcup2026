@@ -1,63 +1,59 @@
 import { useState, useEffect } from "react";
-import { getProfile, type LocalProfile } from "../lib/store";
-
-interface Row {
-  username: string;
-  beans: number;
-  totalBets: number;
-  wonBets: number;
-  winRate: number;
-}
+import { fetchRemoteLeaderboard, getLocalProfile, type RemoteUser } from "../lib/store";
 
 export default function LeaderboardTable() {
-  const [rows, setRows] = useState<Row[]>([]);
+  const [rows, setRows] = useState<RemoteUser[]>([]);
   const [loading, setLoading] = useState(true);
+  const [fromGitHub, setFromGitHub] = useState(false);
+  const localProfile = getLocalProfile();
 
   useEffect(() => {
-    // 本地用户数据
-    const localProfile = getProfile();
-    const list: Row[] = [];
+    (async () => {
+      // 优先从 GitHub 加载
+      const remote = await fetchRemoteLeaderboard();
+      if (remote.length > 0) {
+        setFromGitHub(true);
+        setRows(remote);
+      } else {
+        // fallback: 仅显示本地
+        setFromGitHub(false);
+      }
+      setLoading(false);
+    })();
+  }, []);
 
-    if (localProfile) {
-      list.push({
+  // 本地数据合并到排行榜（如果远程数据中没有本地用户）
+  useEffect(() => {
+    if (loading || !localProfile) return;
+    if (fromGitHub) {
+      // 检查远程数据是否包含本地用户
+      const found = rows.find(r => r.username === localProfile.username);
+      if (!found) {
+        // 本地用户尚未同步，追加到排行榜末尾
+        const localUser: RemoteUser = {
+          username: localProfile.username,
+          beans: localProfile.beans,
+          totalBets: localProfile.totalBets,
+          wonBets: localProfile.wonBets,
+          createdAt: localProfile.createdAt,
+          bets: [],
+        };
+        setRows(prev => [...prev, localUser].sort((a, b) => b.beans - a.beans));
+      }
+    } else if (localProfile && rows.length === 0) {
+      // 纯本地模式
+      setRows([{
         username: localProfile.username,
         beans: localProfile.beans,
         totalBets: localProfile.totalBets,
         wonBets: localProfile.wonBets,
-        winRate: localProfile.totalBets > 0
-          ? Math.round((localProfile.wonBets / localProfile.totalBets) * 1000) / 10
-          : 0,
-      });
+        createdAt: localProfile.createdAt,
+        bets: [],
+      }]);
     }
+  }, [loading, fromGitHub, localProfile]);
 
-    // 模拟排行榜数据（纯娱乐展示）
-    const mockNames = [
-      "⚽ 球王贝贝", "🌟 世界杯预言家", "🎯 百发百中", "🏆 冠军相", "🔮 预测大师",
-      "💫 足球精灵", "🎪 绿茵先知", "🧿 章鱼保罗", "🦅 雄鹰之眼", "🌪 飓风下注",
-    ];
-    const baseBeans = localProfile?.beans ?? 10000;
-
-    for (let i = 0; i < mockNames.length; i++) {
-      // 使用 pseudo-random 基于名字生成稳定数据
-      const seed = mockNames[i].split("").reduce((s, c) => s + c.charCodeAt(0), 0);
-      const beans = baseBeans + Math.round((Math.sin(seed * 127.1) + 1) * 5000);
-      const total = 10 + (seed % 30);
-      const won = 3 + (seed % total);
-      list.push({
-        username: mockNames[i],
-        beans: Math.max(1000, beans),
-        totalBets: total,
-        wonBets: won,
-        winRate: Math.round((won / total) * 1000) / 10,
-      });
-    }
-
-    list.sort((a, b) => b.beans - a.beans);
-    setRows(list);
-    setLoading(false);
-  }, []);
-
-  if (loading) return <div style={{ padding: 40, textAlign: "center", color: "var(--color-text-muted)" }}>加载中...</div>;
+  if (loading) return <div style={{ padding: 40, textAlign: "center", color: "var(--color-text-muted)" }}>加载排行榜...</div>;
 
   if (rows.length === 0) return (
     <div style={{ padding: 40, textAlign: "center", color: "var(--color-text-muted)", fontSize: 13 }}>
@@ -82,23 +78,29 @@ export default function LeaderboardTable() {
             <tr key={r.username} style={{
               borderTop: "1px solid rgba(255,255,255,0.04)",
               background: i < 3 ? "rgba(255,215,0,0.03)" : undefined,
-              fontWeight: r.username === getProfile()?.username ? 700 : 400,
+              fontWeight: r.username === localProfile?.username ? 700 : 400,
             }}>
               <td style={{ padding: "10px 12px", fontWeight: 700 }}>
                 {i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : `#${i + 1}`}
               </td>
-              <td style={{ padding: "10px 12px" }}>{r.username}{r.username === getProfile()?.username ? " 👈" : ""}</td>
+              <td style={{ padding: "10px 12px" }}>
+                {r.username}
+                {r.username === localProfile?.username && <span style={{ color: "var(--color-accent)", marginLeft: 4, fontSize: 10 }}>👈 你</span>}
+              </td>
               <td style={{ padding: "10px 12px", textAlign: "right", color: "var(--color-accent)", fontWeight: 700 }}>🫘 {r.beans.toLocaleString()}</td>
               <td style={{ padding: "10px 12px", textAlign: "right", color: "var(--color-text-secondary)" }}>{r.totalBets}</td>
-              <td style={{ padding: "10px 12px", textAlign: "right", color: r.winRate >= 50 ? "var(--color-positive)" : "var(--color-text-secondary)" }}>
-                {r.winRate}%
+              <td style={{ padding: "10px 12px", textAlign: "right", color: (r.totalBets > 0 && (r.wonBets / r.totalBets) >= 0.5) ? "var(--color-positive)" : "var(--color-text-secondary)" }}>
+                {r.totalBets > 0 ? Math.round((r.wonBets / r.totalBets) * 1000) / 10 : 0}%
               </td>
             </tr>
           ))}
         </tbody>
       </table>
-      <p style={{ color: "var(--color-text-muted)", fontSize: 9, textAlign: "center", marginTop: 12 }}>
-        * 排行榜为本地数据 + 模拟展示，不代表真实排名
+
+      <p style={{ color: "var(--color-text-muted)", fontSize: 9, textAlign: "center", marginTop: 12, lineHeight: 1.6 }}>
+        {fromGitHub
+          ? "数据来源: GitHub 仓库 · 每笔投注经 workflow_dispatch 提交"
+          : "当前为本地模式 · 配置 GitHub Token 可参与真实排名"}
       </p>
     </div>
   );

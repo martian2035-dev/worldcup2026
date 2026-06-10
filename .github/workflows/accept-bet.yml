@@ -1,0 +1,64 @@
+name: Accept Bet
+
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: '玩家昵称'
+        required: true
+      match_id:
+        description: '比赛 ID'
+        required: true
+      match_label:
+        description: '比赛标签（主队 vs 客队）'
+        required: true
+      bet_type:
+        description: '投注类型 (home_win/draw/away_win)'
+        required: true
+        default: 'home_win'
+      amount:
+        description: '投注金额'
+        required: true
+        default: '10'
+      odds:
+        description: '赔率'
+        required: true
+        default: '2.50'
+
+permissions:
+  contents: write
+
+jobs:
+  process-bet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Process bet
+        run: |
+          tsx scripts/process-bet.ts
+        env:
+          INPUT_USERNAME: ${{ github.event.inputs.username }}
+          INPUT_MATCH_ID: ${{ github.event.inputs.match_id }}
+          INPUT_MATCH_LABEL: ${{ github.event.inputs.match_label }}
+          INPUT_BET_TYPE: ${{ github.event.inputs.bet_type }}
+          INPUT_AMOUNT: ${{ github.event.inputs.amount }}
+          INPUT_ODDS: ${{ github.event.inputs.odds }}
+
+      - name: Commit bet data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/bets/
+          git diff --staged --quiet || (git commit -m "bet: ${{ github.event.inputs.username }} → ${{ github.event.inputs.match_label }}" && git push)
