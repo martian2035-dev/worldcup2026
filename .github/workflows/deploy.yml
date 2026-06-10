@@ -66,7 +66,7 @@ jobs:
 
       - run: pnpm run build
         env:
-          PREDICTION_API_BASE: ${{ vars.PREDICTION_API_BASE || '' }}
+          PUBLIC_PREDICTION_API_BASE: ${{ vars.PREDICTION_API_BASE || '' }}
 
       - uses: actions/configure-pages@v4
 

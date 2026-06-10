@@ -14,8 +14,8 @@ const REPO_OWNER = "martian2035-dev";
 const REPO_NAME = "worldcup2026";
 const BETS_RAW_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/src/data/bets/index.json`;
 
-// Worker URL 由 GitHub Actions 构建时通过环境变量注入
-const PREDICTION_API_BASE = import.meta.env.PREDICTION_API_BASE || "";
+// Worker URL 由 GitHub Actions 构建时通过 PUBLIC_PREDICTION_API_BASE 环境变量注入
+const PREDICTION_API_BASE = import.meta.env.PUBLIC_PREDICTION_API_BASE || "";
 
 // ============================================================
 // 类型
