@@ -1,29 +1,46 @@
 import { useState, useEffect } from "react";
-import { supabase, type LeaderboardRow } from "../lib/supabase";
+import { supabase, isSupabaseConfigured, type LeaderboardRow } from "../lib/supabase";
 
 export default function LeaderboardTable() {
   const [rows, setRows] = useState<LeaderboardRow[]>([]);
   const [loading, setLoading] = useState(true);
+  const [noSupabase, setNoSupabase] = useState(false);
 
   useEffect(() => {
-    supabase
-      .from("profiles")
-      .select("username, beans, total_bets, won_bets")
-      .order("beans", { ascending: false })
-      .limit(100)
-      .then(({ data }) => {
+    if (!isSupabaseConfigured()) {
+      setNoSupabase(true);
+      setLoading(false);
+      return;
+    }
+
+    (async () => {
+      try {
+        const { data } = await supabase
+          .from("profiles")
+          .select("username, beans, total_bets, won_bets")
+          .order("beans", { ascending: false })
+          .limit(100);
         if (data) {
           setRows(data.map((r: any) => ({
             ...r,
             win_rate: r.total_bets > 0 ? Math.round((r.won_bets / r.total_bets) * 1000) / 10 : 0,
           })));
         }
-        setLoading(false);
-      });
+      } catch { /* ignore */ }
+      setLoading(false);
+    })();
   }, []);
 
   if (loading) {
     return <div style={{ padding: 40, textAlign: "center", color: "var(--color-text-muted)" }}>加载中...</div>;
+  }
+
+  if (noSupabase) {
+    return (
+      <div style={{ padding: 40, textAlign: "center", color: "var(--color-text-muted)", fontSize: 13 }}>
+        需要 <a href="/bet/" style={{ color: "var(--color-accent)" }}>配置 Supabase</a> 后查看排行榜
+      </div>
+    );
   }
 
   if (rows.length === 0) {

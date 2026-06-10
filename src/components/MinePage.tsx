@@ -1,25 +1,36 @@
 import { useState, useEffect } from "react";
-import { supabase, type Profile, type Bet } from "../lib/supabase";
+import { supabase, isSupabaseConfigured, type Profile, type Bet } from "../lib/supabase";
 
 export default function MinePage() {
   const [bets, setBets] = useState<Bet[]>([]);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
+  const [noSupabase, setNoSupabase] = useState(false);
 
   useEffect(() => {
-    supabase.auth.getSession().then(async ({ data }) => {
-      if (!data.session) { setLoading(false); return; }
-      const { data: prof } = await supabase.from("profiles").select("*").eq("id", data.session.user.id).single();
-      if (prof) {
-        setProfile(prof as Profile);
-        const { data: betsData } = await supabase.from("bets").select("*").eq("user_id", (prof as Profile).id).order("created_at", { ascending: false }).limit(100);
-        if (betsData) setBets(betsData as Bet[]);
-      }
+    if (!isSupabaseConfigured()) {
+      setNoSupabase(true);
       setLoading(false);
-    });
+      return;
+    }
+
+    (async () => {
+      try {
+        const { data } = await supabase.auth.getSession();
+        if (!data.session) { setLoading(false); return; }
+        const { data: prof } = await supabase.from("profiles").select("*").eq("id", data.session.user.id).single();
+        if (prof) {
+          setProfile(prof as Profile);
+          const { data: betsData } = await supabase.from("bets").select("*").eq("user_id", (prof as Profile).id).order("created_at", { ascending: false }).limit(100);
+          if (betsData) setBets(betsData as Bet[]);
+        }
+      } catch { /* ignore */ }
+      setLoading(false);
+    })();
   }, []);
 
   if (loading) return <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>加载中...</div>;
+  if (noSupabase) return <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)", fontSize: 13 }}>需要 <a href="/bet/" style={{ color: "var(--color-accent)" }}>配置 Supabase</a> 后可用</div>;
   if (!profile) return <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>请先 <a href="/bet/" style={{ color: "var(--color-accent)" }}>登录</a> 查看竞猜记录</div>;
   if (!bets.length) return <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>还没有投注记录，<a href="/bet/" style={{ color: "var(--color-accent)" }}>去竞猜</a></div>;
 

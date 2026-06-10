@@ -1,13 +1,19 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
-const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || "https://placeholder.supabase.co";
-const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || "placeholder";
+const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || "";
+const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || "";
+
+/** 检查 Supabase 是否已配置 */
+export function isSupabaseConfigured(): boolean {
+  return supabaseUrl.length > 0 && supabaseUrl !== "https://placeholder.supabase.co"
+    && supabaseAnonKey.length > 0 && supabaseAnonKey !== "placeholder";
+}
 
 let _client: SupabaseClient | null = null;
 
 function getClient(): SupabaseClient {
   if (!_client) {
-    _client = createClient(supabaseUrl, supabaseAnonKey, {
+    _client = createClient(supabaseUrl || "https://placeholder.supabase.co", supabaseAnonKey || "placeholder", {
       auth: {
         autoRefreshToken: true,
         persistSession: true,
@@ -18,25 +24,13 @@ function getClient(): SupabaseClient {
   return _client;
 }
 
-/** 检查 Supabase 是否已配置 */
-export function isSupabaseConfigured(): boolean {
-  return (
-    import.meta.env.PUBLIC_SUPABASE_URL?.length > 0 &&
-    import.meta.env.PUBLIC_SUPABASE_ANON_KEY?.length > 0
-  );
-}
-
-// Proxy-based lazy supabase client: 所有方法调用时才初始化
-export const supabase = new Proxy({} as SupabaseClient, {
-  get(_, prop) {
-    const client = getClient();
-    const value = (client as any)[prop];
-    if (typeof value === "function") {
-      return value.bind(client);
-    }
-    return value;
-  },
-});
+// 直接导出 getter 函数，每次调用时确保已初始化
+export const supabase = {
+  get auth() { return getClient().auth; },
+  get from() { return getClient().from.bind(getClient()); },
+  get channel() { return getClient().channel.bind(getClient()); },
+  get removeChannel() { return getClient().removeChannel.bind(getClient()); },
+} as unknown as SupabaseClient;
 
 export interface Profile {
   id: string;
