@@ -1,8 +1,11 @@
 /**
  * 赔率数据抓取脚本
  *
- * 从 The Odds API 拉取世界杯比赛赔率，写入 Supabase match_odds 表。
- * 当 API 不可用时，生成均匀默认赔率（2.50 / 3.20 / 2.50）。
+ * 数据源（按优先级）：
+ * 1. The Odds API（需配置 ODDS_API_KEY）
+ * 2. FIFA 排名推算（基于 ELO 式算法，无 API 依赖）
+ *
+ * 输出: public/odds.json（前端可直接 fetch）
  *
  * 用法: tsx scripts/fetch-odds.ts
  */
@@ -12,9 +15,12 @@ import path from "node:path";
 
 const ODDS_API_KEY = process.env.ODDS_API_KEY || "";
 const ODDS_API_BASE = "https://api.the-odds-api.com/v4";
-const SUPABASE_URL = process.env.PUBLIC_SUPABASE_URL || "";
-const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY || "";
 const DATA_DIR = path.resolve("src/data");
+const PUBLIC_DIR = path.resolve("public");
+
+// ============================================================
+// 类型
+// ============================================================
 
 interface MatchData {
   id: string;
@@ -24,22 +30,10 @@ interface MatchData {
   away: { code: string; name: string };
 }
 
-interface OddsOutcome {
+interface TeamInfo {
+  code: string;
   name: string;
-  price: number;
-}
-
-interface OddsApiMatch {
-  id: string;
-  home_team: string;
-  away_team: string;
-  bookmakers?: Array<{
-    key: string;
-    markets: Array<{
-      key: string;
-      outcomes: OddsOutcome[];
-    }>;
-  }>;
+  fifaRank: number | null;
 }
 
 interface MatchOddsRecord {
@@ -52,12 +46,12 @@ interface MatchOddsRecord {
 }
 
 // ============================================================
-// 1. 从 The Odds API 拉取赔率
+// 1. The Odds API（需要 API Key）
 // ============================================================
 
 async function fetchOddsFromApi(): Promise<Map<string, MatchOddsRecord> | null> {
   if (!ODDS_API_KEY) {
-    console.log("  ⚠ ODDS_API_KEY 未配置");
+    console.log("  ⚠ ODDS_API_KEY 未配置，跳过");
     return null;
   }
 
@@ -68,43 +62,41 @@ async function fetchOddsFromApi(): Promise<Map<string, MatchOddsRecord> | null> 
     const res = await fetch(url);
     if (!res.ok) {
       console.warn(`  ⚠ API 返回 ${res.status}`);
-      // 检查配额
       const remaining = res.headers.get("x-requests-remaining");
       const used = res.headers.get("x-requests-used");
-      console.log(`  配额: ${remaining} 剩余 / ${used} 已用`);
+      if (remaining) console.log(`  配额: ${remaining} 剩余 / ${used} 已用`);
       return null;
     }
 
-    const matches: OddsApiMatch[] = await res.json();
-    console.log(`  ✅ 获取到 ${matches.length} 场比赛赔率`);
+    const apiMatches = await res.json() as any[];
+    console.log(`  ✅ 获取到 ${apiMatches.length} 场比赛赔率`);
 
     const oddsMap = new Map<string, MatchOddsRecord>();
+    const matches = loadMatches();
 
-    for (const m of matches) {
-      // 尝试匹配到我们的比赛 ID
-      const matchId = findMatchId(m);
-      if (!matchId) continue;
+    for (const api of apiMatches) {
+      const match = matchByName(matches, api.home_team, api.away_team);
+      if (!match) continue;
 
-      const bookmaker = m.bookmakers?.[0]; // 取第一个博彩公司
-      if (!bookmaker?.markets?.[0]?.outcomes) continue;
+      const bm = api.bookmakers?.[0];
+      if (!bm?.markets?.[0]?.outcomes) continue;
 
-      const outcomes = bookmaker.markets[0].outcomes;
-      const homeWin = outcomes.find((o) => o.name === m.home_team)?.price;
-      const awayWin = outcomes.find((o) => o.name === m.away_team)?.price;
-      const draw = outcomes.find((o) => o.name === "Draw")?.price;
+      const o = bm.markets[0].outcomes;
+      const homeWin = o.find((x: any) => x.name === api.home_team)?.price;
+      const awayWin = o.find((x: any) => x.name === api.away_team)?.price;
+      const draw = o.find((x: any) => x.name === "Draw")?.price;
 
       if (homeWin && awayWin && draw) {
-        oddsMap.set(matchId, {
-          match_id: matchId,
+        oddsMap.set(match.id, {
+          match_id: match.id,
           home_win: Math.round(homeWin * 100) / 100,
           draw: Math.round(draw * 100) / 100,
           away_win: Math.round(awayWin * 100) / 100,
-          bookmaker: bookmaker.key,
+          bookmaker: bm.key,
           updated_at: new Date().toISOString(),
         });
       }
     }
-
     return oddsMap.size > 0 ? oddsMap : null;
   } catch (err: any) {
     console.warn(`  ⚠ API 请求失败: ${err.message}`);
@@ -113,151 +105,140 @@ async function fetchOddsFromApi(): Promise<Map<string, MatchOddsRecord> | null> 
 }
 
 // ============================================================
-// 2. 匹配到我们的比赛 ID
+// 2. FIFA 排名推算赔率（无需 API）
 // ============================================================
 
-let matchList: MatchData[] | null = null;
+function generateRankingBasedOdds(): Map<string, MatchOddsRecord> {
+  console.log("🎲 基于 FIFA 排名推算赔率...");
 
-function getMatchList(): MatchData[] {
-  if (matchList) return matchList;
-  const file = path.join(DATA_DIR, "matches.json");
-  const data = JSON.parse(fs.readFileSync(file, "utf-8"));
-  matchList = data.matches || [];
-  return matchList;
-}
+  const matches = loadMatches();
+  const teams = loadTeams();
+  const rankMap = new Map(teams.map(t => [t.code, t.fifaRank ?? 50]));
+  const maxRankDiff = 90;
 
-function findMatchId(apiMatch: OddsApiMatch): string | null {
-  const matches = getMatchList();
-  const home = apiMatch.home_team?.toLowerCase() || "";
-  const away = apiMatch.away_team?.toLowerCase() || "";
-
-  // 按球队名称匹配
-  for (const m of matches) {
-    const mHome = m.home.name.toLowerCase();
-    const mAway = m.away.name.toLowerCase();
-    if (
-      (mHome.includes(home) || home.includes(mHome)) &&
-      (mAway.includes(away) || away.includes(mAway))
-    ) {
-      return m.id;
-    }
-  }
-  return null;
-}
-
-// ============================================================
-// 3. 生成默认赔率（API 不可用时的 fallback）
-// ============================================================
-
-function generateDefaultOdds(): Map<string, MatchOddsRecord> {
-  console.log("🎲 生成默认赔率（2.50 / 3.20 / 2.50）...");
-  const matches = getMatchList();
   const oddsMap = new Map<string, MatchOddsRecord>();
+  const now = new Date().toISOString();
 
-  for (const m of matches) {
-    // 根据 FIFA 排名微调赔率（如果有排名数据的话）
-    oddsMap.set(m.id, {
-      match_id: m.id,
-      home_win: 2.50,
-      draw: 3.20,
-      away_win: 2.50,
-      bookmaker: "default",
-      updated_at: new Date().toISOString(),
+  for (const match of matches) {
+    const homeRank = rankMap.get(match.home.code) ?? 50;
+    const awayRank = rankMap.get(match.away.code) ?? 50;
+
+    // ELO 式推算
+    // rankingDiff > 0 = 主队更强
+    const rankingDiff = awayRank - homeRank;
+
+    // 主队胜率期望（ELO 公式改编）
+    const expectedHome = 1 / (1 + Math.pow(10, -rankingDiff / 25));
+
+    // 赔率 = 1 / 概率，扣除 5% 庄家 margin
+    const margin = 0.95;
+
+    // 主胜赔率：1.15 - 3.50 之间
+    let homeWin = Math.round((margin / Math.max(expectedHome, 0.02)) * 100) / 100;
+    homeWin = Math.max(1.10, Math.min(6.00, homeWin));
+
+    // 平局赔率：强强对话低，强弱分明高
+    let draw = 2.80 + Math.abs(rankingDiff) * 0.025;
+    draw = Math.round(draw * 100) / 100;
+    draw = Math.max(2.60, Math.min(5.50, draw));
+
+    // 客胜赔率：1.15 - 10.00
+    const expectedAway = 1 - expectedHome;
+    let awayWin = Math.round((margin / Math.max(expectedAway, 0.02)) * 100) / 100;
+    awayWin = Math.max(1.10, Math.min(12.00, awayWin));
+
+    oddsMap.set(match.id, {
+      match_id: match.id,
+      home_win: homeWin,
+      draw,
+      away_win: awayWin,
+      bookmaker: "fifa-rank",
+      updated_at: now,
     });
   }
 
+  console.log(`  ✅ 推算 ${oddsMap.size} 场比赛赔率`);
   return oddsMap;
 }
 
 // ============================================================
-// 4. 写入 Supabase
+// 工具函数
 // ============================================================
 
-async function writeToSupabase(oddsMap: Map<string, MatchOddsRecord>): Promise<number> {
-  if (!SUPABASE_URL || !SUPABASE_KEY) {
-    // 无 Supabase 配置时，写入本地 JSON 文件作为 fallback
-    const file = path.join(DATA_DIR, "odds.json");
-    const records = Array.from(oddsMap.values());
-    fs.writeFileSync(file, JSON.stringify({ odds: records, lastUpdated: new Date().toISOString() }, null, 2));
-    console.log(`  💾 已写入本地文件 (${records.length} 条)`);
-    return records.length;
-  }
+function loadMatches(): MatchData[] {
+  const file = path.join(DATA_DIR, "matches.json");
+  return JSON.parse(fs.readFileSync(file, "utf-8")).matches ?? [];
+}
 
-  console.log("📤 写入 Supabase...");
+function loadTeams(): TeamInfo[] {
+  const file = path.join(DATA_DIR, "teams.json");
+  return JSON.parse(fs.readFileSync(file, "utf-8")).teams ?? [];
+}
+
+function matchByName(matches: MatchData[], home: string, away: string): MatchData | undefined {
+  const h = home.toLowerCase();
+  const a = away.toLowerCase();
+  return matches.find(m =>
+    (m.home.name.toLowerCase().includes(h) || h.includes(m.home.name.toLowerCase())) &&
+    (m.away.name.toLowerCase().includes(a) || a.includes(m.away.name.toLowerCase()))
+  );
+}
+
+// ============================================================
+// 写入
+// ============================================================
+
+function writeOdds(oddsMap: Map<string, MatchOddsRecord>): void {
   const records = Array.from(oddsMap.values());
-  let written = 0;
+  const output: any = { odds: records, lastUpdated: new Date().toISOString() };
 
-  // 批量 upsert
-  const { error } = await fetch(`${SUPABASE_URL}/rest/v1/match_odds`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "apikey": SUPABASE_KEY,
-      "Authorization": `Bearer ${SUPABASE_KEY}`,
-      "Prefer": "resolution=merge-duplicates",
-    },
-    body: JSON.stringify(records),
-  }).then((r) => r.json().then((d) => ({ error: null })).catch(() => ({ error: "parse" })));
+  // 写入两个位置（运行时读取 public/，脚本也可读 src/data/）
+  const publicFile = path.join(PUBLIC_DIR, "odds.json");
+  const dataFile = path.join(DATA_DIR, "odds.json");
 
-  if (error) {
-    // Fallback: 逐条 upsert
-    for (const record of records) {
-      try {
-        await fetch(`${SUPABASE_URL}/rest/v1/match_odds?id=eq.${record.match_id}`, {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-            "apikey": SUPABASE_KEY,
-            "Authorization": `Bearer ${SUPABASE_KEY}`,
-            "Prefer": "return=minimal",
-          },
-          body: JSON.stringify(record),
-        });
-        written++;
-      } catch {
-        // 尝试 insert
-        try {
-          await fetch(`${SUPABASE_URL}/rest/v1/match_odds`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "apikey": SUPABASE_KEY,
-              "Authorization": `Bearer ${SUPABASE_KEY}`,
-            },
-            body: JSON.stringify(record),
-          });
-          written++;
-        } catch {}
-      }
+  fs.writeFileSync(publicFile, JSON.stringify(output, null, 2));
+  fs.writeFileSync(dataFile, JSON.stringify(output, null, 2));
+
+  // 统计
+  const bookmaker = records[0]?.bookmaker || "unknown";
+  console.log(`\n📊 赔率统计 (来源: ${bookmaker})`);
+  console.log(`${"─".repeat(50)}`);
+
+  // 打印几场样本
+  const matches = loadMatches();
+  for (const record of records.slice(0, 8)) {
+    const m = matches.find(x => x.id === record.match_id);
+    if (m) {
+      console.log(`  ${m.home.name} vs ${m.away.name}`);
+      console.log(`    主胜 ${record.home_win.toFixed(2)} / 平 ${record.draw.toFixed(2)} / 客胜 ${record.away_win.toFixed(2)}`);
     }
-  } else {
-    written = records.length;
   }
+  if (records.length > 8) console.log(`  ... 共 ${records.length} 场`);
 
-  console.log(`  ✅ Supabase 写入完成 (${written} 条)`);
-  return written;
+  console.log(`\n✅ 已写入 public/odds.json 和 src/data/odds.json`);
 }
 
 // ============================================================
 // 主流程
 // ============================================================
 
-async function main() {
-  console.log("=" .repeat(50));
-  console.log("🎲 世界杯赔率数据抓取");
-  console.log("=" .repeat(50));
+async function main(): Promise<void> {
+  console.log(`${"=".repeat(50)}`);
+  console.log("🎲 世界杯赔率抓取");
+  console.log(`${"=".repeat(50)}`);
+  console.log(`⏰ ${new Date().toISOString()}`);
+  console.log(`📡 ODDS_API_KEY: ${ODDS_API_KEY ? "已配置" : "未配置"}`);
 
-  // 1. 尝试从 API 拉取
+  // 1. 优先 The Odds API
   let oddsMap = await fetchOddsFromApi();
 
-  // 2. API 不可用时用默认赔率
+  // 2. Fallback: FIFA 排名推算
   if (!oddsMap || oddsMap.size === 0) {
-    oddsMap = generateDefaultOdds();
+    oddsMap = generateRankingBasedOdds();
   }
 
   // 3. 写入
-  const count = await writeToSupabase(oddsMap);
-  console.log(`\n✅ 完成: ${count} 场比赛赔率已更新`);
+  writeOdds(oddsMap);
 }
 
 main().catch(console.error);

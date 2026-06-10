@@ -49,13 +49,20 @@ jobs:
           FIFA_SEASON_ID: ${{ secrets.FIFA_SEASON_ID || '' }}
         run: pnpm run fetch-data || echo "⚠️ Data fetch skipped (API not available)"
 
+      # 赔率更新（基于 FIFA 排名，配置 ODDS_API_KEY 后可获取真实赔率）
+      - name: Update match odds
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY || '' }}
+        run: npx tsx scripts/fetch-odds.ts || echo "⚠️ Odds update failed"
+
       # 提交数据变更
       - name: Commit data updates
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git diff --quiet -- src/data/ || (git add src/data/ && git commit -m "chore: auto-update from FIFA data" && git push)
+          git diff --quiet -- src/data/ public/odds.json || (git add src/data/ public/odds.json && git commit -m "chore: auto-update match data and odds" && git push)
 
       - run: pnpm run build
 
