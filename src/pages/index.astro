@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CountdownTimer from "../components/CountdownTimer";
+import ViewCounter from "../components/ViewCounter";
 import allMatches from "../data/matches.json";
 
 const matches = allMatches.matches;
@@ -56,7 +57,10 @@ function formatDate(dt: string) {
     <h1 style="font-size:clamp(24px,4vw,40px);font-weight:800;margin:0 0 8px;background:linear-gradient(135deg,#FFD700,#FFA000);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
       2026 美加墨世界杯
     </h1>
-    <p style="color:var(--color-text-secondary);font-size:14px;margin:0 0 20px;">6月12日 — 7月19日 · 48支球队 · 104场比赛</p>
+    <p style="color:var(--color-text-secondary);font-size:14px;margin:0 0 16px;">6月12日 — 7月19日 · 48支球队 · 104场比赛</p>
+    <div style="margin-bottom:20px;">
+      <ViewCounter client:load />
+    </div>
     <CountdownTimer target={openingDate.toISOString()} label="距揭幕战" client:load />
   </section>
 
