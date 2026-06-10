@@ -3,9 +3,10 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
+    "test": "node --test",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "node scripts/configure-predictions.js && astro check && astro build",
     "preview": "astro preview",
     "fetch-data": "tsx scripts/fetch-data.ts",
     "fetch-squads": "tsx scripts/fetch-data.ts -- --squads",
@@ -14,6 +15,8 @@
     "rebuild-data": "python3 scripts/rebuild-to-1246.py",
     "generate-players": "python3 scripts/expand-players.py",
     "fetch-odds": "tsx scripts/fetch-odds.ts",
+    "configure:predictions": "node scripts/configure-predictions.js",
+    "aggregate:predictions": "node scripts/aggregate-predictions.js",
     "settle-bets": "tsx scripts/settle-bets.ts"
   },
   "dependencies": {

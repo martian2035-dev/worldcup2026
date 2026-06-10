@@ -65,6 +65,8 @@ jobs:
           git diff --quiet -- src/data/ public/odds.json || (git add src/data/ public/odds.json && git commit -m "chore: auto-update match data and odds" && git push)
 
       - run: pnpm run build
+        env:
+          PREDICTION_API_BASE: ${{ vars.PREDICTION_API_BASE || '' }}
 
       - uses: actions/configure-pages@v4
 

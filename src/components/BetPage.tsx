@@ -1,8 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import {
   getSavedUsername, saveUsername, clearUsername,
-  fetchBetData, fetchLeaderboard, placeBet,
-  getGitHubToken, setGitHubToken, hasGitHubToken,
+  fetchBetData, placeBet, hasPredictionApi,
   type UserRecord, type MatchOdds,
 } from "../lib/store";
 
@@ -35,14 +34,11 @@ export default function BetPage({ matchData }: { matchData?: string }) {
   const [betSlip, setBetSlip] = useState<{ match: MatchInfo; betType: BetType; odds: number } | null>(null);
   const [loading, setLoading] = useState(true);
   const [syncing, setSyncing] = useState(false);
-  const [showToken, setShowToken] = useState(false);
-  const [tokenInput, setTokenInput] = useState("");
-  const [hasToken, setHasToken] = useState(false);
+  const [apiReady, setApiReady] = useState(false);
 
   // 客户端初始化
   useEffect(() => {
-    setHasToken(hasGitHubToken());
-    setTokenInput(getGitHubToken());
+    setApiReady(hasPredictionApi());
     const saved = getSavedUsername();
     if (saved) {
       setUsername(saved);
@@ -113,26 +109,14 @@ export default function BetPage({ matchData }: { matchData?: string }) {
     if (result.success) {
       // 乐观更新
       setUser(prev => prev ? { ...prev, beans: prev.beans - amount, totalBets: prev.totalBets + 1 } : prev);
-      if (hasToken) {
-        setMsg("✅ " + result.message);
-        // 延迟刷新获取真实数据
-        setTimeout(() => loadUser(user.username), 5000);
-      } else {
-        setMsg("⚠️ " + result.message);
-      }
+      setMsg("✅ " + result.message);
+      // 延迟刷新获取聚合后的真实数据
+      setTimeout(() => loadUser(user.username), 30000);
     } else {
       setMsg("⚠️ " + result.message);
     }
     setSyncing(false);
     setTimeout(() => setMsg(""), 4000);
-  };
-
-  const saveToken = () => {
-    setGitHubToken(tokenInput.trim());
-    setHasToken(hasGitHubToken());
-    setShowToken(false);
-    setMsg("✅ Token 已保存");
-    setTimeout(() => setMsg(""), 2000);
   };
 
   const fmtTime = (dt: string) => { const d = new Date(dt); return `${d.getMonth() + 1}/${d.getDate()} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; };
@@ -170,28 +154,14 @@ export default function BetPage({ matchData }: { matchData?: string }) {
           <button onClick={() => loadUser(user!.username)} disabled={syncing} style={{ background: "none", border: "none", color: "var(--color-text-muted)", cursor: "pointer", fontSize: 10, marginLeft: 8 }}>🔄</button>
         </div>
         <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-          <button onClick={() => setShowToken(!showToken)} style={{ background: "none", border: "none", color: hasToken ? "var(--color-positive)" : "var(--color-text-muted)", cursor: "pointer", fontSize: 10 }}>
-            {hasToken ? "🔗" : "🔓"}
-          </button>
+          <span title={apiReady ? "竞猜接口已连接" : "竞猜接口未配置"} style={{ color: apiReady ? "var(--color-positive)" : "#FFA000", fontSize: 10 }}>
+            {apiReady ? "🔗" : "⏳"}
+          </span>
           <a href={`${BASE}/bet/mine/`} style={{ color: "var(--color-text-secondary)", fontSize: 11, textDecoration: "none" }}>📋 我的</a>
           <a href={`${BASE}/bet/board/`} style={{ color: "var(--color-text-secondary)", fontSize: 11, textDecoration: "none" }}>🏆 排行</a>
           <button onClick={() => { clearUsername(); setUser(null); setShowAuth(true); }} style={{ background: "none", border: "none", color: "var(--color-text-muted)", cursor: "pointer", fontSize: 10 }}>退出</button>
         </div>
       </div>
-
-      {/* Token 配置 */}
-      {showToken && (
-        <div style={{ padding: 12, borderRadius: 10, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", marginBottom: 12, fontSize: 11 }}>
-          <div style={{ marginBottom: 8, color: "var(--color-text-secondary)" }}>
-            配置 Token 后参与真实排行。Token 仅需 <code style={{ color: "var(--color-accent)" }}>actions:write</code> 权限。
-          </div>
-          <div style={{ display: "flex", gap: 6 }}>
-            <input value={tokenInput} onChange={e => setTokenInput(e.target.value)} placeholder="github_pat_xxxxxxxxxxxx" type="password"
-              style={{ flex: 1, padding: "8px 10px", borderRadius: 6, border: "1px solid rgba(255,255,255,0.12)", background: "rgba(255,255,255,0.05)", color: "#fff", fontSize: 11 }} />
-            <button onClick={saveToken} style={{ padding: "8px 14px", borderRadius: 6, border: "none", cursor: "pointer", background: "var(--color-accent)", color: "#0a1628", fontSize: 11, fontWeight: 600 }}>保存</button>
-          </div>
-        </div>
-      )}
 
       {/* 比赛列表 */}
       <div style={{ display: "grid", gap: 10 }}>

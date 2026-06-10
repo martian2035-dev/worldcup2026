@@ -1,17 +1,18 @@
 /**
- * 竞猜数据存储 — 纯 GitHub 方案
+ * 竞猜数据存储 — Cloudflare Worker + GitHub 事件方案
  *
- * 所有数据存储在 GitHub 仓库 src/data/bets/index.json
- * - 读取：raw.githubusercontent.com
- * - 写入：GitHub workflow_dispatch API
+ * 公开数据由聚合工作流写入 GitHub 仓库 src/data/bets/index.json。
+ * 新投注由 Cloudflare Worker 接收，写入 prediction-submissions 分支的不可变事件。
  *
- * 仅保留用户名在内存/localStorage（用于记住登录状态），
- * 余额、投注记录等一律从 GitHub 读取。
+ * 浏览器只保留用户名和设备标识，不再保存 GitHub Token。
  */
+
+import predictionConfig from "../data/predictions/config.json";
 
 const REPO_OWNER = "martian2035-dev";
 const REPO_NAME = "worldcup2026";
 const BETS_RAW_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/src/data/bets/index.json`;
+const PREDICTION_API_BASE = predictionConfig.apiBase;
 
 // ============================================================
 // 类型
@@ -73,23 +74,26 @@ export function clearUsername(): void {
 }
 
 // ============================================================
-// GitHub Token
+// 设备标识
 // ============================================================
 
-const TOKEN_KEY = "wc2026_gh_token";
+const DEVICE_KEY = "wc2026_device_id";
 
-export function getGitHubToken(): string {
+export function getDeviceId(): string {
   if (typeof window === "undefined") return "";
-  try { return localStorage.getItem(TOKEN_KEY) || ""; } catch { return ""; }
+  try {
+    const existing = localStorage.getItem(DEVICE_KEY);
+    if (existing) return existing;
+    const next = `device-${crypto.randomUUID()}`;
+    localStorage.setItem(DEVICE_KEY, next);
+    return next;
+  } catch {
+    return `device-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 12)}`;
+  }
 }
 
-export function setGitHubToken(token: string): void {
-  if (typeof window === "undefined") return;
-  try { localStorage.setItem(TOKEN_KEY, token); } catch {}
-}
-
-export function hasGitHubToken(): boolean {
-  return getGitHubToken().length > 0;
+export function hasPredictionApi(): boolean {
+  return PREDICTION_API_BASE.length > 0;
 }
 
 // ============================================================
@@ -128,31 +132,30 @@ export async function placeBet(
   amount: number,
   odds: number
 ): Promise<{ success: boolean; message: string }> {
-  const token = getGitHubToken();
-  if (!token) {
-    return { success: false, message: "未配置 GitHub Token" };
+  if (!PREDICTION_API_BASE) {
+    return { success: false, message: "竞猜接口尚未配置，请稍后再试" };
   }
 
   try {
-    const res = await fetch(
-      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/accept-bet.yml/dispatches`,
-      {
-        method: "POST",
-        headers: {
-          "Authorization": `Bearer ${token}`,
-          "Accept": "application/vnd.github+json",
-          "X-GitHub-Api-Version": "2022-11-28",
-        },
-        body: JSON.stringify({
-          ref: "main",
-          inputs: { username, match_id: matchId, match_label: matchLabel, bet_type: betType, amount: String(amount), odds: String(odds) },
-        }),
-      }
-    );
-    if (res.ok || res.status === 204) {
-      return { success: true, message: "投注已提交！约 30 秒后可在排行榜看到" };
+    const res = await fetch(`${PREDICTION_API_BASE}/api/bets`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        username,
+        deviceId: getDeviceId(),
+        matchId,
+        matchLabel,
+        betType,
+        amount,
+        odds,
+        clientTimestamp: new Date().toISOString(),
+      }),
+    });
+    const body = await res.json().catch(() => ({}));
+    if (res.ok) {
+      return { success: true, message: "投注已提交！稍后可在排行榜看到" };
     }
-    return { success: false, message: `提交失败: HTTP ${res.status}` };
+    return { success: false, message: body.message || `提交失败: HTTP ${res.status}` };
   } catch (err: any) {
     return { success: false, message: `网络错误: ${err.message}` };
   }

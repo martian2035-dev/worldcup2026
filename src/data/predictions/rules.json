@@ -1,0 +1,7 @@
+{
+  "initialBeans": 10000,
+  "minimumStake": 10,
+  "maximumStake": 100,
+  "closeMinutesBeforeKickoff": 5,
+  "disclaimer": "竞猜仅使用虚拟豆，纯娱乐。"
+}

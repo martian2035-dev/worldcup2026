@@ -1,0 +1,16 @@
+name = "worldcup2026-predictions"
+main = "workers/predictions-worker.js"
+compatibility_date = "2026-06-10"
+workers_dev = true
+
+[observability]
+enabled = true
+
+[vars]
+GITHUB_OWNER = "martian2035-dev"
+GITHUB_REPO = "worldcup2026"
+SUBMISSIONS_BRANCH = "prediction-submissions"
+ALLOWED_ORIGIN = "https://martian2035-dev.github.io"
+
+[secrets]
+required = ["GITHUB_TOKEN"]
