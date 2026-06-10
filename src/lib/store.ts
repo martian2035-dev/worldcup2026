@@ -10,12 +10,12 @@
  * Worker 不可用时 fallback 到 GitHub raw + 本地缓存。
  */
 
-import predictionConfig from "../data/predictions/config.json";
-
 const REPO_OWNER = "martian2035-dev";
 const REPO_NAME = "worldcup2026";
 const BETS_RAW_URL = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/src/data/bets/index.json`;
-const PREDICTION_API_BASE = predictionConfig.apiBase;
+
+// Worker URL 由 GitHub Actions 构建时通过环境变量注入
+const PREDICTION_API_BASE = import.meta.env.PREDICTION_API_BASE || "";
 
 // ============================================================
 // 类型
@@ -155,72 +155,44 @@ export function getDeviceId(): string {
 }
 
 // ============================================================
-// Worker API — 用户
+// Worker API — 写入（注册 + 投注）
 // ============================================================
 
 export async function registerUser(username: string): Promise<UserRecord | null> {
-  const result = await apiFetch<{ user: UserRecord }>("/api/register", {
+  const result = await apiFetch<{ ok: boolean; eventId: string; accountId: string }>("/api/register", {
     method: "POST",
     body: JSON.stringify({ username, deviceId: getDeviceId() }),
   });
-  if (result?.user) {
-    setLocalUserCache(result.user);
-    return result.user;
+  if (result?.ok) {
+    // Worker 注册成功后返回本地构造的 user（真实数据由 aggregate 流程写入 bets/index.json）
+    const user: UserRecord = {
+      username, beans: 10000, totalBets: 0, wonBets: 0,
+      createdAt: new Date().toISOString(), bets: [],
+    };
+    setLocalUserCache(user);
+    return user;
   }
   return null;
 }
 
-export async function fetchUserFromWorker(username: string): Promise<UserRecord | null> {
-  const result = await apiFetch<{ user: UserRecord }>(`/api/users/${encodeURIComponent(username)}`);
-  if (result?.user) {
-    setLocalUserCache(result.user);
-    return result.user;
-  }
-  return null;
-}
-
 // ============================================================
-// Worker API — 排行榜
-// ============================================================
-
-export async function fetchLeaderboardFromWorker(): Promise<UserRecord[] | null> {
-  return apiFetch<UserRecord[]>("/api/leaderboard");
-}
-
-// ============================================================
-// 综合读取（Worker 优先 → GitHub fallback → 本地缓存）
+// 读取 — 从 GitHub bets/index.json（由 aggregate-predictions 工作流聚合）
 // ============================================================
 
 export async function fetchBetData(): Promise<BetData> {
-  // 1. Worker
-  if (hasPredictionApi()) {
-    const leaders = await fetchLeaderboardFromWorker();
-    if (leaders && leaders.length > 0) {
-      const users: Record<string, UserRecord> = {};
-      for (const u of leaders) users[u.username] = u;
-      return { users, lastUpdated: new Date().toISOString() };
-    }
-  }
-
-  // 2. GitHub raw（Worker 不可用时）
   try {
     const res = await fetch(BETS_RAW_URL, { cache: "no-store" });
     if (res.ok) return await res.json();
   } catch {}
-
   return { users: {}, lastUpdated: "" };
 }
 
 export async function fetchUserRecord(username: string): Promise<UserRecord | null> {
-  // 1. Worker
-  const fromWorker = await fetchUserFromWorker(username);
-  if (fromWorker) return fromWorker;
-
-  // 2. GitHub raw
+  // 1. GitHub raw（Worker 写入后由 aggregate 工作流聚合至此）
   const data = await fetchBetData();
   if (data.users[username]) return data.users[username];
 
-  // 3. 本地缓存
+  // 2. 本地缓存
   const cached = getLocalUserCache();
   if (cached && cached.username === username) return cached;
 
@@ -228,11 +200,6 @@ export async function fetchUserRecord(username: string): Promise<UserRecord | nu
 }
 
 export async function fetchLeaderboard(): Promise<UserRecord[]> {
-  // 1. Worker
-  const fromWorker = await fetchLeaderboardFromWorker();
-  if (fromWorker && fromWorker.length > 0) return fromWorker;
-
-  // 2. GitHub raw
   const data = await fetchBetData();
   return Object.values(data.users).sort((a, b) => b.beans - a.beans);
 }
