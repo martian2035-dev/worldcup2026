@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { MatchOdds } from "../lib/supabase";
+import type { MatchOdds } from "../lib/store";
 
 interface MatchInfo {
   id: string;
