@@ -1,8 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 import {
   getSavedUsername, saveUsername, clearUsername,
+  getLocalUserCache, setLocalUserCache, updateLocalUserCache, clearLocalUserCache,
   fetchBetData, placeBet, hasPredictionApi,
-  type UserRecord, type MatchOdds,
+  type UserRecord, type MatchOdds, type BetRecord,
 } from "../lib/store";
 
 const BASE = import.meta.env.BASE_URL || "";
@@ -21,7 +22,6 @@ interface MatchInfo { id: string; datetime: string; home: { name: string }; away
 type BetType = "home_win" | "draw" | "away_win";
 
 export default function BetPage({ matchData }: { matchData?: string }) {
-  // 从 Astro 传入的比赛数据（构建时注入，避免运行时 fetch 失败）
   const preloadMatches: MatchInfo[] = (() => {
     try { return matchData ? JSON.parse(matchData) : []; } catch { return []; }
   })();
@@ -36,7 +36,7 @@ export default function BetPage({ matchData }: { matchData?: string }) {
   const [syncing, setSyncing] = useState(false);
   const [apiReady, setApiReady] = useState(false);
 
-  // 客户端初始化
+  // 客户端初始化：自动检测已登录用户
   useEffect(() => {
     setApiReady(hasPredictionApi());
     const saved = getSavedUsername();
@@ -48,7 +48,7 @@ export default function BetPage({ matchData }: { matchData?: string }) {
     }
   }, []);
 
-  // 加载比赛：优先使用 Astro 预加载数据，fallback 到运行时 fetch
+  // 加载比赛
   useEffect(() => {
     if (preloadMatches.length > 0) {
       setMatches(preloadMatches);
@@ -57,7 +57,6 @@ export default function BetPage({ matchData }: { matchData?: string }) {
         setMatches(d.matches.filter((m: any) => m.status !== "finished").sort((a: any, b: any) => a.datetime.localeCompare(b.datetime)).slice(0, 24));
       }).catch(() => {});
     }
-    // 赔率从运行时加载
     fetch(`${BASE}/odds.json`).then(r => r.json()).then(d => {
       if (d.odds) setOdds(Object.fromEntries(d.odds.map((o: any) => [o.match_id, o])));
     }).catch(() => {});
@@ -65,17 +64,31 @@ export default function BetPage({ matchData }: { matchData?: string }) {
 
   const loadUser = useCallback(async (name: string) => {
     setLoading(true);
-    const data = await fetchBetData();
-    const u = data.users[name];
-    if (u) {
-      setUser(u);
+    // 1. 优先从 GitHub 获取真实数据
+    const remoteData = await fetchBetData();
+    const remoteUser = remoteData.users[name];
+    // 2. 读取本地缓存
+    const cachedUser = getLocalUserCache();
+
+    if (remoteUser) {
+      // 远程有数据：用远程，同时更新本地缓存
+      setUser(remoteUser);
+      setLocalUserCache(remoteUser);
       setShowAuth(false);
+    } else if (cachedUser && cachedUser.username === name) {
+      // 远程无数据但有本地缓存：恢复本地状态
+      setUser(cachedUser);
+      setShowAuth(false);
+      setMsg("💡 使用本地缓存，首次投注后将同步到服务器");
+      setTimeout(() => setMsg(""), 4000);
     } else {
-      // 新用户：本地展示默认数据，需通过 workflow 创建
-      setUser({
+      // 完全新用户
+      const newUser: UserRecord = {
         username: name, beans: 10000, totalBets: 0, wonBets: 0,
         createdAt: new Date().toISOString(), bets: [],
-      });
+      };
+      setUser(newUser);
+      setLocalUserCache(newUser);
       setShowAuth(false);
     }
     setLoading(false);
@@ -92,6 +105,12 @@ export default function BetPage({ matchData }: { matchData?: string }) {
 
   const handleBet = (match: MatchInfo, betType: BetType, oddsValue: number) => {
     if (!user || user.beans < 10) { setMsg("余额不足"); return; }
+    // 检查是否已经对这场比赛投注过
+    const existingBet = user.bets.find(b => b.matchId === match.id && b.status === "pending");
+    if (existingBet) {
+      setMsg(`已投注这场比赛 (${existingBet.betType === "home_win" ? "主胜" : existingBet.betType === "away_win" ? "客胜" : "平局"} 🫘${existingBet.amount})，请先撤销`);
+      return;
+    }
     setBetSlip({ match, betType, odds: oddsValue });
   };
 
@@ -100,23 +119,62 @@ export default function BetPage({ matchData }: { matchData?: string }) {
     setSyncing(true);
     setBetSlip(null);
 
+    // 先乐观更新本地
+    const newBet: BetRecord = {
+      id: "local-" + Date.now().toString(36),
+      username: user.username,
+      matchId: betSlip.match.id,
+      matchLabel: `${betSlip.match.home.name} vs ${betSlip.match.away.name}`,
+      betType: betSlip.betType,
+      amount,
+      odds: betSlip.odds,
+      payout: null,
+      status: "pending",
+      createdAt: new Date().toISOString(),
+    };
+
+    const updatedUser = {
+      ...user,
+      beans: user.beans - amount,
+      totalBets: user.totalBets + 1,
+      bets: [newBet, ...user.bets],
+    };
+    setUser(updatedUser);
+    updateLocalUserCache(updatedUser);
+
+    // 提交到远程
     const result = await placeBet(
       user.username, betSlip.match.id,
-      `${betSlip.match.home.name} vs ${betSlip.match.away.name}`,
+      newBet.matchLabel,
       betSlip.betType, amount, betSlip.odds
     );
 
     if (result.success) {
-      // 乐观更新
-      setUser(prev => prev ? { ...prev, beans: prev.beans - amount, totalBets: prev.totalBets + 1 } : prev);
       setMsg("✅ " + result.message);
-      // 延迟刷新获取聚合后的真实数据
+      // 延迟刷新获取真实数据
       setTimeout(() => loadUser(user.username), 30000);
     } else {
-      setMsg("⚠️ " + result.message);
+      setMsg("⚠️ " + result.message + "（本地已记录，同步后可恢复）");
     }
     setSyncing(false);
-    setTimeout(() => setMsg(""), 4000);
+    setTimeout(() => setMsg(""), 5000);
+  };
+
+  const cancelBet = (betId: string) => {
+    if (!user) return;
+    const bet = user.bets.find(b => b.id === betId);
+    if (!bet || bet.status !== "pending") return;
+
+    const updatedUser = {
+      ...user,
+      beans: user.beans + bet.amount,
+      totalBets: user.totalBets - 1,
+      bets: user.bets.filter(b => b.id !== betId),
+    };
+    setUser(updatedUser);
+    updateLocalUserCache(updatedUser);
+    setMsg("↩ 投注已撤销，余额已退回");
+    setTimeout(() => setMsg(""), 3000);
   };
 
   const fmtTime = (dt: string) => { const d = new Date(dt); return `${d.getMonth() + 1}/${d.getDate()} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; };
@@ -129,7 +187,7 @@ export default function BetPage({ matchData }: { matchData?: string }) {
   if (showAuth) return (
     <div style={{ maxWidth: 380, margin: "40px auto", background: "var(--color-bg)", borderRadius: 16, padding: 28, border: "1px solid rgba(255,255,255,0.08)", textAlign: "center" }}>
       <h2 style={{ margin: "0 0 4px" }}>🎯 加入竞猜</h2>
-      <p style={{ color: "var(--color-text-secondary)", fontSize: 12, margin: "0 0 20px" }}>输入昵称，立即获取 <b style={{ color: "var(--color-accent)" }}>10000 豆</b></p>
+      <p style={{ color: "var(--color-text-secondary)", fontSize: 12, margin: "0 0 20px" }}>取一个昵称，立即获取 <b style={{ color: "var(--color-accent)" }}>10000 豆</b>，预测比赛结果</p>
       <form onSubmit={handleRegister}>
         <input autoFocus value={username} onChange={e => setUsername(e.target.value)} placeholder="输入昵称..." maxLength={20}
           style={{ width: "100%", padding: "12px 14px", borderRadius: 10, border: "1px solid rgba(255,255,255,0.12)", outline: "none", background: "rgba(255,255,255,0.05)", color: "#fff", fontSize: 14, boxSizing: "border-box" }} />
@@ -138,13 +196,17 @@ export default function BetPage({ matchData }: { matchData?: string }) {
           🚀 免费领取 10000 豆
         </button>
       </form>
+      <p style={{ color: "var(--color-text-muted)", fontSize: 10, marginTop: 14 }}>昵称唯一，请牢记。数据与 GitHub 排行榜同步</p>
     </div>
   );
+
+  // 当前待处理的投注
+  const pendingBets = user?.bets.filter(b => b.status === "pending") ?? [];
 
   // 竞猜大厅
   return (
     <div>
-      {msg && <div style={{ textAlign: "center", padding: 8, color: msg.includes("✅") ? "var(--color-positive)" : msg.includes("⚠") ? "#FFA000" : "var(--color-accent)", fontSize: 13, marginBottom: 8 }}>{msg}</div>}
+      {msg && <div style={{ textAlign: "center", padding: 8, color: msg.includes("✅") ? "var(--color-positive)" : msg.includes("↩") ? "var(--color-positive)" : msg.includes("⚠") ? "#FFA000" : "var(--color-accent)", fontSize: 13, marginBottom: 8 }}>{msg}</div>}
 
       {/* 顶栏 */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16, flexWrap: "wrap", gap: 8 }}>
@@ -159,19 +221,36 @@ export default function BetPage({ matchData }: { matchData?: string }) {
           </span>
           <a href={`${BASE}/bet/mine/`} style={{ color: "var(--color-text-secondary)", fontSize: 11, textDecoration: "none" }}>📋 我的</a>
           <a href={`${BASE}/bet/board/`} style={{ color: "var(--color-text-secondary)", fontSize: 11, textDecoration: "none" }}>🏆 排行</a>
-          <button onClick={() => { clearUsername(); setUser(null); setShowAuth(true); }} style={{ background: "none", border: "none", color: "var(--color-text-muted)", cursor: "pointer", fontSize: 10 }}>退出</button>
+          <button onClick={() => { clearUsername(); clearLocalUserCache(); setUser(null); setShowAuth(true); }} style={{ background: "none", border: "none", color: "var(--color-text-muted)", cursor: "pointer", fontSize: 10 }}>退出</button>
         </div>
       </div>
+
+      {/* 待处理投注 */}
+      {pendingBets.length > 0 && (
+        <div style={{ marginBottom: 14, padding: 12, borderRadius: 10, background: "rgba(255,215,0,0.05)", border: "1px solid rgba(255,215,0,0.12)" }}>
+          <div style={{ color: "var(--color-accent)", fontSize: 10, marginBottom: 8 }}>⏳ 待处理投注</div>
+          {pendingBets.map(b => (
+            <div key={b.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 11, padding: "4px 0" }}>
+              <span style={{ color: "var(--color-text-secondary)" }}>{b.matchLabel}</span>
+              <span>{b.betType === "home_win" ? "主胜" : b.betType === "away_win" ? "客胜" : "平局"} @ {Number(b.odds).toFixed(2)}</span>
+              <span style={{ color: "var(--color-accent)" }}>🫘{b.amount}</span>
+              <button onClick={() => cancelBet(b.id)} style={{ background: "none", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 4, color: "#E53935", cursor: "pointer", fontSize: 10, padding: "2px 6px" }}>撤销</button>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* 比赛列表 */}
       <div style={{ display: "grid", gap: 10 }}>
         {matches.map(m => {
           const o = od(m); const past = isPast(m.datetime);
+          const existingBet = user?.bets.find(b => b.matchId === m.id && b.status === "pending");
           return (
-            <div key={m.id} style={{ padding: 14, borderRadius: 12, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", opacity: past ? 0.5 : 1 }}>
+            <div key={m.id} style={{ padding: 14, borderRadius: 12, background: "rgba(255,255,255,0.03)", border: existingBet ? "1px solid rgba(255,215,0,0.15)" : "1px solid rgba(255,255,255,0.06)", opacity: past ? 0.5 : 1 }}>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
                 <span style={{ color: "var(--color-text-muted)", fontSize: 10 }}>{fmtTime(m.datetime)}</span>
                 {past && <span style={{ color: "#E53935", fontSize: 10 }}>已截止</span>}
+                {existingBet && <span style={{ color: "var(--color-accent)", fontSize: 10 }}>已投注 🫘{existingBet.amount}</span>}
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 6 }}>
                 {([
@@ -179,8 +258,8 @@ export default function BetPage({ matchData }: { matchData?: string }) {
                   { k: "draw" as BetType, l: "平局", fl: "🤝", od: o.draw },
                   { k: "away_win" as BetType, l: m.away.name, fl: F(m.away.name), od: o.away_win },
                 ]).map(b => (
-                  <button key={b.k} onClick={() => { if (!past) handleBet(m, b.k, b.od); }} disabled={past}
-                    style={{ padding: "10px 6px", borderRadius: 8, border: "1px solid transparent", cursor: past ? "not-allowed" : "pointer", background: "rgba(255,255,255,0.04)" }}>
+                  <button key={b.k} onClick={() => { if (!past) handleBet(m, b.k, b.od); }} disabled={past || !!existingBet}
+                    style={{ padding: "10px 6px", borderRadius: 8, border: "1px solid transparent", cursor: (past || existingBet) ? "not-allowed" : "pointer", background: "rgba(255,255,255,0.04)", opacity: (past || existingBet) ? 0.4 : 1 }}>
                     <div style={{ fontSize: 18, marginBottom: 2 }}>{b.fl}</div>
                     <div style={{ color: "#fff", fontSize: 11, fontWeight: 600 }}>{b.l}</div>
                     <div style={{ color: "var(--color-accent)", fontSize: 14, fontWeight: 700 }}>{Number(b.od).toFixed(2)}</div>

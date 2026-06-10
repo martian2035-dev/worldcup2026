@@ -53,10 +53,11 @@ export interface MatchOdds {
 }
 
 // ============================================================
-// 用户名（仅此项用 localStorage 记住）
+// 用户名 + 本地缓存
 // ============================================================
 
 const USERNAME_KEY = "wc2026_user";
+const USER_CACHE_KEY = "wc2026_user_cache";
 
 export function getSavedUsername(): string {
   if (typeof window === "undefined") return "";
@@ -71,6 +72,38 @@ export function saveUsername(name: string): void {
 export function clearUsername(): void {
   if (typeof window === "undefined") return;
   try { localStorage.removeItem(USERNAME_KEY); } catch {}
+}
+
+/** 缓存用户数据到本地（远程数据尚未同步时的 fallback） */
+export function setLocalUserCache(user: UserRecord): void {
+  if (typeof window === "undefined") return;
+  try { localStorage.setItem(USER_CACHE_KEY, JSON.stringify(user)); } catch {}
+}
+
+/** 读取本地缓存的用户数据 */
+export function getLocalUserCache(): UserRecord | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = localStorage.getItem(USER_CACHE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch { return null; }
+}
+
+/** 更新本地缓存的用户数据（增量合并） */
+export function updateLocalUserCache(updates: Partial<UserRecord> & { username: string }): void {
+  const cached = getLocalUserCache();
+  const defaults: UserRecord = {
+    username: updates.username, beans: 10000, totalBets: 0, wonBets: 0,
+    bets: [], createdAt: new Date().toISOString(),
+  };
+  const base = (cached && cached.username === updates.username) ? cached : defaults;
+  const merged: UserRecord = { ...base, ...updates };
+  setLocalUserCache(merged);
+}
+
+export function clearLocalUserCache(): void {
+  if (typeof window === "undefined") return;
+  try { localStorage.removeItem(USER_CACHE_KEY); } catch {}
 }
 
 // ============================================================

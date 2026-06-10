@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import {
-  getSavedUsername, fetchUserRecord, computeSettledState,
+  getSavedUsername, getLocalUserCache, updateLocalUserCache,
+  fetchUserRecord, computeSettledState,
   type UserRecord, type BetRecord, type MatchResult,
 } from "../lib/store";
 
@@ -14,15 +15,13 @@ export default function MinePage({ matchData }: { matchData?: string }) {
   const [bets, setBets] = useState<BetRecord[]>([]);
   const [loading, setLoading] = useState(true);
   const [msg, setMsg] = useState("");
+  const [fromCache, setFromCache] = useState(false);
 
   const loadData = useCallback(async () => {
     const name = getSavedUsername();
     if (!name) { setLoading(false); return; }
 
     try {
-      // 加载比赛数据用于本地结算展示
-      const userData = await fetchUserRecord(name);
-
       let matches: MatchResult[] = preloadMatches;
       if (matches.length === 0) {
         try {
@@ -32,13 +31,26 @@ export default function MinePage({ matchData }: { matchData?: string }) {
         } catch {}
       }
 
+      // 1. 尝试远程
+      const remoteUser = await fetchUserRecord(name);
+
+      // 2. 远程无数据，尝试本地缓存
+      let userData = remoteUser;
+      if (!userData) {
+        const cached = getLocalUserCache();
+        if (cached && cached.username === name) {
+          userData = cached;
+          setFromCache(true);
+        }
+      }
+
       if (userData) {
         const settled = computeSettledState(userData, matches);
         setUser({ ...userData, beans: settled.beans, wonBets: settled.wonBets });
         setBets(settled.settledBets.reverse());
-        if (settled.settledBets.some((b, i) => b.status !== (userData.bets[i]?.status || "pending"))) {
-          setMsg("💡 结算数据来自本地计算，最终结果以 GitHub 为准");
-        }
+      } else {
+        // 既无远程也无本地：空状态
+        setUser(null);
       }
     } catch {}
     setLoading(false);
@@ -46,11 +58,39 @@ export default function MinePage({ matchData }: { matchData?: string }) {
 
   useEffect(() => { loadData(); }, [loadData]);
 
+  // 撤销本地投注
+  const cancelBet = (betId: string) => {
+    if (!user) return;
+    const bet = user.bets.find(b => b.id === betId);
+    if (!bet || bet.status !== "pending") return;
+
+    const updatedUser: UserRecord = {
+      ...user,
+      beans: user.beans + bet.amount,
+      totalBets: user.totalBets - 1,
+      bets: user.bets.filter(b => b.id !== betId),
+    };
+    setUser(updatedUser);
+    setBets(updatedUser.bets);
+    updateLocalUserCache(updatedUser);
+    setMsg("↩ 投注已撤销，余额已退回");
+    setTimeout(() => setMsg(""), 3000);
+  };
+
   if (loading) return <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>加载中...</div>;
 
-  if (!user) return (
+  // 有保存的昵称但无用户数据 → 显示空状态
+  const savedName = getSavedUsername();
+  if (!savedName) return (
     <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>
       请先 <a href={`${BASE}/bet/`} style={{ color: "var(--color-accent)" }}>登录</a> 查看竞猜记录
+    </div>
+  );
+
+  if (!user || bets.length === 0) return (
+    <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>
+      <div style={{ fontSize: 14, marginBottom: 8 }}>👋 {savedName}，还没有投注记录</div>
+      <a href={`${BASE}/bet/`} style={{ color: "var(--color-accent)" }}>去竞猜大厅投注 →</a>
     </div>
   );
 
@@ -65,7 +105,8 @@ export default function MinePage({ matchData }: { matchData?: string }) {
 
   return (
     <div>
-      {msg && <div style={{ textAlign: "center", padding: 6, color: "var(--color-text-muted)", fontSize: 11, marginBottom: 12 }}>{msg}</div>}
+      {msg && <div style={{ textAlign: "center", padding: 6, color: msg.includes("↩") ? "var(--color-positive)" : "var(--color-text-muted)", fontSize: 13, marginBottom: 12 }}>{msg}</div>}
+      {fromCache && <div style={{ textAlign: "center", padding: 6, color: "var(--color-text-muted)", fontSize: 10, marginBottom: 12 }}>💡 数据来自本地缓存，首次投注后将同步</div>}
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
         <div style={{ fontSize: 14 }}>
@@ -78,31 +119,28 @@ export default function MinePage({ matchData }: { matchData?: string }) {
         </div>
       </div>
 
-      {bets.length === 0 ? (
-        <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>
-          还没有投注记录，<a href={`${BASE}/bet/`} style={{ color: "var(--color-accent)" }}>去竞猜</a>
-        </div>
-      ) : (
-        <div style={{ display: "grid", gap: 8 }}>
-          {bets.map(b => {
-            const ss = statusStyle(b.status);
-            return (
-              <div key={b.id} style={{ padding: 12, borderRadius: 10, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div>
-                  <div style={{ fontSize: 11, color: "var(--color-text-muted)" }}>{b.matchLabel}</div>
-                  <div style={{ fontSize: 13, fontWeight: 600 }}>
-                    {b.betType === "home_win" ? "主胜" : b.betType === "away_win" ? "客胜" : "平局"} @ {Number(b.odds).toFixed(2)}
-                  </div>
-                </div>
-                <div style={{ textAlign: "right" }}>
-                  <div style={{ fontSize: 13, fontWeight: 700 }}>🫘 {b.amount}</div>
-                  <div style={{ fontSize: 11, color: ss.color }}>{ss.label}{b.payout != null ? ` → 🫘${b.payout}` : ""}</div>
+      <div style={{ display: "grid", gap: 8 }}>
+        {bets.map(b => {
+          const ss = statusStyle(b.status);
+          return (
+            <div key={b.id} style={{ padding: 12, borderRadius: 10, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontSize: 11, color: "var(--color-text-muted)" }}>{b.matchLabel}</div>
+                <div style={{ fontSize: 13, fontWeight: 600 }}>
+                  {b.betType === "home_win" ? "主胜" : b.betType === "away_win" ? "客胜" : "平局"} @ {Number(b.odds).toFixed(2)}
                 </div>
               </div>
-            );
-          })}
-        </div>
-      )}
+              <div style={{ textAlign: "right", marginRight: 8 }}>
+                <div style={{ fontSize: 13, fontWeight: 700 }}>🫘 {b.amount}</div>
+                <div style={{ fontSize: 11, color: ss.color }}>{ss.label}{b.payout != null ? ` → 🫘${b.payout}` : ""}</div>
+              </div>
+              {b.status === "pending" && (
+                <button onClick={() => cancelBet(b.id)} style={{ background: "none", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 4, color: "#E53935", cursor: "pointer", fontSize: 10, padding: "2px 6px" }}>撤销</button>
+              )}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
