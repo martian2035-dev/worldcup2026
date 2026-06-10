@@ -13,6 +13,23 @@ export interface Match {
     home: { possession: number; shots: number; shotsOnTarget: number; corners: number; fouls: number; yellowCards: number; redCards: number };
     away: { possession: number; shots: number; shotsOnTarget: number; corners: number; fouls: number; yellowCards: number; redCards: number };
   } | null;
+  /** 参赛球员表现（赛后填充） */
+  playerEvents?: MatchPlayerEvent[];
+}
+
+/** 单场球员事件 */
+export interface MatchPlayerEvent {
+  playerId: string;
+  team: string;
+  minutesPlayed: number;
+  isStart: boolean;
+  goals: number;
+  assists: number;
+  shots: number;
+  shotsOnTarget: number;
+  yellowCard: boolean;
+  redCard: boolean;
+  rating: number | null;
 }
 
 export interface StandingTeam {
@@ -34,6 +51,14 @@ export interface Group {
   teams: StandingTeam[];
 }
 
+export interface Coach {
+  name: string;
+  nameEn?: string;
+  nationality: string;
+  age?: number;
+  since?: string;
+}
+
 export interface Team {
   code: string;
   name: string;
@@ -41,9 +66,25 @@ export interface Team {
   group: string;
   fifaRank: number | null;
   worldCups: number;
-  coach: string;
+  coach: Coach;
   colors: { primary: string; secondary: string };
   players: Player[];
+}
+
+/** 球员逐场记录 */
+export interface PlayerMatchLog {
+  matchId: string;
+  date: string;
+  opponent: string;
+  minutesPlayed: number;
+  isStart: boolean;
+  goals: number;
+  assists: number;
+  shots: number;
+  shotsOnTarget: number;
+  yellowCard: boolean;
+  redCard: boolean;
+  rating: number | null;
 }
 
 export interface Player {
@@ -54,16 +95,76 @@ export interface Player {
   position: string;
   number: number;
   isStar: boolean;
-  stats: {
-    goals: number;
-    penalties: number;
-    assists: number;
-    shots: number;
-    shotsOnTarget: number;
-    minutesPlayed: number;
-    distanceKm: number;
-    yellowCards: number;
-    redCards: number;
-    matchRatings: number[];
-  };
+
+  // 身体数据
+  age?: number;
+  height?: number;
+  weight?: number;
+  preferredFoot?: string;
+  nationality?: string;
+
+  // 俱乐部
+  club?: string;
+  clubEn?: string;
+  photoUrl?: string;
+
+  /** 数据来源：fifa=官方数据, generated=自动生成 */
+  dataSource?: "fifa" | "generated";
+
+  /** 世界杯参赛届数 */
+  worldCupApps?: number;
+
+  // 赛事累计数据（随比赛进行增量更新）
+  stats: PlayerTournamentStats;
+
+  /** 逐场记录（比赛后追加） */
+  matchLog?: PlayerMatchLog[];
+}
+
+export interface PlayerTournamentStats {
+  /** 出场次数 */
+  appearances: number;
+  /** 首发次数 */
+  starts: number;
+  /** 出场时间（分钟） */
+  minutesPlayed: number;
+  /** 进球 */
+  goals: number;
+  /** 点球进球 */
+  penalties: number;
+  /** 助攻 */
+  assists: number;
+  /** 射门 */
+  shots: number;
+  /** 射正 */
+  shotsOnTarget: number;
+  /** 跑动距离（公里） */
+  distanceKm: number;
+  /** 黄牌 */
+  yellowCards: number;
+  /** 红牌 */
+  redCards: number;
+  /** 犯规 */
+  foulsCommitted: number;
+  /** 被犯规 */
+  foulsSuffered: number;
+  /** 越位 */
+  offsides: number;
+  /** 传球次数 */
+  passes: number;
+  /** 传球成功率 */
+  passAccuracy?: number;
+  /** 抢断 */
+  tackles: number;
+  /** 比赛评分记录 */
+  matchRatings: number[];
+}
+
+/** 数据更新状态 */
+export interface DataUpdateStatus {
+  lastUpdated: string;
+  dataSource: string;
+  playersUpdated: number;
+  matchesUpdated: number;
+  errors?: string[];
 }

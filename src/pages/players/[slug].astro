@@ -70,30 +70,45 @@ const positionLabels: Record<string, string> = {
             {team.fifaRank && <span> · FIFA #{team.fifaRank}</span>}
           </div>
         )}
-        {/* Personal info */}
-        <div style="display:flex;flex-wrap:wrap;gap:12px 24px;">
+        {/* Personal info - 基本信息 */}
+        <div style="display:flex;flex-wrap:wrap;gap:14px 28px;">
           {player.age && (
             <div style="display:flex;flex-direction:column;align-items:center;">
-              <span style="color:var(--color-accent);font-size:18px;font-weight:700;">{player.age}</span>
+              <span style="color:var(--color-accent);font-size:20px;font-weight:700;">{player.age}</span>
               <span style="color:var(--color-text-muted);font-size:10px;">年龄</span>
             </div>
           )}
           {player.height && (
             <div style="display:flex;flex-direction:column;align-items:center;">
-              <span style="color:var(--color-text-primary);font-size:18px;font-weight:700;">{player.height}cm</span>
+              <span style="color:var(--color-text-primary);font-size:20px;font-weight:700;">{player.height}cm</span>
               <span style="color:var(--color-text-muted);font-size:10px;">身高</span>
             </div>
           )}
           {player.weight && (
             <div style="display:flex;flex-direction:column;align-items:center;">
-              <span style="color:var(--color-text-primary);font-size:18px;font-weight:700;">{player.weight}kg</span>
+              <span style="color:var(--color-text-primary);font-size:20px;font-weight:700;">{player.weight}kg</span>
               <span style="color:var(--color-text-muted);font-size:10px;">体重</span>
             </div>
           )}
+          {player.preferredFoot && (
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <span style="color:var(--color-accent);font-size:20px;font-weight:700;">{player.preferredFoot}</span>
+              <span style="color:var(--color-text-muted);font-size:10px;">惯用脚</span>
+            </div>
+          )}
+        </div>
+        {/* 俱乐部 & 国籍 */}
+        <div style="display:flex;flex-wrap:wrap;gap:14px 28px;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-border);">
           {player.club && (
             <div style="display:flex;flex-direction:column;align-items:center;">
-              <span style="color:var(--color-text-primary);font-size:15px;font-weight:700;">{player.club}</span>
+              <span style="color:var(--color-text-primary);font-size:16px;font-weight:700;">{player.club}</span>
               <span style="color:var(--color-text-muted);font-size:10px;">俱乐部</span>
+            </div>
+          )}
+          {player.nationality && (
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <span style="color:var(--color-text-primary);font-size:16px;font-weight:700;">{player.nationality}</span>
+              <span style="color:var(--color-text-muted);font-size:10px;">国籍</span>
             </div>
           )}
         </div>

@@ -7,7 +7,12 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "fetch-data": "tsx scripts/fetch-data.ts"
+    "fetch-data": "tsx scripts/fetch-data.ts",
+    "fetch-squads": "tsx scripts/fetch-data.ts -- --squads",
+    "fetch-stats": "tsx scripts/fetch-data.ts -- --stats",
+    "fetch-report": "tsx scripts/fetch-data.ts -- --report",
+    "rebuild-data": "python3 scripts/rebuild-to-1246.py",
+    "generate-players": "python3 scripts/expand-players.py"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",

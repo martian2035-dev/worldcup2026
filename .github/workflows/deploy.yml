@@ -4,8 +4,18 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '0 */2 * 6-7 *'
+    # 比赛期间 (6/12-7/19): 每 2 小时更新
+    - cron: '7 */2 12-30 6 *'
+    - cron: '7 */2 1-19 7 *'
+    # 非比赛期间: 每 12 小时检查
+    - cron: '7 */12 1-11 6 *'
+    - cron: '7 */12 20-31 7 *'
   workflow_dispatch:
+    inputs:
+      fetch-data:
+        description: '从 FIFA 抓取最新数据'
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -32,17 +42,20 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      # Data fetch only on schedule or manual trigger
-      - name: Fetch latest match data
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        run: pnpm run fetch-data || true
+      # 数据抓取（定时任务或手动触发）
+      - name: Fetch latest data from FIFA
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.fetch-data == 'true')
+        env:
+          FIFA_SEASON_ID: ${{ secrets.FIFA_SEASON_ID || '' }}
+        run: pnpm run fetch-data || echo "⚠️ Data fetch skipped (API not available)"
 
+      # 提交数据变更
       - name: Commit data updates
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git diff --quiet -- src/data/ || (git add src/data/ && git commit -m "chore: auto-update match data" && git push)
+          git diff --quiet -- src/data/ || (git add src/data/ && git commit -m "chore: auto-update from FIFA data" && git push)
 
       - run: pnpm run build
 

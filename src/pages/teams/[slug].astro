@@ -34,84 +34,238 @@ function getFlag(code: string) {
 }
 
 function formatTime(dt: string) { return dt.slice(5, 16).replace("T", " "); }
+
+const positionLabels: Record<string, string> = {
+  GK: "守门员", CB: "中后卫", LB: "左后卫", RB: "右后卫",
+  CDM: "防守中场", CM: "中前卫", CAM: "前腰",
+  LW: "左边锋", RW: "右边锋", ST: "前锋",
+};
+
+const positionOrder = ["GK", "CB", "LB", "RB", "CDM", "CM", "CAM", "LW", "RW", "ST"];
+
+// 按位置分组的排序函数
+function sortByPosition(players: any[]) {
+  return [...players].sort((a, b) => {
+    const ai = positionOrder.indexOf(a.position);
+    const bi = positionOrder.indexOf(b.position);
+    if (ai !== bi) return ai - bi;
+    return a.number - b.number;
+  });
+}
+
+// 按位置分组
+function groupByPosition(players: any[]) {
+  const groups: Record<string, any[]> = {};
+  for (const pos of positionOrder) {
+    const matched = players.filter((p: any) => p.position === pos);
+    if (matched.length > 0) groups[pos] = matched;
+  }
+  return groups;
+}
+
+const coach = team.coach;
+const isCoachObject = typeof coach === "object" && coach !== null;
+const groupedPlayers = groupByPosition(teamPlayers);
 ---
 
 <BaseLayout title={`${team.name} - 球队详情`}>
   <!-- Hero -->
-  <div style={`background:linear-gradient(135deg,${team.colors.primary}20,${team.colors.secondary}15);border-radius:16px;padding:24px;margin-bottom:20px;border:1px solid rgba(255,255,255,0.08);position:relative;overflow:hidden;`}>
+  <div style={`background:linear-gradient(135deg,${team.colors.primary}20,${team.colors.secondary}15);border-radius:16px;padding:28px;margin-bottom:20px;border:1px solid rgba(255,255,255,0.08);position:relative;overflow:hidden;`}>
     <div style="position:absolute;top:-30px;right:-20px;font-size:120px;opacity:0.06;">{getFlag(team.code)}</div>
-    <div style="display:flex;align-items:center;gap:16px;">
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
       <span style="font-size:56px;">{getFlag(team.code)}</span>
       <div>
         <div style="font-size:24px;font-weight:800;">{team.name}</div>
-        <div style="color:var(--color-text-secondary);font-size:12px;">{team.nameEn} · FIFA 排名 #{team.fifaRank || "?"} · {team.group}组</div>
-        <div style="display:flex;gap:12px;margin-top:6px;">
+        <div style="color:var(--color-text-secondary);font-size:12px;">
+          {team.nameEn} · FIFA 排名 #{team.fifaRank || "?"} · {team.group}组
+        </div>
+        <div style="display:flex;gap:12px;margin-top:6px;flex-wrap:wrap;">
           {team.worldCups > 0 && <span style="color:var(--color-accent);font-size:11px;">⭐×{team.worldCups} 世界冠军</span>}
-          {team.coach && <span style="color:var(--color-text-secondary);font-size:11px;">教练: {team.coach}</span>}
+          <span style="color:var(--color-text-secondary);font-size:11px;">
+            👥 {teamPlayers.length} 名球员
+          </span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Star Players -->
-  {starPlayers.length > 0 && (
-    <div style="margin-bottom:20px;">
-      <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:8px;">⭐ 明星球员</div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;">
-        {starPlayers.map((p: any) => (
-          <a href={`../../players/${p.id}/`} style="text-decoration:none;">
-            <div class="gold-card" style="padding:14px;text-align:center;">
-              <div style="font-size:28px;margin-bottom:4px;">👤</div>
-              <div style="color:var(--color-accent);font-size:13px;font-weight:700;">{p.name}</div>
-              <div style="color:var(--color-text-secondary);font-size:10px;">{p.position} · {p.number}号</div>
-              <div style="display:flex;justify-content:center;gap:12px;margin-top:8px;">
-                <div><span style="color:var(--color-text-primary);font-size:14px;font-weight:700;">{p.stats.goals}</span><span style="color:var(--color-text-muted);font-size:8px;"> 进球</span></div>
-                <div><span style="color:var(--color-text-primary);font-size:14px;font-weight:700;">{p.stats.assists}</span><span style="color:var(--color-text-muted);font-size:8px;"> 助攻</span></div>
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
-    </div>
-  )}
+  <div style="display:grid;grid-template-columns:1fr 300px;gap:20px;">
 
-  <!-- Full Squad -->
-  <div style="margin-bottom:20px;">
-    <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:8px;">完整阵容 ({teamPlayers.length}人)</div>
-    <div class="glass-card" style="overflow:hidden;">
-      {teamPlayers.length > 0 ? (
-        teamPlayers.sort((a: any, b: any) => a.number - b.number).map((p: any) => (
-          <a href={`../../players/${p.id}/`} style="text-decoration:none;display:flex;padding:8px 14px;align-items:center;gap:10px;border-bottom:1px solid var(--color-border);">
-            <span style="color:var(--color-text-muted);font-size:10px;min-width:22px;">{p.number}</span>
-            <span style="color:var(--color-text-primary);font-size:12px;flex:1;">{p.name}</span>
-            <span style="color:var(--color-positive);font-size:10px;">{p.position}</span>
-          </a>
-        ))
-      ) : (
-        <div style="padding:20px;text-align:center;color:var(--color-text-muted);font-size:12px;">球员数据将在世界杯前更新</div>
+    <!-- 左列：球员阵容（按位置分组） -->
+    <div>
+      <!-- 阵容标题 -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+        <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;">
+          完整阵容 · {teamPlayers.length} 人
+        </div>
+      </div>
+
+      <!-- 按位置分组展示 -->
+      {Object.entries(groupedPlayers).map(([pos, players]) => (
+        <div style="margin-bottom:16px;">
+          <div style="color:var(--color-accent);font-size:11px;font-weight:600;margin-bottom:6px;padding-bottom:4px;border-bottom:1px solid var(--color-border);">
+            {positionLabels[pos] || pos}
+            <span style="color:var(--color-text-muted);font-weight:400;margin-left:4px;">({players.length})</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:6px;">
+            {sortByPosition(players).map((p: any) => (
+              <a href={`../../players/${p.id}/`} style="text-decoration:none;">
+                <div class="glass-card" style="padding:10px 14px;display:flex;align-items:center;gap:10px;">
+                  <span style="color:var(--color-accent);font-size:14px;font-weight:700;min-width:24px;text-align:center;">{p.number}</span>
+                  <div style="flex:1;min-width:0;">
+                    <div style="color:var(--color-text-primary);font-size:12px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{p.name}</div>
+                    <div style="color:var(--color-text-muted);font-size:9px;margin-top:1px;">
+                      {p.age ? `${p.age}岁` : ""}{p.height ? ` · ${p.height}cm` : ""}{p.weight ? ` · ${p.weight}kg` : ""}
+                      {p.preferredFoot ? ` · ${p.preferredFoot}` : ""}
+                    </div>
+                  </div>
+                  <div style="text-align:right;flex-shrink:0;">
+                    <div style="color:var(--color-text-secondary);font-size:9px;">{p.club || ""}</div>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- 右列：教练 + 明星球员 -->
+    <div>
+      <!-- 教练卡片 -->
+      {isCoachObject && (
+        <div class="glass-card" style="padding:16px;margin-bottom:16px;">
+          <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:10px;">👔 主教练</div>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+            <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(67,160,71,0.1));display:flex;align-items:center;justify-content:center;font-size:20px;">
+              👔
+            </div>
+            <div>
+              <div style="color:var(--color-text-primary);font-size:14px;font-weight:700;">{coach.name}</div>
+              {coach.nameEn && <div style="color:var(--color-text-muted);font-size:10px;">{coach.nameEn}</div>}
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+            <div style="background:rgba(255,255,255,0.03);border-radius:8px;padding:8px;text-align:center;">
+              <div style="color:var(--color-accent);font-size:16px;font-weight:700;">{coach.nationality || "—"}</div>
+              <div style="color:var(--color-text-muted);font-size:9px;">国籍</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.03);border-radius:8px;padding:8px;text-align:center;">
+              <div style="color:var(--color-text-primary);font-size:16px;font-weight:700;">{coach.age || "—"}</div>
+              <div style="color:var(--color-text-muted);font-size:9px;">年龄</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.03);border-radius:8px;padding:8px;text-align:center;">
+              <div style="color:var(--color-text-primary);font-size:13px;font-weight:700;">{coach.since || "—"}</div>
+              <div style="color:var(--color-text-muted);font-size:9px;">上任时间</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.03);border-radius:8px;padding:8px;text-align:center;">
+              <div style="color:var(--color-text-primary);font-size:14px;font-weight:700;">{team.group}组</div>
+              <div style="color:var(--color-text-muted);font-size:9px;">所在小组</div>
+            </div>
+          </div>
+        </div>
       )}
+
+      {/* 明星球员 */}
+      {starPlayers.length > 0 && (
+        <div>
+          <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:10px;">⭐ 明星球员</div>
+          {starPlayers.map((p: any) => (
+            <a href={`../../players/${p.id}/`} style="text-decoration:none;">
+              <div class="gold-card" style="padding:12px;margin-bottom:8px;">
+                <div style="display:flex;align-items:center;gap:10px;">
+                  <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(67,160,71,0.1));display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">
+                    👤
+                  </div>
+                  <div style="flex:1;min-width:0;">
+                    <div style="color:var(--color-accent);font-size:13px;font-weight:700;">{p.name}</div>
+                    <div style="color:var(--color-text-muted);font-size:9px;">
+                      {positionLabels[p.position] || p.position} · {p.number}号
+                      {p.club ? ` · ${p.club}` : ""}
+                    </div>
+                  </div>
+                </div>
+                <div style="display:flex;justify-content:space-around;margin-top:10px;padding-top:8px;border-top:1px solid var(--color-border);">
+                  <div style="text-align:center;">
+                    <div style="color:var(--color-text-primary);font-size:13px;font-weight:700;">{p.age || "—"}</div>
+                    <div style="color:var(--color-text-muted);font-size:8px;">年龄</div>
+                  </div>
+                  <div style="text-align:center;">
+                    <div style="color:var(--color-text-primary);font-size:13px;font-weight:700;">{p.height || "—"}cm</div>
+                    <div style="color:var(--color-text-muted);font-size:8px;">身高</div>
+                  </div>
+                  <div style="text-align:center;">
+                    <div style="color:var(--color-text-primary);font-size:13px;font-weight:700;">{p.weight || "—"}kg</div>
+                    <div style="color:var(--color-text-muted);font-size:8px;">体重</div>
+                  </div>
+                  <div style="text-align:center;">
+                    <div style="color:var(--color-text-primary);font-size:13px;font-weight:700;">{p.preferredFoot || "—"}</div>
+                    <div style="color:var(--color-text-muted);font-size:8px;">惯用脚</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+
+      {/* 球队统计摘要 */}
+      <div class="glass-card" style="padding:14px;margin-top:16px;">
+        <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:8px;">📊 球队概况</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+          <div style="text-align:center;padding:8px;background:rgba(255,255,255,0.03);border-radius:6px;">
+            <div style="color:var(--color-accent);font-size:16px;font-weight:700;">#{team.fifaRank || "?"}</div>
+            <div style="color:var(--color-text-muted);font-size:8px;">FIFA 排名</div>
+          </div>
+          <div style="text-align:center;padding:8px;background:rgba(255,255,255,0.03);border-radius:6px;">
+            <div style="color:var(--color-text-primary);font-size:16px;font-weight:700;">{team.worldCups}</div>
+            <div style="color:var(--color-text-muted);font-size:8px;">世界杯冠军</div>
+          </div>
+          <div style="text-align:center;padding:8px;background:rgba(255,255,255,0.03);border-radius:6px;">
+            <div style="color:var(--color-text-primary);font-size:16px;font-weight:700;">{teamPlayers.length}</div>
+            <div style="color:var(--color-text-muted);font-size:8px;">大名单人数</div>
+          </div>
+          <div style="text-align:center;padding:8px;background:rgba(255,255,255,0.03);border-radius:6px;">
+            <div style="color:var(--color-text-primary);font-size:16px;font-weight:700;">{starPlayers.length}</div>
+            <div style="color:var(--color-text-muted);font-size:8px;">明星球员</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Matches -->
-  <div style="margin-bottom:20px;">
-    <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:8px;">赛程</div>
+  <!-- 赛程 -->
+  <div style="margin-top:24px;">
+    <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:8px;">📅 赛程</div>
     {allMatches.length > 0 ? (
       allMatches.map(m => (
-        <div class="glass-card" style="padding:10px 14px;margin-bottom:6px;display:flex;align-items:center;gap:10px;">
+        <div class="glass-card" style="padding:10px 14px;margin-bottom:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
           <span style="color:var(--color-accent);font-size:11px;min-width:80px;">{formatTime(m.datetime)}</span>
-          <span style="flex:1;text-align:right;font-size:12px;color:var(--color-text-primary);">{getFlag(m.home.code)} {m.home.name}</span>
+          <span style="flex:1;text-align:right;font-size:12px;color:var(--color-text-primary);min-width:80px;">{getFlag(m.home.code)} {m.home.name}</span>
           {m.score?.home !== null ? (
             <span style="min-width:40px;text-align:center;font-size:16px;font-weight:800;color:var(--color-text-primary);">{m.score!.home}-{m.score!.away}</span>
           ) : (
             <span style="min-width:40px;text-align:center;color:var(--color-text-muted);">VS</span>
           )}
-          <span style="flex:1;font-size:12px;color:var(--color-text-primary);">{m.away.name} {getFlag(m.away.code)}</span>
+          <span style="flex:1;font-size:12px;color:var(--color-text-primary);min-width:80px;">{m.away.name} {getFlag(m.away.code)}</span>
           <span style="color:var(--color-text-muted);font-size:10px;">{m.venue.name}</span>
         </div>
       ))
     ) : (
-      <div class="glass-card" style="padding:16px;text-align:center;color:var(--color-text-muted);">暂无比</div>
+      <div class="glass-card" style="padding:16px;text-align:center;color:var(--color-text-muted);">暂无比赛</div>
     )}
   </div>
 </BaseLayout>
+
+<style>
+  .gold-card {
+    background: linear-gradient(135deg, rgba(255,215,0,0.08), rgba(255,215,0,0.02));
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 10px;
+    transition: all 0.2s;
+  }
+  .gold-card:hover {
+    background: linear-gradient(135deg, rgba(255,215,0,0.12), rgba(255,215,0,0.04));
+    border-color: rgba(255,215,0,0.3);
+  }
+</style>
