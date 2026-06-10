@@ -20,3 +20,4 @@ jobs:
             GITHUB_TOKEN
         env:
           GITHUB_TOKEN: ${{ secrets.PREDICTIONS_GITHUB_TOKEN }}
+          NPM_CONFIG_LEGACY_PEER_DEPS: "true"
