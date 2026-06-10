@@ -7,6 +7,7 @@ This Worker accepts nickname-based prediction submissions and writes immutable J
 - `GET /health`
 - `POST /api/register`
 - `POST /api/bets`
+- `POST /api/cancel`
 
 `POST /api/bets` body:
 
@@ -20,6 +21,18 @@ This Worker accepts nickname-based prediction submissions and writes immutable J
   "amount": 20,
   "odds": 1.82,
   "clientTimestamp": "2026-06-10T12:00:00+08:00"
+}
+```
+
+`POST /api/cancel` body:
+
+```json
+{
+  "username": "阿北",
+  "deviceId": "browser-generated-device-id",
+  "matchId": "A01",
+  "betId": "submitted-bet-event-id",
+  "clientTimestamp": "2026-06-10T12:10:00+08:00"
 }
 ```
 

@@ -45,6 +45,17 @@ export async function handleRequest(request, env) {
     return jsonResponse({ ok: true, eventId: event.id, accountId: event.accountId }, 201, cors);
   }
 
+  if (request.method === "POST" && url.pathname === "/api/cancel") {
+    const payload = await safeJson(request);
+    const validation = validateCancelPayload(payload);
+    if (!validation.ok) return jsonResponse(validation, 400, cors);
+
+    const event = createEvent("cancel", payload);
+    const persisted = await persistEvent(event, env, cors);
+    if (persisted) return persisted;
+    return jsonResponse({ ok: true, eventId: event.id, accountId: event.accountId }, 201, cors);
+  }
+
   return jsonResponse({ message: "Not found" }, 404, cors);
 }
 
@@ -75,6 +86,14 @@ export function validateBetPayload(payload) {
   return { ok: true };
 }
 
+export function validateCancelPayload(payload) {
+  const base = validateRegisterPayload(payload);
+  if (!base.ok) return base;
+  if (!isValidMatchId(payload.matchId)) return invalid("invalid-match", "比赛编号无效");
+  if (!isValidBetId(payload.betId)) return invalid("invalid-bet", "竞猜单编号无效");
+  return { ok: true };
+}
+
 export function createEvent(type, payload) {
   const serverTimestamp = new Date().toISOString();
   const username = normalizeUsername(payload.username);
@@ -87,6 +106,7 @@ export function createEvent(type, payload) {
     username,
     deviceId: String(payload.deviceId),
     matchId: payload.matchId,
+    betId: payload.betId,
     matchLabel: payload.matchLabel,
     betType: payload.betType,
     amount: payload.amount === undefined ? undefined : Number(payload.amount),
@@ -186,6 +206,10 @@ function isValidDeviceId(value) {
 
 function isValidMatchId(value) {
   return /^[A-Z]\d{2}$/.test(String(value ?? ""));
+}
+
+function isValidBetId(value) {
+  return typeof value === "string" && value.length >= 4 && value.length <= 80;
 }
 
 function invalid(reason, message) {

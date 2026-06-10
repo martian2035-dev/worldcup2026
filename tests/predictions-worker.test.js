@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import {
   createEvent,
   handleRequest,
+  validateCancelPayload,
   validateBetPayload,
   validateRegisterPayload,
 } from "../workers/predictions-worker.js";
@@ -43,6 +44,36 @@ test("worker creates normalized immutable bet events", () => {
   assert.equal(event.amount, 20);
   assert.equal(event.odds, 1.82);
   assert.match(event.accountId, /^acct-/);
+});
+
+test("worker accepts cancel payloads for pending bets", () => {
+  const result = validateCancelPayload({
+    username: "阿北",
+    deviceId: "device-1234567890",
+    matchId: "A01",
+    betId: "bet-123",
+  });
+
+  assert.equal(result.ok, true);
+  assert.equal(validateCancelPayload({ username: "阿北", deviceId: "device-1234567890", matchId: "bad", betId: "bet-123" }).reason, "invalid-match");
+  assert.equal(validateCancelPayload({ username: "阿北", deviceId: "device-1234567890", matchId: "A01", betId: "" }).reason, "invalid-bet");
+});
+
+test("worker creates normalized cancel events", () => {
+  const event = createEvent("cancel", {
+    username: " 阿 北 ",
+    deviceId: "device-1234567890",
+    matchId: "A01",
+    betId: "bet-123",
+    clientTimestamp: "2026-06-10T12:10:00+08:00",
+  });
+
+  assert.equal(event.type, "cancel");
+  assert.equal(event.username, "阿北");
+  assert.equal(event.matchId, "A01");
+  assert.equal(event.betId, "bet-123");
+  assert.equal(event.betType, undefined);
+  assert.equal(event.amount, undefined);
 });
 
 test("worker health endpoint supports checks without Origin header", async () => {

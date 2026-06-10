@@ -54,6 +54,36 @@ test("rejects duplicate match bets and stakes over available beans", () => {
   assert.equal(result.betData.users["阿北"].beans, 9900);
 });
 
+test("cancels a pending bet, removes it from user history, and allows replacement", () => {
+  const firstBet = betEvent("bet-1", "阿北", "device-a", "home_win", 100, 1.82);
+  const replacementBet = betEvent("bet-2", "阿北", "device-a", "draw", 50, 3.45);
+  replacementBet.serverTimestamp = "2026-06-10T12:20:00+08:00";
+  const result = settlePredictionEvents([
+    firstBet,
+    cancelEvent("cancel-1", firstBet),
+    replacementBet,
+  ], { rules, matches, odds });
+
+  assert.equal(result.rejections.length, 0);
+  assert.equal(result.betData.users["阿北"].beans, 9950);
+  assert.equal(result.betData.users["阿北"].totalBets, 1);
+  assert.equal(result.betData.users["阿北"].bets.length, 1);
+  assert.equal(result.betData.users["阿北"].bets[0].id, "bet-2");
+  assert.equal(result.betData.users["阿北"].bets[0].betType, "draw");
+});
+
+test("rejects cancellation after close time and keeps the original single bet", () => {
+  const firstBet = betEvent("bet-1", "阿北", "device-a", "home_win", 100, 1.82);
+  const lateCancel = cancelEvent("cancel-1", firstBet);
+  lateCancel.serverTimestamp = "2026-06-12T02:56:00+08:00";
+  const result = settlePredictionEvents([firstBet, lateCancel], { rules, matches, odds });
+
+  assert.deepEqual(result.rejections.map((item) => item.reason), ["after-close"]);
+  assert.equal(result.betData.users["阿北"].beans, 9900);
+  assert.equal(result.betData.users["阿北"].bets.length, 1);
+  assert.equal(result.betData.users["阿北"].bets[0].id, "bet-1");
+});
+
 test("settles finished matches using locked odds", () => {
   const finishedMatches = [{
     ...matches[0],
@@ -91,5 +121,19 @@ function betEvent(id, username, deviceId, betType, amount, oddsValue) {
     odds: oddsValue,
     clientTimestamp: "2026-06-10T12:00:00+08:00",
     serverTimestamp: "2026-06-10T12:00:00+08:00",
+  };
+}
+
+function cancelEvent(id, bet) {
+  return {
+    id,
+    type: "cancel",
+    accountId: bet.accountId,
+    username: bet.username,
+    deviceId: bet.deviceId,
+    matchId: bet.matchId,
+    betId: bet.id,
+    clientTimestamp: "2026-06-10T12:10:00+08:00",
+    serverTimestamp: "2026-06-10T12:10:00+08:00",
   };
 }

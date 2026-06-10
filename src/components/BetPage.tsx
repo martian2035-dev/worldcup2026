@@ -2,8 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import {
   getSavedUsername, saveUsername,
   getLocalUserCache, setLocalUserCache, updateLocalUserCache,
-  registerUser, fetchUserRecord, placeBet, hasPredictionApi,
-  addCancelledBet, filterCancelledBets,
+  registerUser, fetchUserRecord, placeBet, cancelBet as cancelRemoteBet, hasPredictionApi,
   type UserRecord, type MatchOdds, type BetRecord,
 } from "../lib/store";
 
@@ -70,9 +69,8 @@ export default function BetPage({ matchData }: { matchData?: string }) {
     const remoteUser = await fetchUserRecord(name);
 
     if (remoteUser) {
-      const filtered = filterCancelledBets(remoteUser);
-      setUser(filtered);
-      setLocalUserCache(filtered);
+      setUser(remoteUser);
+      setLocalUserCache(remoteUser);
       setShowAuth(false);
     } else {
       // 2. 本地缓存
@@ -148,6 +146,11 @@ export default function BetPage({ matchData }: { matchData?: string }) {
 
   const handleBet = (match: MatchInfo, betType: BetType, oddsValue: number) => {
     if (!user || user.beans < 10) { setMsg("余额不足"); return; }
+    if (user.bets.some(b => b.matchId === match.id && b.status === "pending")) {
+      setMsg("⚠️ 每场比赛只能下注一次，撤销后可重新选择");
+      setTimeout(() => setMsg(""), 4000);
+      return;
+    }
     setBetSlip({ match, betType, odds: oddsValue });
   };
 
@@ -156,12 +159,27 @@ export default function BetPage({ matchData }: { matchData?: string }) {
     setSyncing(true);
     setBetSlip(null);
 
-    // 先乐观更新本地
+    const matchLabel = `${betSlip.match.home.name} vs ${betSlip.match.away.name}`;
+
+    // 先提交到远程，成功后用 Worker 事件 ID 展示
+    const result = await placeBet(
+      user.username, betSlip.match.id,
+      matchLabel,
+      betSlip.betType, amount, betSlip.odds
+    );
+
+    if (!result.success || !result.eventId) {
+      setMsg("⚠️ " + result.message);
+      setSyncing(false);
+      setTimeout(() => setMsg(""), 5000);
+      return;
+    }
+
     const newBet: BetRecord = {
-      id: "local-" + Date.now().toString(36),
+      id: result.eventId,
       username: user.username,
       matchId: betSlip.match.id,
-      matchLabel: `${betSlip.match.home.name} vs ${betSlip.match.away.name}`,
+      matchLabel,
       betType: betSlip.betType,
       amount,
       odds: betSlip.odds,
@@ -179,30 +197,27 @@ export default function BetPage({ matchData }: { matchData?: string }) {
     setUser(updatedUser);
     updateLocalUserCache(updatedUser);
 
-    // 提交到远程
-    const result = await placeBet(
-      user.username, betSlip.match.id,
-      newBet.matchLabel,
-      betSlip.betType, amount, betSlip.odds
-    );
-
-    if (result.success) {
-      setMsg("✅ " + result.message);
-      // 延迟刷新获取真实数据
-      setTimeout(() => loadUser(user.username), 30000);
-    } else {
-      setMsg("⚠️ " + result.message + "（本地已记录，同步后可恢复）");
-    }
+    setMsg("✅ " + result.message);
+    // 延迟刷新获取真实数据
+    setTimeout(() => loadUser(user.username), 30000);
     setSyncing(false);
     setTimeout(() => setMsg(""), 5000);
   };
 
-  const cancelBet = (betId: string) => {
+  const cancelBet = async (betId: string) => {
     if (!user) return;
     const bet = user.bets.find(b => b.id === betId);
     if (!bet || bet.status !== "pending") return;
+    setSyncing(true);
 
-    // 从用户数据中移除
+    const result = await cancelRemoteBet(user.username, bet.matchId, bet.id);
+    if (!result.success) {
+      setMsg("⚠️ " + result.message);
+      setSyncing(false);
+      setTimeout(() => setMsg(""), 5000);
+      return;
+    }
+
     const updatedUser = {
       ...user,
       beans: user.beans + bet.amount,
@@ -211,10 +226,10 @@ export default function BetPage({ matchData }: { matchData?: string }) {
     updatedUser.totalBets = updatedUser.bets.length;
     setUser(updatedUser);
     updateLocalUserCache(updatedUser);
-    // 加入撤销黑名单（防止从远程重新加载后恢复）
-    addCancelledBet(betId);
-    setMsg("↩ 投注已撤销，余额已退回");
-    setTimeout(() => setMsg(""), 3000);
+    setMsg("↩ " + result.message);
+    setSyncing(false);
+    setTimeout(() => loadUser(user.username), 30000);
+    setTimeout(() => setMsg(""), 5000);
   };
 
   const fmtTime = (dt: string) => { const d = new Date(dt); return `${d.getMonth() + 1}/${d.getDate()} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; };
@@ -315,11 +330,12 @@ export default function BetPage({ matchData }: { matchData?: string }) {
       <div style={{ display: "grid", gap: 10 }}>
         {matches.map(m => {
           const o = od(m); const past = isPast(m.datetime);
+          const alreadyBet = user?.bets.some(b => b.matchId === m.id && b.status === "pending") ?? false;
           return (
             <div key={m.id} style={{ padding: 14, borderRadius: 12, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", opacity: past ? 0.5 : 1 }}>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
                 <span style={{ color: "var(--color-text-muted)", fontSize: 10 }}>{fmtTime(m.datetime)}</span>
-                {past && <span style={{ color: "#E53935", fontSize: 10 }}>已截止</span>}
+                {past ? <span style={{ color: "#E53935", fontSize: 10 }}>已截止</span> : alreadyBet && <span style={{ color: "var(--color-accent)", fontSize: 10 }}>已下注</span>}
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 6 }}>
                 {([
@@ -327,8 +343,8 @@ export default function BetPage({ matchData }: { matchData?: string }) {
                   { k: "draw" as BetType, l: "平局", fl: "🤝", od: o.draw },
                   { k: "away_win" as BetType, l: m.away.name, fl: F(m.away.name), od: o.away_win },
                 ]).map(b => (
-                  <button key={b.k} onClick={() => { if (!past) handleBet(m, b.k, b.od); }} disabled={past}
-                    style={{ padding: "10px 6px", borderRadius: 8, border: "1px solid transparent", cursor: past ? "not-allowed" : "pointer", background: "rgba(255,255,255,0.04)", opacity: past ? 0.4 : 1 }}>
+                  <button key={b.k} onClick={() => { if (!past && !alreadyBet) handleBet(m, b.k, b.od); }} disabled={past || alreadyBet}
+                    style={{ padding: "10px 6px", borderRadius: 8, border: "1px solid transparent", cursor: (past || alreadyBet) ? "not-allowed" : "pointer", background: "rgba(255,255,255,0.04)", opacity: (past || alreadyBet) ? 0.4 : 1 }}>
                     <div style={{ fontSize: 18, marginBottom: 2 }}>{b.fl}</div>
                     <div style={{ color: "#fff", fontSize: 11, fontWeight: 600 }}>{b.l}</div>
                     <div style={{ color: "var(--color-accent)", fontSize: 14, fontWeight: 700 }}>{Number(b.od).toFixed(2)}</div>

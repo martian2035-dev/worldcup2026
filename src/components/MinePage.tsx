@@ -1,8 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import {
   getSavedUsername, getLocalUserCache, updateLocalUserCache,
-  fetchUserRecord, computeSettledState,
-  addCancelledBet, filterCancelledBets,
+  fetchUserRecord, computeSettledState, cancelBet as cancelRemoteBet,
   type UserRecord, type BetRecord, type MatchResult,
 } from "../lib/store";
 
@@ -46,9 +45,8 @@ export default function MinePage({ matchData }: { matchData?: string }) {
       }
 
       if (userData) {
-        const filtered = filterCancelledBets(userData);
-        const settled = computeSettledState(filtered, matches);
-        setUser({ ...filtered, beans: settled.beans, wonBets: settled.wonBets });
+        const settled = computeSettledState(userData, matches);
+        setUser({ ...userData, beans: settled.beans, wonBets: settled.wonBets });
         setBets(settled.settledBets.reverse());
       } else {
         // 既无远程也无本地：空状态
@@ -60,11 +58,17 @@ export default function MinePage({ matchData }: { matchData?: string }) {
 
   useEffect(() => { loadData(); }, [loadData]);
 
-  // 撤销本地投注
-  const cancelBet = (betId: string) => {
+  const cancelBet = async (betId: string) => {
     if (!user) return;
     const bet = user.bets.find(b => b.id === betId);
     if (!bet || bet.status !== "pending") return;
+
+    const result = await cancelRemoteBet(user.username, bet.matchId, bet.id);
+    if (!result.success) {
+      setMsg("⚠️ " + result.message);
+      setTimeout(() => setMsg(""), 5000);
+      return;
+    }
 
     const updatedUser: UserRecord = {
       ...user,
@@ -75,9 +79,9 @@ export default function MinePage({ matchData }: { matchData?: string }) {
     setUser(updatedUser);
     setBets(updatedUser.bets);
     updateLocalUserCache(updatedUser);
-    addCancelledBet(betId);
-    setMsg("↩ 投注已撤销，余额已退回");
-    setTimeout(() => setMsg(""), 3000);
+    setMsg("↩ " + result.message);
+    setTimeout(() => loadData(), 30000);
+    setTimeout(() => setMsg(""), 5000);
   };
 
   if (loading) return <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>加载中...</div>;
@@ -117,8 +121,11 @@ export default function MinePage({ matchData }: { matchData?: string }) {
           <span style={{ color: "var(--color-text-muted)", fontSize: 11, marginLeft: 6 }}>{user.username}</span>
           <button onClick={loadData} style={{ background: "none", border: "none", color: "var(--color-text-muted)", cursor: "pointer", fontSize: 10, marginLeft: 6 }}>🔄</button>
         </div>
-        <div style={{ fontSize: 11, color: "var(--color-text-secondary)" }}>
-          共 {bets.length} 注 · 赢 {bets.filter(b => b.status === "won").length} 注
+        <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+          <a href={`${BASE}/bet/`} style={{ color: "var(--color-accent)", fontSize: 11, textDecoration: "none" }}>← 返回竞猜大厅</a>
+          <div style={{ fontSize: 11, color: "var(--color-text-secondary)" }}>
+            共 {bets.length} 注 · 赢 {bets.filter(b => b.status === "won").length} 注
+          </div>
         </div>
       </div>
 

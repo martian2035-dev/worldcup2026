@@ -4,6 +4,7 @@ export function settlePredictionEvents(events, { rules, matches, odds, now = new
   const context = createContext({ rules, matches, odds });
   const accounts = new Map();
   const activeBetKeys = new Set();
+  const betsById = new Map();
   const seenEvents = new Set();
   const acceptedBets = [];
   const rejections = [];
@@ -25,6 +26,23 @@ export function settlePredictionEvents(events, { rules, matches, odds, now = new
 
     const account = ensureAccount(accounts, event.accountId, event, rules);
     if (event.type === "register") continue;
+
+    if (event.type === "cancel") {
+      const activeBet = betsById.get(event.betId);
+      if (!activeBet || activeBet.username !== account.username || activeBet.matchId !== event.matchId) {
+        rejections.push(rejectionFor(event, "unknown-active-bet", "未找到可撤销的竞猜单"));
+        continue;
+      }
+
+      const betKey = `${account.id}|${event.matchId}`;
+      account.beans += activeBet.amount;
+      account.bets = account.bets.filter((bet) => bet.id !== activeBet.id);
+      account.totalBets = account.bets.length;
+      acceptedBets.splice(acceptedBets.findIndex((bet) => bet.id === activeBet.id), 1);
+      betsById.delete(activeBet.id);
+      activeBetKeys.delete(betKey);
+      continue;
+    }
 
     const betKey = `${account.id}|${event.matchId}`;
     if (activeBetKeys.has(betKey)) {
@@ -55,6 +73,7 @@ export function settlePredictionEvents(events, { rules, matches, odds, now = new
     account.totalBets += 1;
     account.bets.push(bet);
     acceptedBets.push(bet);
+    betsById.set(bet.id, bet);
     activeBetKeys.add(betKey);
   }
 
@@ -95,18 +114,24 @@ export function validateEvent(event, context) {
   if (!isValidUsername(event.username)) return reject("invalid-username", "昵称无效");
 
   if (event.type === "register") return { ok: true };
-  if (event.type !== "bet") return reject("invalid-type", "不支持的事件类型");
+  if (!["bet", "cancel"].includes(event.type)) return reject("invalid-type", "不支持的事件类型");
   if (!event.matchId || !context.matchesById.has(event.matchId)) return reject("unknown-match", "未知比赛");
+
+  const match = context.matchesById.get(event.matchId);
+  const placedAt = new Date(event.serverTimestamp ?? event.clientTimestamp ?? Date.now());
+  if (placedAt >= closeTimeFor(match, context.rules)) return reject("after-close", "该场比赛已封盘");
+
+  if (event.type === "cancel") {
+    if (!event.betId || typeof event.betId !== "string") return reject("invalid-bet", "缺少要撤销的竞猜单");
+    return { ok: true };
+  }
+
   if (!betTypes.has(event.betType)) return reject("invalid-bet-type", "竞猜选项无效");
 
   const amount = Number(event.amount);
   if (!Number.isInteger(amount) || amount < context.rules.minimumStake || amount > context.rules.maximumStake) {
     return reject("amount-out-of-range", "投注豆数超出范围");
   }
-
-  const match = context.matchesById.get(event.matchId);
-  const placedAt = new Date(event.serverTimestamp ?? event.clientTimestamp ?? Date.now());
-  if (placedAt >= closeTimeFor(match, context.rules)) return reject("after-close", "该场比赛已封盘");
 
   const market = context.oddsByMatchId.get(event.matchId);
   const currentOdds = Number(market?.[event.betType]);

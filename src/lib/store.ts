@@ -1,13 +1,12 @@
 /**
  * 竞猜数据存储 — Cloudflare Worker 方案
  *
- * 所有用户数据通过 Cloudflare Worker API 读写：
- * - POST /api/register    注册用户
- * - GET  /api/users/{name} 获取用户档案
- * - GET  /api/leaderboard  排行榜
- * - POST /api/bets         提交投注
+ * 写入通过 Cloudflare Worker API 记录不可变事件：
+ * - POST /api/register 注册用户
+ * - POST /api/bets     提交投注
+ * - POST /api/cancel   撤销投注
  *
- * Worker 不可用时 fallback 到 GitHub raw + 本地缓存。
+ * 读取通过 GitHub raw 的聚合结果；本地缓存只用于页面间即时显示和离线恢复。
  */
 
 const REPO_OWNER = "martian2035-dev";
@@ -139,43 +138,6 @@ export function clearLocalUserCache(): void {
 }
 
 // ============================================================
-// 撤销黑名单（localStorage 记录已撤销的投注 ID）
-// ============================================================
-
-const CANCELLED_KEY = "wc2026_cancelled_bets";
-
-function getCancelledBetIds(): Set<string> {
-  if (typeof window === "undefined") return new Set();
-  try {
-    const raw = localStorage.getItem(CANCELLED_KEY);
-    return raw ? new Set(JSON.parse(raw)) : new Set();
-  } catch { return new Set(); }
-}
-
-export function addCancelledBet(betId: string): void {
-  const ids = getCancelledBetIds();
-  ids.add(betId);
-  if (typeof window !== "undefined") {
-    try { localStorage.setItem(CANCELLED_KEY, JSON.stringify([...ids])); } catch {}
-  }
-}
-
-export function filterCancelledBets(user: UserRecord): UserRecord {
-  const cancelled = getCancelledBetIds();
-  if (cancelled.size === 0) return user;
-  const filtered = user.bets.filter(b => !cancelled.has(b.id));
-  const removedAmount = user.bets
-    .filter(b => cancelled.has(b.id) && b.status === "pending")
-    .reduce((sum, b) => sum + b.amount, 0);
-  return {
-    ...user,
-    bets: filtered,
-    beans: user.beans + removedAmount,
-    totalBets: filtered.length,
-  };
-}
-
-// ============================================================
 // 设备标识
 // ============================================================
 
@@ -255,7 +217,7 @@ export async function placeBet(
   betType: string,
   amount: number,
   odds: number
-): Promise<{ success: boolean; message: string }> {
+): Promise<{ success: boolean; message: string; eventId?: string }> {
   if (!hasPredictionApi()) {
     return { success: false, message: "竞猜接口尚未配置，请稍后再试" };
   }
@@ -277,9 +239,40 @@ export async function placeBet(
     });
     const body = await res.json().catch(() => ({}));
     if (res.ok) {
-      return { success: true, message: "投注已提交！稍后可在排行榜看到" };
+      return { success: true, message: "投注已提交！稍后可在排行榜看到", eventId: body.eventId };
     }
     return { success: false, message: body.message || `提交失败: HTTP ${res.status}` };
+  } catch (err: any) {
+    return { success: false, message: `网络错误: ${err.message}` };
+  }
+}
+
+export async function cancelBet(
+  username: string,
+  matchId: string,
+  betId: string
+): Promise<{ success: boolean; message: string }> {
+  if (!hasPredictionApi()) {
+    return { success: false, message: "竞猜接口尚未配置，请稍后再试" };
+  }
+
+  try {
+    const res = await fetch(apiUrl("/api/cancel"), {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        username,
+        deviceId: getDeviceId(),
+        matchId,
+        betId,
+        clientTimestamp: new Date().toISOString(),
+      }),
+    });
+    const body = await res.json().catch(() => ({}));
+    if (res.ok) {
+      return { success: true, message: "投注已撤销，稍后同步到历史记录" };
+    }
+    return { success: false, message: body.message || `撤销失败: HTTP ${res.status}` };
   } catch (err: any) {
     return { success: false, message: `网络错误: ${err.message}` };
   }
