@@ -3,6 +3,7 @@ import {
   getSavedUsername, saveUsername,
   getLocalUserCache, setLocalUserCache, updateLocalUserCache,
   registerUser, fetchUserRecord, placeBet, hasPredictionApi,
+  addCancelledBet, filterCancelledBets,
   type UserRecord, type MatchOdds, type BetRecord,
 } from "../lib/store";
 
@@ -69,8 +70,9 @@ export default function BetPage({ matchData }: { matchData?: string }) {
     const remoteUser = await fetchUserRecord(name);
 
     if (remoteUser) {
-      setUser(remoteUser);
-      setLocalUserCache(remoteUser);
+      const filtered = filterCancelledBets(remoteUser);
+      setUser(filtered);
+      setLocalUserCache(filtered);
       setShowAuth(false);
     } else {
       // 2. 本地缓存
@@ -146,12 +148,6 @@ export default function BetPage({ matchData }: { matchData?: string }) {
 
   const handleBet = (match: MatchInfo, betType: BetType, oddsValue: number) => {
     if (!user || user.beans < 10) { setMsg("余额不足"); return; }
-    // 检查是否已经对这场比赛投注过
-    const existingBet = user.bets.find(b => b.matchId === match.id && b.status === "pending");
-    if (existingBet) {
-      setMsg(`已投注这场比赛 (${existingBet.betType === "home_win" ? "主胜" : existingBet.betType === "away_win" ? "客胜" : "平局"} 🫘${existingBet.amount})，请先撤销`);
-      return;
-    }
     setBetSlip({ match, betType, odds: oddsValue });
   };
 
@@ -206,14 +202,17 @@ export default function BetPage({ matchData }: { matchData?: string }) {
     const bet = user.bets.find(b => b.id === betId);
     if (!bet || bet.status !== "pending") return;
 
+    // 从用户数据中移除
     const updatedUser = {
       ...user,
       beans: user.beans + bet.amount,
-      totalBets: user.totalBets - 1,
       bets: user.bets.filter(b => b.id !== betId),
     };
+    updatedUser.totalBets = updatedUser.bets.length;
     setUser(updatedUser);
     updateLocalUserCache(updatedUser);
+    // 加入撤销黑名单（防止从远程重新加载后恢复）
+    addCancelledBet(betId);
     setMsg("↩ 投注已撤销，余额已退回");
     setTimeout(() => setMsg(""), 3000);
   };
@@ -316,13 +315,11 @@ export default function BetPage({ matchData }: { matchData?: string }) {
       <div style={{ display: "grid", gap: 10 }}>
         {matches.map(m => {
           const o = od(m); const past = isPast(m.datetime);
-          const existingBet = user?.bets.find(b => b.matchId === m.id && b.status === "pending");
           return (
-            <div key={m.id} style={{ padding: 14, borderRadius: 12, background: "rgba(255,255,255,0.03)", border: existingBet ? "1px solid rgba(255,215,0,0.15)" : "1px solid rgba(255,255,255,0.06)", opacity: past ? 0.5 : 1 }}>
+            <div key={m.id} style={{ padding: 14, borderRadius: 12, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", opacity: past ? 0.5 : 1 }}>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
                 <span style={{ color: "var(--color-text-muted)", fontSize: 10 }}>{fmtTime(m.datetime)}</span>
                 {past && <span style={{ color: "#E53935", fontSize: 10 }}>已截止</span>}
-                {existingBet && <span style={{ color: "var(--color-accent)", fontSize: 10 }}>已投注 🫘{existingBet.amount}</span>}
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 6 }}>
                 {([
@@ -330,8 +327,8 @@ export default function BetPage({ matchData }: { matchData?: string }) {
                   { k: "draw" as BetType, l: "平局", fl: "🤝", od: o.draw },
                   { k: "away_win" as BetType, l: m.away.name, fl: F(m.away.name), od: o.away_win },
                 ]).map(b => (
-                  <button key={b.k} onClick={() => { if (!past) handleBet(m, b.k, b.od); }} disabled={past || !!existingBet}
-                    style={{ padding: "10px 6px", borderRadius: 8, border: "1px solid transparent", cursor: (past || existingBet) ? "not-allowed" : "pointer", background: "rgba(255,255,255,0.04)", opacity: (past || existingBet) ? 0.4 : 1 }}>
+                  <button key={b.k} onClick={() => { if (!past) handleBet(m, b.k, b.od); }} disabled={past}
+                    style={{ padding: "10px 6px", borderRadius: 8, border: "1px solid transparent", cursor: past ? "not-allowed" : "pointer", background: "rgba(255,255,255,0.04)", opacity: past ? 0.4 : 1 }}>
                     <div style={{ fontSize: 18, marginBottom: 2 }}>{b.fl}</div>
                     <div style={{ color: "#fff", fontSize: 11, fontWeight: 600 }}>{b.l}</div>
                     <div style={{ color: "var(--color-accent)", fontSize: 14, fontWeight: 700 }}>{Number(b.od).toFixed(2)}</div>

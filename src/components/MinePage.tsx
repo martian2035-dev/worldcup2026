@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import {
   getSavedUsername, getLocalUserCache, updateLocalUserCache,
   fetchUserRecord, computeSettledState,
+  addCancelledBet, filterCancelledBets,
   type UserRecord, type BetRecord, type MatchResult,
 } from "../lib/store";
 
@@ -45,8 +46,9 @@ export default function MinePage({ matchData }: { matchData?: string }) {
       }
 
       if (userData) {
-        const settled = computeSettledState(userData, matches);
-        setUser({ ...userData, beans: settled.beans, wonBets: settled.wonBets });
+        const filtered = filterCancelledBets(userData);
+        const settled = computeSettledState(filtered, matches);
+        setUser({ ...filtered, beans: settled.beans, wonBets: settled.wonBets });
         setBets(settled.settledBets.reverse());
       } else {
         // 既无远程也无本地：空状态
@@ -67,12 +69,13 @@ export default function MinePage({ matchData }: { matchData?: string }) {
     const updatedUser: UserRecord = {
       ...user,
       beans: user.beans + bet.amount,
-      totalBets: user.totalBets - 1,
       bets: user.bets.filter(b => b.id !== betId),
     };
+    updatedUser.totalBets = updatedUser.bets.length;
     setUser(updatedUser);
     setBets(updatedUser.bets);
     updateLocalUserCache(updatedUser);
+    addCancelledBet(betId);
     setMsg("↩ 投注已撤销，余额已退回");
     setTimeout(() => setMsg(""), 3000);
   };

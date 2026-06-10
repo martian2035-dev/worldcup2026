@@ -139,6 +139,43 @@ export function clearLocalUserCache(): void {
 }
 
 // ============================================================
+// 撤销黑名单（localStorage 记录已撤销的投注 ID）
+// ============================================================
+
+const CANCELLED_KEY = "wc2026_cancelled_bets";
+
+function getCancelledBetIds(): Set<string> {
+  if (typeof window === "undefined") return new Set();
+  try {
+    const raw = localStorage.getItem(CANCELLED_KEY);
+    return raw ? new Set(JSON.parse(raw)) : new Set();
+  } catch { return new Set(); }
+}
+
+export function addCancelledBet(betId: string): void {
+  const ids = getCancelledBetIds();
+  ids.add(betId);
+  if (typeof window !== "undefined") {
+    try { localStorage.setItem(CANCELLED_KEY, JSON.stringify([...ids])); } catch {}
+  }
+}
+
+export function filterCancelledBets(user: UserRecord): UserRecord {
+  const cancelled = getCancelledBetIds();
+  if (cancelled.size === 0) return user;
+  const filtered = user.bets.filter(b => !cancelled.has(b.id));
+  const removedAmount = user.bets
+    .filter(b => cancelled.has(b.id) && b.status === "pending")
+    .reduce((sum, b) => sum + b.amount, 0);
+  return {
+    ...user,
+    bets: filtered,
+    beans: user.beans + removedAmount,
+    totalBets: filtered.length,
+  };
+}
+
+// ============================================================
 // 设备标识
 // ============================================================
 
