@@ -12,11 +12,14 @@
     "fetch-stats": "tsx scripts/fetch-data.ts -- --stats",
     "fetch-report": "tsx scripts/fetch-data.ts -- --report",
     "rebuild-data": "python3 scripts/rebuild-to-1246.py",
-    "generate-players": "python3 scripts/expand-players.py"
+    "generate-players": "python3 scripts/expand-players.py",
+    "fetch-odds": "tsx scripts/fetch-odds.ts",
+    "settle-bets": "tsx scripts/settle-bets.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/react": "^4.2.4",
+    "@supabase/supabase-js": "^2.108.0",
     "astro": "^5.7.12",
     "react": "^19.1.2",
     "react-dom": "^19.1.2",

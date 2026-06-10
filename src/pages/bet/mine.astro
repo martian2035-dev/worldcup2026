@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="我的竞猜">
+  <h1 style="font-size:22px;font-weight:700;margin:0 0 4px;">📋 我的竞猜</h1>
+  <p style="color:var(--color-text-secondary);font-size:12px;margin:0 0 20px;">查看投注历史和结算结果</p>
+
+  <div id="mine-root" style="min-height:300px;">
+    <div style="text-align:center;padding:60px;color:var(--color-text-muted);">需要先登录才能查看竞猜记录</div>
+  </div>
+
+  <script>
+    import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+    import { h, render } from "https://esm.sh/preact@10";
+    import { useState, useEffect } from "https://esm.sh/preact@10/hooks";
+    import { html } from "https://esm.sh/htm@3/preact";
+
+    const supabase = createClient(
+      import.meta.env.PUBLIC_SUPABASE_URL || "",
+      import.meta.env.PUBLIC_SUPABASE_ANON_KEY || ""
+    );
+
+    function App() {
+      const [bets, setBets] = useState([]);
+      const [profile, setProfile] = useState(null);
+      const [loading, setLoading] = useState(true);
+
+      useEffect(() => {
+        supabase.auth.getSession().then(async ({ data }) => {
+          if (!data.session) { setLoading(false); return; }
+          const { data: prof } = await supabase.from("profiles").select("*").eq("id", data.session.user.id).single();
+          if (prof) {
+            setProfile(prof);
+            const { data: betsData } = await supabase.from("bets").select("*").eq("user_id", prof.id).order("created_at", { ascending: false }).limit(100);
+            if (betsData) setBets(betsData);
+          }
+          setLoading(false);
+        });
+      }, []);
+
+      if (loading) return html`<div style="text-align:center;padding:60px;color:var(--color-text-muted)">加载中...</div>`;
+      if (!profile) return html`<div style="text-align:center;padding:60px;color:var(--color-text-muted)">请先 <a href="/bet/" style="color:var(--color-accent)">登录</a> 查看竞猜记录</div>`;
+      if (!bets.length) return html`<div style="text-align:center;padding:60px;color:var(--color-text-muted)">还没有投注记录，<a href="/bet/" style="color:var(--color-accent)">去竞猜</a></div>`;
+
+      const statusStyle = (s) => s === 'won' ? { color: '#43A047', label: '✅ 赢' } : s === 'lost' ? { color: '#E53935', label: '❌ 输' } : s === 'refunded' ? { color: '#FFA000', label: '↩ 退还' } : { color: 'var(--color-text-muted)', label: '⏳ 待定' };
+
+      return html`
+        <div style="font-size:14px;margin-bottom:14px;">🫘 <strong style="color:var(--color-accent)">${profile.beans}</strong> 豆 | 共 <strong>${bets.length}</strong> 注</div>
+        <div style="display:grid;gap:8px;">
+          ${bets.map(b => {
+            const ss = statusStyle(b.status);
+            return html`
+              <div style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center;">
+                <div>
+                  <div style="font-size:11px;color:var(--color-text-muted);">${new Date(b.created_at).toLocaleDateString("zh-CN")} · ${b.match_id}</div>
+                  <div style="font-size:13px;font-weight:600;">${b.bet_type === 'home_win' ? '主胜' : b.bet_type === 'away_win' ? '客胜' : '平局'} @ ${Number(b.odds).toFixed(2)}</div>
+                </div>
+                <div style="text-align:right;">
+                  <div style="font-size:13px;font-weight:700;">🫘 ${b.amount}</div>
+                  <div style="font-size:11px;color:${ss.color};">${ss.label} ${b.payout ? '→ 🫘' + b.payout : ''}</div>
+                </div>
+              </div>
+            `;
+          })}
+        </div>
+      `;
+    }
+
+    render(h(App), document.getElementById("mine-root"));
+  </script>
+</BaseLayout>

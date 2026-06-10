@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LeaderboardTable from "../../components/LeaderboardTable";
+---
+
+<BaseLayout title="竞猜排行榜">
+  <h1 style="font-size:22px;font-weight:700;margin:0 0 4px;">🏆 竞猜排行榜</h1>
+  <p style="color:var(--color-text-secondary);font-size:12px;margin:0 0 20px;">豆子最多的玩家排名 · 世界杯结束后定格</p>
+
+  <div class="glass-card" style="padding:20px;">
+    <LeaderboardTable client:load />
+  </div>
+
+  <div style="text-align:center;margin-top:20px;">
+    <a href="/bet/" class="btn-primary">去竞猜 →</a>
+  </div>
+</BaseLayout>
