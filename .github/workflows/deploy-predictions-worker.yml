@@ -10,16 +10,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v2
-        with:
-          version: latest
-
       - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          packageManager: pnpm
+          packageManager: npm
           secrets: |
             GITHUB_TOKEN
         env:
