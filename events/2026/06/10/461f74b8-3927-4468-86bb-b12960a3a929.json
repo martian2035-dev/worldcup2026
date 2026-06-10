@@ -1,0 +1,11 @@
+{
+  "id": "461f74b8-3927-4468-86bb-b12960a3a929",
+  "type": "cancel",
+  "accountId": "acct-4687c859",
+  "username": "w01",
+  "deviceId": "device-1acc9e26-d62e-45b2-846f-aeb0dc640d51",
+  "matchId": "A01",
+  "betId": "c921b198-11ab-438d-a256-6723396cc593",
+  "clientTimestamp": "2026-06-10T23:33:41.412Z",
+  "serverTimestamp": "2026-06-10T23:33:42.020Z"
+}
