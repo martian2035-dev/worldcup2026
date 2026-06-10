@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import {
-  getSavedUsername, saveUsername, clearUsername,
-  getLocalUserCache, setLocalUserCache, updateLocalUserCache, clearLocalUserCache,
+  getSavedUsername, saveUsername,
+  getLocalUserCache, setLocalUserCache, updateLocalUserCache,
   registerUser, fetchUserRecord, placeBet, hasPredictionApi,
   type UserRecord, type MatchOdds, type BetRecord,
 } from "../lib/store";
@@ -27,6 +27,7 @@ export default function BetPage({ matchData }: { matchData?: string }) {
   })();
   const [username, setUsername] = useState("");
   const [showAuth, setShowAuth] = useState(true);
+  const [isNewUser, setIsNewUser] = useState(false);
   const [user, setUser] = useState<UserRecord | null>(null);
   const [matches, setMatches] = useState<MatchInfo[]>([]);
   const [odds, setOdds] = useState<Record<string, MatchOdds>>({});
@@ -104,14 +105,44 @@ export default function BetPage({ matchData }: { matchData?: string }) {
     setLoading(false);
   }, []);
 
-  const handleRegister = (e: React.FormEvent) => {
+  const handleAuth = (e: React.FormEvent) => {
     e.preventDefault();
     const name = username.trim();
     if (name.length < 2) { setMsg("昵称至少2个字符"); return; }
     saveUsername(name);
-    loadUser(name);
+    if (isNewUser) {
+      // 新用户注册
+      loadNewUser(name);
+    } else {
+      // 已有用户登录
+      loadUser(name);
+    }
     setMsg("");
   };
+
+  const loadNewUser = useCallback(async (name: string) => {
+    setLoading(true);
+    // 通过 Worker 注册
+    const workerUser = await registerUser(name);
+    if (workerUser) {
+      setUser(workerUser);
+      setShowAuth(false);
+    } else {
+      // Worker 不可用，本地创建
+      const newUser: UserRecord = {
+        username: name, beans: 10000, totalBets: 0, wonBets: 0,
+        createdAt: new Date().toISOString(), bets: [],
+      };
+      setUser(newUser);
+      setLocalUserCache(newUser);
+      setShowAuth(false);
+      if (!hasPredictionApi()) {
+        setMsg("💡 竞猜接口未配置，数据保存在本地");
+        setTimeout(() => setMsg(""), 4000);
+      }
+    }
+    setLoading(false);
+  }, []);
 
   const handleBet = (match: MatchInfo, betType: BetType, oddsValue: number) => {
     if (!user || user.beans < 10) { setMsg("余额不足"); return; }
@@ -193,20 +224,51 @@ export default function BetPage({ matchData }: { matchData?: string }) {
 
   if (loading) return <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>加载中...</div>;
 
-  // 注册/登录
+  // 登录/注册
   if (showAuth) return (
-    <div style={{ maxWidth: 380, margin: "40px auto", background: "var(--color-bg)", borderRadius: 16, padding: 28, border: "1px solid rgba(255,255,255,0.08)", textAlign: "center" }}>
-      <h2 style={{ margin: "0 0 4px" }}>🎯 加入竞猜</h2>
-      <p style={{ color: "var(--color-text-secondary)", fontSize: 12, margin: "0 0 20px" }}>取一个昵称，立即获取 <b style={{ color: "var(--color-accent)" }}>10000 豆</b>，预测比赛结果</p>
-      <form onSubmit={handleRegister}>
+    <div style={{ maxWidth: 400, margin: "40px auto", background: "var(--color-bg)", borderRadius: 16, padding: 28, border: "1px solid rgba(255,255,255,0.08)", textAlign: "center" }}>
+      <h2 style={{ margin: "0 0 4px", fontSize: 20 }}>🎯 世界杯竞猜</h2>
+      <p style={{ color: "var(--color-text-secondary)", fontSize: 12, margin: "0 0 20px" }}>
+        {isNewUser ? "新用户注册，立即获取 10000 豆" : "已有账户？输入昵称登录"}
+      </p>
+
+      {/* 模式切换 */}
+      <div style={{ display: "flex", gap: 0, marginBottom: 16, borderRadius: 10, overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)" }}>
+        <button
+          onClick={() => { setIsNewUser(false); setMsg(""); }}
+          style={{
+            flex: 1, padding: "10px", border: "none", cursor: "pointer", fontSize: 13, fontWeight: 600,
+            background: !isNewUser ? "linear-gradient(135deg, rgba(255,215,0,0.2), rgba(255,215,0,0.05))" : "transparent",
+            color: !isNewUser ? "var(--color-accent)" : "var(--color-text-muted)",
+            transition: "all 0.2s",
+          }}
+        >
+          🔑 已有账户登录
+        </button>
+        <button
+          onClick={() => { setIsNewUser(true); setMsg(""); }}
+          style={{
+            flex: 1, padding: "10px", border: "none", cursor: "pointer", fontSize: 13, fontWeight: 600,
+            background: isNewUser ? "linear-gradient(135deg, rgba(255,215,0,0.2), rgba(255,215,0,0.05))" : "transparent",
+            color: isNewUser ? "var(--color-accent)" : "var(--color-text-muted)",
+            transition: "all 0.2s",
+          }}
+        >
+          🆕 新用户注册
+        </button>
+      </div>
+
+      <form onSubmit={handleAuth}>
         <input autoFocus value={username} onChange={e => setUsername(e.target.value)} placeholder="输入昵称..." maxLength={20}
           style={{ width: "100%", padding: "12px 14px", borderRadius: 10, border: "1px solid rgba(255,255,255,0.12)", outline: "none", background: "rgba(255,255,255,0.05)", color: "#fff", fontSize: 14, boxSizing: "border-box" }} />
-        {msg && <div style={{ color: msg.includes("✅") ? "var(--color-positive)" : "#E53935", fontSize: 11, marginTop: 6 }}>{msg}</div>}
+        {msg && <div style={{ color: msg.includes("✅") ? "var(--color-positive)" : msg.includes("💡") ? "var(--color-accent)" : "#E53935", fontSize: 11, marginTop: 6 }}>{msg}</div>}
         <button type="submit" style={{ width: "100%", marginTop: 14, padding: 12, borderRadius: 10, border: "none", cursor: "pointer", background: "linear-gradient(135deg, #FFD700, #FFA000)", color: "#0a1628", fontSize: 15, fontWeight: 700 }}>
-          🚀 免费领取 10000 豆
+          {isNewUser ? "🚀 注册并领取 10000 豆" : "🔑 登录账户"}
         </button>
       </form>
-      <p style={{ color: "var(--color-text-muted)", fontSize: 10, marginTop: 14 }}>昵称唯一，请牢记。数据与 GitHub 排行榜同步</p>
+      <p style={{ color: "var(--color-text-muted)", fontSize: 10, marginTop: 14 }}>
+        {isNewUser ? "昵称唯一，请牢记。登录后可在排行榜查看排名" : "输入已有昵称即可恢复账户数据"}
+      </p>
     </div>
   );
 
@@ -231,7 +293,7 @@ export default function BetPage({ matchData }: { matchData?: string }) {
           </span>
           <a href={`${BASE}/bet/mine/`} style={{ color: "var(--color-text-secondary)", fontSize: 11, textDecoration: "none" }}>📋 我的</a>
           <a href={`${BASE}/bet/board/`} style={{ color: "var(--color-text-secondary)", fontSize: 11, textDecoration: "none" }}>🏆 排行</a>
-          <button onClick={() => { clearUsername(); clearLocalUserCache(); setUser(null); setShowAuth(true); }} style={{ background: "none", border: "none", color: "var(--color-text-muted)", cursor: "pointer", fontSize: 10 }}>退出</button>
+          <button onClick={() => { setUser(null); setShowAuth(true); }} style={{ background: "none", border: "none", color: "var(--color-text-muted)", cursor: "pointer", fontSize: 10 }}>切换</button>
         </div>
       </div>
 
