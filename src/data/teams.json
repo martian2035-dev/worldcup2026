@@ -5,672 +5,4488 @@
       "name": "墨西哥",
       "nameEn": "MEX",
       "group": "A",
-      "fifaRank": null,
+      "fifaRank": 19,
       "worldCups": 0,
-      "coach": "",
+      "coach": "哈维尔·阿吉雷",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "edson-alvarez",
+          "name": "埃德松·阿尔瓦雷斯",
+          "nameEn": "Edson Álvarez",
+          "position": "CDM",
+          "number": 4,
+          "isStar": true
+        },
+        {
+          "id": "santiago-gimenez",
+          "name": "圣地亚哥·希门尼斯",
+          "nameEn": "Santiago Giménez",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "hirving-lozano",
+          "name": "伊尔文·洛萨诺",
+          "nameEn": "Hirving Lozano",
+          "position": "LW",
+          "number": 22,
+          "isStar": true
+        },
+        {
+          "id": "guillermo-ochoa",
+          "name": "吉列尔莫·奥乔亚",
+          "nameEn": "Guillermo Ochoa",
+          "position": "GK",
+          "number": 13,
+          "isStar": true
+        },
+        {
+          "id": "cesar-montes",
+          "name": "塞萨尔·蒙特斯",
+          "nameEn": "César Montes",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "luis-chavez",
+          "name": "路易斯·查韦斯",
+          "nameEn": "Luis Chávez",
+          "position": "CM",
+          "number": 24,
+          "isStar": false
+        },
+        {
+          "id": "johan-vasquez",
+          "name": "约翰·巴斯克斯",
+          "nameEn": "Johan Vásquez",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "julian-quinones",
+          "name": "胡利安·基尼奥内斯",
+          "nameEn": "Julián Quiñones",
+          "position": "LW",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "luis-romo",
+          "name": "路易斯·罗莫",
+          "nameEn": "Luis Romo",
+          "position": "CDM",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "oriel-rodriguez",
+          "name": "奥里埃尔·罗德里格斯",
+          "nameEn": "Oriel Rodríguez",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "jorge-ruvalcaba",
+          "name": "豪尔赫·鲁瓦尔卡瓦",
+          "nameEn": "Jorge Ruvalcaba",
+          "position": "RW",
+          "number": 21,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "RSA",
       "name": "南非",
       "nameEn": "RSA",
       "group": "A",
-      "fifaRank": null,
+      "fifaRank": 57,
       "worldCups": 0,
-      "coach": "",
+      "coach": "雨果·布鲁斯",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "percy-tau",
+          "name": "珀西·陶",
+          "nameEn": "Percy Tau",
+          "position": "RW",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "ronwen-williams",
+          "name": "罗恩文·威廉姆斯",
+          "nameEn": "Ronwen Williams",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "themba-zwane",
+          "name": "滕巴·兹瓦内",
+          "nameEn": "Themba Zwane",
+          "position": "CAM",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "lele-mokoena",
+          "name": "莱莱·莫科纳",
+          "nameEn": "Lelo Mokoena",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "sphephelo-sithole",
+          "name": "斯费费洛·西托莱",
+          "nameEn": "Sphephelo Sithole",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "zakhele-lepasa",
+          "name": "扎克勒·莱帕萨",
+          "nameEn": "Zakhele Lepasa",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "aubrey-modiba",
+          "name": "奥布里·莫迪巴",
+          "nameEn": "Aubrey Modiba",
+          "position": "LB",
+          "number": 13,
+          "isStar": false
+        },
+        {
+          "id": "khuliso-mudau",
+          "name": "库利索·穆达乌",
+          "nameEn": "Khuliso Mudau",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "KOR",
       "name": "韩国",
       "nameEn": "KOR",
       "group": "A",
-      "fifaRank": null,
+      "fifaRank": 22,
       "worldCups": 0,
-      "coach": "",
+      "coach": "洪明甫",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "son-heung-min",
+          "name": "孙兴慜",
+          "nameEn": "Son Heung-min",
+          "position": "LW",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "kang-in-lee",
+          "name": "李刚仁",
+          "nameEn": "Lee Kang-in",
+          "position": "CAM",
+          "number": 18,
+          "isStar": true
+        },
+        {
+          "id": "min-jae-kim",
+          "name": "金玟哉",
+          "nameEn": "Kim Min-jae",
+          "position": "CB",
+          "number": 4,
+          "isStar": true
+        },
+        {
+          "id": "hwang-hee-chan",
+          "name": "黄喜灿",
+          "nameEn": "Hwang Hee-chan",
+          "position": "RW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "jo-hyeon-woo",
+          "name": "赵贤祐",
+          "nameEn": "Jo Hyeon-woo",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "jung-woo-young",
+          "name": "郑又荣",
+          "nameEn": "Jung Woo-young",
+          "position": "CDM",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "lee-jae-sung",
+          "name": "李在城",
+          "nameEn": "Lee Jae-sung",
+          "position": "CM",
+          "number": 10,
+          "isStar": false
+        },
+        {
+          "id": "seol-young-woo",
+          "name": "薛英佑",
+          "nameEn": "Seol Young-woo",
+          "position": "RB",
+          "number": 22,
+          "isStar": false
+        },
+        {
+          "id": "bae-jun-ho",
+          "name": "裴俊镐",
+          "nameEn": "Bae Jun-ho",
+          "position": "CAM",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "oh-hyeon-gyu",
+          "name": "吴贤揆",
+          "nameEn": "Oh Hyeon-gyu",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "yang-hyun-jun",
+          "name": "梁铉俊",
+          "nameEn": "Yang Hyun-jun",
+          "position": "LW",
+          "number": 23,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "CZE",
       "name": "捷克",
       "nameEn": "CZE",
       "group": "A",
-      "fifaRank": null,
+      "fifaRank": 38,
       "worldCups": 0,
-      "coach": "",
+      "coach": "伊万·哈谢克",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "tomas-soucek",
+          "name": "托马斯·绍切克",
+          "nameEn": "Tomáš Souček",
+          "position": "CDM",
+          "number": 22,
+          "isStar": true
+        },
+        {
+          "id": "patrik-schick",
+          "name": "帕特里克·希克",
+          "nameEn": "Patrik Schick",
+          "position": "ST",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "vladimir-coufal",
+          "name": "弗拉基米尔·曹法尔",
+          "nameEn": "Vladimír Coufal",
+          "position": "RB",
+          "number": 5,
+          "isStar": true
+        },
+        {
+          "id": "matej-kovar",
+          "name": "马捷·科瓦日",
+          "nameEn": "Matěj Kovář",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "ladislav-krejci",
+          "name": "拉迪斯拉夫·克雷伊奇",
+          "nameEn": "Ladislav Krejčí",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "adam-hlozek",
+          "name": "亚当·赫洛热克",
+          "nameEn": "Adam Hložek",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "pavel-sulc",
+          "name": "帕维尔·舒尔茨",
+          "nameEn": "Pavel Šulc",
+          "position": "CAM",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "vaclav-cerny",
+          "name": "瓦茨拉夫·切尔尼",
+          "nameEn": "Václav Černý",
+          "position": "RW",
+          "number": 20,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "CAN",
       "name": "加拿大",
       "nameEn": "CAN",
       "group": "B",
-      "fifaRank": null,
+      "fifaRank": 31,
       "worldCups": 0,
-      "coach": "",
+      "coach": "杰西·马什",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "alphonso-davies",
+          "name": "阿方索·戴维斯",
+          "nameEn": "Alphonso Davies",
+          "position": "LB",
+          "number": 19,
+          "isStar": true
+        },
+        {
+          "id": "jonathan-david",
+          "name": "乔纳森·戴维",
+          "nameEn": "Jonathan David",
+          "position": "ST",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "stephen-eustaquio",
+          "name": "斯蒂芬·欧斯塔基奥",
+          "nameEn": "Stephen Eustáquio",
+          "position": "CM",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "tajon-buchanan",
+          "name": "塔洪·布坎南",
+          "nameEn": "Tajon Buchanan",
+          "position": "RW",
+          "number": 17,
+          "isStar": true
+        },
+        {
+          "id": "dayne-st-clair",
+          "name": "戴恩·圣克莱尔",
+          "nameEn": "Dayne St. Clair",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "alistair-johnston",
+          "name": "阿利斯泰尔·约翰斯顿",
+          "nameEn": "Alistair Johnston",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "moise-bombito",
+          "name": "莫伊兹·邦比托",
+          "nameEn": "Moïse Bombito",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "ismael-kone",
+          "name": "伊斯梅尔·科内",
+          "nameEn": "Ismaël Koné",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "cyle-larin",
+          "name": "赛尔·拉林",
+          "nameEn": "Cyle Larin",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "jacen-russell-rowe",
+          "name": "杰森·拉塞尔-罗",
+          "nameEn": "Jacen Russell-Rowe",
+          "position": "LW",
+          "number": 21,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "BIH",
       "name": "波黑",
       "nameEn": "BIH",
       "group": "B",
-      "fifaRank": null,
+      "fifaRank": 63,
       "worldCups": 0,
-      "coach": "",
+      "coach": "谢尔盖·巴尔巴雷兹",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "edin-dzeko",
+          "name": "埃丁·哲科",
+          "nameEn": "Edin Džeko",
+          "position": "ST",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "miralem-pjanic",
+          "name": "米拉勒姆·皮亚尼奇",
+          "nameEn": "Miralem Pjanić",
+          "position": "CM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "sead-kolasinac",
+          "name": "塞亚德·科拉希纳茨",
+          "nameEn": "Sead Kolašinac",
+          "position": "LB",
+          "number": 5,
+          "isStar": true
+        },
+        {
+          "id": "ibrahim-sehic",
+          "name": "易卜拉欣·谢希奇",
+          "nameEn": "Ibrahim Šehić",
+          "position": "GK",
+          "number": 12,
+          "isStar": false
+        },
+        {
+          "id": "aner-kardum",
+          "name": "阿内尔·卡尔杜姆",
+          "nameEn": "Aner Kardum",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "rade-krunic",
+          "name": "拉德·克鲁尼奇",
+          "nameEn": "Rade Krunić",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "amar-dedic",
+          "name": "阿马尔·德迪奇",
+          "nameEn": "Amar Dedić",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "benjamin-tatar",
+          "name": "本杰明·塔塔尔",
+          "nameEn": "Benjamin Tatar",
+          "position": "LW",
+          "number": 17,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "QAT",
       "name": "卡塔尔",
       "nameEn": "QAT",
       "group": "B",
-      "fifaRank": null,
+      "fifaRank": 48,
       "worldCups": 0,
-      "coach": "",
+      "coach": "巴托洛梅·马克斯",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "akram-afif",
+          "name": "阿克拉姆·阿菲夫",
+          "nameEn": "Akram Afif",
+          "position": "LW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "almoez-ali",
+          "name": "阿尔莫埃兹·阿里",
+          "nameEn": "Almoez Ali",
+          "position": "ST",
+          "number": 19,
+          "isStar": true
+        },
+        {
+          "id": "basham-al-rawi",
+          "name": "巴萨姆·拉维",
+          "nameEn": "Bassam Al-Rawi",
+          "position": "CB",
+          "number": 15,
+          "isStar": true
+        },
+        {
+          "id": "meshaal-barsham",
+          "name": "米沙尔·巴沙姆",
+          "nameEn": "Meshaal Barsham",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "mohammed-waad",
+          "name": "穆罕默德·瓦德",
+          "nameEn": "Mohammed Waad",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "homam-ahmed",
+          "name": "霍马姆·艾哈迈德",
+          "nameEn": "Homam Ahmed",
+          "position": "LB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "yusuf-abdurisag",
+          "name": "优素福·阿卜杜里萨格",
+          "nameEn": "Yusuf Abdurisag",
+          "position": "RW",
+          "number": 10,
+          "isStar": false
+        },
+        {
+          "id": "tarek-salman",
+          "name": "塔里克·萨勒曼",
+          "nameEn": "Tarek Salman",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "SUI",
       "name": "瑞士",
       "nameEn": "SUI",
       "group": "B",
-      "fifaRank": null,
+      "fifaRank": 18,
       "worldCups": 0,
-      "coach": "",
+      "coach": "穆拉特·雅金",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "granit-xhaka",
+          "name": "格拉尼特·扎卡",
+          "nameEn": "Granit Xhaka",
+          "position": "CDM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "manuel-akanji",
+          "name": "曼努埃尔·阿坎吉",
+          "nameEn": "Manuel Akanji",
+          "position": "CB",
+          "number": 5,
+          "isStar": true
+        },
+        {
+          "id": "gregor-kobel",
+          "name": "格雷戈尔·科贝尔",
+          "nameEn": "Gregor Kobel",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "breel-embolo",
+          "name": "布雷尔·恩博洛",
+          "nameEn": "Breel Embolo",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "remo-freuler",
+          "name": "雷莫·弗罗伊勒",
+          "nameEn": "Remo Freuler",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "silvan-widmer",
+          "name": "西尔万·维德默",
+          "nameEn": "Silvan Widmer",
+          "position": "RB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "ruben-vargas",
+          "name": "鲁本·巴尔加斯",
+          "nameEn": "Ruben Vargas",
+          "position": "LW",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "michel-aebischer",
+          "name": "米歇尔·埃比歇尔",
+          "nameEn": "Michel Aebischer",
+          "position": "CM",
+          "number": 20,
+          "isStar": false
+        },
+        {
+          "id": "nico-elman",
+          "name": "尼科·埃尔曼",
+          "nameEn": "Nico Elman",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "dan-ndoye",
+          "name": "丹·恩多耶",
+          "nameEn": "Dan Ndoye",
+          "position": "RW",
+          "number": 19,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "BRA",
       "name": "巴西",
       "nameEn": "BRA",
       "group": "C",
-      "fifaRank": null,
-      "worldCups": 0,
-      "coach": "",
+      "fifaRank": 4,
+      "worldCups": 5,
+      "coach": "多里瓦尔·儒尼奥尔",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "vinicius-jr",
+          "name": "维尼修斯",
+          "nameEn": "Vinícius Júnior",
+          "position": "LW",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "rodrygo",
+          "name": "罗德里戈",
+          "nameEn": "Rodrygo",
+          "position": "RW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "bruno-guimaraes",
+          "name": "布鲁诺·吉马良斯",
+          "nameEn": "Bruno Guimarães",
+          "position": "CM",
+          "number": 8,
+          "isStar": true
+        },
+        {
+          "id": "alisson",
+          "name": "阿利松",
+          "nameEn": "Alisson Becker",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "marquinhos",
+          "name": "马尔基尼奥斯",
+          "nameEn": "Marquinhos",
+          "position": "CB",
+          "number": 3,
+          "isStar": true
+        },
+        {
+          "id": "eder-militao",
+          "name": "埃德·米利唐",
+          "nameEn": "Éder Militão",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "gabriel-magalhaes",
+          "name": "加布里埃尔·马加良斯",
+          "nameEn": "Gabriel Magalhães",
+          "position": "CB",
+          "number": 14,
+          "isStar": false
+        },
+        {
+          "id": "raphinha",
+          "name": "拉菲尼亚",
+          "nameEn": "Raphinha",
+          "position": "RW",
+          "number": 19,
+          "isStar": false
+        },
+        {
+          "id": "enda-wendel",
+          "name": "恩德里克",
+          "nameEn": "Endrick",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "lucas-paqueta",
+          "name": "卢卡斯·帕奎塔",
+          "nameEn": "Lucas Paquetá",
+          "position": "CAM",
+          "number": 10,
+          "isStar": false
+        },
+        {
+          "id": "joao-gomes",
+          "name": "若昂·戈麦斯",
+          "nameEn": "João Gomes",
+          "position": "CDM",
+          "number": 15,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "MAR",
       "name": "摩洛哥",
       "nameEn": "MAR",
       "group": "C",
-      "fifaRank": null,
+      "fifaRank": 14,
       "worldCups": 0,
-      "coach": "",
+      "coach": "瓦利德·雷格拉吉",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "achraf-hakimi",
+          "name": "阿什拉夫·哈基米",
+          "nameEn": "Achraf Hakimi",
+          "position": "RB",
+          "number": 2,
+          "isStar": true
+        },
+        {
+          "id": "brahim-diaz",
+          "name": "卜拉欣·迪亚斯",
+          "nameEn": "Brahim Díaz",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "yassine-bounou",
+          "name": "亚辛·布努",
+          "nameEn": "Yassine Bounou",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "noussair-mazraoui",
+          "name": "努赛尔·马兹拉维",
+          "nameEn": "Noussair Mazraoui",
+          "position": "LB",
+          "number": 3,
+          "isStar": true
+        },
+        {
+          "id": "sofyan-amrabat",
+          "name": "索菲扬·阿姆拉巴特",
+          "nameEn": "Sofyan Amrabat",
+          "position": "CDM",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "youssef-en-nesyri",
+          "name": "优素福·恩内斯里",
+          "nameEn": "Youssef En-Nesyri",
+          "position": "ST",
+          "number": 19,
+          "isStar": false
+        },
+        {
+          "id": "azzedine-ounahi",
+          "name": "阿泽丁·奥纳希",
+          "nameEn": "Azzedine Ounahi",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "nayef-agueerd",
+          "name": "纳耶夫·阿盖尔",
+          "nameEn": "Nayef Aguerd",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "amine-harit",
+          "name": "阿明·阿里",
+          "nameEn": "Amine Harit",
+          "position": "LW",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "ezalzouli",
+          "name": "阿卜杜勒·埃扎尔祖利",
+          "nameEn": "Abde Ezzalzouli",
+          "position": "RW",
+          "number": 16,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "HAI",
       "name": "海地",
       "nameEn": "HAI",
       "group": "C",
-      "fifaRank": null,
+      "fifaRank": 86,
       "worldCups": 0,
-      "coach": "",
+      "coach": "塞巴斯蒂安·米涅",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "frantzdy-pierrot",
+          "name": "弗兰茨迪·皮埃罗",
+          "nameEn": "Frantzdy Pierrot",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "duckens-nazon",
+          "name": "达肯斯·纳宗",
+          "nameEn": "Duckens Nazon",
+          "position": "ST",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "carlens-arcus",
+          "name": "卡伦斯·阿库斯",
+          "nameEn": "Carlens Arcus",
+          "position": "RB",
+          "number": 2,
+          "isStar": true
+        },
+        {
+          "id": "johny-placide",
+          "name": "约翰尼·普拉西德",
+          "nameEn": "Johny Placide",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "ricardo-ade",
+          "name": "里卡多·阿德",
+          "nameEn": "Ricardo Adé",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "jean-david-legrand",
+          "name": "让-大卫·勒格朗",
+          "nameEn": "Jean-David Legrand",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "bryan-alceus",
+          "name": "布莱恩·阿尔塞乌斯",
+          "nameEn": "Bryan Alceus",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "steven-saba",
+          "name": "史蒂文·萨巴",
+          "nameEn": "Steeven Saba",
+          "position": "CAM",
+          "number": 10,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "SCO",
       "name": "苏格兰",
       "nameEn": "SCO",
       "group": "C",
-      "fifaRank": null,
+      "fifaRank": 34,
       "worldCups": 0,
-      "coach": "",
+      "coach": "史蒂夫·克拉克",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "andrew-robertson",
+          "name": "安德鲁·罗伯逊",
+          "nameEn": "Andrew Robertson",
+          "position": "LB",
+          "number": 3,
+          "isStar": true
+        },
+        {
+          "id": "scott-mctominay",
+          "name": "斯科特·麦克托米奈",
+          "nameEn": "Scott McTominay",
+          "position": "CM",
+          "number": 4,
+          "isStar": true
+        },
+        {
+          "id": "john-mcginn",
+          "name": "约翰·麦金",
+          "nameEn": "John McGinn",
+          "position": "CAM",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "angus-gunn",
+          "name": "安格斯·冈恩",
+          "nameEn": "Angus Gunn",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "kieran-tierney",
+          "name": "基兰·蒂尔尼",
+          "nameEn": "Kieran Tierney",
+          "position": "CB",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "billy-gilmour",
+          "name": "比利·吉尔摩",
+          "nameEn": "Billy Gilmour",
+          "position": "CM",
+          "number": 14,
+          "isStar": false
+        },
+        {
+          "id": "ryan-christie",
+          "name": "瑞安·克里斯蒂",
+          "nameEn": "Ryan Christie",
+          "position": "RW",
+          "number": 11,
+          "isStar": false
+        },
+        {
+          "id": "ché-adams",
+          "name": "切·亚当斯",
+          "nameEn": "Ché Adams",
+          "position": "ST",
+          "number": 10,
+          "isStar": false
+        },
+        {
+          "id": "lewis-ferguson",
+          "name": "刘易斯·弗格森",
+          "nameEn": "Lewis Ferguson",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "aaron-hickey",
+          "name": "阿龙·希基",
+          "nameEn": "Aaron Hickey",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "USA",
       "name": "美国",
       "nameEn": "USA",
       "group": "D",
-      "fifaRank": null,
+      "fifaRank": 15,
       "worldCups": 0,
-      "coach": "",
+      "coach": "毛里西奥·波切蒂诺",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "christian-pulisic",
+          "name": "克里斯蒂安·普利西奇",
+          "nameEn": "Christian Pulisic",
+          "position": "LW",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "gio-reyna",
+          "name": "乔瓦尼·雷纳",
+          "nameEn": "Gio Reyna",
+          "position": "CAM",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "tyler-adams",
+          "name": "泰勒·亚当斯",
+          "nameEn": "Tyler Adams",
+          "position": "CDM",
+          "number": 4,
+          "isStar": true
+        },
+        {
+          "id": "matt-turner",
+          "name": "马特·特纳",
+          "nameEn": "Matt Turner",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "timothy-weah",
+          "name": "蒂莫西·维阿",
+          "nameEn": "Timothy Weah",
+          "position": "RW",
+          "number": 21,
+          "isStar": false
+        },
+        {
+          "id": "antonee-robinson",
+          "name": "安东尼·罗宾逊",
+          "nameEn": "Antonee Robinson",
+          "position": "LB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "chris-richards",
+          "name": "克里斯·理查兹",
+          "nameEn": "Chris Richards",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "ricardo-pepi",
+          "name": "里卡多·佩皮",
+          "nameEn": "Ricardo Pepi",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "folarin-balogun",
+          "name": "福拉林·巴洛贡",
+          "nameEn": "Folarin Balogun",
+          "position": "ST",
+          "number": 20,
+          "isStar": false
+        },
+        {
+          "id": "y-musah",
+          "name": "尤努斯·穆萨",
+          "nameEn": "Yunus Musah",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "cameron-vickers",
+          "name": "卡梅伦·卡特-维克斯",
+          "nameEn": "Cameron Carter-Vickers",
+          "position": "CB",
+          "number": 12,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "PAR",
       "name": "巴拉圭",
       "nameEn": "PAR",
       "group": "D",
-      "fifaRank": null,
+      "fifaRank": 52,
       "worldCups": 0,
-      "coach": "",
+      "coach": "古斯塔沃·阿尔法罗",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "miguel-almiron",
+          "name": "米格尔·阿尔米隆",
+          "nameEn": "Miguel Almirón",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "julio-enciso",
+          "name": "胡利奥·恩西索",
+          "nameEn": "Julio Enciso",
+          "position": "ST",
+          "number": 19,
+          "isStar": true
+        },
+        {
+          "id": "gustavo-gomez",
+          "name": "古斯塔沃·戈麦斯",
+          "nameEn": "Gustavo Gómez",
+          "position": "CB",
+          "number": 15,
+          "isStar": true
+        },
+        {
+          "id": "carlos-coronel",
+          "name": "卡洛斯·科罗内尔",
+          "nameEn": "Carlos Coronel",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "fabian-balbuena",
+          "name": "法比安·巴尔布埃纳",
+          "nameEn": "Fabián Balbuena",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "ramon-sosa",
+          "name": "拉蒙·索萨",
+          "nameEn": "Ramón Sosa",
+          "position": "LW",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "mathias-villasanti",
+          "name": "马蒂亚斯·比利亚桑蒂",
+          "nameEn": "Mathías Villasanti",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "alejandro-gamarra",
+          "name": "亚历杭德罗·加马拉",
+          "nameEn": "Alejandro Gamarra",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "AUS",
       "name": "澳大利亚",
       "nameEn": "AUS",
       "group": "D",
-      "fifaRank": null,
+      "fifaRank": 24,
       "worldCups": 0,
-      "coach": "",
+      "coach": "托尼·波波维奇",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "harry-souttar",
+          "name": "哈里·苏塔",
+          "nameEn": "Harry Souttar",
+          "position": "CB",
+          "number": 19,
+          "isStar": true
+        },
+        {
+          "id": "mathew-ryan",
+          "name": "马修·瑞安",
+          "nameEn": "Mathew Ryan",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "jackson-irvine",
+          "name": "杰克逊·欧文",
+          "nameEn": "Jackson Irvine",
+          "position": "CM",
+          "number": 22,
+          "isStar": true
+        },
+        {
+          "id": "riley-mcgree",
+          "name": "赖利·麦格里",
+          "nameEn": "Riley McGree",
+          "position": "CAM",
+          "number": 14,
+          "isStar": true
+        },
+        {
+          "id": "kusini-yengi",
+          "name": "库西尼·延吉",
+          "nameEn": "Kusini Yengi",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "cameron-burgess",
+          "name": "卡梅伦·伯吉斯",
+          "nameEn": "Cameron Burgess",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "aziz-behich",
+          "name": "阿齐兹·比伊奇",
+          "nameEn": "Aziz Behich",
+          "position": "LB",
+          "number": 16,
+          "isStar": false
+        },
+        {
+          "id": "nathaniel-atkinson",
+          "name": "纳撒尼尔·阿特金森",
+          "nameEn": "Nathaniel Atkinson",
+          "position": "RB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "aiden-o-neill",
+          "name": "艾登·奥尼尔",
+          "nameEn": "Aiden O'Neill",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "sam-silvera",
+          "name": "萨姆·西尔韦拉",
+          "nameEn": "Sam Silvera",
+          "position": "RW",
+          "number": 21,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "TUR",
       "name": "土耳其",
       "nameEn": "TUR",
       "group": "D",
-      "fifaRank": null,
+      "fifaRank": 28,
       "worldCups": 0,
-      "coach": "",
+      "coach": "文森佐·蒙特拉",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "hakan-calhanoglu",
+          "name": "哈坎·恰尔汗奥卢",
+          "nameEn": "Hakan Çalhanoğlu",
+          "position": "CDM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "arda-guler",
+          "name": "阿尔达·居莱尔",
+          "nameEn": "Arda Güler",
+          "position": "CAM",
+          "number": 8,
+          "isStar": true
+        },
+        {
+          "id": "merih-demiral",
+          "name": "梅里赫·德米拉尔",
+          "nameEn": "Merih Demiral",
+          "position": "CB",
+          "number": 3,
+          "isStar": true
+        },
+        {
+          "id": "altay-bayindir",
+          "name": "阿尔泰·巴因迪尔",
+          "nameEn": "Altay Bayındır",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "orima-kokcu",
+          "name": "奥尔昆·柯克曲",
+          "nameEn": "Orkun Kökçü",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "baris-yilmaz",
+          "name": "巴里什·伊尔马兹",
+          "nameEn": "Barış Yılmaz",
+          "position": "RW",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "abdulkerim-bardakci",
+          "name": "阿卜杜勒克里姆·巴尔达克奇",
+          "nameEn": "Abdülkerim Bardakcı",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "kerem-akturkoglu",
+          "name": "克雷姆·阿克图尔科卢",
+          "nameEn": "Kerem Aktürkoğlu",
+          "position": "LW",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "cenk-tosun",
+          "name": "詹克·托松",
+          "nameEn": "Cenk Tosun",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "zeki-celik",
+          "name": "泽基·切利克",
+          "nameEn": "Zeki Çelik",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "GER",
       "name": "德国",
       "nameEn": "GER",
       "group": "E",
-      "fifaRank": null,
-      "worldCups": 0,
-      "coach": "",
+      "fifaRank": 10,
+      "worldCups": 4,
+      "coach": "尤利安·纳格尔斯曼",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "jamal-musiala",
+          "name": "贾马尔·穆西亚拉",
+          "nameEn": "Jamal Musiala",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "florian-wirtz",
+          "name": "弗洛里安·维尔茨",
+          "nameEn": "Florian Wirtz",
+          "position": "CAM",
+          "number": 17,
+          "isStar": true
+        },
+        {
+          "id": "joshua-kimmich",
+          "name": "约书亚·基米希",
+          "nameEn": "Joshua Kimmich",
+          "position": "CDM",
+          "number": 6,
+          "isStar": true
+        },
+        {
+          "id": "antonio-rudiger",
+          "name": "安东尼奥·吕迪格",
+          "nameEn": "Antonio Rüdiger",
+          "position": "CB",
+          "number": 2,
+          "isStar": true
+        },
+        {
+          "id": "marc-ter-stegen",
+          "name": "马克-安德烈·特尔施特根",
+          "nameEn": "Marc-André ter Stegen",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "kai-havertz",
+          "name": "凯·哈弗茨",
+          "nameEn": "Kai Havertz",
+          "position": "ST",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "leroy-sane",
+          "name": "勒鲁瓦·萨内",
+          "nameEn": "Leroy Sané",
+          "position": "RW",
+          "number": 19,
+          "isStar": false
+        },
+        {
+          "id": "niclas-fullkrug",
+          "name": "尼克拉斯·菲尔克鲁格",
+          "nameEn": "Niclas Füllkrug",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "jonathan-tah",
+          "name": "若纳唐·塔",
+          "nameEn": "Jonathan Tah",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "maximilian-mittelstadt",
+          "name": "马克西米利安·米特尔施泰特",
+          "nameEn": "Maximilian Mittelstädt",
+          "position": "LB",
+          "number": 18,
+          "isStar": false
+        },
+        {
+          "id": "pascal-gross",
+          "name": "帕斯卡尔·格罗斯",
+          "nameEn": "Pascal Groß",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "CUW",
       "name": "库拉索",
       "nameEn": "CUW",
       "group": "E",
-      "fifaRank": null,
+      "fifaRank": 90,
       "worldCups": 0,
-      "coach": "",
+      "coach": "迪恩·戈雷",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "leandro-bacuna",
+          "name": "莱安德罗·巴库纳",
+          "nameEn": "Leandro Bacuna",
+          "position": "CM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "juriën-gaari",
+          "name": "朱里恩·加里",
+          "nameEn": "Juriën Gaari",
+          "position": "RB",
+          "number": 2,
+          "isStar": true
+        },
+        {
+          "id": "kenji-gorre",
+          "name": "肯吉·戈雷",
+          "nameEn": "Kenji Gorré",
+          "position": "LW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "eloy-room",
+          "name": "埃洛伊·罗姆",
+          "nameEn": "Eloy Room",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "juninho-bacuna",
+          "name": "儒尼尼奥·巴库纳",
+          "nameEn": "Juninho Bacuna",
+          "position": "CAM",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "trevor-doornbusch",
+          "name": "特雷弗·多恩布什",
+          "nameEn": "Trevor Doornbusch",
+          "position": "GK",
+          "number": 23,
+          "isStar": false
+        },
+        {
+          "id": "brandley-kuwas",
+          "name": "布兰德利·库瓦斯",
+          "nameEn": "Brandley Kuwas",
+          "position": "RW",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "roshon-engel",
+          "name": "罗尚·恩格尔",
+          "nameEn": "Roshon van Eijma",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "CIV",
       "name": "科特迪瓦",
       "nameEn": "CIV",
       "group": "E",
-      "fifaRank": null,
+      "fifaRank": 40,
       "worldCups": 0,
-      "coach": "",
+      "coach": "埃默斯·法埃",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "sebastien-haller",
+          "name": "塞巴斯蒂安·阿莱",
+          "nameEn": "Sébastien Haller",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "franck-kessie",
+          "name": "弗兰克·凯西",
+          "nameEn": "Franck Kessié",
+          "position": "CDM",
+          "number": 8,
+          "isStar": true
+        },
+        {
+          "id": "simon-adingra",
+          "name": "西蒙·阿丁拉",
+          "nameEn": "Simon Adingra",
+          "position": "LW",
+          "number": 24,
+          "isStar": true
+        },
+        {
+          "id": "y-fofana",
+          "name": "亚希亚·福法纳",
+          "nameEn": "Yahia Fofana",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "odilon-kossounou",
+          "name": "奥迪隆·科索努",
+          "nameEn": "Odilon Kossonou",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "evan-ndicka",
+          "name": "埃万·恩迪卡",
+          "nameEn": "Evan Ndicka",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "ibrahim-sangare",
+          "name": "易卜拉欣·桑加雷",
+          "nameEn": "Ibrahim Sangaré",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "nicolas-pepe",
+          "name": "尼古拉·佩佩",
+          "nameEn": "Nicolas Pépé",
+          "position": "RW",
+          "number": 19,
+          "isStar": false
+        },
+        {
+          "id": "amad-diallo",
+          "name": "阿马德·迪亚洛",
+          "nameEn": "Amad Diallo",
+          "position": "RW",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "jean-michael-seri",
+          "name": "让-米夏埃尔·塞里",
+          "nameEn": "Jean Michaël Seri",
+          "position": "CM",
+          "number": 10,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "ECU",
       "name": "厄瓜多尔",
       "nameEn": "ECU",
       "group": "E",
-      "fifaRank": null,
+      "fifaRank": 26,
       "worldCups": 0,
-      "coach": "",
+      "coach": "塞巴斯蒂安·贝卡塞塞",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "moises-caicedo",
+          "name": "莫伊塞斯·凯塞多",
+          "nameEn": "Moisés Caicedo",
+          "position": "CDM",
+          "number": 23,
+          "isStar": true
+        },
+        {
+          "id": "piero-hincapie",
+          "name": "皮埃罗·因卡皮耶",
+          "nameEn": "Piero Hincapié",
+          "position": "CB",
+          "number": 3,
+          "isStar": true
+        },
+        {
+          "id": "enner-valencia",
+          "name": "恩纳·瓦伦西亚",
+          "nameEn": "Enner Valencia",
+          "position": "ST",
+          "number": 13,
+          "isStar": true
+        },
+        {
+          "id": "hemang-almeida",
+          "name": "埃尔南·加林德斯",
+          "nameEn": "Hernán Galíndez",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "william-pacho",
+          "name": "威廉·帕乔",
+          "nameEn": "William Pacho",
+          "position": "CB",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "angelo-preciado",
+          "name": "安赫洛·普雷西亚多",
+          "nameEn": "Angelo Preciado",
+          "position": "RB",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "pervis-estupinan",
+          "name": "佩尔维斯·埃斯图皮尼安",
+          "nameEn": "Pervis Estupiñán",
+          "position": "LB",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "carlos-gruezo",
+          "name": "卡洛斯·格鲁埃索",
+          "nameEn": "Carlos Gruezo",
+          "position": "CDM",
+          "number": 20,
+          "isStar": false
+        },
+        {
+          "id": "kendry-paez",
+          "name": "肯德里·派斯",
+          "nameEn": "Kendry Páez",
+          "position": "CAM",
+          "number": 10,
+          "isStar": false
+        },
+        {
+          "id": "jeremy-sarmiento",
+          "name": "赫雷米·萨缅托",
+          "nameEn": "Jeremy Sarmiento",
+          "position": "LW",
+          "number": 16,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "NED",
       "name": "荷兰",
       "nameEn": "NED",
       "group": "F",
-      "fifaRank": null,
+      "fifaRank": 7,
       "worldCups": 0,
-      "coach": "",
+      "coach": "罗纳德·科曼",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "virgil-van-dijk",
+          "name": "维吉尔·范迪克",
+          "nameEn": "Virgil van Dijk",
+          "position": "CB",
+          "number": 4,
+          "isStar": true
+        },
+        {
+          "id": "frenkie-de-jong",
+          "name": "弗伦基·德容",
+          "nameEn": "Frenkie de Jong",
+          "position": "CM",
+          "number": 21,
+          "isStar": true
+        },
+        {
+          "id": "cody-gakpo",
+          "name": "科迪·加克波",
+          "nameEn": "Cody Gakpo",
+          "position": "LW",
+          "number": 8,
+          "isStar": true
+        },
+        {
+          "id": "xavi-simons",
+          "name": "哈维·西蒙斯",
+          "nameEn": "Xavi Simons",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "bart-verbruggen",
+          "name": "巴特·费尔布鲁亨",
+          "nameEn": "Bart Verbruggen",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "denzel-dumfries",
+          "name": "登泽尔·邓弗里斯",
+          "nameEn": "Denzel Dumfries",
+          "position": "RB",
+          "number": 22,
+          "isStar": false
+        },
+        {
+          "id": "nathan-ake",
+          "name": "纳坦·阿克",
+          "nameEn": "Nathan Aké",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "micky-van-de-ven",
+          "name": "米奇·范德文",
+          "nameEn": "Micky van de Ven",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "tijani-reijnders",
+          "name": "蒂贾尼·赖因德斯",
+          "nameEn": "Tijjani Reijnders",
+          "position": "CM",
+          "number": 14,
+          "isStar": false
+        },
+        {
+          "id": "donyell-malen",
+          "name": "唐耶尔·马伦",
+          "nameEn": "Donyell Malen",
+          "position": "RW",
+          "number": 18,
+          "isStar": false
+        },
+        {
+          "id": "ryan-gravenberch",
+          "name": "瑞安·赫拉芬贝赫",
+          "nameEn": "Ryan Gravenberch",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "JPN",
       "name": "日本",
       "nameEn": "JPN",
       "group": "F",
-      "fifaRank": null,
+      "fifaRank": 16,
       "worldCups": 0,
-      "coach": "",
+      "coach": "森保一",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "takefusa-kubo",
+          "name": "久保建英",
+          "nameEn": "Takefusa Kubo",
+          "position": "RW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "kaoru-mitoma",
+          "name": "三笘薰",
+          "nameEn": "Kaoru Mitoma",
+          "position": "LW",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "wataru-endo",
+          "name": "远藤航",
+          "nameEn": "Wataru Endo",
+          "position": "CDM",
+          "number": 6,
+          "isStar": true
+        },
+        {
+          "id": "daichi-kamada",
+          "name": "镰田大地",
+          "nameEn": "Daichi Kamada",
+          "position": "CAM",
+          "number": 15,
+          "isStar": true
+        },
+        {
+          "id": "zion-suzuki",
+          "name": "铃木彩艳",
+          "nameEn": "Zion Suzuki",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "ko-itakura",
+          "name": "板仓滉",
+          "nameEn": "Ko Itakura",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "takehiro-tomiyasu",
+          "name": "冨安健洋",
+          "nameEn": "Takehiro Tomiyasu",
+          "position": "CB",
+          "number": 22,
+          "isStar": false
+        },
+        {
+          "id": "hiroki-ito",
+          "name": "伊藤洋辉",
+          "nameEn": "Hiroki Ito",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "takumi-minamino",
+          "name": "南野拓实",
+          "nameEn": "Takumi Minamino",
+          "position": "LW",
+          "number": 10,
+          "isStar": false
+        },
+        {
+          "id": "ao-tanaka",
+          "name": "田中碧",
+          "nameEn": "Ao Tanaka",
+          "position": "CM",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "ayase-ueda",
+          "name": "上田绮世",
+          "nameEn": "Ayase Ueda",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "SWE",
       "name": "瑞典",
       "nameEn": "SWE",
       "group": "F",
-      "fifaRank": null,
+      "fifaRank": 27,
       "worldCups": 0,
-      "coach": "",
+      "coach": "容·达尔·托马森",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "alexander-isak",
+          "name": "亚历山大·伊萨克",
+          "nameEn": "Alexander Isak",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "dejan-kulusevski",
+          "name": "德扬·库卢塞夫斯基",
+          "nameEn": "Dejan Kulusevski",
+          "position": "RW",
+          "number": 21,
+          "isStar": true
+        },
+        {
+          "id": "viktor-gyokeres",
+          "name": "维克托·哲凯赖什",
+          "nameEn": "Viktor Gyökeres",
+          "position": "ST",
+          "number": 17,
+          "isStar": true
+        },
+        {
+          "id": "victor-lindelof",
+          "name": "维克托·林德洛夫",
+          "nameEn": "Victor Lindelöf",
+          "position": "CB",
+          "number": 3,
+          "isStar": true
+        },
+        {
+          "id": "robin-olsen",
+          "name": "罗宾·奥尔森",
+          "nameEn": "Robin Olsen",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "emil-forsberg",
+          "name": "埃米尔·福斯贝里",
+          "nameEn": "Emil Forsberg",
+          "position": "LW",
+          "number": 10,
+          "isStar": false
+        },
+        {
+          "id": "ludwig-augustinsson",
+          "name": "路德维希·奥古斯丁松",
+          "nameEn": "Ludwig Augustinsson",
+          "position": "LB",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "mattias-svanberg",
+          "name": "马蒂亚斯·斯万贝里",
+          "nameEn": "Mattias Svanberg",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "jesper-karlstrom",
+          "name": "耶斯佩尔·卡尔斯特伦",
+          "nameEn": "Jesper Karlström",
+          "position": "CDM",
+          "number": 13,
+          "isStar": false
+        },
+        {
+          "id": "anthony-elanga",
+          "name": "安东尼·埃兰加",
+          "nameEn": "Anthony Elanga",
+          "position": "LW",
+          "number": 19,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "TUN",
       "name": "突尼斯",
       "nameEn": "TUN",
       "group": "F",
-      "fifaRank": null,
+      "fifaRank": 36,
       "worldCups": 0,
-      "coach": "",
+      "coach": "凯斯·亚古比",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "youssef-msakni",
+          "name": "优素福·姆萨克尼",
+          "nameEn": "Youssef Msakni",
+          "position": "LW",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "elias-achouri",
+          "name": "埃利亚斯·阿库里",
+          "nameEn": "Elias Achouri",
+          "position": "RW",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "aissa-laidouni",
+          "name": "艾萨·莱杜尼",
+          "nameEn": "Aïssa Laïdouni",
+          "position": "CM",
+          "number": 14,
+          "isStar": true
+        },
+        {
+          "id": "bechir-ben-said",
+          "name": "贝希尔·本·赛义德",
+          "nameEn": "Bechir Ben Saïd",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "montassar-talbi",
+          "name": "蒙塔萨尔·塔尔比",
+          "nameEn": "Montassar Talbi",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "yan-valery",
+          "name": "扬·瓦莱里",
+          "nameEn": "Yan Valery",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "mohamed-drager",
+          "name": "穆罕默德·德雷格",
+          "nameEn": "Mohamed Dräger",
+          "position": "LB",
+          "number": 20,
+          "isStar": false
+        },
+        {
+          "id": "hamza-rafia",
+          "name": "哈姆扎·拉菲亚",
+          "nameEn": "Hamza Rafia",
+          "position": "CAM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "haythem-jouini",
+          "name": "海瑟姆·朱伊尼",
+          "nameEn": "Haythem Jouini",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "BEL",
       "name": "比利时",
       "nameEn": "BEL",
       "group": "G",
-      "fifaRank": null,
+      "fifaRank": 8,
       "worldCups": 0,
-      "coach": "",
+      "coach": "鲁迪·加西亚",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "kevin-de-bruyne",
+          "name": "凯文·德布劳内",
+          "nameEn": "Kevin De Bruyne",
+          "position": "CAM",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "romeo-lukaku",
+          "name": "罗梅卢·卢卡库",
+          "nameEn": "Romelu Lukaku",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "jeremy-doku",
+          "name": "热雷米·多库",
+          "nameEn": "Jérémy Doku",
+          "position": "LW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "thibaut-courtois",
+          "name": "蒂博·库尔图瓦",
+          "nameEn": "Thibaut Courtois",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "charles-de-ketelaere",
+          "name": "夏尔·德凯特拉雷",
+          "nameEn": "Charles De Ketelaere",
+          "position": "CAM",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "amadou-onana",
+          "name": "阿马杜·奥纳纳",
+          "nameEn": "Amadou Onana",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "wout-faes",
+          "name": "沃特·费斯",
+          "nameEn": "Wout Faes",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "leandro-trossard",
+          "name": "莱安德罗·特罗萨德",
+          "nameEn": "Leandro Trossard",
+          "position": "LW",
+          "number": 19,
+          "isStar": false
+        },
+        {
+          "id": "youri-tielemans",
+          "name": "尤里·蒂勒曼斯",
+          "nameEn": "Youri Tielemans",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "maxime-de-cuyper",
+          "name": "马克西姆·德克伊珀",
+          "nameEn": "Maxime De Cuyper",
+          "position": "LB",
+          "number": 21,
+          "isStar": false
+        },
+        {
+          "id": "timothy-castagne",
+          "name": "蒂莫西·卡斯塔涅",
+          "nameEn": "Timothy Castagne",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "EGY",
       "name": "埃及",
       "nameEn": "EGY",
       "group": "G",
-      "fifaRank": null,
+      "fifaRank": 32,
       "worldCups": 0,
-      "coach": "",
+      "coach": "霍萨姆·哈桑",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "mohamed-salah",
+          "name": "穆罕默德·萨拉赫",
+          "nameEn": "Mohamed Salah",
+          "position": "RW",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "trezeguet",
+          "name": "马哈茂德·特雷泽盖",
+          "nameEn": "Mahmoud Trézéguet",
+          "position": "LW",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "mohamed-elneny",
+          "name": "穆罕默德·埃尔内尼",
+          "nameEn": "Mohamed Elneny",
+          "position": "CDM",
+          "number": 17,
+          "isStar": true
+        },
+        {
+          "id": "mohamed-elshenawy",
+          "name": "穆罕默德·谢纳维",
+          "nameEn": "Mohamed El Shenawy",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "omar-marmoush",
+          "name": "奥马尔·马尔穆什",
+          "nameEn": "Omar Marmoush",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "ramy-rabia",
+          "name": "拉米·拉比亚",
+          "nameEn": "Ramy Rabia",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "emam-ashour",
+          "name": "埃马姆·阿舒尔",
+          "nameEn": "Emam Ashour",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "ahmed-sayed-zizo",
+          "name": "艾哈迈德·赛义德·齐佐",
+          "nameEn": "Ahmed Sayed Zizo",
+          "position": "CAM",
+          "number": 14,
+          "isStar": false
+        },
+        {
+          "id": "mohamed-abdelmonem",
+          "name": "穆罕默德·阿卜杜勒莫内姆",
+          "nameEn": "Mohamed Abdelmonem",
+          "position": "CB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "marmoush-o",
+          "name": "马尔穆什",
+          "nameEn": "Omar Marmoush",
+          "position": "ST",
+          "number": 22,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "IRN",
       "name": "伊朗",
       "nameEn": "IRN",
       "group": "G",
-      "fifaRank": null,
+      "fifaRank": 20,
       "worldCups": 0,
-      "coach": "",
+      "coach": "阿米尔·加莱诺埃",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "mehdi-taremi",
+          "name": "迈赫迪·塔雷米",
+          "nameEn": "Mehdi Taremi",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "sardar-azmoun",
+          "name": "萨尔达尔·阿兹蒙",
+          "nameEn": "Sardar Azmoun",
+          "position": "ST",
+          "number": 20,
+          "isStar": true
+        },
+        {
+          "id": "alireza-jahanbakhsh",
+          "name": "阿里雷扎·贾汉巴赫什",
+          "nameEn": "Alireza Jahanbakhsh",
+          "position": "RW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "alireza-beiranvand",
+          "name": "阿里雷扎·贝兰万德",
+          "nameEn": "Alireza Beiranvand",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "hamed-taremi",
+          "name": "哈梅德·埃斯蒂利",
+          "nameEn": "Hossein Kanaani",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "saeid-ezatolahi",
+          "name": "赛义德·埃扎托拉希",
+          "nameEn": "Saeid Ezatolahi",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "sam-ghoddos",
+          "name": "萨曼·古多斯",
+          "nameEn": "Saman Ghoddos",
+          "position": "CAM",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "ehsan-hajsafi",
+          "name": "埃赫桑·哈吉萨菲",
+          "nameEn": "Ehsan Hajsafi",
+          "position": "LB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "ramin-rezaeian",
+          "name": "拉明·雷扎伊扬",
+          "nameEn": "Ramin Rezaeian",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "mohammad-mohebi",
+          "name": "穆罕默德·莫赫比",
+          "nameEn": "Mohammad Mohebi",
+          "position": "LW",
+          "number": 10,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "NZL",
       "name": "新西兰",
       "nameEn": "NZL",
       "group": "G",
-      "fifaRank": null,
+      "fifaRank": 89,
       "worldCups": 0,
-      "coach": "",
+      "coach": "达伦·巴泽利",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "chris-wood",
+          "name": "克里斯·伍德",
+          "nameEn": "Chris Wood",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "sydney-singh",
+          "name": "悉尼·辛格",
+          "nameEn": "Sarpreet Singh",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "liam-steele",
+          "name": "利亚姆·斯蒂尔",
+          "nameEn": "Liam Steele",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "michael-boxall",
+          "name": "迈克尔·博克索尔",
+          "nameEn": "Michael Boxall",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "tyler-bindon",
+          "name": "泰勒·宾登",
+          "nameEn": "Tyler Bindon",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "tim-payne",
+          "name": "蒂姆·佩恩",
+          "nameEn": "Tim Payne",
+          "position": "RB",
+          "number": 16,
+          "isStar": false
+        },
+        {
+          "id": "elijah-just",
+          "name": "伊莱贾·贾斯特",
+          "nameEn": "Elijah Just",
+          "position": "RW",
+          "number": 11,
+          "isStar": false
+        },
+        {
+          "id": "callum-mccowatt",
+          "name": "卡勒姆·麦科瓦特",
+          "nameEn": "Callum McCowatt",
+          "position": "LW",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "marko-stamenic",
+          "name": "马尔科·斯塔梅尼奇",
+          "nameEn": "Marko Stamenić",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "matthew-garbett",
+          "name": "马修·加伯特",
+          "nameEn": "Matthew Garbett",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "ESP",
       "name": "西班牙",
       "nameEn": "ESP",
       "group": "H",
-      "fifaRank": null,
-      "worldCups": 0,
-      "coach": "",
+      "fifaRank": 3,
+      "worldCups": 1,
+      "coach": "路易斯·德拉富恩特",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "lamine-yamal",
+          "name": "拉明·亚马尔",
+          "nameEn": "Lamine Yamal",
+          "position": "RW",
+          "number": 17,
+          "isStar": true
+        },
+        {
+          "id": "nico-williams",
+          "name": "尼科·威廉姆斯",
+          "nameEn": "Nico Williams",
+          "position": "LW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "rodri",
+          "name": "罗德里",
+          "nameEn": "Rodri",
+          "position": "CDM",
+          "number": 16,
+          "isStar": true
+        },
+        {
+          "id": "pedri",
+          "name": "佩德里",
+          "nameEn": "Pedri",
+          "position": "CM",
+          "number": 8,
+          "isStar": true
+        },
+        {
+          "id": "daniel-olmo",
+          "name": "达尼·奥尔莫",
+          "nameEn": "Dani Olmo",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "unai-simon",
+          "name": "乌奈·西蒙",
+          "nameEn": "Unai Simón",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "marc-cucurella",
+          "name": "马克·库库雷利亚",
+          "nameEn": "Marc Cucurella",
+          "position": "LB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "pau-cubarsi",
+          "name": "保·库巴尔西",
+          "nameEn": "Pau Cubarsí",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "alex-remiro",
+          "name": "亚历克斯·雷米罗",
+          "nameEn": "Álex Remiro",
+          "position": "GK",
+          "number": 13,
+          "isStar": false
+        },
+        {
+          "id": "fabian-ruiz",
+          "name": "法比安·鲁伊斯",
+          "nameEn": "Fabián Ruiz",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "mikel-oyarzabal",
+          "name": "米克尔·奥亚萨瓦尔",
+          "nameEn": "Mikel Oyarzabal",
+          "position": "ST",
+          "number": 21,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "CPV",
       "name": "佛得角",
       "nameEn": "CPV",
       "group": "H",
-      "fifaRank": null,
+      "fifaRank": 72,
       "worldCups": 0,
-      "coach": "",
+      "coach": "佩德罗·布里托",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "ryan-mendes",
+          "name": "瑞安·门德斯",
+          "nameEn": "Ryan Mendes",
+          "position": "LW",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "jamiro-monteiro",
+          "name": "雅米罗·蒙泰罗",
+          "nameEn": "Jamiro Monteiro",
+          "position": "CM",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "bebe",
+          "name": "贝贝",
+          "nameEn": "Bebé",
+          "position": "RW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "sixten-mohlin",
+          "name": "西克斯滕·莫林",
+          "nameEn": "Sixten Mohlin",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "steven-fortes",
+          "name": "史蒂文·福特斯",
+          "nameEn": "Steven Fortes",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "diney",
+          "name": "迪内",
+          "nameEn": "Diney",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "kenny-santos",
+          "name": "肯尼·桑托斯",
+          "nameEn": "Kenny Santos",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "garry-rodrigues",
+          "name": "加里·罗德里格斯",
+          "nameEn": "Garry Rodrigues",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "KSA",
       "name": "沙特",
       "nameEn": "KSA",
       "group": "H",
-      "fifaRank": null,
+      "fifaRank": 53,
       "worldCups": 0,
-      "coach": "",
+      "coach": "埃尔韦·勒纳尔",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "salem-dawsari",
+          "name": "萨勒姆·达瓦萨里",
+          "nameEn": "Salem Al-Dawsari",
+          "position": "LW",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "firas-buraikan",
+          "name": "菲拉斯·布赖坎",
+          "nameEn": "Firas Al-Buraikan",
+          "position": "ST",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "mohammed-alowais",
+          "name": "穆罕默德·奥韦斯",
+          "nameEn": "Mohammed Al-Owais",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "sultan-alghannam",
+          "name": "苏丹·甘纳姆",
+          "nameEn": "Sultan Al-Ghannam",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "ali-albulayhi",
+          "name": "阿里·布莱希",
+          "nameEn": "Ali Al-Bulayhi",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "abdulelah-almalki",
+          "name": "阿卜杜勒拉·马尔基",
+          "nameEn": "Abdulelah Al-Malki",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "abdullah-alhamdan",
+          "name": "阿卜杜拉·哈姆丹",
+          "nameEn": "Abdullah Al-Hamdan",
+          "position": "ST",
+          "number": 19,
+          "isStar": false
+        },
+        {
+          "id": "sami-alnajei",
+          "name": "萨米·纳杰",
+          "nameEn": "Sami Al-Najei",
+          "position": "CAM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "nasser-dawsari",
+          "name": "纳赛尔·达瓦萨里",
+          "nameEn": "Nasser Al-Dawsari",
+          "position": "LB",
+          "number": 13,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "URU",
       "name": "乌拉圭",
       "nameEn": "URU",
       "group": "H",
-      "fifaRank": null,
-      "worldCups": 0,
-      "coach": "",
+      "fifaRank": 11,
+      "worldCups": 2,
+      "coach": "马塞洛·贝尔萨",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "federico-valverde",
+          "name": "费德里科·巴尔韦德",
+          "nameEn": "Federico Valverde",
+          "position": "CM",
+          "number": 15,
+          "isStar": true
+        },
+        {
+          "id": "darwin-nunez",
+          "name": "达尔文·努涅斯",
+          "nameEn": "Darwin Núñez",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "ronald-araujo",
+          "name": "罗纳德·阿劳霍",
+          "nameEn": "Ronald Araújo",
+          "position": "CB",
+          "number": 4,
+          "isStar": true
+        },
+        {
+          "id": "nicolas-de-la-cruz",
+          "name": "尼古拉斯·德拉克鲁斯",
+          "nameEn": "Nicolás De La Cruz",
+          "position": "CAM",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "sergio-rochet",
+          "name": "塞尔吉奥·罗切特",
+          "nameEn": "Sergio Rochet",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "mathias-olivera",
+          "name": "马蒂亚斯·奥利韦拉",
+          "nameEn": "Mathías Olivera",
+          "position": "LB",
+          "number": 16,
+          "isStar": false
+        },
+        {
+          "id": "jose-gimenez",
+          "name": "何塞·希门尼斯",
+          "nameEn": "José María Giménez",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "manuel-ugarte",
+          "name": "曼努埃尔·乌加特",
+          "nameEn": "Manuel Ugarte",
+          "position": "CDM",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "maxi-araujo",
+          "name": "马克西·阿劳霍",
+          "nameEn": "Maximiliano Araújo",
+          "position": "LW",
+          "number": 13,
+          "isStar": false
+        },
+        {
+          "id": "facundo-pellistri",
+          "name": "法昆多·佩利斯特里",
+          "nameEn": "Facundo Pellistri",
+          "position": "RW",
+          "number": 17,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "FRA",
       "name": "法国",
       "nameEn": "FRA",
       "group": "I",
-      "fifaRank": null,
-      "worldCups": 0,
-      "coach": "",
+      "fifaRank": 2,
+      "worldCups": 2,
+      "coach": "迪迪埃·德尚",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "kylian-mbappe",
+          "name": "基利安·姆巴佩",
+          "nameEn": "Kylian Mbappé",
+          "position": "ST",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "antoine-griezmann",
+          "name": "安托万·格列兹曼",
+          "nameEn": "Antoine Griezmann",
+          "position": "CAM",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "ousmane-dembele",
+          "name": "奥斯曼·登贝莱",
+          "nameEn": "Ousmane Dembélé",
+          "position": "RW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "aurelien-tchouameni",
+          "name": "奥雷利安·楚阿梅尼",
+          "nameEn": "Aurélien Tchouaméni",
+          "position": "CDM",
+          "number": 8,
+          "isStar": true
+        },
+        {
+          "id": "mike-maignan",
+          "name": "迈克·迈尼昂",
+          "nameEn": "Mike Maignan",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "william-saliba",
+          "name": "威廉·萨利巴",
+          "nameEn": "William Saliba",
+          "position": "CB",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "dayot-upamecano",
+          "name": "达约·于帕梅卡诺",
+          "nameEn": "Dayot Upamecano",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "theo-hernandez",
+          "name": "特奥·埃尔南德斯",
+          "nameEn": "Theo Hernández",
+          "position": "LB",
+          "number": 22,
+          "isStar": false
+        },
+        {
+          "id": "jules-kounde",
+          "name": "朱尔·孔德",
+          "nameEn": "Jules Koundé",
+          "position": "RB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "eduardo-camavinga",
+          "name": "爱德华多·卡马文加",
+          "nameEn": "Eduardo Camavinga",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "bradley-barcola",
+          "name": "布拉德利·巴尔科拉",
+          "nameEn": "Bradley Barcola",
+          "position": "LW",
+          "number": 20,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "SEN",
       "name": "塞内加尔",
       "nameEn": "SEN",
       "group": "I",
-      "fifaRank": null,
+      "fifaRank": 17,
       "worldCups": 0,
-      "coach": "",
+      "coach": "帕佩·蒂奥",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "sadio-mane",
+          "name": "萨迪奥·马内",
+          "nameEn": "Sadio Mané",
+          "position": "LW",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "kalidou-koulibaly",
+          "name": "卡利杜·库利巴利",
+          "nameEn": "Kalidou Koulibaly",
+          "position": "CB",
+          "number": 3,
+          "isStar": true
+        },
+        {
+          "id": "edouard-mendy",
+          "name": "爱德华·门迪",
+          "nameEn": "Édouard Mendy",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "nicolas-jackson",
+          "name": "尼古拉·杰克逊",
+          "nameEn": "Nicolas Jackson",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "ismaila-sarr",
+          "name": "伊斯梅拉·萨尔",
+          "nameEn": "Ismaïla Sarr",
+          "position": "RW",
+          "number": 18,
+          "isStar": false
+        },
+        {
+          "id": "pathe-ciss",
+          "name": "帕特·西斯",
+          "nameEn": "Pathé Ciss",
+          "position": "CDM",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "idrissa-gueye",
+          "name": "伊德里萨·盖耶",
+          "nameEn": "Idrissa Gueye",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "krepin-diatta",
+          "name": "克雷潘·迪亚塔",
+          "nameEn": "Krépin Diatta",
+          "position": "RW",
+          "number": 15,
+          "isStar": false
+        },
+        {
+          "id": "abdou-diallo",
+          "name": "阿卜杜·迪亚洛",
+          "nameEn": "Abdou Diallo",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "youssouf-sabaly",
+          "name": "尤素福·萨巴利",
+          "nameEn": "Youssouf Sabaly",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "IRQ",
       "name": "伊拉克",
       "nameEn": "IRQ",
       "group": "I",
-      "fifaRank": null,
+      "fifaRank": 56,
       "worldCups": 0,
-      "coach": "",
+      "coach": "赫苏斯·卡萨斯",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "aymen-hussein",
+          "name": "艾曼·侯赛因",
+          "nameEn": "Aymen Hussein",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "ali-jasim",
+          "name": "阿里·贾西姆",
+          "nameEn": "Ali Jasim",
+          "position": "LW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "zidane-iqbal",
+          "name": "齐达内·伊克巴尔",
+          "nameEn": "Zidane Iqbal",
+          "position": "CM",
+          "number": 8,
+          "isStar": true
+        },
+        {
+          "id": "jason-hachim",
+          "name": "贾拉勒·哈桑",
+          "nameEn": "Jalal Hassan",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "amir-alammari",
+          "name": "阿米尔·阿马里",
+          "nameEn": "Amir Al-Ammari",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "hussein-ali",
+          "name": "侯赛因·阿里",
+          "nameEn": "Hussein Ali",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "mohanad-jeahze",
+          "name": "莫哈纳德·杰兹",
+          "nameEn": "Mohanad Jeahze",
+          "position": "LB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "bashar-bonyan",
+          "name": "巴沙尔·布尼安",
+          "nameEn": "Bashar Bonyan",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "mohanad-ali",
+          "name": "莫哈纳德·阿里",
+          "nameEn": "Mohanad Ali",
+          "position": "ST",
+          "number": 10,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "NOR",
       "name": "挪威",
       "nameEn": "NOR",
       "group": "I",
-      "fifaRank": null,
+      "fifaRank": 43,
       "worldCups": 0,
-      "coach": "",
+      "coach": "斯托尔·索尔巴肯",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "erling-haaland",
+          "name": "埃尔林·哈兰德",
+          "nameEn": "Erling Haaland",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "martin-odegaard",
+          "name": "马丁·厄德高",
+          "nameEn": "Martin Ødegaard",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "alexander-sorloth",
+          "name": "亚历山大·瑟洛特",
+          "nameEn": "Alexander Sørloth",
+          "position": "ST",
+          "number": 23,
+          "isStar": true
+        },
+        {
+          "id": "orjan-nyland",
+          "name": "厄尔扬·尼兰",
+          "nameEn": "Ørjan Nyland",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "kristoffer-ajer",
+          "name": "克里斯托弗·阿耶尔",
+          "nameEn": "Kristoffer Ajer",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "jeo-ryerson",
+          "name": "尤利安·勒尔松",
+          "nameEn": "Julian Ryerson",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "sander-berge",
+          "name": "桑德·贝尔格",
+          "nameEn": "Sander Berge",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "antonio-nusa",
+          "name": "安东尼奥·努萨",
+          "nameEn": "Antonio Nusa",
+          "position": "LW",
+          "number": 11,
+          "isStar": false
+        },
+        {
+          "id": "oscar-bobb",
+          "name": "奥斯卡·鲍勃",
+          "nameEn": "Oscar Bobb",
+          "position": "RW",
+          "number": 20,
+          "isStar": false
+        },
+        {
+          "id": "donnum-o",
+          "name": "阿龙·德努姆",
+          "nameEn": "Aron Dønnum",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "ARG",
       "name": "阿根廷",
       "nameEn": "ARG",
       "group": "J",
-      "fifaRank": null,
-      "worldCups": 0,
-      "coach": "",
+      "fifaRank": 1,
+      "worldCups": 3,
+      "coach": "利昂内尔·斯卡洛尼",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "lionel-messi",
+          "name": "利昂内尔·梅西",
+          "nameEn": "Lionel Messi",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "julian-alvarez",
+          "name": "胡利安·阿尔瓦雷斯",
+          "nameEn": "Julián Álvarez",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "lautaro-martinez",
+          "name": "劳塔罗·马丁内斯",
+          "nameEn": "Lautaro Martínez",
+          "position": "ST",
+          "number": 22,
+          "isStar": true
+        },
+        {
+          "id": "emi-martinez",
+          "name": "埃米利亚诺·马丁内斯",
+          "nameEn": "Emiliano Martínez",
+          "position": "GK",
+          "number": 23,
+          "isStar": true
+        },
+        {
+          "id": "rodrigo-de-paul",
+          "name": "罗德里戈·德保罗",
+          "nameEn": "Rodrigo De Paul",
+          "position": "CM",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "cristian-romero",
+          "name": "克里斯蒂安·罗梅罗",
+          "nameEn": "Cristian Romero",
+          "position": "CB",
+          "number": 13,
+          "isStar": false
+        },
+        {
+          "id": "nicolas-otamendi",
+          "name": "尼古拉斯·奥塔门迪",
+          "nameEn": "Nicolás Otamendi",
+          "position": "CB",
+          "number": 19,
+          "isStar": false
+        },
+        {
+          "id": "enzo-fernandez",
+          "name": "恩佐·费尔南德斯",
+          "nameEn": "Enzo Fernández",
+          "position": "CM",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "alexis-mac-allister",
+          "name": "亚历克西斯·麦卡利斯特",
+          "nameEn": "Alexis Mac Allister",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "angel-di-maria",
+          "name": "安赫尔·迪马利亚",
+          "nameEn": "Ángel Di María",
+          "position": "RW",
+          "number": 11,
+          "isStar": false
+        },
+        {
+          "id": "marcos-acuna",
+          "name": "马科斯·阿库尼亚",
+          "nameEn": "Marcos Acuña",
+          "position": "LB",
+          "number": 3,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "ALG",
       "name": "阿尔及利亚",
       "nameEn": "ALG",
       "group": "J",
-      "fifaRank": null,
+      "fifaRank": 37,
       "worldCups": 0,
-      "coach": "",
+      "coach": "弗拉基米尔·佩特科维奇",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "riyad-mahrez",
+          "name": "里亚德·马赫雷斯",
+          "nameEn": "Riyad Mahrez",
+          "position": "RW",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "ismael-bennacer",
+          "name": "伊斯梅尔·本纳赛尔",
+          "nameEn": "Ismaël Bennacer",
+          "position": "CDM",
+          "number": 6,
+          "isStar": true
+        },
+        {
+          "id": "yassine-benzia",
+          "name": "亚辛·本齐亚",
+          "nameEn": "Yassine Benzia",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "anthony-mandrea",
+          "name": "安东尼·曼德雷亚",
+          "nameEn": "Anthony Mandrea",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "rayan-ait-nouri",
+          "name": "拉扬·艾特-努里",
+          "nameEn": "Rayan Aït-Nouri",
+          "position": "LB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "ramy-bensebaini",
+          "name": "拉米·本塞拜尼",
+          "nameEn": "Ramy Bensebaïni",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "yousef-atal",
+          "name": "优素福·阿塔尔",
+          "nameEn": "Youcef Atal",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "sai-benrahma",
+          "name": "赛义德·本拉赫马",
+          "nameEn": "Saïd Benrahma",
+          "position": "LW",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "amine-gouiri",
+          "name": "阿明·古伊里",
+          "nameEn": "Amine Gouiri",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "houssem-aouar",
+          "name": "胡萨姆·阿瓦尔",
+          "nameEn": "Houssem Aouar",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "AUT",
       "name": "奥地利",
       "nameEn": "AUT",
       "group": "J",
-      "fifaRank": null,
+      "fifaRank": 23,
       "worldCups": 0,
-      "coach": "",
+      "coach": "拉尔夫·朗尼克",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "david-alaba",
+          "name": "大卫·阿拉巴",
+          "nameEn": "David Alaba",
+          "position": "CB",
+          "number": 4,
+          "isStar": true
+        },
+        {
+          "id": "konrad-laimer",
+          "name": "康拉德·莱默尔",
+          "nameEn": "Konrad Laimer",
+          "position": "CDM",
+          "number": 20,
+          "isStar": true
+        },
+        {
+          "id": "marcel-sabitzer",
+          "name": "马塞尔·萨比策",
+          "nameEn": "Marcel Sabitzer",
+          "position": "CAM",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "patrick-pentz",
+          "name": "帕特里克·彭茨",
+          "nameEn": "Patrick Pentz",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "philipp-lienhart",
+          "name": "菲利普·林哈特",
+          "nameEn": "Philipp Lienhart",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "stefan-posch",
+          "name": "斯特凡·波施",
+          "nameEn": "Stefan Posch",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "max-womile",
+          "name": "马克斯·韦贝尔",
+          "nameEn": "Maximilian Wöber",
+          "position": "LB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "christoph-baumgartner",
+          "name": "克里斯托夫·鲍姆加特纳",
+          "nameEn": "Christoph Baumgartner",
+          "position": "CAM",
+          "number": 19,
+          "isStar": false
+        },
+        {
+          "id": "marko-arnautovic",
+          "name": "马尔科·阿瑙托维奇",
+          "nameEn": "Marko Arnautović",
+          "position": "ST",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "florian-grillitsch",
+          "name": "弗洛里安·格里利奇",
+          "nameEn": "Florian Grillitsch",
+          "position": "CM",
+          "number": 10,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "JOR",
       "name": "约旦",
       "nameEn": "JOR",
       "group": "J",
-      "fifaRank": null,
+      "fifaRank": 64,
       "worldCups": 0,
-      "coach": "",
+      "coach": "贾马尔·塞拉米",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "musa-al-taamari",
+          "name": "穆萨·塔马里",
+          "nameEn": "Musa Al-Taamari",
+          "position": "RW",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "yazan-al-naimat",
+          "name": "亚赞·奈马特",
+          "nameEn": "Yazan Al-Naimat",
+          "position": "ST",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "noor-al-rawabdeh",
+          "name": "努尔·拉瓦比德",
+          "nameEn": "Noor Al-Rawabdeh",
+          "position": "CM",
+          "number": 8,
+          "isStar": true
+        },
+        {
+          "id": "abdallah-alzubi",
+          "name": "阿卜杜拉·祖比",
+          "nameEn": "Abdallah Al-Zubi",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "ahmad-nasib",
+          "name": "艾哈迈德·纳西布",
+          "nameEn": "Ahmad Nasib",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "bara-marei",
+          "name": "巴拉·马雷",
+          "nameEn": "Bara' Marei",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "mahmoud-al-mardi",
+          "name": "马哈茂德·马尔迪",
+          "nameEn": "Mahmoud Al-Mardi",
+          "position": "LW",
+          "number": 13,
+          "isStar": false
+        },
+        {
+          "id": "ibrahim-sadeh",
+          "name": "易卜拉欣·萨德",
+          "nameEn": "Ibrahim Sadeh",
+          "position": "CAM",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "ahsan-haddad",
+          "name": "埃赫桑·哈达德",
+          "nameEn": "Ehsan Haddad",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "POR",
       "name": "葡萄牙",
       "nameEn": "POR",
       "group": "K",
-      "fifaRank": null,
+      "fifaRank": 6,
       "worldCups": 0,
-      "coach": "",
+      "coach": "罗伯托·马丁内斯",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "cristiano-ronaldo",
+          "name": "克里斯蒂亚诺·罗纳尔多",
+          "nameEn": "Cristiano Ronaldo",
+          "position": "ST",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "bruno-fernandes",
+          "name": "布鲁诺·费尔南德斯",
+          "nameEn": "Bruno Fernandes",
+          "position": "CAM",
+          "number": 8,
+          "isStar": true
+        },
+        {
+          "id": "bernardo-silva",
+          "name": "贝尔纳多·席尔瓦",
+          "nameEn": "Bernardo Silva",
+          "position": "RW",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "ruben-dias",
+          "name": "鲁本·迪亚斯",
+          "nameEn": "Rúben Dias",
+          "position": "CB",
+          "number": 4,
+          "isStar": true
+        },
+        {
+          "id": "diogo-costa",
+          "name": "迪奥戈·科斯塔",
+          "nameEn": "Diogo Costa",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "rafael-leao",
+          "name": "拉斐尔·莱奥",
+          "nameEn": "Rafael Leão",
+          "position": "LW",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "vitor-ferreira",
+          "name": "维蒂尼亚",
+          "nameEn": "Vitinha",
+          "position": "CM",
+          "number": 23,
+          "isStar": false
+        },
+        {
+          "id": "nuno-mendes",
+          "name": "努诺·门德斯",
+          "nameEn": "Nuno Mendes",
+          "position": "LB",
+          "number": 19,
+          "isStar": false
+        },
+        {
+          "id": "diogo-jota",
+          "name": "迪奥戈·若塔",
+          "nameEn": "Diogo Jota",
+          "position": "ST",
+          "number": 21,
+          "isStar": false
+        },
+        {
+          "id": "joao-palhinha",
+          "name": "若昂·帕利尼亚",
+          "nameEn": "João Palhinha",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "goncalo-inacio",
+          "name": "贡萨洛·伊纳西奥",
+          "nameEn": "Gonçalo Inácio",
+          "position": "CB",
+          "number": 14,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "COD",
       "name": "刚果",
       "nameEn": "COD",
       "group": "K",
-      "fifaRank": null,
+      "fifaRank": 60,
       "worldCups": 0,
-      "coach": "",
+      "coach": "塞巴斯蒂安·德萨布雷",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "cedric-bakambu",
+          "name": "塞德里克·巴坎布",
+          "nameEn": "Cédric Bakambu",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "chancel-mbemba",
+          "name": "尚塞尔·姆本巴",
+          "nameEn": "Chancel Mbemba",
+          "position": "CB",
+          "number": 5,
+          "isStar": true
+        },
+        {
+          "id": "yoane-wissa",
+          "name": "约阿内·维萨",
+          "nameEn": "Yoane Wissa",
+          "position": "LW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "joel-kiassumbua",
+          "name": "若埃尔·基亚松布阿",
+          "nameEn": "Joël Kiassumbua",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "gael-kakuta",
+          "name": "加埃尔·卡库塔",
+          "nameEn": "Gaël Kakuta",
+          "position": "CAM",
+          "number": 10,
+          "isStar": false
+        },
+        {
+          "id": "noah-sadiki",
+          "name": "诺亚·萨迪基",
+          "nameEn": "Noah Sadiki",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "joris-kayembe",
+          "name": "若里斯·卡延贝",
+          "nameEn": "Joris Kayembe",
+          "position": "LB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "samuel-moutoussamy",
+          "name": "萨米埃尔·穆图萨米",
+          "nameEn": "Samuel Moutoussamy",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "theo-bongonda",
+          "name": "特奥·邦贡达",
+          "nameEn": "Théo Bongonda",
+          "position": "RW",
+          "number": 20,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "UZB",
       "name": "乌兹别克斯坦",
       "nameEn": "UZB",
       "group": "K",
-      "fifaRank": null,
+      "fifaRank": 55,
       "worldCups": 0,
-      "coach": "",
+      "coach": "帖木儿·卡帕泽",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "eldor-shomurodov",
+          "name": "埃尔多尔·绍穆罗多夫",
+          "nameEn": "Eldor Shomurodov",
+          "position": "ST",
+          "number": 14,
+          "isStar": true
+        },
+        {
+          "id": "jaloliddin-masharipov",
+          "name": "贾洛利丁·马沙里波夫",
+          "nameEn": "Jaloliddin Masharipov",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "abbosbek-fayzullaev",
+          "name": "阿博斯别克·法伊祖拉耶夫",
+          "nameEn": "Abbosbek Fayzullaev",
+          "position": "LW",
+          "number": 11,
+          "isStar": true
+        },
+        {
+          "id": "utkir-yusupov",
+          "name": "乌特基尔·尤苏波夫",
+          "nameEn": "Utkir Yusupov",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "rustam-ashurmatov",
+          "name": "鲁斯塔姆·阿舒尔马托夫",
+          "nameEn": "Rustam Ashurmatov",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "odil-hamrobekov",
+          "name": "奥迪尔·哈姆罗别科夫",
+          "nameEn": "Odil Hamrobekov",
+          "position": "CDM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "khojiakbar-alijonov",
+          "name": "霍贾克巴尔·阿利若诺夫",
+          "nameEn": "Khojiakbar Alijonov",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "aziz-turgunbaev",
+          "name": "阿齐兹·图尔贡巴耶夫",
+          "nameEn": "Aziz Turgunbaev",
+          "position": "RW",
+          "number": 7,
+          "isStar": false
+        },
+        {
+          "id": "bobir-abdikholikov",
+          "name": "博比尔·阿卜迪霍利科夫",
+          "nameEn": "Bobir Abdikholikov",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "COL",
       "name": "哥伦比亚",
       "nameEn": "COL",
       "group": "K",
-      "fifaRank": null,
+      "fifaRank": 12,
       "worldCups": 0,
-      "coach": "",
+      "coach": "内斯托尔·洛伦索",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "james-rodriguez",
+          "name": "哈梅斯·罗德里格斯",
+          "nameEn": "James Rodríguez",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "luis-diaz",
+          "name": "路易斯·迪亚斯",
+          "nameEn": "Luis Díaz",
+          "position": "LW",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "davinson-sanchez",
+          "name": "达文松·桑切斯",
+          "nameEn": "Davinson Sánchez",
+          "position": "CB",
+          "number": 23,
+          "isStar": true
+        },
+        {
+          "id": "camilo-vargas",
+          "name": "卡米洛·巴尔加斯",
+          "nameEn": "Camilo Vargas",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "john-ariza",
+          "name": "约翰·阿里亚斯",
+          "nameEn": "Jhon Arias",
+          "position": "RW",
+          "number": 11,
+          "isStar": false
+        },
+        {
+          "id": "juan-quintero",
+          "name": "胡安·金特罗",
+          "nameEn": "Juan Fernando Quintero",
+          "position": "CAM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "jefferson-lerma",
+          "name": "赫费尔松·莱尔马",
+          "nameEn": "Jefferson Lerma",
+          "position": "CDM",
+          "number": 16,
+          "isStar": false
+        },
+        {
+          "id": "carlos-cuesta",
+          "name": "卡洛斯·库埃斯塔",
+          "nameEn": "Carlos Cuesta",
+          "position": "CB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "mateus-uribe",
+          "name": "马特乌斯·乌里韦",
+          "nameEn": "Mateus Uribe",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "rion-duran",
+          "name": "约翰·杜兰",
+          "nameEn": "Jhon Durán",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "ENG",
       "name": "英格兰",
       "nameEn": "ENG",
       "group": "L",
-      "fifaRank": null,
-      "worldCups": 0,
-      "coach": "",
+      "fifaRank": 5,
+      "worldCups": 1,
+      "coach": "托马斯·图赫尔",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "harry-kane",
+          "name": "哈里·凯恩",
+          "nameEn": "Harry Kane",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "jude-bellingham",
+          "name": "裘德·贝林厄姆",
+          "nameEn": "Jude Bellingham",
+          "position": "CAM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "declan-rice",
+          "name": "德克兰·赖斯",
+          "nameEn": "Declan Rice",
+          "position": "CDM",
+          "number": 4,
+          "isStar": true
+        },
+        {
+          "id": "bukayo-saka",
+          "name": "布卡约·萨卡",
+          "nameEn": "Bukayo Saka",
+          "position": "RW",
+          "number": 7,
+          "isStar": true
+        },
+        {
+          "id": "jordan-pickford",
+          "name": "乔丹·皮克福德",
+          "nameEn": "Jordan Pickford",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "phil-foden",
+          "name": "菲尔·福登",
+          "nameEn": "Phil Foden",
+          "position": "LW",
+          "number": 11,
+          "isStar": false
+        },
+        {
+          "id": "trent-alexander-arnold",
+          "name": "特伦特·亚历山大-阿诺德",
+          "nameEn": "Trent Alexander-Arnold",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "john-stones",
+          "name": "约翰·斯通斯",
+          "nameEn": "John Stones",
+          "position": "CB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "cole-palmer",
+          "name": "科尔·帕尔默",
+          "nameEn": "Cole Palmer",
+          "position": "CAM",
+          "number": 20,
+          "isStar": false
+        },
+        {
+          "id": "marc-guehi",
+          "name": "马克·格伊",
+          "nameEn": "Marc Guéhi",
+          "position": "CB",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "kobbie-mainoo",
+          "name": "科比·迈努",
+          "nameEn": "Kobbie Mainoo",
+          "position": "CM",
+          "number": 26,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "CRO",
       "name": "克罗地亚",
       "nameEn": "CRO",
       "group": "L",
-      "fifaRank": null,
+      "fifaRank": 9,
       "worldCups": 0,
-      "coach": "",
+      "coach": "兹拉特科·达利奇",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "luka-modric",
+          "name": "卢卡·莫德里奇",
+          "nameEn": "Luka Modrić",
+          "position": "CM",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "mateo-kovacic",
+          "name": "马特奥·科瓦契奇",
+          "nameEn": "Mateo Kovačić",
+          "position": "CM",
+          "number": 8,
+          "isStar": true
+        },
+        {
+          "id": "josko-gvardiol",
+          "name": "约什科·格瓦迪奥尔",
+          "nameEn": "Joško Gvardiol",
+          "position": "CB",
+          "number": 4,
+          "isStar": true
+        },
+        {
+          "id": "dom-livakovic",
+          "name": "多米尼克·利瓦科维奇",
+          "nameEn": "Dominik Livaković",
+          "position": "GK",
+          "number": 1,
+          "isStar": true
+        },
+        {
+          "id": "andrej-kramaric",
+          "name": "安德烈·克拉马里奇",
+          "nameEn": "Andrej Kramarić",
+          "position": "ST",
+          "number": 9,
+          "isStar": false
+        },
+        {
+          "id": "ivica-ivusic",
+          "name": "伊维察·伊武希奇",
+          "nameEn": "Ivica Ivušić",
+          "position": "GK",
+          "number": 12,
+          "isStar": false
+        },
+        {
+          "id": "josip-stanisic",
+          "name": "约西普·斯塔尼希奇",
+          "nameEn": "Josip Stanišić",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "borna-sosa",
+          "name": "博尔纳·索萨",
+          "nameEn": "Borna Sosa",
+          "position": "LB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "lovro-majer",
+          "name": "洛夫罗·马耶尔",
+          "nameEn": "Lovro Majer",
+          "position": "CAM",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "luka-sucic",
+          "name": "卢卡·苏契奇",
+          "nameEn": "Luka Sučić",
+          "position": "CM",
+          "number": 25,
+          "isStar": false
+        },
+        {
+          "id": "marin-pongracic",
+          "name": "马林·蓬格拉契奇",
+          "nameEn": "Marin Pongračić",
+          "position": "CB",
+          "number": 6,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "GHA",
       "name": "加纳",
       "nameEn": "GHA",
       "group": "L",
-      "fifaRank": null,
+      "fifaRank": 67,
       "worldCups": 0,
-      "coach": "",
+      "coach": "奥托·阿多",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "thomas-partey",
+          "name": "托马斯·帕尔特伊",
+          "nameEn": "Thomas Partey",
+          "position": "CDM",
+          "number": 5,
+          "isStar": true
+        },
+        {
+          "id": "mohammed-kudus",
+          "name": "穆罕默德·库杜斯",
+          "nameEn": "Mohammed Kudus",
+          "position": "CAM",
+          "number": 20,
+          "isStar": true
+        },
+        {
+          "id": "jordan-ayew",
+          "name": "乔丹·阿尤",
+          "nameEn": "Jordan Ayew",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "jojo-wollacott",
+          "name": "约瑟夫·沃拉科特",
+          "nameEn": "Joseph Wollacott",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "daniel-amartey",
+          "name": "丹尼尔·阿马泰",
+          "nameEn": "Daniel Amartey",
+          "position": "CB",
+          "number": 4,
+          "isStar": false
+        },
+        {
+          "id": "abdul-samed",
+          "name": "阿卜杜勒·萨梅德",
+          "nameEn": "Salis Abdul Samed",
+          "position": "CM",
+          "number": 6,
+          "isStar": false
+        },
+        {
+          "id": "antoine-semenyo",
+          "name": "安托万·塞梅尼奥",
+          "nameEn": "Antoine Semenyo",
+          "position": "LW",
+          "number": 17,
+          "isStar": false
+        },
+        {
+          "id": "ideon-mensah",
+          "name": "吉迪恩·门萨",
+          "nameEn": "Gideon Mensah",
+          "position": "LB",
+          "number": 3,
+          "isStar": false
+        },
+        {
+          "id": "inaki-williams",
+          "name": "伊尼亚基·威廉姆斯",
+          "nameEn": "Iñaki Williams",
+          "position": "RW",
+          "number": 19,
+          "isStar": false
+        },
+        {
+          "id": "ernest-nuamah",
+          "name": "欧内斯特·努阿马",
+          "nameEn": "Ernest Nuamah",
+          "position": "RW",
+          "number": 11,
+          "isStar": false
+        }
+      ]
     },
     {
       "code": "PAN",
       "name": "巴拿马",
       "nameEn": "PAN",
       "group": "L",
-      "fifaRank": null,
+      "fifaRank": 44,
       "worldCups": 0,
-      "coach": "",
+      "coach": "托马斯·克里斯蒂安森",
       "colors": {
         "primary": "#FFD700",
         "secondary": "#43A047"
       },
-      "players": []
+      "players": [
+        {
+          "id": "yoel-barcenas",
+          "name": "约埃尔·巴尔塞纳斯",
+          "nameEn": "Édgar Yoel Bárcenas",
+          "position": "RW",
+          "number": 10,
+          "isStar": true
+        },
+        {
+          "id": "ismael-diaz",
+          "name": "伊斯梅尔·迪亚斯",
+          "nameEn": "Ismael Díaz",
+          "position": "ST",
+          "number": 9,
+          "isStar": true
+        },
+        {
+          "id": "jose-fajardo",
+          "name": "何塞·法哈多",
+          "nameEn": "José Fajardo",
+          "position": "ST",
+          "number": 17,
+          "isStar": true
+        },
+        {
+          "id": "luis-mejia",
+          "name": "路易斯·梅希亚",
+          "nameEn": "Luis Mejía",
+          "position": "GK",
+          "number": 1,
+          "isStar": false
+        },
+        {
+          "id": "adolfo-machado",
+          "name": "阿道弗·马查多",
+          "nameEn": "Adolfo Machado",
+          "position": "CB",
+          "number": 13,
+          "isStar": false
+        },
+        {
+          "id": "eric-davis",
+          "name": "埃里克·戴维斯",
+          "nameEn": "Eric Davis",
+          "position": "LB",
+          "number": 5,
+          "isStar": false
+        },
+        {
+          "id": "michael-murillo",
+          "name": "迈克尔·穆里略",
+          "nameEn": "Michael Amir Murillo",
+          "position": "RB",
+          "number": 2,
+          "isStar": false
+        },
+        {
+          "id": "anel-carrasquilla",
+          "name": "阿内尔·卡拉斯基亚",
+          "nameEn": "Anel Carrasquilla",
+          "position": "CM",
+          "number": 8,
+          "isStar": false
+        },
+        {
+          "id": "abdiel-aroyo",
+          "name": "阿夫迭尔·阿罗约",
+          "nameEn": "Abdiel Arroyo",
+          "position": "LW",
+          "number": 11,
+          "isStar": false
+        }
+      ]
     }
   ]
 }
