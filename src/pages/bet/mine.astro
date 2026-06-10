@@ -1,10 +1,11 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import MinePage from "../../components/MinePage";
+import allMatches from "../../data/matches.json";
 ---
 
 <BaseLayout title="我的竞猜">
   <h1 style="font-size:22px;font-weight:700;margin:0 0 4px;">📋 我的竞猜</h1>
   <p style="color:var(--color-text-secondary);font-size:12px;margin:0 0 20px;">查看投注历史和结算结果</p>
-  <MinePage client:load />
+  <MinePage matchData={JSON.stringify(allMatches.matches)} client:load />
 </BaseLayout>

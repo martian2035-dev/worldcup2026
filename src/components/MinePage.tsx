@@ -6,7 +6,10 @@ import {
 
 const BASE = import.meta.env.BASE_URL || "";
 
-export default function MinePage() {
+export default function MinePage({ matchData }: { matchData?: string }) {
+  const preloadMatches: MatchResult[] = (() => {
+    try { return matchData ? JSON.parse(matchData) : []; } catch { return []; }
+  })();
   const [user, setUser] = useState<UserRecord | null>(null);
   const [bets, setBets] = useState<BetRecord[]>([]);
   const [loading, setLoading] = useState(true);
@@ -18,12 +21,16 @@ export default function MinePage() {
 
     try {
       // 加载比赛数据用于本地结算展示
-      const [matchesRes, userData] = await Promise.all([
-        fetch(`${BASE}/matches.json`).then(r => r.json()),
-        fetchUserRecord(name),
-      ]);
+      const userData = await fetchUserRecord(name);
 
-      const matches: MatchResult[] = matchesRes.matches || [];
+      let matches: MatchResult[] = preloadMatches;
+      if (matches.length === 0) {
+        try {
+          const res = await fetch(`${BASE}/matches.json`);
+          const data = await res.json();
+          matches = data.matches || [];
+        } catch {}
+      }
 
       if (userData) {
         const settled = computeSettledState(userData, matches);

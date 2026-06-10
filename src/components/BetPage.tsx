@@ -21,7 +21,11 @@ const F = (n: string) => FLAG[n] || "🏳️";
 interface MatchInfo { id: string; datetime: string; home: { name: string }; away: { name: string }; }
 type BetType = "home_win" | "draw" | "away_win";
 
-export default function BetPage() {
+export default function BetPage({ matchData }: { matchData?: string }) {
+  // 从 Astro 传入的比赛数据（构建时注入，避免运行时 fetch 失败）
+  const preloadMatches: MatchInfo[] = (() => {
+    try { return matchData ? JSON.parse(matchData) : []; } catch { return []; }
+  })();
   const [username, setUsername] = useState("");
   const [showAuth, setShowAuth] = useState(true);
   const [user, setUser] = useState<UserRecord | null>(null);
@@ -48,11 +52,16 @@ export default function BetPage() {
     }
   }, []);
 
-  // 加载比赛
+  // 加载比赛：优先使用 Astro 预加载数据，fallback 到运行时 fetch
   useEffect(() => {
-    fetch(`${BASE}/matches.json`).then(r => r.json()).then(d => {
-      setMatches(d.matches.filter((m: any) => m.status !== "finished").sort((a: any, b: any) => a.datetime.localeCompare(b.datetime)).slice(0, 24));
-    }).catch(() => {});
+    if (preloadMatches.length > 0) {
+      setMatches(preloadMatches);
+    } else {
+      fetch(`${BASE}/matches.json`).then(r => r.json()).then(d => {
+        setMatches(d.matches.filter((m: any) => m.status !== "finished").sort((a: any, b: any) => a.datetime.localeCompare(b.datetime)).slice(0, 24));
+      }).catch(() => {});
+    }
+    // 赔率从运行时加载
     fetch(`${BASE}/odds.json`).then(r => r.json()).then(d => {
       if (d.odds) setOdds(Object.fromEntries(d.odds.map((o: any) => [o.match_id, o])));
     }).catch(() => {});

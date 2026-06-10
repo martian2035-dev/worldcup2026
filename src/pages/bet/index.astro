@@ -1,10 +1,15 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BetPage from "../../components/BetPage";
+import allMatches from "../../data/matches.json";
+
+const matches = allMatches.matches.filter(m => m.status !== "finished")
+  .sort((a, b) => a.datetime.localeCompare(b.datetime))
+  .slice(0, 24);
 ---
 
 <BaseLayout title="竞猜大厅">
   <h1 style="font-size:22px;font-weight:700;margin:0 0 4px;">🎯 竞猜大厅</h1>
-  <p style="color:var(--color-text-secondary);font-size:12px;margin:0 0 20px;">注册即送 10000 豆 · 数据保存在浏览器本地</p>
-  <BetPage client:load />
+  <p style="color:var(--color-text-secondary);font-size:12px;margin:0 0 20px;">注册即送 10000 豆 · 最高限押 100 豆 · 纯娱乐</p>
+  <BetPage matchData={JSON.stringify(matches)} client:load />
 </BaseLayout>
