@@ -6,6 +6,8 @@ import {
   type UserRecord, type MatchOdds,
 } from "../lib/store";
 
+const BASE = import.meta.env.BASE_URL || "";
+
 const FLAG: Record<string, string> = {
   "墨西哥":"🇲🇽","南非":"🇿🇦","韩国":"🇰🇷","捷克":"🇨🇿","加拿大":"🇨🇦","波黑":"🇧🇦","卡塔尔":"🇶🇦","瑞士":"🇨🇭",
   "巴西":"🇧🇷","摩洛哥":"🇲🇦","海地":"🇭🇹","苏格兰":"🏴󠁧󠁢󠁳󠁣󠁴󠁿","美国":"🇺🇸","巴拉圭":"🇵🇾","澳大利亚":"🇦🇺","土耳其":"🇹🇷",
@@ -48,10 +50,10 @@ export default function BetPage() {
 
   // 加载比赛
   useEffect(() => {
-    fetch("/matches.json").then(r => r.json()).then(d => {
+    fetch(`${BASE}/matches.json`).then(r => r.json()).then(d => {
       setMatches(d.matches.filter((m: any) => m.status !== "finished").sort((a: any, b: any) => a.datetime.localeCompare(b.datetime)).slice(0, 24));
     }).catch(() => {});
-    fetch("/odds.json").then(r => r.json()).then(d => {
+    fetch(`${BASE}/odds.json`).then(r => r.json()).then(d => {
       if (d.odds) setOdds(Object.fromEntries(d.odds.map((o: any) => [o.match_id, o])));
     }).catch(() => {});
   }, []);
@@ -162,8 +164,8 @@ export default function BetPage() {
           <button onClick={() => setShowToken(!showToken)} style={{ background: "none", border: "none", color: hasToken ? "var(--color-positive)" : "var(--color-text-muted)", cursor: "pointer", fontSize: 10 }}>
             {hasToken ? "🔗" : "🔓"}
           </button>
-          <a href="/bet/mine/" style={{ color: "var(--color-text-secondary)", fontSize: 11, textDecoration: "none" }}>📋 我的</a>
-          <a href="/bet/board/" style={{ color: "var(--color-text-secondary)", fontSize: 11, textDecoration: "none" }}>🏆 排行</a>
+          <a href={`${BASE}/bet/mine/`} style={{ color: "var(--color-text-secondary)", fontSize: 11, textDecoration: "none" }}>📋 我的</a>
+          <a href={`${BASE}/bet/board/`} style={{ color: "var(--color-text-secondary)", fontSize: 11, textDecoration: "none" }}>🏆 排行</a>
           <button onClick={() => { clearUsername(); setUser(null); setShowAuth(true); }} style={{ background: "none", border: "none", color: "var(--color-text-muted)", cursor: "pointer", fontSize: 10 }}>退出</button>
         </div>
       </div>

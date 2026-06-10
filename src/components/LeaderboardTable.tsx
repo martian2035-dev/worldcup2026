@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { fetchLeaderboard, getSavedUsername, type UserRecord } from "../lib/store";
 
+const BASE = import.meta.env.BASE_URL || "";
+
 export default function LeaderboardTable() {
   const [rows, setRows] = useState<UserRecord[]>([]);
   const [loading, setLoading] = useState(true);
@@ -18,7 +20,7 @@ export default function LeaderboardTable() {
 
   if (rows.length === 0) return (
     <div style={{ padding: 40, textAlign: "center", color: "var(--color-text-muted)", fontSize: 13 }}>
-      暂无数据，<a href="/bet/" style={{ color: "var(--color-accent)" }}>去竞猜</a> 成为第一名！
+      暂无数据，<a href={`${BASE}/bet/`} style={{ color: "var(--color-accent)" }}>去竞猜</a> 成为第一名！
       <br /><br />
       <span style={{ fontSize: 11 }}>
         排行榜数据来自 <code style={{ color: "var(--color-text-muted)" }}>src/data/bets/index.json</code>

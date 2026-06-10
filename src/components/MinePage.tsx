@@ -4,6 +4,8 @@ import {
   type UserRecord, type BetRecord, type MatchResult,
 } from "../lib/store";
 
+const BASE = import.meta.env.BASE_URL || "";
+
 export default function MinePage() {
   const [user, setUser] = useState<UserRecord | null>(null);
   const [bets, setBets] = useState<BetRecord[]>([]);
@@ -17,7 +19,7 @@ export default function MinePage() {
     try {
       // 加载比赛数据用于本地结算展示
       const [matchesRes, userData] = await Promise.all([
-        fetch("/matches.json").then(r => r.json()),
+        fetch(`${BASE}/matches.json`).then(r => r.json()),
         fetchUserRecord(name),
       ]);
 
@@ -41,7 +43,7 @@ export default function MinePage() {
 
   if (!user) return (
     <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>
-      请先 <a href="/bet/" style={{ color: "var(--color-accent)" }}>登录</a> 查看竞猜记录
+      请先 <a href={`${BASE}/bet/`} style={{ color: "var(--color-accent)" }}>登录</a> 查看竞猜记录
     </div>
   );
 
@@ -71,7 +73,7 @@ export default function MinePage() {
 
       {bets.length === 0 ? (
         <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>
-          还没有投注记录，<a href="/bet/" style={{ color: "var(--color-accent)" }}>去竞猜</a>
+          还没有投注记录，<a href={`${BASE}/bet/`} style={{ color: "var(--color-accent)" }}>去竞猜</a>
         </div>
       ) : (
         <div style={{ display: "grid", gap: 8 }}>
