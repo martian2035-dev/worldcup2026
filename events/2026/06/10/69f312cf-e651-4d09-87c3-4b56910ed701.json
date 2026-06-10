@@ -1,0 +1,14 @@
+{
+  "id": "69f312cf-e651-4d09-87c3-4b56910ed701",
+  "type": "bet",
+  "accountId": "acct-4687c859",
+  "username": "w01",
+  "deviceId": "device-1acc9e26-d62e-45b2-846f-aeb0dc640d51",
+  "matchId": "A02",
+  "matchLabel": "韩国 vs 捷克",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 1.91,
+  "clientTimestamp": "2026-06-10T23:12:34.433Z",
+  "serverTimestamp": "2026-06-10T23:12:35.118Z"
+}

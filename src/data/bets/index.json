@@ -2,34 +2,94 @@
   "users": {
     "w01": {
       "username": "w01",
-      "beans": 9850,
-      "totalBets": 2,
+      "beans": 9300,
+      "totalBets": 7,
       "wonBets": 0,
       "createdAt": "2026-06-10T14:50:41.249Z",
       "bets": [
         {
-          "id": "c921b198-11ab-438d-a256-6723396cc593",
+          "id": "5262b986-95d3-4970-ab53-dada9d5ffaaa",
+          "username": "w01",
+          "matchId": "A02",
+          "matchLabel": "韩国 vs 捷克",
+          "betType": "away_win",
+          "amount": 100,
+          "odds": 1.91,
+          "status": "pending",
+          "payout": null,
+          "createdAt": "2026-06-10T23:06:48.885Z"
+        },
+        {
+          "id": "3cd0e7f4-f220-47e8-a33b-5a661bc4ba87",
+          "username": "w01",
+          "matchId": "B01",
+          "matchLabel": "加拿大 vs 波黑",
+          "betType": "away_win",
+          "amount": 100,
+          "odds": 1.94,
+          "status": "pending",
+          "payout": null,
+          "createdAt": "2026-06-10T23:06:58.089Z"
+        },
+        {
+          "id": "9d84e44d-8d4d-4053-a71e-eb6abed5f836",
+          "username": "w01",
+          "matchId": "B02",
+          "matchLabel": "卡塔尔 vs 瑞士",
+          "betType": "away_win",
+          "amount": 100,
+          "odds": 4.31,
+          "status": "pending",
+          "payout": null,
+          "createdAt": "2026-06-10T23:07:07.703Z"
+        },
+        {
+          "id": "6a42446f-1938-4eb7-86cd-4b75936ad280",
+          "username": "w01",
+          "matchId": "C01",
+          "matchLabel": "巴西 vs 摩洛哥",
+          "betType": "home_win",
+          "amount": 100,
+          "odds": 1.74,
+          "status": "pending",
+          "payout": null,
+          "createdAt": "2026-06-10T23:34:20.357Z"
+        },
+        {
+          "id": "125ff7ce-3663-4047-9b0b-46428ed848c8",
+          "username": "w01",
+          "matchId": "D02",
+          "matchLabel": "澳大利亚 vs 土耳其",
+          "betType": "away_win",
+          "amount": 100,
+          "odds": 4.13,
+          "status": "pending",
+          "payout": null,
+          "createdAt": "2026-06-10T23:34:25.930Z"
+        },
+        {
+          "id": "349549c6-fd3e-4612-bb42-37ef6d86e1ea",
           "username": "w01",
           "matchId": "A01",
           "matchLabel": "墨西哥 vs 南非",
-          "betType": "draw",
-          "amount": 50,
-          "odds": 3.53,
+          "betType": "home_win",
+          "amount": 100,
+          "odds": 1.92,
           "status": "pending",
           "payout": null,
-          "createdAt": "2026-06-10T14:50:41.249Z"
+          "createdAt": "2026-06-10T23:47:09.474Z"
         },
         {
-          "id": "58e217ca-7a08-41d6-975e-ef6d7ff81673",
+          "id": "5e5b2247-3e98-4b5b-9742-87b58c68d250",
           "username": "w01",
           "matchId": "D01",
           "matchLabel": "美国 vs 巴拉圭",
-          "betType": "draw",
+          "betType": "away_win",
           "amount": 100,
-          "odds": 3.22,
+          "odds": 3.46,
           "status": "pending",
           "payout": null,
-          "createdAt": "2026-06-10T15:27:18.291Z"
+          "createdAt": "2026-06-10T23:47:34.660Z"
         }
       ]
     },
@@ -42,5 +102,5 @@
       "bets": []
     }
   },
-  "lastUpdated": "2026-06-10T22:19:06.975Z"
+  "lastUpdated": "2026-06-10T23:53:44.397Z"
 }

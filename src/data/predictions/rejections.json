@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-10T22:19:06.975Z",
+  "updatedAt": "2026-06-10T23:53:44.397Z",
   "rejections": [
     {
       "eventId": "1ae5c428-8cd0-48d2-8438-b46ccaab1f79",
@@ -64,6 +64,111 @@
       "matchId": "A01",
       "reason": "odds-changed",
       "message": "赔率已变化，请刷新后重试"
+    },
+    {
+      "eventId": "2b5dcaa0-ad8e-41a2-a6e8-a099ec548647",
+      "username": "w01",
+      "matchId": "A01",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "69f312cf-e651-4d09-87c3-4b56910ed701",
+      "username": "w01",
+      "matchId": "A02",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "461f74b8-3927-4468-86bb-b12960a3a929",
+      "username": "w01",
+      "matchId": "A01",
+      "reason": "unknown-active-bet",
+      "message": "未找到可撤销的竞猜单"
+    },
+    {
+      "eventId": "837e4bf8-e543-4359-bcfe-6b13be63dcfe",
+      "username": "w01",
+      "matchId": "D01",
+      "reason": "unknown-active-bet",
+      "message": "未找到可撤销的竞猜单"
+    },
+    {
+      "eventId": "492ef895-75f0-4783-99bd-4d0e70bd5990",
+      "username": "w01",
+      "matchId": "A02",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "e0f867bb-13a6-42ce-85df-7e4fa6388536",
+      "username": "w01",
+      "matchId": "B01",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "44de1321-6603-4eb7-b698-eb3417e080ba",
+      "username": "w01",
+      "matchId": "B02",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "081a1224-afc7-42a3-b343-120dfb9d7e10",
+      "username": "w01",
+      "matchId": "D01",
+      "reason": "unknown-active-bet",
+      "message": "未找到可撤销的竞猜单"
+    },
+    {
+      "eventId": "d1046159-8e34-48cb-8817-3c6109cd1496",
+      "username": "w01",
+      "matchId": "D01",
+      "reason": "unknown-active-bet",
+      "message": "未找到可撤销的竞猜单"
+    },
+    {
+      "eventId": "5789ac83-a367-4f9b-a78f-302e04f219d8",
+      "username": "w01",
+      "matchId": "A01",
+      "reason": "unknown-active-bet",
+      "message": "未找到可撤销的竞猜单"
+    },
+    {
+      "eventId": "1abeafc0-329b-400b-abbd-e22b6a1e32cf",
+      "username": "w01",
+      "matchId": "A02",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "ce1cfb6c-56c1-4da3-85cc-05e91079e84b",
+      "username": "w01",
+      "matchId": "B01",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "8a2de7b2-8dd1-4aa5-9acf-31200f08f5a9",
+      "username": "w01",
+      "matchId": "B02",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "7ad227a8-f870-405d-b7a7-d79de583d98d",
+      "username": "w01",
+      "matchId": "C01",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "1cdb012b-b026-4d1d-b550-1aeb97075fa7",
+      "username": "w01",
+      "matchId": "D02",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
     }
   ]
 }

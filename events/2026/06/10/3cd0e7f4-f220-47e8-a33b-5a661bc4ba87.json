@@ -1,0 +1,14 @@
+{
+  "id": "3cd0e7f4-f220-47e8-a33b-5a661bc4ba87",
+  "type": "bet",
+  "accountId": "acct-4687c859",
+  "username": "w01",
+  "deviceId": "device-1acc9e26-d62e-45b2-846f-aeb0dc640d51",
+  "matchId": "B01",
+  "matchLabel": "加拿大 vs 波黑",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 1.94,
+  "clientTimestamp": "2026-06-10T23:06:57.415Z",
+  "serverTimestamp": "2026-06-10T23:06:58.089Z"
+}
