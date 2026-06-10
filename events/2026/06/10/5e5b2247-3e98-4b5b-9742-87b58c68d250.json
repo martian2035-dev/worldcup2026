@@ -1,0 +1,14 @@
+{
+  "id": "5e5b2247-3e98-4b5b-9742-87b58c68d250",
+  "type": "bet",
+  "accountId": "acct-4687c859",
+  "username": "w01",
+  "deviceId": "device-1acc9e26-d62e-45b2-846f-aeb0dc640d51",
+  "matchId": "D01",
+  "matchLabel": "美国 vs 巴拉圭",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 3.46,
+  "clientTimestamp": "2026-06-10T23:47:34.111Z",
+  "serverTimestamp": "2026-06-10T23:47:34.660Z"
+}
