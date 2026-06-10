@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T08:23:14Z",
+  "lastUpdated": "2026-06-10T08:33:02Z",
   "players": [
     {
       "id": "edson-alvarez",
@@ -20,7 +20,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 187,
+      "weight": 79,
+      "club": "西汉姆联",
+      "photoUrl": ""
     },
     {
       "id": "santiago-gimenez",
@@ -41,7 +46,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 182,
+      "weight": 78,
+      "club": "AC米兰",
+      "photoUrl": ""
     },
     {
       "id": "hirving-lozano",
@@ -62,7 +72,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 177,
+      "weight": 68,
+      "club": "埃因霍温",
+      "photoUrl": ""
     },
     {
       "id": "guillermo-ochoa",
@@ -83,7 +98,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 40,
+      "height": 185,
+      "weight": 78,
+      "club": "萨勒尼塔纳",
+      "photoUrl": ""
     },
     {
       "id": "cesar-montes",
@@ -104,7 +124,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "luis-chavez",
@@ -125,7 +150,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "johan-vasquez",
@@ -146,7 +176,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "julian-quinones",
@@ -167,7 +202,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "luis-romo",
@@ -188,7 +228,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "oriel-rodriguez",
@@ -209,7 +254,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jorge-ruvalcaba",
@@ -230,7 +280,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "percy-tau",
@@ -251,7 +306,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ronwen-williams",
@@ -272,7 +332,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "themba-zwane",
@@ -293,7 +358,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "lele-mokoena",
@@ -314,7 +384,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "sphephelo-sithole",
@@ -335,7 +410,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "zakhele-lepasa",
@@ -356,7 +436,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "aubrey-modiba",
@@ -377,7 +462,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "khuliso-mudau",
@@ -398,7 +488,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "son-heung-min",
@@ -419,7 +514,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 183,
+      "weight": 78,
+      "club": "热刺",
+      "photoUrl": ""
     },
     {
       "id": "kang-in-lee",
@@ -440,7 +540,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 173,
+      "weight": 66,
+      "club": "巴黎圣日耳曼",
+      "photoUrl": ""
     },
     {
       "id": "min-jae-kim",
@@ -461,7 +566,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 190,
+      "weight": 84,
+      "club": "拜仁慕尼黑",
+      "photoUrl": ""
     },
     {
       "id": "hwang-hee-chan",
@@ -482,7 +592,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 177,
+      "weight": 73,
+      "club": "狼队",
+      "photoUrl": ""
     },
     {
       "id": "jo-hyeon-woo",
@@ -503,7 +618,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 35,
+      "height": 189,
+      "weight": 82,
+      "club": "蔚山现代",
+      "photoUrl": ""
     },
     {
       "id": "jung-woo-young",
@@ -524,7 +644,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 36,
+      "height": 186,
+      "weight": 78,
+      "club": "阿尔萨德",
+      "photoUrl": ""
     },
     {
       "id": "lee-jae-sung",
@@ -545,7 +670,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 180,
+      "weight": 70,
+      "club": "美因茨",
+      "photoUrl": ""
     },
     {
       "id": "seol-young-woo",
@@ -566,7 +696,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 180,
+      "weight": 72,
+      "club": "蔚山现代",
+      "photoUrl": ""
     },
     {
       "id": "bae-jun-ho",
@@ -587,7 +722,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 22,
+      "height": 180,
+      "weight": 70,
+      "club": "斯托克城",
+      "photoUrl": ""
     },
     {
       "id": "oh-hyeon-gyu",
@@ -608,7 +748,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 185,
+      "weight": 82,
+      "club": "凯尔特人",
+      "photoUrl": ""
     },
     {
       "id": "yang-hyun-jun",
@@ -629,7 +774,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 177,
+      "weight": 65,
+      "club": "凯尔特人",
+      "photoUrl": ""
     },
     {
       "id": "tomas-soucek",
@@ -650,7 +800,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 192,
+      "weight": 86,
+      "club": "西汉姆联",
+      "photoUrl": ""
     },
     {
       "id": "patrik-schick",
@@ -671,7 +826,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 190,
+      "weight": 82,
+      "club": "勒沃库森",
+      "photoUrl": ""
     },
     {
       "id": "vladimir-coufal",
@@ -692,7 +852,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 179,
+      "weight": 76,
+      "club": "西汉姆联",
+      "photoUrl": ""
     },
     {
       "id": "matej-kovar",
@@ -713,7 +878,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ladislav-krejci",
@@ -734,7 +904,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "adam-hlozek",
@@ -755,7 +930,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "pavel-sulc",
@@ -776,7 +956,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "vaclav-cerny",
@@ -797,7 +982,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "alphonso-davies",
@@ -818,7 +1008,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 185,
+      "weight": 75,
+      "club": "拜仁慕尼黑",
+      "photoUrl": ""
     },
     {
       "id": "jonathan-david",
@@ -839,7 +1034,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 177,
+      "weight": 70,
+      "club": "里尔",
+      "photoUrl": ""
     },
     {
       "id": "stephen-eustaquio",
@@ -860,7 +1060,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 178,
+      "weight": 72,
+      "club": "波尔图",
+      "photoUrl": ""
     },
     {
       "id": "tajon-buchanan",
@@ -881,7 +1086,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 183,
+      "weight": 69,
+      "club": "国际米兰",
+      "photoUrl": ""
     },
     {
       "id": "dayne-st-clair",
@@ -902,7 +1112,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "alistair-johnston",
@@ -923,7 +1138,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "moise-bombito",
@@ -944,7 +1164,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ismael-kone",
@@ -965,7 +1190,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "cyle-larin",
@@ -986,7 +1216,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jacen-russell-rowe",
@@ -1007,7 +1242,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "edin-dzeko",
@@ -1028,7 +1268,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 40,
+      "height": 193,
+      "weight": 84,
+      "club": "费内巴切",
+      "photoUrl": ""
     },
     {
       "id": "miralem-pjanic",
@@ -1049,7 +1294,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 36,
+      "height": 180,
+      "weight": 72,
+      "club": "莫斯科中央陆军",
+      "photoUrl": ""
     },
     {
       "id": "sead-kolasinac",
@@ -1070,7 +1320,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 32,
+      "height": 183,
+      "weight": 82,
+      "club": "亚特兰大",
+      "photoUrl": ""
     },
     {
       "id": "ibrahim-sehic",
@@ -1091,7 +1346,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "aner-kardum",
@@ -1112,7 +1372,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "rade-krunic",
@@ -1133,7 +1398,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "amar-dedic",
@@ -1154,7 +1424,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "benjamin-tatar",
@@ -1175,7 +1450,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "akram-afif",
@@ -1196,7 +1476,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "almoez-ali",
@@ -1217,7 +1502,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "basham-al-rawi",
@@ -1238,7 +1528,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "meshaal-barsham",
@@ -1259,7 +1554,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mohammed-waad",
@@ -1280,7 +1580,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "homam-ahmed",
@@ -1301,7 +1606,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "yusuf-abdurisag",
@@ -1322,7 +1632,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "tarek-salman",
@@ -1343,7 +1658,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "granit-xhaka",
@@ -1364,7 +1684,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 186,
+      "weight": 80,
+      "club": "勒沃库森",
+      "photoUrl": ""
     },
     {
       "id": "manuel-akanji",
@@ -1385,7 +1710,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 187,
+      "weight": 85,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "gregor-kobel",
@@ -1406,7 +1736,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 195,
+      "weight": 89,
+      "club": "多特蒙德",
+      "photoUrl": ""
     },
     {
       "id": "breel-embolo",
@@ -1427,7 +1762,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 187,
+      "weight": 88,
+      "club": "摩纳哥",
+      "photoUrl": ""
     },
     {
       "id": "remo-freuler",
@@ -1448,7 +1788,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "silvan-widmer",
@@ -1469,7 +1814,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ruben-vargas",
@@ -1490,7 +1840,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "michel-aebischer",
@@ -1511,7 +1866,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "nico-elman",
@@ -1532,7 +1892,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "dan-ndoye",
@@ -1553,7 +1918,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "vinicius-jr",
@@ -1574,7 +1944,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 176,
+      "weight": 73,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "rodrygo",
@@ -1595,7 +1970,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 174,
+      "weight": 68,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "bruno-guimaraes",
@@ -1616,7 +1996,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 182,
+      "weight": 78,
+      "club": "纽卡斯尔联",
+      "photoUrl": ""
     },
     {
       "id": "alisson",
@@ -1637,7 +2022,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 193,
+      "weight": 91,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "marquinhos",
@@ -1658,7 +2048,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 183,
+      "weight": 79,
+      "club": "巴黎圣日耳曼",
+      "photoUrl": ""
     },
     {
       "id": "eder-militao",
@@ -1679,7 +2074,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 186,
+      "weight": 81,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "gabriel-magalhaes",
@@ -1700,7 +2100,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 190,
+      "weight": 82,
+      "club": "阿森纳",
+      "photoUrl": ""
     },
     {
       "id": "raphinha",
@@ -1721,7 +2126,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 176,
+      "weight": 68,
+      "club": "巴塞罗那",
+      "photoUrl": ""
     },
     {
       "id": "enda-wendel",
@@ -1742,7 +2152,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 19,
+      "height": 173,
+      "weight": 73,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "lucas-paqueta",
@@ -1763,7 +2178,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 180,
+      "weight": 76,
+      "club": "西汉姆联",
+      "photoUrl": ""
     },
     {
       "id": "joao-gomes",
@@ -1784,7 +2204,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 176,
+      "weight": 72,
+      "club": "狼队",
+      "photoUrl": ""
     },
     {
       "id": "achraf-hakimi",
@@ -1805,7 +2230,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 181,
+      "weight": 73,
+      "club": "巴黎圣日耳曼",
+      "photoUrl": ""
     },
     {
       "id": "brahim-diaz",
@@ -1826,7 +2256,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 171,
+      "weight": 59,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "yassine-bounou",
@@ -1847,7 +2282,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 35,
+      "height": 195,
+      "weight": 84,
+      "club": "利雅得新月",
+      "photoUrl": ""
     },
     {
       "id": "noussair-mazraoui",
@@ -1868,7 +2308,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 183,
+      "weight": 73,
+      "club": "曼联",
+      "photoUrl": ""
     },
     {
       "id": "sofyan-amrabat",
@@ -1889,7 +2334,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "youssef-en-nesyri",
@@ -1910,7 +2360,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "azzedine-ounahi",
@@ -1931,7 +2386,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "nayef-agueerd",
@@ -1952,7 +2412,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "amine-harit",
@@ -1973,7 +2438,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ezalzouli",
@@ -1994,7 +2464,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "frantzdy-pierrot",
@@ -2015,7 +2490,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "duckens-nazon",
@@ -2036,7 +2516,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "carlens-arcus",
@@ -2057,7 +2542,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "johny-placide",
@@ -2078,7 +2568,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ricardo-ade",
@@ -2099,7 +2594,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jean-david-legrand",
@@ -2120,7 +2620,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "bryan-alceus",
@@ -2141,7 +2646,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "steven-saba",
@@ -2162,7 +2672,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "andrew-robertson",
@@ -2183,7 +2698,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "scott-mctominay",
@@ -2204,7 +2724,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "john-mcginn",
@@ -2225,7 +2750,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "angus-gunn",
@@ -2246,7 +2776,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "kieran-tierney",
@@ -2267,7 +2802,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "billy-gilmour",
@@ -2288,7 +2828,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ryan-christie",
@@ -2309,7 +2854,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ché-adams",
@@ -2330,7 +2880,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "lewis-ferguson",
@@ -2351,7 +2906,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "aaron-hickey",
@@ -2372,7 +2932,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "christian-pulisic",
@@ -2393,7 +2958,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 178,
+      "weight": 70,
+      "club": "AC米兰",
+      "photoUrl": ""
     },
     {
       "id": "gio-reyna",
@@ -2414,7 +2984,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 185,
+      "weight": 78,
+      "club": "多特蒙德",
+      "photoUrl": ""
     },
     {
       "id": "tyler-adams",
@@ -2435,7 +3010,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 175,
+      "weight": 68,
+      "club": "伯恩茅斯",
+      "photoUrl": ""
     },
     {
       "id": "matt-turner",
@@ -2456,7 +3036,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 191,
+      "weight": 84,
+      "club": "诺丁汉森林",
+      "photoUrl": ""
     },
     {
       "id": "timothy-weah",
@@ -2477,7 +3062,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "antonee-robinson",
@@ -2498,7 +3088,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "chris-richards",
@@ -2519,7 +3114,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ricardo-pepi",
@@ -2540,7 +3140,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "folarin-balogun",
@@ -2561,7 +3166,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "y-musah",
@@ -2582,7 +3192,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "cameron-vickers",
@@ -2603,7 +3218,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "miguel-almiron",
@@ -2624,7 +3244,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "julio-enciso",
@@ -2645,7 +3270,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "gustavo-gomez",
@@ -2666,7 +3296,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "carlos-coronel",
@@ -2687,7 +3322,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "fabian-balbuena",
@@ -2708,7 +3348,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ramon-sosa",
@@ -2729,7 +3374,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mathias-villasanti",
@@ -2750,7 +3400,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "alejandro-gamarra",
@@ -2771,7 +3426,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "harry-souttar",
@@ -2792,7 +3452,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 198,
+      "weight": 94,
+      "club": "谢菲尔德联",
+      "photoUrl": ""
     },
     {
       "id": "mathew-ryan",
@@ -2813,7 +3478,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 184,
+      "weight": 82,
+      "club": "罗马",
+      "photoUrl": ""
     },
     {
       "id": "jackson-irvine",
@@ -2834,7 +3504,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "riley-mcgree",
@@ -2855,7 +3530,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "kusini-yengi",
@@ -2876,7 +3556,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "cameron-burgess",
@@ -2897,7 +3582,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "aziz-behich",
@@ -2918,7 +3608,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "nathaniel-atkinson",
@@ -2939,7 +3634,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "aiden-o-neill",
@@ -2960,7 +3660,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "sam-silvera",
@@ -2981,7 +3686,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "hakan-calhanoglu",
@@ -3002,7 +3712,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 32,
+      "height": 178,
+      "weight": 76,
+      "club": "国际米兰",
+      "photoUrl": ""
     },
     {
       "id": "arda-guler",
@@ -3023,7 +3738,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 21,
+      "height": 176,
+      "weight": 68,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "merih-demiral",
@@ -3044,7 +3764,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 190,
+      "weight": 86,
+      "club": "吉达国民",
+      "photoUrl": ""
     },
     {
       "id": "altay-bayindir",
@@ -3065,7 +3790,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 198,
+      "weight": 88,
+      "club": "曼联",
+      "photoUrl": ""
     },
     {
       "id": "orima-kokcu",
@@ -3086,7 +3816,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "baris-yilmaz",
@@ -3107,7 +3842,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "abdulkerim-bardakci",
@@ -3128,7 +3868,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "kerem-akturkoglu",
@@ -3149,7 +3894,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "cenk-tosun",
@@ -3170,7 +3920,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "zeki-celik",
@@ -3191,7 +3946,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jamal-musiala",
@@ -3212,7 +3972,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 184,
+      "weight": 72,
+      "club": "拜仁慕尼黑",
+      "photoUrl": ""
     },
     {
       "id": "florian-wirtz",
@@ -3233,7 +3998,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 177,
+      "weight": 70,
+      "club": "勒沃库森",
+      "photoUrl": ""
     },
     {
       "id": "joshua-kimmich",
@@ -3254,7 +4024,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 177,
+      "weight": 72,
+      "club": "拜仁慕尼黑",
+      "photoUrl": ""
     },
     {
       "id": "antonio-rudiger",
@@ -3275,7 +4050,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 190,
+      "weight": 86,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "marc-ter-stegen",
@@ -3296,7 +4076,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 187,
+      "weight": 85,
+      "club": "巴塞罗那",
+      "photoUrl": ""
     },
     {
       "id": "kai-havertz",
@@ -3317,7 +4102,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 193,
+      "weight": 83,
+      "club": "阿森纳",
+      "photoUrl": ""
     },
     {
       "id": "leroy-sane",
@@ -3338,7 +4128,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 184,
+      "weight": 80,
+      "club": "拜仁慕尼黑",
+      "photoUrl": ""
     },
     {
       "id": "niclas-fullkrug",
@@ -3359,7 +4154,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 189,
+      "weight": 83,
+      "club": "西汉姆联",
+      "photoUrl": ""
     },
     {
       "id": "jonathan-tah",
@@ -3380,7 +4180,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 195,
+      "weight": 98,
+      "club": "勒沃库森",
+      "photoUrl": ""
     },
     {
       "id": "maximilian-mittelstadt",
@@ -3401,7 +4206,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 178,
+      "weight": 71,
+      "club": "斯图加特",
+      "photoUrl": ""
     },
     {
       "id": "pascal-gross",
@@ -3422,7 +4232,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 181,
+      "weight": 75,
+      "club": "多特蒙德",
+      "photoUrl": ""
     },
     {
       "id": "leandro-bacuna",
@@ -3443,7 +4258,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "juriën-gaari",
@@ -3464,7 +4284,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "kenji-gorre",
@@ -3485,7 +4310,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "eloy-room",
@@ -3506,7 +4336,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "juninho-bacuna",
@@ -3527,7 +4362,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "trevor-doornbusch",
@@ -3548,7 +4388,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "brandley-kuwas",
@@ -3569,7 +4414,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "roshon-engel",
@@ -3590,7 +4440,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "sebastien-haller",
@@ -3611,7 +4466,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "franck-kessie",
@@ -3632,7 +4492,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "simon-adingra",
@@ -3653,7 +4518,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "y-fofana",
@@ -3674,7 +4544,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "odilon-kossounou",
@@ -3695,7 +4570,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "evan-ndicka",
@@ -3716,7 +4596,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ibrahim-sangare",
@@ -3737,7 +4622,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "nicolas-pepe",
@@ -3758,7 +4648,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "amad-diallo",
@@ -3779,7 +4674,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jean-michael-seri",
@@ -3800,7 +4700,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "moises-caicedo",
@@ -3821,7 +4726,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 24,
+      "height": 178,
+      "weight": 72,
+      "club": "切尔西",
+      "photoUrl": ""
     },
     {
       "id": "piero-hincapie",
@@ -3842,7 +4752,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 24,
+      "height": 184,
+      "weight": 76,
+      "club": "勒沃库森",
+      "photoUrl": ""
     },
     {
       "id": "enner-valencia",
@@ -3863,7 +4778,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 36,
+      "height": 177,
+      "weight": 72,
+      "club": "巴西国际",
+      "photoUrl": ""
     },
     {
       "id": "hemang-almeida",
@@ -3884,7 +4804,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "william-pacho",
@@ -3905,7 +4830,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "angelo-preciado",
@@ -3926,7 +4856,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "pervis-estupinan",
@@ -3947,7 +4882,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "carlos-gruezo",
@@ -3968,7 +4908,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "kendry-paez",
@@ -3989,7 +4934,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jeremy-sarmiento",
@@ -4010,7 +4960,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "virgil-van-dijk",
@@ -4031,7 +4986,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 195,
+      "weight": 92,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "frenkie-de-jong",
@@ -4052,7 +5012,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 181,
+      "weight": 74,
+      "club": "巴塞罗那",
+      "photoUrl": ""
     },
     {
       "id": "cody-gakpo",
@@ -4073,7 +5038,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 193,
+      "weight": 76,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "xavi-simons",
@@ -4094,7 +5064,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 179,
+      "weight": 64,
+      "club": "莱比锡",
+      "photoUrl": ""
     },
     {
       "id": "bart-verbruggen",
@@ -4115,7 +5090,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 194,
+      "weight": 89,
+      "club": "布莱顿",
+      "photoUrl": ""
     },
     {
       "id": "denzel-dumfries",
@@ -4136,7 +5116,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 188,
+      "weight": 64,
+      "club": "国际米兰",
+      "photoUrl": ""
     },
     {
       "id": "nathan-ake",
@@ -4157,7 +5142,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 180,
+      "weight": 75,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "micky-van-de-ven",
@@ -4178,7 +5168,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 24,
+      "height": 193,
+      "weight": 87,
+      "club": "热刺",
+      "photoUrl": ""
     },
     {
       "id": "tijani-reijnders",
@@ -4199,7 +5194,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 185,
+      "weight": 79,
+      "club": "AC米兰",
+      "photoUrl": ""
     },
     {
       "id": "donyell-malen",
@@ -4220,7 +5220,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 179,
+      "weight": 71,
+      "club": "多特蒙德",
+      "photoUrl": ""
     },
     {
       "id": "ryan-gravenberch",
@@ -4241,7 +5246,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 190,
+      "weight": 83,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "takefusa-kubo",
@@ -4262,7 +5272,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 173,
+      "weight": 64,
+      "club": "皇家社会",
+      "photoUrl": ""
     },
     {
       "id": "kaoru-mitoma",
@@ -4283,7 +5298,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 178,
+      "weight": 70,
+      "club": "布莱顿",
+      "photoUrl": ""
     },
     {
       "id": "wataru-endo",
@@ -4304,7 +5324,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 178,
+      "weight": 77,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "daichi-kamada",
@@ -4325,7 +5350,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 184,
+      "weight": 74,
+      "club": "水晶宫",
+      "photoUrl": ""
     },
     {
       "id": "zion-suzuki",
@@ -4346,7 +5376,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 22,
+      "height": 191,
+      "weight": 88,
+      "club": "帕尔马",
+      "photoUrl": ""
     },
     {
       "id": "ko-itakura",
@@ -4367,7 +5402,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 186,
+      "weight": 80,
+      "club": "门兴格拉德巴赫",
+      "photoUrl": ""
     },
     {
       "id": "takehiro-tomiyasu",
@@ -4388,7 +5428,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 188,
+      "weight": 84,
+      "club": "阿森纳",
+      "photoUrl": ""
     },
     {
       "id": "hiroki-ito",
@@ -4409,7 +5454,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 188,
+      "weight": 81,
+      "club": "拜仁慕尼黑",
+      "photoUrl": ""
     },
     {
       "id": "takumi-minamino",
@@ -4430,7 +5480,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 174,
+      "weight": 68,
+      "club": "摩纳哥",
+      "photoUrl": ""
     },
     {
       "id": "ao-tanaka",
@@ -4451,7 +5506,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 177,
+      "weight": 70,
+      "club": "利兹联",
+      "photoUrl": ""
     },
     {
       "id": "ayase-ueda",
@@ -4472,7 +5532,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 182,
+      "weight": 75,
+      "club": "费耶诺德",
+      "photoUrl": ""
     },
     {
       "id": "alexander-isak",
@@ -4493,7 +5558,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 192,
+      "weight": 77,
+      "club": "纽卡斯尔联",
+      "photoUrl": ""
     },
     {
       "id": "dejan-kulusevski",
@@ -4514,7 +5584,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 186,
+      "weight": 80,
+      "club": "热刺",
+      "photoUrl": ""
     },
     {
       "id": "viktor-gyokeres",
@@ -4535,7 +5610,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 187,
+      "weight": 88,
+      "club": "葡萄牙体育",
+      "photoUrl": ""
     },
     {
       "id": "victor-lindelof",
@@ -4556,7 +5636,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 187,
+      "weight": 81,
+      "club": "曼联",
+      "photoUrl": ""
     },
     {
       "id": "robin-olsen",
@@ -4577,7 +5662,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "emil-forsberg",
@@ -4598,7 +5688,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ludwig-augustinsson",
@@ -4619,7 +5714,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mattias-svanberg",
@@ -4640,7 +5740,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jesper-karlstrom",
@@ -4661,7 +5766,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "anthony-elanga",
@@ -4682,7 +5792,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "youssef-msakni",
@@ -4703,7 +5818,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "elias-achouri",
@@ -4724,7 +5844,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "aissa-laidouni",
@@ -4745,7 +5870,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "bechir-ben-said",
@@ -4766,7 +5896,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "montassar-talbi",
@@ -4787,7 +5922,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "yan-valery",
@@ -4808,7 +5948,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mohamed-drager",
@@ -4829,7 +5974,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "hamza-rafia",
@@ -4850,7 +6000,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "haythem-jouini",
@@ -4871,7 +6026,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "kevin-de-bruyne",
@@ -4892,7 +6052,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 181,
+      "weight": 70,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "romeo-lukaku",
@@ -4913,7 +6078,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 190,
+      "weight": 93,
+      "club": "那不勒斯",
+      "photoUrl": ""
     },
     {
       "id": "jeremy-doku",
@@ -4934,7 +6104,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 173,
+      "weight": 66,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "thibaut-courtois",
@@ -4955,7 +6130,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 200,
+      "weight": 96,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "charles-de-ketelaere",
@@ -4976,7 +6156,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 192,
+      "weight": 79,
+      "club": "亚特兰大",
+      "photoUrl": ""
     },
     {
       "id": "amadou-onana",
@@ -4997,7 +6182,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 24,
+      "height": 195,
+      "weight": 86,
+      "club": "阿斯顿维拉",
+      "photoUrl": ""
     },
     {
       "id": "wout-faes",
@@ -5018,7 +6208,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "leandro-trossard",
@@ -5039,7 +6234,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 172,
+      "weight": 64,
+      "club": "阿森纳",
+      "photoUrl": ""
     },
     {
       "id": "youri-tielemans",
@@ -5060,7 +6260,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 178,
+      "weight": 72,
+      "club": "阿斯顿维拉",
+      "photoUrl": ""
     },
     {
       "id": "maxime-de-cuyper",
@@ -5081,7 +6286,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "timothy-castagne",
@@ -5102,7 +6312,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mohamed-salah",
@@ -5123,7 +6338,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 175,
+      "weight": 71,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "trezeguet",
@@ -5144,7 +6364,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 179,
+      "weight": 68,
+      "club": "特拉布宗体育",
+      "photoUrl": ""
     },
     {
       "id": "mohamed-elneny",
@@ -5165,7 +6390,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mohamed-elshenawy",
@@ -5186,7 +6416,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "omar-marmoush",
@@ -5207,7 +6442,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 179,
+      "weight": 70,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "ramy-rabia",
@@ -5228,7 +6468,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "emam-ashour",
@@ -5249,7 +6494,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ahmed-sayed-zizo",
@@ -5270,7 +6520,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mohamed-abdelmonem",
@@ -5291,7 +6546,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "marmoush-o",
@@ -5312,7 +6572,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mehdi-taremi",
@@ -5333,7 +6598,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 187,
+      "weight": 83,
+      "club": "国际米兰",
+      "photoUrl": ""
     },
     {
       "id": "sardar-azmoun",
@@ -5354,7 +6624,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 186,
+      "weight": 80,
+      "club": "罗马",
+      "photoUrl": ""
     },
     {
       "id": "alireza-jahanbakhsh",
@@ -5375,7 +6650,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "alireza-beiranvand",
@@ -5396,7 +6676,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "hamed-taremi",
@@ -5417,7 +6702,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "saeid-ezatolahi",
@@ -5438,7 +6728,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "sam-ghoddos",
@@ -5459,7 +6754,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ehsan-hajsafi",
@@ -5480,7 +6780,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ramin-rezaeian",
@@ -5501,7 +6806,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mohammad-mohebi",
@@ -5522,7 +6832,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "chris-wood",
@@ -5543,7 +6858,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "sydney-singh",
@@ -5564,7 +6884,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "liam-steele",
@@ -5585,7 +6910,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "michael-boxall",
@@ -5606,7 +6936,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "tyler-bindon",
@@ -5627,7 +6962,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "tim-payne",
@@ -5648,7 +6988,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "elijah-just",
@@ -5669,7 +7014,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "callum-mccowatt",
@@ -5690,7 +7040,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "marko-stamenic",
@@ -5711,7 +7066,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "matthew-garbett",
@@ -5732,7 +7092,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "lamine-yamal",
@@ -5753,7 +7118,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 18,
+      "height": 180,
+      "weight": 72,
+      "club": "巴塞罗那",
+      "photoUrl": ""
     },
     {
       "id": "nico-williams",
@@ -5774,7 +7144,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 181,
+      "weight": 69,
+      "club": "毕尔巴鄂竞技",
+      "photoUrl": ""
     },
     {
       "id": "rodri",
@@ -5795,7 +7170,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 191,
+      "weight": 82,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "pedri",
@@ -5816,7 +7196,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 174,
+      "weight": 62,
+      "club": "巴塞罗那",
+      "photoUrl": ""
     },
     {
       "id": "daniel-olmo",
@@ -5837,7 +7222,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 179,
+      "weight": 71,
+      "club": "巴塞罗那",
+      "photoUrl": ""
     },
     {
       "id": "unai-simon",
@@ -5858,7 +7248,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 190,
+      "weight": 86,
+      "club": "毕尔巴鄂竞技",
+      "photoUrl": ""
     },
     {
       "id": "marc-cucurella",
@@ -5879,7 +7274,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 175,
+      "weight": 68,
+      "club": "切尔西",
+      "photoUrl": ""
     },
     {
       "id": "pau-cubarsi",
@@ -5900,7 +7300,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 18,
+      "height": 188,
+      "weight": 80,
+      "club": "巴塞罗那",
+      "photoUrl": ""
     },
     {
       "id": "alex-remiro",
@@ -5921,7 +7326,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "fabian-ruiz",
@@ -5942,7 +7352,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 189,
+      "weight": 80,
+      "club": "巴黎圣日耳曼",
+      "photoUrl": ""
     },
     {
       "id": "mikel-oyarzabal",
@@ -5963,7 +7378,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 181,
+      "weight": 78,
+      "club": "皇家社会",
+      "photoUrl": ""
     },
     {
       "id": "ryan-mendes",
@@ -5984,7 +7404,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jamiro-monteiro",
@@ -6005,7 +7430,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "bebe",
@@ -6026,7 +7456,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "sixten-mohlin",
@@ -6047,7 +7482,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "steven-fortes",
@@ -6068,7 +7508,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "diney",
@@ -6089,7 +7534,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "kenny-santos",
@@ -6110,7 +7560,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "garry-rodrigues",
@@ -6131,7 +7586,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "salem-dawsari",
@@ -6152,7 +7612,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "firas-buraikan",
@@ -6173,7 +7638,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mohammed-alowais",
@@ -6194,7 +7664,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "sultan-alghannam",
@@ -6215,7 +7690,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ali-albulayhi",
@@ -6236,7 +7716,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "abdulelah-almalki",
@@ -6257,7 +7742,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "abdullah-alhamdan",
@@ -6278,7 +7768,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "sami-alnajei",
@@ -6299,7 +7794,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "nasser-dawsari",
@@ -6320,7 +7820,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "federico-valverde",
@@ -6341,7 +7846,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 182,
+      "weight": 76,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "darwin-nunez",
@@ -6362,7 +7872,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 187,
+      "weight": 84,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "ronald-araujo",
@@ -6383,7 +7898,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 191,
+      "weight": 82,
+      "club": "巴塞罗那",
+      "photoUrl": ""
     },
     {
       "id": "nicolas-de-la-cruz",
@@ -6404,7 +7924,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 168,
+      "weight": 67,
+      "club": "弗拉门戈",
+      "photoUrl": ""
     },
     {
       "id": "sergio-rochet",
@@ -6425,7 +7950,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mathias-olivera",
@@ -6446,7 +7976,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jose-gimenez",
@@ -6467,7 +8002,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "manuel-ugarte",
@@ -6488,7 +8028,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "maxi-araujo",
@@ -6509,7 +8054,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "facundo-pellistri",
@@ -6530,7 +8080,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "kylian-mbappe",
@@ -6551,7 +8106,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 178,
+      "weight": 75,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "antoine-griezmann",
@@ -6572,7 +8132,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 35,
+      "height": 176,
+      "weight": 73,
+      "club": "马德里竞技",
+      "photoUrl": ""
     },
     {
       "id": "ousmane-dembele",
@@ -6593,7 +8158,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 178,
+      "weight": 67,
+      "club": "巴黎圣日耳曼",
+      "photoUrl": ""
     },
     {
       "id": "aurelien-tchouameni",
@@ -6614,7 +8184,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 187,
+      "weight": 82,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "mike-maignan",
@@ -6635,7 +8210,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 191,
+      "weight": 89,
+      "club": "AC米兰",
+      "photoUrl": ""
     },
     {
       "id": "william-saliba",
@@ -6656,7 +8236,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 193,
+      "weight": 85,
+      "club": "阿森纳",
+      "photoUrl": ""
     },
     {
       "id": "dayot-upamecano",
@@ -6677,7 +8262,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 186,
+      "weight": 84,
+      "club": "拜仁慕尼黑",
+      "photoUrl": ""
     },
     {
       "id": "theo-hernandez",
@@ -6698,7 +8288,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 184,
+      "weight": 81,
+      "club": "AC米兰",
+      "photoUrl": ""
     },
     {
       "id": "jules-kounde",
@@ -6719,7 +8314,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 181,
+      "weight": 76,
+      "club": "巴塞罗那",
+      "photoUrl": ""
     },
     {
       "id": "eduardo-camavinga",
@@ -6740,7 +8340,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 182,
+      "weight": 76,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "bradley-barcola",
@@ -6761,7 +8366,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 182,
+      "weight": 72,
+      "club": "巴黎圣日耳曼",
+      "photoUrl": ""
     },
     {
       "id": "sadio-mane",
@@ -6782,7 +8392,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 175,
+      "weight": 69,
+      "club": "利雅得胜利",
+      "photoUrl": ""
     },
     {
       "id": "kalidou-koulibaly",
@@ -6803,7 +8418,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 187,
+      "weight": 89,
+      "club": "利雅得新月",
+      "photoUrl": ""
     },
     {
       "id": "edouard-mendy",
@@ -6824,7 +8444,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 197,
+      "weight": 93,
+      "club": "吉达国民",
+      "photoUrl": ""
     },
     {
       "id": "nicolas-jackson",
@@ -6845,7 +8470,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 24,
+      "height": 187,
+      "weight": 80,
+      "club": "切尔西",
+      "photoUrl": ""
     },
     {
       "id": "ismaila-sarr",
@@ -6866,7 +8496,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "pathe-ciss",
@@ -6887,7 +8522,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "idrissa-gueye",
@@ -6908,7 +8548,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "krepin-diatta",
@@ -6929,7 +8574,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "abdou-diallo",
@@ -6950,7 +8600,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "youssouf-sabaly",
@@ -6971,7 +8626,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "aymen-hussein",
@@ -6992,7 +8652,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ali-jasim",
@@ -7013,7 +8678,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "zidane-iqbal",
@@ -7034,7 +8704,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jason-hachim",
@@ -7055,7 +8730,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "amir-alammari",
@@ -7076,7 +8756,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "hussein-ali",
@@ -7097,7 +8782,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mohanad-jeahze",
@@ -7118,7 +8808,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "bashar-bonyan",
@@ -7139,7 +8834,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mohanad-ali",
@@ -7160,7 +8860,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "erling-haaland",
@@ -7181,7 +8886,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 195,
+      "weight": 94,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "martin-odegaard",
@@ -7202,7 +8912,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 178,
+      "weight": 75,
+      "club": "阿森纳",
+      "photoUrl": ""
     },
     {
       "id": "alexander-sorloth",
@@ -7223,7 +8938,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 195,
+      "weight": 90,
+      "club": "马德里竞技",
+      "photoUrl": ""
     },
     {
       "id": "orjan-nyland",
@@ -7244,7 +8964,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "kristoffer-ajer",
@@ -7265,7 +8990,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jeo-ryerson",
@@ -7286,7 +9016,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "sander-berge",
@@ -7307,7 +9042,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "antonio-nusa",
@@ -7328,7 +9068,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "oscar-bobb",
@@ -7349,7 +9094,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "donnum-o",
@@ -7370,7 +9120,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "lionel-messi",
@@ -7391,7 +9146,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 38,
+      "height": 170,
+      "weight": 72,
+      "club": "迈阿密国际",
+      "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/28003-1678320147.jpg"
     },
     {
       "id": "julian-alvarez",
@@ -7412,7 +9172,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 170,
+      "weight": 71,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "lautaro-martinez",
@@ -7433,7 +9198,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 174,
+      "weight": 79,
+      "club": "国际米兰",
+      "photoUrl": ""
     },
     {
       "id": "emi-martinez",
@@ -7454,7 +9224,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 195,
+      "weight": 88,
+      "club": "阿斯顿维拉",
+      "photoUrl": ""
     },
     {
       "id": "rodrigo-de-paul",
@@ -7475,7 +9250,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 180,
+      "weight": 70,
+      "club": "马德里竞技",
+      "photoUrl": ""
     },
     {
       "id": "cristian-romero",
@@ -7496,7 +9276,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 185,
+      "weight": 79,
+      "club": "热刺",
+      "photoUrl": ""
     },
     {
       "id": "nicolas-otamendi",
@@ -7517,7 +9302,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 38,
+      "height": 183,
+      "weight": 82,
+      "club": "本菲卡",
+      "photoUrl": ""
     },
     {
       "id": "enzo-fernandez",
@@ -7538,7 +9328,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 178,
+      "weight": 76,
+      "club": "切尔西",
+      "photoUrl": ""
     },
     {
       "id": "alexis-mac-allister",
@@ -7559,7 +9354,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 174,
+      "weight": 72,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "angel-di-maria",
@@ -7580,7 +9380,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 38,
+      "height": 180,
+      "weight": 75,
+      "club": "本菲卡",
+      "photoUrl": ""
     },
     {
       "id": "marcos-acuna",
@@ -7601,7 +9406,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 172,
+      "weight": 69,
+      "club": "塞维利亚",
+      "photoUrl": ""
     },
     {
       "id": "riyad-mahrez",
@@ -7622,7 +9432,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ismael-bennacer",
@@ -7643,7 +9458,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "yassine-benzia",
@@ -7664,7 +9484,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "anthony-mandrea",
@@ -7685,7 +9510,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "rayan-ait-nouri",
@@ -7706,7 +9536,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ramy-bensebaini",
@@ -7727,7 +9562,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "yousef-atal",
@@ -7748,7 +9588,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "sai-benrahma",
@@ -7769,7 +9614,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "amine-gouiri",
@@ -7790,7 +9640,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "houssem-aouar",
@@ -7811,7 +9666,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "david-alaba",
@@ -7832,7 +9692,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 33,
+      "height": 180,
+      "weight": 78,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "konrad-laimer",
@@ -7853,7 +9718,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 180,
+      "weight": 73,
+      "club": "拜仁慕尼黑",
+      "photoUrl": ""
     },
     {
       "id": "marcel-sabitzer",
@@ -7874,7 +9744,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 32,
+      "height": 178,
+      "weight": 74,
+      "club": "多特蒙德",
+      "photoUrl": ""
     },
     {
       "id": "patrick-pentz",
@@ -7895,7 +9770,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "philipp-lienhart",
@@ -7916,7 +9796,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "stefan-posch",
@@ -7937,7 +9822,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "max-womile",
@@ -7958,7 +9848,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "christoph-baumgartner",
@@ -7979,7 +9874,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "marko-arnautovic",
@@ -8000,7 +9900,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "florian-grillitsch",
@@ -8021,7 +9926,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "musa-al-taamari",
@@ -8042,7 +9952,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "yazan-al-naimat",
@@ -8063,7 +9978,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "noor-al-rawabdeh",
@@ -8084,7 +10004,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "abdallah-alzubi",
@@ -8105,7 +10030,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ahmad-nasib",
@@ -8126,7 +10056,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "bara-marei",
@@ -8147,7 +10082,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mahmoud-al-mardi",
@@ -8168,7 +10108,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ibrahim-sadeh",
@@ -8189,7 +10134,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ahsan-haddad",
@@ -8210,7 +10160,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "cristiano-ronaldo",
@@ -8231,7 +10186,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 41,
+      "height": 187,
+      "weight": 85,
+      "club": "利雅得胜利",
+      "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/8198-1697442827.jpg"
     },
     {
       "id": "bruno-fernandes",
@@ -8252,7 +10212,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 179,
+      "weight": 69,
+      "club": "曼联",
+      "photoUrl": ""
     },
     {
       "id": "bernardo-silva",
@@ -8273,7 +10238,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 173,
+      "weight": 64,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "ruben-dias",
@@ -8294,7 +10264,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 28,
+      "height": 187,
+      "weight": 83,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "diogo-costa",
@@ -8315,7 +10290,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 192,
+      "weight": 86,
+      "club": "波尔图",
+      "photoUrl": ""
     },
     {
       "id": "rafael-leao",
@@ -8336,7 +10316,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 188,
+      "weight": 81,
+      "club": "AC米兰",
+      "photoUrl": ""
     },
     {
       "id": "vitor-ferreira",
@@ -8357,7 +10342,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 172,
+      "weight": 64,
+      "club": "巴黎圣日耳曼",
+      "photoUrl": ""
     },
     {
       "id": "nuno-mendes",
@@ -8378,7 +10368,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 180,
+      "weight": 70,
+      "club": "巴黎圣日耳曼",
+      "photoUrl": ""
     },
     {
       "id": "diogo-jota",
@@ -8399,7 +10394,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 178,
+      "weight": 70,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "joao-palhinha",
@@ -8420,7 +10420,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 30,
+      "height": 190,
+      "weight": 83,
+      "club": "拜仁慕尼黑",
+      "photoUrl": ""
     },
     {
       "id": "goncalo-inacio",
@@ -8441,7 +10446,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 24,
+      "height": 186,
+      "weight": 80,
+      "club": "葡萄牙体育",
+      "photoUrl": ""
     },
     {
       "id": "cedric-bakambu",
@@ -8462,7 +10472,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "chancel-mbemba",
@@ -8483,7 +10498,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "yoane-wissa",
@@ -8504,7 +10524,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "joel-kiassumbua",
@@ -8525,7 +10550,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "gael-kakuta",
@@ -8546,7 +10576,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "noah-sadiki",
@@ -8567,7 +10602,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "joris-kayembe",
@@ -8588,7 +10628,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "samuel-moutoussamy",
@@ -8609,7 +10654,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "theo-bongonda",
@@ -8630,7 +10680,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "eldor-shomurodov",
@@ -8651,7 +10706,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jaloliddin-masharipov",
@@ -8672,7 +10732,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "abbosbek-fayzullaev",
@@ -8693,7 +10758,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "utkir-yusupov",
@@ -8714,7 +10784,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "rustam-ashurmatov",
@@ -8735,7 +10810,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "odil-hamrobekov",
@@ -8756,7 +10836,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "khojiakbar-alijonov",
@@ -8777,7 +10862,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "aziz-turgunbaev",
@@ -8798,7 +10888,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "bobir-abdikholikov",
@@ -8819,7 +10914,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "james-rodriguez",
@@ -8840,7 +10940,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 180,
+      "weight": 75,
+      "club": "圣保罗",
+      "photoUrl": ""
     },
     {
       "id": "luis-diaz",
@@ -8861,7 +10966,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 180,
+      "weight": 72,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "davinson-sanchez",
@@ -8882,7 +10992,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 29,
+      "height": 187,
+      "weight": 83,
+      "club": "加拉塔萨雷",
+      "photoUrl": ""
     },
     {
       "id": "camilo-vargas",
@@ -8903,7 +11018,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "john-ariza",
@@ -8924,7 +11044,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "juan-quintero",
@@ -8945,7 +11070,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jefferson-lerma",
@@ -8966,7 +11096,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "carlos-cuesta",
@@ -8987,7 +11122,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "mateus-uribe",
@@ -9008,7 +11148,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "rion-duran",
@@ -9029,7 +11174,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 22,
+      "height": 185,
+      "weight": 78,
+      "club": "阿斯顿维拉",
+      "photoUrl": ""
     },
     {
       "id": "harry-kane",
@@ -9050,7 +11200,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 32,
+      "height": 188,
+      "weight": 89,
+      "club": "拜仁慕尼黑",
+      "photoUrl": ""
     },
     {
       "id": "jude-bellingham",
@@ -9071,7 +11226,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 22,
+      "height": 186,
+      "weight": 78,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "declan-rice",
@@ -9092,7 +11252,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 188,
+      "weight": 80,
+      "club": "阿森纳",
+      "photoUrl": ""
     },
     {
       "id": "bukayo-saka",
@@ -9113,7 +11278,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 24,
+      "height": 178,
+      "weight": 70,
+      "club": "阿森纳",
+      "photoUrl": ""
     },
     {
       "id": "jordan-pickford",
@@ -9134,7 +11304,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 32,
+      "height": 185,
+      "weight": 77,
+      "club": "埃弗顿",
+      "photoUrl": ""
     },
     {
       "id": "phil-foden",
@@ -9155,7 +11330,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 26,
+      "height": 171,
+      "weight": 70,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "trent-alexander-arnold",
@@ -9176,7 +11356,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 27,
+      "height": 180,
+      "weight": 72,
+      "club": "利物浦",
+      "photoUrl": ""
     },
     {
       "id": "john-stones",
@@ -9197,7 +11382,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 188,
+      "weight": 76,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "cole-palmer",
@@ -9218,7 +11408,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 23,
+      "height": 189,
+      "weight": 76,
+      "club": "切尔西",
+      "photoUrl": ""
     },
     {
       "id": "marc-guehi",
@@ -9239,7 +11434,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 183,
+      "weight": 78,
+      "club": "水晶宫",
+      "photoUrl": ""
     },
     {
       "id": "kobbie-mainoo",
@@ -9260,7 +11460,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 21,
+      "height": 175,
+      "weight": 70,
+      "club": "曼联",
+      "photoUrl": ""
     },
     {
       "id": "luka-modric",
@@ -9281,7 +11486,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 40,
+      "height": 172,
+      "weight": 66,
+      "club": "皇家马德里",
+      "photoUrl": ""
     },
     {
       "id": "mateo-kovacic",
@@ -9302,7 +11512,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 178,
+      "weight": 78,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "josko-gvardiol",
@@ -9323,7 +11538,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 24,
+      "height": 185,
+      "weight": 82,
+      "club": "曼城",
+      "photoUrl": ""
     },
     {
       "id": "dom-livakovic",
@@ -9344,7 +11564,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 31,
+      "height": 188,
+      "weight": 82,
+      "club": "费内巴切",
+      "photoUrl": ""
     },
     {
       "id": "andrej-kramaric",
@@ -9365,7 +11590,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 34,
+      "height": 177,
+      "weight": 71,
+      "club": "霍芬海姆",
+      "photoUrl": ""
     },
     {
       "id": "ivica-ivusic",
@@ -9386,7 +11616,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "josip-stanisic",
@@ -9407,7 +11642,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "borna-sosa",
@@ -9428,7 +11668,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "lovro-majer",
@@ -9449,7 +11694,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "luka-sucic",
@@ -9470,7 +11720,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "marin-pongracic",
@@ -9491,7 +11746,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "thomas-partey",
@@ -9512,7 +11772,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 32,
+      "height": 185,
+      "weight": 77,
+      "club": "阿森纳",
+      "photoUrl": ""
     },
     {
       "id": "mohammed-kudus",
@@ -9533,7 +11798,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 177,
+      "weight": 70,
+      "club": "西汉姆联",
+      "photoUrl": ""
     },
     {
       "id": "jordan-ayew",
@@ -9554,7 +11824,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jojo-wollacott",
@@ -9575,7 +11850,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "daniel-amartey",
@@ -9596,7 +11876,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "abdul-samed",
@@ -9617,7 +11902,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "antoine-semenyo",
@@ -9638,7 +11928,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ideon-mensah",
@@ -9659,7 +11954,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "inaki-williams",
@@ -9680,7 +11980,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ernest-nuamah",
@@ -9701,7 +12006,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "yoel-barcenas",
@@ -9722,7 +12032,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "ismael-diaz",
@@ -9743,7 +12058,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "jose-fajardo",
@@ -9764,7 +12084,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "luis-mejia",
@@ -9785,7 +12110,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "adolfo-machado",
@@ -9806,7 +12136,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "eric-davis",
@@ -9827,7 +12162,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "michael-murillo",
@@ -9848,7 +12188,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "anel-carrasquilla",
@@ -9869,7 +12214,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     },
     {
       "id": "abdiel-aroyo",
@@ -9890,7 +12240,12 @@
         "yellowCards": 0,
         "redCards": 0,
         "matchRatings": []
-      }
+      },
+      "age": 25,
+      "height": 180,
+      "weight": 75,
+      "club": "",
+      "photoUrl": ""
     }
   ]
 }

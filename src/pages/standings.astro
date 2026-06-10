@@ -85,7 +85,7 @@ const roundNames: Record<string, string> = {
             <span style={`min-width:24px;font-weight:700;color:${qualified ? "var(--color-positive)" : "var(--color-text-muted)"}`}>{i+1}</span>
             <span style="flex:1;font-size:12px;display:flex;align-items:center;gap:6px;">
               <span>{getFlag(team.code)}</span>
-              <a href={`../teams/${team.code}`} style="color:var(--color-text-primary);text-decoration:none;">{team.name}</a>
+              <a href={`../teams/${team.code}/`} style="color:var(--color-text-primary);text-decoration:none;">{team.name}</a>
             </span>
             <span style="min-width:28px;text-align:center;color:var(--color-text-secondary);font-size:11px;">{team.played}</span>
             <span style="min-width:28px;text-align:center;color:var(--color-text-secondary);font-size:11px;">{team.won}</span>

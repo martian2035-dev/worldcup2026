@@ -26,50 +26,108 @@ function getFlag(code: string) {
   };
   return flags[code] || "🏳️";
 }
+
+const positionLabels: Record<string, string> = {
+  GK: "守门员", CB: "中后卫", LB: "左后卫", RB: "右后卫",
+  CDM: "防守中场", CM: "中前卫", CAM: "前腰",
+  LW: "左边锋", RW: "右边锋", ST: "前锋",
+};
 ---
 
 <BaseLayout title={`${player.name} - 球员详情`}>
   <!-- Breadcrumb -->
   <div style="color:var(--color-text-muted);font-size:10px;margin-bottom:16px;">
     <a href="../../teams/" style="color:var(--color-text-secondary);text-decoration:none;">球队</a> →
-    {team && <a href={`./teams/${team.code}`} style="color:var(--color-text-secondary);text-decoration:none;">{team.name}</a>} →
+    {team && <a href={`../../teams/${team.code}/`} style="color:var(--color-text-secondary);text-decoration:none;">{team.name}</a>} →
     <span style="color:var(--color-text-primary);">{player.name}</span>
   </div>
 
-  <!-- Hero -->
-  <div class="glass-card" style="padding:24px;margin-bottom:24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
-    <div style="font-size:56px;">👤</div>
-    <div style="flex:1;">
-      <div style="display:flex;align-items:center;gap:8px;">
-        <span style="font-size:24px;font-weight:800;">{player.name}</span>
-        {player.isStar && <span style="color:var(--color-accent);font-size:12px;">⭐ 明星球员</span>}
+  <!-- Hero with photo -->
+  <div class="glass-card" style="padding:28px;margin-bottom:20px;">
+    <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;">
+      <!-- Photo or flag avatar -->
+      <div style="width:120px;height:120px;border-radius:50%;overflow:hidden;flex-shrink:0;
+        background:linear-gradient(135deg,rgba(255,215,0,0.15),rgba(67,160,71,0.1));
+        border:2px solid var(--color-border);display:flex;align-items:center;justify-content:center;">
+        {player.photoUrl ? (
+          <img src={player.photoUrl} alt={player.name} style="width:100%;height:100%;object-fit:cover;" />
+        ) : (
+          <span style="font-size:72px;">{getFlag(player.team)}</span>
+        )}
       </div>
-      <div style="color:var(--color-text-secondary);font-size:12px;">{player.nameEn} · {player.position} · {player.number}号</div>
-      {team && <div style="color:var(--color-text-secondary);font-size:12px;margin-top:2px;">{getFlag(team.code)} {team.name} · {team.group}组</div>}
+      <!-- Player info -->
+      <div style="flex:1;min-width:200px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+          <span style="font-size:24px;font-weight:800;">{player.name}</span>
+          {player.isStar && <span style="color:var(--color-accent);font-size:14px;">⭐</span>}
+        </div>
+        <div style="color:var(--color-text-secondary);font-size:13px;margin-bottom:12px;">
+          {player.nameEn} · {positionLabels[player.position] || player.position} · {player.number}号
+        </div>
+        {team && (
+          <div style="color:var(--color-text-secondary);font-size:12px;margin-bottom:12px;">
+            {getFlag(team.code)} {team.name} · {team.group}组
+            {team.fifaRank && <span> · FIFA #{team.fifaRank}</span>}
+          </div>
+        )}
+        {/* Personal info */}
+        <div style="display:flex;flex-wrap:wrap;gap:12px 24px;">
+          {player.age && (
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <span style="color:var(--color-accent);font-size:18px;font-weight:700;">{player.age}</span>
+              <span style="color:var(--color-text-muted);font-size:10px;">年龄</span>
+            </div>
+          )}
+          {player.height && (
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <span style="color:var(--color-text-primary);font-size:18px;font-weight:700;">{player.height}cm</span>
+              <span style="color:var(--color-text-muted);font-size:10px;">身高</span>
+            </div>
+          )}
+          {player.weight && (
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <span style="color:var(--color-text-primary);font-size:18px;font-weight:700;">{player.weight}kg</span>
+              <span style="color:var(--color-text-muted);font-size:10px;">体重</span>
+            </div>
+          )}
+          {player.club && (
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <span style="color:var(--color-text-primary);font-size:15px;font-weight:700;">{player.club}</span>
+              <span style="color:var(--color-text-muted);font-size:10px;">俱乐部</span>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Stats grid -->
-  <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:10px;">赛事数据</div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-bottom:24px;">
-    {[
-      { label: "进球", value: player.stats.goals, color: "var(--color-accent)" },
-      { label: "点球", value: player.stats.penalties },
-      { label: "助攻", value: player.stats.assists, color: "var(--color-positive)" },
-      { label: "射门", value: player.stats.shots },
-      { label: "射正", value: player.stats.shotsOnTarget },
-      { label: "射正率", value: player.stats.shots > 0 ? Math.round(player.stats.shotsOnTarget / player.stats.shots * 100) + "%" : "-" },
-      { label: "出场时间", value: player.stats.minutesPlayed + "'" },
-      { label: "跑动距离", value: player.stats.distanceKm + "km" },
-      { label: "黄牌", value: player.stats.yellowCards },
-      { label: "红牌", value: player.stats.redCards, color: player.stats.redCards > 0 ? "var(--color-negative)" : undefined },
-    ].map(s => (
-      <div class="glass-card" style="padding:14px;text-align:center;">
-        <div style={`font-size:22px;font-weight:700;color:${s.color || "var(--color-text-primary)"}`}>{s.value}</div>
-        <div style="color:var(--color-text-muted);font-size:10px;margin-top:4px;">{s.label}</div>
-      </div>
-    ))}
-  </div>
+  <!-- Tournament stats -->
+  <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:10px;">📊 世界杯数据</div>
+  {player.stats.goals > 0 || player.stats.assists > 0 || player.stats.minutesPlayed > 0 ? (
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-bottom:24px;">
+      {[
+        { label: "进球", value: player.stats.goals, color: "var(--color-accent)" },
+        { label: "点球", value: player.stats.penalties },
+        { label: "助攻", value: player.stats.assists, color: "var(--color-positive)" },
+        { label: "射门", value: player.stats.shots },
+        { label: "射正", value: player.stats.shotsOnTarget },
+        { label: "射正率", value: player.stats.shots > 0 ? Math.round(player.stats.shotsOnTarget / player.stats.shots * 100) + "%" : "-" },
+        { label: "出场时间", value: player.stats.minutesPlayed + "'" },
+        { label: "跑动距离", value: player.stats.distanceKm + "km" },
+        { label: "黄牌", value: player.stats.yellowCards },
+        { label: "红牌", value: player.stats.redCards, color: player.stats.redCards > 0 ? "var(--color-negative)" : undefined },
+      ].map(s => (
+        <div class="glass-card" style="padding:14px;text-align:center;">
+          <div style={`font-size:22px;font-weight:700;color:${s.color || "var(--color-text-primary)"}`}>{s.value}</div>
+          <div style="color:var(--color-text-muted);font-size:10px;margin-top:4px;">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  ) : (
+    <div class="glass-card" style="padding:32px;text-align:center;color:var(--color-text-muted);font-size:13px;margin-bottom:24px;">
+      比赛尚未开始，数据将在世界杯期间实时更新
+    </div>
+  )}
 
   <!-- Match ratings -->
   {player.stats.matchRatings && player.stats.matchRatings.length > 0 && (
@@ -86,6 +144,15 @@ function getFlag(code: string) {
           </div>
         ))}
       </div>
+    </div>
+  )}
+
+  <!-- Link back to team -->
+  {team && (
+    <div style="text-align:center;margin-top:24px;">
+      <a href={`../../teams/${team.code}/`} class="btn-primary">
+        {getFlag(team.code)} 返回 {team.name} 队 →
+      </a>
     </div>
   )}
 </BaseLayout>

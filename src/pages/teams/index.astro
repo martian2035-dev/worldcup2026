@@ -33,7 +33,7 @@ const grouped = groups.map(g => ({
       <div style="color:var(--color-accent);font-weight:700;font-size:14px;margin-bottom:10px;">{g.name} 组</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;">
         {g.teams.map((team: any) => (
-          <a href={`../teams/${team.code}`} style="text-decoration:none;">
+          <a href={`../teams/${team.code}/`} style="text-decoration:none;">
             <div class="glass-card" style="padding:16px;display:flex;align-items:center;gap:14px;">
               <span style="font-size:36px;">{getFlag(team.code)}</span>
               <div>
