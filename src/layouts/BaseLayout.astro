@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 export interface Props {
   title?: string;
   description?: string;
@@ -10,11 +12,11 @@ const base = import.meta.env.BASE_URL || '';
 
 const navLinks = [
   { href: `${base}/`, label: "首页" },
-  { href: `${base}/schedule`, label: "赛程" },
-  { href: `${base}/standings`, label: "积分" },
-  { href: `${base}/teams`, label: "球队" },
-  { href: `${base}/stats`, label: "数据" },
-  { href: `${base}/broadcast`, label: "直播" },
+  { href: `${base}/schedule/`, label: "赛程" },
+  { href: `${base}/standings/`, label: "积分" },
+  { href: `${base}/teams/`, label: "球队" },
+  { href: `${base}/stats/`, label: "数据" },
+  { href: `${base}/broadcast/`, label: "直播" },
 ];
 ---
 

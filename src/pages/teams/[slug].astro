@@ -59,7 +59,7 @@ function formatTime(dt: string) { return dt.slice(5, 16).replace("T", " "); }
       <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;margin-bottom:8px;">⭐ 明星球员</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;">
         {starPlayers.map((p: any) => (
-          <a href={`/players/${p.id}`} style="text-decoration:none;">
+          <a href={`./players/${p.id}`} style="text-decoration:none;">
             <div class="gold-card" style="padding:14px;text-align:center;">
               <div style="font-size:28px;margin-bottom:4px;">👤</div>
               <div style="color:var(--color-accent);font-size:13px;font-weight:700;">{p.name}</div>
@@ -81,7 +81,7 @@ function formatTime(dt: string) { return dt.slice(5, 16).replace("T", " "); }
     <div class="glass-card" style="overflow:hidden;">
       {teamPlayers.length > 0 ? (
         teamPlayers.sort((a: any, b: any) => a.number - b.number).map((p: any) => (
-          <a href={`/players/${p.id}`} style="text-decoration:none;display:flex;padding:8px 14px;align-items:center;gap:10px;border-bottom:1px solid var(--color-border);">
+          <a href={`./players/${p.id}`} style="text-decoration:none;display:flex;padding:8px 14px;align-items:center;gap:10px;border-bottom:1px solid var(--color-border);">
             <span style="color:var(--color-text-muted);font-size:10px;min-width:22px;">{p.number}</span>
             <span style="color:var(--color-text-primary);font-size:12px;flex:1;">{p.name}</span>
             <span style="color:var(--color-positive);font-size:10px;">{p.position}</span>

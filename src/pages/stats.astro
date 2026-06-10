@@ -66,7 +66,7 @@ const medalColors = ["var(--color-accent)", "#C0C0C0", "#CD7F32"];
           <span style={`min-width:28px;font-weight:700;color:${i < 3 ? medalColors[i] : "var(--color-text-muted)"}`}>{i + 1}</span>
           <span style="flex:1;font-size:11px;display:flex;align-items:center;gap:6px;">
             <span>{getFlag(p.team)}</span>
-            <a href={`/players/${p.id}`} style="color:var(--color-text-primary);text-decoration:none;">{p.name}</a>
+            <a href={`./players/${p.id}`} style="color:var(--color-text-primary);text-decoration:none;">{p.name}</a>
             <span style="color:var(--color-text-muted);font-size:9px;">{p.position}</span>
           </span>
           <span style="min-width:44px;text-align:center;color:var(--color-accent);font-weight:700;">{p.stats.goals}</span>
@@ -94,7 +94,7 @@ const medalColors = ["var(--color-accent)", "#C0C0C0", "#CD7F32"];
           <span style={`min-width:28px;font-weight:700;color:${i < 3 ? medalColors[i] : "var(--color-text-muted)"}`}>{i + 1}</span>
           <span style="flex:1;font-size:11px;display:flex;align-items:center;gap:6px;">
             <span>{getFlag(p.team)}</span>
-            <a href={`/players/${p.id}`} style="color:var(--color-text-primary);text-decoration:none;">{p.name}</a>
+            <a href={`./players/${p.id}`} style="color:var(--color-text-primary);text-decoration:none;">{p.name}</a>
           </span>
           <span style="min-width:44px;text-align:center;color:var(--color-accent);font-weight:700;">{p.stats.assists}</span>
           <span style="min-width:44px;text-align:center;color:var(--color-text-secondary);">{p.stats.goals}</span>
@@ -118,7 +118,7 @@ const medalColors = ["var(--color-accent)", "#C0C0C0", "#CD7F32"];
         <div class="stat-row" style={i < 2 ? "background:rgba(67,160,71,0.04);" : ""}>
           <span style={`min-width:20px;font-weight:700;color:${i < 2 ? "var(--color-positive)" : "var(--color-text-muted)"}`}>{i+1}</span>
           <span style="flex:1;font-size:11px;">
-            <a href={`/teams/${t.code}`} style="color:var(--color-text-primary);text-decoration:none;">{getFlag(t.code)} {t.name}</a>
+            <a href={`./teams/${t.code}`} style="color:var(--color-text-primary);text-decoration:none;">{getFlag(t.code)} {t.name}</a>
           </span>
           <span style="min-width:24px;text-align:center;color:var(--color-text-secondary);font-size:10px;">{t.played}</span>
           <span style="min-width:24px;text-align:center;color:var(--color-text-secondary);font-size:10px;">{t.won}</span>

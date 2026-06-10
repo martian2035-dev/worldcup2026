@@ -65,7 +65,7 @@ function formatDate(dt: string) {
     <h2 style="font-size:11px;text-transform:uppercase;color:var(--color-text-muted);margin:0 0 10px;">今日比赛</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;">
       {todayMatches.map(m => (
-        <a href={`/schedule?match=${m.id}`} style="text-decoration:none;">
+        <a href={`./schedule/?match=${m.id}`} style="text-decoration:none;">
           <div class="glass-card" style="padding:16px;text-align:center;">
             <div style="color:var(--color-accent);font-size:13px;font-weight:600;">{formatDate(m.datetime)} {formatTime(m.datetime)}</div>
             <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:8px;">
@@ -87,7 +87,7 @@ function formatDate(dt: string) {
     <h2 style="font-size:11px;text-transform:uppercase;color:var(--color-text-muted);margin:0 0 10px;">小组赛</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;">
       {groups.map(g => (
-        <a href={`/schedule?group=${g}`} style="text-decoration:none;">
+        <a href={`./schedule/?group=${g}`} style="text-decoration:none;">
           <div class="glass-card" style="padding:12px;text-align:center;">
             <div style="color:var(--color-accent);font-weight:700;font-size:13px;margin-bottom:6px;">{g} 组</div>
             <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:4px 8px;">
@@ -103,6 +103,6 @@ function formatDate(dt: string) {
 
   <!-- CTA -->
   <div style="text-align:center;margin-top:32px;">
-    <a href="/schedule" class="btn-primary">查看完整赛程 →</a>
+    <a href="./schedule/" class="btn-primary">查看完整赛程 →</a>
   </div>
 </BaseLayout>

@@ -31,8 +31,8 @@ function getFlag(code: string) {
 <BaseLayout title={`${player.name} - 球员详情`}>
   <!-- Breadcrumb -->
   <div style="color:var(--color-text-muted);font-size:10px;margin-bottom:16px;">
-    <a href="/teams" style="color:var(--color-text-secondary);text-decoration:none;">球队</a> →
-    {team && <a href={`/teams/${team.code}`} style="color:var(--color-text-secondary);text-decoration:none;">{team.name}</a>} →
+    <a href="./teams/" style="color:var(--color-text-secondary);text-decoration:none;">球队</a> →
+    {team && <a href={`./teams/${team.code}`} style="color:var(--color-text-secondary);text-decoration:none;">{team.name}</a>} →
     <span style="color:var(--color-text-primary);">{player.name}</span>
   </div>
 
