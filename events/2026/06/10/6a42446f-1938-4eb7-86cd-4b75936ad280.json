@@ -1,0 +1,14 @@
+{
+  "id": "6a42446f-1938-4eb7-86cd-4b75936ad280",
+  "type": "bet",
+  "accountId": "acct-4687c859",
+  "username": "w01",
+  "deviceId": "device-1acc9e26-d62e-45b2-846f-aeb0dc640d51",
+  "matchId": "C01",
+  "matchLabel": "巴西 vs 摩洛哥",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.74,
+  "clientTimestamp": "2026-06-10T23:34:19.662Z",
+  "serverTimestamp": "2026-06-10T23:34:20.357Z"
+}
