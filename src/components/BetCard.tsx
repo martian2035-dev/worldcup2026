@@ -68,11 +68,10 @@ export default function BetCard({ match, odds, disabled, onBet }: Props) {
             }}
             disabled={blocked}
             style={{
-              padding: "10px 6px", borderRadius: 8, border: "none", cursor: blocked ? "not-allowed" : "pointer",
+              padding: "10px 6px", borderRadius: 8, cursor: blocked ? "not-allowed" : "pointer",
               background: selected === btn.key
                 ? "linear-gradient(135deg, rgba(255,215,0,0.2), rgba(255,215,0,0.05))"
                 : "rgba(255,255,255,0.04)",
-              borderColor: selected === btn.key ? "rgba(255,215,0,0.3)" : "transparent",
               border: selected === btn.key ? "1px solid rgba(255,215,0,0.3)" : "1px solid transparent",
               transition: "all 0.15s",
             }}

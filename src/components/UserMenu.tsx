@@ -3,11 +3,10 @@ import { supabase, type Profile } from "../lib/supabase";
 
 interface Props {
   profile: Profile | null;
-  onLogin: (profile: Profile) => void;
   onLogout: () => void;
 }
 
-export default function UserMenu({ profile, onLogin, onLogout }: Props) {
+export default function UserMenu({ profile, onLogout }: Props) {
   const [open, setOpen] = useState(false);
   const [beans, setBeans] = useState(profile?.beans ?? 0);
 

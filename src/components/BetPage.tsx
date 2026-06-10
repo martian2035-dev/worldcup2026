@@ -18,7 +18,6 @@ const FLAG: Record<string, string> = {
 const f = (n: string) => FLAG[n] || "🏳️";
 
 export default function BetPage() {
-  const [user, setUser] = useState<any>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [matches, setMatches] = useState<MatchInfo[]>([]);
   const [odds, setOdds] = useState<Record<string, MatchOdds>>({});
@@ -36,7 +35,6 @@ export default function BetPage() {
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => {
       if (data.session) {
-        setUser(data.session.user);
         loadProfile(data.session.user.id);
       } else {
         setLoading(false);
@@ -55,12 +53,16 @@ export default function BetPage() {
     });
   }, []);
 
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); if (username.trim().length < 2) return;
-    const { data, error } = await supabase.auth.signUp({ options: { data: { username: username.trim() } } });
+    const uid = Math.random().toString(36).slice(2, 10);
+    const { data, error } = await supabase.auth.signUp({
+      email: `user_${uid}@wc2026.local`,
+      password: `wc2026_${uid}_${Date.now()}`,
+      options: { data: { username: username.trim() } },
+    });
     if (error) { setMsg(error.message); return; }
     if (data.user) {
-      setUser(data.user);
       await supabase.from("profiles").update({ username: username.trim() }).eq("id", data.user.id);
       await loadProfile(data.user.id);
       setShowAuth(false); setLoading(false);

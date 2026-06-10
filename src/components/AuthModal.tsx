@@ -16,7 +16,7 @@ export default function AuthModal({ onClose, onLogin }: Props) {
     return () => { document.body.style.overflow = ""; };
   }, []);
 
-  const handleSubmit = useCallback(async (e: React.FormEvent) => {
+  const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const name = username.trim();
     if (!name) { setError("请输入昵称"); return; }
@@ -27,8 +27,14 @@ export default function AuthModal({ onClose, onLogin }: Props) {
     setError("");
 
     try {
-      // 匿名注册
+      // 生成匿名凭据
+      const uid = Math.random().toString(36).slice(2, 10);
+      const email = `user_${uid}@wc2026.local`;
+      const password = `wc2026_${uid}_${Date.now()}`;
+
       const { data: authData, error: authErr } = await supabase.auth.signUp({
+        email,
+        password,
         options: { data: { username: name } },
       });
 
