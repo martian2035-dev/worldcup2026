@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import {
   getSavedUsername, saveUsername, clearUsername,
   getLocalUserCache, setLocalUserCache, updateLocalUserCache, clearLocalUserCache,
-  fetchBetData, placeBet, hasPredictionApi,
+  registerUser, fetchUserRecord, placeBet, hasPredictionApi,
   type UserRecord, type MatchOdds, type BetRecord,
 } from "../lib/store";
 
@@ -64,32 +64,42 @@ export default function BetPage({ matchData }: { matchData?: string }) {
 
   const loadUser = useCallback(async (name: string) => {
     setLoading(true);
-    // 1. 优先从 GitHub 获取真实数据
-    const remoteData = await fetchBetData();
-    const remoteUser = remoteData.users[name];
-    // 2. 读取本地缓存
-    const cachedUser = getLocalUserCache();
+    // 1. 从 Worker API 获取用户档案
+    const remoteUser = await fetchUserRecord(name);
 
     if (remoteUser) {
-      // 远程有数据：用远程，同时更新本地缓存
       setUser(remoteUser);
       setLocalUserCache(remoteUser);
       setShowAuth(false);
-    } else if (cachedUser && cachedUser.username === name) {
-      // 远程无数据但有本地缓存：恢复本地状态
-      setUser(cachedUser);
-      setShowAuth(false);
-      setMsg("💡 使用本地缓存，首次投注后将同步到服务器");
-      setTimeout(() => setMsg(""), 4000);
     } else {
-      // 完全新用户
-      const newUser: UserRecord = {
-        username: name, beans: 10000, totalBets: 0, wonBets: 0,
-        createdAt: new Date().toISOString(), bets: [],
-      };
-      setUser(newUser);
-      setLocalUserCache(newUser);
-      setShowAuth(false);
+      // 2. 本地缓存
+      const cachedUser = getLocalUserCache();
+      if (cachedUser && cachedUser.username === name) {
+        setUser(cachedUser);
+        setShowAuth(false);
+        setMsg("💡 使用本地缓存，首次投注后将同步到服务器");
+        setTimeout(() => setMsg(""), 4000);
+      } else {
+        // 3. Worker 注册新用户
+        const workerUser = await registerUser(name);
+        if (workerUser) {
+          setUser(workerUser);
+          setShowAuth(false);
+        } else {
+          // Worker 不可用，本地创建
+          const newUser: UserRecord = {
+            username: name, beans: 10000, totalBets: 0, wonBets: 0,
+            createdAt: new Date().toISOString(), bets: [],
+          };
+          setUser(newUser);
+          setLocalUserCache(newUser);
+          setShowAuth(false);
+          if (!hasPredictionApi()) {
+            setMsg("💡 竞猜接口未配置，数据保存在本地");
+            setTimeout(() => setMsg(""), 4000);
+          }
+        }
+      }
     }
     setLoading(false);
   }, []);

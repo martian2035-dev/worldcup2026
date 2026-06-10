@@ -1,10 +1,13 @@
 /**
- * 竞猜数据存储 — Cloudflare Worker + GitHub 事件方案
+ * 竞猜数据存储 — Cloudflare Worker 方案
  *
- * 公开数据由聚合工作流写入 GitHub 仓库 src/data/bets/index.json。
- * 新投注由 Cloudflare Worker 接收，写入 prediction-submissions 分支的不可变事件。
+ * 所有用户数据通过 Cloudflare Worker API 读写：
+ * - POST /api/register    注册用户
+ * - GET  /api/users/{name} 获取用户档案
+ * - GET  /api/leaderboard  排行榜
+ * - POST /api/bets         提交投注
  *
- * 浏览器只保留用户名和设备标识，不再保存 GitHub Token。
+ * Worker 不可用时 fallback 到 GitHub raw + 本地缓存。
  */
 
 import predictionConfig from "../data/predictions/config.json";
@@ -53,7 +56,37 @@ export interface MatchOdds {
 }
 
 // ============================================================
-// 用户名 + 本地缓存
+// API 工具
+// ============================================================
+
+function apiUrl(path: string): string {
+  return `${PREDICTION_API_BASE}${path}`;
+}
+
+export function hasPredictionApi(): boolean {
+  return PREDICTION_API_BASE.length > 0;
+}
+
+async function apiFetch<T>(path: string, options?: RequestInit): Promise<T | null> {
+  if (!hasPredictionApi()) return null;
+  try {
+    const res = await fetch(apiUrl(path), {
+      ...options,
+      headers: { "Content-Type": "application/json", ...options?.headers },
+    });
+    if (!res.ok) {
+      console.warn(`Worker API ${path}: HTTP ${res.status}`);
+      return null;
+    }
+    return await res.json();
+  } catch (err: any) {
+    console.warn(`Worker API ${path}: ${err.message}`);
+    return null;
+  }
+}
+
+// ============================================================
+// 用户名 + 本地缓存（仅用于离线恢复）
 // ============================================================
 
 const USERNAME_KEY = "wc2026_user";
@@ -74,13 +107,11 @@ export function clearUsername(): void {
   try { localStorage.removeItem(USERNAME_KEY); } catch {}
 }
 
-/** 缓存用户数据到本地（远程数据尚未同步时的 fallback） */
 export function setLocalUserCache(user: UserRecord): void {
   if (typeof window === "undefined") return;
   try { localStorage.setItem(USER_CACHE_KEY, JSON.stringify(user)); } catch {}
 }
 
-/** 读取本地缓存的用户数据 */
 export function getLocalUserCache(): UserRecord | null {
   if (typeof window === "undefined") return null;
   try {
@@ -89,7 +120,6 @@ export function getLocalUserCache(): UserRecord | null {
   } catch { return null; }
 }
 
-/** 更新本地缓存的用户数据（增量合并） */
 export function updateLocalUserCache(updates: Partial<UserRecord> & { username: string }): void {
   const cached = getLocalUserCache();
   const defaults: UserRecord = {
@@ -97,8 +127,7 @@ export function updateLocalUserCache(updates: Partial<UserRecord> & { username: 
     bets: [], createdAt: new Date().toISOString(),
   };
   const base = (cached && cached.username === updates.username) ? cached : defaults;
-  const merged: UserRecord = { ...base, ...updates };
-  setLocalUserCache(merged);
+  setLocalUserCache({ ...base, ...updates });
 }
 
 export function clearLocalUserCache(): void {
@@ -115,46 +144,101 @@ const DEVICE_KEY = "wc2026_device_id";
 export function getDeviceId(): string {
   if (typeof window === "undefined") return "";
   try {
-    const existing = localStorage.getItem(DEVICE_KEY);
-    if (existing) return existing;
-    const next = `device-${crypto.randomUUID()}`;
-    localStorage.setItem(DEVICE_KEY, next);
-    return next;
+    let id = localStorage.getItem(DEVICE_KEY);
+    if (id) return id;
+    id = `device-${crypto.randomUUID()}`;
+    localStorage.setItem(DEVICE_KEY, id);
+    return id;
   } catch {
     return `device-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 12)}`;
   }
 }
 
-export function hasPredictionApi(): boolean {
-  return PREDICTION_API_BASE.length > 0;
+// ============================================================
+// Worker API — 用户
+// ============================================================
+
+export async function registerUser(username: string): Promise<UserRecord | null> {
+  const result = await apiFetch<{ user: UserRecord }>("/api/register", {
+    method: "POST",
+    body: JSON.stringify({ username, deviceId: getDeviceId() }),
+  });
+  if (result?.user) {
+    setLocalUserCache(result.user);
+    return result.user;
+  }
+  return null;
+}
+
+export async function fetchUserFromWorker(username: string): Promise<UserRecord | null> {
+  const result = await apiFetch<{ user: UserRecord }>(`/api/users/${encodeURIComponent(username)}`);
+  if (result?.user) {
+    setLocalUserCache(result.user);
+    return result.user;
+  }
+  return null;
 }
 
 // ============================================================
-// 从 GitHub 读取数据
+// Worker API — 排行榜
+// ============================================================
+
+export async function fetchLeaderboardFromWorker(): Promise<UserRecord[] | null> {
+  return apiFetch<UserRecord[]>("/api/leaderboard");
+}
+
+// ============================================================
+// 综合读取（Worker 优先 → GitHub fallback → 本地缓存）
 // ============================================================
 
 export async function fetchBetData(): Promise<BetData> {
+  // 1. Worker
+  if (hasPredictionApi()) {
+    const leaders = await fetchLeaderboardFromWorker();
+    if (leaders && leaders.length > 0) {
+      const users: Record<string, UserRecord> = {};
+      for (const u of leaders) users[u.username] = u;
+      return { users, lastUpdated: new Date().toISOString() };
+    }
+  }
+
+  // 2. GitHub raw（Worker 不可用时）
   try {
     const res = await fetch(BETS_RAW_URL, { cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return await res.json();
-  } catch {
-    return { users: {}, lastUpdated: "" };
-  }
+    if (res.ok) return await res.json();
+  } catch {}
+
+  return { users: {}, lastUpdated: "" };
 }
 
 export async function fetchUserRecord(username: string): Promise<UserRecord | null> {
+  // 1. Worker
+  const fromWorker = await fetchUserFromWorker(username);
+  if (fromWorker) return fromWorker;
+
+  // 2. GitHub raw
   const data = await fetchBetData();
-  return data.users[username] || null;
+  if (data.users[username]) return data.users[username];
+
+  // 3. 本地缓存
+  const cached = getLocalUserCache();
+  if (cached && cached.username === username) return cached;
+
+  return null;
 }
 
 export async function fetchLeaderboard(): Promise<UserRecord[]> {
+  // 1. Worker
+  const fromWorker = await fetchLeaderboardFromWorker();
+  if (fromWorker && fromWorker.length > 0) return fromWorker;
+
+  // 2. GitHub raw
   const data = await fetchBetData();
   return Object.values(data.users).sort((a, b) => b.beans - a.beans);
 }
 
 // ============================================================
-// 提交投注到 GitHub
+// 提交投注
 // ============================================================
 
 export async function placeBet(
@@ -165,12 +249,12 @@ export async function placeBet(
   amount: number,
   odds: number
 ): Promise<{ success: boolean; message: string }> {
-  if (!PREDICTION_API_BASE) {
+  if (!hasPredictionApi()) {
     return { success: false, message: "竞猜接口尚未配置，请稍后再试" };
   }
 
   try {
-    const res = await fetch(`${PREDICTION_API_BASE}/api/bets`, {
+    const res = await fetch(apiUrl("/api/bets"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -195,7 +279,7 @@ export async function placeBet(
 }
 
 // ============================================================
-// 结算（读取 GitHub 数据 + matches.json 进行结算）
+// 结算
 // ============================================================
 
 export interface MatchResult {
@@ -211,10 +295,6 @@ export function getMatchResult(match: MatchResult): "home_win" | "draw" | "away_
   return "draw";
 }
 
-/**
- * 客户端展示用：根据已加载的 betData 和 matches 计算用户的结算后状态
- * 不写入 GitHub（结算由 GitHub Action settle-bets.ts 完成）
- */
 export function computeSettledState(
   user: UserRecord,
   matches: MatchResult[]
