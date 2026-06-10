@@ -1,0 +1,14 @@
+{
+  "id": "76a6fdab-2304-44be-a5ac-01518302acda",
+  "type": "bet",
+  "accountId": "acct-d1396eea",
+  "username": "debug2",
+  "deviceId": "debug-0002",
+  "matchId": "A01",
+  "matchLabel": "测试",
+  "betType": "home_win",
+  "amount": 10,
+  "odds": 2,
+  "clientTimestamp": "2026-06-10T15:19:35.733Z",
+  "serverTimestamp": "2026-06-10T15:19:35.733Z"
+}

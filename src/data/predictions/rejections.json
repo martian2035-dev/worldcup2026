@@ -1,5 +1,69 @@
 {
   "version": 1,
-  "updatedAt": "",
-  "rejections": []
+  "updatedAt": "2026-06-10T17:40:49.866Z",
+  "rejections": [
+    {
+      "eventId": "1ae5c428-8cd0-48d2-8438-b46ccaab1f79",
+      "username": "w01",
+      "matchId": "A01",
+      "reason": "odds-changed",
+      "message": "赔率已变化，请刷新后重试"
+    },
+    {
+      "eventId": "f3bd55de-f9eb-4e2c-b4b8-b1b48ea96408",
+      "username": "w01",
+      "matchId": "A01",
+      "reason": "odds-changed",
+      "message": "赔率已变化，请刷新后重试"
+    },
+    {
+      "eventId": "f24b6b76-bbcb-4bd2-bca4-2eb86f1d9614",
+      "username": "w01",
+      "matchId": "A01",
+      "reason": "odds-changed",
+      "message": "赔率已变化，请刷新后重试"
+    },
+    {
+      "eventId": "bb638e79-a8cb-401f-b243-b9f36a0888cd",
+      "username": "w01",
+      "matchId": "A01",
+      "reason": "odds-changed",
+      "message": "赔率已变化，请刷新后重试"
+    },
+    {
+      "eventId": "9aab4631-bd54-453c-9c7f-187d05241cb8",
+      "username": "w01",
+      "matchId": "A01",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "331749a6-ffb4-478c-b71b-fef6f8e32bef",
+      "username": "w01",
+      "matchId": "A01",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "d3a38d77-cb14-4916-8b07-fc945c4c81fe",
+      "username": "测试阿北",
+      "matchId": "A01",
+      "reason": "odds-changed",
+      "message": "赔率已变化，请刷新后重试"
+    },
+    {
+      "eventId": "329d2b61-8b6a-4969-a658-a8c90e645216",
+      "username": "测试阿北",
+      "matchId": "A01",
+      "reason": "odds-changed",
+      "message": "赔率已变化，请刷新后重试"
+    },
+    {
+      "eventId": "76a6fdab-2304-44be-a5ac-01518302acda",
+      "username": "debug2",
+      "matchId": "A01",
+      "reason": "odds-changed",
+      "message": "赔率已变化，请刷新后重试"
+    }
+  ]
 }

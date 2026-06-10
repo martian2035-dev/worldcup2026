@@ -1,0 +1,14 @@
+{
+  "id": "d3a38d77-cb14-4916-8b07-fc945c4c81fe",
+  "type": "bet",
+  "accountId": "acct-57b39b32",
+  "username": "测试阿北",
+  "deviceId": "test-device-0001",
+  "matchId": "A01",
+  "matchLabel": "墨西哥 vs 南非",
+  "betType": "home_win",
+  "amount": 20,
+  "odds": 1.82,
+  "clientTimestamp": "2026-06-10T15:09:20.760Z",
+  "serverTimestamp": "2026-06-10T15:09:20.760Z"
+}

@@ -1,4 +1,46 @@
 {
-  "users": {},
-  "lastUpdated": "2026-06-10T00:00:00Z"
+  "users": {
+    "w01": {
+      "username": "w01",
+      "beans": 9850,
+      "totalBets": 2,
+      "wonBets": 0,
+      "createdAt": "2026-06-10T14:50:41.249Z",
+      "bets": [
+        {
+          "id": "c921b198-11ab-438d-a256-6723396cc593",
+          "username": "w01",
+          "matchId": "A01",
+          "matchLabel": "墨西哥 vs 南非",
+          "betType": "draw",
+          "amount": 50,
+          "odds": 3.53,
+          "status": "pending",
+          "payout": null,
+          "createdAt": "2026-06-10T14:50:41.249Z"
+        },
+        {
+          "id": "58e217ca-7a08-41d6-975e-ef6d7ff81673",
+          "username": "w01",
+          "matchId": "D01",
+          "matchLabel": "美国 vs 巴拉圭",
+          "betType": "draw",
+          "amount": 100,
+          "odds": 3.22,
+          "status": "pending",
+          "payout": null,
+          "createdAt": "2026-06-10T15:27:18.291Z"
+        }
+      ]
+    },
+    "测试阿北": {
+      "username": "测试阿北",
+      "beans": 10000,
+      "totalBets": 0,
+      "wonBets": 0,
+      "createdAt": "2026-06-10T15:09:15.946Z",
+      "bets": []
+    }
+  },
+  "lastUpdated": "2026-06-10T17:40:49.866Z"
 }
