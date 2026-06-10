@@ -5,7 +5,7 @@
 CREATE TABLE IF NOT EXISTS profiles (
   id         UUID PRIMARY KEY REFERENCES auth.users ON DELETE CASCADE,
   username   TEXT UNIQUE NOT NULL,
-  beans      INTEGER DEFAULT 100,
+  beans      INTEGER DEFAULT 10000,
   total_bets INTEGER DEFAULT 0,
   won_bets   INTEGER DEFAULT 0,
   created_at TIMESTAMPTZ DEFAULT NOW()

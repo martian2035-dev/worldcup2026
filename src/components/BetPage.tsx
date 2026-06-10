@@ -143,13 +143,13 @@ export default function BetPage() {
   if (showAuth) return (
     <div style={{ maxWidth: 380, margin: "40px auto", background: "var(--color-bg, #0a1628)", borderRadius: 16, padding: 24, border: "1px solid rgba(255,255,255,0.08)", textAlign: "center" }}>
       <h2 style={{ margin: "0 0 4px" }}>🎯 加入竞猜</h2>
-      <p style={{ color: "var(--color-text-secondary)", fontSize: 12, margin: "0 0 16px" }}>输入昵称，立即获取 <b style={{ color: "var(--color-accent)" }}>100 豆</b></p>
+      <p style={{ color: "var(--color-text-secondary)", fontSize: 12, margin: "0 0 16px" }}>输入昵称，立即获取 <b style={{ color: "var(--color-accent)" }}>10000 豆</b></p>
       <form onSubmit={handleLogin}>
         <input value={username} onChange={e => setUsername(e.target.value)} placeholder="输入昵称..." maxLength={20}
           style={{ width: "100%", padding: "12px 14px", borderRadius: 10, border: "1px solid rgba(255,255,255,0.12)", outline: "none", background: "rgba(255,255,255,0.05)", color: "#fff", fontSize: 14, boxSizing: "border-box" }} />
         {msg && <div style={{ color: "#E53935", fontSize: 11, marginTop: 6 }}>{msg}</div>}
         <button type="submit" style={{ width: "100%", marginTop: 14, padding: 12, borderRadius: 10, border: "none", cursor: "pointer", background: "linear-gradient(135deg, #FFD700, #FFA000)", color: "#0a1628", fontSize: 15, fontWeight: 700 }}>
-          🚀 免费领取 100 豆
+          🚀 免费领取 10000 豆
         </button>
       </form>
     </div>

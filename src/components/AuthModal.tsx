@@ -79,7 +79,7 @@ export default function AuthModal({ onClose, onLogin }: Props) {
       }}>
         <h2 style={{ margin: "0 0 4px", fontSize: 20, fontWeight: 700 }}>🎯 加入竞猜</h2>
         <p style={{ margin: "0 0 20px", color: "var(--color-text-secondary)", fontSize: 12 }}>
-          输入昵称，立即获取 <strong style={{ color: "var(--color-accent)" }}>100 豆</strong>
+          输入昵称，立即获取 <strong style={{ color: "var(--color-accent)" }}>10000 豆</strong>
         </p>
 
         <form onSubmit={handleSubmit}>
@@ -111,7 +111,7 @@ export default function AuthModal({ onClose, onLogin }: Props) {
               opacity: loading ? 0.6 : 1,
             }}
           >
-            {loading ? "注册中..." : "🚀 免费领取 100 豆"}
+            {loading ? "注册中..." : "🚀 免费领取 10000 豆"}
           </button>
         </form>
 
