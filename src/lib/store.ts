@@ -61,7 +61,9 @@ export interface MatchOdds {
 // ============================================================
 
 function apiUrl(path: string): string {
-  return `${PREDICTION_API_BASE}${path}`;
+  // 去掉可能的尾部斜杠，避免 double-slash
+  const base = PREDICTION_API_BASE.replace(/\/+$/, "");
+  return `${base}${path}`;
 }
 
 export function hasPredictionApi(): boolean {
