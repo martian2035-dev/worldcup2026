@@ -3,7 +3,7 @@
  *
  * 数据源（按优先级）：
  * 1. The Odds API（需配置 ODDS_API_KEY）
- * 2. FIFA 排名推算（基于 ELO 式算法，无 API 依赖）
+ * 2. worldcup_codex 参考逻辑（基于比赛 ID 的可复现赔率，无 API 依赖）
  *
  * 输出: public/odds.json（前端可直接 fetch）
  *
@@ -12,6 +12,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { createReferenceOdds } from "./odds/core.js";
 
 const ODDS_API_KEY = process.env.ODDS_API_KEY || "";
 const ODDS_API_BASE = "https://api.the-odds-api.com/v4";
@@ -28,12 +29,6 @@ interface MatchData {
   status: string;
   home: { code: string; name: string };
   away: { code: string; name: string };
-}
-
-interface TeamInfo {
-  code: string;
-  name: string;
-  fifaRank: number | null;
 }
 
 interface MatchOddsRecord {
@@ -105,58 +100,15 @@ async function fetchOddsFromApi(): Promise<Map<string, MatchOddsRecord> | null> 
 }
 
 // ============================================================
-// 2. FIFA 排名推算赔率（无需 API）
+// 2. worldcup_codex 参考赔率（无需 API）
 // ============================================================
 
-function generateRankingBasedOdds(): Map<string, MatchOddsRecord> {
-  console.log("🎲 基于 FIFA 排名推算赔率...");
-
+function generateReferenceOdds(): Map<string, MatchOddsRecord> {
+  console.log("🎲 基于 worldcup_codex 参考逻辑生成赔率...");
   const matches = loadMatches();
-  const teams = loadTeams();
-  const rankMap = new Map(teams.map(t => [t.code, t.fifaRank ?? 50]));
-  const maxRankDiff = 90;
-
-  const oddsMap = new Map<string, MatchOddsRecord>();
   const now = new Date().toISOString();
-
-  for (const match of matches) {
-    const homeRank = rankMap.get(match.home.code) ?? 50;
-    const awayRank = rankMap.get(match.away.code) ?? 50;
-
-    // ELO 式推算
-    // rankingDiff > 0 = 主队更强
-    const rankingDiff = awayRank - homeRank;
-
-    // 主队胜率期望（ELO 公式改编）
-    const expectedHome = 1 / (1 + Math.pow(10, -rankingDiff / 25));
-
-    // 赔率 = 1 / 概率，扣除 5% 庄家 margin
-    const margin = 0.95;
-
-    // 主胜赔率：1.15 - 3.50 之间
-    let homeWin = Math.round((margin / Math.max(expectedHome, 0.02)) * 100) / 100;
-    homeWin = Math.max(1.10, Math.min(6.00, homeWin));
-
-    // 平局赔率：强强对话低，强弱分明高
-    let draw = 2.80 + Math.abs(rankingDiff) * 0.025;
-    draw = Math.round(draw * 100) / 100;
-    draw = Math.max(2.60, Math.min(5.50, draw));
-
-    // 客胜赔率：1.15 - 10.00
-    const expectedAway = 1 - expectedHome;
-    let awayWin = Math.round((margin / Math.max(expectedAway, 0.02)) * 100) / 100;
-    awayWin = Math.max(1.10, Math.min(12.00, awayWin));
-
-    oddsMap.set(match.id, {
-      match_id: match.id,
-      home_win: homeWin,
-      draw,
-      away_win: awayWin,
-      bookmaker: "fifa-rank",
-      updated_at: now,
-    });
-  }
-
+  const records = createReferenceOdds(matches, now) as MatchOddsRecord[];
+  const oddsMap = new Map(records.map((record) => [record.match_id, record]));
   console.log(`  ✅ 推算 ${oddsMap.size} 场比赛赔率`);
   return oddsMap;
 }
@@ -168,11 +120,6 @@ function generateRankingBasedOdds(): Map<string, MatchOddsRecord> {
 function loadMatches(): MatchData[] {
   const file = path.join(DATA_DIR, "matches.json");
   return JSON.parse(fs.readFileSync(file, "utf-8")).matches ?? [];
-}
-
-function loadTeams(): TeamInfo[] {
-  const file = path.join(DATA_DIR, "teams.json");
-  return JSON.parse(fs.readFileSync(file, "utf-8")).teams ?? [];
 }
 
 function matchByName(matches: MatchData[], home: string, away: string): MatchData | undefined {
@@ -232,9 +179,9 @@ async function main(): Promise<void> {
   // 1. 优先 The Odds API
   let oddsMap = await fetchOddsFromApi();
 
-  // 2. Fallback: FIFA 排名推算
+  // 2. Fallback: worldcup_codex 参考逻辑
   if (!oddsMap || oddsMap.size === 0) {
-    oddsMap = generateRankingBasedOdds();
+    oddsMap = generateReferenceOdds();
   }
 
   // 3. 写入
