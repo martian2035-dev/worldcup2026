@@ -1,35 +1,47 @@
-import { useState, useEffect } from "react";
-import { getLocalProfile, getLocalBets, settleLocalBets, type LocalProfile, type LocalBet, type MatchResult } from "../lib/store";
+import { useState, useEffect, useCallback } from "react";
+import {
+  getSavedUsername, fetchUserRecord, computeSettledState,
+  type UserRecord, type BetRecord, type MatchResult,
+} from "../lib/store";
 
 export default function MinePage() {
-  const [profile, setProfile] = useState<LocalProfile | null>(null);
-  const [bets, setBets] = useState<LocalBet[]>([]);
-  const [settled, setSettled] = useState(0);
+  const [user, setUser] = useState<UserRecord | null>(null);
+  const [bets, setBets] = useState<BetRecord[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [msg, setMsg] = useState("");
 
-  useEffect(() => {
-    const p = getLocalProfile();
-    setProfile(p);
-    if (p) refreshBets();
-  }, []);
+  const loadData = useCallback(async () => {
+    const name = getSavedUsername();
+    if (!name) { setLoading(false); return; }
 
-  const refreshBets = async () => {
     try {
-      const res = await fetch("/matches.json");
-      const data = await res.json();
-      const matches: MatchResult[] = data.matches || [];
-      const s = settleLocalBets(matches);
-      if (s > 0) {
-        setSettled(s);
-        const updated = getLocalProfile();
-        if (updated) setProfile(updated);
+      // 加载比赛数据用于本地结算展示
+      const [matchesRes, userData] = await Promise.all([
+        fetch("/matches.json").then(r => r.json()),
+        fetchUserRecord(name),
+      ]);
+
+      const matches: MatchResult[] = matchesRes.matches || [];
+
+      if (userData) {
+        const settled = computeSettledState(userData, matches);
+        setUser({ ...userData, beans: settled.beans, wonBets: settled.wonBets });
+        setBets(settled.settledBets.reverse());
+        if (settled.settledBets.some((b, i) => b.status !== (userData.bets[i]?.status || "pending"))) {
+          setMsg("💡 结算数据来自本地计算，最终结果以 GitHub 为准");
+        }
       }
     } catch {}
-    setBets(getLocalBets());
-  };
+    setLoading(false);
+  }, []);
 
-  if (!profile) return (
+  useEffect(() => { loadData(); }, [loadData]);
+
+  if (loading) return <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>加载中...</div>;
+
+  if (!user) return (
     <div style={{ textAlign: "center", padding: 60, color: "var(--color-text-muted)" }}>
-      请先 <a href="/bet/" style={{ color: "var(--color-accent)" }}>注册</a> 查看竞猜记录
+      请先 <a href="/bet/" style={{ color: "var(--color-accent)" }}>登录</a> 查看竞猜记录
     </div>
   );
 
@@ -44,12 +56,13 @@ export default function MinePage() {
 
   return (
     <div>
-      {settled > 0 && <div style={{ textAlign: "center", padding: 8, color: "var(--color-positive)", fontSize: 13, marginBottom: 12 }}>🎉 已自动结算 {settled} 场！</div>}
+      {msg && <div style={{ textAlign: "center", padding: 6, color: "var(--color-text-muted)", fontSize: 11, marginBottom: 12 }}>{msg}</div>}
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
         <div style={{ fontSize: 14 }}>
-          <span style={{ color: "var(--color-accent)", fontWeight: 700 }}>🫘 {profile.beans.toLocaleString()}</span>
-          <span style={{ color: "var(--color-text-muted)", fontSize: 11, marginLeft: 6 }}>{profile.username}</span>
+          <span style={{ color: "var(--color-accent)", fontWeight: 700 }}>🫘 {user.beans.toLocaleString()}</span>
+          <span style={{ color: "var(--color-text-muted)", fontSize: 11, marginLeft: 6 }}>{user.username}</span>
+          <button onClick={loadData} style={{ background: "none", border: "none", color: "var(--color-text-muted)", cursor: "pointer", fontSize: 10, marginLeft: 6 }}>🔄</button>
         </div>
         <div style={{ fontSize: 11, color: "var(--color-text-secondary)" }}>
           共 {bets.length} 注 · 赢 {bets.filter(b => b.status === "won").length} 注
@@ -67,18 +80,14 @@ export default function MinePage() {
             return (
               <div key={b.id} style={{ padding: 12, borderRadius: 10, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <div>
-                  <div style={{ fontSize: 11, color: "var(--color-text-muted)" }}>
-                    {b.matchLabel} · {new Date(b.createdAt).toLocaleDateString("zh-CN")}
-                  </div>
+                  <div style={{ fontSize: 11, color: "var(--color-text-muted)" }}>{b.matchLabel}</div>
                   <div style={{ fontSize: 13, fontWeight: 600 }}>
                     {b.betType === "home_win" ? "主胜" : b.betType === "away_win" ? "客胜" : "平局"} @ {Number(b.odds).toFixed(2)}
                   </div>
                 </div>
                 <div style={{ textAlign: "right" }}>
                   <div style={{ fontSize: 13, fontWeight: 700 }}>🫘 {b.amount}</div>
-                  <div style={{ fontSize: 11, color: ss.color }}>
-                    {ss.label}{b.payout != null ? ` → 🫘${b.payout}` : ""}
-                  </div>
+                  <div style={{ fontSize: 11, color: ss.color }}>{ss.label}{b.payout != null ? ` → 🫘${b.payout}` : ""}</div>
                 </div>
               </div>
             );
