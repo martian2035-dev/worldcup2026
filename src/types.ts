@@ -30,6 +30,8 @@ export interface MatchPlayerEvent {
   yellowCard: boolean;
   redCard: boolean;
   rating: number | null;
+  foulsCommitted?: number;
+  offsides?: number;
 }
 
 export interface StandingTeam {
@@ -85,10 +87,14 @@ export interface PlayerMatchLog {
   yellowCard: boolean;
   redCard: boolean;
   rating: number | null;
+  foulsCommitted?: number;
+  offsides?: number;
 }
 
 export interface Player {
   id: string;
+  fifaId?: string;
+  fifaTeamId?: string;
   name: string;
   nameEn: string;
   team: string;

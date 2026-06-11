@@ -14,7 +14,8 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { fetchMatchPlayerStats } from "./fifa-client";
+import { fetchLiveMatch, fetchMatchTimeline } from "./fifa-client";
+import { applyFifaMatchStats } from "./player-stats-core.js";
 import type { MatchPlayerEvent, PlayerMatchLog } from "../src/types";
 
 const DATA_DIR = path.resolve("src/data");
@@ -164,67 +165,26 @@ export async function updateStatsFromFifa(): Promise<{ updated: number } | null>
     fs.readFileSync(path.join(DATA_DIR, "players.json"), "utf-8")
   );
   const players = playersData.players || [];
-  const playerIndex = new Map(players.map((p: any) => [p.id, p]));
 
   let totalUpdated = 0;
 
   for (const match of finishedMatches) {
-    const stats = await fetchMatchPlayerStats(match.fifaMatchId || match.id);
-    if (!stats?.length) continue;
+    const fifaMatchId = match.fifaMatchId || match.id;
+    const [liveData, timelineData] = await Promise.all([
+      fetchLiveMatch(fifaMatchId),
+      fetchMatchTimeline(fifaMatchId),
+    ]);
+    if (!liveData || !timelineData) continue;
 
-    // 转换并填充 playerEvents
-    match.playerEvents = match.playerEvents || [];
-    const eventIds = new Set(match.playerEvents.map((e: any) => e.playerId));
-
-    for (const raw of stats) {
-      const player = playerIndex.get(raw.IdPlayer);
-      if (!player) continue;
-
-      // 更新 playerEvents
-      if (!eventIds.has(raw.IdPlayer)) {
-        match.playerEvents.push({
-          playerId: raw.IdPlayer,
-          team: player.team,
-          minutesPlayed: raw.MinutesPlayed,
-          isStart: raw.IsStart,
-          goals: raw.Goals,
-          assists: raw.Assists,
-          shots: raw.Shots,
-          shotsOnTarget: raw.ShotsOnTarget,
-          yellowCard: raw.YellowCard,
-          redCard: raw.RedCard,
-          rating: raw.Rating,
-        });
-      }
-
-      // 更新 matchLog
-      if (!player.matchLog) player.matchLog = [];
-      const logIdx = player.matchLog.findIndex((l: any) => l.matchId === match.id);
-      const logEntry = {
-        matchId: match.id,
-        date: match.datetime,
-        opponent: match.home.code === player.team ? match.away.code : match.home.code,
-        minutesPlayed: raw.MinutesPlayed,
-        isStart: raw.IsStart,
-        goals: raw.Goals,
-        assists: raw.Assists,
-        shots: raw.Shots,
-        shotsOnTarget: raw.ShotsOnTarget,
-        yellowCard: raw.YellowCard,
-        redCard: raw.RedCard,
-        rating: raw.Rating,
-      };
-
-      if (logIdx >= 0) {
-        player.matchLog[logIdx] = logEntry;
-      } else {
-        player.matchLog.push(logEntry);
-      }
-
-      // 重新计算 stats
-      player.stats = recalculateStats(player.matchLog);
-      totalUpdated++;
-    }
+    const result = applyFifaMatchStats({
+      players,
+      match,
+      liveData,
+      timelineData,
+    });
+    playersData.players = result.players;
+    match.playerEvents = result.playerEvents;
+    totalUpdated += result.updatedPlayers;
   }
 
   if (totalUpdated === 0) {
@@ -271,6 +231,8 @@ function eventToMatchLog(event: MatchPlayerEvent, match: MatchRecord): PlayerMat
     yellowCard: event.yellowCard,
     redCard: event.redCard,
     rating: event.rating,
+    foulsCommitted: event.foulsCommitted,
+    offsides: event.offsides,
   };
 }
 
@@ -301,6 +263,8 @@ function recalculateStats(matchLog: PlayerMatchLog[]): PlayerStatsRecord["stats"
     stats.assists += log.assists;
     stats.shots += log.shots;
     stats.shotsOnTarget += log.shotsOnTarget;
+    stats.foulsCommitted += log.foulsCommitted || 0;
+    stats.offsides += log.offsides || 0;
     if (log.yellowCard) stats.yellowCards++;
     if (log.redCard) stats.redCards++;
     if (log.rating) stats.matchRatings.push(log.rating);

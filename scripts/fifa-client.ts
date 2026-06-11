@@ -116,6 +116,54 @@ export interface FifaPlayerStatRaw {
   Rating: number | null;
 }
 
+export interface FifaTimelineRaw {
+  IdMatch: string;
+  Event: Array<{
+    IdPlayer?: string;
+    IdTeam?: string;
+    IdSubPlayer?: string;
+    IdSubTeam?: string;
+    Type: number;
+    MatchMinute?: string;
+    Timestamp?: string;
+    TypeLocalized?: Array<{ Locale: string; Description: string }>;
+  }>;
+}
+
+export interface FifaLiveMatchRaw {
+  IdMatch: string;
+  MatchTime?: string | null;
+  HomeTeam?: FifaLiveTeamRaw;
+  AwayTeam?: FifaLiveTeamRaw;
+}
+
+export interface FifaLiveTeamRaw {
+  IdTeam: string;
+  Abbreviation: string;
+  Players?: Array<{
+    IdPlayer: string;
+    IdTeam: string;
+    ShirtNumber: number;
+    Status: number;
+    Position: number;
+    PlayerName?: Array<{ Locale: string; Description: string }>;
+    ShortName?: Array<{ Locale: string; Description: string }>;
+    PlayerPicture?: { PictureUrl?: string };
+  }>;
+  Substitutions?: Array<{
+    IdPlayerOff: string;
+    IdPlayerOn: string;
+    Minute: string;
+    IdTeam: string;
+  }>;
+  Bookings?: Array<{
+    IdPlayer: string;
+    Card: number;
+    Minute: string;
+    IdTeam: string;
+  }>;
+}
+
 // ============================================================
 // API 请求工具
 // ============================================================
@@ -238,6 +286,28 @@ export async function fetchMatchPlayerStats(matchId: string): Promise<FifaPlayer
   if (!data?.Results?.length) return null;
 
   return data.Results;
+}
+
+/**
+ * 获取指定比赛的事件流
+ * 端点: GET /timelines/{matchId}?language=zh
+ */
+export async function fetchMatchTimeline(matchId: string): Promise<FifaTimelineRaw | null> {
+  const data = await fifaFetch<FifaTimelineRaw>(`/timelines/${matchId}`);
+  if (!data?.Event?.length) return null;
+
+  return data;
+}
+
+/**
+ * 获取指定比赛的完整比赛数据（阵容、换人、进球、牌）
+ * 端点: GET /live/football/{matchId}?language=zh
+ */
+export async function fetchLiveMatch(matchId: string): Promise<FifaLiveMatchRaw | null> {
+  const data = await fifaFetch<FifaLiveMatchRaw>(`/live/football/${matchId}`);
+  if (!data?.HomeTeam && !data?.AwayTeam) return null;
+
+  return data;
 }
 
 /**
