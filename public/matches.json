@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T21:25:25Z",
+  "lastUpdated": "2026-06-11T23:09:41.924Z",
   "matches": [
     {
       "id": "A01",
@@ -16,15 +16,16 @@
       },
       "datetime": "2026-06-12T03:00:00+08:00",
       "venue": {
-        "name": "墨西哥城·阿兹特克球场",
+        "name": "Mexico City Stadium",
         "city": "墨西哥城"
       },
-      "status": "upcoming",
+      "status": "finished",
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021443"
     },
     {
       "id": "A02",
@@ -41,7 +42,7 @@
       },
       "datetime": "2026-06-12T10:00:00+08:00",
       "venue": {
-        "name": "瓜达拉哈拉·阿克龙球场",
+        "name": "Guadalajara Stadium",
         "city": "瓜达拉哈拉"
       },
       "status": "upcoming",
@@ -49,7 +50,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021441"
     },
     {
       "id": "B01",
@@ -66,7 +68,7 @@
       },
       "datetime": "2026-06-13T03:00:00+08:00",
       "venue": {
-        "name": "多伦多·BMO球场",
+        "name": "Toronto Stadium",
         "city": "多伦多"
       },
       "status": "upcoming",
@@ -74,7 +76,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021449"
     },
     {
       "id": "D01",
@@ -91,7 +94,7 @@
       },
       "datetime": "2026-06-13T09:00:00+08:00",
       "venue": {
-        "name": "洛杉矶·索菲球场",
+        "name": "Los Angeles Stadium",
         "city": "洛杉矶"
       },
       "status": "upcoming",
@@ -99,7 +102,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021458"
     },
     {
       "id": "B02",
@@ -116,15 +120,16 @@
       },
       "datetime": "2026-06-14T03:00:00+08:00",
       "venue": {
-        "name": "旧金山·利维球场",
-        "city": "旧金山"
+        "name": "San Francisco Bay Area Stadium",
+        "city": "旧金山湾区"
       },
       "status": "upcoming",
       "score": {
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021447"
     },
     {
       "id": "C01",
@@ -141,15 +146,16 @@
       },
       "datetime": "2026-06-14T06:00:00+08:00",
       "venue": {
-        "name": "纽约·大都会球场",
-        "city": "纽约"
+        "name": "New York/New Jersey Stadium",
+        "city": "新泽西州"
       },
       "status": "upcoming",
       "score": {
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021456"
     },
     {
       "id": "D02",
@@ -164,9 +170,9 @@
         "code": "TUR",
         "name": "土耳其"
       },
-      "datetime": "2026-06-14T06:00:00+08:00",
+      "datetime": "2026-06-14T12:00:00+08:00",
       "venue": {
-        "name": "温哥华·BC球场",
+        "name": "BC Place Vancouver",
         "city": "温哥华"
       },
       "status": "upcoming",
@@ -174,7 +180,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021463"
     },
     {
       "id": "C02",
@@ -191,7 +198,7 @@
       },
       "datetime": "2026-06-14T09:00:00+08:00",
       "venue": {
-        "name": "波士顿·吉列球场",
+        "name": "Boston Stadium",
         "city": "波士顿"
       },
       "status": "upcoming",
@@ -199,7 +206,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021453"
     },
     {
       "id": "E01",
@@ -214,17 +222,18 @@
         "code": "CUW",
         "name": "库拉索"
       },
-      "datetime": "2026-06-15T03:00:00+08:00",
+      "datetime": "2026-06-15T01:00:00+08:00",
       "venue": {
-        "name": "迈阿密·硬石球场",
-        "city": "迈阿密"
+        "name": "Houston Stadium",
+        "city": "休斯敦"
       },
       "status": "upcoming",
       "score": {
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021464"
     },
     {
       "id": "F01",
@@ -241,7 +250,7 @@
       },
       "datetime": "2026-06-15T04:00:00+08:00",
       "venue": {
-        "name": "达拉斯·AT&T球场",
+        "name": "Dallas Stadium",
         "city": "达拉斯"
       },
       "status": "upcoming",
@@ -249,7 +258,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021470"
     },
     {
       "id": "E02",
@@ -264,17 +274,18 @@
         "code": "ECU",
         "name": "厄瓜多尔"
       },
-      "datetime": "2026-06-15T09:00:00+08:00",
+      "datetime": "2026-06-15T07:00:00+08:00",
       "venue": {
-        "name": "蒙特雷·BBVA球场",
-        "city": "蒙特雷"
+        "name": "Philadelphia Stadium",
+        "city": "费城"
       },
       "status": "upcoming",
       "score": {
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021467"
     },
     {
       "id": "F02",
@@ -291,7 +302,7 @@
       },
       "datetime": "2026-06-15T10:00:00+08:00",
       "venue": {
-        "name": "蒙特雷·BBVA球场",
+        "name": "Monterrey Stadium",
         "city": "蒙特雷"
       },
       "status": "upcoming",
@@ -299,7 +310,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021474"
     },
     {
       "id": "H01",
@@ -316,7 +328,7 @@
       },
       "datetime": "2026-06-16T00:00:00+08:00",
       "venue": {
-        "name": "亚特兰大·奔驰球场",
+        "name": "Atlanta Stadium",
         "city": "亚特兰大"
       },
       "status": "upcoming",
@@ -324,7 +336,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021482"
     },
     {
       "id": "G01",
@@ -341,7 +354,7 @@
       },
       "datetime": "2026-06-16T03:00:00+08:00",
       "venue": {
-        "name": "西雅图·lumen球场",
+        "name": "Seattle Stadium",
         "city": "西雅图"
       },
       "status": "upcoming",
@@ -349,7 +362,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021478"
     },
     {
       "id": "H02",
@@ -366,7 +380,7 @@
       },
       "datetime": "2026-06-16T06:00:00+08:00",
       "venue": {
-        "name": "迈阿密·硬石球场",
+        "name": "Miami Stadium",
         "city": "迈阿密"
       },
       "status": "upcoming",
@@ -374,7 +388,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021486"
     },
     {
       "id": "G02",
@@ -391,7 +406,7 @@
       },
       "datetime": "2026-06-16T09:00:00+08:00",
       "venue": {
-        "name": "洛杉矶·索菲球场",
+        "name": "Los Angeles Stadium",
         "city": "洛杉矶"
       },
       "status": "upcoming",
@@ -399,7 +414,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021476"
     },
     {
       "id": "I01",
@@ -416,15 +432,16 @@
       },
       "datetime": "2026-06-17T03:00:00+08:00",
       "venue": {
-        "name": "纽约·大都会球场",
-        "city": "纽约"
+        "name": "New York/New Jersey Stadium",
+        "city": "新泽西州"
       },
       "status": "upcoming",
       "score": {
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021490"
     },
     {
       "id": "I02",
@@ -439,17 +456,18 @@
         "code": "NOR",
         "name": "挪威"
       },
-      "datetime": "2026-06-17T09:00:00+08:00",
+      "datetime": "2026-06-17T06:00:00+08:00",
       "venue": {
-        "name": "旧金山·利维球场",
-        "city": "旧金山"
+        "name": "Boston Stadium",
+        "city": "波士顿"
       },
       "status": "upcoming",
       "score": {
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021488"
     },
     {
       "id": "J01",
@@ -466,15 +484,16 @@
       },
       "datetime": "2026-06-17T09:00:00+08:00",
       "venue": {
-        "name": "迈阿密·硬石球场",
-        "city": "迈阿密"
+        "name": "Kansas City Stadium",
+        "city": "堪萨斯城"
       },
       "status": "upcoming",
       "score": {
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021496"
     },
     {
       "id": "K01",
@@ -491,15 +510,16 @@
       },
       "datetime": "2026-06-18T01:00:00+08:00",
       "venue": {
-        "name": "亚特兰大·奔驰球场",
-        "city": "亚特兰大"
+        "name": "Houston Stadium",
+        "city": "休斯敦"
       },
       "status": "upcoming",
       "score": {
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021502"
     },
     {
       "id": "J02",
@@ -541,15 +561,16 @@
       },
       "datetime": "2026-06-18T04:00:00+08:00",
       "venue": {
-        "name": "堪萨斯城·儿童慈善球场",
-        "city": "堪萨斯城"
+        "name": "Dallas Stadium",
+        "city": "达拉斯"
       },
       "status": "upcoming",
       "score": {
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021507"
     },
     {
       "id": "K02",
@@ -564,17 +585,18 @@
         "code": "COL",
         "name": "哥伦比亚"
       },
-      "datetime": "2026-06-18T09:00:00+08:00",
+      "datetime": "2026-06-18T10:00:00+08:00",
       "venue": {
-        "name": "达拉斯·AT&T球场",
-        "city": "达拉斯"
+        "name": "Mexico City Stadium",
+        "city": "墨西哥城"
       },
       "status": "upcoming",
       "score": {
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021504"
     },
     {
       "id": "A03",
@@ -589,9 +611,9 @@
         "code": "RSA",
         "name": "南非"
       },
-      "datetime": "2026-06-19T03:00:00+08:00",
+      "datetime": "2026-06-19T00:00:00+08:00",
       "venue": {
-        "name": "亚特兰大·奔驰球场",
+        "name": "Atlanta Stadium",
         "city": "亚特兰大"
       },
       "status": "upcoming",
@@ -599,7 +621,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021440"
     },
     {
       "id": "L02",
@@ -639,9 +662,9 @@
         "code": "KOR",
         "name": "韩国"
       },
-      "datetime": "2026-06-19T10:00:00+08:00",
+      "datetime": "2026-06-19T09:00:00+08:00",
       "venue": {
-        "name": "瓜达拉哈拉·阿克龙球场",
+        "name": "Guadalajara Stadium",
         "city": "瓜达拉哈拉"
       },
       "status": "upcoming",
@@ -649,7 +672,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021442"
     },
     {
       "id": "B03",
@@ -841,7 +865,7 @@
       },
       "datetime": "2026-06-22T00:00:00+08:00",
       "venue": {
-        "name": "亚特兰大·奔驰球场",
+        "name": "Atlanta Stadium",
         "city": "亚特兰大"
       },
       "status": "upcoming",
@@ -849,7 +873,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021483"
     },
     {
       "id": "E03",
@@ -891,7 +916,7 @@
       },
       "datetime": "2026-06-22T03:00:00+08:00",
       "venue": {
-        "name": "洛杉矶·索菲球场",
+        "name": "Los Angeles Stadium",
         "city": "洛杉矶"
       },
       "status": "upcoming",
@@ -899,7 +924,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021477"
     },
     {
       "id": "H04",
@@ -916,7 +942,7 @@
       },
       "datetime": "2026-06-22T06:00:00+08:00",
       "venue": {
-        "name": "迈阿密·硬石球场",
+        "name": "Miami Stadium",
         "city": "迈阿密"
       },
       "status": "upcoming",
@@ -924,7 +950,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021487"
     },
     {
       "id": "E04",
@@ -966,7 +993,7 @@
       },
       "datetime": "2026-06-22T09:00:00+08:00",
       "venue": {
-        "name": "温哥华·BC球场",
+        "name": "BC Place Vancouver",
         "city": "温哥华"
       },
       "status": "upcoming",
@@ -974,7 +1001,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021480"
     },
     {
       "id": "I03",
@@ -1314,9 +1342,9 @@
         "code": "KSA",
         "name": "沙特"
       },
-      "datetime": "2026-06-27T09:00:00+08:00",
+      "datetime": "2026-06-27T08:00:00+08:00",
       "venue": {
-        "name": "休斯敦·NRG球场",
+        "name": "Houston Stadium",
         "city": "休斯敦"
       },
       "status": "upcoming",
@@ -1324,7 +1352,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021485"
     },
     {
       "id": "H06",
@@ -1339,9 +1368,9 @@
         "code": "ESP",
         "name": "西班牙"
       },
-      "datetime": "2026-06-27T09:00:00+08:00",
+      "datetime": "2026-06-27T08:00:00+08:00",
       "venue": {
-        "name": "瓜达拉哈拉·阿克龙球场",
+        "name": "Guadalajara Stadium",
         "city": "瓜达拉哈拉"
       },
       "status": "upcoming",
@@ -1349,7 +1378,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021484"
     },
     {
       "id": "G05",
@@ -1366,7 +1396,7 @@
       },
       "datetime": "2026-06-27T11:00:00+08:00",
       "venue": {
-        "name": "西雅图·lumen球场",
+        "name": "Seattle Stadium",
         "city": "西雅图"
       },
       "status": "upcoming",
@@ -1374,7 +1404,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021479"
     },
     {
       "id": "G06",
@@ -1391,7 +1422,7 @@
       },
       "datetime": "2026-06-27T11:00:00+08:00",
       "venue": {
-        "name": "温哥华·BC球场",
+        "name": "BC Place Vancouver",
         "city": "温哥华"
       },
       "status": "upcoming",
@@ -1399,7 +1430,8 @@
         "home": null,
         "away": null
       },
-      "stats": null
+      "stats": null,
+      "fifaMatchId": "400021481"
     },
     {
       "id": "C05",

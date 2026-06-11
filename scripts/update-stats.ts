@@ -14,10 +14,11 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { fetchMatches, fetchMatchPlayerStats, type FifaPlayerStatRaw } from "./fifa-client";
+import { fetchMatchPlayerStats } from "./fifa-client";
 import type { MatchPlayerEvent, PlayerMatchLog } from "../src/types";
 
 const DATA_DIR = path.resolve("src/data");
+const PUBLIC_DIR = path.resolve("public");
 
 // ============================================================
 // 核心逻辑：根据比赛数据更新球员统计
@@ -52,6 +53,7 @@ interface MatchRecord {
   id: string;
   status: string;
   score: { home: number | null; away: number | null } | null;
+  fifaMatchId?: string;
   home: { code: string; name: string };
   away: { code: string; name: string };
   datetime: string;
@@ -167,7 +169,7 @@ export async function updateStatsFromFifa(): Promise<{ updated: number } | null>
   let totalUpdated = 0;
 
   for (const match of finishedMatches) {
-    const stats = await fetchMatchPlayerStats(match.id);
+    const stats = await fetchMatchPlayerStats(match.fifaMatchId || match.id);
     if (!stats?.length) continue;
 
     // 转换并填充 playerEvents
@@ -225,10 +227,19 @@ export async function updateStatsFromFifa(): Promise<{ updated: number } | null>
     }
   }
 
+  if (totalUpdated === 0) {
+    console.log(`  ✅ FIFA 统计更新: 0 条球员记录`);
+    return { updated: 0 };
+  }
+
   // 写入
   matchesData.lastUpdated = new Date().toISOString();
   fs.writeFileSync(
     path.join(DATA_DIR, "matches.json"),
+    JSON.stringify(matchesData, null, 2)
+  );
+  fs.writeFileSync(
+    path.join(PUBLIC_DIR, "matches.json"),
     JSON.stringify(matchesData, null, 2)
   );
 

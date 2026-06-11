@@ -65,11 +65,29 @@ export interface FifaMatchRaw {
   GroupName: string | null;
   Date: string;
   LocalDate: string;
-  HomeTeam: { IdTeam: string; TeamName: Array<{ Description: string }> };
-  AwayTeam: { IdTeam: string; TeamName: Array<{ Description: string }> };
+  Home?: {
+    IdTeam?: string;
+    IdCountry?: string;
+    Abbreviation?: string;
+    Score?: number | null;
+    TeamName?: Array<{ Description: string }>;
+  };
+  Away?: {
+    IdTeam?: string;
+    IdCountry?: string;
+    Abbreviation?: string;
+    Score?: number | null;
+    TeamName?: Array<{ Description: string }>;
+  };
+  HomeTeam?: { IdTeam: string; Abbreviation?: string; TeamName: Array<{ Description: string }>; Score?: number | null };
+  AwayTeam?: { IdTeam: string; Abbreviation?: string; TeamName: Array<{ Description: string }>; Score?: number | null };
   HomeTeamScore: number | null;
   AwayTeamScore: number | null;
-  MatchStatus: number; // 0=upcoming, 1=live, 2=finished
+  MatchStatus: number;
+  MatchTime?: string | null;
+  Winner?: string | null;
+  ResultType?: number | null;
+  OfficialityStatus?: number | null;
   Stadium: { Name: string; CityName: string };
   StageName: string;
   PlaceHolderA: string;

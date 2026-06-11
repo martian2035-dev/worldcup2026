@@ -46,14 +46,14 @@ jobs:
       - name: Fetch latest data from FIFA
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.fetch-data == 'true')
         env:
-          FIFA_SEASON_ID: ${{ secrets.FIFA_SEASON_ID || '' }}
+          FIFA_SEASON_ID: ${{ secrets.FIFA_SEASON_ID || vars.FIFA_SEASON_ID || '' }}
         run: pnpm run fetch-data || echo "⚠️ Data fetch skipped (API not available)"
 
       # 赔率更新（配置 ODDS_API_KEY 后优先真实赔率，否则使用 worldcup_codex 参考逻辑）
       - name: Update match odds
         if: github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY || '' }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY || vars.ODDS_API_KEY || '' }}
         run: npx tsx scripts/fetch-odds.ts || echo "⚠️ Odds update failed"
 
       # 提交数据变更
@@ -62,7 +62,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git diff --quiet -- src/data/ public/odds.json || (git add src/data/ public/odds.json && git commit -m "chore: auto-update match data and odds" && git push)
+          git diff --quiet -- src/data/ public/matches.json public/odds.json || (git add src/data/ public/matches.json public/odds.json && git commit -m "chore: auto-update match data and odds" && git push)
 
       - run: pnpm run build
         env:

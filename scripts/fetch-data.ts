@@ -11,7 +11,8 @@
  *
  * 数据流:
  *   FIFA API → update-squads.ts → players.json / teams.json
- *   FIFA API → update-stats.ts  → players.json / matches.json
+ *   FIFA API → update-matches.ts → matches.json / public/matches.json
+ *   FIFA API → update-stats.ts   → players.json / matches.json
  *
  * 当 FIFA API 不可用时（FIFA_SEASON_ID 未配置），
  * 使用本地数据进行增量更新。
@@ -20,6 +21,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { updateSquadsFromFifa, updateSquadsFromFile, syncTeamsEmbeddedPlayers, getSquadReport } from "./update-squads";
+import { updateMatchesFromFifa } from "./update-matches";
 import { updateStatsFromMatches, updateStatsFromFifa, printStatsReport } from "./update-stats";
 import { isApiConfigured, getSeasonId } from "./fifa-client";
 import type { DataUpdateStatus } from "../src/types";
@@ -121,9 +123,16 @@ async function main() {
     console.log("-".repeat(40));
 
     try {
+      if (isApiConfigured()) {
+        const matchesResult = await updateMatchesFromFifa();
+        if (matchesResult) {
+          status.matchesUpdated = matchesResult.updated;
+        }
+      }
+
       // 先从本地 match 数据更新（playerEvents -> matchLog -> stats）
       const result = updateStatsFromMatches();
-      status.matchesUpdated = result.matchesProcessed;
+      status.matchesUpdated += result.matchesProcessed;
 
       // 再尝试从 FIFA API 补充
       if (isApiConfigured()) {
