@@ -1,0 +1,14 @@
+{
+  "id": "779b01a1-b7b7-4b32-aa83-a4d414228f38",
+  "type": "bet",
+  "accountId": "acct-a9acc9de",
+  "username": "w01",
+  "deviceId": "device-519cc3cb-a3e8-4c3d-b171-028c63e8c08a",
+  "matchId": "B02",
+  "matchLabel": "卡塔尔 vs 瑞士",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 4.31,
+  "clientTimestamp": "2026-06-11T02:29:08.517Z",
+  "serverTimestamp": "2026-06-11T02:29:08.764Z"
+}
