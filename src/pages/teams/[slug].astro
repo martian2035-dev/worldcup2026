@@ -66,6 +66,13 @@ function groupByPosition(players: any[]) {
 const coach = team.coach;
 const isCoachObject = typeof coach === "object" && coach !== null;
 const groupedPlayers = groupByPosition(teamPlayers);
+const latestLineupMatch = [...allMatches].reverse().find(m => m.lineups && (m.home.code === slug || m.away.code === slug));
+const latestLineup = latestLineupMatch
+  ? latestLineupMatch.home.code === slug ? latestLineupMatch.lineups?.home : latestLineupMatch.lineups?.away
+  : null;
+const lineupRows = latestLineup
+  ? [3, 2, 1, 0].map(code => latestLineup.starting.filter((p: any) => p.positionCode === code)).filter(row => row.length > 0)
+  : [];
 ---
 
 <BaseLayout title={`${team.name} - 球队详情`}>
@@ -163,6 +170,39 @@ const groupedPlayers = groupByPosition(teamPlayers);
               <div style="color:var(--color-text-muted);font-size:9px;">所在小组</div>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* 最近比赛阵型 */}
+      {latestLineup && (
+        <div class="glass-card" style="padding:14px;margin-bottom:16px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px;">
+            <div style="color:var(--color-text-muted);font-size:10px;text-transform:uppercase;">最近比赛阵型</div>
+            <div style="color:var(--color-accent);font-size:12px;font-weight:700;">{latestLineup.formation || "阵型待定"}</div>
+          </div>
+          <div style="color:var(--color-text-secondary);font-size:10px;margin-bottom:8px;">
+            {latestLineupMatch?.home.name} vs {latestLineupMatch?.away.name}
+          </div>
+          <div style="background:linear-gradient(180deg,rgba(67,160,71,0.14),rgba(67,160,71,0.06));border:1px solid rgba(67,160,71,0.16);border-radius:8px;padding:8px;display:flex;flex-direction:column;gap:6px;">
+            {lineupRows.map((row: any[]) => (
+              <div style="display:flex;justify-content:center;gap:5px;flex-wrap:wrap;">
+                {row.map((p: any) => (
+                  <span style="max-width:86px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--color-text-primary);font-size:9px;background:rgba(0,0,0,0.18);border-radius:4px;padding:3px 5px;">
+                    {p.number} {p.shortName || p.name}{p.captain ? " C" : ""}
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+          {latestLineup.substitutions.length > 0 && (
+            <div style="margin-top:8px;display:flex;flex-direction:column;gap:3px;">
+              {latestLineup.substitutions.slice(0, 5).map((sub: any) => (
+                <div style="color:var(--color-text-secondary);font-size:10px;">
+                  {sub.minute} {sub.playerOnName || "替补"} ← {sub.playerOffName || "下场"}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
 

@@ -7,8 +7,10 @@ import allMatches from "../data/matches.json";
 const matches = allMatches.matches;
 const openingDate = new Date("2026-06-12T03:00:00+08:00");
 
-// Get today's matches (mock: first 2 matches for demo)
-const todayMatches = matches.filter(m => m.stage === "group" && m.round === 1).slice(0, 3);
+// Get today's matches, with a small fallback for static previews.
+const todayKey = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai" }).format(new Date());
+const todaysRealMatches = matches.filter(m => m.datetime.startsWith(todayKey));
+const todayMatches = (todaysRealMatches.length ? todaysRealMatches : matches.filter(m => m.stage === "group" && m.round === 1)).slice(0, 3);
 
 // Group teams by group
 const groups = ["A","B","C","D","E","F","G","H","I","J","K","L"];
@@ -49,6 +51,10 @@ function formatDate(dt: string) {
   const d = new Date(dt);
   return `${d.getMonth()+1}月${d.getDate()}日`;
 }
+
+function hasScore(match: any) {
+  return Number.isFinite(Number(match.score?.home)) && Number.isFinite(Number(match.score?.away));
+}
 ---
 
 <BaseLayout title="2026世界杯赛程">
@@ -84,7 +90,11 @@ function formatDate(dt: string) {
             <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:8px;">
               <span style="font-size:18px;">{getFlag(m.home.code)}</span>
               <span style="color:var(--color-text-primary);font-size:14px;font-weight:600;">{m.home.name}</span>
-              <span style="color:var(--color-text-muted);font-size:16px;font-weight:700;">VS</span>
+              {hasScore(m) ? (
+                <span style="color:var(--color-accent);font-size:18px;font-weight:800;min-width:48px;">{m.score.home}-{m.score.away}</span>
+              ) : (
+                <span style="color:var(--color-text-muted);font-size:16px;font-weight:700;">VS</span>
+              )}
               <span style="color:var(--color-text-primary);font-size:14px;font-weight:600;">{m.away.name}</span>
               <span style="font-size:18px;">{getFlag(m.away.code)}</span>
             </div>

@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-09T21:25:25Z",
+  "lastUpdated": "2026-06-11T23:49:55.884Z",
   "tournamentStats": {
-    "totalGoals": 0,
-    "avgGoalsPerMatch": 0,
-    "totalYellowCards": 0,
-    "totalRedCards": 0,
-    "totalAttendance": 0
+    "totalGoals": 2,
+    "avgGoalsPerMatch": 2,
+    "totalYellowCards": 3,
+    "totalRedCards": 3,
+    "totalAttendance": 80824
   },
   "groups": [
     {
@@ -14,27 +14,14 @@
         {
           "code": "MEX",
           "name": "墨西哥",
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "gf": 0,
+          "gf": 2,
           "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
-          "code": "RSA",
-          "name": "南非",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
+          "gd": 2,
+          "pts": 3,
           "qualified": null
         },
         {
@@ -62,6 +49,19 @@
           "gd": 0,
           "pts": 0,
           "qualified": null
+        },
+        {
+          "code": "RSA",
+          "name": "南非",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 0,
+          "ga": 2,
+          "gd": -2,
+          "pts": 0,
+          "qualified": null
         }
       ]
     },
@@ -69,8 +69,8 @@
       "name": "B",
       "teams": [
         {
-          "code": "CAN",
-          "name": "加拿大",
+          "code": "BIH",
+          "name": "波黑",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -82,8 +82,8 @@
           "qualified": null
         },
         {
-          "code": "BIH",
-          "name": "波黑",
+          "code": "CAN",
+          "name": "加拿大",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -139,8 +139,8 @@
           "qualified": null
         },
         {
-          "code": "MAR",
-          "name": "摩洛哥",
+          "code": "HAI",
+          "name": "海地",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -152,8 +152,8 @@
           "qualified": null
         },
         {
-          "code": "HAI",
-          "name": "海地",
+          "code": "MAR",
+          "name": "摩洛哥",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -183,8 +183,8 @@
       "name": "D",
       "teams": [
         {
-          "code": "USA",
-          "name": "美国",
+          "code": "AUS",
+          "name": "澳大利亚",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -209,8 +209,8 @@
           "qualified": null
         },
         {
-          "code": "AUS",
-          "name": "澳大利亚",
+          "code": "USA",
+          "name": "美国",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -253,8 +253,8 @@
           "qualified": null
         },
         {
-          "code": "CUW",
-          "name": "库拉索",
+          "code": "ECU",
+          "name": "厄瓜多尔",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -279,8 +279,8 @@
           "qualified": null
         },
         {
-          "code": "ECU",
-          "name": "厄瓜多尔",
+          "code": "CUW",
+          "name": "库拉索",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -354,19 +354,6 @@
       "name": "G",
       "teams": [
         {
-          "code": "BEL",
-          "name": "比利时",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
           "code": "EGY",
           "name": "埃及",
           "played": 0,
@@ -380,8 +367,8 @@
           "qualified": null
         },
         {
-          "code": "IRN",
-          "name": "伊朗",
+          "code": "BEL",
+          "name": "比利时",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -404,15 +391,10 @@
           "gd": 0,
           "pts": 0,
           "qualified": null
-        }
-      ]
-    },
-    {
-      "name": "H",
-      "teams": [
+        },
         {
-          "code": "ESP",
-          "name": "西班牙",
+          "code": "IRN",
+          "name": "伊朗",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -422,7 +404,12 @@
           "gd": 0,
           "pts": 0,
           "qualified": null
-        },
+        }
+      ]
+    },
+    {
+      "name": "H",
+      "teams": [
         {
           "code": "CPV",
           "name": "佛得角",
@@ -461,6 +448,19 @@
           "gd": 0,
           "pts": 0,
           "qualified": null
+        },
+        {
+          "code": "ESP",
+          "name": "西班牙",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
         }
       ]
     },
@@ -470,6 +470,19 @@
         {
           "code": "FRA",
           "name": "法国",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "NOR",
+          "name": "挪威",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -505,19 +518,6 @@
           "gd": 0,
           "pts": 0,
           "qualified": null
-        },
-        {
-          "code": "NOR",
-          "name": "挪威",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
         }
       ]
     },
@@ -525,8 +525,8 @@
       "name": "J",
       "teams": [
         {
-          "code": "ARG",
-          "name": "阿根廷",
+          "code": "ALG",
+          "name": "阿尔及利亚",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -538,8 +538,8 @@
           "qualified": null
         },
         {
-          "code": "ALG",
-          "name": "阿尔及利亚",
+          "code": "ARG",
+          "name": "阿根廷",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -582,34 +582,8 @@
       "name": "K",
       "teams": [
         {
-          "code": "POR",
-          "name": "葡萄牙",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
           "code": "COD",
           "name": "刚果",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
-          "code": "UZB",
-          "name": "乌兹别克斯坦",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -632,15 +606,10 @@
           "gd": 0,
           "pts": 0,
           "qualified": null
-        }
-      ]
-    },
-    {
-      "name": "L",
-      "teams": [
+        },
         {
-          "code": "ENG",
-          "name": "英格兰",
+          "code": "POR",
+          "name": "葡萄牙",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -652,8 +621,26 @@
           "qualified": null
         },
         {
-          "code": "CRO",
-          "name": "克罗地亚",
+          "code": "UZB",
+          "name": "乌兹别克斯坦",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        }
+      ]
+    },
+    {
+      "name": "L",
+      "teams": [
+        {
+          "code": "PAN",
+          "name": "巴拿马",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -678,8 +665,21 @@
           "qualified": null
         },
         {
-          "code": "PAN",
-          "name": "巴拿马",
+          "code": "CRO",
+          "name": "克罗地亚",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "ENG",
+          "name": "英格兰",
           "played": 0,
           "won": 0,
           "drawn": 0,

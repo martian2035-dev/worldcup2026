@@ -15,6 +15,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fetchLiveMatch, fetchMatchTimeline } from "./fifa-client";
+import { applyFifaMatchDetails } from "./match-details-core.js";
 import { applyFifaMatchStats } from "./player-stats-core.js";
 import type { MatchPlayerEvent, PlayerMatchLog } from "../src/types";
 
@@ -183,6 +184,7 @@ export async function updateStatsFromFifa(): Promise<{ updated: number } | null>
       timelineData,
     });
     playersData.players = result.players;
+    Object.assign(match, applyFifaMatchDetails(match, liveData, timelineData));
     match.playerEvents = result.playerEvents;
     totalUpdated += result.updatedPlayers;
   }

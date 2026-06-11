@@ -23,6 +23,7 @@ import path from "node:path";
 import { updateSquadsFromFifa, updateSquadsFromFile, syncTeamsEmbeddedPlayers, getSquadReport } from "./update-squads";
 import { updateMatchesFromFifa } from "./update-matches";
 import { updateStatsFromMatches, updateStatsFromFifa, printStatsReport } from "./update-stats";
+import { updateStandingsFromMatches } from "./update-standings";
 import { isApiConfigured, getSeasonId } from "./fifa-client";
 import type { DataUpdateStatus } from "../src/types";
 
@@ -142,6 +143,8 @@ async function main() {
       if (result.updated > 0) {
         console.log(`  ✅ 比赛统计更新完成`);
       }
+
+      updateStandingsFromMatches();
     } catch (err: any) {
       status.errors!.push(`统计更新失败: ${err.message}`);
       console.error(`  ❌ 统计更新失败: ${err.message}`);

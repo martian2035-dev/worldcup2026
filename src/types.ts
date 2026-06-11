@@ -9,12 +9,48 @@ export interface Match {
   venue: { name: string; city: string };
   status: string;
   score: { home: number | null; away: number | null } | null;
+  attendance?: number | null;
   stats: {
-    home: { possession: number; shots: number; shotsOnTarget: number; corners: number; fouls: number; yellowCards: number; redCards: number };
-    away: { possession: number; shots: number; shotsOnTarget: number; corners: number; fouls: number; yellowCards: number; redCards: number };
+    home: { possession: number | null; shots: number; shotsOnTarget: number; corners: number; fouls: number; yellowCards: number; redCards: number };
+    away: { possession: number | null; shots: number; shotsOnTarget: number; corners: number; fouls: number; yellowCards: number; redCards: number };
   } | null;
+  lineups?: MatchLineups | null;
   /** 参赛球员表现（赛后填充） */
   playerEvents?: MatchPlayerEvent[];
+}
+
+export interface MatchLineupPlayer {
+  id: string;
+  fifaId?: string;
+  name: string;
+  shortName?: string;
+  team?: string;
+  number: number;
+  position: string;
+  positionCode?: number;
+  status?: number;
+  captain?: boolean;
+  photoUrl?: string | null;
+}
+
+export interface MatchSubstitution {
+  minute: string;
+  playerOffId: string | null;
+  playerOnId: string | null;
+  playerOffName: string;
+  playerOnName: string;
+}
+
+export interface MatchTeamLineup {
+  formation: string | null;
+  starting: MatchLineupPlayer[];
+  substitutes: MatchLineupPlayer[];
+  substitutions: MatchSubstitution[];
+}
+
+export interface MatchLineups {
+  home: MatchTeamLineup;
+  away: MatchTeamLineup;
 }
 
 /** 单场球员事件 */

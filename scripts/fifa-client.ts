@@ -133,6 +133,7 @@ export interface FifaTimelineRaw {
 export interface FifaLiveMatchRaw {
   IdMatch: string;
   MatchTime?: string | null;
+  Attendance?: string | number | null;
   HomeTeam?: FifaLiveTeamRaw;
   AwayTeam?: FifaLiveTeamRaw;
 }
@@ -140,12 +141,14 @@ export interface FifaLiveMatchRaw {
 export interface FifaLiveTeamRaw {
   IdTeam: string;
   Abbreviation: string;
+  Tactics?: string | null;
   Players?: Array<{
     IdPlayer: string;
     IdTeam: string;
     ShirtNumber: number;
     Status: number;
     Position: number;
+    Captain?: boolean;
     PlayerName?: Array<{ Locale: string; Description: string }>;
     ShortName?: Array<{ Locale: string; Description: string }>;
     PlayerPicture?: { PictureUrl?: string };
@@ -155,6 +158,8 @@ export interface FifaLiveTeamRaw {
     IdPlayerOn: string;
     Minute: string;
     IdTeam: string;
+    PlayerOffName?: Array<{ Locale: string; Description: string }>;
+    PlayerOnName?: Array<{ Locale: string; Description: string }>;
   }>;
   Bookings?: Array<{
     IdPlayer: string;

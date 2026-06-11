@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T23:26:37.461Z",
+  "lastUpdated": "2026-06-11T23:49:55.877Z",
   "matches": [
     {
       "id": "A01",
@@ -24,7 +24,26 @@
         "home": 2,
         "away": 0
       },
-      "stats": null,
+      "stats": {
+        "home": {
+          "possession": null,
+          "shots": 16,
+          "shotsOnTarget": 7,
+          "corners": 3,
+          "fouls": 10,
+          "yellowCards": 1,
+          "redCards": 1
+        },
+        "away": {
+          "possession": null,
+          "shots": 3,
+          "shotsOnTarget": 2,
+          "corners": 1,
+          "fouls": 8,
+          "yellowCards": 2,
+          "redCards": 2
+        }
+      },
       "fifaMatchId": "400021443",
       "playerEvents": [
         {
@@ -492,7 +511,767 @@
           "foulsCommitted": 0,
           "offsides": 0
         }
-      ]
+      ],
+      "attendance": 80824,
+      "lineups": {
+        "home": {
+          "formation": "4-1-2-3",
+          "starting": [
+            {
+              "id": "fifa-485070",
+              "fifaId": "485070",
+              "name": "Raul RANGEL",
+              "shortName": "Raul RANGEL",
+              "team": "MEX",
+              "number": 1,
+              "position": "门将",
+              "positionCode": 0,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/3ea092ae-841d-4dc6-9ca0-78eb4dfb97c7/RANGEL-Raul_485070"
+            },
+            {
+              "id": "fifa-395516",
+              "fifaId": "395516",
+              "name": "Cesar MONTES",
+              "shortName": "Cesar MONTES",
+              "team": "MEX",
+              "number": 3,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 1,
+              "captain": true,
+              "photoUrl": "https://digitalhub.fifa.com/transform/c8c3fa3a-9001-4221-ab3c-754158c0ad8a/MONTES-Cesar_395516"
+            },
+            {
+              "id": "fifa-425701",
+              "fifaId": "425701",
+              "name": "Johan VASQUEZ",
+              "shortName": "Johan VASQUEZ",
+              "team": "MEX",
+              "number": 5,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/838cb65f-3d60-4acb-855d-35a364c25f1a/VASQUEZ-Johan_425701"
+            },
+            {
+              "id": "fifa-441261",
+              "fifaId": "441261",
+              "name": "伊斯列尔·雷耶斯",
+              "shortName": "Israel REYES",
+              "team": "MEX",
+              "number": 15,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/1e7c7c32-135c-46ba-9aff-429bfb1478aa/REYES-Israel_441261"
+            },
+            {
+              "id": "fifa-402772",
+              "fifaId": "402772",
+              "name": "热苏斯·加利亚多",
+              "shortName": "J.·加拉多",
+              "team": "MEX",
+              "number": 23,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/f1417540-93cb-4b82-9cfe-223e877d5923/GALLARDO-Jesus_402772"
+            },
+            {
+              "id": "fifa-419518",
+              "fifaId": "419518",
+              "name": "埃里克·里拉",
+              "shortName": "Erik LIRA",
+              "team": "MEX",
+              "number": 6,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/83109586-542d-4950-83eb-f3388757ef90/LIRA-Erik_419518"
+            },
+            {
+              "id": "fifa-416576",
+              "fifaId": "416576",
+              "name": "阿尔瓦罗·菲达尔戈",
+              "shortName": "Alvaro FIDALGO",
+              "team": "MEX",
+              "number": 8,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/fda68f1a-eceb-4219-8f1b-ed6b1f2e37ed/FIDALGO-Alvaro_416576"
+            },
+            {
+              "id": "fifa-464533",
+              "fifaId": "464533",
+              "name": "Brian GUTIERREZ",
+              "shortName": "Brian GUTIERREZ",
+              "team": "MEX",
+              "number": 26,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/dbca9708-0922-4d1d-97cb-1aa53696d6bd/GUTIERREZ-Brian_464533"
+            },
+            {
+              "id": "fifa-356731",
+              "fifaId": "356731",
+              "name": "劳尔·希门尼斯",
+              "shortName": "劳尔",
+              "team": "MEX",
+              "number": 9,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/ec48d7a7-0cf7-4fc8-b999-e3c15fee5e98/JIMENEZ-Raul_356731"
+            },
+            {
+              "id": "fifa-429157",
+              "fifaId": "429157",
+              "name": "Julian QUINONES",
+              "shortName": "Julian QUINONES",
+              "team": "MEX",
+              "number": 16,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/ea06becb-97b2-4f89-8464-5e0854cb7f81/QUINONES-Julian_429157"
+            },
+            {
+              "id": "fifa-403585",
+              "fifaId": "403585",
+              "name": "Roberto ALVARADO",
+              "shortName": "Roberto ALVARADO",
+              "team": "MEX",
+              "number": 25,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/b1a8a14a-2a27-4524-a6ed-679aca39d35d/ALVARADO-Roberto_403585"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": "fifa-441260",
+              "fifaId": "441260",
+              "name": "卡洛斯·阿塞维多",
+              "shortName": "Carlos ACEVEDO",
+              "team": "MEX",
+              "number": 12,
+              "position": "门将",
+              "positionCode": 0,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/b84beeec-be0c-493f-85fd-362bf0ead5c6/ACEVEDO-Carlos_441260"
+            },
+            {
+              "id": "fifa-215285",
+              "fifaId": "215285",
+              "name": "吉列尔莫·奥乔亚",
+              "shortName": "G.·奥乔亚",
+              "team": "MEX",
+              "number": 13,
+              "position": "门将",
+              "positionCode": 0,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/fedeac9f-968d-4d4c-b08a-5b2bf157c396/OCHOA-Guillermo_215285"
+            },
+            {
+              "id": "fifa-403596",
+              "fifaId": "403596",
+              "name": "Jorge SANCHEZ",
+              "shortName": "Jorge SANCHEZ",
+              "team": "MEX",
+              "number": 2,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/8640d435-8aba-4b52-a864-9952d3a6db5c/SANCHEZ-Jorge_403596"
+            },
+            {
+              "id": "fifa-400634",
+              "fifaId": "400634",
+              "name": "埃德森·阿尔瓦雷斯",
+              "shortName": "E.·阿尔瓦雷斯",
+              "team": "MEX",
+              "number": 4,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/b1581870-6bef-4c29-9a06-f306bbf03ca8/ALVAREZ-Edson_400634"
+            },
+            {
+              "id": "fifa-500038",
+              "fifaId": "500038",
+              "name": "Mateo CHAVEZ",
+              "shortName": "Mateo CHAVEZ",
+              "team": "MEX",
+              "number": 20,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/8e8884ee-8964-4fb7-82d8-8a5d341e79a6/CHAVEZ-Mateo_500038"
+            },
+            {
+              "id": "fifa-430763",
+              "fifaId": "430763",
+              "name": "Luis ROMO",
+              "shortName": "Luis ROMO",
+              "team": "MEX",
+              "number": 7,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/bc7f864e-c553-4995-9eb3-62139e29a7d7/ROMO-Luis_430763"
+            },
+            {
+              "id": "fifa-372090",
+              "fifaId": "372090",
+              "name": "奥贝林-皮内达",
+              "shortName": "Orbelin PINEDA",
+              "team": "MEX",
+              "number": 17,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/ef0f99d9-6838-4b25-8a18-ecd9638bd51f/PINEDA-Orbelin_372090"
+            },
+            {
+              "id": "fifa-461177",
+              "fifaId": "461177",
+              "name": "Obed VARGAS",
+              "shortName": "VARGAS",
+              "team": "MEX",
+              "number": 18,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/c0990d50-6120-459c-a66a-bd91ee7e46bc/VARGAS-Obed_461177"
+            },
+            {
+              "id": "fifa-500037",
+              "fifaId": "500037",
+              "name": "Gilberto MORA",
+              "shortName": "Gilberto MORA",
+              "team": "MEX",
+              "number": 19,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/028c85e0-509a-43c4-904a-58ce2d4f6f24/MORA-Gilberto_500037"
+            },
+            {
+              "id": "fifa-448051",
+              "fifaId": "448051",
+              "name": "路易斯·查韦斯",
+              "shortName": "L.·查韦斯",
+              "team": "MEX",
+              "number": 24,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/a09b97d9-6b02-45d4-aae8-b8ed274e5634/CHAVEZ-Luis_448051"
+            },
+            {
+              "id": "fifa-430766",
+              "fifaId": "430766",
+              "name": "Alexis VEGA",
+              "shortName": "Alexis VEGA",
+              "team": "MEX",
+              "number": 10,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/eeeba73b-bc80-47f5-a1ff-f38f94ff2ee0/VEGA-Alexis_430766"
+            },
+            {
+              "id": "fifa-430759",
+              "fifaId": "430759",
+              "name": "圣地亚哥·吉梅内斯",
+              "shortName": "Santiago GIMENEZ",
+              "team": "MEX",
+              "number": 11,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/0e27d0c6-e057-4d0c-a603-3843fcd0c542/GIMENEZ-Santiago_430759"
+            },
+            {
+              "id": "fifa-514336",
+              "fifaId": "514336",
+              "name": "Armando GONZALEZ",
+              "shortName": "Armando GONZALEZ",
+              "team": "MEX",
+              "number": 14,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/81ce3e70-d37d-4109-b423-8cc7732527a1/GONZALEZ-Armando_514336"
+            },
+            {
+              "id": "fifa-406135",
+              "fifaId": "406135",
+              "name": "塞萨尔·韦尔塔",
+              "shortName": "Cesar HUERTA",
+              "team": "MEX",
+              "number": 21,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/c5a00320-abe6-4d97-9892-e4afaf601fed/HUERTA-Cesar_406135"
+            },
+            {
+              "id": "fifa-386339",
+              "fifaId": "386339",
+              "name": "吉列尔莫·马丁内斯",
+              "shortName": "G.·马丁内斯",
+              "team": "MEX",
+              "number": 22,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/7f04e2d8-1f0b-491e-8551-5a856979bc97/MARTINEZ-Guillermo_386339"
+            }
+          ],
+          "substitutions": [
+            {
+              "minute": "66'",
+              "playerOffId": "fifa-464533",
+              "playerOnId": "fifa-448051",
+              "playerOffName": "Brian GUTIERREZ",
+              "playerOnName": "Luis CHAVEZ"
+            },
+            {
+              "minute": "66'",
+              "playerOffId": "fifa-416576",
+              "playerOnId": "fifa-500037",
+              "playerOffName": "Alvaro FIDALGO",
+              "playerOnName": "Gilberto MORA"
+            },
+            {
+              "minute": "76'",
+              "playerOffId": "fifa-419518",
+              "playerOnId": "fifa-400634",
+              "playerOffName": "Erik LIRA",
+              "playerOnName": "Edson ALVAREZ"
+            },
+            {
+              "minute": "76'",
+              "playerOffId": "fifa-356731",
+              "playerOnId": "fifa-514336",
+              "playerOffName": "Raul JIMENEZ",
+              "playerOnName": "Armando GONZALEZ"
+            },
+            {
+              "minute": "79'",
+              "playerOffId": "fifa-429157",
+              "playerOnId": "fifa-430766",
+              "playerOffName": "Julian QUINONES",
+              "playerOnName": "Alexis VEGA"
+            }
+          ]
+        },
+        "away": {
+          "formation": "5-3-2",
+          "starting": [
+            {
+              "id": "fifa-395986",
+              "fifaId": "395986",
+              "name": "Ronwen WILLIAMS",
+              "shortName": "WILLIAMS",
+              "team": "RSA",
+              "number": 1,
+              "position": "门将",
+              "positionCode": 0,
+              "status": 1,
+              "captain": true,
+              "photoUrl": "https://digitalhub.fifa.com/transform/b95f9142-251c-4943-911c-9c8d7ad8dd1c/WILLIAMS-Ronwen_395986"
+            },
+            {
+              "id": "fifa-395050",
+              "fifaId": "395050",
+              "name": "Aubrey MODIBA",
+              "shortName": "MODIBA",
+              "team": "RSA",
+              "number": 6,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/e5ddfbfb-b601-4ff8-83a5-f55162967798/MODIBA-Aubrey_395050"
+            },
+            {
+              "id": "fifa-504199",
+              "fifaId": "504199",
+              "name": "Mbekezeli MBOKAZI",
+              "shortName": "Mbekezeli MBOKAZI",
+              "team": "RSA",
+              "number": 14,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/978b666d-f320-4d49-b717-a08fa7ae456f/MBOKAZI-Mbekezeli_504199"
+            },
+            {
+              "id": "fifa-463221",
+              "fifaId": "463221",
+              "name": "Nkosinathi SIBISI",
+              "shortName": "Nkosinathi SIBISI",
+              "team": "RSA",
+              "number": 19,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/1fb66990-444a-4e4b-9047-41c2542ea91a/SIBISI-Nkosinathi_463221"
+            },
+            {
+              "id": "fifa-463218",
+              "fifaId": "463218",
+              "name": "Khuliso MUDAU",
+              "shortName": "MUDAU",
+              "team": "RSA",
+              "number": 20,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/29d0b36b-2727-4fc0-ab1e-4d21b5858f5a/MUDAU-Khuliso_463218"
+            },
+            {
+              "id": "fifa-506039",
+              "fifaId": "506039",
+              "name": "Ime OKON",
+              "shortName": "Ime OKON",
+              "team": "RSA",
+              "number": 21,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/5f5d2eb3-3964-486f-9faa-800200078576/OKON-Ime_506039"
+            },
+            {
+              "id": "fifa-403616",
+              "fifaId": "403616",
+              "name": "Teboho MOKOENA",
+              "shortName": "MOKOENA",
+              "team": "RSA",
+              "number": 4,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/bf36679b-73eb-4813-a99d-b9673439dd05/MOKOENA-Teboho_403616"
+            },
+            {
+              "id": "fifa-390475",
+              "fifaId": "390475",
+              "name": "斯佩菲罗-西特莱",
+              "shortName": "西索尔",
+              "team": "RSA",
+              "number": 13,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/200f1c50-a60a-4c33-ad94-b4dabd605f35/SITHOLE-Sphephelo_390475"
+            },
+            {
+              "id": "fifa-463236",
+              "fifaId": "463236",
+              "name": "Jayden ADAMS",
+              "shortName": "ADAMS",
+              "team": "RSA",
+              "number": 23,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/d238f3d6-bc5d-44c6-b312-2989524bea12/ADAMS-Jayden_463236"
+            },
+            {
+              "id": "fifa-419211",
+              "fifaId": "419211",
+              "name": "莱尔 福斯特",
+              "shortName": "Lyle FOSTER",
+              "team": "RSA",
+              "number": 9,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/155c969c-63e1-438e-bd3d-ce587ac212c6/FOSTER-Lyle_419211"
+            },
+            {
+              "id": "fifa-481242",
+              "fifaId": "481242",
+              "name": "Iqraam RAYNERS",
+              "shortName": "RAYNERS",
+              "team": "RSA",
+              "number": 15,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 1,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/f13ebf2a-3cac-4af7-bd73-2b70ed5ecc1a/RAYNERS-Iqraam_481242"
+            }
+          ],
+          "substitutes": [
+            {
+              "id": "fifa-494246",
+              "fifaId": "494246",
+              "name": "Sipho CHAINE",
+              "shortName": "Sipho CHAINE",
+              "team": "RSA",
+              "number": 16,
+              "position": "门将",
+              "positionCode": 0,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/c06e5903-d546-4bc6-a558-5ce40b336b64/CHAINE-Sipho_494246"
+            },
+            {
+              "id": "fifa-395059",
+              "fifaId": "395059",
+              "name": "Ricardo GOSS",
+              "shortName": "Ricardo GOSS",
+              "team": "RSA",
+              "number": 22,
+              "position": "门将",
+              "positionCode": 0,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/2727bd1f-2d55-4a70-9bd5-58a96d4bf9bc/GOSS-Ricardo_395059"
+            },
+            {
+              "id": "fifa-510850",
+              "fifaId": "510850",
+              "name": "Thabang MATULUDI",
+              "shortName": "Thabang MATULUDI",
+              "team": "RSA",
+              "number": 2,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/33d0c67e-6bf5-41cb-a8ab-ad1cb098d166/MATULUDI-Thabang_510850"
+            },
+            {
+              "id": "fifa-504192",
+              "fifaId": "504192",
+              "name": "Khulumani NDAMANE",
+              "shortName": "Khulumani NDAMANE",
+              "team": "RSA",
+              "number": 3,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/a3360ef3-4418-4f0a-9f74-318bdfa4ffd8/NDAMANE-Khulumani_504192"
+            },
+            {
+              "id": "fifa-504200",
+              "fifaId": "504200",
+              "name": "Samukele KABINI",
+              "shortName": "Samukele KABINI",
+              "team": "RSA",
+              "number": 18,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/29044a18-4871-49d0-af81-0b0887b148dd/KABINI-Samukelo_504200"
+            },
+            {
+              "id": "fifa-502245",
+              "fifaId": "502245",
+              "name": "Olwethu MAKHANYA",
+              "shortName": "Olwethu MAKHANYA",
+              "team": "RSA",
+              "number": 24,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/97ff80ac-588e-4b15-8c20-5a3cbd7f30f8/MAKHANYA-Olwethu_502245"
+            },
+            {
+              "id": "fifa-419225",
+              "fifaId": "419225",
+              "name": "布拉德利·克罗斯",
+              "shortName": "Bradley CROSS",
+              "team": "RSA",
+              "number": 26,
+              "position": "后卫",
+              "positionCode": 1,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/6cee5a12-c935-4707-a3b8-2cad746fd5f5/CROSS-Bradley_419225"
+            },
+            {
+              "id": "fifa-494248",
+              "fifaId": "494248",
+              "name": "Thalente MBATHA",
+              "shortName": "Thalente MBATHA",
+              "team": "RSA",
+              "number": 5,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/5b2d0a1a-fe59-4136-90d3-4315c34b8500/MBATHA-Thalente_494248"
+            },
+            {
+              "id": "fifa-395984",
+              "fifaId": "395984",
+              "name": "Themba ZWANE",
+              "shortName": "ZWANE",
+              "team": "RSA",
+              "number": 11,
+              "position": "中场",
+              "positionCode": 2,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/8d294899-e656-4484-91b7-99d646bc590c/ZWANE-Themba_395984"
+            },
+            {
+              "id": "fifa-419223",
+              "fifaId": "419223",
+              "name": "奥斯温·阿波利斯",
+              "shortName": "Oswin APPOLLIS",
+              "team": "RSA",
+              "number": 7,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/91646285-a63d-4aeb-8036-da1dd055d6b5/APPOLLIS-Oswin_419223"
+            },
+            {
+              "id": "fifa-504193",
+              "fifaId": "504193",
+              "name": "Tshepang MOREMI",
+              "shortName": "Tshepang MOREMI",
+              "team": "RSA",
+              "number": 8,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/5579f48c-4b61-4def-b314-75e873c36961/MOREMI-Tshepang_504193"
+            },
+            {
+              "id": "fifa-486161",
+              "fifaId": "486161",
+              "name": "Relebohile MOFOKENG",
+              "shortName": "Relebohile MOFOKENG",
+              "team": "RSA",
+              "number": 10,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/4946f2f8-a809-451e-962b-7b7426bbd633/MOFOKENG-Relebohile_486161"
+            },
+            {
+              "id": "fifa-463234",
+              "fifaId": "463234",
+              "name": "Thapelo MASEKO",
+              "shortName": "MASEKO",
+              "team": "RSA",
+              "number": 12,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/a8c4c69e-b074-4a10-9bfc-38c85175560d/MASEKO-Thapelo_463234"
+            },
+            {
+              "id": "fifa-430917",
+              "fifaId": "430917",
+              "name": "Evidence MAKGOPA",
+              "shortName": "Evidence MAKGOPA",
+              "team": "RSA",
+              "number": 17,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/9c040766-d546-4007-9fa3-eb50206cd689/MAKGOPA-Evidence_430917"
+            },
+            {
+              "id": "fifa-506038",
+              "fifaId": "506038",
+              "name": "Kamogelo SEBELEBELE",
+              "shortName": "Kamogelo SEBELEBELE",
+              "team": "RSA",
+              "number": 25,
+              "position": "前锋",
+              "positionCode": 3,
+              "status": 2,
+              "captain": false,
+              "photoUrl": "https://digitalhub.fifa.com/transform/dcd49deb-cb7f-4620-8f79-98a802624026/SEBELEBELE-Kamogelo_506038"
+            }
+          ],
+          "substitutions": [
+            {
+              "minute": "56'",
+              "playerOffId": "fifa-419211",
+              "playerOnId": "fifa-494248",
+              "playerOffName": "Lyle FOSTER",
+              "playerOnName": "Thalente MBATHA"
+            },
+            {
+              "minute": "61'",
+              "playerOffId": "fifa-463236",
+              "playerOnId": "fifa-395984",
+              "playerOffName": "Jayden ADAMS",
+              "playerOnName": "Themba ZWANE"
+            },
+            {
+              "minute": "76'",
+              "playerOffId": "fifa-481242",
+              "playerOnId": "fifa-430917",
+              "playerOffName": "Iqraam RAYNERS",
+              "playerOnName": "Evidence MAKGOPA"
+            },
+            {
+              "minute": "76'",
+              "playerOffId": "fifa-395050",
+              "playerOnId": "fifa-419223",
+              "playerOffName": "Aubrey MODIBA",
+              "playerOnName": "Oswin APPOLLIS"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "A02",

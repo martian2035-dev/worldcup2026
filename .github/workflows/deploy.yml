@@ -56,13 +56,25 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY || vars.ODDS_API_KEY || '' }}
         run: npx tsx scripts/fetch-odds.ts || echo "⚠️ Odds update failed"
 
+      - name: Aggregate predictions after data refresh
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p tmp/prediction-submissions
+          if git ls-remote --exit-code --heads origin prediction-submissions; then
+            git fetch origin prediction-submissions:prediction-submissions
+            git --work-tree=tmp/prediction-submissions checkout prediction-submissions -- events || true
+            pnpm run aggregate:predictions
+          else
+            echo "No prediction-submissions branch yet."
+          fi
+
       # 提交数据变更
       - name: Commit data updates
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git diff --quiet -- src/data/ public/matches.json public/odds.json || (git add src/data/ public/matches.json public/odds.json && git commit -m "chore: auto-update match data and odds" && git push)
+          git diff --quiet -- src/data/ public/matches.json public/odds.json || (git add src/data/ public/matches.json public/odds.json && git commit -m "chore: auto-update match data odds and predictions" && git push)
 
       - run: pnpm run build
         env:
