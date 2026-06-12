@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-11T23:49:55.884Z",
+  "lastUpdated": "2026-06-12T04:55:35.812Z",
   "tournamentStats": {
-    "totalGoals": 2,
-    "avgGoalsPerMatch": 2,
-    "totalYellowCards": 3,
+    "totalGoals": 5,
+    "avgGoalsPerMatch": 2.5,
+    "totalYellowCards": 4,
     "totalRedCards": 3,
-    "totalAttendance": 80824
+    "totalAttendance": 125809
   },
   "groups": [
     {
@@ -27,26 +27,26 @@
         {
           "code": "KOR",
           "name": "韩国",
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
+          "gf": 2,
+          "ga": 1,
+          "gd": 1,
+          "pts": 3,
           "qualified": null
         },
         {
           "code": "CZE",
           "name": "捷克",
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 2,
+          "gd": -1,
           "pts": 0,
           "qualified": null
         },
