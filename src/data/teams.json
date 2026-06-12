@@ -20,6 +20,15 @@
       },
       "players": [
         {
+          "id": "fifa-485070",
+          "name": "Raul RANGEL",
+          "nameEn": "Raul RANGEL",
+          "position": "GK",
+          "number": 1,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "mex-gk-1",
           "name": "赫尔曼·纳瓦罗",
           "nameEn": "赫尔曼 纳瓦罗",
@@ -33,15 +42,6 @@
           "preferredFoot": "右脚",
           "nationality": "墨西哥",
           "dataSource": "generated"
-        },
-        {
-          "id": "fifa-485070",
-          "name": "Raul RANGEL",
-          "nameEn": "Raul RANGEL",
-          "position": "GK",
-          "number": 1,
-          "isStar": false,
-          "dataSource": "fifa"
         },
         {
           "id": "mex-gk-2",
@@ -68,6 +68,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-400634",
+          "name": "埃德森·阿尔瓦雷斯",
+          "nameEn": "埃德森·阿尔瓦雷斯",
+          "position": "DF",
+          "number": 4,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "edson-alvarez",
           "name": "埃德松·阿尔瓦雷斯",
           "nameEn": "Edson Álvarez",
@@ -83,15 +92,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "fifa-400634",
-          "name": "埃德森·阿尔瓦雷斯",
-          "nameEn": "埃德森·阿尔瓦雷斯",
-          "position": "DF",
-          "number": 4,
-          "isStar": false,
-          "dataSource": "fifa"
-        },
-        {
           "id": "fifa-425701",
           "name": "Johan VASQUEZ",
           "nameEn": "Johan VASQUEZ",
@@ -99,21 +99,6 @@
           "number": 5,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "mex-cb-1",
-          "name": "劳塔罗·加西亚",
-          "nameEn": "劳塔罗 加西亚",
-          "position": "CB",
-          "number": 6,
-          "isStar": false,
-          "age": 34,
-          "height": 198,
-          "weight": 85,
-          "club": "莱昂",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-419518",
@@ -140,6 +125,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-416576",
+          "name": "阿尔瓦罗·菲达尔戈",
+          "nameEn": "阿尔瓦罗·菲达尔戈",
+          "position": "MF",
+          "number": 8,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "oriel-rodriguez",
           "name": "奥里埃尔·罗德里格斯",
           "nameEn": "Oriel Rodríguez",
@@ -155,11 +149,11 @@
           "dataSource": "generated"
         },
         {
-          "id": "fifa-416576",
-          "name": "阿尔瓦罗·菲达尔戈",
-          "nameEn": "阿尔瓦罗·菲达尔戈",
-          "position": "MF",
-          "number": 8,
+          "id": "fifa-356731",
+          "name": "劳尔·希门尼斯",
+          "nameEn": "劳尔·希门尼斯",
+          "position": "FW",
+          "number": 9,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -179,30 +173,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "fifa-356731",
-          "name": "劳尔·希门尼斯",
-          "nameEn": "劳尔·希门尼斯",
-          "position": "FW",
-          "number": 9,
-          "isStar": false,
-          "dataSource": "fifa"
-        },
-        {
-          "id": "mex-lb-1",
-          "name": "毛罗·埃斯皮诺萨",
-          "nameEn": "毛罗 埃斯皮诺萨",
-          "position": "LB",
-          "number": 10,
-          "isStar": false,
-          "age": 31,
-          "height": 180,
-          "weight": 75,
-          "club": "瓜达拉哈拉",
-          "preferredFoot": "左脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-430766",
           "name": "Alexis VEGA",
           "nameEn": "Alexis VEGA",
@@ -210,36 +180,6 @@
           "number": 10,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "mex-lb-2",
-          "name": "费利佩·梅迪纳",
-          "nameEn": "费利佩 梅迪纳",
-          "position": "LB",
-          "number": 11,
-          "isStar": false,
-          "age": 22,
-          "height": 182,
-          "weight": 76,
-          "club": "莱昂",
-          "preferredFoot": "左脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
-        },
-        {
-          "id": "mex-rb-1",
-          "name": "阿尔瓦罗·梅迪纳",
-          "nameEn": "阿尔瓦罗 梅迪纳",
-          "position": "RB",
-          "number": 12,
-          "isStar": false,
-          "age": 26,
-          "height": 173,
-          "weight": 71,
-          "club": "蒙特雷",
-          "preferredFoot": "左脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
         },
         {
           "id": "guillermo-ochoa",
@@ -257,21 +197,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "mex-rb-2",
-          "name": "比森特·纳瓦罗",
-          "nameEn": "比森特 纳瓦罗",
-          "position": "RB",
-          "number": 14,
-          "isStar": false,
-          "age": 32,
-          "height": 181,
-          "weight": 72,
-          "club": "帕丘卡",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-514336",
           "name": "Armando GONZALEZ",
           "nameEn": "Armando GONZALEZ",
@@ -279,21 +204,6 @@
           "number": 14,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "mex-cdm-1",
-          "name": "卢西亚诺·莫利纳",
-          "nameEn": "卢西亚诺 莫利纳",
-          "position": "CDM",
-          "number": 15,
-          "isStar": false,
-          "age": 29,
-          "height": 191,
-          "weight": 70,
-          "club": "水晶宫",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-441261",
@@ -305,21 +215,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "mex-cm-1",
-          "name": "哈维·奥尔特加",
-          "nameEn": "哈维 奥尔特加",
-          "position": "CM",
-          "number": 16,
-          "isStar": false,
-          "age": 30,
-          "height": 173,
-          "weight": 78,
-          "club": "蓝十字",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-429157",
           "name": "Julian QUINONES",
           "nameEn": "Julian QUINONES",
@@ -329,36 +224,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "mex-cam-1",
-          "name": "拉斐尔·巴尔加斯",
-          "nameEn": "拉斐尔 巴尔加斯",
-          "position": "CAM",
-          "number": 18,
-          "isStar": false,
-          "age": 31,
-          "height": 182,
-          "weight": 77,
-          "club": "顿涅茨克矿工",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
-        },
-        {
-          "id": "mex-cam-2",
-          "name": "马蒂亚斯·帕雷德斯",
-          "nameEn": "马蒂亚斯 帕雷德斯",
-          "position": "CAM",
-          "number": 19,
-          "isStar": false,
-          "age": 26,
-          "height": 177,
-          "weight": 78,
-          "club": "拉齐奥",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-500037",
           "name": "Gilberto MORA",
           "nameEn": "Gilberto MORA",
@@ -366,21 +231,6 @@
           "number": 19,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "mex-rw-1",
-          "name": "比森特·莫拉莱斯",
-          "nameEn": "比森特 莫拉莱斯",
-          "position": "RW",
-          "number": 20,
-          "isStar": false,
-          "age": 23,
-          "height": 176,
-          "weight": 60,
-          "club": "巴塞尔",
-          "preferredFoot": "左脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
         },
         {
           "id": "jorge-ruvalcaba",
@@ -413,26 +263,20 @@
           "dataSource": "generated"
         },
         {
-          "id": "mex-st-1",
-          "name": "莱安德罗·奥尔特加",
-          "nameEn": "莱安德罗 奥尔特加",
-          "position": "ST",
-          "number": 23,
-          "isStar": false,
-          "age": 34,
-          "height": 183,
-          "weight": 74,
-          "club": "托卢卡",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-402772",
           "name": "热苏斯·加利亚多",
           "nameEn": "热苏斯·加利亚多",
           "position": "DF",
           "number": 23,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-448051",
+          "name": "路易斯·查韦斯",
+          "nameEn": "路易斯·查韦斯",
+          "position": "MF",
+          "number": 24,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -452,30 +296,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "fifa-448051",
-          "name": "路易斯·查韦斯",
-          "nameEn": "路易斯·查韦斯",
-          "position": "MF",
-          "number": 24,
-          "isStar": false,
-          "dataSource": "fifa"
-        },
-        {
-          "id": "mex-st-2",
-          "name": "毛罗·伊巴涅斯",
-          "nameEn": "毛罗 伊巴涅斯",
-          "position": "ST",
-          "number": 25,
-          "isStar": false,
-          "age": 20,
-          "height": 181,
-          "weight": 78,
-          "club": "加拉塔萨雷",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-403585",
           "name": "Roberto ALVARADO",
           "nameEn": "Roberto ALVARADO",
@@ -483,21 +303,6 @@
           "number": 25,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "mex-rw-2",
-          "name": "拉斐尔·贝尼特斯",
-          "nameEn": "拉斐尔 贝尼特斯",
-          "position": "RW",
-          "number": 26,
-          "isStar": false,
-          "age": 27,
-          "height": 171,
-          "weight": 67,
-          "club": "加拉塔萨雷",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-464533",
@@ -554,6 +359,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-403616",
+          "name": "Teboho MOKOENA",
+          "nameEn": "Teboho MOKOENA",
+          "position": "MF",
+          "number": 4,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "lele-mokoena",
           "name": "莱莱·莫科纳",
           "nameEn": "Lelo Mokoena",
@@ -569,11 +383,11 @@
           "dataSource": "generated"
         },
         {
-          "id": "fifa-403616",
-          "name": "Teboho MOKOENA",
-          "nameEn": "Teboho MOKOENA",
+          "id": "fifa-494248",
+          "name": "Thalente MBATHA",
+          "nameEn": "Thalente MBATHA",
           "position": "MF",
-          "number": 4,
+          "number": 5,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -593,11 +407,11 @@
           "dataSource": "generated"
         },
         {
-          "id": "fifa-494248",
-          "name": "Thalente MBATHA",
-          "nameEn": "Thalente MBATHA",
-          "position": "MF",
-          "number": 5,
+          "id": "fifa-395050",
+          "name": "Aubrey MODIBA",
+          "nameEn": "Aubrey MODIBA",
+          "position": "DF",
+          "number": 6,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -615,15 +429,6 @@
           "preferredFoot": "左脚",
           "nationality": "南非",
           "dataSource": "generated"
-        },
-        {
-          "id": "fifa-395050",
-          "name": "Aubrey MODIBA",
-          "nameEn": "Aubrey MODIBA",
-          "position": "DF",
-          "number": 6,
-          "isStar": false,
-          "dataSource": "fifa"
         },
         {
           "id": "fifa-419223",
@@ -650,6 +455,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-419211",
+          "name": "莱尔 福斯特",
+          "nameEn": "莱尔 福斯特",
+          "position": "FW",
+          "number": 9,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "zakhele-lepasa",
           "name": "扎克勒·莱帕萨",
           "nameEn": "Zakhele Lepasa",
@@ -663,15 +477,6 @@
           "preferredFoot": "右脚",
           "nationality": "南非",
           "dataSource": "generated"
-        },
-        {
-          "id": "fifa-419211",
-          "name": "莱尔 福斯特",
-          "nameEn": "莱尔 福斯特",
-          "position": "FW",
-          "number": 9,
-          "isStar": false,
-          "dataSource": "fifa"
         },
         {
           "id": "percy-tau",
@@ -689,6 +494,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-395984",
+          "name": "Themba ZWANE",
+          "nameEn": "Themba ZWANE",
+          "position": "MF",
+          "number": 11,
+          "isStar": true,
+          "dataSource": "fifa"
+        },
+        {
           "id": "rsa-cb-2",
           "name": "库德夸谢·皮雷斯",
           "nameEn": "库德夸谢 皮雷斯",
@@ -702,15 +516,6 @@
           "preferredFoot": "右脚",
           "nationality": "南非",
           "dataSource": "generated"
-        },
-        {
-          "id": "fifa-395984",
-          "name": "Themba ZWANE",
-          "nameEn": "Themba ZWANE",
-          "position": "MF",
-          "number": 11,
-          "isStar": true,
-          "dataSource": "fifa"
         },
         {
           "id": "rsa-lb-1",
@@ -737,6 +542,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-504199",
+          "name": "Mbekezeli MBOKAZI",
+          "nameEn": "Mbekezeli MBOKAZI",
+          "position": "DF",
+          "number": 14,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "rsa-rb-1",
           "name": "埃里克·塔瓦雷斯",
           "nameEn": "埃里克 塔瓦雷斯",
@@ -752,11 +566,11 @@
           "dataSource": "generated"
         },
         {
-          "id": "fifa-504199",
-          "name": "Mbekezeli MBOKAZI",
-          "nameEn": "Mbekezeli MBOKAZI",
-          "position": "DF",
-          "number": 14,
+          "id": "fifa-481242",
+          "name": "Iqraam RAYNERS",
+          "nameEn": "Iqraam RAYNERS",
+          "position": "FW",
+          "number": 15,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -776,45 +590,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "fifa-481242",
-          "name": "Iqraam RAYNERS",
-          "nameEn": "Iqraam RAYNERS",
-          "position": "FW",
-          "number": 15,
-          "isStar": false,
-          "dataSource": "fifa"
-        },
-        {
-          "id": "rsa-cdm-2",
-          "name": "克里斯·皮雷斯",
-          "nameEn": "克里斯 皮雷斯",
-          "position": "CDM",
-          "number": 16,
-          "isStar": false,
-          "age": 30,
-          "height": 184,
-          "weight": 83,
-          "club": "奥兰多海盗",
-          "preferredFoot": "右脚",
-          "nationality": "南非",
-          "dataSource": "generated"
-        },
-        {
-          "id": "rsa-cdm-3",
-          "name": "伊诺克·杜贝",
-          "nameEn": "伊诺克 杜贝",
-          "position": "CDM",
-          "number": 17,
-          "isStar": false,
-          "age": 22,
-          "height": 187,
-          "weight": 72,
-          "club": "凯撒酋长",
-          "preferredFoot": "右脚",
-          "nationality": "南非",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-430917",
           "name": "Evidence MAKGOPA",
           "nameEn": "Evidence MAKGOPA",
@@ -822,36 +597,6 @@
           "number": 17,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "rsa-cm-1",
-          "name": "詹姆斯·塞梅多",
-          "nameEn": "詹姆斯 塞梅多",
-          "position": "CM",
-          "number": 18,
-          "isStar": false,
-          "age": 20,
-          "height": 170,
-          "weight": 81,
-          "club": "加拉塔萨雷",
-          "preferredFoot": "右脚",
-          "nationality": "南非",
-          "dataSource": "generated"
-        },
-        {
-          "id": "rsa-cm-2",
-          "name": "莱尔·茨塔",
-          "nameEn": "莱尔 茨塔",
-          "position": "CM",
-          "number": 19,
-          "isStar": false,
-          "age": 27,
-          "height": 184,
-          "weight": 70,
-          "club": "开普敦城",
-          "preferredFoot": "右脚",
-          "nationality": "南非",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-463221",
@@ -863,21 +608,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "rsa-cam-1",
-          "name": "库德夸谢·西比亚",
-          "nameEn": "库德夸谢 西比亚",
-          "position": "CAM",
-          "number": 20,
-          "isStar": false,
-          "age": 27,
-          "height": 175,
-          "weight": 64,
-          "club": "奥兰多海盗",
-          "preferredFoot": "右脚",
-          "nationality": "南非",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-463218",
           "name": "Khuliso MUDAU",
           "nameEn": "Khuliso MUDAU",
@@ -885,21 +615,6 @@
           "number": 20,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "rsa-lw-1",
-          "name": "乔丹·阿萨莫阿",
-          "nameEn": "乔丹 阿萨莫阿",
-          "position": "LW",
-          "number": 21,
-          "isStar": false,
-          "age": 27,
-          "height": 169,
-          "weight": 74,
-          "club": "本菲卡",
-          "preferredFoot": "左脚",
-          "nationality": "南非",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-506039",
@@ -911,36 +626,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "rsa-lw-2",
-          "name": "拉明·阿福库",
-          "nameEn": "拉明 阿福库",
-          "position": "LW",
-          "number": 22,
-          "isStar": false,
-          "age": 19,
-          "height": 172,
-          "weight": 76,
-          "club": "伯恩利",
-          "preferredFoot": "右脚",
-          "nationality": "南非",
-          "dataSource": "generated"
-        },
-        {
-          "id": "rsa-rw-1",
-          "name": "安德烈·阿福库",
-          "nameEn": "安德烈 阿福库",
-          "position": "RW",
-          "number": 23,
-          "isStar": false,
-          "age": 32,
-          "height": 173,
-          "weight": 72,
-          "club": "马梅洛迪日落",
-          "preferredFoot": "左脚",
-          "nationality": "南非",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-463236",
           "name": "Jayden ADAMS",
           "nameEn": "Jayden ADAMS",
@@ -948,51 +633,6 @@
           "number": 23,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "rsa-st-1",
-          "name": "伊诺克·莫索纳",
-          "nameEn": "伊诺克 莫索纳",
-          "position": "ST",
-          "number": 24,
-          "isStar": false,
-          "age": 24,
-          "height": 183,
-          "weight": 73,
-          "club": "开普敦城",
-          "preferredFoot": "右脚",
-          "nationality": "南非",
-          "dataSource": "generated"
-        },
-        {
-          "id": "rsa-st-2",
-          "name": "泰博霍·姆赫利泽",
-          "nameEn": "泰博霍 姆赫利泽",
-          "position": "ST",
-          "number": 25,
-          "isStar": false,
-          "age": 24,
-          "height": 182,
-          "weight": 84,
-          "club": "凯撒酋长",
-          "preferredFoot": "右脚",
-          "nationality": "南非",
-          "dataSource": "generated"
-        },
-        {
-          "id": "rsa-rw-2",
-          "name": "克里斯·奥乌苏",
-          "nameEn": "克里斯 奥乌苏",
-          "position": "RW",
-          "number": 26,
-          "isStar": false,
-          "age": 27,
-          "height": 183,
-          "weight": 78,
-          "club": "马梅洛迪日落",
-          "preferredFoot": "左脚",
-          "nationality": "南非",
-          "dataSource": "generated"
         }
       ]
     },

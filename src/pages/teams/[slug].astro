@@ -188,7 +188,7 @@ const lineupRows = latestLineup
               <div style="display:flex;justify-content:center;gap:5px;flex-wrap:wrap;">
                 {row.map((p: any) => (
                   <span style="max-width:86px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--color-text-primary);font-size:9px;background:rgba(0,0,0,0.18);border-radius:4px;padding:3px 5px;">
-                    {p.number} {p.shortName || p.name}{p.captain ? " C" : ""}
+                    {p.number} {p.name}{p.captain ? " C" : ""}
                   </span>
                 ))}
               </div>

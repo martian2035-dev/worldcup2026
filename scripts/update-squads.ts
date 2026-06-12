@@ -373,8 +373,12 @@ export async function updateSquadsFromFile(filePath: string): Promise<UpdateResu
   return { ...result, source: `本地文件: ${path.basename(filePath)}` };
 }
 
+/** FIFA 2026 大名单上限 */
+const MAX_SQUAD_SIZE = 26;
+
 /**
  * 同步 teams.json 中的内嵌球员数据
+ * 优先保留 FIFA 球员，每队上限 26 人
  */
 export function syncTeamsEmbeddedPlayers(): void {
   console.log("🔄 同步 teams.json 内嵌球员数据...");
@@ -385,12 +389,17 @@ export function syncTeamsEmbeddedPlayers(): void {
   const teamsData = JSON.parse(fs.readFileSync(teamsPath, "utf-8"));
   const playersData = JSON.parse(fs.readFileSync(playersPath, "utf-8"));
 
-  const playerIndex = new Map(playersData.players.map((p: any) => [p.id, p]));
+  const allPlayers: PlayerRecord[] = playersData.players || [];
 
   for (const team of teamsData.teams) {
-    // 获取该队在 players.json 中的全部球员
-    const squadPlayers = playersData.players
-      .filter((p: any) => p.team === team.code)
+    const teamPlayers = allPlayers.filter((p: any) => p.team === team.code);
+    // 优先 FIFA 球员，再补充 generated 球员，上限 26
+    const fifaPlayers = teamPlayers.filter((p: any) => p.dataSource === "fifa");
+    const genPlayers = teamPlayers.filter((p: any) => p.dataSource !== "fifa");
+
+    const slotsLeft = MAX_SQUAD_SIZE - fifaPlayers.length;
+    const selectedGen = genPlayers.slice(0, Math.max(0, slotsLeft));
+    const squadPlayers = [...fifaPlayers, ...selectedGen]
       .sort((a: any, b: any) => a.number - b.number);
 
     team.players = squadPlayers.map((p: any) => ({
@@ -414,6 +423,53 @@ export function syncTeamsEmbeddedPlayers(): void {
 
   const totalPlayers = teamsData.teams.reduce((sum: number, t: any) => sum + t.players.length, 0);
   console.log(`  ✅ teams.json 已同步: ${totalPlayers} 名球员`);
+}
+
+/**
+ * 清理 players.json 中超出大名单上限的多余生成球员
+ * 优先保留 FIFA 球员，每队上限 26 人
+ */
+export function capTeamPlayers(): { removed: number } {
+  const playersPath = path.join(DATA_DIR, "players.json");
+  const playersData = JSON.parse(fs.readFileSync(playersPath, "utf-8"));
+  const players: PlayerRecord[] = playersData.players || [];
+
+  // 按球队分组
+  const teamGroups = new Map<string, PlayerRecord[]>();
+  for (const p of players) {
+    if (!teamGroups.has(p.team)) teamGroups.set(p.team, []);
+    teamGroups.get(p.team)!.push(p);
+  }
+
+  let totalRemoved = 0;
+
+  for (const [, group] of teamGroups) {
+    if (group.length <= MAX_SQUAD_SIZE) continue;
+
+    const fifaPlayers = group.filter((p) => p.dataSource === "fifa");
+    const genPlayers = group.filter((p) => p.dataSource !== "fifa");
+
+    const slotsLeft = MAX_SQUAD_SIZE - fifaPlayers.length;
+    const keepGen = genPlayers.slice(0, Math.max(0, slotsLeft));
+    const removeGen = genPlayers.slice(Math.max(0, slotsLeft));
+
+    for (const p of removeGen) {
+      const idx = players.findIndex((x) => x.id === p.id);
+      if (idx >= 0) {
+        players.splice(idx, 1);
+        totalRemoved++;
+      }
+    }
+  }
+
+  if (totalRemoved > 0) {
+    playersData.players = players;
+    playersData.lastUpdated = new Date().toISOString();
+    fs.writeFileSync(playersPath, JSON.stringify(playersData, null, 2));
+    console.log(`  🧹 上限清理: 移除 ${totalRemoved} 个超出大名单的多余生成球员`);
+  }
+
+  return { removed: totalRemoved };
 }
 
 // ============================================================

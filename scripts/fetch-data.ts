@@ -20,7 +20,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { updateSquadsFromFifa, updateSquadsFromFile, syncTeamsEmbeddedPlayers, getSquadReport, deduplicatePlayersByEnglishName } from "./update-squads";
+import { updateSquadsFromFifa, updateSquadsFromFile, syncTeamsEmbeddedPlayers, getSquadReport, deduplicatePlayersByEnglishName, capTeamPlayers } from "./update-squads";
 import { updateMatchesFromFifa } from "./update-matches";
 import { updateStatsFromMatches, updateStatsFromFifa, printStatsReport } from "./update-stats";
 import { updateStandingsFromMatches } from "./update-standings";
@@ -115,9 +115,11 @@ async function main() {
 
       // 清理重复球员（generated + FIFA 去重）
       const dedupResult = deduplicatePlayersByEnglishName();
-      if (dedupResult.removed > 0) {
+      // 清理超出 26 人上限的多余生成球员
+      const capResult = capTeamPlayers();
+      if (dedupResult.removed > 0 || capResult.removed > 0) {
         syncTeamsEmbeddedPlayers();
-        console.log(`  🧹 去重完成: 移除 ${dedupResult.removed} 个重复球员`);
+        console.log(`  🧹 清理完成: 去重 ${dedupResult.removed} + 上限清理 ${capResult.removed} 人`);
       }
     } catch (err: any) {
       status.errors!.push(`大名单更新失败: ${err.message}`);

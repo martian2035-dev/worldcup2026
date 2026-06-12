@@ -173,7 +173,7 @@ function LineupPanel({ title, lineup }: { title: string; lineup: NonNullable<Mat
           <div key={index} style={{ display: "flex", justifyContent: "center", gap: 6, flexWrap: "wrap" }}>
             {row.map((player) => (
               <span key={player.id} style={{ maxWidth: 92, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", color: "var(--color-text-primary)", fontSize: 10, background: "rgba(0,0,0,0.18)", borderRadius: 4, padding: "3px 5px" }}>
-                {player.number} {player.shortName || player.name}{player.captain ? " C" : ""}
+                {player.number} {player.name}{player.captain ? " C" : ""}
               </span>
             ))}
           </div>
