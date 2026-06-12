@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-12T18:15:01.236Z",
+  "lastUpdated": "2026-06-12T21:57:51.426Z",
   "tournamentStats": {
-    "totalGoals": 5,
-    "avgGoalsPerMatch": 2.5,
-    "totalYellowCards": 4,
+    "totalGoals": 7,
+    "avgGoalsPerMatch": 2.3,
+    "totalYellowCards": 9,
     "totalRedCards": 3,
-    "totalAttendance": 125809
+    "totalAttendance": 168811
   },
   "groups": [
     {
@@ -71,27 +71,27 @@
         {
           "code": "BIH",
           "name": "波黑",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         },
         {
           "code": "CAN",
           "name": "加拿大",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         },
         {

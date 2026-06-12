@@ -2,9 +2,9 @@
   "users": {
     "w01": {
       "username": "w01",
-      "beans": 9642,
+      "beans": 9839,
       "totalBets": 6,
-      "wonBets": 1,
+      "wonBets": 2,
       "createdAt": "2026-06-11T02:27:58.655Z",
       "bets": [
         {
@@ -39,8 +39,8 @@
           "betType": "draw",
           "amount": 50,
           "odds": 3.94,
-          "status": "pending",
-          "payout": null,
+          "status": "won",
+          "payout": 197,
           "createdAt": "2026-06-11T02:29:00.522Z"
         },
         {
@@ -90,5 +90,5 @@
       "bets": []
     }
   },
-  "lastUpdated": "2026-06-12T20:23:54.149Z"
+  "lastUpdated": "2026-06-12T21:57:53.601Z"
 }
