@@ -74,18 +74,23 @@ function buildTeamLineup(team, code) {
       minute: item.Minute || "",
       playerOffId: item.IdPlayerOff ? `fifa-${item.IdPlayerOff}` : null,
       playerOnId: item.IdPlayerOn ? `fifa-${item.IdPlayerOn}` : null,
-      playerOffName: getLocalizedText(item.PlayerOffName) || "",
-      playerOnName: getLocalizedText(item.PlayerOnName) || "",
+      playerOffName: buildBilingualName(item.PlayerOffName) || "",
+      playerOnName: buildBilingualName(item.PlayerOnName) || "",
     })),
   };
 }
 
 function normalizeLineupPlayer(player, code) {
+  const nameEn = getLocalizedTextEn(player.PlayerName) || getLocalizedTextEn(player.ShortName) || `#${player.ShirtNumber}`;
+  const nameZh = getLocalizedTextZh(player.PlayerName) || getLocalizedTextZh(player.ShortName) || "";
+  const displayName = nameZh && nameZh !== nameEn ? `${nameEn} / ${nameZh}` : nameEn;
+  const shortNameEn = getLocalizedTextEn(player.ShortName) || nameEn;
+
   return {
     id: `fifa-${player.IdPlayer}`,
     fifaId: player.IdPlayer,
-    name: getLocalizedText(player.PlayerName) || getLocalizedText(player.ShortName) || `#${player.ShirtNumber}`,
-    shortName: getLocalizedText(player.ShortName) || getLocalizedText(player.PlayerName) || `#${player.ShirtNumber}`,
+    name: displayName,
+    shortName: shortNameEn,
     team: code,
     number: Number(player.ShirtNumber) || 0,
     position: POSITION_LABELS.get(Number(player.Position)) || "球员",
@@ -116,9 +121,35 @@ function parseNumber(value) {
 function getLocalizedText(value) {
   if (!Array.isArray(value)) return value || null;
   return (
-    value.find((item) => item.Locale === "zh-CN")?.Description ||
-    value.find((item) => item.Locale === "en-GB")?.Description ||
+    value.find((item) => item.Locale === "bilingual")?.Description ||
+    value.find((item) => item.Locale === "zh-CN" || item.Locale === "zh")?.Description ||
+    value.find((item) => item.Locale === "en-GB" || item.Locale === "en")?.Description ||
     value.find((item) => item.Description)?.Description ||
     null
   );
+}
+
+function getLocalizedTextEn(value) {
+  if (!Array.isArray(value)) return value || null;
+  return (
+    value.find((item) => item.Locale === "en-GB" || item.Locale === "en")?.Description ||
+    value[0]?.Description ||
+    null
+  );
+}
+
+function getLocalizedTextZh(value) {
+  if (!Array.isArray(value)) return value || null;
+  return (
+    value.find((item) => item.Locale === "zh-CN" || item.Locale === "zh")?.Description ||
+    null
+  );
+}
+
+function buildBilingualName(value) {
+  const nameEn = getLocalizedTextEn(value);
+  const nameZh = getLocalizedTextZh(value);
+  if (!nameEn) return nameZh || "";
+  if (!nameZh || nameZh === nameEn) return nameEn;
+  return `${nameEn} / ${nameZh}`;
 }

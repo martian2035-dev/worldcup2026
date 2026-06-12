@@ -53,12 +53,19 @@ function collectFifaPlayers(liveData, teamCodes) {
     const teamCode = teamCodes.get(team.IdTeam) || team.Abbreviation;
 
     for (const raw of team.Players) {
+      const rawNameEn = getLocalizedTextEn(raw.PlayerName) || getLocalizedTextEn(raw.ShortName);
+      const rawNameZh = getLocalizedTextZh(raw.PlayerName) || getLocalizedTextZh(raw.ShortName);
+      const displayName = rawNameZh && rawNameZh !== rawNameEn
+        ? `${rawNameEn} / ${rawNameZh}`
+        : rawNameEn;
+
       players.push({
         fifaId: raw.IdPlayer,
         fifaTeamId: raw.IdTeam || team.IdTeam,
         team: teamCode,
-        nameEn: getLocalizedText(raw.PlayerName) || getLocalizedText(raw.ShortName),
-        shortName: getLocalizedText(raw.ShortName) || getLocalizedText(raw.PlayerName),
+        name: displayName,
+        nameEn: rawNameEn,
+        shortName: getLocalizedTextEn(raw.ShortName) || rawNameEn,
         number: raw.ShirtNumber,
         position: POSITION_LABELS[raw.Position] || "FW",
         photoUrl: raw.PlayerPicture?.PictureUrl || "",
@@ -144,18 +151,21 @@ function collectEventStats(events) {
 
 function buildPlayerIndex(players) {
   const byFifaId = new Map();
+  const byNameEn = new Map();
 
   for (const player of players) {
     const canonicalFifaId = getCanonicalFifaId(player);
     if (canonicalFifaId) byFifaId.set(canonicalFifaId, player);
+    const nameKey = normalizeNameKey(player.nameEn);
+    if (nameKey) byNameEn.set(nameKey, player);
   }
 
-  return { byFifaId };
+  return { byFifaId, byNameEn };
 }
 
 function findOrCreatePlayer(players, index, fifaPlayer) {
-  let player =
-    index.byFifaId.get(fifaPlayer.fifaId);
+  // 主匹配：fifaId
+  let player = index.byFifaId.get(fifaPlayer.fifaId);
 
   if (player) {
     player.fifaId = fifaPlayer.fifaId;
@@ -163,11 +173,23 @@ function findOrCreatePlayer(players, index, fifaPlayer) {
     return player;
   }
 
+  // 次匹配：nameEn 归一化
+  const nameKey = normalizeNameKey(fifaPlayer.nameEn);
+  if (nameKey) {
+    player = index.byNameEn.get(nameKey);
+    if (player) {
+      player.fifaId = fifaPlayer.fifaId;
+      index.byFifaId.set(fifaPlayer.fifaId, player);
+      return player;
+    }
+  }
+
+  // 创建新球员
   player = {
     id: `fifa-${fifaPlayer.fifaId}`,
     fifaId: fifaPlayer.fifaId,
-    name: fifaPlayer.nameEn || fifaPlayer.shortName || `Player ${fifaPlayer.fifaId}`,
-    nameEn: fifaPlayer.nameEn || fifaPlayer.shortName || `Player ${fifaPlayer.fifaId}`,
+    name: fifaPlayer.name || fifaPlayer.nameEn || `Player ${fifaPlayer.fifaId}`,
+    nameEn: fifaPlayer.nameEn || fifaPlayer.name || `Player ${fifaPlayer.fifaId}`,
     team: fifaPlayer.team,
     position: fifaPlayer.position,
     number: fifaPlayer.number || 0,
@@ -188,11 +210,19 @@ function getCanonicalFifaId(player) {
   return null;
 }
 
+/** 归一化 nameEn 用于匹配 */
+function normalizeNameKey(name) {
+  if (!name) return "";
+  return name.toLowerCase().trim().replace(/\s+/g, " ")
+    .normalize("NFD").replace(/[̀-ͯ]/g, "");
+}
+
 function enrichPlayer(player, fifaPlayer) {
   player.fifaId = fifaPlayer.fifaId;
   player.fifaTeamId = fifaPlayer.fifaTeamId;
   player.nameEn = fifaPlayer.nameEn || player.nameEn || player.name;
-  player.name = player.name || player.nameEn;
+  // 优先使用双语名
+  player.name = fifaPlayer.name || player.name || player.nameEn;
   player.team = fifaPlayer.team || player.team;
   player.position = fifaPlayer.position || player.position;
   player.number = fifaPlayer.number || player.number;
@@ -326,9 +356,29 @@ function parseMinute(value) {
 function getLocalizedText(value) {
   if (!Array.isArray(value)) return value || "";
   return (
-    value.find((item) => item.Locale === "zh-CN")?.Description ||
-    value.find((item) => item.Locale === "en-GB")?.Description ||
+    value.find((item) => item.Locale === "bilingual")?.Description ||
+    value.find((item) => item.Locale === "zh-CN" || item.Locale === "zh")?.Description ||
+    value.find((item) => item.Locale === "en-GB" || item.Locale === "en")?.Description ||
     value.find((item) => item.Description)?.Description ||
+    ""
+  );
+}
+
+/** 提取英文名 */
+function getLocalizedTextEn(value) {
+  if (!Array.isArray(value)) return value || "";
+  return (
+    value.find((item) => item.Locale === "en-GB" || item.Locale === "en")?.Description ||
+    value[0]?.Description ||
+    ""
+  );
+}
+
+/** 提取中文名 */
+function getLocalizedTextZh(value) {
+  if (!Array.isArray(value)) return value || "";
+  return (
+    value.find((item) => item.Locale === "zh-CN" || item.Locale === "zh")?.Description ||
     ""
   );
 }

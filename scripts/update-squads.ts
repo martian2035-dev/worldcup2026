@@ -20,6 +20,7 @@ import {
   fetchTeamSquad,
   fetchTeams,
   isApiConfigured,
+  getLocalizedText,
   type FifaPlayerRaw,
   type FifaTeamRaw,
 } from "./fifa-client";
@@ -96,17 +97,24 @@ interface TeamRecord {
 
 /** 从 FIFA 球员数据转换为项目格式 */
 function convertFifaPlayer(raw: FifaPlayerRaw, teamCode: string): PlayerRecord {
-  const nameZn = raw.PlayerName?.find((n) => n.Locale === "zh")?.Description
+  // 从合并后的双语数据中提取
+  const bilingualName = raw.PlayerName?.find((n) => n.Locale === "bilingual")?.Description
+    || "";
+  const nameEn = raw.PlayerName?.find((n) => n.Locale === "en-GB" || n.Locale === "en")?.Description
     || raw.PlayerName?.[0]?.Description
     || "";
-  const nameEn = raw.PlayerName?.find((n) => n.Locale === "en")?.Description
-    || raw.PlayerName?.[0]?.Description
+  const nameZn = raw.PlayerName?.find((n) => n.Locale === "zh-CN" || n.Locale === "zh")?.Description
     || "";
+
+  const displayName = bilingualName || (nameZn && nameZn !== nameEn
+    ? `${nameEn} / ${nameZn}`
+    : nameEn);
+
   const nationality = raw.Nationality?.[0]?.Description || "";
 
   return {
     id: raw.IdPlayer || `${teamCode.toLowerCase()}-${raw.ShirtNumber}`,
-    name: nameZn,
+    name: displayName,
     nameEn: nameEn,
     team: teamCode,
     position: normalizePosition(raw.Position || "CM"),
@@ -242,17 +250,25 @@ function mergePlayers(
   incoming: PlayerRecord[]
 ): { players: PlayerRecord[]; total: number; new: number; updated: number; removed: number } {
   const existingMap = new Map(existing.map((p) => [p.id, p]));
-  const incomingMap = new Map(incoming.map((p) => [p.id, p]));
+  // 二级索引：归一化 nameEn → PlayerRecord（仅对 generated 球员，用于被 FIFA 球员匹配后替换）
+  const nameEnIndex = new Map<string, PlayerRecord>();
+  for (const p of existing) {
+    const key = normalizeNameEn(p.nameEn);
+    if (key && p.dataSource === "generated") {
+      nameEnIndex.set(key, p);
+    }
+  }
 
   let added = 0;
   let updated = 0;
   let removed = 0;
 
-  // 更新已有球员的基本信息，保留统计数据
+  const incomingMap = new Map(incoming.map((p) => [p.id, p]));
+
   for (const [id, incPlayer] of incomingMap) {
     const extPlayer = existingMap.get(id);
     if (extPlayer) {
-      // 更新基本信息，保留统计数据
+      // 主匹配：ID 精确相等 — 更新基本信息，保留统计数据
       Object.assign(extPlayer, {
         name: incPlayer.name,
         nameEn: incPlayer.nameEn,
@@ -265,21 +281,32 @@ function mergePlayers(
         nationality: incPlayer.nationality,
         club: incPlayer.club,
         dataSource: "fifa" as const,
-        // 保留原有 isStar 标记
       });
       updated++;
     } else {
-      // 新球员
-      existing.push(incPlayer);
-      added++;
-    }
-  }
+      // 次匹配：按 nameEn 查找 generated 球员
+      const nameKey = normalizeNameEn(incPlayer.nameEn);
+      const matchedGen = nameKey ? nameEnIndex.get(nameKey) : undefined;
 
-  // 标记不在官方名单中的球员（但不删除，保留数据）
-  for (const p of existing) {
-    if (!incomingMap.has(p.id) && p.dataSource !== "fifa") {
-      // 生成的球员如果在官方名单中不存在，保留但标记
-      // 不主动删除
+      if (matchedGen && matchedGen.dataSource === "generated") {
+        // 找到同名 generated 球员 → 迁移数据，替换 ID
+        const oldId = matchedGen.id;
+        const oldIndex = existing.findIndex((p) => p.id === oldId);
+        if (oldIndex >= 0) {
+          // 迁移 stats 和 matchLog
+          incPlayer.stats = matchedGen.stats || incPlayer.stats;
+          incPlayer.matchLog = matchedGen.matchLog || incPlayer.matchLog;
+          incPlayer.isStar = matchedGen.isStar || incPlayer.isStar;
+          existing.splice(oldIndex, 1);
+          removed++;
+        }
+        existing.push(incPlayer);
+        added++;
+      } else {
+        // 全新球员
+        existing.push(incPlayer);
+        added++;
+      }
     }
   }
 
@@ -290,6 +317,17 @@ function mergePlayers(
     updated,
     removed,
   };
+}
+
+/** 归一化英文名用于匹配：去空格、转小写、去重音 */
+function normalizeNameEn(name: string): string {
+  if (!name) return "";
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, " ")
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "");
 }
 
 /**
@@ -459,4 +497,93 @@ export function getSquadReport(): void {
     const flag = count >= 23 && count <= 26 ? "✅" : "⚠️";
     console.log(`    ${flag} ${team.code} ${team.name}: ${count} 人`);
   }
+}
+
+// ============================================================
+// 去重清理
+// ============================================================
+
+/**
+ * 扫描 players.json 中同队同 nameEn（归一化后）的重复条目
+ * 保留 FIFA 来源的，合并其 stats/matchLog，删除 generated 重复项
+ */
+export function deduplicatePlayersByEnglishName(): { removed: number; merged: number } {
+  const playersPath = path.join(DATA_DIR, "players.json");
+  const playersData = JSON.parse(fs.readFileSync(playersPath, "utf-8"));
+  const players: PlayerRecord[] = playersData.players || [];
+
+  // 按 (team, normalizeNameEn) 分组
+  const groups = new Map<string, PlayerRecord[]>();
+  for (const p of players) {
+    const key = `${p.team}::${normalizeNameEn(p.nameEn)}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key)!.push(p);
+  }
+
+  let removed = 0;
+  let merged = 0;
+
+  for (const [, group] of groups) {
+    if (group.length <= 1) continue;
+
+    // 优先保留 FIFA 来源的
+    const fifaPlayers = group.filter((p) => p.dataSource === "fifa");
+    const genPlayers = group.filter((p) => p.dataSource === "generated");
+
+    if (fifaPlayers.length > 0 && genPlayers.length > 0) {
+      const keeper = fifaPlayers[0];
+
+      for (const gen of genPlayers) {
+        keeper.stats = mergeStats(keeper.stats, gen.stats);
+        keeper.matchLog = mergeMatchLogs(keeper.matchLog || [], gen.matchLog || []);
+        keeper.isStar = keeper.isStar || gen.isStar;
+      }
+
+      // 从 players 数组中移除 generated 条目
+      for (const gen of genPlayers) {
+        const idx = players.findIndex((p) => p.id === gen.id);
+        if (idx >= 0) {
+          players.splice(idx, 1);
+          removed++;
+        }
+      }
+      merged += genPlayers.length;
+    }
+  }
+
+  if (removed > 0) {
+    playersData.players = players;
+    playersData.lastUpdated = new Date().toISOString();
+    fs.writeFileSync(playersPath, JSON.stringify(playersData, null, 2));
+    console.log(`  🧹 去重: 移除 ${removed} 个重复球员, 合并 ${merged} 条数据`);
+  }
+
+  return { removed, merged };
+}
+
+function mergeStats(a: any, b: any): any {
+  const result = { ...a };
+  const numericKeys = [
+    "goals", "assists", "shots", "shotsOnTarget", "minutesPlayed",
+    "yellowCards", "redCards", "foulsCommitted", "foulsSuffered",
+    "offsides", "passes", "tackles", "appearances", "starts",
+    "penalties",
+  ];
+  for (const key of numericKeys) {
+    result[key] = (a[key] || 0) + (b[key] || 0);
+  }
+  result.distanceKm = Math.round((result.minutesPlayed || 0) * 0.115 * 10) / 10;
+  result.matchRatings = [...(a.matchRatings || []), ...(b.matchRatings || [])];
+  return result;
+}
+
+function mergeMatchLogs(a: any[], b: any[]): any[] {
+  const seen = new Set(a.map((m) => m.matchId));
+  for (const log of b) {
+    if (!seen.has(log.matchId)) {
+      a.push(log);
+      seen.add(log.matchId);
+    }
+  }
+  return a;
 }

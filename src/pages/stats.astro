@@ -32,6 +32,12 @@ const topAssists = [...allPlayers]
   .slice(0, 20);
 
 const medalColors = ["var(--color-accent)", "#C0C0C0", "#CD7F32"];
+
+const positionLabels: Record<string, string> = {
+  GK: "GK / 守门员", CB: "CB / 中后卫", LB: "LB / 左后卫", RB: "RB / 右后卫",
+  CDM: "CDM / 防守中场", CM: "CM / 中前卫", CAM: "CAM / 前腰",
+  LW: "LW / 左边锋", RW: "RW / 右边锋", ST: "ST / 前锋",
+};
 ---
 
 <BaseLayout title="数据统计">
@@ -67,7 +73,7 @@ const medalColors = ["var(--color-accent)", "#C0C0C0", "#CD7F32"];
           <span style="flex:1;font-size:11px;display:flex;align-items:center;gap:6px;">
             <span>{getFlag(p.team)}</span>
             <a href={`../players/${p.id}/`} style="color:var(--color-text-primary);text-decoration:none;">{p.name}</a>
-            <span style="color:var(--color-text-muted);font-size:9px;">{p.position}</span>
+            <span style="color:var(--color-text-muted);font-size:9px;">{positionLabels[p.position] || p.position}</span>
           </span>
           <span style="min-width:44px;text-align:center;color:var(--color-accent);font-weight:700;">{p.stats.goals}</span>
           <span style="min-width:36px;text-align:center;color:var(--color-text-secondary);">{p.stats.penalties}</span>

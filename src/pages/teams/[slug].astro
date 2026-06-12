@@ -36,9 +36,9 @@ function getFlag(code: string) {
 function formatTime(dt: string) { return dt.slice(5, 16).replace("T", " "); }
 
 const positionLabels: Record<string, string> = {
-  GK: "守门员", CB: "中后卫", LB: "左后卫", RB: "右后卫",
-  CDM: "防守中场", CM: "中前卫", CAM: "前腰",
-  LW: "左边锋", RW: "右边锋", ST: "前锋",
+  GK: "GK / 守门员", CB: "CB / 中后卫", LB: "LB / 左后卫", RB: "RB / 右后卫",
+  CDM: "CDM / 防守中场", CM: "CM / 中前卫", CAM: "CAM / 前腰",
+  LW: "LW / 左边锋", RW: "RW / 右边锋", ST: "ST / 前锋",
 };
 
 const positionOrder = ["GK", "CB", "LB", "RB", "CDM", "CM", "CAM", "LW", "RW", "ST"];

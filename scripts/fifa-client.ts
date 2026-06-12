@@ -173,14 +173,14 @@ export interface FifaLiveTeamRaw {
 // API 请求工具
 // ============================================================
 
-async function fifaFetch<T>(endpoint: string, params: Record<string, string> = {}): Promise<T | null> {
+async function fifaFetch<T>(endpoint: string, params: Record<string, string> = {}, language: string = "zh"): Promise<T | null> {
   if (!WORLD_CUP_2026_SEASON_ID) {
     console.warn(`  ⚠ FIFA_SEASON_ID 未配置，跳过 API 请求`);
     return null;
   }
 
   const url = new URL(`${FIFA_BASE_URL}${endpoint}`);
-  url.searchParams.set("language", "zh");
+  url.searchParams.set("language", language);
   Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
 
   const controller = new AbortController();
@@ -348,4 +348,80 @@ export function getSeasonId(): string {
  */
 export function isApiConfigured(): boolean {
   return WORLD_CUP_2026_SEASON_ID.length > 0;
+}
+
+/**
+ * 获取所有球员大名单（英文版，用于 nameEn 主键匹配）
+ * 端点: GET /players?language=en&idseason={seasonId}
+ */
+export async function fetchAllPlayersEn(): Promise<FifaPlayerRaw[] | null> {
+  console.log("📡 从 FIFA API 获取全部球员数据 (EN)...");
+  const data = await fifaFetch<{ Results: FifaPlayerRaw[] }>(
+    "/players",
+    { idseason: WORLD_CUP_2026_SEASON_ID, count: "1500" },
+    "en"
+  );
+  if (!data?.Results?.length) return null;
+  console.log(`  ✅ 获取到 ${data.Results.length} 名球员 (EN)`);
+  return data.Results;
+}
+
+/**
+ * 将英文版和中文版球员数据按 IdPlayer 合并为双语格式
+ * @returns 合并后的球员数组，name 为 "EnglishName / 中文名" 格式
+ */
+export function mergeBilingualPlayers(
+  enPlayers: FifaPlayerRaw[],
+  zhPlayers: FifaPlayerRaw[]
+): FifaPlayerRaw[] {
+  const zhIndex = new Map<string, FifaPlayerRaw>();
+  for (const p of zhPlayers) {
+    zhIndex.set(p.IdPlayer, p);
+  }
+
+  return enPlayers.map((enP) => {
+    const zhP = zhIndex.get(enP.IdPlayer);
+    if (!zhP) return enP;
+
+    const enNameDesc = enP.PlayerName?.find(
+      (n) => n.Locale === "en" || n.Locale === "en-GB"
+    )?.Description || enP.PlayerName?.[0]?.Description || "";
+    const zhNameDesc = zhP.PlayerName?.find(
+      (n) => n.Locale === "zh" || n.Locale === "zh-CN"
+    )?.Description || zhP.PlayerName?.[0]?.Description || "";
+
+    const bilingualName = zhNameDesc && zhNameDesc !== enNameDesc
+      ? `${enNameDesc} / ${zhNameDesc}`
+      : enNameDesc;
+
+    return {
+      ...enP,
+      PlayerName: [
+        { Locale: "en-GB", Description: enNameDesc },
+        { Locale: "zh-CN", Description: zhNameDesc },
+        { Locale: "bilingual", Description: bilingualName },
+      ],
+      ClubName: enP.ClubName || zhP.ClubName,
+      ClubLogoUrl: enP.ClubLogoUrl || zhP.ClubLogoUrl,
+    };
+  });
+}
+
+/**
+ * 从 FIFA API 多语言字段中提取文本
+ * 优先顺序：bilingual > zh-CN > zh > en-GB > en > 第一个
+ */
+export function getLocalizedText(
+  value: Array<{ Description: string; Locale: string }> | string | undefined
+): string {
+  if (!value) return "";
+  if (typeof value === "string") return value;
+  if (!Array.isArray(value)) return "";
+
+  const priority = ["bilingual", "zh-CN", "zh", "en-GB", "en"];
+  for (const locale of priority) {
+    const found = value.find((item) => item.Locale === locale);
+    if (found?.Description) return found.Description;
+  }
+  return value[0]?.Description || "";
 }

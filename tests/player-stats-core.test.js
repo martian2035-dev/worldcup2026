@@ -172,14 +172,16 @@ test("applyFifaMatchStats enriches players and records per-match event totals", 
   assert.equal(wrongNumberPlayer.fifaId, undefined);
   assert.equal(wrongNumberPlayer.stats.goals, 0);
 
+  // erik-lira 现在通过 nameEn 归一化匹配被正确识别为与 FIFA 419518 同一人
+  // 保留原有 ID，但 fifaId 和数据已被更新
   const localAssister = result.players.find((p) => p.id === "erik-lira");
-  assert.equal(localAssister.fifaId, undefined);
-  assert.equal(localAssister.stats.assists, 0);
+  assert.ok(localAssister);
+  assert.equal(localAssister.fifaId, "419518"); // nameEn 匹配后更新了 fifaId
+  assert.equal(localAssister.stats.assists, 1); // 助攻数据已合并
+  assert.equal(localAssister.stats.minutesPlayed, 76);
 
   const assister = result.players.find((p) => p.fifaId === "419518");
-  assert.equal(assister.id, "fifa-419518");
-  assert.equal(assister.stats.assists, 1);
-  assert.equal(assister.stats.minutesPlayed, 76);
+  assert.equal(assister.id, "erik-lira"); // 保留了原 ID，没有创建新 fifa-419518
 
   const sub = result.players.find((p) => p.fifaId === "448051");
   assert.equal(sub.stats.appearances, 1);
