@@ -656,6 +656,15 @@
       },
       "players": [
         {
+          "id": "fifa-274281",
+          "name": "金承奎",
+          "nameEn": "金承奎",
+          "position": "GK",
+          "number": 1,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "jo-hyeon-woo",
           "name": "赵贤祐",
           "nameEn": "Jo Hyeon-woo",
@@ -671,34 +680,31 @@
           "dataSource": "generated"
         },
         {
-          "id": "kor-gk-1",
-          "name": "赵泰旻",
-          "nameEn": "赵泰旻",
-          "position": "GK",
+          "id": "fifa-423874",
+          "name": "李韩范",
+          "nameEn": "李韩范",
+          "position": "DF",
           "number": 2,
           "isStar": false,
-          "age": 24,
-          "height": 199,
-          "weight": 88,
-          "club": "哥本哈根",
-          "preferredFoot": "右脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "kor-gk-2",
-          "name": "金范赫",
-          "nameEn": "金范赫",
-          "position": "GK",
+          "id": "fifa-492315",
+          "name": "LEE Gihyuk",
+          "nameEn": "LEE Gihyuk",
+          "position": "MF",
           "number": 3,
-          "isStar": true,
-          "age": 33,
-          "height": 191,
-          "weight": 81,
-          "club": "葡萄牙体育",
-          "preferredFoot": "右脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-395088",
+          "name": "KIM Minjae",
+          "nameEn": "KIM Minjae",
+          "position": "DF",
+          "number": 4,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "min-jae-kim",
@@ -731,19 +737,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "kor-cb-1",
-          "name": "赵基硕",
-          "nameEn": "赵基硕",
-          "position": "CB",
+          "id": "fifa-395084",
+          "name": "黄仁范",
+          "nameEn": "黄仁范",
+          "position": "MF",
           "number": 6,
           "isStar": false,
-          "age": 31,
-          "height": 187,
-          "weight": 78,
-          "club": "FC首尔",
-          "preferredFoot": "左脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-307849",
+          "name": "孙兴慜",
+          "nameEn": "孙兴慜",
+          "position": "FW",
+          "number": 7,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "son-heung-min",
@@ -761,19 +770,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "kor-cb-2",
-          "name": "姜浩俊",
-          "nameEn": "姜浩俊",
-          "position": "CB",
+          "id": "fifa-402817",
+          "name": "白胜浩",
+          "nameEn": "白胜浩",
+          "position": "MF",
           "number": 8,
           "isStar": false,
-          "age": 33,
-          "height": 194,
-          "weight": 80,
-          "club": "浦项制铁",
-          "preferredFoot": "右脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "oh-hyeon-gyu",
@@ -791,6 +794,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-390525",
+          "name": "李在成",
+          "nameEn": "李在成",
+          "position": "MF",
+          "number": 10,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "lee-jae-sung",
           "name": "李在城",
           "nameEn": "Lee Jae-sung",
@@ -804,6 +816,15 @@
           "preferredFoot": "左脚",
           "nationality": "韩国",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-395083",
+          "name": "黄希灿",
+          "nameEn": "黄希灿",
+          "position": "MF",
+          "number": 11,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "hwang-hee-chan",
@@ -821,79 +842,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "kor-lb-1",
-          "name": "张宇基",
-          "nameEn": "张宇基",
-          "position": "LB",
-          "number": 12,
-          "isStar": false,
-          "age": 25,
-          "height": 174,
-          "weight": 69,
-          "club": "浦项制铁",
-          "preferredFoot": "左脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "kor-lb-2",
-          "name": "宋旻俊",
-          "nameEn": "宋旻俊",
-          "position": "LB",
+          "id": "fifa-423880",
+          "name": "李太锡",
+          "nameEn": "李太锡",
+          "position": "DF",
           "number": 13,
           "isStar": false,
-          "age": 21,
-          "height": 175,
-          "weight": 65,
-          "club": "水原三星",
-          "preferredFoot": "左脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "kor-rb-1",
-          "name": "韩荣燮",
-          "nameEn": "韩荣燮",
-          "position": "RB",
-          "number": 14,
-          "isStar": false,
-          "age": 29,
-          "height": 182,
-          "weight": 75,
-          "club": "FC首尔",
-          "preferredFoot": "右脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "kor-cdm-1",
-          "name": "吴秀燮",
-          "nameEn": "吴秀燮",
-          "position": "CDM",
-          "number": 15,
-          "isStar": false,
-          "age": 27,
-          "height": 178,
-          "weight": 81,
-          "club": "里尔",
-          "preferredFoot": "左脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "kor-cdm-2",
-          "name": "安基范",
-          "nameEn": "安基范",
-          "position": "CDM",
+          "id": "fifa-479316",
+          "name": "PARK Jinseob",
+          "nameEn": "PARK Jinseob",
+          "position": "DF",
           "number": 16,
           "isStar": false,
-          "age": 21,
-          "height": 188,
-          "weight": 70,
-          "club": "全北现代",
-          "preferredFoot": "右脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "bae-jun-ho",
@@ -911,6 +875,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-448586",
+          "name": "吴贤揆",
+          "nameEn": "吴贤揆",
+          "position": "FW",
+          "number": 18,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "kang-in-lee",
           "name": "李刚仁",
           "nameEn": "Lee Kang-in",
@@ -926,49 +899,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "kor-cm-1",
-          "name": "林诚荣",
-          "nameEn": "林诚荣",
-          "position": "CM",
+          "id": "fifa-418490",
+          "name": "LEE Kangin",
+          "nameEn": "LEE Kangin",
+          "position": "MF",
           "number": 19,
           "isStar": false,
-          "age": 29,
-          "height": 170,
-          "weight": 82,
-          "club": "全北现代",
-          "preferredFoot": "左脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "kor-cm-2",
-          "name": "崔赫浩",
-          "nameEn": "崔赫浩",
-          "position": "CM",
-          "number": 20,
+          "id": "fifa-429608",
+          "name": "薛英佑",
+          "nameEn": "薛英佑",
+          "position": "DF",
+          "number": 22,
           "isStar": false,
-          "age": 21,
-          "height": 171,
-          "weight": 69,
-          "club": "浦项制铁",
-          "preferredFoot": "右脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "kor-rw-1",
-          "name": "金诚贤",
-          "nameEn": "金诚贤",
-          "position": "RW",
-          "number": 21,
-          "isStar": false,
-          "age": 24,
-          "height": 181,
-          "weight": 72,
-          "club": "哥本哈根",
-          "preferredFoot": "左脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "seol-young-woo",
@@ -986,64 +932,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "yang-hyun-jun",
-          "name": "梁铉俊",
-          "nameEn": "Yang Hyun-jun",
-          "position": "LW",
-          "number": 23,
-          "isStar": false,
-          "age": 23,
-          "height": 177,
-          "weight": 65,
-          "club": "凯尔特人",
-          "preferredFoot": "左脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "kor-st-1",
-          "name": "尹贤赫",
-          "nameEn": "尹贤赫",
-          "position": "ST",
+          "id": "fifa-430385",
+          "name": "KIM Jingyu",
+          "nameEn": "KIM Jingyu",
+          "position": "MF",
           "number": 24,
           "isStar": false,
-          "age": 19,
-          "height": 193,
-          "weight": 90,
-          "club": "拉齐奥",
-          "preferredFoot": "左脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "kor-st-2",
-          "name": "张贤泰",
-          "nameEn": "张贤泰",
-          "position": "ST",
+          "id": "fifa-423855",
+          "name": "严智星",
+          "nameEn": "严智星",
+          "position": "MF",
           "number": 25,
           "isStar": false,
-          "age": 19,
-          "height": 172,
-          "weight": 76,
-          "club": "浦项制铁",
-          "preferredFoot": "右脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "kor-rw-2",
-          "name": "崔基浩",
-          "nameEn": "崔基浩",
-          "position": "RW",
-          "number": 26,
-          "isStar": false,
-          "age": 26,
-          "height": 168,
-          "weight": 75,
-          "club": "浦项制铁",
-          "preferredFoot": "右脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
@@ -1068,8 +972,8 @@
       "players": [
         {
           "id": "matej-kovar",
-          "name": "马捷·科瓦日",
-          "nameEn": "Matěj Kovář",
+          "name": "Matej KOVAR",
+          "nameEn": "Matej KOVAR",
           "position": "GK",
           "number": 1,
           "isStar": false,
@@ -1079,7 +983,7 @@
           "club": "比尔森胜利",
           "preferredFoot": "左脚",
           "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "cze-gk-1",
@@ -1112,6 +1016,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-486080",
+          "name": "Robin HRANAC",
+          "nameEn": "Robin HRANAC",
+          "position": "DF",
+          "number": 4,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "cze-gk-2",
           "name": "马里奥·什特帕内克",
           "nameEn": "马里奥 什特帕内克",
@@ -1128,9 +1041,9 @@
         },
         {
           "id": "vladimir-coufal",
-          "name": "弗拉基米尔·曹法尔",
-          "nameEn": "Vladimír Coufal",
-          "position": "RB",
+          "name": "Vladimir COUFAL",
+          "nameEn": "Vladimir COUFAL",
+          "position": "DF",
           "number": 5,
           "isStar": true,
           "age": 33,
@@ -1139,7 +1052,16 @@
           "club": "西汉姆联",
           "preferredFoot": "左脚",
           "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-514334",
+          "name": "Stepan CHALOUPEK",
+          "nameEn": "Stepan CHALOUPEK",
+          "position": "DF",
+          "number": 6,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "cze-cb-1",
@@ -1157,19 +1079,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "pavel-sulc",
-          "name": "帕维尔·舒尔茨",
-          "nameEn": "Pavel Šulc",
-          "position": "CAM",
+          "id": "fifa-441170",
+          "name": "拉迪斯拉夫·克雷杰奇",
+          "nameEn": "拉迪斯拉夫·克雷杰奇",
+          "position": "DF",
           "number": 7,
           "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "比尔森胜利",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "cze-cb-2",
@@ -1187,6 +1103,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-433754",
+          "name": "亚当•赫洛热克",
+          "nameEn": "亚当•赫洛热克",
+          "position": "FW",
+          "number": 9,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "adam-hlozek",
           "name": "亚当·赫洛热克",
           "nameEn": "Adam Hložek",
@@ -1200,6 +1125,15 @@
           "preferredFoot": "右脚",
           "nationality": "捷克",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-401481",
+          "name": "帕特里克·希克",
+          "nameEn": "帕特里克·希克",
+          "position": "FW",
+          "number": 10,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "patrik-schick",
@@ -1247,109 +1181,64 @@
           "dataSource": "generated"
         },
         {
-          "id": "cze-rb-1",
-          "name": "戈兰·斯沃博达",
-          "nameEn": "戈兰 斯沃博达",
-          "position": "RB",
+          "id": "fifa-484003",
+          "name": "Mojmir CHYTIL",
+          "nameEn": "Mojmir CHYTIL",
+          "position": "FW",
           "number": 13,
           "isStar": false,
-          "age": 30,
-          "height": 174,
-          "weight": 66,
-          "club": "布拉格斯巴达",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "cze-cdm-1",
-          "name": "帕维尔·西穆尼奇",
-          "nameEn": "帕维尔 西穆尼奇",
-          "position": "CDM",
-          "number": 14,
-          "isStar": false,
-          "age": 32,
-          "height": 178,
-          "weight": 70,
-          "club": "年轻人",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
-        },
-        {
-          "id": "cze-cdm-2",
-          "name": "马尔科·梅杜尼亚宁",
-          "nameEn": "马尔科 梅杜尼亚宁",
-          "position": "CDM",
+          "id": "pavel-sulc",
+          "name": "Pavel SULC",
+          "nameEn": "Pavel SULC",
+          "position": "FW",
           "number": 15,
           "isStar": false,
-          "age": 21,
-          "height": 187,
-          "weight": 82,
-          "club": "萨格勒布迪纳摩",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
-        },
-        {
-          "id": "cze-cm-1",
-          "name": "哈里斯·库切拉",
-          "nameEn": "哈里斯 库切拉",
-          "position": "CM",
-          "number": 16,
-          "isStar": false,
-          "age": 28,
-          "height": 173,
-          "weight": 67,
+          "age": 25,
+          "height": 180,
+          "weight": 75,
           "club": "比尔森胜利",
           "preferredFoot": "右脚",
           "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "cze-cm-2",
-          "name": "伊万·佩里西奇",
-          "nameEn": "伊万 佩里西奇",
-          "position": "CM",
+          "id": "fifa-484011",
+          "name": "Lukas PROVOD",
+          "nameEn": "Lukas PROVOD",
+          "position": "MF",
           "number": 17,
           "isStar": false,
-          "age": 20,
-          "height": 188,
-          "weight": 71,
-          "club": "比尔森胜利",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "cze-cm-3",
-          "name": "马尔科·科瓦契奇",
-          "nameEn": "马尔科 科瓦契奇",
-          "position": "CM",
+          "id": "fifa-433668",
+          "name": "米夏尔•萨迪莱克",
+          "nameEn": "米夏尔•萨迪莱克",
+          "position": "MF",
           "number": 18,
           "isStar": false,
-          "age": 22,
-          "height": 182,
-          "weight": 71,
-          "club": "巴塞尔",
-          "preferredFoot": "左脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "cze-cam-1",
-          "name": "米拉莱姆·普尔利奇",
-          "nameEn": "米拉莱姆 普尔利奇",
-          "position": "CAM",
+          "id": "fifa-483961",
+          "name": "Tomas CHORY",
+          "nameEn": "Tomas CHORY",
+          "position": "FW",
           "number": 19,
           "isStar": false,
-          "age": 26,
-          "height": 179,
-          "weight": 67,
-          "club": "布拉格斯巴达",
-          "preferredFoot": "左脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-441166",
+          "name": "雅罗斯拉夫·泽莱尼",
+          "nameEn": "雅罗斯拉夫·泽莱尼",
+          "position": "DF",
+          "number": 20,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "vaclav-cerny",
@@ -1367,19 +1256,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "cze-lw-1",
-          "name": "博日达尔·普罗哈兹卡",
-          "nameEn": "博日达尔 普罗哈兹卡",
-          "position": "LW",
-          "number": 21,
+          "id": "fifa-404885",
+          "name": "托马斯·苏克",
+          "nameEn": "托马斯·苏克",
+          "position": "MF",
+          "number": 22,
           "isStar": false,
-          "age": 21,
-          "height": 168,
-          "weight": 63,
-          "club": "萨格勒布迪纳摩",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "tomas-soucek",
@@ -1397,64 +1280,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "cze-lw-2",
-          "name": "塞亚德·诺瓦克",
-          "nameEn": "塞亚德 诺瓦克",
-          "position": "LW",
-          "number": 23,
-          "isStar": false,
-          "age": 32,
-          "height": 179,
-          "weight": 62,
-          "club": "布拉格斯拉维亚",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
-        },
-        {
-          "id": "cze-rw-1",
-          "name": "韦达德·杜布拉夫卡",
-          "nameEn": "韦达德 杜布拉夫卡",
-          "position": "RW",
+          "id": "fifa-523097",
+          "name": "Alexandr SOJKA",
+          "nameEn": "Alexandr SOJKA",
+          "position": "MF",
           "number": 24,
           "isStar": false,
-          "age": 22,
-          "height": 172,
-          "weight": 63,
-          "club": "比尔森胜利",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
-        },
-        {
-          "id": "cze-st-1",
-          "name": "马丁·布罗佐维奇",
-          "nameEn": "马丁 布罗佐维奇",
-          "position": "ST",
-          "number": 25,
-          "isStar": false,
-          "age": 27,
-          "height": 191,
-          "weight": 77,
-          "club": "布拉格斯巴达",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
-        },
-        {
-          "id": "cze-rw-2",
-          "name": "戈兰·布罗佐维奇",
-          "nameEn": "戈兰 布罗佐维奇",
-          "position": "RW",
-          "number": 26,
-          "isStar": false,
-          "age": 30,
-          "height": 170,
-          "weight": 70,
-          "club": "布拉格斯巴达",
-          "preferredFoot": "左脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
