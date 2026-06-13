@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-13T19:48:04.421Z",
+  "lastUpdated": "2026-06-13T21:23:29.385Z",
   "tournamentStats": {
-    "totalGoals": 12,
-    "avgGoalsPerMatch": 3,
-    "totalYellowCards": 15,
+    "totalGoals": 14,
+    "avgGoalsPerMatch": 2.8,
+    "totalYellowCards": 18,
     "totalRedCards": 3,
-    "totalAttendance": 239303
+    "totalAttendance": 307269
   },
   "groups": [
     {
@@ -97,27 +97,27 @@
         {
           "code": "QAT",
           "name": "卡塔尔",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         },
         {
           "code": "SUI",
           "name": "瑞士",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         }
       ]
