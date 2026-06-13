@@ -1,0 +1,14 @@
+{
+  "id": "77b54982-d212-45ce-9938-528ebce52357",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "C02",
+  "matchLabel": "海地 vs 苏格兰",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 4.46,
+  "clientTimestamp": "2026-06-13T09:47:16.870Z",
+  "serverTimestamp": "2026-06-13T09:47:17.896Z"
+}
