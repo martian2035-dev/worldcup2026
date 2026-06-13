@@ -1,0 +1,14 @@
+{
+  "id": "32549f9c-b64d-48d9-92c1-6ef6a35015e5",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "J02",
+  "matchLabel": "奥地利 vs 约旦",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.75,
+  "clientTimestamp": "2026-06-13T09:50:08.880Z",
+  "serverTimestamp": "2026-06-13T09:50:09.294Z"
+}
