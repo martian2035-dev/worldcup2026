@@ -1,0 +1,14 @@
+{
+  "id": "418ac0eb-0c9c-4964-9749-db3ac7e694a2",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "D02",
+  "matchLabel": "澳大利亚 vs 土耳其",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 4.13,
+  "clientTimestamp": "2026-06-13T09:48:27.489Z",
+  "serverTimestamp": "2026-06-13T09:48:28.226Z"
+}
