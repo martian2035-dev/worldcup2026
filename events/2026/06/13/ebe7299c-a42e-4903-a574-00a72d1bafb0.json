@@ -1,0 +1,14 @@
+{
+  "id": "ebe7299c-a42e-4903-a574-00a72d1bafb0",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "I02",
+  "matchLabel": "伊拉克 vs 挪威",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 2.84,
+  "clientTimestamp": "2026-06-13T09:49:52.694Z",
+  "serverTimestamp": "2026-06-13T09:49:53.117Z"
+}
