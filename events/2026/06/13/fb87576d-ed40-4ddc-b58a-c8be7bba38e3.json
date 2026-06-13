@@ -1,0 +1,14 @@
+{
+  "id": "fb87576d-ed40-4ddc-b58a-c8be7bba38e3",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "H01",
+  "matchLabel": "西班牙 vs 佛得角",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 3.06,
+  "clientTimestamp": "2026-06-13T09:48:51.894Z",
+  "serverTimestamp": "2026-06-13T09:48:52.019Z"
+}
