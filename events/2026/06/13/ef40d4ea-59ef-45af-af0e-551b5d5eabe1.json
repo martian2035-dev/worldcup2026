@@ -1,0 +1,14 @@
+{
+  "id": "ef40d4ea-59ef-45af-af0e-551b5d5eabe1",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "F01",
+  "matchLabel": "荷兰 vs 日本",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.89,
+  "clientTimestamp": "2026-06-13T09:48:38.274Z",
+  "serverTimestamp": "2026-06-13T09:48:38.400Z"
+}
