@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T17:40:11.264Z",
+  "lastUpdated": "2026-06-13T19:48:04.410Z",
   "matches": [
     {
       "id": "A01",
@@ -5129,10 +5129,10 @@
         "name": "San Francisco Bay Area Stadium",
         "city": "旧金山湾区"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "stats": null,
       "fifaMatchId": "400021447"
