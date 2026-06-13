@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-12T23:26:16.460Z",
+  "lastUpdated": "2026-06-13T04:42:50.255Z",
   "tournamentStats": {
-    "totalGoals": 7,
-    "avgGoalsPerMatch": 2.3,
-    "totalYellowCards": 9,
+    "totalGoals": 12,
+    "avgGoalsPerMatch": 3,
+    "totalYellowCards": 15,
     "totalRedCards": 3,
-    "totalAttendance": 168811
+    "totalAttendance": 239303
   },
   "groups": [
     {
@@ -183,34 +183,21 @@
       "name": "D",
       "teams": [
         {
-          "code": "AUS",
-          "name": "澳大利亚",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
-          "code": "PAR",
-          "name": "巴拉圭",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
           "code": "USA",
           "name": "美国",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 4,
+          "ga": 1,
+          "gd": 3,
+          "pts": 3,
+          "qualified": null
+        },
+        {
+          "code": "AUS",
+          "name": "澳大利亚",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -231,6 +218,19 @@
           "gf": 0,
           "ga": 0,
           "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "PAR",
+          "name": "巴拉圭",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 4,
+          "gd": -3,
           "pts": 0,
           "qualified": null
         }
