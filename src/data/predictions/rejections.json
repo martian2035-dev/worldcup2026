@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-13T09:29:45.032Z",
+  "updatedAt": "2026-06-13T10:41:48.527Z",
   "rejections": [
     {
       "eventId": "1ae5c428-8cd0-48d2-8438-b46ccaab1f79",
@@ -167,6 +167,20 @@
       "eventId": "1cdb012b-b026-4d1d-b550-1aeb97075fa7",
       "username": "w01",
       "matchId": "D02",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "ef40d4ea-59ef-45af-af0e-551b5d5eabe1",
+      "username": "w01",
+      "matchId": "F01",
+      "reason": "duplicate-match-bet",
+      "message": "每个账号每场比赛只能押一次"
+    },
+    {
+      "eventId": "4aec3ff5-1936-45db-9689-59f7405b97a5",
+      "username": "w01",
+      "matchId": "G01",
       "reason": "duplicate-match-bet",
       "message": "每个账号每场比赛只能押一次"
     }

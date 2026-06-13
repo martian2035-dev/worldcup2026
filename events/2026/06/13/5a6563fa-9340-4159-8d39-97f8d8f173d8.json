@@ -1,0 +1,14 @@
+{
+  "id": "5a6563fa-9340-4159-8d39-97f8d8f173d8",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "E01",
+  "matchLabel": "德国 vs 库拉索",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.8,
+  "clientTimestamp": "2026-06-13T09:48:33.506Z",
+  "serverTimestamp": "2026-06-13T09:48:33.958Z"
+}

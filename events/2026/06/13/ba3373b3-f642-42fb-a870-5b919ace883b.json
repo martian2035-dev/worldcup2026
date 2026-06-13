@@ -1,0 +1,14 @@
+{
+  "id": "ba3373b3-f642-42fb-a870-5b919ace883b",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "L02",
+  "matchLabel": "加纳 vs 巴拿马",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.6,
+  "clientTimestamp": "2026-06-13T09:50:43.335Z",
+  "serverTimestamp": "2026-06-13T09:50:43.701Z"
+}
