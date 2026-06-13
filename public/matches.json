@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T04:42:50.245Z",
+  "lastUpdated": "2026-06-13T09:29:41.738Z",
   "matches": [
     {
       "id": "A01",
@@ -1300,7 +1300,7 @@
         "home": {
           "possession": null,
           "shots": 15,
-          "shotsOnTarget": 2,
+          "shotsOnTarget": 7,
           "corners": 4,
           "fouls": 8,
           "yellowCards": 1,
@@ -1309,7 +1309,7 @@
         "away": {
           "possession": null,
           "shots": 7,
-          "shotsOnTarget": 1,
+          "shotsOnTarget": 3,
           "corners": 5,
           "fouls": 16,
           "yellowCards": 0,
@@ -2572,7 +2572,7 @@
         "home": {
           "possession": null,
           "shots": 13,
-          "shotsOnTarget": 1,
+          "shotsOnTarget": 3,
           "corners": 9,
           "fouls": 8,
           "yellowCards": 2,
@@ -3866,7 +3866,7 @@
         "home": {
           "possession": null,
           "shots": 16,
-          "shotsOnTarget": 3,
+          "shotsOnTarget": 6,
           "corners": 3,
           "fouls": 12,
           "yellowCards": 1,
