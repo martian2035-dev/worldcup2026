@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-14T17:54:19.498Z",
+  "updatedAt": "2026-06-14T19:50:02.024Z",
   "leaders": [
     {
       "username": "测试阿北",
@@ -186,9 +186,9 @@
     },
     {
       "username": "w01",
-      "beans": 8246,
+      "beans": 8426,
       "totalBets": 22,
-      "wonBets": 1,
+      "wonBets": 2,
       "createdAt": "2026-06-13T09:47:17.896Z",
       "bets": [
         {
@@ -235,8 +235,8 @@
           "betType": "home_win",
           "amount": 100,
           "odds": 1.8,
-          "status": "pending",
-          "payout": null,
+          "status": "won",
+          "payout": 180,
           "createdAt": "2026-06-13T09:48:33.958Z"
         },
         {

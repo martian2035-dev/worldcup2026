@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-14T17:38:34.800Z",
+  "lastUpdated": "2026-06-14T19:50:00.065Z",
   "tournamentStats": {
-    "totalGoals": 19,
-    "avgGoalsPerMatch": 2.4,
+    "totalGoals": 27,
+    "avgGoalsPerMatch": 3,
     "totalYellowCards": 25,
     "totalRedCards": 3,
-    "totalAttendance": 504575
+    "totalAttendance": 572596
   },
   "groups": [
     {
@@ -242,14 +242,14 @@
         {
           "code": "GER",
           "name": "德国",
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
+          "gf": 7,
+          "ga": 1,
+          "gd": 6,
+          "pts": 3,
           "qualified": null
         },
         {
@@ -281,13 +281,13 @@
         {
           "code": "CUW",
           "name": "库拉索",
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 7,
+          "gd": -6,
           "pts": 0,
           "qualified": null
         }
