@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-14T05:00:54.757Z",
+  "lastUpdated": "2026-06-14T09:51:26.658Z",
   "tournamentStats": {
-    "totalGoals": 17,
+    "totalGoals": 19,
     "avgGoalsPerMatch": 2.4,
-    "totalYellowCards": 24,
+    "totalYellowCards": 25,
     "totalRedCards": 3,
-    "totalAttendance": 452078
+    "totalAttendance": 504575
   },
   "groups": [
     {
@@ -198,26 +198,26 @@
         {
           "code": "AUS",
           "name": "澳大利亚",
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "gf": 0,
+          "gf": 2,
           "ga": 0,
-          "gd": 0,
-          "pts": 0,
+          "gd": 2,
+          "pts": 3,
           "qualified": null
         },
         {
           "code": "TUR",
           "name": "土耳其",
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "ga": 2,
+          "gd": -2,
           "pts": 0,
           "qualified": null
         },
