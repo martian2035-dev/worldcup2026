@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-14T21:23:03.534Z",
+  "lastUpdated": "2026-06-14T23:19:32.056Z",
   "tournamentStats": {
-    "totalGoals": 27,
-    "avgGoalsPerMatch": 3,
-    "totalYellowCards": 25,
+    "totalGoals": 31,
+    "avgGoalsPerMatch": 3.1,
+    "totalYellowCards": 28,
     "totalRedCards": 3,
-    "totalAttendance": 572596
+    "totalAttendance": 641881
   },
   "groups": [
     {
@@ -299,27 +299,27 @@
         {
           "code": "NED",
           "name": "荷兰",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 2,
+          "ga": 2,
           "gd": 0,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         },
         {
           "code": "JPN",
           "name": "日本",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 2,
+          "ga": 2,
           "gd": 0,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         },
         {
