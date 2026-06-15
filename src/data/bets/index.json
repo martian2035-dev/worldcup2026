@@ -87,8 +87,8 @@
           "betType": "home_win",
           "amount": 100,
           "odds": 3.06,
-          "status": "pending",
-          "payout": null,
+          "status": "lost",
+          "payout": 0,
           "createdAt": "2026-06-13T09:48:52.019Z"
         },
         {
@@ -378,5 +378,5 @@
       "bets": []
     }
   },
-  "lastUpdated": "2026-06-15T16:31:44.597Z"
+  "lastUpdated": "2026-06-15T18:45:06.000Z"
 }

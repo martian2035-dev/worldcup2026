@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-15T12:37:42.580Z",
+  "lastUpdated": "2026-06-15T18:45:02.820Z",
   "tournamentStats": {
     "totalGoals": 38,
-    "avgGoalsPerMatch": 3.2,
-    "totalYellowCards": 33,
+    "avgGoalsPerMatch": 2.9,
+    "totalYellowCards": 35,
     "totalRedCards": 3,
-    "totalAttendance": 761142
+    "totalAttendance": 828782
   },
   "groups": [
     {
@@ -413,14 +413,27 @@
         {
           "code": "CPV",
           "name": "佛得角",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
           "gf": 0,
           "ga": 0,
           "gd": 0,
-          "pts": 0,
+          "pts": 1,
+          "qualified": null
+        },
+        {
+          "code": "ESP",
+          "name": "西班牙",
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 1,
           "qualified": null
         },
         {
@@ -439,19 +452,6 @@
         {
           "code": "URU",
           "name": "乌拉圭",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
-          "code": "ESP",
-          "name": "西班牙",
           "played": 0,
           "won": 0,
           "drawn": 0,
