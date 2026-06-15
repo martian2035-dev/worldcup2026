@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-14T23:19:32.056Z",
+  "lastUpdated": "2026-06-15T05:21:06.166Z",
   "tournamentStats": {
-    "totalGoals": 31,
-    "avgGoalsPerMatch": 3.1,
-    "totalYellowCards": 28,
+    "totalGoals": 38,
+    "avgGoalsPerMatch": 3.2,
+    "totalYellowCards": 33,
     "totalRedCards": 3,
-    "totalAttendance": 641881
+    "totalAttendance": 761142
   },
   "groups": [
     {
@@ -253,28 +253,28 @@
           "qualified": null
         },
         {
-          "code": "ECU",
-          "name": "厄瓜多尔",
-          "played": 0,
-          "won": 0,
+          "code": "CIV",
+          "name": "科特迪瓦",
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "gf": 0,
+          "gf": 1,
           "ga": 0,
-          "gd": 0,
-          "pts": 0,
+          "gd": 1,
+          "pts": 3,
           "qualified": null
         },
         {
-          "code": "CIV",
-          "name": "科特迪瓦",
-          "played": 0,
+          "code": "ECU",
+          "name": "厄瓜多尔",
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "ga": 1,
+          "gd": -1,
           "pts": 0,
           "qualified": null
         },
@@ -296,6 +296,19 @@
     {
       "name": "F",
       "teams": [
+        {
+          "code": "SWE",
+          "name": "瑞典",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 5,
+          "ga": 1,
+          "gd": 4,
+          "pts": 3,
+          "qualified": null
+        },
         {
           "code": "NED",
           "name": "荷兰",
@@ -323,28 +336,15 @@
           "qualified": null
         },
         {
-          "code": "SWE",
-          "name": "瑞典",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
           "code": "TUN",
           "name": "突尼斯",
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 5,
+          "gd": -4,
           "pts": 0,
           "qualified": null
         }
