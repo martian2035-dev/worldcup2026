@@ -1,0 +1,14 @@
+{
+  "id": "1a915f14-18f8-48c0-84b9-0b50913068ab",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "D04",
+  "matchLabel": "土耳其 vs 美国",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.78,
+  "clientTimestamp": "2026-06-15T12:10:14.578Z",
+  "serverTimestamp": "2026-06-15T12:10:15.198Z"
+}

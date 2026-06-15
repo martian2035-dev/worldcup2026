@@ -1,0 +1,14 @@
+{
+  "id": "3ac4e8b8-6c57-4685-a0e3-87a621bd77d3",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "C04",
+  "matchLabel": "苏格兰 vs 巴西",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 1.79,
+  "clientTimestamp": "2026-06-15T12:10:19.196Z",
+  "serverTimestamp": "2026-06-15T12:10:19.476Z"
+}

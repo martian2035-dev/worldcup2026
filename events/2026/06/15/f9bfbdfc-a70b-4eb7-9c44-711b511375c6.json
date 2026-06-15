@@ -1,0 +1,14 @@
+{
+  "id": "f9bfbdfc-a70b-4eb7-9c44-711b511375c6",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "G03",
+  "matchLabel": "比利时 vs 伊朗",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.57,
+  "clientTimestamp": "2026-06-15T12:10:51.751Z",
+  "serverTimestamp": "2026-06-15T12:10:52.227Z"
+}
