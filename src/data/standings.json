@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-15T18:45:02.820Z",
+  "lastUpdated": "2026-06-15T22:24:49.324Z",
   "tournamentStats": {
-    "totalGoals": 38,
+    "totalGoals": 40,
     "avgGoalsPerMatch": 2.9,
-    "totalYellowCards": 35,
+    "totalYellowCards": 39,
     "totalRedCards": 3,
-    "totalAttendance": 828782
+    "totalAttendance": 895557
   },
   "groups": [
     {
@@ -356,27 +356,27 @@
         {
           "code": "EGY",
           "name": "埃及",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         },
         {
           "code": "BEL",
           "name": "比利时",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         },
         {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T20:06:22.398Z",
+  "updatedAt": "2026-06-15T22:24:55.474Z",
   "leaders": [
     {
       "username": "测试阿北",
@@ -283,8 +283,8 @@
           "betType": "away_win",
           "amount": 100,
           "odds": 1.55,
-          "status": "pending",
-          "payout": null,
+          "status": "lost",
+          "payout": 0,
           "createdAt": "2026-06-13T09:49:07.750Z"
         },
         {
