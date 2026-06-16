@@ -111,8 +111,8 @@
           "betType": "away_win",
           "amount": 100,
           "odds": 1.79,
-          "status": "pending",
-          "payout": null,
+          "status": "lost",
+          "payout": 0,
           "createdAt": "2026-06-13T09:49:40.291Z"
         },
         {
@@ -123,8 +123,8 @@
           "betType": "home_win",
           "amount": 100,
           "odds": 2.81,
-          "status": "pending",
-          "payout": null,
+          "status": "lost",
+          "payout": 0,
           "createdAt": "2026-06-13T09:49:44.718Z"
         },
         {
@@ -378,5 +378,5 @@
       "bets": []
     }
   },
-  "lastUpdated": "2026-06-16T00:15:55.692Z"
+  "lastUpdated": "2026-06-16T05:24:11.151Z"
 }
