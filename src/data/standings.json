@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-16T17:16:43.444Z",
+  "lastUpdated": "2026-06-16T21:15:03.574Z",
   "tournamentStats": {
-    "totalGoals": 46,
+    "totalGoals": 50,
     "avgGoalsPerMatch": 2.9,
     "totalYellowCards": 41,
     "totalRedCards": 3,
-    "totalAttendance": 1028429
+    "totalAttendance": 1108974
   },
   "groups": [
     {
@@ -470,32 +470,19 @@
         {
           "code": "FRA",
           "name": "法国",
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
+          "gf": 3,
+          "ga": 1,
+          "gd": 2,
+          "pts": 3,
           "qualified": null
         },
         {
           "code": "NOR",
           "name": "挪威",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
-          "code": "SEN",
-          "name": "塞内加尔",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -516,6 +503,19 @@
           "gf": 0,
           "ga": 0,
           "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "SEN",
+          "name": "塞内加尔",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 3,
+          "gd": -2,
           "pts": 0,
           "qualified": null
         }
