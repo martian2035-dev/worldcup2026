@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T21:15:03.556Z",
+  "lastUpdated": "2026-06-16T23:42:17.925Z",
   "matches": [
     {
       "id": "A01",
@@ -21666,10 +21666,10 @@
         "name": "Boston Stadium",
         "city": "波士顿"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 3
       },
       "stats": null,
       "fifaMatchId": "400021488"
