@@ -9021,8 +9021,8 @@
       "players": [
         {
           "id": "alireza-beiranvand",
-          "name": "阿里雷扎·贝兰万德",
-          "nameEn": "Alireza Beiranvand",
+          "name": "Alireza BEIRANVAND",
+          "nameEn": "Alireza BEIRANVAND",
           "position": "GK",
           "number": 1,
           "isStar": false,
@@ -9032,7 +9032,7 @@
           "club": "波斯波利斯",
           "preferredFoot": "右脚",
           "nationality": "伊朗",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "ramin-rezaeian",
@@ -9050,6 +9050,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-288961",
+          "name": "Ehsan HAJISAFI",
+          "nameEn": "Ehsan HAJISAFI",
+          "position": "DF",
+          "number": 3,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "ehsan-hajsafi",
           "name": "埃赫桑·哈吉萨菲",
           "nameEn": "Ehsan Hajsafi",
@@ -9063,6 +9072,15 @@
           "preferredFoot": "左脚",
           "nationality": "伊朗",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-346743",
+          "name": "Shoja KHALILZADEH",
+          "nameEn": "Shoja KHALILZADEH",
+          "position": "DF",
+          "number": 4,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "irn-gk-1",
@@ -9080,6 +9098,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-390537",
+          "name": "米拉德·穆罕默迪",
+          "nameEn": "米拉德·穆罕默迪",
+          "position": "DF",
+          "number": 5,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "hamed-taremi",
           "name": "哈梅德·埃斯蒂利",
           "nameEn": "Hossein Kanaani",
@@ -9093,6 +9120,15 @@
           "preferredFoot": "左脚",
           "nationality": "伊朗",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-371736",
+          "name": "赛义德·埃扎托拉希",
+          "nameEn": "赛义德·埃扎托拉希",
+          "position": "MF",
+          "number": 6,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "saeid-ezatolahi",
@@ -9125,6 +9161,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-448497",
+          "name": "穆罕默德·莫赫比",
+          "nameEn": "穆罕默德·莫赫比",
+          "position": "MF",
+          "number": 8,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "irn-gk-2",
           "name": "艾哈迈德·纳赛尔",
           "nameEn": "艾哈迈德 纳赛尔",
@@ -9141,9 +9186,9 @@
         },
         {
           "id": "mehdi-taremi",
-          "name": "迈赫迪·塔雷米",
-          "nameEn": "Mehdi Taremi",
-          "position": "ST",
+          "name": "Mehdi TAREMI",
+          "nameEn": "Mehdi TAREMI",
+          "position": "FW",
           "number": 9,
           "isStar": true,
           "age": 33,
@@ -9152,7 +9197,16 @@
           "club": "国际米兰",
           "preferredFoot": "右脚",
           "nationality": "伊朗",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-403236",
+          "name": "迈赫迪·加耶迪",
+          "nameEn": "迈赫迪·加耶迪",
+          "position": "FW",
+          "number": 10,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "mohammad-mohebi",
@@ -9168,6 +9222,15 @@
           "preferredFoot": "右脚",
           "nationality": "伊朗",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-416989",
+          "name": "阿里·阿里普尔",
+          "nameEn": "阿里·阿里普尔",
+          "position": "FW",
+          "number": 11,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "alireza-jahanbakhsh",
@@ -9200,109 +9263,49 @@
           "dataSource": "generated"
         },
         {
-          "id": "irn-cb-2",
-          "name": "萨拉赫·阿卜杜拉赫曼",
-          "nameEn": "萨拉赫 阿卜杜拉赫曼",
-          "position": "CB",
-          "number": 13,
-          "isStar": false,
-          "age": 31,
-          "height": 193,
-          "weight": 85,
-          "club": "霍芬海姆",
-          "preferredFoot": "左脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
-        },
-        {
-          "id": "irn-lb-1",
-          "name": "阿什拉夫·哈利法",
-          "nameEn": "阿什拉夫 哈利法",
-          "position": "LB",
+          "id": "fifa-411644",
+          "name": "萨曼·戈多斯",
+          "nameEn": "萨曼·戈多斯",
+          "position": "MF",
           "number": 14,
           "isStar": false,
-          "age": 28,
-          "height": 174,
-          "weight": 70,
-          "club": "波斯波利斯",
-          "preferredFoot": "右脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "irn-rb-1",
-          "name": "哈桑·拉希德",
-          "nameEn": "哈桑 拉希德",
-          "position": "RB",
-          "number": 15,
-          "isStar": false,
-          "age": 26,
-          "height": 177,
-          "weight": 72,
-          "club": "拖拉机",
-          "preferredFoot": "右脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
-        },
-        {
-          "id": "irn-cdm-1",
-          "name": "塔里克·曼苏尔",
-          "nameEn": "塔里克 曼苏尔",
-          "position": "CDM",
-          "number": 16,
-          "isStar": false,
-          "age": 23,
-          "height": 183,
-          "weight": 72,
-          "club": "西汉姆联",
-          "preferredFoot": "右脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
-        },
-        {
-          "id": "irn-cdm-2",
-          "name": "侯赛因·拉希德",
-          "nameEn": "侯赛因 拉希德",
-          "position": "CDM",
+          "id": "fifa-481181",
+          "name": "Arya YOUSEFI",
+          "nameEn": "Arya YOUSEFI",
+          "position": "DF",
           "number": 17,
           "isStar": false,
-          "age": 32,
-          "height": 187,
-          "weight": 75,
-          "club": "塞帕汉",
-          "preferredFoot": "右脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "irn-cm-1",
-          "name": "哈马德·伊萨",
-          "nameEn": "哈马德 伊萨",
-          "position": "CM",
+          "id": "fifa-405639",
+          "name": "阿米尔侯赛因·侯赛因扎德",
+          "nameEn": "阿米尔侯赛因·侯赛因扎德",
+          "position": "FW",
           "number": 18,
           "isStar": false,
-          "age": 28,
-          "height": 187,
-          "weight": 72,
-          "club": "拖拉机",
-          "preferredFoot": "右脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "irn-cm-2",
-          "name": "贾西姆·卡西姆",
-          "nameEn": "贾西姆 卡西姆",
-          "position": "CM",
+          "id": "fifa-489603",
+          "name": "Ali NEMATI",
+          "nameEn": "Ali NEMATI",
+          "position": "DF",
           "number": 19,
           "isStar": false,
-          "age": 33,
-          "height": 176,
-          "weight": 71,
-          "club": "塞帕汉",
-          "preferredFoot": "左脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-481180",
+          "name": "Shahriyar MOGHANLOO",
+          "nameEn": "Shahriyar MOGHANLOO",
+          "position": "FW",
+          "number": 20,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "sardar-azmoun",
@@ -9320,94 +9323,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "irn-cm-3",
-          "name": "阿里·马哈茂迪",
-          "nameEn": "阿里 马哈茂迪",
-          "position": "CM",
-          "number": 21,
-          "isStar": false,
-          "age": 29,
-          "height": 179,
-          "weight": 70,
-          "club": "波斯波利斯",
-          "preferredFoot": "左脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
-        },
-        {
-          "id": "irn-cam-1",
-          "name": "比拉尔·拉希德",
-          "nameEn": "比拉尔 拉希德",
-          "position": "CAM",
-          "number": 22,
-          "isStar": false,
-          "age": 23,
-          "height": 171,
-          "weight": 69,
-          "club": "拖拉机",
-          "preferredFoot": "右脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
-        },
-        {
-          "id": "irn-lw-1",
-          "name": "阿卜杜拉·贾巴尔",
-          "nameEn": "阿卜杜拉 贾巴尔",
-          "position": "LW",
+          "id": "fifa-384797",
+          "name": "拉明·雷扎伊安",
+          "nameEn": "拉明·雷扎伊安",
+          "position": "DF",
           "number": 23,
           "isStar": false,
-          "age": 19,
-          "height": 175,
-          "weight": 70,
-          "club": "安德莱赫特",
-          "preferredFoot": "右脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
-        },
-        {
-          "id": "irn-rw-1",
-          "name": "巴萨姆·沙班",
-          "nameEn": "巴萨姆 沙班",
-          "position": "RW",
-          "number": 24,
-          "isStar": false,
-          "age": 32,
-          "height": 180,
-          "weight": 63,
-          "club": "皇家社会",
-          "preferredFoot": "右脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
-        },
-        {
-          "id": "irn-st-1",
-          "name": "艾哈迈德·艾哈迈迪",
-          "nameEn": "艾哈迈德 艾哈迈迪",
-          "position": "ST",
-          "number": 25,
-          "isStar": false,
-          "age": 29,
-          "height": 183,
-          "weight": 72,
-          "club": "西汉姆联",
-          "preferredFoot": "左脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
-        },
-        {
-          "id": "irn-rw-2",
-          "name": "法赫德·扎卡里亚",
-          "nameEn": "法赫德 扎卡里亚",
-          "position": "RW",
-          "number": 26,
-          "isStar": false,
-          "age": 31,
-          "height": 174,
-          "weight": 75,
-          "club": "斯图加特",
-          "preferredFoot": "右脚",
-          "nationality": "伊朗",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
@@ -9431,6 +9353,15 @@
       },
       "players": [
         {
+          "id": "fifa-368535",
+          "name": "Max CROCOMBE",
+          "nameEn": "Max CROCOMBE",
+          "position": "GK",
+          "number": 1,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "liam-steele",
           "name": "利亚姆·斯蒂尔",
           "nameEn": "Liam Steele",
@@ -9444,6 +9375,15 @@
           "preferredFoot": "右脚",
           "nationality": "新西兰",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-331463",
+          "name": "蒂姆·佩恩",
+          "nameEn": "蒂姆·佩恩",
+          "position": "DF",
+          "number": 2,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "nzl-gk-1",
@@ -9462,10 +9402,10 @@
         },
         {
           "id": "tyler-bindon",
-          "name": "泰勒·宾登",
-          "nameEn": "Tyler Bindon",
-          "position": "CB",
-          "number": 3,
+          "name": "Tyler BINDON",
+          "nameEn": "Tyler BINDON",
+          "position": "DF",
+          "number": 4,
           "isStar": false,
           "age": 25,
           "height": 180,
@@ -9473,7 +9413,7 @@
           "club": "奥克兰FC",
           "preferredFoot": "右脚",
           "nationality": "新西兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "nzl-gk-2",
@@ -9491,6 +9431,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-261367",
+          "name": "迈克尔·鲍克斯",
+          "nameEn": "迈克尔·鲍克斯",
+          "position": "DF",
+          "number": 5,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "michael-boxall",
           "name": "迈克尔·博克索尔",
           "nameEn": "Michael Boxall",
@@ -9506,19 +9455,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "marko-stamenic",
-          "name": "马尔科·斯塔梅尼奇",
-          "nameEn": "Marko Stamenić",
-          "position": "CM",
+          "id": "fifa-390181",
+          "name": "乔·贝尔",
+          "nameEn": "乔·贝尔",
+          "position": "MF",
           "number": 6,
           "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "基督城联",
-          "preferredFoot": "右脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "callum-mccowatt",
@@ -9536,6 +9479,21 @@
           "dataSource": "generated"
         },
         {
+          "id": "marko-stamenic",
+          "name": "Marko STAMENIC",
+          "nameEn": "Marko STAMENIC",
+          "position": "MF",
+          "number": 8,
+          "isStar": false,
+          "age": 25,
+          "height": 180,
+          "weight": 75,
+          "club": "基督城联",
+          "preferredFoot": "右脚",
+          "nationality": "新西兰",
+          "dataSource": "fifa"
+        },
+        {
           "id": "matthew-garbett",
           "name": "马修·加伯特",
           "nameEn": "Matthew Garbett",
@@ -9549,6 +9507,15 @@
           "preferredFoot": "右脚",
           "nationality": "新西兰",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-274078",
+          "name": "克里斯·伍德",
+          "nameEn": "克里斯·伍德",
+          "position": "FW",
+          "number": 9,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "chris-wood",
@@ -9567,9 +9534,9 @@
         },
         {
           "id": "sydney-singh",
-          "name": "悉尼·辛格",
-          "nameEn": "Sarpreet Singh",
-          "position": "CAM",
+          "name": "Sarpreet SINGH",
+          "nameEn": "Sarpreet SINGH",
+          "position": "MF",
           "number": 10,
           "isStar": true,
           "age": 25,
@@ -9578,7 +9545,16 @@
           "club": "摩纳哥",
           "preferredFoot": "右脚",
           "nationality": "新西兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-405454",
+          "name": "贾斯特",
+          "nameEn": "贾斯特",
+          "position": "MF",
+          "number": 11,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "elijah-just",
@@ -9611,49 +9587,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "nzl-lb-1",
-          "name": "亚历山大·霍尔",
-          "nameEn": "亚历山大 霍尔",
-          "position": "LB",
+          "id": "fifa-405469",
+          "name": "利贝拉托·卡卡斯",
+          "nameEn": "利贝拉托·卡卡斯",
+          "position": "DF",
           "number": 13,
           "isStar": false,
-          "age": 28,
-          "height": 182,
-          "weight": 76,
-          "club": "奥林匹亚科斯",
-          "preferredFoot": "右脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "nzl-lb-2",
-          "name": "亨利·斯科特",
-          "nameEn": "亨利 斯科特",
-          "position": "LB",
-          "number": 14,
+          "id": "fifa-463580",
+          "name": "Finn SURMAN",
+          "nameEn": "Finn SURMAN",
+          "position": "DF",
+          "number": 16,
           "isStar": false,
-          "age": 20,
-          "height": 180,
-          "weight": 77,
-          "club": "奥林匹亚科斯",
-          "preferredFoot": "左脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "nzl-rb-1",
-          "name": "利亚姆·摩尔",
-          "nameEn": "利亚姆 摩尔",
-          "position": "RB",
-          "number": 15,
-          "isStar": false,
-          "age": 31,
-          "height": 181,
-          "weight": 78,
-          "club": "基督城联",
-          "preferredFoot": "左脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "tim-payne",
@@ -9671,154 +9620,49 @@
           "dataSource": "generated"
         },
         {
-          "id": "nzl-cdm-1",
-          "name": "欧文·怀特",
-          "nameEn": "欧文 怀特",
-          "position": "CDM",
-          "number": 17,
-          "isStar": false,
-          "age": 30,
-          "height": 177,
-          "weight": 73,
-          "club": "惠灵顿凤凰",
-          "preferredFoot": "右脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "nzl-cdm-2",
-          "name": "泰勒·克拉克",
-          "nameEn": "泰勒 克拉克",
-          "position": "CDM",
-          "number": 18,
-          "isStar": false,
-          "age": 28,
-          "height": 192,
-          "weight": 78,
-          "club": "惠灵顿凤凰",
-          "preferredFoot": "右脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "nzl-cdm-3",
-          "name": "奥利弗·罗斯",
-          "nameEn": "奥利弗 罗斯",
-          "position": "CDM",
+          "id": "fifa-423575",
+          "name": "Ben OLD",
+          "nameEn": "Ben OLD",
+          "position": "MF",
           "number": 19,
           "isStar": false,
-          "age": 25,
-          "height": 175,
-          "weight": 79,
-          "club": "基督城联",
-          "preferredFoot": "左脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "nzl-cm-1",
-          "name": "詹姆斯·霍尔",
-          "nameEn": "詹姆斯 霍尔",
-          "position": "CM",
+          "id": "fifa-390196",
+          "name": "卡勒姆·麦考瓦特",
+          "nameEn": "卡勒姆·麦考瓦特",
+          "position": "MF",
           "number": 20,
           "isStar": false,
-          "age": 30,
-          "height": 177,
-          "weight": 75,
-          "club": "基督城联",
-          "preferredFoot": "左脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "nzl-cam-1",
-          "name": "哈利·伍德",
-          "nameEn": "哈利 伍德",
-          "position": "CAM",
+          "id": "fifa-416652",
+          "name": "杰西·兰德尔",
+          "nameEn": "杰西·兰德尔",
+          "position": "FW",
           "number": 21,
           "isStar": false,
-          "age": 29,
-          "height": 180,
-          "weight": 72,
-          "club": "基督城联",
-          "preferredFoot": "右脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "nzl-lw-1",
-          "name": "丹尼尔·格林",
-          "nameEn": "丹尼尔 格林",
-          "position": "LW",
-          "number": 22,
-          "isStar": false,
-          "age": 27,
-          "height": 176,
-          "weight": 64,
-          "club": "惠灵顿凤凰",
-          "preferredFoot": "右脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "nzl-rw-1",
-          "name": "卡勒姆·希尔",
-          "nameEn": "卡勒姆 希尔",
-          "position": "RW",
+          "id": "fifa-336641",
+          "name": "瑞恩·托马斯",
+          "nameEn": "瑞恩·托马斯",
+          "position": "MF",
           "number": 23,
           "isStar": false,
-          "age": 25,
-          "height": 177,
-          "weight": 63,
-          "club": "奥克兰FC",
-          "preferredFoot": "左脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "nzl-st-1",
-          "name": "泰勒·希尔",
-          "nameEn": "泰勒 希尔",
-          "position": "ST",
+          "id": "fifa-419567",
+          "name": "Callan ELLIOT",
+          "nameEn": "Callan ELLIOT",
+          "position": "DF",
           "number": 24,
           "isStar": false,
-          "age": 19,
-          "height": 182,
-          "weight": 75,
-          "club": "惠灵顿凤凰",
-          "preferredFoot": "右脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "nzl-st-2",
-          "name": "亚当·帕克",
-          "nameEn": "亚当 帕克",
-          "position": "ST",
-          "number": 25,
-          "isStar": false,
-          "age": 20,
-          "height": 173,
-          "weight": 71,
-          "club": "奥克兰FC",
-          "preferredFoot": "左脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "nzl-rw-2",
-          "name": "内森·米切尔",
-          "nameEn": "内森 米切尔",
-          "position": "RW",
-          "number": 26,
-          "isStar": false,
-          "age": 22,
-          "height": 172,
-          "weight": 65,
-          "club": "奥克兰FC",
-          "preferredFoot": "右脚",
-          "nationality": "新西兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
