@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-16T23:42:17.943Z",
+  "lastUpdated": "2026-06-17T05:04:05.575Z",
   "tournamentStats": {
-    "totalGoals": 50,
-    "avgGoalsPerMatch": 2.9,
-    "totalYellowCards": 41,
+    "totalGoals": 58,
+    "avgGoalsPerMatch": 3.1,
+    "totalYellowCards": 42,
     "totalRedCards": 3,
-    "totalAttendance": 1108974
+    "totalAttendance": 1241125
   },
   "groups": [
     {
@@ -468,6 +468,19 @@
       "name": "I",
       "teams": [
         {
+          "code": "NOR",
+          "name": "挪威",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 4,
+          "ga": 1,
+          "gd": 3,
+          "pts": 3,
+          "qualified": null
+        },
+        {
           "code": "FRA",
           "name": "法国",
           "played": 1,
@@ -478,32 +491,6 @@
           "ga": 1,
           "gd": 2,
           "pts": 3,
-          "qualified": null
-        },
-        {
-          "code": "NOR",
-          "name": "挪威",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
-          "code": "IRQ",
-          "name": "伊拉克",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
           "qualified": null
         },
         {
@@ -518,6 +505,19 @@
           "gd": -2,
           "pts": 0,
           "qualified": null
+        },
+        {
+          "code": "IRQ",
+          "name": "伊拉克",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 4,
+          "gd": -3,
+          "pts": 0,
+          "qualified": null
         }
       ]
     },
@@ -525,29 +525,16 @@
       "name": "J",
       "teams": [
         {
-          "code": "ALG",
-          "name": "阿尔及利亚",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
           "code": "ARG",
           "name": "阿根廷",
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "gf": 0,
+          "gf": 3,
           "ga": 0,
-          "gd": 0,
-          "pts": 0,
+          "gd": 3,
+          "pts": 3,
           "qualified": null
         },
         {
@@ -573,6 +560,19 @@
           "gf": 0,
           "ga": 0,
           "gd": 0,
+          "pts": 0,
+          "qualified": null
+        },
+        {
+          "code": "ALG",
+          "name": "阿尔及利亚",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 0,
+          "ga": 3,
+          "gd": -3,
           "pts": 0,
           "qualified": null
         }
