@@ -479,6 +479,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-486161",
+          "name": "Relebohile MOFOKENG",
+          "nameEn": "Relebohile MOFOKENG",
+          "position": "FW",
+          "number": 10,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "percy-tau",
           "name": "珀西·陶",
           "nameEn": "Percy Tau",
@@ -518,19 +527,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "rsa-lb-1",
-          "name": "吉布里尔·塞梅多",
-          "nameEn": "吉布里尔 塞梅多",
-          "position": "LB",
+          "id": "fifa-463234",
+          "name": "Thapelo MASEKO",
+          "nameEn": "Thapelo MASEKO",
+          "position": "FW",
           "number": 12,
           "isStar": false,
-          "age": 30,
-          "height": 177,
-          "weight": 67,
-          "club": "安德莱赫特",
-          "preferredFoot": "左脚",
-          "nationality": "南非",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-390475",
@@ -551,21 +554,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "rsa-rb-1",
-          "name": "埃里克·塔瓦雷斯",
-          "nameEn": "埃里克 塔瓦雷斯",
-          "position": "RB",
-          "number": 14,
-          "isStar": false,
-          "age": 27,
-          "height": 183,
-          "weight": 76,
-          "club": "开普敦城",
-          "preferredFoot": "左脚",
-          "nationality": "南非",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-481242",
           "name": "Iqraam RAYNERS",
           "nameEn": "Iqraam RAYNERS",
@@ -573,21 +561,6 @@
           "number": 15,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "rsa-cdm-1",
-          "name": "塔法兹瓦·莫科纳",
-          "nameEn": "塔法兹瓦 莫科纳",
-          "position": "CDM",
-          "number": 15,
-          "isStar": false,
-          "age": 30,
-          "height": 191,
-          "weight": 79,
-          "club": "伯恩利",
-          "preferredFoot": "右脚",
-          "nationality": "南非",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-430917",
@@ -631,6 +604,15 @@
           "nameEn": "Jayden ADAMS",
           "position": "MF",
           "number": 23,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-506038",
+          "name": "Kamogelo SEBELEBELE",
+          "nameEn": "Kamogelo SEBELEBELE",
+          "position": "FW",
+          "number": 25,
           "isStar": false,
           "dataSource": "fifa"
         }
@@ -986,6 +968,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-433755",
+          "name": "大卫·齐马",
+          "nameEn": "大卫·齐马",
+          "position": "DF",
+          "number": 2,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "cze-gk-1",
           "name": "米拉莱姆·梅杜尼亚宁",
           "nameEn": "米拉莱姆 梅杜尼亚宁",
@@ -999,6 +990,15 @@
           "preferredFoot": "右脚",
           "nationality": "捷克",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-441167",
+          "name": "托马斯·霍尔斯",
+          "nameEn": "托马斯·霍尔斯",
+          "position": "DF",
+          "number": 3,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "ladislav-krejci",
@@ -1064,21 +1064,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "cze-cb-1",
-          "name": "沃伊捷赫·波科尔尼",
-          "nameEn": "沃伊捷赫 波科尔尼",
-          "position": "CB",
-          "number": 6,
-          "isStar": false,
-          "age": 29,
-          "height": 187,
-          "weight": 87,
-          "club": "布拉格斯拉维亚",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-441170",
           "name": "拉迪斯拉夫·克雷杰奇",
           "nameEn": "拉迪斯拉夫·克雷杰奇",
@@ -1088,19 +1073,13 @@
           "dataSource": "fifa"
         },
         {
-          "id": "cze-cb-2",
-          "name": "博日达尔·西科拉",
-          "nameEn": "博日达尔 西科拉",
-          "position": "CB",
+          "id": "fifa-358003",
+          "name": "弗拉基米尔·达里达",
+          "nameEn": "弗拉基米尔·达里达",
+          "position": "MF",
           "number": 8,
           "isStar": false,
-          "age": 25,
-          "height": 193,
-          "weight": 81,
-          "club": "布拉格斯巴达",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-433754",
@@ -1151,34 +1130,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "cze-lb-1",
-          "name": "博日达尔·贝兰",
-          "nameEn": "博日达尔 贝兰",
-          "position": "LB",
-          "number": 11,
-          "isStar": false,
-          "age": 27,
-          "height": 182,
-          "weight": 74,
-          "club": "布拉格斯巴达",
-          "preferredFoot": "左脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
-        },
-        {
-          "id": "cze-lb-2",
-          "name": "帕维尔·普尔利奇",
-          "nameEn": "帕维尔 普尔利奇",
-          "position": "LB",
+          "id": "fifa-486081",
+          "name": "Lukas CERV",
+          "nameEn": "Lukas CERV",
+          "position": "MF",
           "number": 12,
           "isStar": false,
-          "age": 20,
-          "height": 177,
-          "weight": 78,
-          "club": "布拉格斯巴达",
-          "preferredFoot": "右脚",
-          "nationality": "捷克",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-484003",

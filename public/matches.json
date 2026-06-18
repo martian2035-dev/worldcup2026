@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T18:32:26.840Z",
+  "lastUpdated": "2026-06-18T22:22:21.188Z",
   "matches": [
     {
       "id": "A01",
@@ -29060,7 +29060,7 @@
           "redCard": false,
           "rating": null,
           "foulsCommitted": 0,
-          "offsides": 1
+          "offsides": 0
         },
         {
           "playerId": "fifa-484011",
@@ -29090,7 +29090,7 @@
           "redCard": false,
           "rating": null,
           "foulsCommitted": 1,
-          "offsides": 0
+          "offsides": 1
         },
         {
           "playerId": "pavel-sulc",
