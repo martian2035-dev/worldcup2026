@@ -15033,8 +15033,8 @@
       "players": [
         {
           "id": "utkir-yusupov",
-          "name": "乌特基尔·尤苏波夫",
-          "nameEn": "Utkir Yusupov",
+          "name": "Utkir YUSUPOV",
+          "nameEn": "Utkir YUSUPOV",
           "position": "GK",
           "number": 1,
           "isStar": false,
@@ -15044,7 +15044,16 @@
           "club": "纳萨夫",
           "preferredFoot": "右脚",
           "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-464924",
+          "name": "Abdukodir KHUSANOV",
+          "nameEn": "Abdukodir KHUSANOV",
+          "position": "DF",
+          "number": 2,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "khojiakbar-alijonov",
@@ -15062,19 +15071,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "rustam-ashurmatov",
-          "name": "鲁斯塔姆·阿舒尔马托夫",
-          "nameEn": "Rustam Ashurmatov",
-          "position": "CB",
-          "number": 3,
+          "id": "fifa-385139",
+          "name": "法鲁克·萨伊菲耶夫",
+          "nameEn": "法鲁克·萨伊菲耶夫",
+          "position": "DF",
+          "number": 4,
           "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "本尤德科",
-          "preferredFoot": "右脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "uzb-gk-1",
@@ -15092,6 +15095,21 @@
           "dataSource": "generated"
         },
         {
+          "id": "rustam-ashurmatov",
+          "name": "Rustam ASHURMATOV",
+          "nameEn": "Rustam ASHURMATOV",
+          "position": "DF",
+          "number": 5,
+          "isStar": false,
+          "age": 25,
+          "height": 180,
+          "weight": 75,
+          "club": "本尤德科",
+          "preferredFoot": "右脚",
+          "nationality": "乌兹别克斯坦",
+          "dataSource": "fifa"
+        },
+        {
           "id": "uzb-gk-2",
           "name": "阿克马尔·库尔班诺夫",
           "nameEn": "阿克马尔 库尔班诺夫",
@@ -15107,6 +15125,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-479106",
+          "name": "Akmal MOZGOVOY",
+          "nameEn": "Akmal MOZGOVOY",
+          "position": "MF",
+          "number": 6,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "odil-hamrobekov",
           "name": "奥迪尔·哈姆罗别科夫",
           "nameEn": "Odil Hamrobekov",
@@ -15120,6 +15147,15 @@
           "preferredFoot": "右脚",
           "nationality": "乌兹别克斯坦",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-371348",
+          "name": "奥塔别克·舒库罗夫",
+          "nameEn": "奥塔别克·舒库罗夫",
+          "position": "MF",
+          "number": 7,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "aziz-turgunbaev",
@@ -15182,19 +15218,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "abbosbek-fayzullaev",
-          "name": "阿博斯别克·法伊祖拉耶夫",
-          "nameEn": "Abbosbek Fayzullaev",
-          "position": "LW",
+          "id": "fifa-479080",
+          "name": "Oston URUNOV",
+          "nameEn": "Oston URUNOV",
+          "position": "MF",
           "number": 11,
-          "isStar": true,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "曼城",
-          "preferredFoot": "左脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "uzb-cb-2",
@@ -15210,6 +15240,15 @@
           "preferredFoot": "左脚",
           "nationality": "乌兹别克斯坦",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-479075",
+          "name": "Sherzod NASRULLAEV",
+          "nameEn": "Sherzod NASRULLAEV",
+          "position": "DF",
+          "number": 13,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "uzb-lb-1",
@@ -15228,9 +15267,9 @@
         },
         {
           "id": "eldor-shomurodov",
-          "name": "埃尔多尔·绍穆罗多夫",
-          "nameEn": "Eldor Shomurodov",
-          "position": "ST",
+          "name": "Eldor SHOMURODOV",
+          "nameEn": "Eldor SHOMURODOV",
+          "position": "FW",
           "number": 14,
           "isStar": true,
           "age": 25,
@@ -15239,187 +15278,76 @@
           "club": "本菲卡",
           "preferredFoot": "右脚",
           "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "uzb-lb-2",
-          "name": "奥塔别克·法伊祖拉耶夫",
-          "nameEn": "奥塔别克 法伊祖拉耶夫",
-          "position": "LB",
-          "number": 15,
-          "isStar": false,
-          "age": 26,
-          "height": 178,
-          "weight": 72,
-          "club": "本尤德科",
-          "preferredFoot": "左脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
-        },
-        {
-          "id": "uzb-rb-1",
-          "name": "阿克马尔·苏莱曼诺夫",
-          "nameEn": "阿克马尔 苏莱曼诺夫",
-          "position": "RB",
-          "number": 16,
-          "isStar": false,
-          "age": 20,
-          "height": 178,
-          "weight": 66,
-          "club": "本尤德科",
-          "preferredFoot": "右脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
-        },
-        {
-          "id": "uzb-cdm-1",
-          "name": "胡斯尼丁·阿赫梅多夫",
-          "nameEn": "胡斯尼丁 阿赫梅多夫",
-          "position": "CDM",
+          "id": "fifa-371393",
+          "name": "多斯顿别克·哈姆达莫夫",
+          "nameEn": "多斯顿别克·哈姆达莫夫",
+          "position": "MF",
           "number": 17,
           "isStar": false,
-          "age": 33,
-          "height": 185,
-          "weight": 85,
-          "club": "棉农",
-          "preferredFoot": "右脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "uzb-cdm-2",
-          "name": "扎法尔·图尔苏诺夫",
-          "nameEn": "扎法尔 图尔苏诺夫",
-          "position": "CDM",
+          "id": "fifa-479042",
+          "name": "Abdulla ABDULLAEV",
+          "nameEn": "Abdulla ABDULLAEV",
+          "position": "DF",
           "number": 18,
           "isStar": false,
-          "age": 22,
-          "height": 186,
-          "weight": 81,
-          "club": "本尤德科",
-          "preferredFoot": "右脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "uzb-cm-1",
-          "name": "巴赫季约尔·拉希莫夫",
-          "nameEn": "巴赫季约尔 拉希莫夫",
-          "position": "CM",
-          "number": 19,
-          "isStar": false,
-          "age": 31,
-          "height": 178,
-          "weight": 78,
-          "club": "本尤德科",
-          "preferredFoot": "右脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
-        },
-        {
-          "id": "uzb-cm-2",
-          "name": "乌卢格别克·马马特库洛夫",
-          "nameEn": "乌卢格别克 马马特库洛夫",
-          "position": "CM",
+          "id": "fifa-481220",
+          "name": "Azizbek AMONOV",
+          "nameEn": "Azizbek AMONOV",
+          "position": "FW",
           "number": 20,
           "isStar": false,
-          "age": 29,
-          "height": 181,
-          "weight": 69,
-          "club": "本菲卡",
-          "preferredFoot": "右脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "uzb-cm-3",
-          "name": "伊克博尔·马马特库洛夫",
-          "nameEn": "伊克博尔 马马特库洛夫",
-          "position": "CM",
+          "id": "fifa-368546",
+          "name": "伊戈尔·谢尔盖夫",
+          "nameEn": "伊戈尔·谢尔盖夫",
+          "position": "FW",
           "number": 21,
           "isStar": false,
-          "age": 31,
-          "height": 185,
-          "weight": 69,
-          "club": "棉农",
-          "preferredFoot": "右脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "uzb-cam-1",
-          "name": "巴赫季约尔·哈萨诺夫",
-          "nameEn": "巴赫季约尔 哈萨诺夫",
-          "position": "CAM",
+          "id": "abbosbek-fayzullaev",
+          "name": "Abbosbek FAYZULLAEV",
+          "nameEn": "Abbosbek FAYZULLAEV",
+          "position": "MF",
           "number": 22,
-          "isStar": false,
-          "age": 20,
-          "height": 178,
-          "weight": 69,
-          "club": "费内巴切",
-          "preferredFoot": "右脚",
+          "isStar": true,
+          "age": 25,
+          "height": 180,
+          "weight": 75,
+          "club": "曼城",
+          "preferredFoot": "左脚",
           "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "uzb-lw-1",
-          "name": "奥塔别克·阿赫梅多夫",
-          "nameEn": "奥塔别克 阿赫梅多夫",
-          "position": "LW",
-          "number": 23,
-          "isStar": false,
-          "age": 20,
-          "height": 170,
-          "weight": 65,
-          "club": "纳萨夫",
-          "preferredFoot": "右脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
-        },
-        {
-          "id": "uzb-rw-1",
-          "name": "埃尔多尔·法伊祖拉耶夫",
-          "nameEn": "埃尔多尔 法伊祖拉耶夫",
-          "position": "RW",
+          "id": "fifa-475260",
+          "name": "Behruzjon KARIMOV",
+          "nameEn": "Behruzjon KARIMOV",
+          "position": "DF",
           "number": 24,
           "isStar": false,
-          "age": 30,
-          "height": 174,
-          "weight": 71,
-          "club": "伯恩茅斯",
-          "preferredFoot": "右脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "uzb-st-1",
-          "name": "阿齐兹别克·卡里莫夫",
-          "nameEn": "阿齐兹别克 卡里莫夫",
-          "position": "ST",
-          "number": 25,
-          "isStar": false,
-          "age": 35,
-          "height": 173,
-          "weight": 90,
-          "club": "棉农",
-          "preferredFoot": "左脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
-        },
-        {
-          "id": "uzb-rw-2",
-          "name": "舒赫拉特·米尔扎耶夫",
-          "nameEn": "舒赫拉特 米尔扎耶夫",
-          "position": "RW",
+          "id": "fifa-464906",
+          "name": "Jakhongir UROZOV",
+          "nameEn": "Jakhongir UROZOV",
+          "position": "DF",
           "number": 26,
           "isStar": false,
-          "age": 32,
-          "height": 176,
-          "weight": 72,
-          "club": "水晶宫",
-          "preferredFoot": "左脚",
-          "nationality": "乌兹别克斯坦",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
@@ -15458,6 +15386,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-431200",
+          "name": "丹尼尔·穆诺兹",
+          "nameEn": "丹尼尔·穆诺兹",
+          "position": "DF",
+          "number": 2,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "col-gk-1",
           "name": "安东尼奥·冈萨雷斯",
           "nameEn": "安东尼奥 冈萨雷斯",
@@ -15471,6 +15408,15 @@
           "preferredFoot": "右脚",
           "nationality": "哥伦比亚",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-441622",
+          "name": "乔恩·卢库米",
+          "nameEn": "乔恩·卢库米",
+          "position": "DF",
+          "number": 3,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "carlos-cuesta",
@@ -15503,19 +15449,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "col-cb-1",
-          "name": "安德烈斯·罗德里格斯",
-          "nameEn": "安德烈斯 罗德里格斯",
-          "position": "CB",
+          "id": "fifa-470759",
+          "name": "Kevin CASTANO",
+          "nameEn": "Kevin CASTANO",
+          "position": "MF",
           "number": 5,
           "isStar": false,
-          "age": 31,
-          "height": 192,
-          "weight": 80,
-          "club": "卡利美洲",
-          "preferredFoot": "右脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-473050",
+          "name": "Richard RIOS",
+          "nameEn": "Richard RIOS",
+          "position": "MF",
+          "number": 6,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "mateus-uribe",
@@ -15531,6 +15480,15 @@
           "preferredFoot": "左脚",
           "nationality": "哥伦比亚",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-428886",
+          "name": "路易斯·迪亚兹",
+          "nameEn": "路易斯·迪亚兹",
+          "position": "FW",
+          "number": 7,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "luis-diaz",
@@ -15578,6 +15536,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-269058",
+          "name": "詹姆斯·罗德里格斯",
+          "nameEn": "詹姆斯·罗德里格斯",
+          "position": "MF",
+          "number": 10,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "james-rodriguez",
           "name": "哈梅斯·罗德里格斯",
           "nameEn": "James Rodríguez",
@@ -15594,9 +15561,9 @@
         },
         {
           "id": "john-ariza",
-          "name": "约翰·阿里亚斯",
-          "nameEn": "Jhon Arias",
-          "position": "RW",
+          "name": "Jhon ARIAS",
+          "nameEn": "Jhon ARIAS",
+          "position": "MF",
           "number": 11,
           "isStar": false,
           "age": 25,
@@ -15605,73 +15572,31 @@
           "club": "巴兰基亚青年",
           "preferredFoot": "右脚",
           "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "col-lb-1",
-          "name": "胡里奥·伊巴涅斯",
-          "nameEn": "胡里奥 伊巴涅斯",
-          "position": "LB",
+          "id": "fifa-360642",
+          "name": "卡米洛·瓦加斯",
+          "nameEn": "卡米洛·瓦加斯",
+          "position": "GK",
           "number": 12,
           "isStar": false,
-          "age": 27,
-          "height": 178,
-          "weight": 68,
-          "club": "麦德林国民竞技",
-          "preferredFoot": "左脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "col-lb-2",
-          "name": "大卫·罗哈斯",
-          "nameEn": "大卫 罗哈斯",
-          "position": "LB",
-          "number": 13,
-          "isStar": false,
-          "age": 28,
-          "height": 179,
-          "weight": 75,
-          "club": "卡利美洲",
-          "preferredFoot": "左脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
-        },
-        {
-          "id": "col-rb-1",
-          "name": "巴勃罗·罗德里格斯",
-          "nameEn": "巴勃罗 罗德里格斯",
-          "position": "RB",
+          "id": "fifa-463902",
+          "name": "Gustavo PUERTA",
+          "nameEn": "Gustavo PUERTA",
+          "position": "DF",
           "number": 14,
           "isStar": false,
-          "age": 20,
-          "height": 177,
-          "weight": 74,
-          "club": "巴兰基亚青年",
-          "preferredFoot": "右脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
-        },
-        {
-          "id": "col-rb-2",
-          "name": "劳塔罗·罗德里格斯",
-          "nameEn": "劳塔罗 罗德里格斯",
-          "position": "RB",
-          "number": 15,
-          "isStar": false,
-          "age": 28,
-          "height": 177,
-          "weight": 67,
-          "club": "尼斯",
-          "preferredFoot": "右脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "jefferson-lerma",
-          "name": "赫费尔松·莱尔马",
-          "nameEn": "Jefferson Lerma",
-          "position": "CDM",
+          "name": "Jefferson LERMA",
+          "nameEn": "Jefferson LERMA",
+          "position": "MF",
           "number": 16,
           "isStar": false,
           "age": 25,
@@ -15680,97 +15605,43 @@
           "club": "卡利美洲",
           "preferredFoot": "右脚",
           "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "col-cdm-1",
-          "name": "胡里奥·桑切斯",
-          "nameEn": "胡里奥 桑切斯",
-          "position": "CDM",
+          "id": "fifa-394500",
+          "name": "约翰·莫吉卡",
+          "nameEn": "约翰·莫吉卡",
+          "position": "DF",
           "number": 17,
           "isStar": false,
-          "age": 32,
-          "height": 185,
-          "weight": 76,
-          "club": "麦德林国民竞技",
-          "preferredFoot": "左脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "col-cdm-2",
-          "name": "华金·萨帕塔",
-          "nameEn": "华金 萨帕塔",
-          "position": "CDM",
-          "number": 18,
-          "isStar": false,
-          "age": 34,
-          "height": 182,
-          "weight": 85,
-          "club": "布伦特福德",
-          "preferredFoot": "右脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
-        },
-        {
-          "id": "col-cm-1",
-          "name": "胡安·卡斯特罗",
-          "nameEn": "胡安 卡斯特罗",
-          "position": "CM",
+          "id": "fifa-418881",
+          "name": "Cucho HERNANDEZ",
+          "nameEn": "Cucho HERNANDEZ",
+          "position": "FW",
           "number": 19,
           "isStar": false,
-          "age": 31,
-          "height": 177,
-          "weight": 70,
-          "club": "麦德林国民竞技",
-          "preferredFoot": "右脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "col-cm-2",
-          "name": "比森特·富恩特斯",
-          "nameEn": "比森特 富恩特斯",
-          "position": "CM",
-          "number": 20,
-          "isStar": false,
-          "age": 24,
-          "height": 178,
-          "weight": 79,
-          "club": "百万富翁",
-          "preferredFoot": "右脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
-        },
-        {
-          "id": "col-lw-1",
-          "name": "内斯托尔·阿吉拉尔",
-          "nameEn": "内斯托尔 阿吉拉尔",
-          "position": "LW",
+          "id": "fifa-405755",
+          "name": "Jaminton CAMPAZ",
+          "nameEn": "Jaminton CAMPAZ",
+          "position": "FW",
           "number": 21,
           "isStar": false,
-          "age": 30,
-          "height": 168,
-          "weight": 72,
-          "club": "里尔",
-          "preferredFoot": "右脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "col-rw-1",
-          "name": "拉蒙·贝拉斯克斯",
-          "nameEn": "拉蒙 贝拉斯克斯",
-          "position": "RW",
-          "number": 22,
+          "id": "fifa-386013",
+          "name": "戴文森·桑切斯",
+          "nameEn": "戴文森·桑切斯",
+          "position": "DF",
+          "number": 23,
           "isStar": false,
-          "age": 20,
-          "height": 175,
-          "weight": 64,
-          "club": "伯恩利",
-          "preferredFoot": "左脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "davinson-sanchez",
@@ -15788,49 +15659,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "col-st-1",
-          "name": "法昆多·贝尼特斯",
-          "nameEn": "法昆多 贝尼特斯",
-          "position": "ST",
-          "number": 24,
-          "isStar": false,
-          "age": 35,
-          "height": 174,
-          "weight": 76,
-          "club": "霍芬海姆",
-          "preferredFoot": "右脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
-        },
-        {
-          "id": "col-st-2",
-          "name": "萨穆埃尔·塔皮亚",
-          "nameEn": "萨穆埃尔 塔皮亚",
-          "position": "ST",
+          "id": "fifa-428905",
+          "name": "路易斯·苏亚雷斯",
+          "nameEn": "路易斯·苏亚雷斯",
+          "position": "FW",
           "number": 25,
           "isStar": false,
-          "age": 28,
-          "height": 176,
-          "weight": 79,
-          "club": "卡利美洲",
-          "preferredFoot": "左脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "col-rw-2",
-          "name": "马科斯·多明格斯",
-          "nameEn": "马科斯 多明格斯",
-          "position": "RW",
+          "id": "fifa-492189",
+          "name": "Andres GOMEZ",
+          "nameEn": "Andres GOMEZ",
+          "position": "FW",
           "number": 26,
           "isStar": false,
-          "age": 25,
-          "height": 168,
-          "weight": 69,
-          "club": "麦德林国民竞技",
-          "preferredFoot": "右脚",
-          "nationality": "哥伦比亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
