@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-18T15:48:48.352Z",
+  "lastUpdated": "2026-06-18T18:32:26.862Z",
   "tournamentStats": {
-    "totalGoals": 70,
-    "avgGoalsPerMatch": 3.2,
-    "totalYellowCards": 48,
+    "totalGoals": 72,
+    "avgGoalsPerMatch": 3.1,
+    "totalYellowCards": 51,
     "totalRedCards": 3,
-    "totalAttendance": 1461115
+    "totalAttendance": 1528557
   },
   "groups": [
     {
@@ -40,27 +40,27 @@
         {
           "code": "CZE",
           "name": "捷克",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
-          "gf": 1,
-          "ga": 2,
+          "gf": 2,
+          "ga": 3,
           "gd": -1,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         },
         {
           "code": "RSA",
           "name": "南非",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
-          "gf": 0,
-          "ga": 2,
+          "gf": 1,
+          "ga": 3,
           "gd": -2,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         }
       ]
