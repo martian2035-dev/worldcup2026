@@ -15854,6 +15854,15 @@
       },
       "players": [
         {
+          "id": "fifa-336022",
+          "name": "乔丹·皮克福德",
+          "nameEn": "乔丹·皮克福德",
+          "position": "GK",
+          "number": 1,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "jordan-pickford",
           "name": "乔丹·皮克福德",
           "nameEn": "Jordan Pickford",
@@ -15867,6 +15876,15 @@
           "preferredFoot": "右脚",
           "nationality": "英格兰",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-403049",
+          "name": "埃兹里·康萨",
+          "nameEn": "埃兹里·康萨",
+          "position": "DF",
+          "number": 2,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "trent-alexander-arnold",
@@ -15884,6 +15902,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-463780",
+          "name": "Nico OREILLY",
+          "nameEn": "Nico OREILLY",
+          "position": "DF",
+          "number": 3,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "eng-gk-1",
           "name": "亚历山大·赖特",
           "nameEn": "亚历山大 赖特",
@@ -15897,6 +15924,15 @@
           "preferredFoot": "左脚",
           "nationality": "英格兰",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-433097",
+          "name": "德克兰·赖斯",
+          "nameEn": "德克兰·赖斯",
+          "position": "MF",
+          "number": 4,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "declan-rice",
@@ -15915,9 +15951,9 @@
         },
         {
           "id": "john-stones",
-          "name": "约翰·斯通斯",
-          "nameEn": "John Stones",
-          "position": "CB",
+          "name": "John STONES",
+          "nameEn": "John STONES",
+          "position": "DF",
           "number": 5,
           "isStar": false,
           "age": 31,
@@ -15926,7 +15962,16 @@
           "club": "曼城",
           "preferredFoot": "右脚",
           "nationality": "英格兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-405841",
+          "name": "马克·盖希",
+          "nameEn": "马克·盖希",
+          "position": "DF",
+          "number": 6,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "marc-guehi",
@@ -15944,6 +15989,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-448196",
+          "name": "布卡约·萨卡",
+          "nameEn": "布卡约·萨卡",
+          "position": "FW",
+          "number": 7,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "bukayo-saka",
           "name": "布卡约·萨卡",
           "nameEn": "Bukayo Saka",
@@ -15957,6 +16011,15 @@
           "preferredFoot": "左脚",
           "nationality": "英格兰",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-481610",
+          "name": "Elliot ANDERSON",
+          "nameEn": "Elliot ANDERSON",
+          "position": "MF",
+          "number": 8,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "eng-gk-2",
@@ -15975,9 +16038,9 @@
         },
         {
           "id": "harry-kane",
-          "name": "哈里·凯恩",
-          "nameEn": "Harry Kane",
-          "position": "ST",
+          "name": "Harry KANE",
+          "nameEn": "Harry KANE",
+          "position": "FW",
           "number": 9,
           "isStar": true,
           "age": 32,
@@ -15986,13 +16049,13 @@
           "club": "拜仁慕尼黑",
           "preferredFoot": "左脚",
           "nationality": "英格兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "jude-bellingham",
-          "name": "裘德·贝林厄姆",
-          "nameEn": "Jude Bellingham",
-          "position": "CAM",
+          "name": "Jude BELLINGHAM",
+          "nameEn": "Jude BELLINGHAM",
+          "position": "MF",
           "number": 10,
           "isStar": true,
           "age": 22,
@@ -16001,7 +16064,16 @@
           "club": "皇家马德里",
           "preferredFoot": "左脚",
           "nationality": "英格兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-401470",
+          "name": "马库斯·拉什福德",
+          "nameEn": "马库斯·拉什福德",
+          "position": "FW",
+          "number": 11,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "phil-foden",
@@ -16019,124 +16091,31 @@
           "dataSource": "generated"
         },
         {
-          "id": "eng-cb-1",
-          "name": "诺亚·沃森",
-          "nameEn": "诺亚 沃森",
-          "position": "CB",
-          "number": 12,
-          "isStar": false,
-          "age": 22,
-          "height": 186,
-          "weight": 85,
-          "club": "布伦特福德",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "eng-lb-1",
-          "name": "亚历山大·戴维斯",
-          "nameEn": "亚历山大 戴维斯",
-          "position": "LB",
-          "number": 13,
-          "isStar": false,
-          "age": 22,
-          "height": 177,
-          "weight": 67,
-          "club": "曼城",
-          "preferredFoot": "左脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "eng-lb-2",
-          "name": "查理·贝克",
-          "nameEn": "查理 贝克",
-          "position": "LB",
-          "number": 14,
-          "isStar": false,
-          "age": 30,
-          "height": 183,
-          "weight": 75,
-          "club": "里尔",
-          "preferredFoot": "左脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "eng-rb-1",
-          "name": "卢克·汤普森",
-          "nameEn": "卢克 汤普森",
-          "position": "RB",
-          "number": 15,
-          "isStar": false,
-          "age": 25,
-          "height": 176,
-          "weight": 78,
-          "club": "热刺",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "eng-cdm-1",
-          "name": "詹姆斯·沃克",
-          "nameEn": "詹姆斯 沃克",
-          "position": "CDM",
-          "number": 16,
-          "isStar": false,
-          "age": 25,
-          "height": 181,
-          "weight": 71,
-          "club": "曼联",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "eng-cdm-2",
-          "name": "亚当·伍德",
-          "nameEn": "亚当 伍德",
-          "position": "CDM",
+          "id": "fifa-492716",
+          "name": "Morgan ROGERS",
+          "nameEn": "Morgan ROGERS",
+          "position": "MF",
           "number": 17,
           "isStar": false,
-          "age": 23,
-          "height": 191,
-          "weight": 76,
-          "club": "拉齐奥",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "eng-cm-1",
-          "name": "瑞安·赖特",
-          "nameEn": "瑞安 赖特",
-          "position": "CM",
+          "id": "fifa-448189",
+          "name": "安东尼·哥顿",
+          "nameEn": "安东尼·哥顿",
+          "position": "FW",
           "number": 18,
           "isStar": false,
-          "age": 27,
-          "height": 181,
-          "weight": 79,
-          "club": "费内巴切",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "eng-cm-2",
-          "name": "卢克·菲利普斯",
-          "nameEn": "卢克 菲利普斯",
-          "position": "CM",
-          "number": 19,
+          "id": "fifa-489732",
+          "name": "Noni MADUEKE",
+          "nameEn": "Noni MADUEKE",
+          "position": "FW",
+          "number": 20,
           "isStar": false,
-          "age": 21,
-          "height": 173,
-          "weight": 69,
-          "club": "阿森纳",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "cole-palmer",
@@ -16154,79 +16133,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "eng-lw-1",
-          "name": "洛根·威尔逊",
-          "nameEn": "洛根 威尔逊",
-          "position": "LW",
-          "number": 21,
-          "isStar": false,
-          "age": 32,
-          "height": 181,
-          "weight": 71,
-          "club": "尼斯",
-          "preferredFoot": "左脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "eng-rw-1",
-          "name": "内森·金",
-          "nameEn": "内森 金",
-          "position": "RW",
-          "number": 22,
-          "isStar": false,
-          "age": 23,
-          "height": 171,
-          "weight": 70,
-          "club": "拉齐奥",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "eng-st-1",
-          "name": "卢克·安德森",
-          "nameEn": "卢克 安德森",
-          "position": "ST",
-          "number": 23,
-          "isStar": false,
-          "age": 29,
-          "height": 189,
-          "weight": 87,
-          "club": "热刺",
-          "preferredFoot": "左脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
-          "id": "eng-st-2",
-          "name": "梅森·希尔",
-          "nameEn": "梅森 希尔",
-          "position": "ST",
+          "id": "fifa-439641",
+          "name": "Reece JAMES",
+          "nameEn": "Reece JAMES",
+          "position": "DF",
           "number": 24,
           "isStar": false,
-          "age": 24,
-          "height": 194,
-          "weight": 72,
-          "club": "朗斯",
-          "preferredFoot": "左脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "eng-rw-2",
-          "name": "丹尼尔·帕克",
-          "nameEn": "丹尼尔 帕克",
-          "position": "RW",
+          "id": "fifa-506329",
+          "name": "Djed SPENCE",
+          "nameEn": "Djed SPENCE",
+          "position": "DF",
           "number": 25,
           "isStar": false,
-          "age": 25,
-          "height": 178,
-          "weight": 78,
-          "club": "热刺",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "kobbie-mainoo",
@@ -16265,6 +16187,15 @@
       },
       "players": [
         {
+          "id": "fifa-369029",
+          "name": "多米尼克·利瓦科维奇",
+          "nameEn": "多米尼克·利瓦科维奇",
+          "position": "GK",
+          "number": 1,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "dom-livakovic",
           "name": "多米尼克·利瓦科维奇",
           "nameEn": "Dominik Livaković",
@@ -16281,9 +16212,9 @@
         },
         {
           "id": "josip-stanisic",
-          "name": "约西普·斯塔尼希奇",
-          "nameEn": "Josip Stanišić",
-          "position": "RB",
+          "name": "Josip STANISIC",
+          "nameEn": "Josip STANISIC",
+          "position": "DF",
           "number": 2,
           "isStar": false,
           "age": 25,
@@ -16292,7 +16223,7 @@
           "club": "萨格勒布迪纳摩",
           "preferredFoot": "右脚",
           "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "borna-sosa",
@@ -16311,9 +16242,9 @@
         },
         {
           "id": "josko-gvardiol",
-          "name": "约什科·格瓦迪奥尔",
-          "nameEn": "Joško Gvardiol",
-          "position": "CB",
+          "name": "Josko GVARDIOL",
+          "nameEn": "Josko GVARDIOL",
+          "position": "DF",
           "number": 4,
           "isStar": true,
           "age": 24,
@@ -16322,7 +16253,7 @@
           "club": "曼城",
           "preferredFoot": "左脚",
           "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "cro-gk-1",
@@ -16338,6 +16269,15 @@
           "preferredFoot": "右脚",
           "nationality": "克罗地亚",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-448171",
+          "name": "约瑟普·舒塔洛",
+          "nameEn": "约瑟普·舒塔洛",
+          "position": "DF",
+          "number": 6,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "marin-pongracic",
@@ -16371,9 +16311,9 @@
         },
         {
           "id": "mateo-kovacic",
-          "name": "马特奥·科瓦契奇",
-          "nameEn": "Mateo Kovačić",
-          "position": "CM",
+          "name": "Mateo KOVACIC",
+          "nameEn": "Mateo KOVACIC",
+          "position": "MF",
           "number": 8,
           "isStar": true,
           "age": 31,
@@ -16382,7 +16322,16 @@
           "club": "曼城",
           "preferredFoot": "左脚",
           "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-336472",
+          "name": "安德烈·克拉马里克",
+          "nameEn": "安德烈·克拉马里克",
+          "position": "FW",
+          "number": 9,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "andrej-kramaric",
@@ -16401,9 +16350,9 @@
         },
         {
           "id": "luka-modric",
-          "name": "卢卡·莫德里奇",
-          "nameEn": "Luka Modrić",
-          "position": "CM",
+          "name": "Luka MODRIC",
+          "nameEn": "Luka MODRIC",
+          "position": "MF",
           "number": 10,
           "isStar": true,
           "age": 40,
@@ -16412,7 +16361,7 @@
           "club": "皇家马德里",
           "preferredFoot": "右脚",
           "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "cro-lb-1",
@@ -16445,64 +16394,49 @@
           "dataSource": "generated"
         },
         {
-          "id": "cro-rb-1",
-          "name": "马尔科·贝兰",
-          "nameEn": "马尔科 贝兰",
-          "position": "RB",
+          "id": "fifa-409191",
+          "name": "尼古拉·弗拉希奇",
+          "nameEn": "尼古拉·弗拉希奇",
+          "position": "MF",
           "number": 13,
           "isStar": false,
-          "age": 32,
-          "height": 179,
-          "weight": 75,
-          "club": "哈伊杜克",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "cro-cdm-1",
-          "name": "沃伊捷赫·马雷克",
-          "nameEn": "沃伊捷赫 马雷克",
-          "position": "CDM",
+          "id": "fifa-359381",
+          "name": "伊万·佩里西奇",
+          "nameEn": "伊万·佩里西奇",
+          "position": "FW",
           "number": 14,
           "isStar": false,
-          "age": 23,
-          "height": 189,
-          "weight": 79,
-          "club": "奥西耶克",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "cro-cdm-2",
-          "name": "马里奥·德沃夏克",
-          "nameEn": "马里奥 德沃夏克",
-          "position": "CDM",
+          "id": "fifa-380005",
+          "name": "马里奥·帕萨里克",
+          "nameEn": "马里奥·帕萨里克",
+          "position": "MF",
           "number": 15,
           "isStar": false,
-          "age": 27,
-          "height": 176,
-          "weight": 78,
-          "club": "巴塞尔",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "cro-cdm-3",
-          "name": "阿德米尔·伊万诺维奇",
-          "nameEn": "阿德米尔 伊万诺维奇",
-          "position": "CDM",
+          "id": "fifa-482774",
+          "name": "Martin BATURINA",
+          "nameEn": "Martin BATURINA",
+          "position": "MF",
           "number": 16,
           "isStar": false,
-          "age": 23,
-          "height": 178,
-          "weight": 79,
-          "club": "凯尔特人",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-485066",
+          "name": "Petar SUCIC",
+          "nameEn": "Petar SUCIC",
+          "position": "MF",
+          "number": 17,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "lovro-majer",
@@ -16520,109 +16454,31 @@
           "dataSource": "generated"
         },
         {
-          "id": "cro-cam-1",
-          "name": "约西普·切尔尼",
-          "nameEn": "约西普 切尔尼",
-          "position": "CAM",
-          "number": 18,
-          "isStar": false,
-          "age": 25,
-          "height": 169,
-          "weight": 78,
-          "club": "萨格勒布迪纳摩",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
-        },
-        {
-          "id": "cro-lw-1",
-          "name": "马尔科·马雷克",
-          "nameEn": "马尔科 马雷克",
-          "position": "LW",
-          "number": 19,
-          "isStar": false,
-          "age": 28,
-          "height": 181,
-          "weight": 71,
-          "club": "费内巴切",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
-        },
-        {
-          "id": "cro-lw-2",
-          "name": "米拉莱姆·西穆尼奇",
-          "nameEn": "米拉莱姆 西穆尼奇",
-          "position": "LW",
+          "id": "fifa-485068",
+          "name": "Igor MATANOVIC",
+          "nameEn": "Igor MATANOVIC",
+          "position": "FW",
           "number": 20,
           "isStar": false,
-          "age": 28,
-          "height": 173,
-          "weight": 63,
-          "club": "法兰克福",
-          "preferredFoot": "左脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "cro-rw-1",
-          "name": "阿德米尔·科瓦契奇",
-          "nameEn": "阿德米尔 科瓦契奇",
-          "position": "RW",
-          "number": 21,
-          "isStar": false,
-          "age": 28,
-          "height": 170,
-          "weight": 67,
-          "club": "水晶宫",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
-        },
-        {
-          "id": "cro-rw-2",
-          "name": "阿米尔·斯沃博达",
-          "nameEn": "阿米尔 斯沃博达",
-          "position": "RW",
+          "id": "fifa-499290",
+          "name": "Luka VUSKOVIC",
+          "nameEn": "Luka VUSKOVIC",
+          "position": "DF",
           "number": 22,
           "isStar": false,
-          "age": 20,
-          "height": 173,
-          "weight": 70,
-          "club": "尼斯",
-          "preferredFoot": "左脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "cro-st-1",
-          "name": "博日达尔·霍吉奇",
-          "nameEn": "博日达尔 霍吉奇",
-          "position": "ST",
-          "number": 23,
-          "isStar": false,
-          "age": 29,
-          "height": 174,
-          "weight": 89,
-          "club": "里耶卡",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
-        },
-        {
-          "id": "cro-st-2",
-          "name": "达米尔·布罗佐维奇",
-          "nameEn": "达米尔 布罗佐维奇",
-          "position": "ST",
+          "id": "fifa-482931",
+          "name": "Marco PASALIC",
+          "nameEn": "Marco PASALIC",
+          "position": "FW",
           "number": 24,
           "isStar": false,
-          "age": 24,
-          "height": 191,
-          "weight": 87,
-          "club": "萨格勒布迪纳摩",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "luka-sucic",
@@ -16640,19 +16496,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "cro-rw-3",
-          "name": "翁德雷·哈伊洛维奇",
-          "nameEn": "翁德雷 哈伊洛维奇",
-          "position": "RW",
+          "id": "fifa-389754",
+          "name": "佩塔·穆萨",
+          "nameEn": "佩塔·穆萨",
+          "position": "FW",
           "number": 26,
           "isStar": false,
-          "age": 19,
-          "height": 171,
-          "weight": 65,
-          "club": "哈伊杜克",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
