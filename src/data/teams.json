@@ -29,34 +29,13 @@
           "dataSource": "fifa"
         },
         {
-          "id": "mex-gk-1",
-          "name": "赫尔曼·纳瓦罗",
-          "nameEn": "赫尔曼 纳瓦罗",
-          "position": "GK",
-          "number": 1,
-          "isStar": true,
-          "age": 25,
-          "height": 192,
-          "weight": 95,
-          "club": "埃因霍温",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
-        },
-        {
-          "id": "mex-gk-2",
-          "name": "胡里奥·蒙特斯",
-          "nameEn": "胡里奥 蒙特斯",
-          "position": "GK",
+          "id": "fifa-403596",
+          "name": "Jorge SANCHEZ",
+          "nameEn": "Jorge SANCHEZ",
+          "position": "DF",
           "number": 2,
           "isStar": false,
-          "age": 36,
-          "height": 192,
-          "weight": 78,
-          "club": "蒙特雷",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-395516",
@@ -111,9 +90,9 @@
         },
         {
           "id": "luis-romo",
-          "name": "路易斯·罗莫",
-          "nameEn": "Luis Romo",
-          "position": "CDM",
+          "name": "Luis ROMO",
+          "nameEn": "Luis ROMO",
+          "position": "MF",
           "number": 7,
           "isStar": false,
           "age": 25,
@@ -122,7 +101,7 @@
           "club": "托卢卡",
           "preferredFoot": "左脚",
           "nationality": "墨西哥",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-416576",
@@ -132,21 +111,6 @@
           "number": 8,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "oriel-rodriguez",
-          "name": "奥里埃尔·罗德里格斯",
-          "nameEn": "Oriel Rodríguez",
-          "position": "CM",
-          "number": 8,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "瓜达拉哈拉",
-          "preferredFoot": "右脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-356731",
@@ -178,6 +142,15 @@
           "nameEn": "Alexis VEGA",
           "position": "FW",
           "number": 10,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-430759",
+          "name": "圣地亚哥·吉梅内斯",
+          "nameEn": "圣地亚哥·吉梅内斯",
+          "position": "FW",
+          "number": 11,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -224,6 +197,24 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-372090",
+          "name": "奥贝林-皮内达",
+          "nameEn": "奥贝林-皮内达",
+          "position": "MF",
+          "number": 17,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-461177",
+          "name": "Obed VARGAS",
+          "nameEn": "Obed VARGAS",
+          "position": "MF",
+          "number": 18,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-500037",
           "name": "Gilberto MORA",
           "nameEn": "Gilberto MORA",
@@ -233,19 +224,13 @@
           "dataSource": "fifa"
         },
         {
-          "id": "jorge-ruvalcaba",
-          "name": "豪尔赫·鲁瓦尔卡瓦",
-          "nameEn": "Jorge Ruvalcaba",
-          "position": "RW",
+          "id": "fifa-406135",
+          "name": "塞萨尔·韦尔塔",
+          "nameEn": "塞萨尔·韦尔塔",
+          "position": "FW",
           "number": 21,
           "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "贝蒂斯",
-          "preferredFoot": "左脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "hirving-lozano",
@@ -279,21 +264,6 @@
           "number": 24,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "luis-chavez",
-          "name": "路易斯·查韦斯",
-          "nameEn": "Luis Chávez",
-          "position": "CM",
-          "number": 24,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "托卢卡",
-          "preferredFoot": "左脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-403585",
@@ -761,19 +731,13 @@
           "dataSource": "fifa"
         },
         {
-          "id": "oh-hyeon-gyu",
-          "name": "吴贤揆",
-          "nameEn": "Oh Hyeon-gyu",
-          "position": "ST",
+          "id": "fifa-430387",
+          "name": "赵贵成",
+          "nameEn": "赵贵成",
+          "position": "FW",
           "number": 9,
           "isStar": false,
-          "age": 25,
-          "height": 185,
-          "weight": 82,
-          "club": "凯尔特人",
-          "preferredFoot": "右脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-390525",
@@ -833,6 +797,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-448580",
+          "name": "金纹奂 ",
+          "nameEn": "金纹奂 ",
+          "position": "DF",
+          "number": 15,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-479316",
           "name": "PARK Jinseob",
           "nameEn": "PARK Jinseob",
@@ -840,21 +813,6 @@
           "number": 16,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "bae-jun-ho",
-          "name": "裴俊镐",
-          "nameEn": "Bae Jun-ho",
-          "position": "CAM",
-          "number": 17,
-          "isStar": false,
-          "age": 22,
-          "height": 180,
-          "weight": 70,
-          "club": "斯托克城",
-          "preferredFoot": "右脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-448586",
@@ -890,6 +848,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-448585",
+          "name": "杨贤俊 ",
+          "nameEn": "杨贤俊 ",
+          "position": "MF",
+          "number": 20,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-429608",
           "name": "薛英佑",
           "nameEn": "薛英佑",
@@ -897,21 +864,6 @@
           "number": 22,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "seol-young-woo",
-          "name": "薛英佑",
-          "nameEn": "Seol Young-woo",
-          "position": "RB",
-          "number": 22,
-          "isStar": false,
-          "age": 27,
-          "height": 180,
-          "weight": 72,
-          "club": "蔚山现代",
-          "preferredFoot": "左脚",
-          "nationality": "韩国",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-430385",
