@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-18T22:22:21.256Z",
+  "lastUpdated": "2026-06-19T05:16:28.711Z",
   "tournamentStats": {
-    "totalGoals": 72,
-    "avgGoalsPerMatch": 3.1,
-    "totalYellowCards": 51,
+    "totalGoals": 73,
+    "avgGoalsPerMatch": 3,
+    "totalYellowCards": 53,
     "totalRedCards": 3,
-    "totalAttendance": 1528557
+    "totalAttendance": 1574079
   },
   "groups": [
     {
@@ -14,26 +14,26 @@
         {
           "code": "MEX",
           "name": "墨西哥",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 2,
+          "gf": 3,
           "ga": 0,
-          "gd": 2,
-          "pts": 3,
+          "gd": 3,
+          "pts": 6,
           "qualified": null
         },
         {
           "code": "KOR",
           "name": "韩国",
-          "played": 1,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "gf": 2,
-          "ga": 1,
-          "gd": 1,
+          "ga": 2,
+          "gd": 0,
           "pts": 3,
           "qualified": null
         },
