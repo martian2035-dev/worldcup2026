@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-20T18:43:33.604Z",
+  "updatedAt": "2026-06-20T19:49:36.398Z",
   "leaders": [
     {
       "username": "w01",
-      "beans": 11249,
+      "beans": 11641,
       "totalBets": 30,
-      "wonBets": 16,
+      "wonBets": 17,
       "createdAt": "2026-06-13T09:47:17.896Z",
       "bets": [
         {
@@ -329,8 +329,8 @@
           "betType": "home_win",
           "amount": 100,
           "odds": 3.92,
-          "status": "pending",
-          "payout": null,
+          "status": "won",
+          "payout": 392,
           "createdAt": "2026-06-15T12:10:24.414Z"
         },
         {

@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-20T17:41:56.924Z",
+  "lastUpdated": "2026-06-20T19:49:33.898Z",
   "tournamentStats": {
-    "totalGoals": 101,
+    "totalGoals": 107,
     "avgGoalsPerMatch": 3.2,
-    "totalYellowCards": 76,
+    "totalYellowCards": 79,
     "totalRedCards": 7,
-    "totalAttendance": 2103740
+    "totalAttendance": 2172517
   },
   "groups": [
     {
@@ -297,29 +297,29 @@
       "name": "F",
       "teams": [
         {
-          "code": "SWE",
-          "name": "瑞典",
-          "played": 1,
+          "code": "NED",
+          "name": "荷兰",
+          "played": 2,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 5,
-          "ga": 1,
+          "gf": 7,
+          "ga": 3,
           "gd": 4,
-          "pts": 3,
+          "pts": 4,
           "qualified": null
         },
         {
-          "code": "NED",
-          "name": "荷兰",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 2,
-          "ga": 2,
+          "code": "SWE",
+          "name": "瑞典",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 6,
+          "ga": 6,
           "gd": 0,
-          "pts": 1,
+          "pts": 3,
           "qualified": null
         },
         {
