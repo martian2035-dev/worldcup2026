@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T16:51:23.670Z",
+  "lastUpdated": "2026-06-20T17:41:56.900Z",
   "matches": [
     {
       "id": "A01",
@@ -40858,10 +40858,10 @@
         "name": "Houston Stadium",
         "city": "休斯敦"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "stats": null,
       "fifaMatchId": "400021472"
