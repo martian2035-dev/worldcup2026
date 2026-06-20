@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-20T21:25:18.301Z",
+  "lastUpdated": "2026-06-20T23:19:16.888Z",
   "tournamentStats": {
-    "totalGoals": 107,
+    "totalGoals": 110,
     "avgGoalsPerMatch": 3.2,
     "totalYellowCards": 79,
     "totalRedCards": 7,
-    "totalAttendance": 2172517
+    "totalAttendance": 2215553
   },
   "groups": [
     {
@@ -242,26 +242,26 @@
         {
           "code": "GER",
           "name": "德国",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 7,
-          "ga": 1,
-          "gd": 6,
-          "pts": 3,
+          "gf": 9,
+          "ga": 2,
+          "gd": 7,
+          "pts": 6,
           "qualified": null
         },
         {
           "code": "CIV",
           "name": "科特迪瓦",
-          "played": 1,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
-          "gf": 1,
-          "ga": 0,
-          "gd": 1,
+          "lost": 1,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0,
           "pts": 3,
           "qualified": null
         },
