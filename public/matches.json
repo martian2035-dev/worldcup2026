@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T19:49:33.873Z",
+  "lastUpdated": "2026-06-20T21:25:18.269Z",
   "matches": [
     {
       "id": "A01",
@@ -42165,10 +42165,10 @@
         "name": "Toronto Stadium",
         "city": "多伦多"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "stats": null,
       "fifaMatchId": "400021469"
