@@ -20,10 +20,11 @@ export function getFifaMatchStatus(raw, now = new Date()) {
 
 export function syncMatchesWithFifa(localMatches, fifaMatches, options = {}) {
   const now = options.now ? new Date(options.now) : new Date();
+  const groupSlotIndex = buildFifaGroupSlotIndex(fifaMatches);
   let updated = 0;
 
   const matches = localMatches.map((match) => {
-    const fifaMatch = findFifaMatch(match, fifaMatches);
+    const fifaMatch = findFifaMatch(match, fifaMatches) || findFifaGroupSlotMatch(match, groupSlotIndex);
     if (!fifaMatch) return match;
 
     const next = buildUpdatedMatch(match, fifaMatch, now);
@@ -39,10 +40,22 @@ function buildUpdatedMatch(match, fifaMatch, now) {
   const awayScore = getScore(fifaMatch, "away");
   const hasScore = Number.isFinite(homeScore) && Number.isFinite(awayScore);
   const status = getFifaMatchStatus(fifaMatch, now);
+  const homeCode = getTeamCode(fifaMatch, "home");
+  const awayCode = getTeamCode(fifaMatch, "away");
+  const previousFifaMatchId = match.fifaMatchId;
   const next = {
     ...match,
     fifaMatchId: fifaMatch.IdMatch || match.fifaMatchId,
+    group: getFifaGroupCode(fifaMatch) || match.group,
     datetime: fifaMatch.Date ? toBeijingIsoString(fifaMatch.Date) : match.datetime,
+    home: {
+      code: homeCode || match.home?.code,
+      name: getTeamName(fifaMatch, "home") || match.home?.name,
+    },
+    away: {
+      code: awayCode || match.away?.code,
+      name: getTeamName(fifaMatch, "away") || match.away?.name,
+    },
     status,
     score: hasScore
       ? { home: homeScore, away: awayScore }
@@ -57,6 +70,13 @@ function buildUpdatedMatch(match, fifaMatch, now) {
       name: stadiumName || match.venue?.name,
       city: cityName || match.venue?.city,
     };
+  }
+
+  if (previousFifaMatchId && fifaMatch.IdMatch && previousFifaMatchId !== fifaMatch.IdMatch) {
+    next.stats = null;
+    next.attendance = null;
+    delete next.lineups;
+    delete next.playerEvents;
   }
 
   return next;
@@ -76,9 +96,52 @@ function findFifaMatch(match, fifaMatches) {
   });
 }
 
+function buildFifaGroupSlotIndex(fifaMatches) {
+  const byGroup = new Map();
+
+  for (const fifaMatch of fifaMatches) {
+    const group = getFifaGroupCode(fifaMatch);
+    if (!group) continue;
+    if (!byGroup.has(group)) byGroup.set(group, []);
+    byGroup.get(group).push(fifaMatch);
+  }
+
+  for (const matches of byGroup.values()) {
+    matches.sort((a, b) => Number(a.MatchNumber || 0) - Number(b.MatchNumber || 0));
+  }
+
+  return byGroup;
+}
+
+function findFifaGroupSlotMatch(match, groupSlotIndex) {
+  if (match.stage && match.stage !== "group") return null;
+  const group = match.group || groupFromMatchId(match.id);
+  const slot = slotFromMatchId(match.id);
+  if (!group || !slot) return null;
+
+  return groupSlotIndex.get(group)?.[slot - 1] || null;
+}
+
+function groupFromMatchId(id) {
+  const match = /^([A-L])\d{2}$/.exec(String(id || ""));
+  return match?.[1] || null;
+}
+
+function slotFromMatchId(id) {
+  const match = /^[A-L](\d{2})$/.exec(String(id || ""));
+  if (!match) return null;
+  const slot = Number(match[1]);
+  return Number.isInteger(slot) && slot > 0 ? slot : null;
+}
+
 function getTeamCode(raw, side) {
   const team = side === "home" ? raw.Home || raw.HomeTeam : raw.Away || raw.AwayTeam;
   return team?.Abbreviation || team?.IdCountry || team?.IdTeam || null;
+}
+
+function getTeamName(raw, side) {
+  const team = side === "home" ? raw.Home || raw.HomeTeam : raw.Away || raw.AwayTeam;
+  return getLocalizedText(team?.TeamName);
 }
 
 function getScore(raw, side) {
@@ -95,6 +158,12 @@ function getLocalizedText(value) {
     value.find((item) => item.Description)?.Description ||
     null
   );
+}
+
+function getFifaGroupCode(raw) {
+  const groupName = getLocalizedText(raw.GroupName);
+  const match = /^([A-L])\s*组$/i.exec(String(groupName || "").trim());
+  return match?.[1]?.toUpperCase() || null;
 }
 
 function isKickoffPast(raw, now) {

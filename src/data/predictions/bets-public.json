@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-20T16:35:30.709Z",
+  "updatedAt": "2026-06-20T16:51:42.221Z",
   "bets": [
     {
       "id": "5262b986-95d3-4970-ab53-dada9d5ffaaa",
@@ -334,8 +334,8 @@
       "betType": "home_win",
       "amount": 100,
       "odds": 1.75,
-      "status": "pending",
-      "payout": null,
+      "status": "won",
+      "payout": 175,
       "createdAt": "2026-06-13T09:50:09.294Z"
     },
     {
@@ -382,8 +382,8 @@
       "betType": "home_win",
       "amount": 100,
       "odds": 1.6,
-      "status": "pending",
-      "payout": null,
+      "status": "won",
+      "payout": 160,
       "createdAt": "2026-06-13T09:50:43.701Z"
     },
     {
@@ -406,8 +406,8 @@
       "betType": "home_win",
       "amount": 100,
       "odds": 3.87,
-      "status": "pending",
-      "payout": null,
+      "status": "won",
+      "payout": 387,
       "createdAt": "2026-06-13T09:50:53.944Z"
     },
     {
@@ -418,8 +418,8 @@
       "betType": "home_win",
       "amount": 100,
       "odds": 1.96,
-      "status": "pending",
-      "payout": null,
+      "status": "won",
+      "payout": 196,
       "createdAt": "2026-06-13T09:50:58.979Z"
     },
     {
@@ -430,8 +430,8 @@
       "betType": "home_win",
       "amount": 100,
       "odds": 1.81,
-      "status": "pending",
-      "payout": null,
+      "status": "lost",
+      "payout": 0,
       "createdAt": "2026-06-15T12:10:01.509Z"
     },
     {
@@ -442,8 +442,8 @@
       "betType": "home_win",
       "amount": 100,
       "odds": 2.88,
-      "status": "pending",
-      "payout": null,
+      "status": "won",
+      "payout": 288,
       "createdAt": "2026-06-15T12:10:08.401Z"
     },
     {
@@ -454,8 +454,8 @@
       "betType": "home_win",
       "amount": 100,
       "odds": 1.78,
-      "status": "pending",
-      "payout": null,
+      "status": "won",
+      "payout": 178,
       "createdAt": "2026-06-15T12:10:15.198Z"
     },
     {
@@ -466,8 +466,8 @@
       "betType": "away_win",
       "amount": 100,
       "odds": 1.79,
-      "status": "pending",
-      "payout": null,
+      "status": "won",
+      "payout": 179,
       "createdAt": "2026-06-15T12:10:19.476Z"
     },
     {
