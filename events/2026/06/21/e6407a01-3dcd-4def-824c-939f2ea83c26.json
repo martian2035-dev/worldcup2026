@@ -1,0 +1,14 @@
+{
+  "id": "e6407a01-3dcd-4def-824c-939f2ea83c26",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "I03",
+  "matchLabel": "挪威 vs 塞内加尔",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.83,
+  "clientTimestamp": "2026-06-21T04:51:54.738Z",
+  "serverTimestamp": "2026-06-21T04:51:54.855Z"
+}
