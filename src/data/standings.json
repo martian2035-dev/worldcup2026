@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-21T17:46:41.552Z",
+  "lastUpdated": "2026-06-21T19:56:31.309Z",
   "tournamentStats": {
-    "totalGoals": 114,
+    "totalGoals": 118,
     "avgGoalsPerMatch": 3.2,
-    "totalYellowCards": 85,
+    "totalYellowCards": 87,
     "totalRedCards": 7,
-    "totalAttendance": 2335394
+    "totalAttendance": 2403633
   },
   "groups": [
     {
@@ -411,16 +411,16 @@
       "name": "H",
       "teams": [
         {
-          "code": "KSA",
-          "name": "沙特",
-          "played": 1,
-          "won": 0,
+          "code": "ESP",
+          "name": "西班牙",
+          "played": 2,
+          "won": 1,
           "drawn": 1,
           "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 1,
+          "gf": 4,
+          "ga": 0,
+          "gd": 4,
+          "pts": 4,
           "qualified": null
         },
         {
@@ -450,15 +450,15 @@
           "qualified": null
         },
         {
-          "code": "ESP",
-          "name": "西班牙",
-          "played": 1,
+          "code": "KSA",
+          "name": "沙特",
+          "played": 2,
           "won": 0,
           "drawn": 1,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 5,
+          "gd": -4,
           "pts": 1,
           "qualified": null
         }
