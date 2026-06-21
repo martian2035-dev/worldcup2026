@@ -1,0 +1,14 @@
+{
+  "id": "519c4809-3ad2-4843-8c84-b5089e616724",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "J04",
+  "matchLabel": "约旦 vs 阿尔及利亚",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 3.62,
+  "clientTimestamp": "2026-06-21T04:52:00.189Z",
+  "serverTimestamp": "2026-06-21T04:52:00.664Z"
+}
