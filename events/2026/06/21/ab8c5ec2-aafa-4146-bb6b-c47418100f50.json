@@ -1,0 +1,14 @@
+{
+  "id": "ab8c5ec2-aafa-4146-bb6b-c47418100f50",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "B06",
+  "matchLabel": "波斯尼亚和黑塞哥维那 vs 卡塔尔",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.99,
+  "clientTimestamp": "2026-06-21T04:52:57.519Z",
+  "serverTimestamp": "2026-06-21T04:52:57.906Z"
+}
