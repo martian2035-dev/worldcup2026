@@ -1,0 +1,14 @@
+{
+  "id": "b6a4d1a7-175f-4cd5-b1ad-df04f3387a12",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "C06",
+  "matchLabel": "摩洛哥 vs 海地",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.81,
+  "clientTimestamp": "2026-06-21T04:53:09.870Z",
+  "serverTimestamp": "2026-06-21T04:53:09.968Z"
+}
