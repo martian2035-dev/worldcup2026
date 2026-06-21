@@ -1,0 +1,14 @@
+{
+  "id": "a86f7562-2e9d-495e-9d92-7ca190c0eecc",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "L03",
+  "matchLabel": "英格兰 vs 加纳",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 3.65,
+  "clientTimestamp": "2026-06-21T04:52:27.123Z",
+  "serverTimestamp": "2026-06-21T04:52:27.420Z"
+}
