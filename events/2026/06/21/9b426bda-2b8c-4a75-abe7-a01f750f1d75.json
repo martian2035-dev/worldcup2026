@@ -1,0 +1,14 @@
+{
+  "id": "9b426bda-2b8c-4a75-abe7-a01f750f1d75",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "B05",
+  "matchLabel": "瑞士 vs 加拿大",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 1.98,
+  "clientTimestamp": "2026-06-21T04:52:50.935Z",
+  "serverTimestamp": "2026-06-21T04:52:51.247Z"
+}

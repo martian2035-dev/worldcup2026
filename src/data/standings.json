@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-20T23:19:16.888Z",
+  "lastUpdated": "2026-06-21T05:09:58.166Z",
   "tournamentStats": {
     "totalGoals": 110,
-    "avgGoalsPerMatch": 3.2,
-    "totalYellowCards": 79,
+    "avgGoalsPerMatch": 3.1,
+    "totalYellowCards": 85,
     "totalRedCards": 7,
-    "totalAttendance": 2215553
+    "totalAttendance": 2284151
   },
   "groups": [
     {
@@ -268,27 +268,27 @@
         {
           "code": "ECU",
           "name": "厄瓜多尔",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "gf": 0,
           "ga": 1,
           "gd": -1,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         },
         {
           "code": "CUW",
           "name": "库拉索",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "gf": 1,
           "ga": 7,
           "gd": -6,
-          "pts": 0,
+          "pts": 1,
           "qualified": null
         }
       ]

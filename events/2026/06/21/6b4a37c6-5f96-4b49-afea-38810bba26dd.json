@@ -1,0 +1,14 @@
+{
+  "id": "6b4a37c6-5f96-4b49-afea-38810bba26dd",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "L04",
+  "matchLabel": "巴拿马 vs 克罗地亚",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 1.58,
+  "clientTimestamp": "2026-06-21T04:52:41.613Z",
+  "serverTimestamp": "2026-06-21T04:52:41.935Z"
+}

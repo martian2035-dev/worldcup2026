@@ -1,0 +1,14 @@
+{
+  "id": "ded27e0d-98a1-4eb2-ac92-2eb226830453",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "E05",
+  "matchLabel": "库拉索 vs 科特迪瓦",
+  "betType": "away_win",
+  "amount": 100,
+  "odds": 1.76,
+  "clientTimestamp": "2026-06-21T04:54:01.050Z",
+  "serverTimestamp": "2026-06-21T04:54:01.498Z"
+}
