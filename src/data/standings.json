@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-21T19:56:31.309Z",
+  "lastUpdated": "2026-06-21T21:23:44.621Z",
   "tournamentStats": {
     "totalGoals": 118,
-    "avgGoalsPerMatch": 3.2,
-    "totalYellowCards": 87,
-    "totalRedCards": 7,
-    "totalAttendance": 2403633
+    "avgGoalsPerMatch": 3.1,
+    "totalYellowCards": 89,
+    "totalRedCards": 8,
+    "totalAttendance": 2473950
   },
   "groups": [
     {
@@ -354,6 +354,32 @@
       "name": "G",
       "teams": [
         {
+          "code": "IRN",
+          "name": "伊朗",
+          "played": 2,
+          "won": 0,
+          "drawn": 2,
+          "lost": 0,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0,
+          "pts": 2,
+          "qualified": null
+        },
+        {
+          "code": "BEL",
+          "name": "比利时",
+          "played": 2,
+          "won": 0,
+          "drawn": 2,
+          "lost": 0,
+          "gf": 1,
+          "ga": 1,
+          "gd": 0,
+          "pts": 2,
+          "qualified": null
+        },
+        {
           "code": "NZL",
           "name": "新西兰",
           "played": 1,
@@ -367,34 +393,8 @@
           "qualified": null
         },
         {
-          "code": "IRN",
-          "name": "伊朗",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0,
-          "pts": 1,
-          "qualified": null
-        },
-        {
           "code": "EGY",
           "name": "埃及",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 1,
-          "qualified": null
-        },
-        {
-          "code": "BEL",
-          "name": "比利时",
           "played": 1,
           "won": 0,
           "drawn": 1,
