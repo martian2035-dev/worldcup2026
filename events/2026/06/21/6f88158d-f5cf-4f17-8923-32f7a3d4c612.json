@@ -1,0 +1,14 @@
+{
+  "id": "6f88158d-f5cf-4f17-8923-32f7a3d4c612",
+  "type": "bet",
+  "accountId": "acct-d93a0a09",
+  "username": "w01",
+  "deviceId": "device-bc55c7a5-a419-4de1-93c2-a01b3c7c91a3",
+  "matchId": "J03",
+  "matchLabel": "阿根廷 vs 奥地利",
+  "betType": "home_win",
+  "amount": 100,
+  "odds": 3.84,
+  "clientTimestamp": "2026-06-21T04:51:45.787Z",
+  "serverTimestamp": "2026-06-21T04:51:45.948Z"
+}
