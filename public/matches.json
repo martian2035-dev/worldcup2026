@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T21:23:44.593Z",
+  "lastUpdated": "2026-06-21T23:24:45.232Z",
   "matches": [
     {
       "id": "A01",
@@ -45995,10 +45995,10 @@
         "name": "Miami Stadium",
         "city": "迈阿密"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "stats": null,
       "fifaMatchId": "400021487"
