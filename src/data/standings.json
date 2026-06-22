@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-21T23:24:45.260Z",
+  "lastUpdated": "2026-06-22T05:22:13.789Z",
   "tournamentStats": {
-    "totalGoals": 118,
-    "avgGoalsPerMatch": 3.1,
-    "totalYellowCards": 89,
+    "totalGoals": 126,
+    "avgGoalsPerMatch": 3.2,
+    "totalYellowCards": 96,
     "totalRedCards": 8,
-    "totalAttendance": 2473950
+    "totalAttendance": 2590450
   },
   "groups": [
     {
@@ -354,6 +354,19 @@
       "name": "G",
       "teams": [
         {
+          "code": "EGY",
+          "name": "埃及",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "gf": 4,
+          "ga": 2,
+          "gd": 2,
+          "pts": 4,
+          "qualified": null
+        },
+        {
           "code": "IRN",
           "name": "伊朗",
           "played": 2,
@@ -382,26 +395,13 @@
         {
           "code": "NZL",
           "name": "新西兰",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 1,
-          "lost": 0,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0,
-          "pts": 1,
-          "qualified": null
-        },
-        {
-          "code": "EGY",
-          "name": "埃及",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
+          "lost": 1,
+          "gf": 3,
+          "ga": 5,
+          "gd": -2,
           "pts": 1,
           "qualified": null
         }
@@ -426,27 +426,27 @@
         {
           "code": "URU",
           "name": "乌拉圭",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
-          "gf": 1,
-          "ga": 1,
+          "gf": 3,
+          "ga": 3,
           "gd": 0,
-          "pts": 1,
+          "pts": 2,
           "qualified": null
         },
         {
           "code": "CPV",
           "name": "佛得角",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 2,
+          "ga": 2,
           "gd": 0,
-          "pts": 1,
+          "pts": 2,
           "qualified": null
         },
         {
