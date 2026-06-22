@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-22T22:00:28.860Z",
+  "updatedAt": "2026-06-22T22:10:48.619Z",
   "bets": [
     {
       "id": "5262b986-95d3-4970-ab53-dada9d5ffaaa",
@@ -550,8 +550,8 @@
       "betType": "home_win",
       "amount": 100,
       "odds": 3.84,
-      "status": "pending",
-      "payout": null,
+      "status": "won",
+      "payout": 384,
       "createdAt": "2026-06-21T04:51:45.948Z"
     },
     {

@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-22T18:16:25.737Z",
+  "lastUpdated": "2026-06-22T22:10:46.203Z",
   "tournamentStats": {
-    "totalGoals": 126,
-    "avgGoalsPerMatch": 3.2,
-    "totalYellowCards": 96,
+    "totalGoals": 128,
+    "avgGoalsPerMatch": 3.1,
+    "totalYellowCards": 100,
     "totalRedCards": 8,
-    "totalAttendance": 2590450
+    "totalAttendance": 2661099
   },
   "groups": [
     {
@@ -527,26 +527,26 @@
         {
           "code": "ARG",
           "name": "阿根廷",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 3,
+          "gf": 5,
           "ga": 0,
-          "gd": 3,
-          "pts": 3,
+          "gd": 5,
+          "pts": 6,
           "qualified": null
         },
         {
           "code": "AUT",
           "name": "奥地利",
-          "played": 1,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "gf": 3,
-          "ga": 1,
-          "gd": 2,
+          "ga": 3,
+          "gd": 0,
           "pts": 3,
           "qualified": null
         },
