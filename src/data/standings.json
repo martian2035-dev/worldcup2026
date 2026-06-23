@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-23T16:31:21.268Z",
+  "lastUpdated": "2026-06-23T20:18:09.016Z",
   "tournamentStats": {
-    "totalGoals": 139,
+    "totalGoals": 144,
     "avgGoalsPerMatch": 3.2,
-    "totalYellowCards": 103,
+    "totalYellowCards": 105,
     "totalRedCards": 8,
-    "totalAttendance": 2878457
+    "totalAttendance": 2947234
   },
   "groups": [
     {
@@ -582,6 +582,19 @@
       "name": "K",
       "teams": [
         {
+          "code": "POR",
+          "name": "葡萄牙",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "gf": 6,
+          "ga": 1,
+          "gd": 5,
+          "pts": 4,
+          "qualified": null
+        },
+        {
           "code": "COL",
           "name": "哥伦比亚",
           "played": 1,
@@ -608,28 +621,15 @@
           "qualified": null
         },
         {
-          "code": "POR",
-          "name": "葡萄牙",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 1,
-          "qualified": null
-        },
-        {
           "code": "UZB",
           "name": "乌兹别克斯坦",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "gf": 1,
-          "ga": 3,
-          "gd": -2,
+          "ga": 8,
+          "gd": -7,
           "pts": 0,
           "qualified": null
         }
