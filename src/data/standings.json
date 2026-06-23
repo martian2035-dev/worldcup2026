@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-23T04:15:12.666Z",
+  "lastUpdated": "2026-06-23T09:58:56.386Z",
   "tournamentStats": {
-    "totalGoals": 136,
+    "totalGoals": 139,
     "avgGoalsPerMatch": 3.2,
-    "totalYellowCards": 101,
+    "totalYellowCards": 103,
     "totalRedCards": 8,
-    "totalAttendance": 2741762
+    "totalAttendance": 2878457
   },
   "groups": [
     {
@@ -551,27 +551,27 @@
           "qualified": null
         },
         {
-          "code": "JOR",
-          "name": "约旦",
-          "played": 1,
-          "won": 0,
+          "code": "ALG",
+          "name": "阿尔及利亚",
+          "played": 2,
+          "won": 1,
           "drawn": 0,
           "lost": 1,
-          "gf": 1,
-          "ga": 3,
+          "gf": 2,
+          "ga": 4,
           "gd": -2,
-          "pts": 0,
+          "pts": 3,
           "qualified": null
         },
         {
-          "code": "ALG",
-          "name": "阿尔及利亚",
-          "played": 1,
+          "code": "JOR",
+          "name": "约旦",
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
-          "gf": 0,
-          "ga": 3,
+          "lost": 2,
+          "gf": 2,
+          "ga": 5,
           "gd": -3,
           "pts": 0,
           "qualified": null
