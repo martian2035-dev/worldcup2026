@@ -2,9 +2,9 @@
   "users": {
     "w01": {
       "username": "w01",
-      "beans": 10402,
+      "beans": 10775,
       "totalBets": 50,
-      "wonBets": 20,
+      "wonBets": 22,
       "createdAt": "2026-06-13T09:47:17.896Z",
       "bets": [
         {
@@ -411,8 +411,8 @@
           "betType": "home_win",
           "amount": 100,
           "odds": 1.9,
-          "status": "pending",
-          "payout": null,
+          "status": "won",
+          "payout": 190,
           "createdAt": "2026-06-21T04:51:50.149Z"
         },
         {
@@ -423,8 +423,8 @@
           "betType": "home_win",
           "amount": 100,
           "odds": 1.83,
-          "status": "pending",
-          "payout": null,
+          "status": "won",
+          "payout": 183,
           "createdAt": "2026-06-21T04:51:54.855Z"
         },
         {
@@ -618,5 +618,5 @@
       "bets": []
     }
   },
-  "lastUpdated": "2026-06-23T01:51:30.234Z"
+  "lastUpdated": "2026-06-23T04:15:15.798Z"
 }
