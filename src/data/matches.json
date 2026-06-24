@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T21:38:53.319Z",
+  "lastUpdated": "2026-06-24T23:15:20.119Z",
   "matches": [
     {
       "id": "A01",
@@ -63992,10 +63992,10 @@
         "name": "Miami Stadium",
         "city": "迈阿密"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 2
       },
       "stats": null,
       "fifaMatchId": "400021455"
@@ -64018,10 +64018,10 @@
         "name": "Atlanta Stadium",
         "city": "亚特兰大"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 2
       },
       "stats": null,
       "fifaMatchId": "400021452"
