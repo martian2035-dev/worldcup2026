@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-24T01:49:47.900Z",
+  "updatedAt": "2026-06-24T04:18:33.201Z",
   "bets": [
     {
       "id": "5262b986-95d3-4970-ab53-dada9d5ffaaa",
@@ -622,8 +622,8 @@
       "betType": "away_win",
       "amount": 100,
       "odds": 1.58,
-      "status": "pending",
-      "payout": null,
+      "status": "won",
+      "payout": 158,
       "createdAt": "2026-06-21T04:52:41.935Z"
     },
     {
@@ -634,8 +634,8 @@
       "betType": "home_win",
       "amount": 100,
       "odds": 4.04,
-      "status": "pending",
-      "payout": null,
+      "status": "won",
+      "payout": 404,
       "createdAt": "2026-06-21T04:52:46.144Z"
     },
     {

@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-23T23:15:14.619Z",
+  "lastUpdated": "2026-06-24T04:18:30.553Z",
   "tournamentStats": {
-    "totalGoals": 144,
-    "avgGoalsPerMatch": 3.1,
-    "totalYellowCards": 107,
+    "totalGoals": 146,
+    "avgGoalsPerMatch": 3,
+    "totalYellowCards": 112,
     "totalRedCards": 8,
-    "totalAttendance": 3011217
+    "totalAttendance": 3099611
   },
   "groups": [
     {
@@ -582,6 +582,19 @@
       "name": "K",
       "teams": [
         {
+          "code": "COL",
+          "name": "哥伦比亚",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 4,
+          "ga": 1,
+          "gd": 3,
+          "pts": 6,
+          "qualified": null
+        },
+        {
           "code": "POR",
           "name": "葡萄牙",
           "played": 2,
@@ -595,28 +608,15 @@
           "qualified": null
         },
         {
-          "code": "COL",
-          "name": "哥伦比亚",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 3,
-          "ga": 1,
-          "gd": 2,
-          "pts": 3,
-          "qualified": null
-        },
-        {
           "code": "COD",
           "name": "刚果",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 1,
-          "lost": 0,
+          "lost": 1,
           "gf": 1,
-          "ga": 1,
-          "gd": 0,
+          "ga": 2,
+          "gd": -1,
           "pts": 1,
           "qualified": null
         },
@@ -652,6 +652,19 @@
           "qualified": null
         },
         {
+          "code": "CRO",
+          "name": "克罗地亚",
+          "played": 3,
+          "won": 1,
+          "drawn": 0,
+          "lost": 2,
+          "gf": 5,
+          "ga": 8,
+          "gd": -3,
+          "pts": 3,
+          "qualified": null
+        },
+        {
           "code": "GHA",
           "name": "加纳",
           "played": 1,
@@ -667,26 +680,13 @@
         {
           "code": "PAN",
           "name": "巴拿马",
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "qualified": null
-        },
-        {
-          "code": "CRO",
-          "name": "克罗地亚",
-          "played": 2,
-          "won": 0,
-          "drawn": 0,
-          "lost": 2,
-          "gf": 4,
-          "ga": 8,
-          "gd": -4,
+          "ga": 1,
+          "gd": -1,
           "pts": 0,
           "qualified": null
         }
