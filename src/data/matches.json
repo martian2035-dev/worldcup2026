@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T04:18:30.519Z",
+  "lastUpdated": "2026-06-24T09:47:09.013Z",
   "matches": [
     {
       "id": "A01",
@@ -56268,7 +56268,7 @@
         },
         "away": {
           "possession": null,
-          "shots": 8,
+          "shots": 7,
           "shotsOnTarget": 2,
           "corners": 4,
           "fouls": 15,
@@ -57308,7 +57308,7 @@
           "isStart": true,
           "goals": 0,
           "assists": 0,
-          "shots": 1,
+          "shots": 0,
           "shotsOnTarget": 0,
           "yellowCard": false,
           "redCard": false,
