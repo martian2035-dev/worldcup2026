@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T04:18:33.390Z",
+  "lastUpdated": "2026-06-25T09:38:11.729Z",
   "matches": [
     {
       "id": "A01",
@@ -49,7 +49,7 @@
         {
           "playerId": "fifa-485070",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -64,7 +64,7 @@
         {
           "playerId": "fifa-395516",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -79,7 +79,7 @@
         {
           "playerId": "fifa-425701",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -94,7 +94,7 @@
         {
           "playerId": "fifa-441261",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -109,7 +109,7 @@
         {
           "playerId": "fifa-402772",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -124,7 +124,7 @@
         {
           "playerId": "fifa-419518",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 76,
           "isStart": true,
           "goals": 0,
           "assists": 1,
@@ -139,7 +139,7 @@
         {
           "playerId": "fifa-416576",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 66,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -154,7 +154,7 @@
         {
           "playerId": "fifa-464533",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 66,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -169,7 +169,7 @@
         {
           "playerId": "fifa-356731",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 76,
           "isStart": true,
           "goals": 1,
           "assists": 0,
@@ -184,7 +184,7 @@
         {
           "playerId": "fifa-429157",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 79,
           "isStart": true,
           "goals": 1,
           "assists": 0,
@@ -199,7 +199,7 @@
         {
           "playerId": "fifa-403585",
           "team": "MEX",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 1,
@@ -214,7 +214,7 @@
         {
           "playerId": "fifa-400634",
           "team": "MEX",
-          "minutesPlayed": 0,
+          "minutesPlayed": 22,
           "isStart": false,
           "goals": 0,
           "assists": 0,
@@ -229,7 +229,7 @@
         {
           "playerId": "fifa-500037",
           "team": "MEX",
-          "minutesPlayed": 0,
+          "minutesPlayed": 32,
           "isStart": false,
           "goals": 0,
           "assists": 0,
@@ -244,7 +244,7 @@
         {
           "playerId": "fifa-448051",
           "team": "MEX",
-          "minutesPlayed": 0,
+          "minutesPlayed": 32,
           "isStart": false,
           "goals": 0,
           "assists": 0,
@@ -259,7 +259,7 @@
         {
           "playerId": "fifa-430766",
           "team": "MEX",
-          "minutesPlayed": 0,
+          "minutesPlayed": 19,
           "isStart": false,
           "goals": 0,
           "assists": 0,
@@ -274,7 +274,7 @@
         {
           "playerId": "fifa-514336",
           "team": "MEX",
-          "minutesPlayed": 0,
+          "minutesPlayed": 22,
           "isStart": false,
           "goals": 0,
           "assists": 0,
@@ -289,7 +289,7 @@
         {
           "playerId": "fifa-395986",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -304,7 +304,7 @@
         {
           "playerId": "fifa-395050",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 76,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -319,7 +319,7 @@
         {
           "playerId": "fifa-504199",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -334,7 +334,7 @@
         {
           "playerId": "fifa-463221",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -349,7 +349,7 @@
         {
           "playerId": "fifa-463218",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -364,7 +364,7 @@
         {
           "playerId": "fifa-506039",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -379,7 +379,7 @@
         {
           "playerId": "fifa-403616",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -394,7 +394,7 @@
         {
           "playerId": "fifa-390475",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 98,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -409,7 +409,7 @@
         {
           "playerId": "fifa-463236",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 61,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -424,7 +424,7 @@
         {
           "playerId": "fifa-419211",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 56,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -439,7 +439,7 @@
         {
           "playerId": "fifa-481242",
           "team": "RSA",
-          "minutesPlayed": 3,
+          "minutesPlayed": 76,
           "isStart": true,
           "goals": 0,
           "assists": 0,
@@ -454,7 +454,7 @@
         {
           "playerId": "fifa-494248",
           "team": "RSA",
-          "minutesPlayed": 0,
+          "minutesPlayed": 42,
           "isStart": false,
           "goals": 0,
           "assists": 0,
@@ -469,7 +469,7 @@
         {
           "playerId": "fifa-395984",
           "team": "RSA",
-          "minutesPlayed": 0,
+          "minutesPlayed": 37,
           "isStart": false,
           "goals": 0,
           "assists": 0,
@@ -484,7 +484,7 @@
         {
           "playerId": "fifa-419223",
           "team": "RSA",
-          "minutesPlayed": 0,
+          "minutesPlayed": 22,
           "isStart": false,
           "goals": 0,
           "assists": 0,
@@ -499,7 +499,7 @@
         {
           "playerId": "fifa-430917",
           "team": "RSA",
-          "minutesPlayed": 0,
+          "minutesPlayed": 22,
           "isStart": false,
           "goals": 0,
           "assists": 0,
