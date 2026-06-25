@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-25T20:17:26.354Z",
+  "lastUpdated": "2026-06-25T23:25:24.866Z",
   "tournamentStats": {
-    "totalGoals": 166,
+    "totalGoals": 171,
     "avgGoalsPerMatch": 3.1,
-    "totalYellowCards": 126,
+    "totalYellowCards": 133,
     "totalRedCards": 8,
-    "totalAttendance": 3483817
+    "totalAttendance": 3632804
   },
   "groups": [
     {
@@ -242,52 +242,52 @@
         {
           "code": "GER",
           "name": "德国",
-          "played": 2,
+          "played": 3,
           "won": 2,
           "drawn": 0,
-          "lost": 0,
-          "gf": 9,
-          "ga": 2,
-          "gd": 7,
+          "lost": 1,
+          "gf": 10,
+          "ga": 4,
+          "gd": 6,
           "pts": 6,
           "qualified": null
         },
         {
           "code": "CIV",
           "name": "科特迪瓦",
-          "played": 2,
-          "won": 1,
+          "played": 3,
+          "won": 2,
           "drawn": 0,
           "lost": 1,
-          "gf": 2,
+          "gf": 4,
           "ga": 2,
-          "gd": 0,
-          "pts": 3,
+          "gd": 2,
+          "pts": 6,
           "qualified": null
         },
         {
           "code": "ECU",
           "name": "厄瓜多尔",
-          "played": 2,
-          "won": 0,
+          "played": 3,
+          "won": 1,
           "drawn": 1,
           "lost": 1,
-          "gf": 0,
-          "ga": 1,
-          "gd": -1,
-          "pts": 1,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0,
+          "pts": 4,
           "qualified": null
         },
         {
           "code": "CUW",
           "name": "库拉索",
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 1,
-          "lost": 1,
+          "lost": 2,
           "gf": 1,
-          "ga": 7,
-          "gd": -6,
+          "ga": 9,
+          "gd": -8,
           "pts": 1,
           "qualified": null
         }
