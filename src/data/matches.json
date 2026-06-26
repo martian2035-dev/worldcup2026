@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T16:23:57.361Z",
+  "lastUpdated": "2026-06-26T20:02:33.239Z",
   "matches": [
     {
       "id": "A01",
@@ -71512,10 +71512,10 @@
         "name": "Boston Stadium",
         "city": "波士顿"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 3
       },
       "stats": null,
       "fifaMatchId": "400021489"
@@ -71538,10 +71538,10 @@
         "name": "Toronto Stadium",
         "city": "多伦多"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "stats": null,
       "fifaMatchId": "400021493"
