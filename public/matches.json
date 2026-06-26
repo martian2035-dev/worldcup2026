@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T04:24:46.933Z",
+  "lastUpdated": "2026-06-26T09:46:13.277Z",
   "matches": [
     {
       "id": "A01",
@@ -28156,7 +28156,7 @@
               "positionCode": 1,
               "status": 1,
               "captain": false,
-              "photoUrl": null
+              "photoUrl": "https://digitalhub.fifa.com/transform/de1f05c2-772c-4c3c-8410-b653f3e812c9/KHUSANOV-Abdukodir_479068"
             },
             {
               "id": "fifa-371415",
@@ -54100,7 +54100,7 @@
               "positionCode": 1,
               "status": 1,
               "captain": false,
-              "photoUrl": null
+              "photoUrl": "https://digitalhub.fifa.com/transform/de1f05c2-772c-4c3c-8410-b653f3e812c9/KHUSANOV-Abdukodir_479068"
             },
             {
               "id": "fifa-371415",
@@ -69028,7 +69028,7 @@
       "stats": {
         "home": {
           "possession": null,
-          "shots": 7,
+          "shots": 8,
           "shotsOnTarget": 4,
           "corners": 2,
           "fouls": 13,
@@ -70033,7 +70033,7 @@
           "isStart": false,
           "goals": 0,
           "assists": 0,
-          "shots": 0,
+          "shots": 1,
           "shotsOnTarget": 0,
           "yellowCard": false,
           "redCard": false,

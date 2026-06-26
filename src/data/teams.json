@@ -7238,21 +7238,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "ned-gk-1",
-          "name": "维姆·霍夫曼",
-          "nameEn": "维姆 霍夫曼",
-          "position": "GK",
-          "number": 2,
-          "isStar": true,
-          "age": 30,
-          "height": 194,
-          "weight": 94,
-          "club": "热刺",
-          "preferredFoot": "右脚",
-          "nationality": "荷兰",
-          "dataSource": "generated"
-        },
-        {
           "id": "micky-van-de-ven",
           "name": "米奇·范德文",
           "nameEn": "Micky van de Ven",
@@ -7293,9 +7278,9 @@
         },
         {
           "id": "nathan-ake",
-          "name": "纳坦·阿克",
-          "nameEn": "Nathan Aké",
-          "position": "CB",
+          "name": "Nathan AKE",
+          "nameEn": "Nathan AKE",
+          "position": "DF",
           "number": 5,
           "isStar": false,
           "age": 31,
@@ -7304,7 +7289,7 @@
           "club": "曼城",
           "preferredFoot": "右脚",
           "nationality": "荷兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-489517",
@@ -7329,6 +7314,15 @@
           "preferredFoot": "右脚",
           "nationality": "荷兰",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-478364",
+          "name": "Justin KLUIVERT",
+          "nameEn": "Justin KLUIVERT",
+          "position": "MF",
+          "number": 7,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-430176",
@@ -8267,21 +8261,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "tun-gk-1",
-          "name": "塞古·杜布瓦",
-          "nameEn": "塞古 杜布瓦",
-          "position": "GK",
-          "number": 4,
-          "isStar": false,
-          "age": 38,
-          "height": 196,
-          "weight": 95,
-          "club": "萨尔茨堡红牛",
-          "preferredFoot": "左脚",
-          "nationality": "突尼斯",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-411653",
           "name": "迪伦·布朗",
           "nameEn": "迪伦·布朗",
@@ -8324,34 +8303,13 @@
           "dataSource": "fifa"
         },
         {
-          "id": "hamza-rafia",
-          "name": "哈姆扎·拉菲亚",
-          "nameEn": "Hamza Rafia",
-          "position": "CAM",
-          "number": 8,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "斯法克西恩",
-          "preferredFoot": "右脚",
-          "nationality": "突尼斯",
-          "dataSource": "generated"
-        },
-        {
-          "id": "haythem-jouini",
-          "name": "海瑟姆·朱伊尼",
-          "nameEn": "Haythem Jouini",
-          "position": "ST",
+          "id": "fifa-494374",
+          "name": "Hazem MASTOURI",
+          "nameEn": "Hazem MASTOURI",
+          "position": "FW",
           "number": 9,
           "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "费内巴切",
-          "preferredFoot": "右脚",
-          "nationality": "突尼斯",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-433378",
@@ -8387,6 +8345,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-441362",
+          "name": "Mortadha BEN OUANES",
+          "nameEn": "Mortadha BEN OUANES",
+          "position": "DF",
+          "number": 12,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-336459",
           "name": "拉尼·赫迪拉",
           "nameEn": "拉尼·赫迪拉",
@@ -8409,6 +8376,15 @@
           "preferredFoot": "右脚",
           "nationality": "突尼斯",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-479781",
+          "name": "Mohamed HADJ MAHMOUD",
+          "nameEn": "Mohamed HADJ MAHMOUD",
+          "position": "MF",
+          "number": 15,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-433365",
