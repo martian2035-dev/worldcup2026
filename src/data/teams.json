@@ -5972,21 +5972,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "ger-gk-1",
-          "name": "拉斯·克鲁格",
-          "nameEn": "拉斯 克鲁格",
-          "position": "GK",
-          "number": 3,
-          "isStar": true,
-          "age": 32,
-          "height": 194,
-          "weight": 82,
-          "club": "沃尔夫斯堡",
-          "preferredFoot": "右脚",
-          "nationality": "德国",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-401378",
           "name": "乔纳森·塔",
           "nameEn": "乔纳森·塔",
@@ -6018,21 +6003,6 @@
           "number": 5,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "ger-gk-2",
-          "name": "米夏埃尔·范戴克",
-          "nameEn": "米夏埃尔 范戴克",
-          "position": "GK",
-          "number": 5,
-          "isStar": false,
-          "age": 27,
-          "height": 200,
-          "weight": 87,
-          "club": "拉齐奥",
-          "preferredFoot": "右脚",
-          "nationality": "德国",
-          "dataSource": "generated"
         },
         {
           "id": "joshua-kimmich",
@@ -6083,21 +6053,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "pascal-gross",
-          "name": "帕斯卡尔·格罗斯",
-          "nameEn": "Pascal Groß",
-          "position": "CM",
-          "number": 8,
-          "isStar": false,
-          "age": 34,
-          "height": 181,
-          "weight": 75,
-          "club": "多特蒙德",
-          "preferredFoot": "左脚",
-          "nationality": "德国",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-491218",
           "name": "Jamie LEWELING",
           "nameEn": "Jamie LEWELING",
@@ -6137,19 +6092,22 @@
           "dataSource": "fifa"
         },
         {
-          "id": "ger-cb-1",
-          "name": "拉斯·穆勒",
-          "nameEn": "拉斯 穆勒",
-          "position": "CB",
-          "number": 11,
+          "id": "fifa-484848",
+          "name": "Pascal GROSS",
+          "nameEn": "Pascal GROSS",
+          "position": "MF",
+          "number": 13,
           "isStar": false,
-          "age": 25,
-          "height": 197,
-          "weight": 77,
-          "club": "法兰克福",
-          "preferredFoot": "右脚",
-          "nationality": "德国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-484850",
+          "name": "Maximilian BEIER",
+          "nameEn": "Maximilian BEIER",
+          "position": "FW",
+          "number": 14,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-430667",
@@ -6157,6 +6115,15 @@
           "nameEn": "Nico SCHLOTTERBECK",
           "position": "DF",
           "number": 15,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-429640",
+          "name": "安杰洛·斯蒂勒",
+          "nameEn": "安杰洛·斯蒂勒",
+          "position": "MF",
+          "number": 16,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -6185,21 +6152,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "maximilian-mittelstadt",
-          "name": "马克西米利安·米特尔施泰特",
-          "nameEn": "Maximilian Mittelstädt",
-          "position": "LB",
-          "number": 18,
-          "isStar": false,
-          "age": 29,
-          "height": 178,
-          "weight": 71,
-          "club": "斯图加特",
-          "preferredFoot": "左脚",
-          "nationality": "德国",
-          "dataSource": "generated"
-        },
-        {
           "id": "leroy-sane",
           "name": "Leroy SANE",
           "nameEn": "Leroy SANE",
@@ -6224,11 +6176,29 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-430657",
+          "name": "David RAUM",
+          "nameEn": "David RAUM",
+          "position": "DF",
+          "number": 22,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-492363",
           "name": "Felix NMECHA",
           "nameEn": "Felix NMECHA",
           "position": "MF",
           "number": 23,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-514188",
+          "name": "Malick THIAW",
+          "nameEn": "Malick THIAW",
+          "position": "DF",
+          "number": 24,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -6953,19 +6923,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "ecu-gk-1",
-          "name": "圣地亚哥·埃斯皮诺萨",
-          "nameEn": "圣地亚哥 埃斯皮诺萨",
-          "position": "GK",
+          "id": "fifa-402979",
+          "name": "菲利克斯·托雷斯",
+          "nameEn": "菲利克斯·托雷斯",
+          "position": "DF",
           "number": 2,
-          "isStar": true,
-          "age": 25,
-          "height": 194,
-          "weight": 84,
-          "club": "马德里竞技",
-          "preferredFoot": "右脚",
-          "nationality": "厄瓜多尔",
-          "dataSource": "generated"
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-424031",
@@ -6992,19 +6956,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "ecu-gk-2",
-          "name": "安东尼奥·阿雷利亚诺",
-          "nameEn": "安东尼奥 阿雷利亚诺",
-          "position": "GK",
+          "id": "fifa-463465",
+          "name": "Joel ORDONEZ",
+          "nameEn": "Joel ORDONEZ",
+          "position": "DF",
           "number": 4,
           "isStar": false,
-          "age": 22,
-          "height": 200,
-          "weight": 86,
-          "club": "山谷独立",
-          "preferredFoot": "右脚",
-          "nationality": "厄瓜多尔",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-419005",
