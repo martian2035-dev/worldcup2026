@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-27T04:11:12.177Z",
+  "lastUpdated": "2026-06-27T08:47:52.104Z",
   "tournamentStats": {
-    "totalGoals": 193,
+    "totalGoals": 201,
     "avgGoalsPerMatch": 3,
-    "totalYellowCards": 153,
+    "totalYellowCards": 162,
     "totalRedCards": 10,
-    "totalAttendance": 4060684
+    "totalAttendance": 4250598
   },
   "groups": [
     {
@@ -354,54 +354,54 @@
       "name": "G",
       "teams": [
         {
+          "code": "BEL",
+          "name": "比利时",
+          "played": 3,
+          "won": 1,
+          "drawn": 2,
+          "lost": 0,
+          "gf": 6,
+          "ga": 2,
+          "gd": 4,
+          "pts": 5,
+          "qualified": null
+        },
+        {
           "code": "EGY",
           "name": "埃及",
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
-          "gf": 4,
-          "ga": 2,
+          "gf": 5,
+          "ga": 3,
           "gd": 2,
-          "pts": 4,
+          "pts": 5,
           "qualified": null
         },
         {
           "code": "IRN",
           "name": "伊朗",
-          "played": 2,
+          "played": 3,
           "won": 0,
-          "drawn": 2,
+          "drawn": 3,
           "lost": 0,
-          "gf": 2,
-          "ga": 2,
+          "gf": 3,
+          "ga": 3,
           "gd": 0,
-          "pts": 2,
-          "qualified": null
-        },
-        {
-          "code": "BEL",
-          "name": "比利时",
-          "played": 2,
-          "won": 0,
-          "drawn": 2,
-          "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 2,
+          "pts": 3,
           "qualified": null
         },
         {
           "code": "NZL",
           "name": "新西兰",
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 1,
-          "lost": 1,
-          "gf": 3,
-          "ga": 5,
-          "gd": -2,
+          "lost": 2,
+          "gf": 4,
+          "ga": 10,
+          "gd": -6,
           "pts": 1,
           "qualified": null
         }
