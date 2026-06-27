@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T19:41:02.598Z",
+  "lastUpdated": "2026-06-27T21:14:34.604Z",
   "matches": [
     {
       "id": "A01",
@@ -84230,10 +84230,10 @@
         "name": "New York/New Jersey Stadium",
         "city": "新泽西州"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "stats": null,
       "fifaMatchId": "400021508"
@@ -84256,10 +84256,10 @@
         "name": "Philadelphia Stadium",
         "city": "费城"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "stats": null,
       "fifaMatchId": "400021509"
