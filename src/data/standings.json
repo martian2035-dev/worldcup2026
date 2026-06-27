@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-27T21:14:34.647Z",
+  "lastUpdated": "2026-06-27T23:13:54.270Z",
   "tournamentStats": {
-    "totalGoals": 201,
+    "totalGoals": 206,
     "avgGoalsPerMatch": 3,
-    "totalYellowCards": 162,
+    "totalYellowCards": 167,
     "totalRedCards": 10,
-    "totalAttendance": 4250598
+    "totalAttendance": 4399585
   },
   "groups": [
     {
@@ -641,52 +641,52 @@
         {
           "code": "ENG",
           "name": "英格兰",
-          "played": 3,
-          "won": 2,
+          "played": 4,
+          "won": 3,
           "drawn": 1,
           "lost": 0,
-          "gf": 8,
+          "gf": 10,
           "ga": 4,
-          "gd": 4,
-          "pts": 7,
+          "gd": 6,
+          "pts": 10,
           "qualified": null
         },
         {
           "code": "CRO",
           "name": "克罗地亚",
-          "played": 3,
-          "won": 1,
+          "played": 4,
+          "won": 2,
           "drawn": 0,
           "lost": 2,
-          "gf": 5,
-          "ga": 8,
-          "gd": -3,
-          "pts": 3,
+          "gf": 7,
+          "ga": 9,
+          "gd": -2,
+          "pts": 6,
           "qualified": null
         },
         {
           "code": "GHA",
           "name": "加纳",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 1,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 2,
+          "gd": -1,
           "pts": 1,
           "qualified": null
         },
         {
           "code": "PAN",
           "name": "巴拿马",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "gf": 0,
-          "ga": 1,
-          "gd": -1,
+          "ga": 3,
+          "gd": -3,
           "pts": 0,
           "qualified": null
         }
