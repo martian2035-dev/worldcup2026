@@ -16823,21 +16823,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "cro-cb-1",
-          "name": "托马斯·霍拉克",
-          "nameEn": "托马斯 霍拉克",
-          "position": "CB",
-          "number": 7,
-          "isStar": true,
-          "age": 25,
-          "height": 184,
-          "weight": 84,
-          "club": "亚特兰大",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
-        },
-        {
           "id": "mateo-kovacic",
           "name": "Mateo KOVACIC",
           "nameEn": "Mateo KOVACIC",
@@ -16901,21 +16886,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "cro-lb-1",
-          "name": "阿米尔·马雷克",
-          "nameEn": "阿米尔 马雷克",
-          "position": "LB",
-          "number": 11,
-          "isStar": false,
-          "age": 26,
-          "height": 173,
-          "weight": 75,
-          "club": "里耶卡",
-          "preferredFoot": "右脚",
-          "nationality": "克罗地亚",
-          "dataSource": "generated"
-        },
-        {
           "id": "ivica-ivusic",
           "name": "伊维察·伊武希奇",
           "nameEn": "Ivica Ivušić",
@@ -16929,6 +16899,15 @@
           "preferredFoot": "右脚",
           "nationality": "克罗地亚",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-409191",
+          "name": "尼古拉·弗拉希奇",
+          "nameEn": "尼古拉·弗拉希奇",
+          "position": "MF",
+          "number": 13,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-359381",
@@ -16980,6 +16959,15 @@
           "preferredFoot": "右脚",
           "nationality": "克罗地亚",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-485068",
+          "name": "Igor MATANOVIC",
+          "nameEn": "Igor MATANOVIC",
+          "position": "FW",
+          "number": 20,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-448160",
@@ -17060,21 +17048,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "gha-gk-1",
-          "name": "安德烈·塔瓦雷斯",
-          "nameEn": "安德烈 塔瓦雷斯",
-          "position": "GK",
-          "number": 2,
-          "isStar": false,
-          "age": 25,
-          "height": 187,
-          "weight": 93,
-          "club": "奥林匹亚科斯",
-          "preferredFoot": "右脚",
-          "nationality": "加纳",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-506279",
           "name": "Caleb YIRENKYI",
           "nameEn": "Caleb YIRENKYI",
@@ -17082,21 +17055,6 @@
           "number": 3,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "ideon-mensah",
-          "name": "吉迪恩·门萨",
-          "nameEn": "Gideon Mensah",
-          "position": "LB",
-          "number": 3,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "博洛尼亚",
-          "preferredFoot": "右脚",
-          "nationality": "加纳",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-494351",
@@ -17204,6 +17162,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-486213",
+          "name": "Brandon THOMAS-ASANTE",
+          "nameEn": "Brandon THOMAS-ASANTE",
+          "position": "FW",
+          "number": 10,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-448531",
           "name": "安托万·塞梅诺",
           "nameEn": "安托万·塞梅诺",
@@ -17213,26 +17180,20 @@
           "dataSource": "fifa"
         },
         {
-          "id": "ernest-nuamah",
-          "name": "欧内斯特·努阿马",
-          "nameEn": "Ernest Nuamah",
-          "position": "RW",
-          "number": 11,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "阿桑特科托科",
-          "preferredFoot": "右脚",
-          "nationality": "加纳",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-441333",
           "name": "吉迪恩·门萨",
           "nameEn": "吉迪恩·门萨",
           "position": "DF",
           "number": 14,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-441341",
+          "name": "以利沙·奥乌苏",
+          "nameEn": "以利沙·奥乌苏",
+          "position": "MF",
+          "number": 15,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -17255,21 +17216,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "antoine-semenyo",
-          "name": "安托万·塞梅尼奥",
-          "nameEn": "Antoine Semenyo",
-          "position": "LW",
-          "number": 17,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "橡树之心",
-          "preferredFoot": "右脚",
-          "nationality": "加纳",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-486150",
           "name": "Jerome OPOKU",
           "nameEn": "Jerome OPOKU",
@@ -17286,21 +17232,6 @@
           "number": 19,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "inaki-williams",
-          "name": "伊尼亚基·威廉姆斯",
-          "nameEn": "Iñaki Williams",
-          "position": "RW",
-          "number": 19,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "阿桑特科托科",
-          "preferredFoot": "右脚",
-          "nationality": "加纳",
-          "dataSource": "generated"
         },
         {
           "id": "mohammed-kudus",
@@ -17323,6 +17254,33 @@
           "nameEn": "Kojo Peprah OPPONG",
           "position": "DF",
           "number": 21,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-448523",
+          "name": "卡迈勒迪恩·苏莱马纳",
+          "nameEn": "卡迈勒迪恩·苏莱马纳",
+          "position": "FW",
+          "number": 22,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-520037",
+          "name": "Derrick LUCKASSEN",
+          "nameEn": "Derrick LUCKASSEN",
+          "position": "DF",
+          "number": 23,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-448525",
+          "name": "欧内斯特·努阿马赫",
+          "nameEn": "欧内斯特·努阿马赫",
+          "position": "FW",
+          "number": 24,
           "isStar": false,
           "dataSource": "fifa"
         },
