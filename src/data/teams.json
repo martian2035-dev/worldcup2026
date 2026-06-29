@@ -3020,6 +3020,15 @@
       },
       "players": [
         {
+          "id": "fifa-308370",
+          "name": "艾莉森",
+          "nameEn": "艾莉森",
+          "position": "GK",
+          "number": 1,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "alisson",
           "name": "阿利松",
           "nameEn": "Alisson Becker",
@@ -3050,11 +3059,26 @@
           "dataSource": "generated"
         },
         {
-          "id": "marquinhos",
-          "name": "马尔基尼奥斯",
-          "nameEn": "Marquinhos",
-          "position": "CB",
+          "id": "gabriel-magalhaes",
+          "name": "GABRIEL MAGALHAES",
+          "nameEn": "GABRIEL MAGALHAES",
+          "position": "DF",
           "number": 3,
+          "isStar": false,
+          "age": 28,
+          "height": 190,
+          "weight": 82,
+          "club": "阿森纳",
+          "preferredFoot": "右脚",
+          "nationality": "巴西",
+          "dataSource": "fifa"
+        },
+        {
+          "id": "marquinhos",
+          "name": "MARQUINHOS",
+          "nameEn": "MARQUINHOS",
+          "position": "DF",
+          "number": 4,
           "isStar": true,
           "age": 31,
           "height": 183,
@@ -3062,7 +3086,7 @@
           "club": "巴黎圣日耳曼",
           "preferredFoot": "右脚",
           "nationality": "巴西",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "eder-militao",
@@ -3078,6 +3102,15 @@
           "preferredFoot": "右脚",
           "nationality": "巴西",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-308386",
+          "name": "卡塞米罗",
+          "nameEn": "卡塞米罗",
+          "position": "MF",
+          "number": 5,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "bra-gk-2",
@@ -3111,9 +3144,9 @@
         },
         {
           "id": "vinicius-jr",
-          "name": "维尼修斯",
-          "nameEn": "Vinícius Júnior",
-          "position": "LW",
+          "name": "VINICIUS JUNIOR",
+          "nameEn": "VINICIUS JUNIOR",
+          "position": "FW",
           "number": 7,
           "isStar": true,
           "age": 25,
@@ -3122,13 +3155,13 @@
           "club": "皇家马德里",
           "preferredFoot": "右脚",
           "nationality": "巴西",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "bruno-guimaraes",
-          "name": "布鲁诺·吉马良斯",
-          "nameEn": "Bruno Guimarães",
-          "position": "CM",
+          "name": "BRUNO GUIMARAES",
+          "nameEn": "BRUNO GUIMARAES",
+          "position": "MF",
           "number": 8,
           "isStar": true,
           "age": 28,
@@ -3137,22 +3170,16 @@
           "club": "纽卡斯尔联",
           "preferredFoot": "右脚",
           "nationality": "巴西",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "enda-wendel",
-          "name": "恩德里克",
-          "nameEn": "Endrick",
-          "position": "ST",
+          "id": "fifa-430609",
+          "name": "MATHEUS CUNHA",
+          "nameEn": "MATHEUS CUNHA",
+          "position": "FW",
           "number": 9,
           "isStar": false,
-          "age": 19,
-          "height": 173,
-          "weight": 73,
-          "club": "皇家马德里",
-          "preferredFoot": "右脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "lucas-paqueta",
@@ -3200,6 +3227,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-335656",
+          "name": "DANILO",
+          "nameEn": "DANILO",
+          "position": "DF",
+          "number": 13,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "bra-rb-1",
           "name": "拉斐尔·席尔瓦",
           "nameEn": "拉斐尔 席尔瓦",
@@ -3210,21 +3246,6 @@
           "height": 180,
           "weight": 69,
           "club": "富勒姆",
-          "preferredFoot": "右脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
-        },
-        {
-          "id": "gabriel-magalhaes",
-          "name": "加布里埃尔·马加良斯",
-          "nameEn": "Gabriel Magalhães",
-          "position": "CB",
-          "number": 14,
-          "isStar": false,
-          "age": 28,
-          "height": 190,
-          "weight": 82,
-          "club": "阿森纳",
           "preferredFoot": "右脚",
           "nationality": "巴西",
           "dataSource": "generated"
@@ -3245,49 +3266,46 @@
           "dataSource": "generated"
         },
         {
-          "id": "bra-rb-2",
-          "name": "米利唐·阿尔梅达",
-          "nameEn": "米利唐 阿尔梅达",
-          "position": "RB",
+          "id": "fifa-367981",
+          "name": "道格拉斯·桑托斯",
+          "nameEn": "道格拉斯·桑托斯",
+          "position": "DF",
           "number": 16,
           "isStar": false,
-          "age": 24,
-          "height": 174,
-          "weight": 71,
-          "club": "弗鲁米嫩塞",
-          "preferredFoot": "右脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "bra-cdm-1",
-          "name": "蒂亚戈·索萨",
-          "nameEn": "蒂亚戈 索萨",
-          "position": "CDM",
+          "id": "fifa-394456",
+          "name": "法比尼奥",
+          "nameEn": "法比尼奥",
+          "position": "MF",
           "number": 17,
           "isStar": false,
-          "age": 24,
-          "height": 185,
-          "weight": 84,
-          "club": "朗斯",
-          "preferredFoot": "左脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "bra-cdm-2",
-          "name": "米利唐·坎波斯",
-          "nameEn": "米利唐 坎波斯",
-          "position": "CDM",
+          "id": "fifa-429392",
+          "name": "DANILO SANTOS",
+          "nameEn": "DANILO SANTOS",
+          "position": "MF",
           "number": 18,
           "isStar": false,
-          "age": 28,
-          "height": 184,
-          "weight": 78,
-          "club": "本菲卡",
+          "dataSource": "fifa"
+        },
+        {
+          "id": "enda-wendel",
+          "name": "ENDRICK",
+          "nameEn": "ENDRICK",
+          "position": "FW",
+          "number": 19,
+          "isStar": false,
+          "age": 19,
+          "height": 173,
+          "weight": 73,
+          "club": "皇家马德里",
           "preferredFoot": "右脚",
           "nationality": "巴西",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "raphinha",
@@ -3305,109 +3323,31 @@
           "dataSource": "generated"
         },
         {
-          "id": "bra-cm-1",
-          "name": "迭戈·科雷亚",
-          "nameEn": "迭戈 科雷亚",
-          "position": "CM",
+          "id": "fifa-411726",
+          "name": "卢卡斯·帕奎塔",
+          "nameEn": "卢卡斯·帕奎塔",
+          "position": "MF",
           "number": 20,
           "isStar": false,
-          "age": 25,
-          "height": 175,
-          "weight": 68,
-          "club": "帕尔梅拉斯",
-          "preferredFoot": "右脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "bra-cm-2",
-          "name": "威廉·巴博萨",
-          "nameEn": "威廉 巴博萨",
-          "position": "CM",
-          "number": 21,
-          "isStar": false,
-          "age": 31,
-          "height": 182,
-          "weight": 72,
-          "club": "斯图加特",
-          "preferredFoot": "左脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
-        },
-        {
-          "id": "bra-cam-1",
-          "name": "古斯塔沃·费雷拉",
-          "nameEn": "古斯塔沃 费雷拉",
-          "position": "CAM",
+          "id": "fifa-430597",
+          "name": "GABRIEL MARTINELLI",
+          "nameEn": "GABRIEL MARTINELLI",
+          "position": "FW",
           "number": 22,
           "isStar": false,
-          "age": 26,
-          "height": 172,
-          "weight": 72,
-          "club": "弗鲁米嫩塞",
-          "preferredFoot": "右脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "bra-lw-1",
-          "name": "杰斐逊·巴博萨",
-          "nameEn": "杰斐逊 巴博萨",
-          "position": "LW",
-          "number": 23,
-          "isStar": false,
-          "age": 27,
-          "height": 180,
-          "weight": 68,
-          "club": "里昂",
-          "preferredFoot": "右脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
-        },
-        {
-          "id": "bra-st-1",
-          "name": "菲利佩·马丁斯",
-          "nameEn": "菲利佩 马丁斯",
-          "position": "ST",
-          "number": 24,
-          "isStar": false,
-          "age": 28,
-          "height": 173,
-          "weight": 87,
-          "club": "博塔弗戈",
-          "preferredFoot": "左脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
-        },
-        {
-          "id": "bra-st-2",
-          "name": "马尔基尼奥斯·迪亚斯",
-          "nameEn": "马尔基尼奥斯 迪亚斯",
-          "position": "ST",
-          "number": 25,
-          "isStar": false,
-          "age": 23,
-          "height": 186,
-          "weight": 80,
-          "club": "奥林匹亚科斯",
-          "preferredFoot": "右脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
-        },
-        {
-          "id": "bra-rw-1",
-          "name": "文德尔·索萨",
-          "nameEn": "文德尔 索萨",
-          "position": "RW",
+          "id": "fifa-475036",
+          "name": "RAYAN",
+          "nameEn": "RAYAN",
+          "position": "FW",
           "number": 26,
           "isStar": false,
-          "age": 30,
-          "height": 181,
-          "weight": 75,
-          "club": "诺丁汉森林",
-          "preferredFoot": "左脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
@@ -8180,6 +8120,15 @@
       },
       "players": [
         {
+          "id": "fifa-405530",
+          "name": "铃木彩艳",
+          "nameEn": "铃木彩艳",
+          "position": "GK",
+          "number": 1,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "zion-suzuki",
           "name": "铃木彩艳",
           "nameEn": "Zion Suzuki",
@@ -8195,6 +8144,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-405528",
+          "name": "菅原由势",
+          "nameEn": "菅原由势",
+          "position": "DF",
+          "number": 2,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "jpn-gk-1",
           "name": "山本智也",
           "nameEn": "山本智也",
@@ -8208,6 +8166,15 @@
           "preferredFoot": "左脚",
           "nationality": "日本",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-390541",
+          "name": "谷口彰悟",
+          "nameEn": "谷口彰悟",
+          "position": "DF",
+          "number": 3,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "hiroki-ito",
@@ -8240,19 +8207,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "jpn-gk-2",
-          "name": "石川智也",
-          "nameEn": "石川智也",
-          "position": "GK",
-          "number": 5,
-          "isStar": true,
-          "age": 31,
-          "height": 187,
-          "weight": 88,
-          "club": "利物浦",
-          "preferredFoot": "左脚",
-          "nationality": "日本",
-          "dataSource": "generated"
+          "id": "fifa-448569",
+          "name": "町野修斗",
+          "nameEn": "町野修斗",
+          "position": "FW",
+          "number": 6,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "wataru-endo",
@@ -8270,6 +8231,21 @@
           "dataSource": "generated"
         },
         {
+          "id": "ao-tanaka",
+          "name": "Ao TANAKA",
+          "nameEn": "Ao TANAKA",
+          "position": "MF",
+          "number": 7,
+          "isStar": false,
+          "age": 27,
+          "height": 177,
+          "weight": 70,
+          "club": "利兹联",
+          "preferredFoot": "右脚",
+          "nationality": "日本",
+          "dataSource": "fifa"
+        },
+        {
           "id": "kaoru-mitoma",
           "name": "三笘薰",
           "nameEn": "Kaoru Mitoma",
@@ -8285,34 +8261,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "jpn-lb-1",
-          "name": "後藤和也",
-          "nameEn": "後藤和也",
-          "position": "LB",
-          "number": 8,
+          "id": "fifa-391646",
+          "name": "杜安律",
+          "nameEn": "杜安律",
+          "position": "MF",
+          "number": 10,
           "isStar": false,
-          "age": 27,
-          "height": 173,
-          "weight": 67,
-          "club": "富勒姆",
-          "preferredFoot": "左脚",
-          "nationality": "日本",
-          "dataSource": "generated"
-        },
-        {
-          "id": "ayase-ueda",
-          "name": "上田绮世",
-          "nameEn": "Ayase Ueda",
-          "position": "ST",
-          "number": 9,
-          "isStar": false,
-          "age": 26,
-          "height": 182,
-          "weight": 75,
-          "club": "费耶诺德",
-          "preferredFoot": "右脚",
-          "nationality": "日本",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "takumi-minamino",
@@ -8330,6 +8285,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-430407",
+          "name": "Daizen MAEDA",
+          "nameEn": "Daizen MAEDA",
+          "position": "MF",
+          "number": 11,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "takefusa-kubo",
           "name": "久保建英",
           "nameEn": "Takefusa Kubo",
@@ -8345,49 +8309,31 @@
           "dataSource": "generated"
         },
         {
-          "id": "jpn-lb-2",
-          "name": "前田翔",
-          "nameEn": "前田翔",
-          "position": "LB",
-          "number": 12,
-          "isStar": false,
-          "age": 31,
-          "height": 176,
-          "weight": 75,
-          "club": "川崎前锋",
-          "preferredFoot": "左脚",
-          "nationality": "日本",
-          "dataSource": "generated"
-        },
-        {
-          "id": "jpn-rb-1",
-          "name": "高橋二郎",
-          "nameEn": "高橋二郎",
-          "position": "RB",
+          "id": "fifa-405522",
+          "name": "中村敬斗",
+          "nameEn": "中村敬斗",
+          "position": "MF",
           "number": 13,
           "isStar": false,
-          "age": 30,
-          "height": 182,
-          "weight": 77,
-          "club": "神户胜利船",
-          "preferredFoot": "左脚",
-          "nationality": "日本",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "jpn-rb-2",
-          "name": "小川二郎",
-          "nameEn": "小川二郎",
-          "position": "RB",
+          "id": "fifa-395321",
+          "name": "伊东纯也",
+          "nameEn": "伊东纯也",
+          "position": "MF",
           "number": 14,
           "isStar": false,
-          "age": 29,
-          "height": 177,
-          "weight": 73,
-          "club": "奥林匹亚科斯",
-          "preferredFoot": "右脚",
-          "nationality": "日本",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-448557",
+          "name": "镰田大地",
+          "nameEn": "镰田大地",
+          "position": "MF",
+          "number": 15,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "daichi-kamada",
@@ -8405,94 +8351,46 @@
           "dataSource": "generated"
         },
         {
-          "id": "jpn-cdm-1",
-          "name": "村上大翔",
-          "nameEn": "村上大翔",
-          "position": "CDM",
-          "number": 16,
-          "isStar": false,
-          "age": 23,
-          "height": 190,
-          "weight": 72,
-          "club": "南安普顿",
-          "preferredFoot": "右脚",
-          "nationality": "日本",
-          "dataSource": "generated"
-        },
-        {
-          "id": "ao-tanaka",
-          "name": "田中碧",
-          "nameEn": "Ao Tanaka",
-          "position": "CM",
-          "number": 17,
-          "isStar": false,
-          "age": 27,
-          "height": 177,
-          "weight": 70,
-          "club": "利兹联",
-          "preferredFoot": "右脚",
-          "nationality": "日本",
-          "dataSource": "generated"
-        },
-        {
-          "id": "jpn-cdm-2",
-          "name": "清水二郎",
-          "nameEn": "清水二郎",
-          "position": "CDM",
+          "id": "ayase-ueda",
+          "name": "Ayase UEDA",
+          "nameEn": "Ayase UEDA",
+          "position": "FW",
           "number": 18,
           "isStar": false,
-          "age": 33,
-          "height": 187,
-          "weight": 81,
-          "club": "川崎前锋",
-          "preferredFoot": "左脚",
+          "age": 26,
+          "height": 182,
+          "weight": 75,
+          "club": "费耶诺德",
+          "preferredFoot": "右脚",
           "nationality": "日本",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "jpn-cm-1",
-          "name": "吉田優斗",
-          "nameEn": "吉田優斗",
-          "position": "CM",
+          "id": "fifa-403293",
+          "name": "小川幸之助",
+          "nameEn": "小川幸之助",
+          "position": "FW",
           "number": 19,
           "isStar": false,
-          "age": 21,
-          "height": 186,
-          "weight": 72,
-          "club": "贝尔格莱德红星",
-          "preferredFoot": "右脚",
-          "nationality": "日本",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "jpn-cm-2",
-          "name": "鈴木翼",
-          "nameEn": "鈴木翼",
-          "position": "CM",
-          "number": 20,
-          "isStar": false,
-          "age": 21,
-          "height": 179,
-          "weight": 77,
-          "club": "浦和红钻",
-          "preferredFoot": "右脚",
-          "nationality": "日本",
-          "dataSource": "generated"
-        },
-        {
-          "id": "jpn-cam-1",
-          "name": "松本直樹",
-          "nameEn": "松本直樹",
-          "position": "CAM",
+          "id": "fifa-403274",
+          "name": "伊藤洋辉",
+          "nameEn": "伊藤洋辉",
+          "position": "DF",
           "number": 21,
           "isStar": false,
-          "age": 22,
-          "height": 173,
-          "weight": 68,
-          "club": "鹿岛鹿角",
-          "preferredFoot": "左脚",
-          "nationality": "日本",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-403289",
+          "name": "富安健洋",
+          "nameEn": "富安健洋",
+          "position": "DF",
+          "number": 22,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "takehiro-tomiyasu",
@@ -8510,64 +8408,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "jpn-rw-1",
-          "name": "村上樹",
-          "nameEn": "村上樹",
-          "position": "RW",
-          "number": 23,
-          "isStar": false,
-          "age": 19,
-          "height": 173,
-          "weight": 64,
-          "club": "鹿岛鹿角",
-          "preferredFoot": "左脚",
-          "nationality": "日本",
-          "dataSource": "generated"
-        },
-        {
-          "id": "jpn-st-1",
-          "name": "前田大翔",
-          "nameEn": "前田大翔",
-          "position": "ST",
+          "id": "fifa-479294",
+          "name": "Kaishu SANO",
+          "nameEn": "Kaishu SANO",
+          "position": "MF",
           "number": 24,
           "isStar": false,
-          "age": 35,
-          "height": 190,
-          "weight": 84,
-          "club": "浦和红钻",
-          "preferredFoot": "右脚",
-          "nationality": "日本",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "jpn-st-2",
-          "name": "山本翔太",
-          "nameEn": "山本翔太",
-          "position": "ST",
+          "id": "fifa-498455",
+          "name": "Junnosuke SUZUKI",
+          "nameEn": "Junnosuke SUZUKI",
+          "position": "DF",
           "number": 25,
           "isStar": false,
-          "age": 29,
-          "height": 190,
-          "weight": 90,
-          "club": "诺丁汉森林",
-          "preferredFoot": "左脚",
-          "nationality": "日本",
-          "dataSource": "generated"
-        },
-        {
-          "id": "jpn-rw-2",
-          "name": "木村一郎",
-          "nameEn": "木村一郎",
-          "position": "RW",
-          "number": 26,
-          "isStar": false,
-          "age": 22,
-          "height": 180,
-          "weight": 60,
-          "club": "川崎前锋",
-          "preferredFoot": "右脚",
-          "nationality": "日本",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
