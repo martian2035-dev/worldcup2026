@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T16:04:38.709Z",
+  "lastUpdated": "2026-06-29T18:18:43.049Z",
   "matches": [
     {
       "id": "A01",
@@ -93075,10 +93075,10 @@
         "name": "Houston Stadium",
         "city": "休斯敦"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "stats": null
     },
