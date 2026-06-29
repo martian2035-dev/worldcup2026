@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-29T01:54:11.164Z",
+  "updatedAt": "2026-06-29T04:53:08.678Z",
   "leaders": [
     {
       "username": "w01",
-      "beans": 13872,
+      "beans": 13665,
       "totalBets": 50,
-      "wonBets": 33,
+      "wonBets": 32,
       "createdAt": "2026-06-13T09:47:17.896Z",
       "bets": [
         {
@@ -17,8 +17,8 @@
           "betType": "away_win",
           "amount": 100,
           "odds": 4.46,
-          "status": "won",
-          "payout": 446,
+          "status": "lost",
+          "payout": 0,
           "createdAt": "2026-06-13T09:47:17.896Z"
         },
         {
@@ -341,8 +341,8 @@
           "betType": "home_win",
           "amount": 100,
           "odds": 1.8,
-          "status": "won",
-          "payout": 180,
+          "status": "lost",
+          "payout": 0,
           "createdAt": "2026-06-15T12:10:28.571Z"
         },
         {
@@ -377,8 +377,8 @@
           "betType": "home_win",
           "amount": 100,
           "odds": 4.19,
-          "status": "lost",
-          "payout": 0,
+          "status": "won",
+          "payout": 419,
           "createdAt": "2026-06-21T04:51:35.172Z"
         },
         {
