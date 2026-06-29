@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-28T23:13:17.180Z",
+  "lastUpdated": "2026-06-29T02:00:47.982Z",
   "tournamentStats": {
-    "totalGoals": 220,
-    "avgGoalsPerMatch": 3.1,
-    "totalYellowCards": 177,
+    "totalGoals": 216,
+    "avgGoalsPerMatch": 3,
+    "totalYellowCards": 182,
     "totalRedCards": 10,
-    "totalAttendance": 4671996
+    "totalAttendance": 4713786
   },
   "groups": [
     {
@@ -22,7 +22,7 @@
           "ga": 0,
           "gd": 6,
           "pts": 9,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "RSA",
@@ -35,7 +35,7 @@
           "ga": 3,
           "gd": -1,
           "pts": 4,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "KOR",
@@ -79,7 +79,7 @@
           "ga": 3,
           "gd": 4,
           "pts": 7,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "CAN",
@@ -92,7 +92,7 @@
           "ga": 3,
           "gd": 5,
           "pts": 4,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "BIH",
@@ -105,7 +105,7 @@
           "ga": 6,
           "gd": -1,
           "pts": 4,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "QAT",
@@ -136,7 +136,7 @@
           "ga": 1,
           "gd": 6,
           "pts": 7,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "MAR",
@@ -149,7 +149,7 @@
           "ga": 3,
           "gd": 3,
           "pts": 7,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "SCO",
@@ -193,7 +193,7 @@
           "ga": 4,
           "gd": 4,
           "pts": 6,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "AUS",
@@ -206,7 +206,7 @@
           "ga": 2,
           "gd": 0,
           "pts": 4,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "PAR",
@@ -219,7 +219,7 @@
           "ga": 4,
           "gd": -2,
           "pts": 4,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "TUR",
@@ -250,7 +250,7 @@
           "ga": 4,
           "gd": 6,
           "pts": 6,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "CIV",
@@ -263,7 +263,7 @@
           "ga": 2,
           "gd": 2,
           "pts": 6,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "ECU",
@@ -276,7 +276,7 @@
           "ga": 2,
           "gd": 0,
           "pts": 4,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "CUW",
@@ -307,7 +307,7 @@
           "ga": 4,
           "gd": 6,
           "pts": 7,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "JPN",
@@ -320,7 +320,7 @@
           "ga": 3,
           "gd": 4,
           "pts": 5,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "SWE",
@@ -333,7 +333,7 @@
           "ga": 7,
           "gd": 0,
           "pts": 4,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "TUN",
@@ -364,7 +364,7 @@
           "ga": 2,
           "gd": 4,
           "pts": 5,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "EGY",
@@ -377,7 +377,7 @@
           "ga": 3,
           "gd": 2,
           "pts": 5,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "IRN",
@@ -421,7 +421,7 @@
           "ga": 0,
           "gd": 5,
           "pts": 7,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "CPV",
@@ -434,7 +434,7 @@
           "ga": 2,
           "gd": 0,
           "pts": 3,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "URU",
@@ -478,7 +478,7 @@
           "ga": 2,
           "gd": 8,
           "pts": 9,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "NOR",
@@ -491,7 +491,7 @@
           "ga": 7,
           "gd": 1,
           "pts": 6,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "SEN",
@@ -504,7 +504,7 @@
           "ga": 6,
           "gd": 2,
           "pts": 3,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "IRQ",
@@ -535,7 +535,7 @@
           "ga": 1,
           "gd": 7,
           "pts": 9,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "AUT",
@@ -548,7 +548,7 @@
           "ga": 6,
           "gd": 0,
           "pts": 4,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "ALG",
@@ -561,7 +561,7 @@
           "ga": 7,
           "gd": -2,
           "pts": 4,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "JOR",
@@ -592,7 +592,7 @@
           "ga": 1,
           "gd": 3,
           "pts": 7,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "POR",
@@ -605,7 +605,7 @@
           "ga": 1,
           "gd": 5,
           "pts": 5,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "COD",
@@ -618,7 +618,7 @@
           "ga": 3,
           "gd": 1,
           "pts": 4,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "UZB",
@@ -641,52 +641,52 @@
         {
           "code": "ENG",
           "name": "英格兰",
-          "played": 4,
-          "won": 3,
+          "played": 3,
+          "won": 2,
           "drawn": 1,
           "lost": 0,
-          "gf": 10,
-          "ga": 4,
-          "gd": 6,
-          "pts": 10,
-          "qualified": null
+          "gf": 6,
+          "ga": 2,
+          "gd": 4,
+          "pts": 7,
+          "qualified": "round32"
         },
         {
           "code": "CRO",
           "name": "克罗地亚",
-          "played": 4,
+          "played": 3,
           "won": 2,
           "drawn": 0,
-          "lost": 2,
-          "gf": 7,
-          "ga": 9,
-          "gd": -2,
+          "lost": 1,
+          "gf": 5,
+          "ga": 5,
+          "gd": 0,
           "pts": 6,
-          "qualified": null
+          "qualified": "round32"
         },
         {
           "code": "GHA",
           "name": "加纳",
-          "played": 2,
-          "won": 0,
+          "played": 3,
+          "won": 1,
           "drawn": 1,
           "lost": 1,
-          "gf": 1,
+          "gf": 2,
           "ga": 2,
-          "gd": -1,
-          "pts": 1,
-          "qualified": null
+          "gd": 0,
+          "pts": 4,
+          "qualified": "round32"
         },
         {
           "code": "PAN",
           "name": "巴拿马",
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 0,
-          "lost": 2,
+          "lost": 3,
           "gf": 0,
-          "ga": 3,
-          "gd": -3,
+          "ga": 4,
+          "gd": -4,
           "pts": 0,
           "qualified": null
         }

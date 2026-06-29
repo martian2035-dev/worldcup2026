@@ -61,6 +61,41 @@ test("rebuildStandingsFromMatches updates group table and tournament summary", (
   });
 });
 
+test("rebuildStandingsFromMatches marks top two and eight best third-place teams as round32 qualifiers", () => {
+  const groupNames = "ABCDEFGHIJKL".split("");
+  const standings = {
+    tournamentStats: {
+      totalGoals: 0,
+      avgGoalsPerMatch: 0,
+      totalYellowCards: 0,
+      totalRedCards: 0,
+      totalAttendance: 0,
+    },
+    groups: groupNames.map((group) => ({
+      name: group,
+      teams: [1, 2, 3, 4].map((seed) => emptyTeam(`${group}${seed}`, `${group}${seed}`)),
+    })),
+  };
+  const matches = groupNames.flatMap((group) => buildFinishedGroup(group));
+
+  const result = rebuildStandingsFromMatches(standings, matches, new Date("2026-06-29T23:00:00+08:00"));
+  const qualified = result.groups.flatMap((group) =>
+    group.teams.filter((team) => team.qualified === "round32").map((team) => team.code)
+  );
+
+  assert.equal(qualified.length, 32);
+  for (const group of groupNames) {
+    assert.ok(qualified.includes(`${group}1`));
+    assert.ok(qualified.includes(`${group}2`));
+  }
+  for (const group of groupNames.slice(0, 8)) {
+    assert.ok(qualified.includes(`${group}3`));
+  }
+  for (const group of groupNames.slice(8)) {
+    assert.equal(result.groups.find((item) => item.name === group).teams.find((team) => team.code === `${group}3`).qualified, null);
+  }
+});
+
 function emptyTeam(code, name) {
   return {
     code,
@@ -74,6 +109,35 @@ function emptyTeam(code, name) {
     gd: 0,
     pts: 0,
     qualified: null,
+  };
+}
+
+function buildFinishedGroup(group) {
+  const [first, second, third, fourth] = [1, 2, 3, 4].map((seed) => ({
+    code: `${group}${seed}`,
+    name: `${group}${seed}`,
+  }));
+
+  return [
+    groupMatch(group, 1, first, second, 3, 0),
+    groupMatch(group, 2, first, third, 2, 0),
+    groupMatch(group, 3, first, fourth, 1, 0),
+    groupMatch(group, 4, second, third, 2, 0),
+    groupMatch(group, 5, second, fourth, 1, 0),
+    groupMatch(group, 6, third, fourth, 1, 0),
+  ];
+}
+
+function groupMatch(group, slot, home, away, homeScore, awayScore) {
+  return {
+    id: `${group}${String(slot).padStart(2, "0")}`,
+    group,
+    stage: "group",
+    status: "finished",
+    datetime: "2026-06-29T19:00:00+08:00",
+    home,
+    away,
+    score: { home: homeScore, away: awayScore },
   };
 }
 

@@ -25,6 +25,7 @@ export function rebuildStandingsFromMatches(standingsData, matches, now = new Da
   for (const group of groups) {
     group.teams.sort(compareStandingTeams);
   }
+  markQualifiedTeams(groups);
 
   return {
     ...standingsData,
@@ -51,6 +52,30 @@ function resetTeam(team) {
   team.gd = 0;
   team.pts = 0;
   team.qualified = null;
+}
+
+function markQualifiedTeams(groups) {
+  const completedGroups = groups.filter((group) => isGroupComplete(group));
+  const thirdPlacedTeams = [];
+
+  for (const group of completedGroups) {
+    if (group.teams[0]) group.teams[0].qualified = "round32";
+    if (group.teams[1]) group.teams[1].qualified = "round32";
+    if (group.teams[2]) thirdPlacedTeams.push(group.teams[2]);
+  }
+
+  if (completedGroups.length !== groups.length) return;
+
+  thirdPlacedTeams
+    .sort(compareStandingTeams)
+    .slice(0, 8)
+    .forEach((team) => {
+      team.qualified = "round32";
+    });
+}
+
+function isGroupComplete(group) {
+  return group.teams.length > 0 && group.teams.every((team) => team.played >= 3);
 }
 
 function applyResult(team, goalsFor, goalsAgainst) {

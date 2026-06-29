@@ -151,6 +151,170 @@ test("syncMatchesWithFifa falls back to FIFA group slot when local matchup is wr
   assert.deepEqual(updated.score, { home: 4, away: 1 });
 });
 
+test("syncMatchesWithFifa prefers group slot over stale exact team matchup", () => {
+  const localMatches = [
+    {
+      id: "L01",
+      group: "L",
+      stage: "group",
+      home: { code: "ENG", name: "英格兰" },
+      away: { code: "CRO", name: "克罗地亚" },
+      datetime: "2026-06-18T04:00:00+08:00",
+      status: "finished",
+      score: { home: 4, away: 2 },
+    },
+    {
+      id: "L02",
+      group: "L",
+      stage: "group",
+      home: { code: "ENG", name: "英格兰" },
+      away: { code: "CRO", name: "克罗地亚" },
+      datetime: "2026-06-18T04:00:00+08:00",
+      status: "finished",
+      score: { home: 4, away: 2 },
+    },
+  ];
+  const fifaMatches = [
+    {
+      IdMatch: "400021510",
+      Date: "2026-06-17T23:00:00Z",
+      GroupName: [{ Locale: "zh-CN", Description: "L 组" }],
+      MatchNumber: 21,
+      Home: { Abbreviation: "GHA", Score: 1, TeamName: [{ Locale: "zh-CN", Description: "加纳" }] },
+      Away: { Abbreviation: "PAN", Score: 0, TeamName: [{ Locale: "zh-CN", Description: "巴拿马" }] },
+      ResultType: 1,
+      MatchTime: "98'",
+      OfficialityStatus: 1,
+    },
+    {
+      IdMatch: "400021507",
+      Date: "2026-06-17T20:00:00Z",
+      GroupName: [{ Locale: "zh-CN", Description: "L 组" }],
+      MatchNumber: 22,
+      Home: { Abbreviation: "ENG", Score: 4, TeamName: [{ Locale: "zh-CN", Description: "英格兰" }] },
+      Away: { Abbreviation: "CRO", Score: 2, TeamName: [{ Locale: "zh-CN", Description: "克罗地亚" }] },
+      ResultType: 1,
+      MatchTime: "98'",
+      OfficialityStatus: 1,
+    },
+  ];
+
+  const result = syncMatchesWithFifa(localMatches, fifaMatches);
+
+  assert.deepEqual(result.matches.map((match) => [match.id, match.fifaMatchId, match.home.code, match.away.code]), [
+    ["L01", "400021510", "GHA", "PAN"],
+    ["L02", "400021507", "ENG", "CRO"],
+  ]);
+});
+
+test("syncMatchesWithFifa replaces stale knockout template with FIFA knockout calendar", () => {
+  const localMatches = [
+    {
+      id: "A01",
+      group: "A",
+      stage: "group",
+      round: 1,
+      home: { code: "MEX", name: "墨西哥" },
+      away: { code: "RSA", name: "南非" },
+      datetime: "2026-06-12T03:00:00+08:00",
+      status: "finished",
+      score: { home: 2, away: 0 },
+      venue: { name: "Azteca", city: "Mexico City" },
+    },
+    {
+      id: "KO32-01",
+      group: null,
+      stage: "round32",
+      round: 1,
+      home: { code: "A", name: "A" },
+      away: { code: "待定小", name: "待定小组第三" },
+      datetime: "2026-07-03T19:00:00+08:00",
+      status: "upcoming",
+      score: { home: null, away: null },
+      venue: { name: "Old", city: "Old" },
+    },
+    {
+      id: "KO32-02",
+      group: null,
+      stage: "round32",
+      round: 1,
+      home: { code: "B", name: "B" },
+      away: { code: "待定小", name: "待定小组第三" },
+      datetime: "2026-07-03T23:00:00+08:00",
+      status: "upcoming",
+      score: { home: null, away: null },
+      venue: { name: "Old", city: "Old" },
+    },
+  ];
+
+  const fifaMatches = [
+    {
+      IdMatch: "400021443",
+      Date: "2026-06-11T19:00:00Z",
+      GroupName: [{ Locale: "zh-CN", Description: "A 组" }],
+      MatchNumber: 1,
+      StageName: [{ Locale: "zh-CN", Description: "第一阶段" }],
+      Home: { Abbreviation: "MEX", Score: 2 },
+      Away: { Abbreviation: "RSA", Score: 0 },
+      ResultType: 1,
+      MatchTime: "98'",
+      OfficialityStatus: 1,
+      Stadium: { Name: "Azteca", CityName: "Mexico City" },
+    },
+    {
+      IdMatch: "400021518",
+      Date: "2026-06-28T19:00:00Z",
+      MatchNumber: 73,
+      StageName: [{ Locale: "zh-CN", Description: "32强赛" }],
+      PlaceHolderA: "2A",
+      PlaceHolderB: "2B",
+      Home: {
+        Abbreviation: "RSA",
+        Score: 0,
+        TeamName: [{ Locale: "zh-CN", Description: "南非" }],
+      },
+      Away: {
+        Abbreviation: "CAN",
+        Score: 1,
+        TeamName: [{ Locale: "zh-CN", Description: "加拿大" }],
+      },
+      ResultType: 1,
+      MatchTime: "98'",
+      OfficialityStatus: 1,
+      Stadium: { Name: "Philadelphia Stadium", CityName: "费城" },
+    },
+    {
+      IdMatch: "400021530",
+      Date: "2026-07-04T17:00:00Z",
+      MatchNumber: 90,
+      StageName: [{ Locale: "zh-CN", Description: "16 强" }],
+      PlaceHolderA: "W73",
+      PlaceHolderB: "W75",
+      Home: {
+        Abbreviation: "CAN",
+        Score: null,
+        TeamName: [{ Locale: "zh-CN", Description: "加拿大" }],
+      },
+      Away: null,
+      Stadium: { Name: "New York New Jersey Stadium", CityName: "纽约新泽西" },
+    },
+  ];
+
+  const result = syncMatchesWithFifa(localMatches, fifaMatches);
+  const knockout = result.matches.filter((match) => match.stage !== "group");
+
+  assert.equal(knockout.length, 2);
+  assert.deepEqual(
+    knockout.map((match) => [match.id, match.stage, match.fifaMatchId, match.home.code, match.away.code, match.datetime]),
+    [
+      ["KO32-01", "round32", "400021518", "RSA", "CAN", "2026-06-29T03:00:00+08:00"],
+      ["KO16-01", "round16", "400021530", "CAN", "W75", "2026-07-05T01:00:00+08:00"],
+    ]
+  );
+  assert.deepEqual(knockout[0].score, { home: 0, away: 1 });
+  assert.equal(knockout[1].away.name, "W75胜者");
+});
+
 test("getFifaMatchStatus does not treat null-score scheduled matches as finished", () => {
   const status = getFifaMatchStatus({
     Date: "2026-06-12T02:00:00Z",

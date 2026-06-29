@@ -15,10 +15,11 @@ const selectedMonth = url.searchParams.get("month") || "全部";
 const stageLabels = [
   { key: "全部", label: "全部" },
   { key: "group", label: "小组赛" },
-  { key: "round32", label: "1/32决赛" },
-  { key: "round16", label: "1/16决赛" },
+  { key: "round32", label: "32强赛" },
+  { key: "round16", label: "16强赛" },
   { key: "quarterfinal", label: "1/4决赛" },
   { key: "semifinal", label: "半决赛" },
+  { key: "third", label: "季军赛" },
   { key: "final", label: "🏆决赛" },
 ];
 
@@ -51,7 +52,7 @@ function formatDateHeader(d: string) {
   <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:24px;">
     <div>
       <h1 style="font-size:22px;font-weight:700;margin:0 0 4px;">📅 比赛日程</h1>
-      <p style="color:var(--color-text-secondary);font-size:12px;margin:0;">6月12日 — 7月19日 · 96场确定比赛</p>
+      <p style="color:var(--color-text-secondary);font-size:12px;margin:0;">6月12日 — 7月19日 · {matches.length}场官方赛程</p>
     </div>
     <a href="./WorldCup-2026.ics" download class="btn-primary">📅 添加到日历</a>
   </div>

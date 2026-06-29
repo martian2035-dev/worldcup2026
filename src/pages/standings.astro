@@ -1,11 +1,21 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import standingsData from "../data/standings.json";
-import type { Group } from "../types";
+import matchesData from "../data/matches.json";
+import type { Group, Match } from "../types";
 
 const allGroups = standingsData.groups as Group[];
 const tournamentStats = standingsData.tournamentStats;
 const groups = ["A","B","C","D","E","F","G","H","I","J","K","L"];
+const knockoutMatches = (matchesData.matches as Match[]).filter((match) => match.stage !== "group");
+const bracketStages = [
+  { key: "round32", label: "32强赛", fallback: 16 },
+  { key: "round16", label: "16强赛", fallback: 8 },
+  { key: "quarterfinal", label: "1/4决赛", fallback: 4 },
+  { key: "semifinal", label: "半决赛", fallback: 2 },
+  { key: "third", label: "季军赛", fallback: 1 },
+  { key: "final", label: "决赛", fallback: 1 },
+];
 
 // Get flag
 function getFlag(code: string) {
@@ -20,9 +30,12 @@ function getFlag(code: string) {
   return flags[code] || "🏳️";
 }
 
-const roundNames: Record<string, string> = {
-  round32: "1/32", round16: "1/16", quarterfinal: "1/4", semifinal: "半决赛", third: "季军", final: "冠军"
-};
+function formatTeam(match: Match, side: "home" | "away") {
+  const team = match[side];
+  const score = match.score?.[side];
+  const scoreText = typeof score === "number" ? String(score) : "";
+  return { team, scoreText };
+}
 ---
 
 <BaseLayout title="积分榜 & 晋级图">
@@ -106,18 +119,47 @@ const roundNames: Record<string, string> = {
   <!-- Bracket section -->
   <h2 style="font-size:18px;font-weight:700;margin:32px 0 16px;">🏆 淘汰赛晋级图</h2>
   <div class="glass-card" style="padding:24px;overflow-x:auto;">
-    <div style="display:flex;gap:6px;font-size:9px;min-width:700px;">
-      {["round32","round16","quarterfinal","semifinal","final"].map(stage => (
+    <div style="display:flex;gap:8px;font-size:9px;min-width:860px;">
+      {bracketStages.map(({ key, label, fallback }) => {
+        const stageMatches = knockoutMatches
+          .filter((match) => match.stage === key)
+          .sort((a, b) => a.datetime.localeCompare(b.datetime));
+        const displayMatches = stageMatches.length ? stageMatches : Array.from({ length: fallback }).map((_, i) => ({
+          id: `${key}-${i}`,
+          home: { code: "TBD", name: "待定" },
+          away: { code: "TBD", name: "待定" },
+          score: { home: null, away: null },
+          status: "upcoming",
+          datetime: "",
+        } as Match));
+
+        return (
         <div style="flex:1;display:flex;flex-direction:column;gap:4px;justify-content:center;">
-          <div style="color:var(--color-text-muted);font-size:8px;text-align:center;margin-bottom:4px;">{roundNames[stage]}</div>
-          {Array.from({ length: stage === "final" ? 1 : stage === "semifinal" ? 2 : stage === "quarterfinal" ? 4 : stage === "round16" ? 8 : 16 }).map((_) => (
-            <div style={`background:rgba(255,255,255,0.04);border-radius:4px;padding:4px 6px;border:1px solid ${stage === "final" ? "rgba(255,215,0,0.2)" : "rgba(255,255,255,0.06)"};margin-bottom:${stage === "final" ? 0 : "4px"};`}>
-              <span style="color:var(--color-text-muted);">TBD</span>
+          <div style="color:var(--color-text-muted);font-size:8px;text-align:center;margin-bottom:4px;">{label}</div>
+          {displayMatches.map((match) => {
+            const home = formatTeam(match, "home");
+            const away = formatTeam(match, "away");
+            return (
+            <div style={`background:rgba(255,255,255,0.04);border-radius:4px;padding:5px 6px;border:1px solid ${key === "final" ? "rgba(255,215,0,0.2)" : "rgba(255,255,255,0.06)"};margin-bottom:${key === "final" ? 0 : "4px"};`}>
+              <div style="display:flex;align-items:center;gap:4px;justify-content:space-between;min-width:0;">
+                <span style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--color-text-primary);">
+                  {getFlag(home.team.code)} {home.team.name}
+                </span>
+                <span style="color:var(--color-accent);font-weight:700;">{home.scoreText}</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:4px;justify-content:space-between;min-width:0;margin-top:3px;">
+                <span style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--color-text-primary);">
+                  {getFlag(away.team.code)} {away.team.name}
+                </span>
+                <span style="color:var(--color-accent);font-weight:700;">{away.scoreText}</span>
+              </div>
             </div>
-          ))}
+            );
+          })}
         </div>
-      ))}
+        );
+      })}
     </div>
-    <div style="text-align:center;color:var(--color-text-muted);font-size:10px;margin-top:12px;">小组赛结束后自动填充出线队伍</div>
+    <div style="text-align:center;color:var(--color-text-muted);font-size:10px;margin-top:12px;">淘汰赛对阵随官方赛程自动更新</div>
   </div>
 </BaseLayout>
