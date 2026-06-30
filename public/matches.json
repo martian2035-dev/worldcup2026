@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T04:19:52.264Z",
+  "lastUpdated": "2026-06-30T09:56:26.402Z",
   "matches": [
     {
       "id": "A01",
@@ -67964,29 +67964,29 @@
               "minute": "45'",
               "playerOffId": "fifa-441623",
               "playerOnId": "fifa-402898",
-              "playerOffName": "",
-              "playerOnName": ""
+              "playerOffName": "Manuel UGARTE",
+              "playerOnName": "Nicolas DE LA CRUZ"
             },
             {
               "minute": "",
               "playerOffId": "fifa-229498",
               "playerOnId": "fifa-368664",
-              "playerOffName": "",
-              "playerOnName": ""
+              "playerOffName": "Fernando MUSLERA",
+              "playerOnName": "Sergio ROCHET"
             },
             {
               "minute": "56'",
               "playerOffId": "fifa-402884",
               "playerOnId": "fifa-477536",
-              "playerOffName": "",
-              "playerOnName": ""
+              "playerOffName": "Federico VALVERDE",
+              "playerOnName": "Federico VINAS"
             },
             {
               "minute": "70'",
               "playerOffId": "fifa-419134",
               "playerOnId": "fifa-419132",
-              "playerOffName": "",
-              "playerOnName": ""
+              "playerOffName": "Juan Manuel SANABRIA",
+              "playerOnName": "Brian RODRIGUEZ"
             }
           ]
         },
@@ -68339,36 +68339,36 @@
               "minute": "60'",
               "playerOffId": "fifa-423646",
               "playerOnId": "fifa-430718",
-              "playerOffName": "",
-              "playerOnName": ""
+              "playerOffName": "PEDRI",
+              "playerOnName": "Fabian RUIZ"
             },
             {
               "minute": "60'",
               "playerOffId": "fifa-430733",
               "playerOnId": "fifa-430750",
-              "playerOffName": "",
-              "playerOnName": ""
+              "playerOffName": "Mikel MERINO",
+              "playerOnName": "Dani OLMO"
             },
             {
               "minute": "66'",
               "playerOffId": "fifa-447860",
               "playerOnId": "fifa-423658",
-              "playerOffName": "",
-              "playerOnName": ""
+              "playerOffName": "Alex BAENA",
+              "playerOnName": "Yeremy PINO"
             },
             {
               "minute": "76'",
-              "playerOffId": "fifa-447855",
-              "playerOnId": "fifa-484320",
-              "playerOffName": "",
-              "playerOnName": ""
+              "playerOffId": "fifa-430751",
+              "playerOnId": "fifa-447855",
+              "playerOffName": "Mikel OYARZABAL",
+              "playerOnName": "Nico WILLIAMS"
             },
             {
               "minute": "76'",
-              "playerOffId": "fifa-405545",
-              "playerOnId": "fifa-430751",
-              "playerOffName": "",
-              "playerOnName": ""
+              "playerOffId": "fifa-484320",
+              "playerOnId": "fifa-405545",
+              "playerOffName": "Lamine YAMAL",
+              "playerOnName": "Ferran TORRES"
             }
           ]
         }
@@ -68737,8 +68737,8 @@
         {
           "playerId": "lamine-yamal",
           "team": "ESP",
-          "minutesPlayed": 21,
-          "isStart": false,
+          "minutesPlayed": 76,
+          "isStart": true,
           "goals": 0,
           "assists": 0,
           "shots": 1,
@@ -68752,8 +68752,8 @@
         {
           "playerId": "mikel-oyarzabal",
           "team": "ESP",
-          "minutesPlayed": 21,
-          "isStart": false,
+          "minutesPlayed": 76,
+          "isStart": true,
           "goals": 0,
           "assists": 0,
           "shots": 1,
@@ -68772,6 +68772,21 @@
           "goals": 0,
           "assists": 0,
           "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCard": false,
+          "redCard": false,
+          "rating": null,
+          "foulsCommitted": 0,
+          "offsides": 0
+        },
+        {
+          "playerId": "fifa-405545",
+          "team": "ESP",
+          "minutesPlayed": 21,
+          "isStart": false,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
           "shotsOnTarget": 0,
           "yellowCard": false,
           "redCard": false,
@@ -68808,6 +68823,21 @@
           "rating": null,
           "foulsCommitted": 0,
           "offsides": 1
+        },
+        {
+          "playerId": "fifa-447855",
+          "team": "ESP",
+          "minutesPlayed": 21,
+          "isStart": false,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCard": false,
+          "redCard": false,
+          "rating": null,
+          "foulsCommitted": 0,
+          "offsides": 0
         }
       ]
     },
@@ -97211,8 +97241,8 @@
         "name": "加拿大"
       },
       "away": {
-        "code": "W75",
-        "name": "W75胜者"
+        "code": "MAR",
+        "name": "摩洛哥"
       },
       "venue": {
         "name": "Houston Stadium",
