@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T12:41:21.177Z",
+  "lastUpdated": "2026-07-01T16:31:56.659Z",
   "matches": [
     {
       "id": "A01",
@@ -100735,10 +100735,10 @@
         "name": "Atlanta Stadium",
         "city": "亚特兰大"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "stats": null
     },
