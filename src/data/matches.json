@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T16:08:42.778Z",
+  "lastUpdated": "2026-07-02T19:43:02.275Z",
   "matches": [
     {
       "id": "A01",
@@ -104569,10 +104569,10 @@
         "name": "Los Angeles Stadium",
         "city": "洛杉矶"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "stats": null
     },
