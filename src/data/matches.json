@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T21:17:39.233Z",
+  "lastUpdated": "2026-07-02T23:16:14.675Z",
   "matches": [
     {
       "id": "A01",
@@ -104543,10 +104543,10 @@
         "name": "Toronto Stadium",
         "city": "多伦多"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "stats": null
     },

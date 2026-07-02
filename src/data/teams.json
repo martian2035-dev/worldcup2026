@@ -10637,19 +10637,13 @@
       },
       "players": [
         {
-          "id": "unai-simon",
-          "name": "乌奈·西蒙",
-          "nameEn": "Unai Simón",
-          "position": "GK",
-          "number": 1,
+          "id": "fifa-484728",
+          "name": "Marc PUBILL",
+          "nameEn": "Marc PUBILL",
+          "position": "DF",
+          "number": 2,
           "isStar": false,
-          "age": 28,
-          "height": 190,
-          "weight": 86,
-          "club": "毕尔巴鄂竞技",
-          "preferredFoot": "左脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "esp-gk-1",
@@ -10663,36 +10657,6 @@
           "weight": 78,
           "club": "贝蒂斯",
           "preferredFoot": "左脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
-        },
-        {
-          "id": "marc-cucurella",
-          "name": "马克·库库雷利亚",
-          "nameEn": "Marc Cucurella",
-          "position": "LB",
-          "number": 3,
-          "isStar": false,
-          "age": 27,
-          "height": 175,
-          "weight": 68,
-          "club": "切尔西",
-          "preferredFoot": "左脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
-        },
-        {
-          "id": "pau-cubarsi",
-          "name": "保·库巴尔西",
-          "nameEn": "Pau Cubarsí",
-          "position": "CB",
-          "number": 4,
-          "isStar": false,
-          "age": 18,
-          "height": 188,
-          "weight": 80,
-          "club": "巴塞罗那",
-          "preferredFoot": "右脚",
           "nationality": "西班牙",
           "dataSource": "generated"
         },
@@ -10712,19 +10676,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "fabian-ruiz",
-          "name": "法比安·鲁伊斯",
-          "nameEn": "Fabián Ruiz",
-          "position": "CM",
+          "id": "fifa-430733",
+          "name": "Mikel MERINO",
+          "nameEn": "Mikel MERINO",
+          "position": "MF",
           "number": 6,
           "isStar": false,
-          "age": 30,
-          "height": 189,
-          "weight": 80,
-          "club": "巴黎圣日耳曼",
-          "preferredFoot": "右脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-405545",
+          "name": "费兰·托雷斯",
+          "nameEn": "费兰·托雷斯",
+          "position": "FW",
+          "number": 7,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "esp-cb-2",
@@ -10742,19 +10709,28 @@
           "dataSource": "generated"
         },
         {
-          "id": "pedri",
-          "name": "佩德里",
-          "nameEn": "Pedri",
-          "position": "CM",
+          "id": "fabian-ruiz",
+          "name": "Fabian RUIZ",
+          "nameEn": "Fabian RUIZ",
+          "position": "MF",
           "number": 8,
-          "isStar": true,
-          "age": 23,
-          "height": 174,
-          "weight": 62,
-          "club": "巴塞罗那",
+          "isStar": false,
+          "age": 30,
+          "height": 189,
+          "weight": 80,
+          "club": "巴黎圣日耳曼",
           "preferredFoot": "右脚",
           "nationality": "西班牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-447866",
+          "name": "加维",
+          "nameEn": "加维",
+          "position": "MF",
+          "number": 9,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "esp-lb-1",
@@ -10773,9 +10749,9 @@
         },
         {
           "id": "daniel-olmo",
-          "name": "达尼·奥尔莫",
-          "nameEn": "Dani Olmo",
-          "position": "CAM",
+          "name": "Dani OLMO",
+          "nameEn": "Dani OLMO",
+          "position": "FW",
           "number": 10,
           "isStar": true,
           "age": 27,
@@ -10784,7 +10760,7 @@
           "club": "巴塞罗那",
           "preferredFoot": "左脚",
           "nationality": "西班牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "nico-williams",
@@ -10800,6 +10776,15 @@
           "preferredFoot": "右脚",
           "nationality": "西班牙",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-430144",
+          "name": "佩德罗·波罗",
+          "nameEn": "佩德罗·波罗",
+          "position": "DF",
+          "number": 12,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "esp-rb-1",
@@ -10832,6 +10817,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-335999",
+          "name": "艾默里克·拉波尔特",
+          "nameEn": "艾默里克·拉波尔特",
+          "position": "DF",
+          "number": 14,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "esp-rb-2",
           "name": "巴勃罗·加西亚",
           "nameEn": "巴勃罗 加西亚",
@@ -10845,6 +10839,15 @@
           "preferredFoot": "右脚",
           "nationality": "西班牙",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-447860",
+          "name": "阿莱克斯·巴埃纳",
+          "nameEn": "阿莱克斯·巴埃纳",
+          "position": "MF",
+          "number": 15,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "esp-cdm-1",
@@ -10863,9 +10866,9 @@
         },
         {
           "id": "rodri",
-          "name": "罗德里",
-          "nameEn": "Rodri",
-          "position": "CDM",
+          "name": "RODRI",
+          "nameEn": "RODRI",
+          "position": "MF",
           "number": 16,
           "isStar": true,
           "age": 29,
@@ -10874,22 +10877,7 @@
           "club": "曼城",
           "preferredFoot": "左脚",
           "nationality": "西班牙",
-          "dataSource": "generated"
-        },
-        {
-          "id": "lamine-yamal",
-          "name": "拉明·亚马尔",
-          "nameEn": "Lamine Yamal",
-          "position": "RW",
-          "number": 17,
-          "isStar": true,
-          "age": 18,
-          "height": 180,
-          "weight": 72,
-          "club": "巴塞罗那",
-          "preferredFoot": "左脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "esp-cdm-2",
@@ -10907,40 +10895,40 @@
           "dataSource": "generated"
         },
         {
-          "id": "esp-cm-1",
-          "name": "里卡多·卡斯特罗",
-          "nameEn": "里卡多 卡斯特罗",
-          "position": "CM",
+          "id": "lamine-yamal",
+          "name": "Lamine YAMAL",
+          "nameEn": "Lamine YAMAL",
+          "position": "FW",
           "number": 19,
-          "isStar": false,
-          "age": 26,
-          "height": 181,
-          "weight": 78,
-          "club": "安德莱赫特",
-          "preferredFoot": "右脚",
+          "isStar": true,
+          "age": 18,
+          "height": 180,
+          "weight": 72,
+          "club": "巴塞罗那",
+          "preferredFoot": "左脚",
           "nationality": "西班牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "esp-cam-1",
-          "name": "鲁伊·希门尼斯",
-          "nameEn": "鲁伊 希门尼斯",
-          "position": "CAM",
+          "id": "pedri",
+          "name": "PEDRI",
+          "nameEn": "PEDRI",
+          "position": "MF",
           "number": 20,
-          "isStar": false,
-          "age": 30,
-          "height": 171,
-          "weight": 76,
+          "isStar": true,
+          "age": 23,
+          "height": 174,
+          "weight": 62,
           "club": "巴塞罗那",
           "preferredFoot": "右脚",
           "nationality": "西班牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "mikel-oyarzabal",
-          "name": "米克尔·奥亚萨瓦尔",
-          "nameEn": "Mikel Oyarzabal",
-          "position": "ST",
+          "name": "Mikel OYARZABAL",
+          "nameEn": "Mikel OYARZABAL",
+          "position": "FW",
           "number": 21,
           "isStar": false,
           "age": 29,
@@ -10949,82 +10937,52 @@
           "club": "皇家社会",
           "preferredFoot": "右脚",
           "nationality": "西班牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "esp-lw-1",
-          "name": "乌戈·洛佩斯",
-          "nameEn": "乌戈 洛佩斯",
-          "position": "LW",
+          "id": "pau-cubarsi",
+          "name": "Pau CUBARSI",
+          "nameEn": "Pau CUBARSI",
+          "position": "DF",
           "number": 22,
           "isStar": false,
-          "age": 20,
-          "height": 169,
-          "weight": 75,
-          "club": "伯恩利",
-          "preferredFoot": "左脚",
+          "age": 18,
+          "height": 188,
+          "weight": 80,
+          "club": "巴塞罗那",
+          "preferredFoot": "右脚",
           "nationality": "西班牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "esp-rw-1",
-          "name": "安德烈·莱昂",
-          "nameEn": "安德烈 莱昂",
-          "position": "RW",
+          "id": "unai-simon",
+          "name": "Unai SIMON",
+          "nameEn": "Unai SIMON",
+          "position": "GK",
           "number": 23,
           "isStar": false,
-          "age": 24,
-          "height": 183,
-          "weight": 70,
-          "club": "布伦特福德",
-          "preferredFoot": "右脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
-        },
-        {
-          "id": "esp-st-1",
-          "name": "贡萨洛·费尔南德斯",
-          "nameEn": "贡萨洛 费尔南德斯",
-          "position": "ST",
-          "number": 24,
-          "isStar": false,
-          "age": 20,
-          "height": 189,
-          "weight": 75,
-          "club": "马德里竞技",
-          "preferredFoot": "右脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
-        },
-        {
-          "id": "esp-st-2",
-          "name": "约恩·佩雷拉",
-          "nameEn": "约恩 佩雷拉",
-          "position": "ST",
-          "number": 25,
-          "isStar": false,
-          "age": 26,
-          "height": 182,
-          "weight": 72,
-          "club": "比利亚雷亚尔",
-          "preferredFoot": "右脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
-        },
-        {
-          "id": "esp-rw-2",
-          "name": "波尔·阿尔梅达",
-          "nameEn": "波尔 阿尔梅达",
-          "position": "RW",
-          "number": 26,
-          "isStar": false,
-          "age": 25,
-          "height": 170,
-          "weight": 72,
-          "club": "马德里竞技",
+          "age": 28,
+          "height": 190,
+          "weight": 86,
+          "club": "毕尔巴鄂竞技",
           "preferredFoot": "左脚",
           "nationality": "西班牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "marc-cucurella",
+          "name": "Marc CUCURELLA",
+          "nameEn": "Marc CUCURELLA",
+          "position": "DF",
+          "number": 24,
+          "isStar": false,
+          "age": 27,
+          "height": 175,
+          "weight": 68,
+          "club": "切尔西",
+          "preferredFoot": "左脚",
+          "nationality": "西班牙",
+          "dataSource": "fifa"
         }
       ]
     },
@@ -14576,6 +14534,15 @@
       },
       "players": [
         {
+          "id": "fifa-371739",
+          "name": "Alexander SCHLAGER",
+          "nameEn": "Alexander SCHLAGER",
+          "position": "GK",
+          "number": 1,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "patrick-pentz",
           "name": "帕特里克·彭茨",
           "nameEn": "Patrick Pentz",
@@ -14606,6 +14573,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-405263",
+          "name": "凯文·丹索",
+          "nameEn": "凯文·丹索",
+          "position": "DF",
+          "number": 3,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "max-womile",
           "name": "马克斯·韦贝尔",
           "nameEn": "Maximilian Wöber",
@@ -14621,19 +14597,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "david-alaba",
-          "name": "大卫·阿拉巴",
-          "nameEn": "David Alaba",
-          "position": "CB",
+          "id": "fifa-385531",
+          "name": "泽维尔·施拉格",
+          "nameEn": "泽维尔·施拉格",
+          "position": "MF",
           "number": 4,
-          "isStar": true,
-          "age": 33,
-          "height": 180,
-          "weight": 78,
-          "club": "皇家马德里",
-          "preferredFoot": "右脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-441067",
+          "name": "斯特凡·波斯",
+          "nameEn": "斯特凡·波斯",
+          "position": "DF",
+          "number": 5,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "philipp-lienhart",
@@ -14649,6 +14628,15 @@
           "preferredFoot": "右脚",
           "nationality": "奥地利",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-441088",
+          "name": "尼古拉斯·塞瓦尔德",
+          "nameEn": "尼古拉斯·塞瓦尔德",
+          "position": "MF",
+          "number": 6,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "aut-gk-1",
@@ -14667,9 +14655,9 @@
         },
         {
           "id": "marko-arnautovic",
-          "name": "马尔科·阿瑙托维奇",
-          "nameEn": "Marko Arnautović",
-          "position": "ST",
+          "name": "Marko ARNAUTOVIC",
+          "nameEn": "Marko ARNAUTOVIC",
+          "position": "FW",
           "number": 7,
           "isStar": false,
           "age": 25,
@@ -14678,7 +14666,22 @@
           "club": "格拉茨风暴",
           "preferredFoot": "左脚",
           "nationality": "奥地利",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "david-alaba",
+          "name": "David ALABA",
+          "nameEn": "David ALABA",
+          "position": "DF",
+          "number": 8,
+          "isStar": true,
+          "age": 33,
+          "height": 180,
+          "weight": 78,
+          "club": "皇家马德里",
+          "preferredFoot": "右脚",
+          "nationality": "奥地利",
+          "dataSource": "fifa"
         },
         {
           "id": "aut-gk-2",
@@ -14697,9 +14700,9 @@
         },
         {
           "id": "marcel-sabitzer",
-          "name": "马塞尔·萨比策",
-          "nameEn": "Marcel Sabitzer",
-          "position": "CAM",
+          "name": "Marcel SABITZER",
+          "nameEn": "Marcel SABITZER",
+          "position": "MF",
           "number": 9,
           "isStar": true,
           "age": 32,
@@ -14708,7 +14711,16 @@
           "club": "多特蒙德",
           "preferredFoot": "右脚",
           "nationality": "奥地利",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-385248",
+          "name": "弗洛里安·格里利奇",
+          "nameEn": "弗洛里安·格里利奇",
+          "position": "MF",
+          "number": 10,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "florian-grillitsch",
@@ -14724,6 +14736,15 @@
           "preferredFoot": "左脚",
           "nationality": "奥地利",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-401131",
+          "name": "迈克尔·格雷戈里奇",
+          "nameEn": "迈克尔·格雷戈里奇",
+          "position": "FW",
+          "number": 11,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "aut-cb-1",
@@ -14756,94 +14777,31 @@
           "dataSource": "generated"
         },
         {
-          "id": "aut-rb-1",
-          "name": "弗洛里安·诺伊曼",
-          "nameEn": "弗洛里安 诺伊曼",
-          "position": "RB",
-          "number": 13,
-          "isStar": false,
-          "age": 33,
-          "height": 175,
-          "weight": 68,
-          "club": "维也纳快速",
-          "preferredFoot": "左脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
-        },
-        {
-          "id": "aut-cdm-1",
-          "name": "丹尼斯·布劳恩",
-          "nameEn": "丹尼斯 布劳恩",
-          "position": "CDM",
+          "id": "fifa-430100",
+          "name": "莎莎·卡拉季奇",
+          "nameEn": "莎莎·卡拉季奇",
+          "position": "FW",
           "number": 14,
           "isStar": false,
-          "age": 29,
-          "height": 190,
-          "weight": 70,
-          "club": "格拉茨风暴",
-          "preferredFoot": "右脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "aut-cdm-2",
-          "name": "莫里茨·德容",
-          "nameEn": "莫里茨 德容",
-          "position": "CDM",
-          "number": 15,
-          "isStar": false,
-          "age": 22,
-          "height": 181,
-          "weight": 74,
-          "club": "格拉茨风暴",
-          "preferredFoot": "左脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
-        },
-        {
-          "id": "aut-cm-1",
-          "name": "丹尼斯·德弗里斯",
-          "nameEn": "丹尼斯 德弗里斯",
-          "position": "CM",
-          "number": 16,
-          "isStar": false,
-          "age": 33,
-          "height": 179,
-          "weight": 66,
-          "club": "格拉茨风暴",
-          "preferredFoot": "右脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
-        },
-        {
-          "id": "aut-cm-2",
-          "name": "蒂姆·费尔哈亨",
-          "nameEn": "蒂姆 费尔哈亨",
-          "position": "CM",
+          "id": "fifa-463800",
+          "name": "Carney CHUKWUEMEKA",
+          "nameEn": "Carney CHUKWUEMEKA",
+          "position": "MF",
           "number": 17,
           "isStar": false,
-          "age": 32,
-          "height": 174,
-          "weight": 74,
-          "club": "博洛尼亚",
-          "preferredFoot": "右脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "aut-lw-1",
-          "name": "托比亚斯·斯密特",
-          "nameEn": "托比亚斯 斯密特",
-          "position": "LW",
+          "id": "fifa-463283",
+          "name": "Romano SCHMID",
+          "nameEn": "Romano SCHMID",
+          "position": "MF",
           "number": 18,
           "isStar": false,
-          "age": 21,
-          "height": 182,
-          "weight": 76,
-          "club": "维也纳快速",
-          "preferredFoot": "左脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "christoph-baumgartner",
@@ -14862,9 +14820,9 @@
         },
         {
           "id": "konrad-laimer",
-          "name": "康拉德·莱默尔",
-          "nameEn": "Konrad Laimer",
-          "position": "CDM",
+          "name": "Konrad LAIMER",
+          "nameEn": "Konrad LAIMER",
+          "position": "MF",
           "number": 20,
           "isStar": true,
           "age": 28,
@@ -14873,97 +14831,25 @@
           "club": "拜仁慕尼黑",
           "preferredFoot": "右脚",
           "nationality": "奥地利",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "aut-lw-2",
-          "name": "马克西米利安·沃尔夫",
-          "nameEn": "马克西米利安 沃尔夫",
-          "position": "LW",
-          "number": 21,
-          "isStar": false,
-          "age": 22,
-          "height": 182,
-          "weight": 66,
-          "club": "里尔",
-          "preferredFoot": "右脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
-        },
-        {
-          "id": "aut-rw-1",
-          "name": "卢卡斯·菲舍尔",
-          "nameEn": "卢卡斯 菲舍尔",
-          "position": "RW",
+          "id": "fifa-463282",
+          "name": "Alexander PRASS",
+          "nameEn": "Alexander PRASS",
+          "position": "MF",
           "number": 22,
           "isStar": false,
-          "age": 19,
-          "height": 172,
-          "weight": 69,
-          "club": "雷恩",
-          "preferredFoot": "左脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "aut-rw-2",
-          "name": "米夏埃尔·里希特",
-          "nameEn": "米夏埃尔 里希特",
-          "position": "RW",
-          "number": 23,
-          "isStar": false,
-          "age": 19,
-          "height": 183,
-          "weight": 68,
-          "club": "林茨",
-          "preferredFoot": "左脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
-        },
-        {
-          "id": "aut-st-1",
-          "name": "蒂姆·韦伯",
-          "nameEn": "蒂姆 韦伯",
-          "position": "ST",
+          "id": "fifa-520036",
+          "name": "Paul WANNER",
+          "nameEn": "Paul WANNER",
+          "position": "MF",
           "number": 24,
           "isStar": false,
-          "age": 29,
-          "height": 172,
-          "weight": 88,
-          "club": "林茨",
-          "preferredFoot": "右脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
-        },
-        {
-          "id": "aut-st-2",
-          "name": "米夏埃尔·韦伯",
-          "nameEn": "米夏埃尔 韦伯",
-          "position": "ST",
-          "number": 25,
-          "isStar": false,
-          "age": 28,
-          "height": 175,
-          "weight": 82,
-          "club": "哥本哈根",
-          "preferredFoot": "右脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
-        },
-        {
-          "id": "aut-rw-3",
-          "name": "埃利亚斯·鲍尔",
-          "nameEn": "埃利亚斯 鲍尔",
-          "position": "RW",
-          "number": 26,
-          "isStar": false,
-          "age": 23,
-          "height": 170,
-          "weight": 60,
-          "club": "雷恩",
-          "preferredFoot": "左脚",
-          "nationality": "奥地利",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
