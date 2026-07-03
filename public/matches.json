@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T17:41:17.052Z",
+  "lastUpdated": "2026-07-03T19:40:45.109Z",
   "matches": [
     {
       "id": "A01",
@@ -108416,10 +108416,10 @@
         "name": "Dallas Stadium",
         "city": "达拉斯"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "stats": null
     },
