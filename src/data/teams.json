@@ -1475,21 +1475,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "can-gk-1",
-          "name": "诺亚·摩尔",
-          "nameEn": "诺亚 摩尔",
-          "position": "GK",
-          "number": 3,
-          "isStar": true,
-          "age": 33,
-          "height": 199,
-          "weight": 89,
-          "club": "波特兰伐木者",
-          "preferredFoot": "右脚",
-          "nationality": "加拿大",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-480322",
           "name": "Luc DE FOUGEROLLES",
           "nameEn": "Luc DE FOUGEROLLES",
@@ -1497,21 +1482,6 @@
           "number": 4,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "can-gk-2",
-          "name": "本杰明·帕克",
-          "nameEn": "本杰明 帕克",
-          "position": "GK",
-          "number": 5,
-          "isStar": false,
-          "age": 29,
-          "height": 190,
-          "weight": 88,
-          "club": "CF蒙特利尔",
-          "preferredFoot": "右脚",
-          "nationality": "加拿大",
-          "dataSource": "generated"
         },
         {
           "id": "stephen-eustaquio",
@@ -1544,19 +1514,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "cyle-larin",
+          "id": "fifa-390670",
           "name": "赛尔·拉林",
-          "nameEn": "Cyle Larin",
-          "position": "ST",
+          "nameEn": "赛尔·拉林",
+          "position": "FW",
           "number": 9,
           "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "温哥华白帽",
-          "preferredFoot": "左脚",
-          "nationality": "加拿大",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-441257",
@@ -1691,19 +1655,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "jacen-russell-rowe",
-          "name": "杰森·拉塞尔-罗",
-          "nameEn": "Jacen Russell-Rowe",
-          "position": "LW",
+          "id": "fifa-466687",
+          "name": "Ali AHMED",
+          "nameEn": "Ali AHMED",
+          "position": "FW",
+          "number": 20,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-370986",
+          "name": "乔纳森·奥索里奥",
+          "nameEn": "乔纳森·奥索里奥",
+          "position": "MF",
           "number": 21,
           "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "凯尔特人",
-          "preferredFoot": "右脚",
-          "nationality": "加拿大",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-431696",
@@ -1738,6 +1705,15 @@
           "nameEn": "内森·萨利巴",
           "position": "MF",
           "number": 25,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-423933",
+          "name": "杰登·尼尔森",
+          "nameEn": "杰登·尼尔森",
+          "position": "FW",
+          "number": 26,
           "isStar": false,
           "dataSource": "fifa"
         }
@@ -3317,6 +3293,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-372266",
+          "name": "索夫扬·阿姆拉巴特",
+          "nameEn": "索夫扬·阿姆拉巴特",
+          "position": "MF",
+          "number": 4,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "sofyan-amrabat",
           "name": "索菲扬·阿姆拉巴特",
           "nameEn": "Sofyan Amrabat",
@@ -3330,6 +3315,15 @@
           "preferredFoot": "右脚",
           "nationality": "摩洛哥",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-395760",
+          "name": "Marwane SAADANE",
+          "nameEn": "Marwane SAADANE",
+          "position": "DF",
+          "number": 5,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "nayef-agueerd",
@@ -3428,21 +3422,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "mar-gk-2",
-          "name": "阿马杜·巴卡约科",
-          "nameEn": "阿马杜 巴卡约科",
-          "position": "GK",
-          "number": 9,
-          "isStar": false,
-          "age": 38,
-          "height": 194,
-          "weight": 94,
-          "club": "罗马",
-          "preferredFoot": "右脚",
-          "nationality": "摩洛哥",
-          "dataSource": "generated"
-        },
-        {
           "id": "brahim-diaz",
           "name": "Brahim DIAZ",
           "nameEn": "Brahim DIAZ",
@@ -3465,36 +3444,6 @@
           "number": 11,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "mar-cb-1",
-          "name": "穆萨·勒鲁瓦",
-          "nameEn": "穆萨 勒鲁瓦",
-          "position": "CB",
-          "number": 11,
-          "isStar": false,
-          "age": 21,
-          "height": 196,
-          "weight": 91,
-          "club": "毕尔巴鄂竞技",
-          "preferredFoot": "右脚",
-          "nationality": "摩洛哥",
-          "dataSource": "generated"
-        },
-        {
-          "id": "mar-cb-2",
-          "name": "拉西纳·索乌",
-          "nameEn": "拉西纳 索乌",
-          "position": "CB",
-          "number": 12,
-          "isStar": false,
-          "age": 24,
-          "height": 195,
-          "weight": 86,
-          "club": "富勒姆",
-          "preferredFoot": "左脚",
-          "nationality": "摩洛哥",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-403083",
@@ -3577,6 +3526,15 @@
           "nameEn": "Neil EL AYNAOUI",
           "position": "MF",
           "number": 24,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-485767",
+          "name": "Redouane HALHAL",
+          "nameEn": "Redouane HALHAL",
+          "position": "DF",
+          "number": 25,
           "isStar": false,
           "dataSource": "fifa"
         }

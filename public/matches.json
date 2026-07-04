@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-04T19:25:18.411Z",
+  "lastUpdated": "2026-07-04T21:07:15.063Z",
   "matches": [
     {
       "id": "A01",
@@ -112203,10 +112203,10 @@
         "name": "Philadelphia Stadium",
         "city": "费城"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "stats": null
     },
