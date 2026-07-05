@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-04T23:04:29.358Z",
+  "lastUpdated": "2026-07-05T04:09:26.110Z",
   "tournamentStats": {
-    "totalGoals": 260,
+    "totalGoals": 261,
     "avgGoalsPerMatch": 2.9,
-    "totalYellowCards": 231,
+    "totalYellowCards": 235,
     "totalRedCards": 12,
-    "totalAttendance": 5771463
+    "totalAttendance": 5839787
   },
   "groups": [
     {
