@@ -224,6 +224,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-386339",
+          "name": "吉列尔莫·马丁内斯",
+          "nameEn": "吉列尔莫·马丁内斯",
+          "position": "FW",
+          "number": 22,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "hirving-lozano",
           "name": "伊尔文·洛萨诺",
           "nameEn": "Hirving Lozano",
@@ -255,21 +264,6 @@
           "number": 24,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "luis-chavez",
-          "name": "路易斯·查韦斯",
-          "nameEn": "Luis Chávez",
-          "position": "CM",
-          "number": 24,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "托卢卡",
-          "preferredFoot": "左脚",
-          "nationality": "墨西哥",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-403585",
@@ -16499,21 +16493,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "eng-gk-1",
-          "name": "亚历山大·赖特",
-          "nameEn": "亚历山大 赖特",
-          "position": "GK",
-          "number": 3,
-          "isStar": false,
-          "age": 28,
-          "height": 195,
-          "weight": 79,
-          "club": "阿森纳",
-          "preferredFoot": "左脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-433097",
           "name": "德克兰·赖斯",
           "nameEn": "德克兰·赖斯",
@@ -16610,21 +16589,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "eng-gk-2",
-          "name": "亚当·特纳",
-          "nameEn": "亚当 特纳",
-          "position": "GK",
-          "number": 8,
-          "isStar": false,
-          "age": 25,
-          "height": 185,
-          "weight": 94,
-          "club": "阿斯顿维拉",
-          "preferredFoot": "左脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
           "id": "harry-kane",
           "name": "Harry KANE",
           "nameEn": "Harry KANE",
@@ -16679,19 +16643,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "eng-cb-1",
-          "name": "诺亚·沃森",
-          "nameEn": "诺亚 沃森",
-          "position": "CB",
-          "number": 12,
+          "id": "fifa-494345",
+          "name": "Dan BURN",
+          "nameEn": "Dan BURN",
+          "position": "DF",
+          "number": 15,
           "isStar": false,
-          "age": 22,
-          "height": 186,
-          "weight": 85,
-          "club": "布伦特福德",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-492716",
+          "name": "Morgan ROGERS",
+          "nameEn": "Morgan ROGERS",
+          "position": "MF",
+          "number": 17,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-448189",
@@ -16741,6 +16708,15 @@
           "nameEn": "Djed SPENCE",
           "position": "DF",
           "number": 25,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-463809",
+          "name": "Jarell QUANSAH",
+          "nameEn": "Jarell QUANSAH",
+          "position": "DF",
+          "number": 26,
           "isStar": false,
           "dataSource": "fifa"
         },
