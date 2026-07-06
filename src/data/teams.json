@@ -2912,6 +2912,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-485069",
+          "name": "EDERSON SILVA",
+          "nameEn": "EDERSON SILVA",
+          "position": "MF",
+          "number": 2,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "bra-gk-1",
           "name": "万德松·里贝罗",
           "nameEn": "万德松 里贝罗",
@@ -3050,6 +3059,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-314197",
+          "name": "NEYMAR JR",
+          "nameEn": "NEYMAR JR",
+          "position": "FW",
+          "number": 10,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "lucas-paqueta",
           "name": "卢卡斯·帕奎塔",
           "nameEn": "Lucas Paquetá",
@@ -3080,21 +3098,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "bra-lb-2",
-          "name": "吉列尔梅·坎波斯",
-          "nameEn": "吉列尔梅 坎波斯",
-          "position": "LB",
-          "number": 12,
-          "isStar": false,
-          "age": 22,
-          "height": 181,
-          "weight": 73,
-          "club": "弗拉门戈",
-          "preferredFoot": "右脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-335656",
           "name": "DANILO",
           "nameEn": "DANILO",
@@ -3102,21 +3105,6 @@
           "number": 13,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "bra-rb-1",
-          "name": "拉斐尔·席尔瓦",
-          "nameEn": "拉斐尔 席尔瓦",
-          "position": "RB",
-          "number": 13,
-          "isStar": false,
-          "age": 29,
-          "height": 180,
-          "weight": 69,
-          "club": "富勒姆",
-          "preferredFoot": "右脚",
-          "nationality": "巴西",
-          "dataSource": "generated"
         },
         {
           "id": "joao-gomes",
@@ -13085,21 +13073,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "jeo-ryerson",
-          "name": "尤利安·勒尔松",
-          "nameEn": "Julian Ryerson",
-          "position": "RB",
-          "number": 2,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "博德闪耀",
-          "preferredFoot": "右脚",
-          "nationality": "挪威",
-          "dataSource": "generated"
-        },
-        {
           "id": "kristoffer-ajer",
           "name": "Kristoffer AJER",
           "nameEn": "Kristoffer AJER",
@@ -13128,6 +13101,15 @@
           "preferredFoot": "右脚",
           "nationality": "挪威",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-419672",
+          "name": "莱奥·奥斯蒂高",
+          "nameEn": "莱奥·奥斯蒂高",
+          "position": "DF",
+          "number": 4,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "fifa-483505",
@@ -13304,21 +13286,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "nor-lb-2",
-          "name": "奥德·埃克斯特伦",
-          "nameEn": "奥德 埃克斯特伦",
-          "position": "LB",
-          "number": 14,
-          "isStar": false,
-          "age": 30,
-          "height": 178,
-          "weight": 76,
-          "club": "博德闪耀",
-          "preferredFoot": "左脚",
-          "nationality": "挪威",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-494625",
           "name": "Marcus HOLMGREN PEDERSEN",
           "nameEn": "Marcus HOLMGREN PEDERSEN",
@@ -13389,6 +13356,21 @@
           "preferredFoot": "左脚",
           "nationality": "挪威",
           "dataSource": "generated"
+        },
+        {
+          "id": "jeo-ryerson",
+          "name": "Julian RYERSON",
+          "nameEn": "Julian RYERSON",
+          "position": "FW",
+          "number": 26,
+          "isStar": false,
+          "age": 25,
+          "height": 180,
+          "weight": 75,
+          "club": "博德闪耀",
+          "preferredFoot": "右脚",
+          "nationality": "挪威",
+          "dataSource": "fifa"
         }
       ]
     },
