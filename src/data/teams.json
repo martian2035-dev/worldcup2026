@@ -10562,21 +10562,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "esp-cdm-2",
-          "name": "马里奥·古铁雷斯",
-          "nameEn": "马里奥 古铁雷斯",
-          "position": "CDM",
-          "number": 18,
-          "isStar": false,
-          "age": 27,
-          "height": 187,
-          "weight": 73,
-          "club": "巴塞尔",
-          "preferredFoot": "右脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
-        },
-        {
           "id": "lamine-yamal",
           "name": "Lamine YAMAL",
           "nameEn": "Lamine YAMAL",
@@ -10664,6 +10649,15 @@
           "club": "切尔西",
           "preferredFoot": "左脚",
           "nationality": "西班牙",
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-447864",
+          "name": "博尔哈·伊格莱西亚斯",
+          "nameEn": "博尔哈·伊格莱西亚斯",
+          "position": "FW",
+          "number": 26,
+          "isStar": false,
           "dataSource": "fifa"
         }
       ]
@@ -14871,8 +14865,8 @@
       "players": [
         {
           "id": "diogo-costa",
-          "name": "迪奥戈·科斯塔",
-          "nameEn": "Diogo Costa",
+          "name": "DIOGO COSTA",
+          "nameEn": "DIOGO COSTA",
           "position": "GK",
           "number": 1,
           "isStar": true,
@@ -14882,7 +14876,16 @@
           "club": "波尔图",
           "preferredFoot": "右脚",
           "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-395212",
+          "name": "内尔松·塞梅多",
+          "nameEn": "内尔松·塞梅多",
+          "position": "DF",
+          "number": 2,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "por-gk-1",
@@ -14900,6 +14903,21 @@
           "dataSource": "generated"
         },
         {
+          "id": "ruben-dias",
+          "name": "RUBEN DIAS",
+          "nameEn": "RUBEN DIAS",
+          "position": "DF",
+          "number": 3,
+          "isStar": true,
+          "age": 28,
+          "height": 187,
+          "weight": 83,
+          "club": "曼城",
+          "preferredFoot": "左脚",
+          "nationality": "葡萄牙",
+          "dataSource": "fifa"
+        },
+        {
           "id": "por-gk-2",
           "name": "迪奥戈·苏亚雷斯",
           "nameEn": "迪奥戈 苏亚雷斯",
@@ -14915,19 +14933,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "ruben-dias",
-          "name": "鲁本·迪亚斯",
-          "nameEn": "Rúben Dias",
-          "position": "CB",
-          "number": 4,
-          "isStar": true,
-          "age": 28,
-          "height": 187,
-          "weight": 83,
-          "club": "曼城",
-          "preferredFoot": "左脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "id": "fifa-403002",
+          "name": "迪奥戈·达洛",
+          "nameEn": "迪奥戈·达洛",
+          "position": "DF",
+          "number": 5,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "por-cb-1",
@@ -14960,6 +14972,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-201200",
+          "name": "克里斯蒂亚诺·罗纳尔多",
+          "nameEn": "克里斯蒂亚诺·罗纳尔多",
+          "position": "FW",
+          "number": 7,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "cristiano-ronaldo",
           "name": "克里斯蒂亚诺·罗纳尔多",
           "nameEn": "Cristiano Ronaldo",
@@ -14973,6 +14994,15 @@
           "preferredFoot": "右脚",
           "nationality": "葡萄牙",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-395206",
+          "name": "布鲁诺·费尔南德斯",
+          "nameEn": "布鲁诺·费尔南德斯",
+          "position": "MF",
+          "number": 8,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "bruno-fernandes",
@@ -15006,9 +15036,9 @@
         },
         {
           "id": "bernardo-silva",
-          "name": "贝尔纳多·席尔瓦",
-          "nameEn": "Bernardo Silva",
-          "position": "RW",
+          "name": "BERNARDO SILVA",
+          "nameEn": "BERNARDO SILVA",
+          "position": "MF",
           "number": 10,
           "isStar": true,
           "age": 31,
@@ -15017,52 +15047,25 @@
           "club": "曼城",
           "preferredFoot": "左脚",
           "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "por-rb-1",
-          "name": "奥塔维奥·苏亚雷斯",
-          "nameEn": "奥塔维奥 苏亚雷斯",
-          "position": "RB",
+          "id": "fifa-418535",
+          "name": "乔·费利克斯",
+          "nameEn": "乔·费利克斯",
+          "position": "FW",
           "number": 11,
           "isStar": false,
-          "age": 32,
-          "height": 172,
-          "weight": 65,
-          "club": "吉马良斯",
-          "preferredFoot": "右脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "por-rb-2",
-          "name": "贡萨洛·莫拉莱斯",
-          "nameEn": "贡萨洛 莫拉莱斯",
-          "position": "RB",
-          "number": 12,
-          "isStar": false,
-          "age": 29,
-          "height": 180,
-          "weight": 66,
-          "club": "本菲卡",
-          "preferredFoot": "右脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
-        },
-        {
-          "id": "por-cdm-1",
-          "name": "蒂亚戈·冈萨雷斯",
-          "nameEn": "蒂亚戈 冈萨雷斯",
-          "position": "CDM",
+          "id": "fifa-489704",
+          "name": "RENATO VEIGA",
+          "nameEn": "RENATO VEIGA",
+          "position": "DF",
           "number": 13,
           "isStar": false,
-          "age": 32,
-          "height": 180,
-          "weight": 84,
-          "club": "葡萄牙体育",
-          "preferredFoot": "右脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "goncalo-inacio",
@@ -15080,34 +15083,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "por-cdm-2",
-          "name": "安德尔·罗德里格斯",
-          "nameEn": "安德尔 罗德里格斯",
-          "position": "CDM",
+          "id": "fifa-484141",
+          "name": "JOAO NEVES",
+          "nameEn": "JOAO NEVES",
+          "position": "MF",
           "number": 15,
           "isStar": false,
-          "age": 33,
-          "height": 178,
-          "weight": 76,
-          "club": "西汉姆联",
-          "preferredFoot": "右脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "por-cm-1",
-          "name": "塞尔吉·阿尔梅达",
-          "nameEn": "塞尔吉 阿尔梅达",
-          "position": "CM",
-          "number": 16,
+          "id": "fifa-418550",
+          "name": "拉斐尔·莱奥",
+          "nameEn": "拉斐尔·莱奥",
+          "position": "FW",
+          "number": 17,
           "isStar": false,
-          "age": 26,
-          "height": 181,
-          "weight": 77,
-          "club": "布拉加",
-          "preferredFoot": "右脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "rafael-leao",
@@ -15125,49 +15116,22 @@
           "dataSource": "generated"
         },
         {
-          "id": "por-cm-2",
-          "name": "波尔·桑切斯",
-          "nameEn": "波尔 桑切斯",
-          "position": "CM",
+          "id": "fifa-418548",
+          "name": "PEDRO NETO",
+          "nameEn": "PEDRO NETO",
+          "position": "FW",
           "number": 18,
           "isStar": false,
-          "age": 31,
-          "height": 176,
-          "weight": 72,
-          "club": "本菲卡",
-          "preferredFoot": "左脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "nuno-mendes",
-          "name": "努诺·门德斯",
-          "nameEn": "Nuno Mendes",
-          "position": "LB",
-          "number": 19,
-          "isStar": false,
-          "age": 23,
-          "height": 180,
-          "weight": 70,
-          "club": "巴黎圣日耳曼",
-          "preferredFoot": "左脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
-        },
-        {
-          "id": "por-cam-1",
-          "name": "奥塔维奥·桑切斯",
-          "nameEn": "奥塔维奥 桑切斯",
-          "position": "CAM",
+          "id": "fifa-368649",
+          "name": "JOAO CANCELO",
+          "nameEn": "JOAO CANCELO",
+          "position": "DF",
           "number": 20,
           "isStar": false,
-          "age": 30,
-          "height": 182,
-          "weight": 67,
-          "club": "波尔图",
-          "preferredFoot": "右脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "diogo-jota",
@@ -15185,25 +15149,10 @@
           "dataSource": "generated"
         },
         {
-          "id": "por-lw-1",
-          "name": "安德尔·洛佩斯",
-          "nameEn": "安德尔 洛佩斯",
-          "position": "LW",
-          "number": 22,
-          "isStar": false,
-          "age": 24,
-          "height": 183,
-          "weight": 61,
-          "club": "加拉塔萨雷",
-          "preferredFoot": "右脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
-        },
-        {
           "id": "vitor-ferreira",
-          "name": "维蒂尼亚",
-          "nameEn": "Vitinha",
-          "position": "CM",
+          "name": "VITINHA",
+          "nameEn": "VITINHA",
+          "position": "MF",
           "number": 23,
           "isStar": false,
           "age": 25,
@@ -15212,52 +15161,31 @@
           "club": "巴黎圣日耳曼",
           "preferredFoot": "右脚",
           "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "por-rw-1",
-          "name": "奥塔维奥·阿尔瓦雷斯",
-          "nameEn": "奥塔维奥 阿尔瓦雷斯",
-          "position": "RW",
-          "number": 24,
-          "isStar": false,
-          "age": 19,
-          "height": 183,
-          "weight": 68,
-          "club": "布拉加",
-          "preferredFoot": "左脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
-        },
-        {
-          "id": "por-st-1",
-          "name": "艾托尔·卡瓦略",
-          "nameEn": "艾托尔 卡瓦略",
-          "position": "ST",
+          "id": "nuno-mendes",
+          "name": "NUNO MENDES",
+          "nameEn": "NUNO MENDES",
+          "position": "DF",
           "number": 25,
           "isStar": false,
           "age": 23,
-          "height": 189,
-          "weight": 78,
-          "club": "吉马良斯",
+          "height": 180,
+          "weight": 70,
+          "club": "巴黎圣日耳曼",
           "preferredFoot": "左脚",
           "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "por-rw-2",
-          "name": "努诺·佩雷拉",
-          "nameEn": "努诺 佩雷拉",
-          "position": "RW",
+          "id": "fifa-485081",
+          "name": "FRANCISCO CONCEICAO",
+          "nameEn": "FRANCISCO CONCEICAO",
+          "position": "FW",
           "number": 26,
           "isStar": false,
-          "age": 32,
-          "height": 179,
-          "weight": 70,
-          "club": "格拉斯哥流浪者",
-          "preferredFoot": "右脚",
-          "nationality": "葡萄牙",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
