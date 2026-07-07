@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T18:07:21.672Z",
+  "lastUpdated": "2026-07-07T20:09:38.430Z",
   "matches": [
     {
       "id": "A01",
@@ -25543,8 +25543,8 @@
         },
         "away": {
           "possession": null,
-          "shots": 11,
-          "shotsOnTarget": 3,
+          "shots": 12,
+          "shotsOnTarget": 4,
           "corners": 3,
           "fouls": 7,
           "yellowCards": 0,
@@ -26641,7 +26641,7 @@
           "minutesPlayed": 103,
           "isStart": true,
           "goals": 0,
-          "assists": 1,
+          "assists": 2,
           "shots": 0,
           "shotsOnTarget": 0,
           "yellowCard": false,
@@ -26685,10 +26685,10 @@
           "team": "JOR",
           "minutesPlayed": 103,
           "isStart": true,
-          "goals": 1,
+          "goals": 2,
           "assists": 0,
-          "shots": 4,
-          "shotsOnTarget": 1,
+          "shots": 5,
+          "shotsOnTarget": 2,
           "yellowCard": false,
           "redCard": false,
           "rating": null,
@@ -120985,10 +120985,10 @@
         "name": "BC Place Vancouver",
         "city": "温哥华"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "stats": null
     },
@@ -121078,8 +121078,8 @@
       "fifaMatchId": "400021537",
       "datetime": "2026-07-12T09:00:00+08:00",
       "home": {
-        "code": "W95",
-        "name": "W95胜者"
+        "code": "ARG",
+        "name": "阿根廷"
       },
       "away": {
         "code": "W96",
