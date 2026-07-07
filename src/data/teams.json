@@ -4283,6 +4283,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-406280",
+          "name": "塞尔吉诺·德斯特",
+          "nameEn": "塞尔吉诺·德斯特",
+          "position": "DF",
+          "number": 2,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "usa-gk-1",
           "name": "亚历山大·伍德",
           "nameEn": "亚历山大 伍德",
@@ -4296,6 +4305,15 @@
           "preferredFoot": "右脚",
           "nationality": "美国",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-419062",
+          "name": "克里斯·理查兹",
+          "nameEn": "克里斯·理查兹",
+          "position": "DF",
+          "number": 3,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "chris-richards",
@@ -4314,9 +4332,9 @@
         },
         {
           "id": "tyler-adams",
-          "name": "泰勒·亚当斯",
-          "nameEn": "Tyler Adams",
-          "position": "CDM",
+          "name": "Tyler ADAMS",
+          "nameEn": "Tyler ADAMS",
+          "position": "MF",
           "number": 4,
           "isStar": true,
           "age": 27,
@@ -4325,7 +4343,16 @@
           "club": "伯恩茅斯",
           "preferredFoot": "右脚",
           "nationality": "美国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-441251",
+          "name": "安东尼·罗宾逊",
+          "nameEn": "安东尼·罗宾逊",
+          "position": "DF",
+          "number": 5,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "antonee-robinson",
@@ -4358,6 +4385,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-419068",
+          "name": "Giovanni REYNA",
+          "nameEn": "Giovanni REYNA",
+          "position": "MF",
+          "number": 7,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "gio-reyna",
           "name": "乔瓦尼·雷纳",
           "nameEn": "Gio Reyna",
@@ -4373,6 +4409,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-390259",
+          "name": "Weston McKENNIE",
+          "nameEn": "Weston McKENNIE",
+          "position": "MF",
+          "number": 8,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "usa-gk-2",
           "name": "利亚姆·克拉克",
           "nameEn": "利亚姆 克拉克",
@@ -4386,6 +4431,15 @@
           "preferredFoot": "右脚",
           "nationality": "美国",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-419082",
+          "name": "里卡多·佩皮",
+          "nameEn": "里卡多·佩皮",
+          "position": "FW",
+          "number": 9,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "ricardo-pepi",
@@ -4404,9 +4458,9 @@
         },
         {
           "id": "christian-pulisic",
-          "name": "克里斯蒂安·普利西奇",
-          "nameEn": "Christian Pulisic",
-          "position": "LW",
+          "name": "Christian PULISIC",
+          "nameEn": "Christian PULISIC",
+          "position": "FW",
           "number": 10,
           "isStar": true,
           "age": 27,
@@ -4415,22 +4469,7 @@
           "club": "AC米兰",
           "preferredFoot": "右脚",
           "nationality": "美国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "usa-cb-1",
-          "name": "内森·约翰逊",
-          "nameEn": "内森 约翰逊",
-          "position": "CB",
-          "number": 11,
-          "isStar": false,
-          "age": 33,
-          "height": 183,
-          "weight": 88,
-          "club": "萨格勒布迪纳摩",
-          "preferredFoot": "右脚",
-          "nationality": "美国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "cameron-vickers",
@@ -4448,115 +4487,64 @@
           "dataSource": "generated"
         },
         {
-          "id": "usa-lb-1",
-          "name": "卢克·威尔逊",
-          "nameEn": "卢克 威尔逊",
-          "position": "LB",
+          "id": "fifa-339510",
+          "name": "蒂姆·雷姆",
+          "nameEn": "蒂姆·雷姆",
+          "position": "DF",
           "number": 13,
           "isStar": false,
-          "age": 27,
-          "height": 174,
-          "weight": 78,
-          "club": "哥伦布机员",
-          "preferredFoot": "左脚",
-          "nationality": "美国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "usa-rb-1",
-          "name": "哈利·摩尔",
-          "nameEn": "哈利 摩尔",
-          "position": "RB",
+          "id": "fifa-499912",
+          "name": "Sebastian BERHALTER",
+          "nameEn": "Sebastian BERHALTER",
+          "position": "MF",
           "number": 14,
           "isStar": false,
-          "age": 26,
-          "height": 175,
-          "weight": 75,
-          "club": "费内巴切",
-          "preferredFoot": "右脚",
-          "nationality": "美国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "usa-rb-2",
-          "name": "亚当·布朗",
-          "nameEn": "亚当 布朗",
-          "position": "RB",
-          "number": 15,
-          "isStar": false,
-          "age": 21,
-          "height": 172,
-          "weight": 76,
-          "club": "迈阿密国际",
-          "preferredFoot": "左脚",
-          "nationality": "美国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "usa-cdm-1",
-          "name": "卢卡斯·约翰逊",
-          "nameEn": "卢卡斯 约翰逊",
-          "position": "CDM",
+          "id": "fifa-464542",
+          "name": "Alex FREEMAN",
+          "nameEn": "Alex FREEMAN",
+          "position": "DF",
           "number": 16,
           "isStar": false,
-          "age": 33,
-          "height": 179,
-          "weight": 76,
-          "club": "哥伦布机员",
-          "preferredFoot": "右脚",
-          "nationality": "美国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "usa-cdm-2",
-          "name": "卡勒姆·贝克",
-          "nameEn": "卡勒姆 贝克",
-          "position": "CDM",
+          "id": "fifa-448214",
+          "name": "马利克·蒂尔曼",
+          "nameEn": "马利克·蒂尔曼",
+          "position": "MF",
           "number": 17,
           "isStar": false,
-          "age": 25,
-          "height": 188,
-          "weight": 83,
-          "club": "辛辛那提FC",
-          "preferredFoot": "右脚",
-          "nationality": "美国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "usa-cm-1",
-          "name": "卢卡斯·罗斯",
-          "nameEn": "卢卡斯 罗斯",
-          "position": "CM",
+          "id": "fifa-486390",
+          "name": "Max ARFSTEN",
+          "nameEn": "Max ARFSTEN",
+          "position": "DF",
           "number": 18,
           "isStar": false,
-          "age": 25,
-          "height": 176,
-          "weight": 82,
-          "club": "辛辛那提FC",
-          "preferredFoot": "左脚",
-          "nationality": "美国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
-          "id": "usa-cm-2",
-          "name": "亨利·菲利普斯",
-          "nameEn": "亨利 菲利普斯",
-          "position": "CM",
+          "id": "fifa-390276",
+          "name": "哈基·莱特",
+          "nameEn": "哈基·莱特",
+          "position": "FW",
           "number": 19,
           "isStar": false,
-          "age": 23,
-          "height": 180,
-          "weight": 82,
-          "club": "哥伦布机员",
-          "preferredFoot": "右脚",
-          "nationality": "美国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "folarin-balogun",
-          "name": "福拉林·巴洛贡",
-          "nameEn": "Folarin Balogun",
-          "position": "ST",
+          "name": "Folarin BALOGUN",
+          "nameEn": "Folarin BALOGUN",
+          "position": "FW",
           "number": 20,
           "isStar": false,
           "age": 25,
@@ -4565,7 +4553,7 @@
           "club": "洛杉矶FC",
           "preferredFoot": "右脚",
           "nationality": "美国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "timothy-weah",
@@ -4583,79 +4571,13 @@
           "dataSource": "generated"
         },
         {
-          "id": "usa-cam-1",
-          "name": "乔治·安德森",
-          "nameEn": "乔治 安德森",
-          "position": "CAM",
-          "number": 22,
-          "isStar": false,
-          "age": 27,
-          "height": 173,
-          "weight": 69,
-          "club": "哥伦布机员",
-          "preferredFoot": "左脚",
-          "nationality": "美国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "usa-lw-1",
-          "name": "卢克·贝克",
-          "nameEn": "卢克 贝克",
-          "position": "LW",
-          "number": 23,
-          "isStar": false,
-          "age": 26,
-          "height": 182,
-          "weight": 61,
-          "club": "雷恩",
-          "preferredFoot": "左脚",
-          "nationality": "美国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "usa-rw-1",
-          "name": "瑞安·安德森",
-          "nameEn": "瑞安 安德森",
-          "position": "RW",
+          "id": "fifa-499913",
+          "name": "Matt FREESE",
+          "nameEn": "Matt FREESE",
+          "position": "GK",
           "number": 24,
           "isStar": false,
-          "age": 29,
-          "height": 169,
-          "weight": 68,
-          "club": "比利亚雷亚尔",
-          "preferredFoot": "右脚",
-          "nationality": "美国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "usa-st-1",
-          "name": "瑞安·沃森",
-          "nameEn": "瑞安 沃森",
-          "position": "ST",
-          "number": 25,
-          "isStar": false,
-          "age": 21,
-          "height": 184,
-          "weight": 84,
-          "club": "佛罗伦萨",
-          "preferredFoot": "右脚",
-          "nationality": "美国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "usa-rw-2",
-          "name": "本杰明·菲利普斯",
-          "nameEn": "本杰明 菲利普斯",
-          "position": "RW",
-          "number": 26,
-          "isStar": false,
-          "age": 26,
-          "height": 182,
-          "weight": 76,
-          "club": "辛辛那提FC",
-          "preferredFoot": "右脚",
-          "nationality": "美国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         }
       ]
     },
@@ -8846,21 +8768,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "timothy-castagne",
-          "name": "蒂莫西·卡斯塔涅",
-          "nameEn": "Timothy Castagne",
-          "position": "RB",
-          "number": 2,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "伯恩利",
-          "preferredFoot": "右脚",
-          "nationality": "比利时",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-448346",
           "name": "亚瑟·泰特",
           "nameEn": "亚瑟·泰特",
@@ -8868,21 +8775,6 @@
           "number": 3,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "bel-gk-1",
-          "name": "蒂埃莫科·特拉奥雷",
-          "nameEn": "蒂埃莫科 特拉奥雷",
-          "position": "GK",
-          "number": 3,
-          "isStar": false,
-          "age": 37,
-          "height": 189,
-          "weight": 91,
-          "club": "布鲁日",
-          "preferredFoot": "左脚",
-          "nationality": "比利时",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-448360",
@@ -8918,19 +8810,13 @@
           "dataSource": "fifa"
         },
         {
-          "id": "bel-gk-2",
-          "name": "拉斯·范戴克",
-          "nameEn": "拉斯 范戴克",
-          "position": "GK",
-          "number": 5,
-          "isStar": true,
-          "age": 27,
-          "height": 197,
-          "weight": 90,
-          "club": "巴黎圣日耳曼",
-          "preferredFoot": "左脚",
-          "nationality": "比利时",
-          "dataSource": "generated"
+          "id": "fifa-290821",
+          "name": "Axel WITSEL",
+          "nameEn": "Axel WITSEL",
+          "position": "MF",
+          "number": 6,
+          "isStar": false,
+          "dataSource": "fifa"
         },
         {
           "id": "amadou-onana",
@@ -9125,6 +9011,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-433092",
+          "name": "亚历克西斯•萨勒马克尔斯",
+          "nameEn": "亚历克西斯•萨勒马克尔斯",
+          "position": "MF",
+          "number": 22,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-495349",
           "name": "Nicolas RASKIN",
           "nameEn": "Nicolas RASKIN",
@@ -9139,6 +9034,15 @@
           "nameEn": "阿马杜·奥纳纳",
           "position": "MF",
           "number": 24,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-514166",
+          "name": "Nathan NGOY",
+          "nameEn": "Nathan NGOY",
+          "position": "DF",
+          "number": 25,
           "isStar": false,
           "dataSource": "fifa"
         }
