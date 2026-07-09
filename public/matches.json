@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T19:59:25.725Z",
+  "lastUpdated": "2026-07-09T21:36:03.404Z",
   "matches": [
     {
       "id": "A01",
@@ -122262,10 +122262,10 @@
         "name": "Boston Stadium",
         "city": "波士顿"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "stats": null
     },
