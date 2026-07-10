@@ -8810,21 +8810,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "youri-tielemans",
-          "name": "尤里·蒂勒曼斯",
-          "nameEn": "Youri Tielemans",
-          "position": "CM",
-          "number": 8,
-          "isStar": false,
-          "age": 28,
-          "height": 178,
-          "weight": 72,
-          "club": "阿斯顿维拉",
-          "preferredFoot": "右脚",
-          "nationality": "比利时",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-358112",
           "name": "罗梅卢·卢卡库",
           "nameEn": "罗梅卢·卢卡库",
@@ -8873,6 +8858,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-495348",
+          "name": "Senne LAMMENS",
+          "nameEn": "Senne LAMMENS",
+          "position": "GK",
+          "number": 12,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-448377",
           "name": "多迪·卢克巴基奥",
           "nameEn": "多迪·卢克巴基奥",
@@ -8903,6 +8897,15 @@
           "club": "亚特兰大",
           "preferredFoot": "右脚",
           "nationality": "比利时",
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-506088",
+          "name": "Joaquin SEYS",
+          "nameEn": "Joaquin SEYS",
+          "position": "DF",
+          "number": 18,
+          "isStar": false,
           "dataSource": "fifa"
         },
         {
@@ -8946,21 +8949,6 @@
           "number": 21,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "maxime-de-cuyper",
-          "name": "马克西姆·德克伊珀",
-          "nameEn": "Maxime De Cuyper",
-          "position": "LB",
-          "number": 21,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "伯恩茅斯",
-          "preferredFoot": "左脚",
-          "nationality": "比利时",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-433092",
@@ -10376,21 +10364,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "esp-cdm-1",
-          "name": "马里奥·苏亚雷斯",
-          "nameEn": "马里奥 苏亚雷斯",
-          "position": "CDM",
-          "number": 15,
-          "isStar": false,
-          "age": 29,
-          "height": 178,
-          "weight": 83,
-          "club": "拉齐奥",
-          "preferredFoot": "右脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
-        },
-        {
           "id": "rodri",
           "name": "RODRI",
           "nameEn": "RODRI",
@@ -10403,6 +10376,15 @@
           "club": "曼城",
           "preferredFoot": "左脚",
           "nationality": "西班牙",
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-447855",
+          "name": "尼科·威廉斯",
+          "nameEn": "尼科·威廉斯",
+          "position": "FW",
+          "number": 17,
+          "isStar": false,
           "dataSource": "fifa"
         },
         {
