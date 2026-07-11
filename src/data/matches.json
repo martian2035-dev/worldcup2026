@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T20:59:22.081Z",
+  "lastUpdated": "2026-07-11T22:57:14.239Z",
   "matches": [
     {
       "id": "A01",
@@ -124767,10 +124767,10 @@
         "name": "Miami Stadium",
         "city": "迈阿密"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "stats": null
     },
