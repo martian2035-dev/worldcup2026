@@ -2777,6 +2777,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-448136",
+          "name": "Eray COEMERT",
+          "nameEn": "Eray COEMERT",
+          "position": "DF",
+          "number": 18,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-448127",
           "name": "诺亚·奥卡福尔",
           "nameEn": "诺亚·奥卡福尔",
@@ -2793,21 +2802,6 @@
           "number": 20,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "michel-aebischer",
-          "name": "米歇尔·埃比歇尔",
-          "nameEn": "Michel Aebischer",
-          "position": "CM",
-          "number": 20,
-          "isStar": false,
-          "age": 25,
-          "height": 180,
-          "weight": 75,
-          "club": "苏黎世",
-          "preferredFoot": "右脚",
-          "nationality": "瑞士",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-448103",
@@ -13307,21 +13301,6 @@
           "dataSource": "generated"
         },
         {
-          "id": "arg-rb-1",
-          "name": "加布里埃尔·萨帕塔",
-          "nameEn": "加布里埃尔 萨帕塔",
-          "position": "RB",
-          "number": 12,
-          "isStar": false,
-          "age": 25,
-          "height": 176,
-          "weight": 72,
-          "club": "伯恩利",
-          "preferredFoot": "左脚",
-          "nationality": "阿根廷",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-431196",
           "name": "克里斯蒂安·罗梅罗",
           "nameEn": "克里斯蒂安·罗梅罗",
@@ -13346,26 +13325,20 @@
           "dataSource": "generated"
         },
         {
-          "id": "arg-rb-2",
-          "name": "拉蒙·蒙特斯",
-          "nameEn": "拉蒙 蒙特斯",
-          "position": "RB",
-          "number": 14,
-          "isStar": false,
-          "age": 30,
-          "height": 183,
-          "weight": 69,
-          "club": "南安普顿",
-          "preferredFoot": "右脚",
-          "nationality": "阿根廷",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-430631",
           "name": "Nico GONZALEZ",
           "nameEn": "Nico GONZALEZ",
           "position": "MF",
           "number": 15,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-418975",
+          "name": "Thiago ALMADA",
+          "nameEn": "Thiago ALMADA",
+          "position": "FW",
+          "number": 16,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -13397,6 +13370,15 @@
           "club": "利物浦",
           "preferredFoot": "右脚",
           "nationality": "阿根廷",
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-495054",
+          "name": "Jose Manuel LOPEZ",
+          "nameEn": "Jose Manuel LOPEZ",
+          "position": "FW",
+          "number": 21,
+          "isStar": false,
           "dataSource": "fifa"
         },
         {
