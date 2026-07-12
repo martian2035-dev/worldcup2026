@@ -12995,6 +12995,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-419662",
+          "name": "Jorgen STRAND LARSEN",
+          "nameEn": "Jorgen STRAND LARSEN",
+          "position": "FW",
+          "number": 11,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "nor-cb-2",
           "name": "特里格弗·约翰森",
           "nameEn": "特里格弗 约翰森",
@@ -13005,21 +13014,6 @@
           "height": 198,
           "weight": 91,
           "club": "布兰",
-          "preferredFoot": "右脚",
-          "nationality": "挪威",
-          "dataSource": "generated"
-        },
-        {
-          "id": "nor-lb-1",
-          "name": "埃尔林·布拉滕",
-          "nameEn": "埃尔林 布拉滕",
-          "position": "LB",
-          "number": 13,
-          "isStar": false,
-          "age": 23,
-          "height": 175,
-          "weight": 76,
-          "club": "布鲁日",
           "preferredFoot": "右脚",
           "nationality": "挪威",
           "dataSource": "generated"
@@ -16253,6 +16247,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-439641",
+          "name": "Reece JAMES",
+          "nameEn": "Reece JAMES",
+          "position": "DF",
+          "number": 24,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-506329",
           "name": "Djed SPENCE",
           "nameEn": "Djed SPENCE",
@@ -16269,21 +16272,6 @@
           "number": 26,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "kobbie-mainoo",
-          "name": "科比·迈努",
-          "nameEn": "Kobbie Mainoo",
-          "position": "CM",
-          "number": 26,
-          "isStar": false,
-          "age": 21,
-          "height": 175,
-          "weight": 70,
-          "club": "曼联",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
         }
       ]
     },
