@@ -10169,6 +10169,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-382739",
+          "name": "Marcos LLORENTE",
+          "nameEn": "Marcos LLORENTE",
+          "position": "DF",
+          "number": 5,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "esp-cb-1",
           "name": "塞尔吉·科雷亚",
           "nameEn": "塞尔吉 科雷亚",
@@ -10332,21 +10341,6 @@
           "number": 14,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "esp-rb-2",
-          "name": "巴勃罗·加西亚",
-          "nameEn": "巴勃罗 加西亚",
-          "position": "RB",
-          "number": 14,
-          "isStar": false,
-          "age": 31,
-          "height": 182,
-          "weight": 76,
-          "club": "马德里竞技",
-          "preferredFoot": "右脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-447860",
@@ -11768,21 +11762,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "fra-gk-2",
-          "name": "克莱芒·贝尔纳",
-          "nameEn": "克莱芒 贝尔纳",
-          "position": "GK",
-          "number": 3,
-          "isStar": false,
-          "age": 25,
-          "height": 193,
-          "weight": 94,
-          "club": "朗斯",
-          "preferredFoot": "右脚",
-          "nationality": "法国",
-          "dataSource": "generated"
-        },
-        {
           "id": "dayot-upamecano",
           "name": "Dayot UPAMECANO",
           "nameEn": "Dayot UPAMECANO",
@@ -11877,9 +11856,9 @@
         },
         {
           "id": "aurelien-tchouameni",
-          "name": "奥雷利安·楚阿梅尼",
-          "nameEn": "Aurélien Tchouaméni",
-          "position": "CDM",
+          "name": "Aurelien TCHOUAMENI",
+          "nameEn": "Aurelien TCHOUAMENI",
+          "position": "MF",
           "number": 8,
           "isStar": true,
           "age": 26,
@@ -11888,22 +11867,7 @@
           "club": "皇家马德里",
           "preferredFoot": "右脚",
           "nationality": "法国",
-          "dataSource": "generated"
-        },
-        {
-          "id": "fra-cb-1",
-          "name": "亚历山大·莫罗",
-          "nameEn": "亚历山大 莫罗",
-          "position": "CB",
-          "number": 9,
-          "isStar": false,
-          "age": 33,
-          "height": 185,
-          "weight": 86,
-          "club": "马赛",
-          "preferredFoot": "左脚",
-          "nationality": "法国",
-          "dataSource": "generated"
+          "dataSource": "fifa"
         },
         {
           "id": "kylian-mbappe",
@@ -11943,21 +11907,6 @@
           "preferredFoot": "左脚",
           "nationality": "法国",
           "dataSource": "fifa"
-        },
-        {
-          "id": "fra-lb-1",
-          "name": "马马杜·迪亚洛",
-          "nameEn": "马马杜 迪亚洛",
-          "position": "LB",
-          "number": 12,
-          "isStar": false,
-          "age": 31,
-          "height": 182,
-          "weight": 74,
-          "club": "摩纳哥",
-          "preferredFoot": "左脚",
-          "nationality": "法国",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-402047",
@@ -12011,6 +11960,15 @@
           "dataSource": "fifa"
         },
         {
+          "id": "fifa-408042",
+          "name": "西奥·埃尔南德斯",
+          "nameEn": "西奥·埃尔南德斯",
+          "position": "DF",
+          "number": 19,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-464114",
           "name": "Desire DOUE",
           "nameEn": "Desire DOUE",
@@ -12042,6 +12000,24 @@
           "preferredFoot": "左脚",
           "nationality": "法国",
           "dataSource": "generated"
+        },
+        {
+          "id": "fifa-431861",
+          "name": "Rayan CHERKI",
+          "nameEn": "Rayan CHERKI",
+          "position": "MF",
+          "number": 24,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-405881",
+          "name": "马克桑·拉克鲁瓦",
+          "nameEn": "马克桑·拉克鲁瓦",
+          "position": "DF",
+          "number": 26,
+          "isStar": false,
+          "dataSource": "fifa"
         }
       ]
     },
