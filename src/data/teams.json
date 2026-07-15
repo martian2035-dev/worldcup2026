@@ -13202,21 +13202,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "arg-lb-1",
-          "name": "马克西米利亚诺·巴斯克斯",
-          "nameEn": "马克西米利亚诺 巴斯克斯",
-          "position": "LB",
-          "number": 6,
-          "isStar": false,
-          "age": 26,
-          "height": 176,
-          "weight": 65,
-          "club": "斯图加特",
-          "preferredFoot": "左脚",
-          "nationality": "阿根廷",
-          "dataSource": "generated"
-        },
-        {
           "id": "rodrigo-de-paul",
           "name": "Rodrigo DE PAUL",
           "nameEn": "Rodrigo DE PAUL",
@@ -13315,6 +13300,15 @@
           "nameEn": "Thiago ALMADA",
           "position": "FW",
           "number": 16,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-485595",
+          "name": "Giuliano SIMEONE",
+          "nameEn": "Giuliano SIMEONE",
+          "position": "FW",
+          "number": 17,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -16043,21 +16037,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "marc-guehi",
-          "name": "马克·格伊",
-          "nameEn": "Marc Guéhi",
-          "position": "CB",
-          "number": 6,
-          "isStar": false,
-          "age": 25,
-          "height": 183,
-          "weight": 78,
-          "club": "水晶宫",
-          "preferredFoot": "右脚",
-          "nationality": "英格兰",
-          "dataSource": "generated"
-        },
-        {
           "id": "fifa-448196",
           "name": "布卡约·萨卡",
           "nameEn": "布卡约·萨卡",
@@ -16201,6 +16180,15 @@
           "nameEn": "Eberechi EZE",
           "position": "MF",
           "number": 21,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-448198",
+          "name": "伊万·托尼",
+          "nameEn": "伊万·托尼",
+          "position": "FW",
+          "number": 22,
           "isStar": false,
           "dataSource": "fifa"
         },

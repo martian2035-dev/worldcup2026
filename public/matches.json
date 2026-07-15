@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T21:08:29.739Z",
+  "lastUpdated": "2026-07-15T23:04:00.886Z",
   "matches": [
     {
       "id": "A01",
@@ -128728,7 +128728,7 @@
         },
         "away": {
           "possession": null,
-          "shots": 14,
+          "shots": 15,
           "shotsOnTarget": 7,
           "corners": 6,
           "fouls": 13,
@@ -128736,7 +128736,7 @@
           "redCards": 0
         }
       },
-      "attendance": 68239,
+      "attendance": 0,
       "lineups": {
         "home": {
           "formation": "4-2-3-1",
@@ -129858,7 +129858,7 @@
           "isStart": true,
           "goals": 0,
           "assists": 0,
-          "shots": 2,
+          "shots": 3,
           "shotsOnTarget": 0,
           "yellowCard": false,
           "redCard": false,
@@ -129985,8 +129985,8 @@
         "name": "西班牙"
       },
       "away": {
-        "code": "W102",
-        "name": "W102胜者"
+        "code": "ARG",
+        "name": "阿根廷"
       },
       "venue": {
         "name": "New York/New Jersey Stadium",
