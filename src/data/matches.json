@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-19T17:07:03.050Z",
+  "lastUpdated": "2026-07-19T19:16:32.858Z",
   "matches": [
     {
       "id": "A01",
@@ -129992,10 +129992,10 @@
         "name": "New York/New Jersey Stadium",
         "city": "新泽西州"
       },
-      "status": "upcoming",
+      "status": "live",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "stats": null
     }
