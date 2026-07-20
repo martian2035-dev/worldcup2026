@@ -10169,6 +10169,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-405562",
+          "name": "埃里克·加西亚",
+          "nameEn": "埃里克·加西亚",
+          "position": "DF",
+          "number": 4,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "fifa-382739",
           "name": "Marcos LLORENTE",
           "nameEn": "Marcos LLORENTE",
@@ -10250,21 +10259,6 @@
           "dataSource": "fifa"
         },
         {
-          "id": "esp-lb-1",
-          "name": "马特乌斯·佩雷拉",
-          "nameEn": "马特乌斯 佩雷拉",
-          "position": "LB",
-          "number": 9,
-          "isStar": false,
-          "age": 24,
-          "height": 181,
-          "weight": 78,
-          "club": "巴塞罗那",
-          "preferredFoot": "左脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
-        },
-        {
           "id": "daniel-olmo",
           "name": "Dani OLMO",
           "nameEn": "Dani OLMO",
@@ -10302,21 +10296,6 @@
           "number": 12,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "esp-rb-1",
-          "name": "鲁伊·伊格莱西亚斯",
-          "nameEn": "鲁伊 伊格莱西亚斯",
-          "position": "RB",
-          "number": 12,
-          "isStar": false,
-          "age": 23,
-          "height": 182,
-          "weight": 66,
-          "club": "毕尔巴鄂竞技",
-          "preferredFoot": "右脚",
-          "nationality": "西班牙",
-          "dataSource": "generated"
         },
         {
           "id": "alex-remiro",
@@ -10372,6 +10351,15 @@
           "nameEn": "尼科·威廉斯",
           "position": "FW",
           "number": 17,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
+          "id": "fifa-430754",
+          "name": "Martin ZUBIMENDI",
+          "nameEn": "Martin ZUBIMENDI",
+          "position": "MF",
+          "number": 18,
           "isStar": false,
           "dataSource": "fifa"
         },
@@ -13121,6 +13109,15 @@
           "dataSource": "generated"
         },
         {
+          "id": "fifa-402934",
+          "name": "马科斯·塞内西",
+          "nameEn": "马科斯·塞内西",
+          "position": "DF",
+          "number": 2,
+          "isStar": false,
+          "dataSource": "fifa"
+        },
+        {
           "id": "arg-gk-2",
           "name": "维克托·阿库尼亚",
           "nameEn": "维克托 阿库尼亚",
@@ -13167,21 +13164,6 @@
           "number": 4,
           "isStar": false,
           "dataSource": "fifa"
-        },
-        {
-          "id": "arg-cb-1",
-          "name": "马丁·克鲁斯",
-          "nameEn": "马丁 克鲁斯",
-          "position": "CB",
-          "number": 4,
-          "isStar": false,
-          "age": 33,
-          "height": 189,
-          "weight": 88,
-          "club": "沃尔夫斯堡",
-          "preferredFoot": "左脚",
-          "nationality": "阿根廷",
-          "dataSource": "generated"
         },
         {
           "id": "fifa-332847",
